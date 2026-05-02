@@ -8,11 +8,12 @@ MODAL_TIMEOUT = 60 * 60
 HUGGINGFACE_ACCESS_TOKEN = modal.Secret.from_name("huggingface-access-token")
 VOL_MOUNT_PATH = "/model_cache"
 
-PATCH_LOCAL_DIRS = "/net/home/liaw/COSMOSLab-dLLM/sglang-main"
+PATCH_LOCAL_DIRS = "/net/home/liaw/COSMOSLab-dLLM/sglang"
 PATCH_REMOTE_DIR = "/sgl-workspace/sglang"
 
-TEST_FILE_REMOTE_PATH = "/sgl-workspace/sglang/test/registered/dllm/test_llada2_mini.py"
+TEST_FILE_REMOTE_PATH = "/sgl-workspace/sglang/test/registered/dllm/test_scheduler.py"
 
+SAVED_SPECIAL_FOLDER = "/sgl-workspace/sglang/sglang_dllm_req_dumps"
 
 app = modal.App(MODAL_APP_NAME)
 image = (
@@ -27,14 +28,17 @@ image = (
     .add_local_dir(PATCH_LOCAL_DIRS, PATCH_REMOTE_DIR, copy=False)
 )
 
-volume = modal.Volume.from_name("hfcache", create_if_missing=True)
-
+hf_volume = modal.Volume.from_name("hfcache", create_if_missing=True)
+dump_volume = modal.Volume.from_name("sglang-dllm-req-dumps", create_if_missing=True)
 
 @app.function(
     gpu=MODAL_GPU_TYPE,
     image=image,
     timeout=MODAL_TIMEOUT,
-    volumes={VOL_MOUNT_PATH: volume},
+    volumes={
+        VOL_MOUNT_PATH: hf_volume,
+        SAVED_SPECIAL_FOLDER: dump_volume,
+    },
     secrets=[HUGGINGFACE_ACCESS_TOKEN],
 )
 def run_test() -> None:
@@ -42,6 +46,8 @@ def run_test() -> None:
         ["python", TEST_FILE_REMOTE_PATH],
         check=False,
     )
+
+    dump_volume.commit()
 
     if process.returncode != 0:
         raise RuntimeError(f"{process.returncode}")

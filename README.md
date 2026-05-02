@@ -16,5 +16,5 @@
 ## 1) Run single sglang test file on modal
 
 ```bash
-modal run launch_test_file.py
+modal run launch_test_on_modal.py
 ```
