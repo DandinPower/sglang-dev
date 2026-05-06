@@ -15,9 +15,12 @@ TEST_FILE_REMOTE_PATH = "/sgl-workspace/sglang/test/registered/dllm/test_schedul
 
 SAVED_SPECIAL_FOLDER = "/sgl-workspace/sglang/sglang_dllm_req_dumps"
 
+# for reproducibility, don't use the lmsysorg/sglang:dev image which is updated regularly, but use the image with a specific sha256 digest
+SGLANG_DEV_DOCKER_HUB_IMAGE = "lmsysorg/sglang@sha256:462b58d2363a51603c9c2c2c38201bf144bad799e0bc4722be97c1a530131274" 
+
 app = modal.App(MODAL_APP_NAME)
 image = (
-    modal.Image.from_registry("lmsysorg/sglang:dev", force_build=False)
+    modal.Image.from_registry(SGLANG_DEV_DOCKER_HUB_IMAGE, force_build=False)
     .uv_pip_install("huggingface_hub", "hf_transfer")
     .env(
         {
