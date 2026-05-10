@@ -3,12 +3,11 @@ import json
 import os
 import shlex
 import subprocess
-import sys
 import threading
 import time
 import traceback
 from datetime import datetime
-from typing import Any, Literal
+from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import urlopen
 
@@ -17,54 +16,41 @@ import modal
 
 MODAL_APP_NAME = "SGLang"
 MODAL_GPU_TYPE = "H100!:1"
-MODAL_TIMEOUT = 60 * 60
-
-HUGGINGFACE_ACCESS_TOKEN = modal.Secret.from_name("huggingface-access-token")
-VOL_MOUNT_PATH = "/model_cache"
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-PatchTarget = Literal["sglang", "sglang-baseline"]
-
-DEFAULT_PATCH_TARGET: PatchTarget = "sglang"
-PATCH_LOCAL_DIR_BY_TARGET = {
-    "sglang": "/net/home/liaw/COSMOSLab-dLLM/sglang",
-    "sglang-baseline": "/net/home/liaw/COSMOSLab-dLLM/sglang-baseline",
-}
-PATCH_REMOTE_ROOT = "/sgl-workspace/patches"
-PATCH_REMOTE_DIR_BY_TARGET = {
-    "sglang": os.path.join(PATCH_REMOTE_ROOT, "sglang"),
-    "sglang-baseline": os.path.join(PATCH_REMOTE_ROOT, "sglang-baseline"),
-}
-
-DUMP_VOLUME_MOUNT_PATH = "/sgl-workspace/sglang_dllm_req_dumps_lowconfidence_0.7"
-REQUEST_COUNT_CONFIGURATIONS_OPTION = "--request-count_configurations"
-DLLM_ALGORITHM_CONFIG_OPTION = "--dllm-algorithm-config"
-DLLM_ALGORITHM_CONFIG_ENV_VAR = "DLLM_ALGORITHM_CONFIG_PATH"
-DLLM_ALGORITHM_CONFIG_REMOTE_DIR = "/sgl-workspace/dllm_algorithm_configs"
-REMOVED_CLI_OPTIONS = {"--request-count", "--saved-special-folder"}
-
-# For reproducibility, use the same pinned SGLang image as launch_test_on_modal.py.
-SGLANG_DEV_DOCKER_HUB_IMAGE = (
+MODAL_TIMEOUT = 3600
+MODAL_SGLANG_DEV_IMAGE = (
     "lmsysorg/sglang@sha256:"
     "462b58d2363a51603c9c2c2c38201bf144bad799e0bc4722be97c1a530131274"
 )
+HUGGINGFACE_ACCESS_TOKEN = modal.Secret.from_name("huggingface-access-token")
+REMOTE_MODEL_CACHE_DIR = "/hfcache"
+REMOTE_DUMP_DIR = "/sgl-workspace/dump"
 
-# MODEL_PATH = "JetLM/SDAR-8B-Chat"
-MODEL_PATH = "inclusionAI/LLaDA2.0-mini"
+SGLANG_SERVER_HOST = "127.0.0.1"
+SGLANG_SERVER_PORT = 30000
+SGLANG_SERVER_BASE_URL = f"http://{SGLANG_SERVER_HOST}:{SGLANG_SERVER_PORT}"
+SGLANG_STARTUP_TIMEOUT = 1800
+
+PATCH_CHOICES = ["sglang", "sglang-baseline"]
+LOCAL_PATCH_DIR_BY_TARGET = {
+    "sglang": "/net/home/liaw/COSMOSLab-dLLM/sglang",
+    "sglang-baseline": "/net/home/liaw/COSMOSLab-dLLM/sglang-baseline",
+}
+REMOTE_PATCH_DIR_BY_TARGET = {
+    "sglang": "/sgl-workspace/patches/sglang",
+    "sglang-baseline": "/sgl-workspace/patches/sglang-baseline",
+}
+
 DLLM_ALGORITHM = "LowConfidence"
-DLLM_ALGORITHM_CONFIG_LOCAL_PATH = "algorithm_config.yaml"
-DLLM_ALGORITHM_CONFIG_REMOTE_PATH = "/sgl-workspace/algorithm_config.yaml"
-SERVER_HOST = "127.0.0.1"
-SERVER_PORT = 30000
-BASE_URL = f"http://{SERVER_HOST}:{SERVER_PORT}"
-SERVER_STARTUP_TIMEOUT_SECONDS = 30 * 60
+LOCAL_DLLM_ALGORITHM_CONFIG_PATH = "algorithm_config.yaml"
+REMOTE_DLLM_ALGORITHM_CONFIG_PATH = "/sgl-workspace/algorithm_config.yaml"
 
+MODEL_PATH = "inclusionAI/LLaDA2.0-mini"
+REQUEST_COUNTS = [1, 8, 16]
 REQUEST_WINDOW_SECONDS = 4.0
-
 OBSERVABILITY_MAX_NEW_TOKENS = 512
 OBSERVABILITY_SEED = 42
 FORWARD_COUNTS_KEY = "dllm_forward_counts_per_block"
-TIME_BETWEEN_BLOCK_KEY = "dllm_block_completion_latencies"
+BLOCK_LATENCY_KEY = "dllm_block_completion_latencies"
 
 COUNTRIES = [
     "France",
@@ -93,68 +79,36 @@ PROMPT_TEMPLATE = (
 
 app = modal.App(MODAL_APP_NAME)
 image = (
-    modal.Image.from_registry(SGLANG_DEV_DOCKER_HUB_IMAGE, force_build=False)
+    modal.Image.from_registry(MODAL_SGLANG_DEV_IMAGE, force_build=False)
     .uv_pip_install("huggingface_hub", "hf_transfer", "aiohttp")
     .env(
         {
-            "HF_HOME": VOL_MOUNT_PATH,
+            "HF_HOME": REMOTE_MODEL_CACHE_DIR,
             "HF_HUB_ENABLE_HF_TRANSFER": "1",
         }
     )
     .add_local_dir(
-        PATCH_LOCAL_DIR_BY_TARGET["sglang"],
-        PATCH_REMOTE_DIR_BY_TARGET["sglang"],
+        LOCAL_PATCH_DIR_BY_TARGET["sglang"],
+        REMOTE_PATCH_DIR_BY_TARGET["sglang"],
         copy=False,
     )
     .add_local_dir(
-        PATCH_LOCAL_DIR_BY_TARGET["sglang-baseline"],
-        PATCH_REMOTE_DIR_BY_TARGET["sglang-baseline"],
+        LOCAL_PATCH_DIR_BY_TARGET["sglang-baseline"],
+        REMOTE_PATCH_DIR_BY_TARGET["sglang-baseline"],
         copy=False,
     )
     .add_local_file(
-        DLLM_ALGORITHM_CONFIG_LOCAL_PATH,
-        DLLM_ALGORITHM_CONFIG_REMOTE_PATH,
+        LOCAL_DLLM_ALGORITHM_CONFIG_PATH,
+        REMOTE_DLLM_ALGORITHM_CONFIG_PATH,
         copy=False,
     )
 )
-
 hf_volume = modal.Volume.from_name("hfcache", create_if_missing=True)
-dump_volume = modal.Volume.from_name("sglang-dllm-req-dumps", create_if_missing=True)
+dump_volume = modal.Volume.from_name("dump", create_if_missing=True)
 
 
-def _build_prompts(request_count: int) -> list[str]:
-    if request_count < 1:
-        raise ValueError(f"request_count must be >= 1, got {request_count}.")
-    if len(COUNTRIES) < request_count:
-        raise ValueError(
-            f"Expected at least {request_count} countries, got {len(COUNTRIES)}."
-        )
-    return [
-        PROMPT_TEMPLATE.format(country=country)
-        for country in COUNTRIES[:request_count]
-    ]
-
-
-def _build_payload(prompt: str) -> dict[str, Any]:
-    return {
-        "text": prompt,
-        "sampling_params": {
-            "sampling_seed": OBSERVABILITY_SEED,
-            "temperature": 0.0,
-            "max_new_tokens": OBSERVABILITY_MAX_NEW_TOKENS,
-            "ignore_eos": True,
-        },
-        "stream": True,
-    }
-
-
-def _build_server_command(
-    max_running_requests: int,
-) -> list[str]:
-    if max_running_requests < 1:
-        raise ValueError(
-            f"max_running_requests must be >= 1, got {max_running_requests}."
-        )
+def _build_server_command(max_running_requests: int) -> list[str]:
+    assert max_running_requests >= 1, "max_running_requests must be at least 1."
 
     return [
         "sglang",
@@ -176,169 +130,16 @@ def _build_server_command(
         "--dllm-algorithm",
         DLLM_ALGORITHM,
         "--dllm-algorithm-config",
-        DLLM_ALGORITHM_CONFIG_REMOTE_PATH,
+        REMOTE_DLLM_ALGORITHM_CONFIG_PATH,
         "--host",
-        SERVER_HOST,
+        SGLANG_SERVER_HOST,
         "--port",
-        str(SERVER_PORT),
+        str(SGLANG_SERVER_PORT),
     ]
-
-
-def _resolve_patch_paths(patch_target: str) -> tuple[str, str]:
-    try:
-        return (
-            PATCH_LOCAL_DIR_BY_TARGET[patch_target],
-            PATCH_REMOTE_DIR_BY_TARGET[patch_target],
-        )
-    except KeyError as exc:
-        supported_targets = ", ".join(sorted(PATCH_LOCAL_DIR_BY_TARGET))
-        raise ValueError(
-            f"Unsupported patch_target={patch_target!r}. "
-            f"Supported values: {supported_targets}"
-        ) from exc
-
-
-def _usage() -> str:
-    supported_targets = "|".join(sorted(PATCH_LOCAL_DIR_BY_TARGET))
-    return (
-        "Usage:\n"
-        "  modal run launch_dllm_observability_experiment_on_modal.py \\\n"
-        f"    --patch-target <{supported_targets}> \\\n"
-        f"    {DLLM_ALGORITHM_CONFIG_OPTION} <yaml-path> \\\n"
-        f"    {REQUEST_COUNT_CONFIGURATIONS_OPTION} <count> [<count> ...]\n"
-    )
-
-
-def _usage_error(message: str) -> None:
-    print(f"{message}\n\n{_usage()}", file=sys.stderr)
-    raise SystemExit(2)
-
-
-def _validate_request_count_configurations(
-    request_count_configurations: list[int],
-) -> list[int]:
-    if not request_count_configurations:
-        raise ValueError(
-            f"{REQUEST_COUNT_CONFIGURATIONS_OPTION} requires at least one count."
-        )
-
-    seen: set[int] = set()
-    duplicates: list[int] = []
-    for request_count in request_count_configurations:
-        if request_count < 1:
-            raise ValueError(
-                f"request counts must be positive integers, got {request_count}."
-            )
-        if request_count in seen and request_count not in duplicates:
-            duplicates.append(request_count)
-        seen.add(request_count)
-
-    if duplicates:
-        duplicate_values = ", ".join(str(value) for value in duplicates)
-        raise ValueError(f"duplicate request counts are not allowed: {duplicate_values}.")
-
-    max_request_count = max(request_count_configurations)
-    _build_prompts(max_request_count)
-    return request_count_configurations
-
-
-def _parse_local_args(args: tuple[str, ...]) -> tuple[str, list[int], str]:
-    patch_target = DEFAULT_PATCH_TARGET
-    request_count_configurations: list[int] | None = None
-    index = 0
-
-    while index < len(args):
-        arg = args[index]
-
-        if arg in ("-h", "--help"):
-            print(_usage())
-            raise SystemExit(0)
-
-        if arg in REMOVED_CLI_OPTIONS or any(
-            arg.startswith(f"{option}=") for option in REMOVED_CLI_OPTIONS
-        ):
-            _usage_error(
-                f"{arg.split('=', 1)[0]} has been removed. "
-                f"Use {REQUEST_COUNT_CONFIGURATIONS_OPTION} instead."
-            )
-
-        if arg == "--patch-target":
-            index += 1
-            if index >= len(args) or args[index].startswith("--"):
-                _usage_error("--patch-target requires a value.")
-            patch_target = args[index]
-            index += 1
-            continue
-
-        if arg.startswith("--patch-target="):
-            patch_target = arg.split("=", 1)[1]
-            if not patch_target:
-                _usage_error("--patch-target requires a value.")
-            index += 1
-            continue
-
-        if arg == REQUEST_COUNT_CONFIGURATIONS_OPTION:
-            index += 1
-            values: list[str] = []
-            while index < len(args) and not args[index].startswith("--"):
-                values.append(args[index])
-                index += 1
-            request_count_configurations = _parse_request_count_values(values)
-            continue
-
-        if arg.startswith(f"{REQUEST_COUNT_CONFIGURATIONS_OPTION}="):
-            first_value = arg.split("=", 1)[1]
-            values = [first_value] if first_value else []
-            index += 1
-            while index < len(args) and not args[index].startswith("--"):
-                values.append(args[index])
-                index += 1
-            request_count_configurations = _parse_request_count_values(values)
-            continue
-
-        if arg == "--request-count-configurations" or arg.startswith(
-            "--request-count-configurations="
-        ):
-            _usage_error(
-                "Use --request-count_configurations with an underscore, not a hyphen."
-            )
-
-        _usage_error(f"Unknown option or argument: {arg}")
-
-    if request_count_configurations is None:
-        _usage_error(f"Missing required option: {REQUEST_COUNT_CONFIGURATIONS_OPTION}")
-
-    try:
-        _resolve_patch_paths(patch_target)
-    except ValueError as exc:
-        _usage_error(str(exc))
-
-    try:
-        request_count_configurations = _validate_request_count_configurations(
-            request_count_configurations
-        )
-    except ValueError as exc:
-        _usage_error(str(exc))
-
-    return patch_target, request_count_configurations
-
-
-def _parse_request_count_values(values: list[str]) -> list[int]:
-    if not values:
-        _usage_error(f"{REQUEST_COUNT_CONFIGURATIONS_OPTION} requires values.")
-
-    request_counts: list[int] = []
-    for value in values:
-        try:
-            request_counts.append(int(value))
-        except ValueError:
-            _usage_error(f"request count must be an integer, got {value!r}.")
-    return request_counts
-
 
 def _build_server_env(patch_remote_dir: str) -> dict[str, str]:
     env = os.environ.copy()
-    env["HF_HOME"] = VOL_MOUNT_PATH
+    env["HF_HOME"] = REMOTE_MODEL_CACHE_DIR
     env["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 
     pythonpath_parts = [os.path.join(patch_remote_dir, "python")]
@@ -360,7 +161,7 @@ def _launch_server(
     log_path: str,
     patch_remote_dir: str,
     max_running_requests: int,
-) -> tuple[subprocess.Popen, threading.Thread]:
+) -> tuple[subprocess.Popen, threading.Thread, threading.Thread]:
     command = _build_server_command(
         max_running_requests,
     )
@@ -371,21 +172,24 @@ def _launch_server(
     process = subprocess.Popen(
         command,
         stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
+        stderr=subprocess.PIPE,
         env=_build_server_env(patch_remote_dir),
         text=True,
         bufsize=1,
     )
-    if process.stdout is None:
-        raise RuntimeError("Failed to capture SGLang server stdout.")
+    if process.stdout is None or process.stderr is None:
+        raise RuntimeError("Failed to capture server process output.")
 
-    thread = threading.Thread(
-        target=_tee_process_output,
-        args=(process.stdout, log_path),
-        daemon=True,
+    stdout_thread = threading.Thread(
+        target=_tee_process_output, args=(process.stdout, log_path), daemon=True
     )
-    thread.start()
-    return process, thread
+    stderr_thread = threading.Thread(
+        target=_tee_process_output, args=(process.stderr, log_path), daemon=True
+    )
+    stdout_thread.start()
+    stderr_thread.start()
+    
+    return process, stdout_thread, stderr_thread
 
 
 def _wait_for_server_health(
@@ -410,30 +214,7 @@ def _wait_for_server_health(
 
         time.sleep(10)
 
-    raise TimeoutError(
-        f"SGLang server did not become healthy within {timeout_seconds} seconds."
-    )
-
-
-def _terminate_server(process: subprocess.Popen) -> None:
-    if process.poll() is not None:
-        return
-
-    try:
-        from sglang.srt.utils import kill_process_tree
-
-        kill_process_tree(process.pid)
-        process.wait(timeout=30)
-        return
-    except Exception as exc:
-        print(f"kill_process_tree failed, falling back to terminate: {exc}", flush=True)
-
-    process.terminate()
-    try:
-        process.wait(timeout=30)
-    except subprocess.TimeoutExpired:
-        process.kill()
-        process.wait(timeout=30)
+    raise TimeoutError(f"SGLang server did not become healthy within {timeout_seconds} seconds.")
 
 
 def _write_json(path: str, data: dict[str, Any]) -> None:
@@ -475,7 +256,7 @@ def _chunk_record(
 ) -> dict[str, Any]:
     meta_info = chunk.get("meta_info") or {}
     output_tokens = _output_token_count(chunk)
-    block_latencies = _as_list(meta_info.get(TIME_BETWEEN_BLOCK_KEY))
+    block_latencies = _as_list(meta_info.get(BLOCK_LATENCY_KEY))
     forward_counts = _as_list(meta_info.get(FORWARD_COUNTS_KEY))
 
     return {
@@ -518,11 +299,17 @@ async def _send_one_request(
     prompt: str,
 ) -> dict[str, Any]:
     scheduled_delay = request_index * request_interval_seconds
-    await asyncio.sleep(
-        max(0.0, experiment_start_time + scheduled_delay - time.perf_counter())
-    )
-
-    payload = _build_payload(prompt)
+    await asyncio.sleep(max(0.0, experiment_start_time + scheduled_delay - time.perf_counter()))
+    payload = {
+        "text": prompt,
+        "sampling_params": {
+            "sampling_seed": OBSERVABILITY_SEED,
+            "temperature": 0.0,
+            "max_new_tokens": OBSERVABILITY_MAX_NEW_TOKENS,
+            "ignore_eos": True,
+        },
+        "stream": True,
+    }
     result_path = os.path.join(run_dir, f"request_{request_index:02d}.json")
     request_start_time = time.perf_counter()
     request_start_realtime = datetime.now().isoformat(timespec="milliseconds")
@@ -568,7 +355,7 @@ async def _send_one_request(
                 ):
                     first_new_token_elapsed = elapsed_seconds
 
-                block_latencies = _as_list(meta_info.get(TIME_BETWEEN_BLOCK_KEY))
+                block_latencies = _as_list(meta_info.get(BLOCK_LATENCY_KEY))
                 if len(block_latencies) > previous_block_count and output_tokens > 0:
                     for _ in range(len(block_latencies) - previous_block_count):
                         block_arrival_elapsed_seconds.append(elapsed_seconds)
@@ -591,7 +378,7 @@ async def _send_one_request(
         end_time = time.perf_counter()
         e2e_seconds = end_time - request_start_time
         forward_counts = _as_list(final_meta_info.get(FORWARD_COUNTS_KEY))
-        block_latencies = _as_list(final_meta_info.get(TIME_BETWEEN_BLOCK_KEY))
+        block_latencies = _as_list(final_meta_info.get(BLOCK_LATENCY_KEY))
         scheduler_ttfb_seconds = block_latencies[0] if block_latencies else None
         scheduler_tbb_seconds = block_latencies[1:]
         client_tbb_seconds = [
@@ -642,7 +429,7 @@ async def _send_one_request(
                 "forward_counts": forward_counts,
                 "ttfb_seconds": scheduler_ttfb_seconds,
                 "tbb_seconds": scheduler_tbb_seconds,
-                TIME_BETWEEN_BLOCK_KEY: block_latencies,
+                BLOCK_LATENCY_KEY: block_latencies,
                 FORWARD_COUNTS_KEY: forward_counts,
             },
             "client_metrics": {
@@ -710,6 +497,10 @@ async def _run_async_experiment(
     request_count: int,
 ) -> list[dict[str, Any]]:
     import aiohttp
+    def _build_prompts(request_count: int) -> list[str]:
+        assert request_count >= 1, "request_count must be at least 1."
+        assert request_count <= len(COUNTRIES), f"request_count must be at most {len(COUNTRIES)}."
+        return [PROMPT_TEMPLATE.format(country=country) for country in COUNTRIES[:request_count]]
 
     prompts = _build_prompts(request_count)
     request_interval_seconds = REQUEST_WINDOW_SECONDS / request_count
@@ -756,7 +547,7 @@ def _write_summary(
         "result_folder": result_folder,
         "result_folder_path": result_folder_path,
         "server_log_path": server_log_path,
-        "base_url": BASE_URL,
+        "base_url": SGLANG_SERVER_BASE_URL,
         "model_path": MODEL_PATH,
         "dllm_algorithm": DLLM_ALGORITHM,
         "request_count": request_count,
@@ -782,164 +573,102 @@ def _write_summary(
     image=image,
     timeout=MODAL_TIMEOUT,
     volumes={
-        VOL_MOUNT_PATH: hf_volume,
-        DUMP_VOLUME_MOUNT_PATH: dump_volume,
+        REMOTE_MODEL_CACHE_DIR: hf_volume,
+        REMOTE_DUMP_DIR: dump_volume,
     },
     secrets=[HUGGINGFACE_ACCESS_TOKEN],
 )
-def run_experiment(
-    patch_target: str = DEFAULT_PATCH_TARGET,
-    request_count_configurations: list[int] | None = None,
-) -> dict[str, Any]:
-    if request_count_configurations is None:
-        request_count_configurations = []
-    request_count_configurations = _validate_request_count_configurations(
-        request_count_configurations
-    )
-    max_running_requests = max(request_count_configurations)
-    patch_local_dir, patch_remote_dir = _resolve_patch_paths(patch_target)
-    patch_remote_python_dir = os.path.join(patch_remote_dir, "python")
-
-    if patch_remote_python_dir not in sys.path:
-        sys.path.insert(0, patch_remote_python_dir)
-
+def run_experiment(patch_target: str) -> None:
+    request_counts = REQUEST_COUNTS
+    max_running_requests = max(request_counts)
+    patch_local_dir = LOCAL_PATCH_DIR_BY_TARGET[patch_target]
+    patch_remote_dir = REMOTE_PATCH_DIR_BY_TARGET[patch_target]
+    
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    session_dir = os.path.join(
-        DUMP_VOLUME_MOUNT_PATH,
-        f"dllm_observability_session_{patch_target}_{timestamp}",
-    )
+    session_dir = os.path.join(REMOTE_DUMP_DIR, f"session_{patch_target}_{timestamp}")
     os.makedirs(session_dir, exist_ok=True)
-
     server_log_path = os.path.join(session_dir, "server.log")
+    
     server_command = _build_server_command(
         max_running_requests,
     )
     server_process = None
-    server_log_thread = None
-    current_run_dir = None
-    current_request_count = None
+    
+    server_process, stdout_thread, stderr_thread = _launch_server(
+        server_log_path,
+        patch_remote_dir,
+        max_running_requests,
+    )
+    _wait_for_server_health(
+        process=server_process,
+        base_url=SGLANG_SERVER_BASE_URL,
+        timeout_seconds=SGLANG_STARTUP_TIMEOUT,
+    )
 
-    try:
+    summaries: list[dict[str, Any]] = []
+    for request_count in request_counts:
+        result_folder = f"{patch_target}_{request_count}"
+        result_folder_path = os.path.join(session_dir, result_folder)
+        os.makedirs(result_folder_path, exist_ok=True)
 
-        server_process, server_log_thread = _launch_server(
-            server_log_path,
-            patch_remote_dir,
-            max_running_requests,
+        results = asyncio.run(
+            _run_async_experiment(SGLANG_SERVER_BASE_URL, result_folder_path, request_count)
         )
-        _wait_for_server_health(
-            process=server_process,
-            base_url=BASE_URL,
-            timeout_seconds=SERVER_STARTUP_TIMEOUT_SECONDS,
+
+        summary = _write_summary(
+            run_dir=result_folder_path,
+            server_log_path=server_log_path,
+            results=results,
+            result_folder=result_folder,
+            result_folder_path=result_folder_path,
+            request_count=request_count,
+            patch_target=patch_target,
+            patch_local_dir=patch_local_dir,
+            patch_remote_dir=patch_remote_dir,
+            max_running_requests=max_running_requests,
+            server_command=server_command,
+        )
+        summaries.append(summary)
+        print(
+            f"Experiment summary written to {result_folder_path}/summary.json",
+            flush=True,
         )
 
-        summaries: list[dict[str, Any]] = []
-        for request_count in request_count_configurations:
-            current_request_count = request_count
-            result_folder = f"{patch_target}_{request_count}"
-            result_folder_path = os.path.join(DUMP_VOLUME_MOUNT_PATH, result_folder)
-            os.makedirs(result_folder_path, exist_ok=True)
-            current_run_dir = os.path.join(
-                result_folder_path,
-                f"dllm_observability_experiment_{timestamp}",
-            )
-            os.makedirs(current_run_dir, exist_ok=True)
-
-            results = asyncio.run(
-                _run_async_experiment(BASE_URL, current_run_dir, request_count)
-            )
-            summary = _write_summary(
-                run_dir=current_run_dir,
-                server_log_path=server_log_path,
-                results=results,
-                result_folder=result_folder,
-                result_folder_path=result_folder_path,
-                request_count=request_count,
-                patch_target=patch_target,
-                patch_local_dir=patch_local_dir,
-                patch_remote_dir=patch_remote_dir,
-                max_running_requests=max_running_requests,
-                server_command=server_command,
-            )
-            summaries.append(summary)
-            print(
-                f"Experiment summary written to {current_run_dir}/summary.json",
-                flush=True,
-            )
-
-        session_summary_path = os.path.join(session_dir, "session_summary.json")
-        session_summary = {
-            "ok": all(summary["ok"] for summary in summaries),
-            "session_dir": session_dir,
-            "session_summary_path": session_summary_path,
-            "server_log_path": server_log_path,
-            "base_url": BASE_URL,
-            "model_path": MODEL_PATH,
-            "dllm_algorithm": DLLM_ALGORITHM,
-            "patch_target": patch_target,
-            "patch_local_dir": patch_local_dir,
-            "patch_remote_dir": patch_remote_dir,
-            "request_count_configurations": request_count_configurations,
-            "max_running_requests": max_running_requests,
-            "server_command": shlex.join(server_command),
-            "runs": [
-                {
-                    "ok": summary["ok"],
-                    "request_count": summary["request_count"],
-                    "result_folder": summary["result_folder"],
-                    "result_folder_path": summary["result_folder_path"],
-                    "run_dir": summary["run_dir"],
-                    "summary_path": os.path.join(summary["run_dir"], "summary.json"),
-                    "failed_requests": summary["failed_requests"],
-                }
-                for summary in summaries
-            ],
-        }
-        _write_json(session_summary_path, session_summary)
-        print(f"Session summary written to {session_summary_path}", flush=True)
-        return session_summary
-    except Exception as exc:
-        run_error = {
-            "ok": False,
-            "session_dir": session_dir,
-            "server_log_path": server_log_path,
-            "request_count_configurations": request_count_configurations,
-            "current_request_count": current_request_count,
-            "current_run_dir": current_run_dir,
-            "max_running_requests": max_running_requests,
-            "patch_target": patch_target,
-            "patch_local_dir": patch_local_dir,
-            "patch_remote_dir": patch_remote_dir,
-            "server_command": shlex.join(server_command),
-            "error": {
-                "type": type(exc).__name__,
-                "message": str(exc),
-                "traceback": traceback.format_exc(),
-            },
-        }
-        _write_json(os.path.join(session_dir, "run_error.json"), run_error)
-        if current_run_dir is not None:
-            _write_json(os.path.join(current_run_dir, "run_error.json"), run_error)
-        raise
-    finally:
-        if server_process is not None:
-            _terminate_server(server_process)
-        if server_log_thread is not None:
-            server_log_thread.join(timeout=10)
-        dump_volume.commit()
+    session_summary_path = os.path.join(session_dir, "session_summary.json")
+    session_summary = {
+        "ok": all(summary["ok"] for summary in summaries),
+        "session_dir": session_dir,
+        "session_summary_path": session_summary_path,
+        "server_log_path": server_log_path,
+        "base_url": SGLANG_SERVER_BASE_URL,
+        "model_path": MODEL_PATH,
+        "dllm_algorithm": DLLM_ALGORITHM,
+        "patch_target": patch_target,
+        "patch_local_dir": patch_local_dir,
+        "patch_remote_dir": patch_remote_dir,
+        "request_count_configurations": request_counts,
+        "max_running_requests": max_running_requests,
+        "server_command": shlex.join(server_command),
+        "runs": [
+            {
+                "ok": summary["ok"],
+                "request_count": summary["request_count"],
+                "result_folder": summary["result_folder"],
+                "result_folder_path": summary["result_folder_path"],
+                "run_dir": summary["run_dir"],
+                "summary_path": os.path.join(summary["run_dir"], "summary.json"),
+                "failed_requests": summary["failed_requests"],
+            }
+            for summary in summaries
+        ],
+    }
+    _write_json(session_summary_path, session_summary)
+    print(f"Session summary written to {session_summary_path}", flush=True)
+    print(json.dumps(session_summary, indent=2))
+    dump_volume.commit()
 
 
 @app.local_entrypoint()
-def main(*args: str) -> None:
-    (
-        patch_target,
-        request_count_configurations,
-    ) = _parse_local_args(args)
-    summary = run_experiment.remote(
-        patch_target=patch_target,
-        request_count_configurations=request_count_configurations,
-    )
-    print(json.dumps(summary, indent=2))
-
-
-if __name__ == "__main__":
-    _parse_local_args(tuple(sys.argv[1:]))
+def main() -> None:
+    for patch_target in PATCH_CHOICES:
+        run_experiment.remote(patch_target=patch_target)
