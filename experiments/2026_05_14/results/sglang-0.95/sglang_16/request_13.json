@@ -1,0 +1,991 @@
+{
+  "ok": true,
+  "request_index": 13,
+  "prompt": "Human: A web service returns HTTP 500 errors only after a cache server restart. Logs show connection refused for 30 seconds and then normal traffic. Give a debugging plan and likely root cause.\nAssistant:",
+  "payload": {
+    "text": "Human: A web service returns HTTP 500 errors only after a cache server restart. Logs show connection refused for 30 seconds and then normal traffic. Give a debugging plan and likely root cause.\nAssistant:",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 512,
+      "ignore_eos": true
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.25,
+  "request_start_realtime": "2026-05-14T01:00:23.214",
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      30,
+      25,
+      28,
+      28,
+      27,
+      27,
+      29,
+      29,
+      30,
+      27,
+      24,
+      26,
+      27,
+      25,
+      32,
+      31
+    ],
+    "ttfb_seconds": 0.5292168690000096,
+    "tbb_seconds": [
+      1.0827624899999932,
+      0.9131893509999998,
+      1.031406129000004,
+      1.0367407200000116,
+      0.9627024979999987,
+      0.9148844419999875,
+      0.970967977000015,
+      0.9003697519999889,
+      0.9330210790000137,
+      0.8181104319999974,
+      0.7230562839999948,
+      0.7039028780000081,
+      0.6331245129999843,
+      0.4759732930000098,
+      0.5117353949999881,
+      0.362354603
+    ],
+    "dllm_block_completion_latencies": [
+      0.5292168690000096,
+      1.0827624899999932,
+      0.9131893509999998,
+      1.031406129000004,
+      1.0367407200000116,
+      0.9627024979999987,
+      0.9148844419999875,
+      0.970967977000015,
+      0.9003697519999889,
+      0.9330210790000137,
+      0.8181104319999974,
+      0.7230562839999948,
+      0.7039028780000081,
+      0.6331245129999843,
+      0.4759732930000098,
+      0.5117353949999881,
+      0.362354603
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      30,
+      25,
+      28,
+      28,
+      27,
+      27,
+      29,
+      29,
+      30,
+      27,
+      24,
+      26,
+      27,
+      25,
+      32,
+      31
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.5440539930000057,
+    "first_new_token_ttfb_seconds": 0.5440539930000057,
+    "block_ttfb_seconds": 0.5440539930000057,
+    "tbb_seconds": [
+      1.0826071729999853,
+      0.912853345000002,
+      1.0323515229999884,
+      1.0356144870000037,
+      0.9632122130000198,
+      0.9140696029999731,
+      0.9718975810000074,
+      0.8999691030000179,
+      0.9327403559999823,
+      0.8185616730000049,
+      0.7232474120000063,
+      0.7033450630000004,
+      0.6335225610000066,
+      0.4759300009999947,
+      0.5121227129999966,
+      0.36205415999998536
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.5440539930000057,
+      1.626661165999991,
+      2.539514510999993,
+      3.5718660339999815,
+      4.607480520999985,
+      5.570692734000005,
+      6.484762336999978,
+      7.4566599179999855,
+      8.356629021000003,
+      9.289369376999986,
+      10.10793104999999,
+      10.831178461999997,
+      11.534523524999997,
+      12.168046086000004,
+      12.643976086999999,
+      13.156098799999995,
+      13.51815295999998
+    ],
+    "e2e_seconds": 13.518362558999996
+  },
+  "token_metrics": {
+    "prompt_tokens": 45,
+    "completion_tokens": 512,
+    "total_tokens": 557,
+    "end_to_end_tokens_per_second": 41.203215076456964,
+    "total_tokens_per_second": 41.203215076456964,
+    "completion_tokens_per_second": 37.87440954963369,
+    "tokens_after_first_block": 493,
+    "generated_tokens_per_second_after_first_block": 37.998171347021774
+  },
+  "final_meta_info": {
+    "id": "3f2cfcbdbe874327ba3737b47b187254",
+    "finish_reason": {
+      "type": "length",
+      "length": 512
+    },
+    "prompt_tokens": 45,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 512,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      30,
+      25,
+      28,
+      28,
+      27,
+      27,
+      29,
+      29,
+      30,
+      27,
+      24,
+      26,
+      27,
+      25,
+      32,
+      31
+    ],
+    "dllm_block_completion_latencies": [
+      0.5292168690000096,
+      1.0827624899999932,
+      0.9131893509999998,
+      1.031406129000004,
+      1.0367407200000116,
+      0.9627024979999987,
+      0.9148844419999875,
+      0.970967977000015,
+      0.9003697519999889,
+      0.9330210790000137,
+      0.8181104319999974,
+      0.7230562839999948,
+      0.7039028780000081,
+      0.6331245129999843,
+      0.4759732930000098,
+      0.5117353949999881,
+      0.362354603
+    ],
+    "dp_rank": null,
+    "e2e_latency": 13.514364494999995
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.5440539930000057,
+      "output_token_count": 19,
+      "new_output_tokens": 19,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5292168690000096
+      ],
+      "forward_count_metric_count": 1,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 19,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1778720423.7580092
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.626661165999991,
+      "output_token_count": 51,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        1.0827624899999932
+      ],
+      "forward_count_metric_count": 2,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 51,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.539514510999993,
+      "output_token_count": 83,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.9131893509999998
+      ],
+      "forward_count_metric_count": 3,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 83,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 3.5718660339999815,
+      "output_token_count": 115,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        1.031406129000004
+      ],
+      "forward_count_metric_count": 4,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 115,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 4.607480520999985,
+      "output_token_count": 147,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        1.0367407200000116
+      ],
+      "forward_count_metric_count": 5,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 147,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 5.570692734000005,
+      "output_token_count": 179,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.9627024979999987
+      ],
+      "forward_count_metric_count": 6,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 179,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 6.484762336999978,
+      "output_token_count": 211,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.9148844419999875
+      ],
+      "forward_count_metric_count": 7,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   -",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 211,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 7.4566599179999855,
+      "output_token_count": 243,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.970967977000015
+      ],
+      "forward_count_metric_count": 8,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     -",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 243,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 8.356629021000003,
+      "output_token_count": 275,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.9003697519999889
+      ],
+      "forward_count_metric_count": 9,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 275,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 9.289369376999986,
+      "output_token_count": 307,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.9330210790000137
+      ],
+      "forward_count_metric_count": 10,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 307,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 10.10793104999999,
+      "output_token_count": 339,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.8181104319999974
+      ],
+      "forward_count_metric_count": 11,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 339,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 10.831178461999997,
+      "output_token_count": 371,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.7230562839999948
+      ],
+      "forward_count_metric_count": 12,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made before the restart.\n   - Ensure compatibility between web service and cache server versions.\n\n7. **Monitor Resource Usage**\n   - Check CPU,",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 371,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974,
+          0.7230562839999948
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 11.534523524999997,
+      "output_token_count": 403,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.7039028780000081
+      ],
+      "forward_count_metric_count": 13,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made before the restart.\n   - Ensure compatibility between web service and cache server versions.\n\n7. **Monitor Resource Usage**\n   - Check CPU, memory, and disk usage on the cache server after restart.\n   - Look for resource exhaustion that might cause service degradation.\n\n8. **Check for",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 403,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27,
+          24,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974,
+          0.7230562839999948,
+          0.7039028780000081
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 12.168046086000004,
+      "output_token_count": 435,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.6331245129999843
+      ],
+      "forward_count_metric_count": 14,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made before the restart.\n   - Ensure compatibility between web service and cache server versions.\n\n7. **Monitor Resource Usage**\n   - Check CPU, memory, and disk usage on the cache server after restart.\n   - Look for resource exhaustion that might cause service degradation.\n\n8. **Check for External Dependencies**\n   - If the cache server depends on other services (e.g., database, Redis), verify they are up and responsive.\n\n",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 435,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27,
+          24,
+          26,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974,
+          0.7230562839999948,
+          0.7039028780000081,
+          0.6331245129999843
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 12.643976086999999,
+      "output_token_count": 467,
+      "new_output_tokens": 32,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.4759732930000098
+      ],
+      "forward_count_metric_count": 15,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made before the restart.\n   - Ensure compatibility between web service and cache server versions.\n\n7. **Monitor Resource Usage**\n   - Check CPU, memory, and disk usage on the cache server after restart.\n   - Look for resource exhaustion that might cause service degradation.\n\n8. **Check for External Dependencies**\n   - If the cache server depends on other services (e.g., database, Redis), verify they are up and responsive.\n\n---\n\n### Likely Root Cause\n\n**The cache server failed to bind to the expected port after restart due to a misconfiguration (e.g., incorrect",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 467,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27,
+          24,
+          26,
+          27,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974,
+          0.7230562839999948,
+          0.7039028780000081,
+          0.6331245129999843,
+          0.4759732930000098
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 15,
+      "elapsed_seconds": 13.156098799999995,
+      "output_token_count": 499,
+      "new_output_tokens": 32,
+      "block_metric_count": 16,
+      "new_block_latencies": [
+        0.5117353949999881
+      ],
+      "forward_count_metric_count": 16,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made before the restart.\n   - Ensure compatibility between web service and cache server versions.\n\n7. **Monitor Resource Usage**\n   - Check CPU, memory, and disk usage on the cache server after restart.\n   - Look for resource exhaustion that might cause service degradation.\n\n8. **Check for External Dependencies**\n   - If the cache server depends on other services (e.g., database, Redis), verify they are up and responsive.\n\n---\n\n### Likely Root Cause\n\n**The cache server failed to bind to the expected port after restart due to a misconfiguration (e.g., incorrect `bind-address`, port in use, or permission issue), causing it to start but not accept connections. This results in \"connection refused\" errors from the web",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": null,
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 499,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27,
+          24,
+          26,
+          27,
+          25,
+          32
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974,
+          0.7230562839999948,
+          0.7039028780000081,
+          0.6331245129999843,
+          0.4759732930000098,
+          0.5117353949999881
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 16,
+      "elapsed_seconds": 13.51815295999998,
+      "output_token_count": 512,
+      "new_output_tokens": 13,
+      "block_metric_count": 17,
+      "new_block_latencies": [
+        0.362354603
+      ],
+      "forward_count_metric_count": 17,
+      "text": "### Debugging Plan\n\n1. **Verify Cache Server Restart Process**\n   - Confirm the cache server was restarted properly (e.g., no downtime, correct configuration).\n   - Check if the cache server started successfully and bound to the correct interface/port.\n\n2. **Review Cache Server Logs**\n   - Examine logs for:\n     - Errors during startup (e.g., port in use, configuration issues).\n     - Warnings or exceptions related to accepting connections.\n     - Any crashes or restarts.\n   - Look for traces of \"connection refused\" or \"socket error\" before and after restart.\n\n3. **Check Network Connectivity**\n   - Ensure the web service can reach the cache server:\n     - Use `telnet` or `nc` to test connectivity to the cache server\u2019s port.\n     - Verify firewall rules on both servers allow the traffic.\n     - Check for network latency or timeouts.\n\n4. **Inspect Web Service Logs**\n   - Correlate HTTP 500 errors with cache server events:\n     - Look for stack traces or error messages indicating cache server issues.\n     - Check if the web service attempts to connect to the cache and fails.\n\n5. **Test Cache Server Independ**\n   - Manually test the cache server with a simple client (e.g., `curl` or a custom script).\n   - Simulate load to see if it handles requests correctly.\n\n6. **Review Configuration Changes**\n   - Check if any configuration changes (e.g., cache size, TTL, eviction policy) were made before the restart.\n   - Ensure compatibility between web service and cache server versions.\n\n7. **Monitor Resource Usage**\n   - Check CPU, memory, and disk usage on the cache server after restart.\n   - Look for resource exhaustion that might cause service degradation.\n\n8. **Check for External Dependencies**\n   - If the cache server depends on other services (e.g., database, Redis), verify they are up and responsive.\n\n---\n\n### Likely Root Cause\n\n**The cache server failed to bind to the expected port after restart due to a misconfiguration (e.g., incorrect `bind-address`, port in use, or permission issue), causing it to start but not accept connections. This results in \"connection refused\" errors from the web service, which then returns HTTP 500 errors when attempting",
+      "meta_info": {
+        "id": "3f2cfcbdbe874327ba3737b47b187254",
+        "finish_reason": {
+          "type": "length",
+          "length": 512
+        },
+        "prompt_tokens": 45,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 512,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          30,
+          25,
+          28,
+          28,
+          27,
+          27,
+          29,
+          29,
+          30,
+          27,
+          24,
+          26,
+          27,
+          25,
+          32,
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.5292168690000096,
+          1.0827624899999932,
+          0.9131893509999998,
+          1.031406129000004,
+          1.0367407200000116,
+          0.9627024979999987,
+          0.9148844419999875,
+          0.970967977000015,
+          0.9003697519999889,
+          0.9330210790000137,
+          0.8181104319999974,
+          0.7230562839999948,
+          0.7039028780000081,
+          0.6331245129999843,
+          0.4759732930000098,
+          0.5117353949999881,
+          0.362354603
+        ],
+        "dp_rank": null,
+        "e2e_latency": 13.514364494999995
+      }
+    }
+  ]
+}

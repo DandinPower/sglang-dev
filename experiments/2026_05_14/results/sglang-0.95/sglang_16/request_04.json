@@ -1,0 +1,991 @@
+{
+  "ok": true,
+  "request_index": 4,
+  "prompt": "Human: Write a Python function that takes a list of integers and returns the second-largest unique value. Include behavior for empty lists or lists without two unique values.\nAssistant:",
+  "payload": {
+    "text": "Human: Write a Python function that takes a list of integers and returns the second-largest unique value. Include behavior for empty lists or lists without two unique values.\nAssistant:",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 512,
+      "ignore_eos": true
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.0,
+  "request_start_realtime": "2026-05-14T01:00:20.964",
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      8,
+      11,
+      7,
+      6,
+      19,
+      11,
+      5,
+      12,
+      13,
+      19,
+      11,
+      11,
+      12,
+      19,
+      14,
+      20
+    ],
+    "ttfb_seconds": 0.2834525830000132,
+    "tbb_seconds": [
+      0.16004291199999443,
+      0.2492476769999996,
+      0.1742927189999932,
+      0.11434194400001729,
+      0.5161924880000015,
+      0.33402260500000125,
+      0.13192926499999658,
+      0.3796338800000001,
+      0.43311736699999415,
+      0.6617084559999853,
+      0.37769212200001334,
+      0.39381114599999023,
+      0.41144342500001585,
+      0.6794800119999991,
+      0.5029517959999907,
+      0.7482910980000099
+    ],
+    "dllm_block_completion_latencies": [
+      0.2834525830000132,
+      0.16004291199999443,
+      0.2492476769999996,
+      0.1742927189999932,
+      0.11434194400001729,
+      0.5161924880000015,
+      0.33402260500000125,
+      0.13192926499999658,
+      0.3796338800000001,
+      0.43311736699999415,
+      0.6617084559999853,
+      0.37769212200001334,
+      0.39381114599999023,
+      0.41144342500001585,
+      0.6794800119999991,
+      0.5029517959999907,
+      0.7482910980000099
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      8,
+      11,
+      7,
+      6,
+      19,
+      11,
+      5,
+      12,
+      13,
+      19,
+      11,
+      11,
+      12,
+      19,
+      14,
+      20
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.2997810969999932,
+    "first_new_token_ttfb_seconds": 0.2997810969999932,
+    "block_ttfb_seconds": 0.2997810969999932,
+    "tbb_seconds": [
+      0.160597977000009,
+      0.2493161099999952,
+      0.17411998099998982,
+      0.11455712400001516,
+      0.5161711869999976,
+      0.3334777099999826,
+      0.13278643500001408,
+      0.37904311200000507,
+      0.4338142889999972,
+      0.6612531449999892,
+      0.3778580900000179,
+      0.39351745299998697,
+      0.4117663899999968,
+      0.6793470660000196,
+      0.5041410599999949,
+      0.7473913869999933
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.2997810969999932,
+      0.4603790740000022,
+      0.7096951839999974,
+      0.8838151649999872,
+      0.9983722890000024,
+      1.514543476,
+      1.8480211859999827,
+      1.9808076209999967,
+      2.359850733000002,
+      2.793665021999999,
+      3.454918166999988,
+      3.832776257000006,
+      4.226293709999993,
+      4.63806009999999,
+      5.3174071660000095,
+      5.821548226000004,
+      6.568939612999998
+    ],
+    "e2e_seconds": 6.569150482999987
+  },
+  "token_metrics": {
+    "prompt_tokens": 35,
+    "completion_tokens": 512,
+    "total_tokens": 547,
+    "end_to_end_tokens_per_second": 83.26799658731476,
+    "total_tokens_per_second": 83.26799658731476,
+    "completion_tokens_per_second": 77.94006261920504,
+    "tokens_after_first_block": 483,
+    "generated_tokens_per_second_after_first_block": 77.04124135332938
+  },
+  "final_meta_info": {
+    "id": "d8736389fa1c41e3a484e0bddeba9203",
+    "finish_reason": {
+      "type": "length",
+      "length": 512
+    },
+    "prompt_tokens": 35,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 512,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      8,
+      11,
+      7,
+      6,
+      19,
+      11,
+      5,
+      12,
+      13,
+      19,
+      11,
+      11,
+      12,
+      19,
+      14,
+      20
+    ],
+    "dllm_block_completion_latencies": [
+      0.2834525830000132,
+      0.16004291199999443,
+      0.2492476769999996,
+      0.1742927189999932,
+      0.11434194400001729,
+      0.5161924880000015,
+      0.33402260500000125,
+      0.13192926499999658,
+      0.3796338800000001,
+      0.43311736699999415,
+      0.6617084559999853,
+      0.37769212200001334,
+      0.39381114599999023,
+      0.41144342500001585,
+      0.6794800119999991,
+      0.5029517959999907,
+      0.7482910980000099
+    ],
+    "dp_rank": null,
+    "e2e_latency": 6.565205990999999
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.2997810969999932,
+      "output_token_count": 29,
+      "new_output_tokens": 29,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2834525830000132
+      ],
+      "forward_count_metric_count": 1,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(n",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 29,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1778720421.264175
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 0.4603790740000022,
+      "output_token_count": 61,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.16004291199999443
+      ],
+      "forward_count_metric_count": 2,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 61,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 0.7096951839999974,
+      "output_token_count": 93,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2492476769999996
+      ],
+      "forward_count_metric_count": 3,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n   ",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 93,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 0.8838151649999872,
+      "output_token_count": 125,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.1742927189999932
+      ],
+      "forward_count_metric_count": 4,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 125,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 0.9983722890000024,
+      "output_token_count": 157,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.11434194400001729
+      ],
+      "forward_count_metric_count": 5,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_l",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 157,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 1.514543476,
+      "output_token_count": 189,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.5161924880000015
+      ],
+      "forward_count_metric_count": 6,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 189,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 1.8480211859999827,
+      "output_token_count": 221,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.33402260500000125
+      ],
+      "forward_count_metric_count": 7,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 221,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 1.9808076209999967,
+      "output_token_count": 253,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.13192926499999658
+      ],
+      "forward_count_metric_count": 8,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 253,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 2.359850733000002,
+      "output_token_count": 285,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.3796338800000001
+      ],
+      "forward_count_metric_count": 9,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n   ",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 285,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 2.793665021999999,
+      "output_token_count": 317,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.43311736699999415
+      ],
+      "forward_count_metric_count": 10,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 317,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 3.454918166999988,
+      "output_token_count": 349,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.6617084559999853
+      ],
+      "forward_count_metric_count": 11,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 349,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 3.832776257000006,
+      "output_token_count": 381,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.37769212200001334
+      ],
+      "forward_count_metric_count": 12,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print(second_largest_unique([10, 5]))          # Expected: 5\n    \n    # Edge cases\n    print(second_largest",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 381,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853,
+          0.37769212200001334
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 4.226293709999993,
+      "output_token_count": 413,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.39381114599999023
+      ],
+      "forward_count_metric_count": 13,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print(second_largest_unique([10, 5]))          # Expected: 5\n    \n    # Edge cases\n    print(second_largest_unique([]))               # Expected: None\n    print(second_largest_unique([7, 7, 7]))        # Expected: None\n   ",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 413,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19,
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853,
+          0.37769212200001334,
+          0.39381114599999023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 4.63806009999999,
+      "output_token_count": 445,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.41144342500001585
+      ],
+      "forward_count_metric_count": 14,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print(second_largest_unique([10, 5]))          # Expected: 5\n    \n    # Edge cases\n    print(second_largest_unique([]))               # Expected: None\n    print(second_largest_unique([7, 7, 7]))        # Expected: None\n    print(second_largest_unique([42]))             # Expected: None\n    \n    # Negative numbers\n    print(second_largest_unique([-1",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 445,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19,
+          11,
+          11,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853,
+          0.37769212200001334,
+          0.39381114599999023,
+          0.41144342500001585
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 5.3174071660000095,
+      "output_token_count": 477,
+      "new_output_tokens": 32,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.6794800119999991
+      ],
+      "forward_count_metric_count": 15,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print(second_largest_unique([10, 5]))          # Expected: 5\n    \n    # Edge cases\n    print(second_largest_unique([]))               # Expected: None\n    print(second_largest_unique([7, 7, 7]))        # Expected: None\n    print(second_largest_unique([42]))             # Expected: None\n    \n    # Negative numbers\n    print(second_largest_unique([-1, -5, -2]))    # Expected: -2\n    print(second_largest_unique([0, -1, 5, -3",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 477,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19,
+          11,
+          11,
+          12,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853,
+          0.37769212200001334,
+          0.39381114599999023,
+          0.41144342500001585,
+          0.6794800119999991
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 15,
+      "elapsed_seconds": 5.821548226000004,
+      "output_token_count": 509,
+      "new_output_tokens": 32,
+      "block_metric_count": 16,
+      "new_block_latencies": [
+        0.5029517959999907
+      ],
+      "forward_count_metric_count": 16,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print(second_largest_unique([10, 5]))          # Expected: 5\n    \n    # Edge cases\n    print(second_largest_unique([]))               # Expected: None\n    print(second_largest_unique([7, 7, 7]))        # Expected: None\n    print(second_largest_unique([42]))             # Expected: None\n    \n    # Negative numbers\n    print(second_largest_unique([-1, -5, -2]))    # Expected: -2\n    print(second_largest_unique([0, -1, 5, -3]))  # Expected: 0\n```\n\n**Key features of this implementation:**\n\n1. **Handles empty lists**: Returns `None` for",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": null,
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 509,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19,
+          11,
+          11,
+          12,
+          19,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853,
+          0.37769212200001334,
+          0.39381114599999023,
+          0.41144342500001585,
+          0.6794800119999991,
+          0.5029517959999907
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 16,
+      "elapsed_seconds": 6.568939612999998,
+      "output_token_count": 512,
+      "new_output_tokens": 3,
+      "block_metric_count": 17,
+      "new_block_latencies": [
+        0.7482910980000099
+      ],
+      "forward_count_metric_count": 17,
+      "text": " Here's a Python function that finds the second-largest unique value in a list of integers:\n\n```python\ndef second_largest_unique(numbers):\n    \"\"\"\n    Returns the second-largest unique value in a list of integers.\n    \n    Args:\n        numbers (list): A list of integers\n        \n    Returns:\n        int or None: The second-largest unique value, or None if there isn't one\n        \n    Examples:\n        >>> second_largest_unique([1, 2, 3, 4, 5])\n        4\n        >>> second_largest_unique([5, 5, 5])\n        None\n        >>> second_largest_unique([])\n        None\n        >>> second_largest_unique([10, 5])\n        5\n    \"\"\"\n    # Handle empty list\n    if not numbers:\n        return None\n    \n    # Get unique values and sort in descending order\n    unique_numbers = sorted(set(numbers), reverse=True)\n    \n    # Check if we have at least 2 unique values\n    if len(unique_numbers) < 2:\n        return None\n    \n    # Return the second largest (index 1)\n    return unique_numbers[1]\n\n# Test cases\nif __name__ == \"__main__\":\n    # Normal cases\n    print(second_largest_unique([1, 2, 3, 4, 5]))  # Expected: 4\n    print(second_largest_unique([5, 1, 3, 9, 2]))  # Expected: 5\n    print(second_largest_unique([10, 5]))          # Expected: 5\n    \n    # Edge cases\n    print(second_largest_unique([]))               # Expected: None\n    print(second_largest_unique([7, 7, 7]))        # Expected: None\n    print(second_largest_unique([42]))             # Expected: None\n    \n    # Negative numbers\n    print(second_largest_unique([-1, -5, -2]))    # Expected: -2\n    print(second_largest_unique([0, -1, 5, -3]))  # Expected: 0\n```\n\n**Key features of this implementation:**\n\n1. **Handles empty lists**: Returns `None` for empty input\n",
+      "meta_info": {
+        "id": "d8736389fa1c41e3a484e0bddeba9203",
+        "finish_reason": {
+          "type": "length",
+          "length": 512
+        },
+        "prompt_tokens": 35,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 512,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          8,
+          11,
+          7,
+          6,
+          19,
+          11,
+          5,
+          12,
+          13,
+          19,
+          11,
+          11,
+          12,
+          19,
+          14,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.2834525830000132,
+          0.16004291199999443,
+          0.2492476769999996,
+          0.1742927189999932,
+          0.11434194400001729,
+          0.5161924880000015,
+          0.33402260500000125,
+          0.13192926499999658,
+          0.3796338800000001,
+          0.43311736699999415,
+          0.6617084559999853,
+          0.37769212200001334,
+          0.39381114599999023,
+          0.41144342500001585,
+          0.6794800119999991,
+          0.5029517959999907,
+          0.7482910980000099
+        ],
+        "dp_rank": null,
+        "e2e_latency": 6.565205990999999
+      }
+    }
+  ]
+}

@@ -1,0 +1,991 @@
+{
+  "ok": true,
+  "request_index": 15,
+  "prompt": "Human: Explain how speculative decoding can reduce language model latency. Include the roles of the draft model and verifier, why rejected tokens matter, and one situation where the speedup may be limited.\nAssistant:",
+  "payload": {
+    "text": "Human: Explain how speculative decoding can reduce language model latency. Include the roles of the draft model and verifier, why rejected tokens matter, and one situation where the speedup may be limited.\nAssistant:",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 512,
+      "ignore_eos": true
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.75,
+  "request_start_realtime": "2026-05-14T01:05:42.808",
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      31,
+      28,
+      21,
+      27,
+      27,
+      30,
+      24,
+      29,
+      23,
+      26,
+      31,
+      21,
+      26,
+      2,
+      2,
+      2
+    ],
+    "ttfb_seconds": 0.552248598999995,
+    "tbb_seconds": [
+      1.0147486270000172,
+      0.9179549619999818,
+      0.6995423040000048,
+      0.8881815360000189,
+      0.8026910289999876,
+      0.8895431859999974,
+      0.6718218190000016,
+      0.7718774939999946,
+      0.5240026730000125,
+      0.5529911980000008,
+      0.5681420420000052,
+      0.3639675519999912,
+      0.39931625899998835,
+      0.019848969000008765,
+      0.022180642999984457,
+      0.023374860000018316
+    ],
+    "dllm_block_completion_latencies": [
+      0.552248598999995,
+      1.0147486270000172,
+      0.9179549619999818,
+      0.6995423040000048,
+      0.8881815360000189,
+      0.8026910289999876,
+      0.8895431859999974,
+      0.6718218190000016,
+      0.7718774939999946,
+      0.5240026730000125,
+      0.5529911980000008,
+      0.5681420420000052,
+      0.3639675519999912,
+      0.39931625899998835,
+      0.019848969000008765,
+      0.022180642999984457,
+      0.023374860000018316
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      31,
+      28,
+      21,
+      27,
+      27,
+      30,
+      24,
+      29,
+      23,
+      26,
+      31,
+      21,
+      26,
+      2,
+      2,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.5750826689999826,
+    "first_new_token_ttfb_seconds": 0.5750826689999826,
+    "block_ttfb_seconds": 0.5750826689999826,
+    "tbb_seconds": [
+      1.0147996110000008,
+      0.9181823250000036,
+      0.6994372179999857,
+      0.8880901410000206,
+      0.8039868639999952,
+      0.8895425849999867,
+      0.6708802750000018,
+      0.7718238110000186,
+      0.5234932639999954,
+      0.553386541000009,
+      0.5678295339999977,
+      0.36414970199999175,
+      0.3993609400000082,
+      0.019755004999979064,
+      0.022023833000019977,
+      0.028768926999987343
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.5750826689999826,
+      1.5898822799999834,
+      2.508064604999987,
+      3.2075018229999728,
+      4.095591963999993,
+      4.899578827999989,
+      5.789121412999975,
+      6.460001687999977,
+      7.231825498999996,
+      7.755318762999991,
+      8.308705304,
+      8.876534837999998,
+      9.24068453999999,
+      9.640045479999998,
+      9.659800484999977,
+      9.681824317999997,
+      9.710593244999984
+    ],
+    "e2e_seconds": 9.710711981999992
+  },
+  "token_metrics": {
+    "prompt_tokens": 42,
+    "completion_tokens": 512,
+    "total_tokens": 554,
+    "end_to_end_tokens_per_second": 57.050399705696925,
+    "total_tokens_per_second": 57.050399705696925,
+    "completion_tokens_per_second": 52.72527915039139,
+    "tokens_after_first_block": 490,
+    "generated_tokens_per_second_after_first_block": 53.63615173206836
+  },
+  "final_meta_info": {
+    "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+    "finish_reason": {
+      "type": "length",
+      "length": 512
+    },
+    "prompt_tokens": 42,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 512,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      31,
+      28,
+      21,
+      27,
+      27,
+      30,
+      24,
+      29,
+      23,
+      26,
+      31,
+      21,
+      26,
+      2,
+      2,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.552248598999995,
+      1.0147486270000172,
+      0.9179549619999818,
+      0.6995423040000048,
+      0.8881815360000189,
+      0.8026910289999876,
+      0.8895431859999974,
+      0.6718218190000016,
+      0.7718774939999946,
+      0.5240026730000125,
+      0.5529911980000008,
+      0.5681420420000052,
+      0.3639675519999912,
+      0.39931625899998835,
+      0.019848969000008765,
+      0.022180642999984457,
+      0.023374860000018316
+    ],
+    "dp_rank": null,
+    "e2e_latency": 9.702298393999996
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.5750826689999826,
+      "output_token_count": 22,
+      "new_output_tokens": 22,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.552248598999995
+      ],
+      "forward_count_metric_count": 1,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 22,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1778720743.3833005
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.5898822799999834,
+      "output_token_count": 54,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        1.0147486270000172
+      ],
+      "forward_count_metric_count": 2,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 54,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.508064604999987,
+      "output_token_count": 86,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.9179549619999818
+      ],
+      "forward_count_metric_count": 3,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 86,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 3.2075018229999728,
+      "output_token_count": 118,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.6995423040000048
+      ],
+      "forward_count_metric_count": 4,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 118,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 4.095591963999993,
+      "output_token_count": 150,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.8881815360000189
+      ],
+      "forward_count_metric_count": 5,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 150,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 4.899578827999989,
+      "output_token_count": 182,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.8026910289999876
+      ],
+      "forward_count_metric_count": 6,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 182,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 5.789121412999975,
+      "output_token_count": 214,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.8895431859999974
+      ],
+      "forward_count_metric_count": 7,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 214,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 6.460001687999977,
+      "output_token_count": 246,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.6718218190000016
+      ],
+      "forward_count_metric_count": 8,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 246,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 7.231825498999996,
+      "output_token_count": 278,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.7718774939999946
+      ],
+      "forward_count_metric_count": 9,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 278,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 7.755318762999991,
+      "output_token_count": 310,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.5240026730000125
+      ],
+      "forward_count_metric_count": 10,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 310,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 8.308705304,
+      "output_token_count": 342,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.5529911980000008
+      ],
+      "forward_count_metric_count": 11,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally,",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 342,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 8.876534837999998,
+      "output_token_count": 374,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.5681420420000052
+      ],
+      "forward_count_metric_count": 12,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally, if the draft model is too small or lacks sufficient capacity, it may fail to generate diverse enough candidates to satisfy the verifier\u2019s requirements, reducing the effectiveness of",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 374,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26,
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008,
+          0.5681420420000052
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 9.24068453999999,
+      "output_token_count": 406,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.3639675519999912
+      ],
+      "forward_count_metric_count": 13,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally, if the draft model is too small or lacks sufficient capacity, it may fail to generate diverse enough candidates to satisfy the verifier\u2019s requirements, reducing the effectiveness of parallelism.\n\nIn summary, speculative decoding reduces latency by using a draft model to quickly generate candidate sequences and a verifier to assess their quality. Re",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 406,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26,
+          31,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008,
+          0.5681420420000052,
+          0.3639675519999912
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 9.640045479999998,
+      "output_token_count": 438,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.39931625899998835
+      ],
+      "forward_count_metric_count": 14,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally, if the draft model is too small or lacks sufficient capacity, it may fail to generate diverse enough candidates to satisfy the verifier\u2019s requirements, reducing the effectiveness of parallelism.\n\nIn summary, speculative decoding reduces latency by using a draft model to quickly generate candidate sequences and a verifier to assess their quality. Rejected tokens help prune computation, but the speedup depends on the quality of the draft model.",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 438,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26,
+          31,
+          21,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008,
+          0.5681420420000052,
+          0.3639675519999912,
+          0.39931625899998835
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 9.659800484999977,
+      "output_token_count": 470,
+      "new_output_tokens": 32,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.019848969000008765
+      ],
+      "forward_count_metric_count": 15,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally, if the draft model is too small or lacks sufficient capacity, it may fail to generate diverse enough candidates to satisfy the verifier\u2019s requirements, reducing the effectiveness of parallelism.\n\nIn summary, speculative decoding reduces latency by using a draft model to quickly generate candidate sequences and a verifier to assess their quality. Rejected tokens help prune computation, but the speedup depends on the quality of the draft model.",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 470,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26,
+          31,
+          21,
+          26,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008,
+          0.5681420420000052,
+          0.3639675519999912,
+          0.39931625899998835,
+          0.019848969000008765
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 15,
+      "elapsed_seconds": 9.681824317999997,
+      "output_token_count": 502,
+      "new_output_tokens": 32,
+      "block_metric_count": 16,
+      "new_block_latencies": [
+        0.022180642999984457
+      ],
+      "forward_count_metric_count": 16,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally, if the draft model is too small or lacks sufficient capacity, it may fail to generate diverse enough candidates to satisfy the verifier\u2019s requirements, reducing the effectiveness of parallelism.\n\nIn summary, speculative decoding reduces latency by using a draft model to quickly generate candidate sequences and a verifier to assess their quality. Rejected tokens help prune computation, but the speedup depends on the quality of the draft model.",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": null,
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 502,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26,
+          31,
+          21,
+          26,
+          2,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008,
+          0.5681420420000052,
+          0.3639675519999912,
+          0.39931625899998835,
+          0.019848969000008765,
+          0.022180642999984457
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 16,
+      "elapsed_seconds": 9.710593244999984,
+      "output_token_count": 512,
+      "new_output_tokens": 10,
+      "block_metric_count": 17,
+      "new_block_latencies": [
+        0.023374860000018316
+      ],
+      "forward_count_metric_count": 17,
+      "text": "Speculative decoding is a technique used to reduce the latency of language model inference by generating multiple hypotheses simultaneously and selectively committing the most promising one. It improves efficiency by leveraging parallelism and early exit mechanisms.\n\nIn this approach, two models are typically involved:\n\n1. **Draft Model**: This is a smaller, faster model that generates a draft sequence of tokens. It acts quickly and produces a candidate output, but its output may be incorrect or incomplete.\n\n2. **Verifier Model**: This is a larger, slower model that evaluates the draft sequence generated by the draft model. It checks whether the draft is coherent, grammatically correct, and consistent with the input. If the verifier accepts the draft, it is considered valid and used as the final output. If not, the draft is rejected.\n\nThe key insight is that many drafts generated by the draft model are plausible and can be accepted by the verifier. By running these drafts in parallel, the system can quickly identify a valid output without waiting for the slower model to generate the full sequence.\n\n**Why rejected tokens matter**: Rejected tokens indicate that the draft model produced an invalid or incoherent sequence. These drafts are discarded, freeing up computational resources. This rejection process is crucial because it allows the system to focus only on promising candidates, reducing the number of tokens that need to be generated and evaluated.\n\n**Situation where speedup may be limited**: The speedup from speculative decoding can be limited when the draft model consistently produces low-quality or nonsensical outputs. In such cases, the verifier may reject most drafts, and the system may end up generating many tokens before finding a valid one. Additionally, if the draft model is too small or lacks sufficient capacity, it may fail to generate diverse enough candidates to satisfy the verifier\u2019s requirements, reducing the effectiveness of parallelism.\n\nIn summary, speculative decoding reduces latency by using a draft model to quickly generate candidate sequences and a verifier to assess their quality. Rejected tokens help prune computation, but the speedup depends on the quality of the draft model.",
+      "meta_info": {
+        "id": "e9ef5b2f7ad747f485aeb9927dc5542a",
+        "finish_reason": {
+          "type": "length",
+          "length": 512
+        },
+        "prompt_tokens": 42,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 512,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          31,
+          28,
+          21,
+          27,
+          27,
+          30,
+          24,
+          29,
+          23,
+          26,
+          31,
+          21,
+          26,
+          2,
+          2,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.552248598999995,
+          1.0147486270000172,
+          0.9179549619999818,
+          0.6995423040000048,
+          0.8881815360000189,
+          0.8026910289999876,
+          0.8895431859999974,
+          0.6718218190000016,
+          0.7718774939999946,
+          0.5240026730000125,
+          0.5529911980000008,
+          0.5681420420000052,
+          0.3639675519999912,
+          0.39931625899998835,
+          0.019848969000008765,
+          0.022180642999984457,
+          0.023374860000018316
+        ],
+        "dp_rank": null,
+        "e2e_latency": 9.702298393999996
+      }
+    }
+  ]
+}

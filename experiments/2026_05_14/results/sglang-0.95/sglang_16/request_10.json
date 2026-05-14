@@ -1,0 +1,991 @@
+{
+  "ok": true,
+  "request_index": 10,
+  "prompt": "Human: A warehouse packs orders with two stations: picking and labeling. Picking averages 90 seconds per order and labeling averages 45 seconds. Explain the bottleneck, estimate throughput per hour, and suggest two operational improvements.\nAssistant:",
+  "payload": {
+    "text": "Human: A warehouse packs orders with two stations: picking and labeling. Picking averages 90 seconds per order and labeling averages 45 seconds. Explain the bottleneck, estimate throughput per hour, and suggest two operational improvements.\nAssistant:",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 512,
+      "ignore_eos": true
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.5,
+  "request_start_realtime": "2026-05-14T01:00:22.464",
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      19,
+      25,
+      12,
+      29,
+      23,
+      24,
+      19,
+      24,
+      26,
+      26,
+      8,
+      21,
+      29,
+      30,
+      32,
+      33
+    ],
+    "ttfb_seconds": 0.4654795489999799,
+    "tbb_seconds": [
+      0.6243307260000108,
+      0.8958471260000067,
+      0.41771137999998587,
+      1.0458088500000144,
+      0.855834107999982,
+      0.8952409089999946,
+      0.6894839760000195,
+      0.8010162239999943,
+      0.8785371680000083,
+      0.8566763059999971,
+      0.22168396199998597,
+      0.6423182690000147,
+      0.8926045219999992,
+      0.9047684329999868,
+      0.9459673180000152,
+      0.7870166729999823
+    ],
+    "dllm_block_completion_latencies": [
+      0.4654795489999799,
+      0.6243307260000108,
+      0.8958471260000067,
+      0.41771137999998587,
+      1.0458088500000144,
+      0.855834107999982,
+      0.8952409089999946,
+      0.6894839760000195,
+      0.8010162239999943,
+      0.8785371680000083,
+      0.8566763059999971,
+      0.22168396199998597,
+      0.6423182690000147,
+      0.8926045219999992,
+      0.9047684329999868,
+      0.9459673180000152,
+      0.7870166729999823
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      19,
+      25,
+      12,
+      29,
+      23,
+      24,
+      19,
+      24,
+      26,
+      26,
+      8,
+      21,
+      29,
+      30,
+      32,
+      33
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.48140248300001076,
+    "first_new_token_ttfb_seconds": 0.48140248300001076,
+    "block_ttfb_seconds": 0.48140248300001076,
+    "tbb_seconds": [
+      0.6237904109999874,
+      0.8964316340000096,
+      0.4169785059999924,
+      1.0462466090000078,
+      0.8571172869999941,
+      0.8944118919999937,
+      0.6890205539999954,
+      0.8010539360000166,
+      0.8790231600000027,
+      0.8607213939999951,
+      0.2171288010000012,
+      0.6420852079999975,
+      0.8923260800000037,
+      0.9059698769999898,
+      0.9499064900000178,
+      0.7830101189999823
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.48140248300001076,
+      1.1051928939999982,
+      2.001624528000008,
+      2.418603034,
+      3.464849643000008,
+      4.321966930000002,
+      5.216378821999996,
+      5.905399375999991,
+      6.706453312000008,
+      7.5854764720000105,
+      8.446197866000006,
+      8.663326667000007,
+      9.305411875000004,
+      10.197737955000008,
+      11.103707831999998,
+      12.053614322000016,
+      12.836624440999998
+    ],
+    "e2e_seconds": 12.836762657000008
+  },
+  "token_metrics": {
+    "prompt_tokens": 49,
+    "completion_tokens": 512,
+    "total_tokens": 561,
+    "end_to_end_tokens_per_second": 43.702607502373766,
+    "total_tokens_per_second": 43.702607502373766,
+    "completion_tokens_per_second": 39.88544570626625,
+    "tokens_after_first_block": 497,
+    "generated_tokens_per_second_after_first_block": 40.22545623929782
+  },
+  "final_meta_info": {
+    "id": "10a8f7330c854de0b6325fc2ec763fb9",
+    "finish_reason": {
+      "type": "length",
+      "length": 512
+    },
+    "prompt_tokens": 49,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 512,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      19,
+      25,
+      12,
+      29,
+      23,
+      24,
+      19,
+      24,
+      26,
+      26,
+      8,
+      21,
+      29,
+      30,
+      32,
+      33
+    ],
+    "dllm_block_completion_latencies": [
+      0.4654795489999799,
+      0.6243307260000108,
+      0.8958471260000067,
+      0.41771137999998587,
+      1.0458088500000144,
+      0.855834107999982,
+      0.8952409089999946,
+      0.6894839760000195,
+      0.8010162239999943,
+      0.8785371680000083,
+      0.8566763059999971,
+      0.22168396199998597,
+      0.6423182690000147,
+      0.8926045219999992,
+      0.9047684329999868,
+      0.9459673180000152,
+      0.7870166729999823
+    ],
+    "dp_rank": null,
+    "e2e_latency": 12.83310253800002
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.48140248300001076,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4654795489999799
+      ],
+      "forward_count_metric_count": 1,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1778720422.9452426
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.1051928939999982,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.6243307260000108
+      ],
+      "forward_count_metric_count": 2,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.001624528000008,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.8958471260000067
+      ],
+      "forward_count_metric_count": 3,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.418603034,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.41771137999998587
+      ],
+      "forward_count_metric_count": 4,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 3.464849643000008,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        1.0458088500000144
+      ],
+      "forward_count_metric_count": 5,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (4",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 4.321966930000002,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.855834107999982
+      ],
+      "forward_count_metric_count": 6,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 5.216378821999996,
+      "output_token_count": 207,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.8952409089999946
+      ],
+      "forward_count_metric_count": 7,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 13",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 5.905399375999991,
+      "output_token_count": 239,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.6894839760000195
+      ],
+      "forward_count_metric_count": 8,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo,",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 239,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 6.706453312000008,
+      "output_token_count": 271,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.8010162239999943
+      ],
+      "forward_count_metric_count": 9,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 271,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 7.5854764720000105,
+      "output_token_count": 303,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.8785371680000083
+      ],
+      "forward_count_metric_count": 10,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 303,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 8.446197866000006,
+      "output_token_count": 335,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.8566763059999971
+      ],
+      "forward_count_metric_count": 11,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:**",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 335,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 8.663326667000007,
+      "output_token_count": 367,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.22168396199998597
+      ],
+      "forward_count_metric_count": 12,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:** 60 + 45 = 105 seconds\n- **New throughput:** 3600 / 105 \u2248 **3",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 367,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971,
+          0.22168396199998597
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 9.305411875000004,
+      "output_token_count": 399,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.6423182690000147
+      ],
+      "forward_count_metric_count": 13,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:** 60 + 45 = 105 seconds\n- **New throughput:** 3600 / 105 \u2248 **34.3 orders per hour**\n- **Improvement:** ~29% increase in throughput.\n\n#### **Improvement 2: Parallelize",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 399,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26,
+          8,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971,
+          0.22168396199998597,
+          0.6423182690000147
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 10.197737955000008,
+      "output_token_count": 431,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.8926045219999992
+      ],
+      "forward_count_metric_count": 14,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:** 60 + 45 = 105 seconds\n- **New throughput:** 3600 / 105 \u2248 **34.3 orders per hour**\n- **Improvement:** ~29% increase in throughput.\n\n#### **Improvement 2: Parallelize Picking and Labeling (if possible)**\n- **Action:** If labeling can be done in parallel with picking (e.g., using automated scanners or pre",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 431,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26,
+          8,
+          21,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971,
+          0.22168396199998597,
+          0.6423182690000147,
+          0.8926045219999992
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 11.103707831999998,
+      "output_token_count": 463,
+      "new_output_tokens": 32,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.9047684329999868
+      ],
+      "forward_count_metric_count": 15,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:** 60 + 45 = 105 seconds\n- **New throughput:** 3600 / 105 \u2248 **34.3 orders per hour**\n- **Improvement:** ~29% increase in throughput.\n\n#### **Improvement 2: Parallelize Picking and Labeling (if possible)**\n- **Action:** If labeling can be done in parallel with picking (e.g., using automated scanners or pre-labeled items), reduce idle time.\n- **Impact:** If labeling is fast and can overlap, the effective cycle time may decrease.\n- **Example:**",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 463,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26,
+          8,
+          21,
+          29,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971,
+          0.22168396199998597,
+          0.6423182690000147,
+          0.8926045219999992,
+          0.9047684329999868
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 15,
+      "elapsed_seconds": 12.053614322000016,
+      "output_token_count": 495,
+      "new_output_tokens": 32,
+      "block_metric_count": 16,
+      "new_block_latencies": [
+        0.9459673180000152
+      ],
+      "forward_count_metric_count": 16,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:** 60 + 45 = 105 seconds\n- **New throughput:** 3600 / 105 \u2248 **34.3 orders per hour**\n- **Improvement:** ~29% increase in throughput.\n\n#### **Improvement 2: Parallelize Picking and Labeling (if possible)**\n- **Action:** If labeling can be done in parallel with picking (e.g., using automated scanners or pre-labeled items), reduce idle time.\n- **Impact:** If labeling is fast and can overlap, the effective cycle time may decrease.\n- **Example:** If labeling takes 45 seconds and can be done while picking is in progress, the **bottleneck shifts** to labeling.\n- But since labeling",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": null,
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 495,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26,
+          8,
+          21,
+          29,
+          30,
+          32
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971,
+          0.22168396199998597,
+          0.6423182690000147,
+          0.8926045219999992,
+          0.9047684329999868,
+          0.9459673180000152
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 16,
+      "elapsed_seconds": 12.836624440999998,
+      "output_token_count": 512,
+      "new_output_tokens": 17,
+      "block_metric_count": 17,
+      "new_block_latencies": [
+        0.7870166729999823
+      ],
+      "forward_count_metric_count": 17,
+      "text": " Let's analyze the warehouse packing process step by step.\n\n---\n\n### **1. Process Breakdown**\n- **Picking:** 90 seconds per order  \n- **Labeling:** 45 seconds per order  \n\nAssuming the two stations operate **sequentially** (i.e., one order at a time), the total time per order is:\n\n> 90 (picking) + 45 (labeling) = **135 seconds per order**\n\n---\n\n### **2. Bottleneck Identification**\n\n- **Picking** takes **90 seconds**, which is **longer** than **labeling** (45 seconds).\n- Therefore, **picking is the bottleneck** \u2014 it limits the overall throughput.\n\n---\n\n### **3. Throughput Estimation**\n\nTotal time per order = 135 seconds  \nNumber of orders per hour = 3600 seconds / 135 seconds per order\n\n> 3600 \u00f7 135 \u2248 **26.67 orders per hour**\n\nSo, the **maximum throughput** is approximately **26.7 orders per hour**.\n\n---\n\n### **4. Operational Improvements**\n\n#### **Improvement 1: Optimize or Accelerate Picking**\n- **Action:** Redesign picking routes (e.g., zone picking) or use pick-to-light systems.\n- **Impact:** Reduce picking time from 90 seconds to, say, 60 seconds.\n- **New total time:** 60 + 45 = 105 seconds\n- **New throughput:** 3600 / 105 \u2248 **34.3 orders per hour**\n- **Improvement:** ~29% increase in throughput.\n\n#### **Improvement 2: Parallelize Picking and Labeling (if possible)**\n- **Action:** If labeling can be done in parallel with picking (e.g., using automated scanners or pre-labeled items), reduce idle time.\n- **Impact:** If labeling is fast and can overlap, the effective cycle time may decrease.\n- **Example:** If labeling takes 45 seconds and can be done while picking is in progress, the **bottleneck shifts** to labeling.\n- But since labeling is faster, this may not help unless automation is used.\n- **Better approach",
+      "meta_info": {
+        "id": "10a8f7330c854de0b6325fc2ec763fb9",
+        "finish_reason": {
+          "type": "length",
+          "length": 512
+        },
+        "prompt_tokens": 49,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 512,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          19,
+          25,
+          12,
+          29,
+          23,
+          24,
+          19,
+          24,
+          26,
+          26,
+          8,
+          21,
+          29,
+          30,
+          32,
+          33
+        ],
+        "dllm_block_completion_latencies": [
+          0.4654795489999799,
+          0.6243307260000108,
+          0.8958471260000067,
+          0.41771137999998587,
+          1.0458088500000144,
+          0.855834107999982,
+          0.8952409089999946,
+          0.6894839760000195,
+          0.8010162239999943,
+          0.8785371680000083,
+          0.8566763059999971,
+          0.22168396199998597,
+          0.6423182690000147,
+          0.8926045219999992,
+          0.9047684329999868,
+          0.9459673180000152,
+          0.7870166729999823
+        ],
+        "dp_rank": null,
+        "e2e_latency": 12.83310253800002
+      }
+    }
+  ]
+}
