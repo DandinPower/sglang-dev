@@ -1,0 +1,930 @@
+{
+  "ok": true,
+  "request_index": 70,
+  "eval_index": 70,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Judy teaches 5 dance classes, every day, on the weekdays and 8 classes on Saturday.  If each class has 15 students and she charges $15.00 per student, how much money does she make in 1 week?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Judy teaches 5 dance classes, every day, on the weekdays and 8 classes on Saturday.  If each class has 15 students and she charges $15.00 per student, how much money does she make in 1 week?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 7.0,
+  "request_start_realtime": "2026-05-27T09:19:24.770",
+  "benchmark": {
+    "question": "Judy teaches 5 dance classes, every day, on the weekdays and 8 classes on Saturday.  If each class has 15 students and she charges $15.00 per student, how much money does she make in 1 week?",
+    "gold_solution": "She teaches 5 dance classes 5 days a week so that's 5*5 = <<5*5=25>>25 classes\nShe teaches 25 classes during the week and 8 classes on Saturday for a total of 25+8 = <<25+8=33>>33 classes\nThere are 15 students in each of the 33 classes so there are 15*33 = <<15*33=495>>495 students\nEach student pays $15.00 per class and there are 495 students so Judy makes 15*495 = $<<15*495=7425>>7,425\n#### 7425",
+    "gold_answer": "7425",
+    "model_text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Weekdays: 5 classes/day × 5 days = 25 classes\n- Saturday: 8 classes\n- Total classes: 25 + 8 = 33\n- Students per class: 15\n- Total students: 33 × 15 = 495\n- Charge per student: $15\n- Total money: 495 × 15\n\nNow compute 495 × 15:\n\n495 × 15 = 495 × (10 + 5) = 4950 + 2475 = 7,425\n\nYes.\n\n#### 7425",
+    "predicted_answer": "7425",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      13,
+      13,
+      17,
+      18,
+      11,
+      10,
+      14,
+      20,
+      13,
+      12,
+      14,
+      12,
+      14,
+      11,
+      11,
+      9
+    ],
+    "ttfb_seconds": 0.39906623000001673,
+    "tbb_seconds": [
+      0.16338834599997654,
+      0.44661720999999943,
+      0.2375666899999942,
+      0.136143039999979,
+      0.41281179000003476,
+      0.1825858290000042,
+      0.42351771199997756,
+      0.16849139499998955,
+      0.15913455300000123,
+      0.18615360900002997,
+      0.3947449529999858,
+      0.1778004799999735,
+      0.1276410880000185,
+      0.30933991400002014,
+      0.11156331199998704
+    ],
+    "dllm_block_completion_latencies": [
+      0.39906623000001673,
+      0.16338834599997654,
+      0.44661720999999943,
+      0.2375666899999942,
+      0.136143039999979,
+      0.41281179000003476,
+      0.1825858290000042,
+      0.42351771199997756,
+      0.16849139499998955,
+      0.15913455300000123,
+      0.18615360900002997,
+      0.3947449529999858,
+      0.1778004799999735,
+      0.1276410880000185,
+      0.30933991400002014,
+      0.11156331199998704
+    ],
+    "dllm_forward_counts_per_block": [
+      13,
+      13,
+      17,
+      18,
+      11,
+      10,
+      14,
+      20,
+      13,
+      12,
+      14,
+      12,
+      14,
+      11,
+      11,
+      9
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 15.25614222300004,
+    "first_new_token_ttfb_seconds": 15.25614222300004,
+    "block_ttfb_seconds": 15.25614222300004,
+    "tbb_seconds": [
+      0.14269457899996496,
+      0.4430605050000054,
+      0.2477775830000155,
+      0.14472450300002038,
+      0.3961951979999867,
+      0.1839613610000015,
+      0.4198288719999823,
+      0.16824583800001847,
+      0.16532363900000746,
+      0.18645814399997107,
+      0.39337730200003307,
+      0.2094459539999889,
+      0.08895721199996842,
+      0.31447298099999443,
+      0.10808072900005072
+    ],
+    "block_arrival_elapsed_seconds": [
+      15.25614222300004,
+      15.398836802000005,
+      15.84189730700001,
+      16.089674890000026,
+      16.234399393000047,
+      16.630594591000033,
+      16.814555952000035,
+      17.234384824000017,
+      17.402630662000035,
+      17.567954301000043,
+      17.754412445000014,
+      18.147789747000047,
+      18.357235701000036,
+      18.446192913000004,
+      18.760665894,
+      18.86874662300005
+    ],
+    "e2e_seconds": 18.869247375000043
+  },
+  "token_metrics": {
+    "prompt_tokens": 742,
+    "completion_tokens": 499,
+    "total_tokens": 1241,
+    "end_to_end_tokens_per_second": 65.76838892070528,
+    "total_tokens_per_second": 65.76838892070528,
+    "completion_tokens_per_second": 26.44514590768085,
+    "tokens_after_first_block": 473,
+    "generated_tokens_per_second_after_first_block": 130.91232612983183
+  },
+  "final_meta_info": {
+    "id": "ce004f9306b643e1a8e405a88923ab14",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 742,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 499,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      13,
+      13,
+      17,
+      18,
+      11,
+      10,
+      14,
+      20,
+      13,
+      12,
+      14,
+      12,
+      14,
+      11,
+      11,
+      9
+    ],
+    "dllm_block_completion_latencies": [
+      0.39906623000001673,
+      0.16338834599997654,
+      0.44661720999999943,
+      0.2375666899999942,
+      0.136143039999979,
+      0.41281179000003476,
+      0.1825858290000042,
+      0.42351771199997756,
+      0.16849139499998955,
+      0.15913455300000123,
+      0.18615360900002997,
+      0.3947449529999858,
+      0.1778004799999735,
+      0.1276410880000185,
+      0.30933991400002014,
+      0.11156331199998704
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.147663407000039
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 15.25614222300004,
+      "output_token_count": 26,
+      "new_output_tokens": 26,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.39906623000001673
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 26,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873580.002682
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 15.398836802000005,
+      "output_token_count": 58,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.16338834599997654
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 58,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 15.84189730700001,
+      "output_token_count": 90,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.44661720999999943
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 90,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 16.089674890000026,
+      "output_token_count": 122,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2375666899999942
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 16.234399393000047,
+      "output_token_count": 154,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.136143039999979
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 154,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 16.630594591000033,
+      "output_token_count": 186,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.41281179000003476
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 186,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 16.814555952000035,
+      "output_token_count": 218,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.1825858290000042
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\n",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 218,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 17.234384824000017,
+      "output_token_count": 250,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.42351771199997756
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 250,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 17.402630662000035,
+      "output_token_count": 282,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.16849139499998955
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 2",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 282,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 17.567954301000043,
+      "output_token_count": 314,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.15913455300000123
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 +",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 314,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 17.754412445000014,
+      "output_token_count": 346,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.18615360900002997
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Week",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 346,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123,
+          0.18615360900002997
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 18.147789747000047,
+      "output_token_count": 378,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.3947449529999858
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Weekdays: 5 classes/day × 5 days = 25 classes\n- Saturday: 8 classes\n- Total classes: 25 + ",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 378,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12,
+          14,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123,
+          0.18615360900002997,
+          0.3947449529999858
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 18.357235701000036,
+      "output_token_count": 410,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.1778004799999735
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Weekdays: 5 classes/day × 5 days = 25 classes\n- Saturday: 8 classes\n- Total classes: 25 + 8 = 33\n- Students per class: 15\n- Total students: 33 × 15 = 495\n",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 410,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12,
+          14,
+          12,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123,
+          0.18615360900002997,
+          0.3947449529999858,
+          0.1778004799999735
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 18.446192913000004,
+      "output_token_count": 442,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.1276410880000185
+      ],
+      "forward_count_metric_count": 14,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Weekdays: 5 classes/day × 5 days = 25 classes\n- Saturday: 8 classes\n- Total classes: 25 + 8 = 33\n- Students per class: 15\n- Total students: 33 × 15 = 495\n- Charge per student: $15\n- Total money: 495 × 15\n\nNow compute 495 × 1",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 442,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12,
+          14,
+          12,
+          14,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123,
+          0.18615360900002997,
+          0.3947449529999858,
+          0.1778004799999735,
+          0.1276410880000185
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 18.760665894,
+      "output_token_count": 474,
+      "new_output_tokens": 32,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.30933991400002014
+      ],
+      "forward_count_metric_count": 15,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Weekdays: 5 classes/day × 5 days = 25 classes\n- Saturday: 8 classes\n- Total classes: 25 + 8 = 33\n- Students per class: 15\n- Total students: 33 × 15 = 495\n- Charge per student: $15\n- Total money: 495 × 15\n\nNow compute 495 × 15:\n\n495 × 15 = 495 × (10 + 5) = 4950 + ",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 474,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12,
+          14,
+          12,
+          14,
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123,
+          0.18615360900002997,
+          0.3947449529999858,
+          0.1778004799999735,
+          0.1276410880000185,
+          0.30933991400002014
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 15,
+      "elapsed_seconds": 18.86874662300005,
+      "output_token_count": 499,
+      "new_output_tokens": 25,
+      "block_metric_count": 16,
+      "new_block_latencies": [
+        0.11156331199998704
+      ],
+      "forward_count_metric_count": 16,
+      "text": "\n\nJudy teaches 5 dance classes each day on the weekdays (Monday to Friday).  \nThere are 5 weekdays, so:  \n5 classes/day * 5 days = 25 classes on weekdays.\n\nOn Saturday, she teaches 8 classes.\n\nSo total classes in a week:  \n5 (weekdays) + 8 (Saturday) = 33 classes.\n\nWait — correction: She teaches 5 classes **per day** on weekdays, so:  \n5 classes/day × 5 days = 25 classes (weekdays).  \nPlus 8 classes on Saturday.  \nTotal classes = 25 + 8 = 33 classes.\n\nEach class has 15 students, so total students =  \n33 classes × 15 students/class = 495 students.\n\nShe charges $15.00 per student, so total earnings =  \n495 students × $15 = $7,425.\n\nBut wait — let's double-check:\n\nEach class: 15 students × $15 = $225 per class.\n\nTotal classes: 33.\n\nTotal earnings: 33 classes $225 = ?\n\nCalculate:  \n33 × 225  \n= (30 × 225) + (3 × 225)  \n= 6700 + 675 = 7,425.\n\nYes.\n\nBut let's re-express step by step:\n\n- Weekdays: 5 classes/day × 5 days = 25 classes\n- Saturday: 8 classes\n- Total classes: 25 + 8 = 33\n- Students per class: 15\n- Total students: 33 × 15 = 495\n- Charge per student: $15\n- Total money: 495 × 15\n\nNow compute 495 × 15:\n\n495 × 15 = 495 × (10 + 5) = 4950 + 2475 = 7,425\n\nYes.\n\n#### 7425",
+      "meta_info": {
+        "id": "ce004f9306b643e1a8e405a88923ab14",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 499,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          13,
+          17,
+          18,
+          11,
+          10,
+          14,
+          20,
+          13,
+          12,
+          14,
+          12,
+          14,
+          11,
+          11,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.39906623000001673,
+          0.16338834599997654,
+          0.44661720999999943,
+          0.2375666899999942,
+          0.136143039999979,
+          0.41281179000003476,
+          0.1825858290000042,
+          0.42351771199997756,
+          0.16849139499998955,
+          0.15913455300000123,
+          0.18615360900002997,
+          0.3947449529999858,
+          0.1778004799999735,
+          0.1276410880000185,
+          0.30933991400002014,
+          0.11156331199998704
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.147663407000039
+      }
+    }
+  ]
+}

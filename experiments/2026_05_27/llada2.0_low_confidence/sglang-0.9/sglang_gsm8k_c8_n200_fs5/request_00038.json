@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 38,
+  "eval_index": 38,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John runs 60 miles a week. He runs 3 days a week.  He runs 3 hours the first day and half as much the other two days he runs.  How fast does he run?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John runs 60 miles a week. He runs 3 days a week.  He runs 3 hours the first day and half as much the other two days he runs.  How fast does he run?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.8000000000000003,
+  "request_start_realtime": "2026-05-27T08:59:53.535",
+  "benchmark": {
+    "question": "John runs 60 miles a week. He runs 3 days a week.  He runs 3 hours the first day and half as much the other two days he runs.  How fast does he run?",
+    "gold_solution": "He has 7-1=<<7-1=6>>6 possible running days.\nHe runs half of those so he runs 6/2=<<6/2=3>>3 days.\nSo for two days, he runs 3/2=<<3/2=1.5>>1.5 hours.\nSo in total, he runs 3+1.5+1.5=<<3+1.5+1.5=6>>6 hours.\nSo he runs 60/6=<<60/6=10>>10 mph.\n#### 10",
+    "gold_answer": "10",
+    "model_text": "\n\n1. John runs 60 miles a week.\n2. He runs 3 days a week.\n3. On the first day, he runs 3 hours.\n4. On the other two days, he runs half as much time as the first day, so 3/2 = 1.5 hours each day.\n5. Total time for the three days: 3 + 1.5 + 1.5 = 6 hours.\n6. Total distance: 60 miles.\n7. So, his speed is total distance / total time = 60 / 6 = 10 miles per hour.\n\n#### 10",
+    "predicted_answer": "10",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      3,
+      15,
+      14,
+      15,
+      19,
+      8
+    ],
+    "ttfb_seconds": 0.2248534139999947,
+    "tbb_seconds": [
+      0.6457223969999859,
+      0.26091198699998586,
+      0.5017626450000421,
+      0.5549770419999618,
+      0.13763185400000566
+    ],
+    "dllm_block_completion_latencies": [
+      0.2248534139999947,
+      0.6457223969999859,
+      0.26091198699998586,
+      0.5017626450000421,
+      0.5549770419999618,
+      0.13763185400000566
+    ],
+    "dllm_forward_counts_per_block": [
+      3,
+      15,
+      14,
+      15,
+      19,
+      8
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 9.456940588999998,
+    "first_new_token_ttfb_seconds": 9.456940588999998,
+    "block_ttfb_seconds": 9.456940588999998,
+    "tbb_seconds": [
+      0.645355617000007,
+      0.2616141670000047,
+      0.5017825770000286,
+      0.5552329279999526,
+      0.1373046870000394
+    ],
+    "block_arrival_elapsed_seconds": [
+      9.456940588999998,
+      10.102296206000005,
+      10.36391037300001,
+      10.865692950000039,
+      11.420925877999991,
+      11.55823056500003
+    ],
+    "e2e_seconds": 11.558282372000008
+  },
+  "token_metrics": {
+    "prompt_tokens": 734,
+    "completion_tokens": 146,
+    "total_tokens": 880,
+    "end_to_end_tokens_per_second": 76.13588002762452,
+    "total_tokens_per_second": 76.13588002762452,
+    "completion_tokens_per_second": 12.631634640946796,
+    "tokens_after_first_block": 144,
+    "generated_tokens_per_second_after_first_block": 68.52764322537594
+  },
+  "final_meta_info": {
+    "id": "d9d6ecd7a69640698de6559b9e21a615",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 734,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 146,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      3,
+      15,
+      14,
+      15,
+      19,
+      8
+    ],
+    "dllm_block_completion_latencies": [
+      0.2248534139999947,
+      0.6457223969999859,
+      0.26091198699998586,
+      0.5017626450000421,
+      0.5549770419999618,
+      0.13763185400000566
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.3405860130000065
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 9.456940588999998,
+      "output_token_count": 2,
+      "new_output_tokens": 2,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2248534139999947
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n",
+      "meta_info": {
+        "id": "d9d6ecd7a69640698de6559b9e21a615",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 2,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.2248534139999947
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872402.992465
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 10.102296206000005,
+      "output_token_count": 34,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.6457223969999859
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. John runs 60 miles a week.\n2. He runs 3 days a week.\n3. On the first day, he runs",
+      "meta_info": {
+        "id": "d9d6ecd7a69640698de6559b9e21a615",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 34,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.2248534139999947,
+          0.6457223969999859
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 10.36391037300001,
+      "output_token_count": 66,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.26091198699998586
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. John runs 60 miles a week.\n2. He runs 3 days a week.\n3. On the first day, he runs 3 hours.\n4. On the other two days, he runs half as much time as the first day, so 3/2 = 1",
+      "meta_info": {
+        "id": "d9d6ecd7a69640698de6559b9e21a615",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 66,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          15,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2248534139999947,
+          0.6457223969999859,
+          0.26091198699998586
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 10.865692950000039,
+      "output_token_count": 98,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5017626450000421
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. John runs 60 miles a week.\n2. He runs 3 days a week.\n3. On the first day, he runs 3 hours.\n4. On the other two days, he runs half as much time as the first day, so 3/2 = 1.5 hours each day.\n5. Total time for the three days: 3 + 1.5 + 1.5 = 6 hours",
+      "meta_info": {
+        "id": "d9d6ecd7a69640698de6559b9e21a615",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 98,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          15,
+          14,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.2248534139999947,
+          0.6457223969999859,
+          0.26091198699998586,
+          0.5017626450000421
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 11.420925877999991,
+      "output_token_count": 130,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5549770419999618
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. John runs 60 miles a week.\n2. He runs 3 days a week.\n3. On the first day, he runs 3 hours.\n4. On the other two days, he runs half as much time as the first day, so 3/2 = 1.5 hours each day.\n5. Total time for the three days: 3 + 1.5 + 1.5 = 6 hours.\n6. Total distance: 60 miles.\n7. So, his speed is total distance / total time = 60 / 6",
+      "meta_info": {
+        "id": "d9d6ecd7a69640698de6559b9e21a615",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 130,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          15,
+          14,
+          15,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.2248534139999947,
+          0.6457223969999859,
+          0.26091198699998586,
+          0.5017626450000421,
+          0.5549770419999618
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 11.55823056500003,
+      "output_token_count": 146,
+      "new_output_tokens": 16,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.13763185400000566
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. John runs 60 miles a week.\n2. He runs 3 days a week.\n3. On the first day, he runs 3 hours.\n4. On the other two days, he runs half as much time as the first day, so 3/2 = 1.5 hours each day.\n5. Total time for the three days: 3 + 1.5 + 1.5 = 6 hours.\n6. Total distance: 60 miles.\n7. So, his speed is total distance / total time = 60 / 6 = 10 miles per hour.\n\n#### 10",
+      "meta_info": {
+        "id": "d9d6ecd7a69640698de6559b9e21a615",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 146,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          15,
+          14,
+          15,
+          19,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2248534139999947,
+          0.6457223969999859,
+          0.26091198699998586,
+          0.5017626450000421,
+          0.5549770419999618,
+          0.13763185400000566
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.3405860130000065
+      }
+    }
+  ]
+}

@@ -1,0 +1,930 @@
+{
+  "ok": true,
+  "request_index": 52,
+  "eval_index": 52,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His comic books weigh 1/4 pound each and his toys weigh 1/2 pound each. If he removes 30 comic books, how many toys does he need to remove?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His comic books weigh 1/4 pound each and his toys weigh 1/2 pound each. If he removes 30 comic books, how many toys does he need to remove?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.2,
+  "request_start_realtime": "2026-05-27T10:02:14.460",
+  "benchmark": {
+    "question": "Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His comic books weigh 1/4 pound each and his toys weigh 1/2 pound each. If he removes 30 comic books, how many toys does he need to remove?",
+    "gold_solution": "30 comic books weigh 7.5 pounds because 30 x .25 = <<30*.25=7.5>>7.5\nHe needs to remove 7.5 more pounds because 15 - 7.5 = <<15-7.5=7.5>>7.5\nHe needs to remove 15 toys because 7.5 / .5 = <<15=15>>15\n#### 15",
+    "gold_answer": "15",
+    "model_text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5 pounds per comic book, so 30 * 0.25 = 15/2 = 7.5 pounds.\n\nYes, 30 * 0.25 = 7.5 pounds.\n\nSo comic books removed 7.5 pounds.\n\nUriah needs to remove 15 pounds total.\n\nSo remaining weight to remove is: 15 - 7.5 = 7.5 pounds.\n\nEach toy weighs 0.5 pound.\n\nSo, number of toys to remove = 7.5 / 0.5 = <<7.5 / 0.5 = 15>>15 toys.\n\n#### 15",
+    "predicted_answer": "15",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      7,
+      9,
+      7,
+      8,
+      15,
+      8,
+      11,
+      10,
+      7,
+      8,
+      9,
+      13,
+      9,
+      8,
+      5,
+      6
+    ],
+    "ttfb_seconds": 0.4577995380000175,
+    "tbb_seconds": [
+      0.3388058020000244,
+      0.125696927999968,
+      0.15983322599998928,
+      0.6277559880000467,
+      0.15030114199998934,
+      0.36970650899996826,
+      0.5495499180000252,
+      0.14471047500001077,
+      0.14592367699998476,
+      0.31658561599999757,
+      0.4180384069999832,
+      0.1754020150000315,
+      0.3079443880000099,
+      0.0799515260000021,
+      0.2813049920000026
+    ],
+    "dllm_block_completion_latencies": [
+      0.4577995380000175,
+      0.3388058020000244,
+      0.125696927999968,
+      0.15983322599998928,
+      0.6277559880000467,
+      0.15030114199998934,
+      0.36970650899996826,
+      0.5495499180000252,
+      0.14471047500001077,
+      0.14592367699998476,
+      0.31658561599999757,
+      0.4180384069999832,
+      0.1754020150000315,
+      0.3079443880000099,
+      0.0799515260000021,
+      0.2813049920000026
+    ],
+    "dllm_forward_counts_per_block": [
+      7,
+      9,
+      7,
+      8,
+      15,
+      8,
+      11,
+      10,
+      7,
+      8,
+      9,
+      13,
+      9,
+      8,
+      5,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 11.400435834999996,
+    "first_new_token_ttfb_seconds": 11.400435834999996,
+    "block_ttfb_seconds": 11.400435834999996,
+    "tbb_seconds": [
+      0.33858926999999994,
+      0.12524704600002678,
+      0.15937759700000242,
+      0.6283691929999691,
+      0.15232027700000117,
+      0.3745626660000312,
+      0.54296603399996,
+      0.14389042100003735,
+      0.14674134599999888,
+      0.3170100179999622,
+      0.4173806940000304,
+      0.17547281099996326,
+      0.307634768000014,
+      0.08113695999998072,
+      0.28033967100003565
+    ],
+    "block_arrival_elapsed_seconds": [
+      11.400435834999996,
+      11.739025104999996,
+      11.864272151000023,
+      12.023649748000025,
+      12.652018940999994,
+      12.804339217999996,
+      13.178901884000027,
+      13.721867917999987,
+      13.865758339000024,
+      14.012499685000023,
+      14.329509702999985,
+      14.746890397000016,
+      14.922363207999979,
+      15.229997975999993,
+      15.311134935999974,
+      15.59147460700001
+    ],
+    "e2e_seconds": 15.59157965999998
+  },
+  "token_metrics": {
+    "prompt_tokens": 752,
+    "completion_tokens": 490,
+    "total_tokens": 1242,
+    "end_to_end_tokens_per_second": 79.65838145228716,
+    "total_tokens_per_second": 79.65838145228716,
+    "completion_tokens_per_second": 31.42721973560443,
+    "tokens_after_first_block": 474,
+    "generated_tokens_per_second_after_first_block": 113.09561775776136
+  },
+  "final_meta_info": {
+    "id": "29a80116717d4bf8a713323bab9a1aa4",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 752,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 490,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      7,
+      9,
+      7,
+      8,
+      15,
+      8,
+      11,
+      10,
+      7,
+      8,
+      9,
+      13,
+      9,
+      8,
+      5,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.4577995380000175,
+      0.3388058020000244,
+      0.125696927999968,
+      0.15983322599998928,
+      0.6277559880000467,
+      0.15030114199998934,
+      0.36970650899996826,
+      0.5495499180000252,
+      0.14471047500001077,
+      0.14592367699998476,
+      0.31658561599999757,
+      0.4180384069999832,
+      0.1754020150000315,
+      0.3079443880000099,
+      0.0799515260000021,
+      0.2813049920000026
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.663298036999947
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 11.400435834999996,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4577995380000175
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\n",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876145.860043
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 11.739025104999996,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.3388058020000244
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 11.864272151000023,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.125696927999968
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 12.023649748000025,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.15983322599998928
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 12.652018940999994,
+      "output_token_count": 144,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6277559880000467
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 12.804339217999996,
+      "output_token_count": 176,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.15030114199998934
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 13.178901884000027,
+      "output_token_count": 208,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.36970650899996826
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 13.721867917999987,
+      "output_token_count": 240,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.5495499180000252
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 240,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 13.865758339000024,
+      "output_token_count": 272,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.14471047500001077
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 272,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 14.012499685000023,
+      "output_token_count": 304,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.14592367699998476
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, ",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 304,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 14.329509702999985,
+      "output_token_count": 336,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.31658561599999757
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 336,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476,
+          0.31658561599999757
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 14.746890397000016,
+      "output_token_count": 368,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.4180384069999832
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5 pounds per comic book, so 30 * 0.25 = 15/2 = 7.5 pounds.\n\nYes,",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 368,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8,
+          9,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476,
+          0.31658561599999757,
+          0.4180384069999832
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 14.922363207999979,
+      "output_token_count": 400,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.1754020150000315
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5 pounds per comic book, so 30 * 0.25 = 15/2 = 7.5 pounds.\n\nYes, 30 * 0.25 = 7.5 pounds.\n\nSo comic books removed 7.5 pounds.\n\nUriah",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 400,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8,
+          9,
+          13,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476,
+          0.31658561599999757,
+          0.4180384069999832,
+          0.1754020150000315
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 15.229997975999993,
+      "output_token_count": 432,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.3079443880000099
+      ],
+      "forward_count_metric_count": 14,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5 pounds per comic book, so 30 * 0.25 = 15/2 = 7.5 pounds.\n\nYes, 30 * 0.25 = 7.5 pounds.\n\nSo comic books removed 7.5 pounds.\n\nUriah needs to remove 15 pounds total.\n\nSo remaining weight to remove is: 15 - 7.5 = 7.5 pounds",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 432,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8,
+          9,
+          13,
+          9,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476,
+          0.31658561599999757,
+          0.4180384069999832,
+          0.1754020150000315,
+          0.3079443880000099
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 15.311134935999974,
+      "output_token_count": 464,
+      "new_output_tokens": 32,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.0799515260000021
+      ],
+      "forward_count_metric_count": 15,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5 pounds per comic book, so 30 * 0.25 = 15/2 = 7.5 pounds.\n\nYes, 30 * 0.25 = 7.5 pounds.\n\nSo comic books removed 7.5 pounds.\n\nUriah needs to remove 15 pounds total.\n\nSo remaining weight to remove is: 15 - 7.5 = 7.5 pounds.\n\nEach toy weighs 0.5 pound.\n\nSo, number of toys to remove = 7.5 / 0.5 =",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 464,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8,
+          9,
+          13,
+          9,
+          8,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476,
+          0.31658561599999757,
+          0.4180384069999832,
+          0.1754020150000315,
+          0.3079443880000099,
+          0.0799515260000021
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 15,
+      "elapsed_seconds": 15.59147460700001,
+      "output_token_count": 490,
+      "new_output_tokens": 26,
+      "block_metric_count": 16,
+      "new_block_latencies": [
+        0.2813049920000026
+      ],
+      "forward_count_metric_count": 16,
+      "text": "\n\nUriah needs to remove 15 pounds in total.\n\nHe removes 30 comic books, each each book weighs 1/4 pound.\n\nSo, the weight removed from comic books is 30 * (1/4) = <<30*(1/4)=7.5>>77.5 pounds pounds.\n\nWait, that can't be right. Let's recalculate:\n\n30 * (1/4) = 30/4 = 7.5 pounds.\n\nBut 7.5 pounds is not than 15, so let's continue.\n\nActually, 30 * (1/4) = 7./ pounds? No:\n\n30 * (1/4) = 30/4 = 7.5 pounds? That's incorrect.\n\nWait: 30 * (1/4) = (30/4) 7.5? No:\n30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is wrong.\n\n4 ÷ 3 = 12, so 30 ÷ 4 = 7.5? No, 30 ÷ 4 = 7.5 is incorrect.\n\n30 ÷ 4 = 7.5? Let's check: 4 * 7 = 28, 30 - 28 = 2, so 7.5 pounds/4 = 7.5? No.\n\nWait0.5 pounds per comic book, so 30 * 0.25 = 15/2 = 7.5 pounds.\n\nYes, 30 * 0.25 = 7.5 pounds.\n\nSo comic books removed 7.5 pounds.\n\nUriah needs to remove 15 pounds total.\n\nSo remaining weight to remove is: 15 - 7.5 = 7.5 pounds.\n\nEach toy weighs 0.5 pound.\n\nSo, number of toys to remove = 7.5 / 0.5 = <<7.5 / 0.5 = 15>>15 toys.\n\n#### 15",
+      "meta_info": {
+        "id": "29a80116717d4bf8a713323bab9a1aa4",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 490,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          9,
+          7,
+          8,
+          15,
+          8,
+          11,
+          10,
+          7,
+          8,
+          9,
+          13,
+          9,
+          8,
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.4577995380000175,
+          0.3388058020000244,
+          0.125696927999968,
+          0.15983322599998928,
+          0.6277559880000467,
+          0.15030114199998934,
+          0.36970650899996826,
+          0.5495499180000252,
+          0.14471047500001077,
+          0.14592367699998476,
+          0.31658561599999757,
+          0.4180384069999832,
+          0.1754020150000315,
+          0.3079443880000099,
+          0.0799515260000021,
+          0.2813049920000026
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.663298036999947
+      }
+    }
+  ]
+}

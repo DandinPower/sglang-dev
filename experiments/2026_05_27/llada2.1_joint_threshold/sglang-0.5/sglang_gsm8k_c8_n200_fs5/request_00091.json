@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 91,
+  "eval_index": 91,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jan has three times the number of pets as Marcia. Marcia has two more pets than Cindy. If Cindy has four pets, how many total pets do the three have?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jan has three times the number of pets as Marcia. Marcia has two more pets than Cindy. If Cindy has four pets, how many total pets do the three have?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 9.1,
+  "request_start_realtime": "2026-05-27T09:34:13.460",
+  "benchmark": {
+    "question": "Jan has three times the number of pets as Marcia. Marcia has two more pets than Cindy. If Cindy has four pets, how many total pets do the three have?",
+    "gold_solution": "Marcia has 4 + 2 = <<4+2=6>>6 pets.\nJan has 3 * 6 = <<3*6=18>>18 pets\nIn total, the three have 4 + 6 + 18 = <<4+6+18=28>>28 pets.\n#### 28",
+    "gold_answer": "28",
+    "model_text": "\n\n1. Cindy has 4 pets.\n2. Marcia has 2 more than Cindy, so Marcia has 4 + 2 = 6 pets.\n3. Jan has three times the number of pets as Marcia, so Jan has 3 * 6 = 18 pets.\n4. Total pets = Cindy's pets + Marcia's pets + Jan's pets = 4 + 6 + 18 = 28.\n\nSo, the three have a total of 28 pets.\n#### 28",
+    "predicted_answer": "28",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      3,
+      4,
+      5,
+      6,
+      3
+    ],
+    "ttfb_seconds": 0.20664944300000343,
+    "tbb_seconds": [
+      0.19840443499998628,
+      0.08068005999999173,
+      0.5429899560000138,
+      0.26396560800000657
+    ],
+    "dllm_block_completion_latencies": [
+      0.20664944300000343,
+      0.19840443499998628,
+      0.08068005999999173,
+      0.5429899560000138,
+      0.26396560800000657
+    ],
+    "dllm_forward_counts_per_block": [
+      3,
+      4,
+      5,
+      6,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 14.195982208000004,
+    "first_new_token_ttfb_seconds": 14.195982208000004,
+    "block_ttfb_seconds": 14.195982208000004,
+    "tbb_seconds": [
+      0.19859987600000295,
+      0.08114750500001833,
+      0.5429673589999879,
+      0.263374744999993
+    ],
+    "block_arrival_elapsed_seconds": [
+      14.195982208000004,
+      14.394582084000007,
+      14.475729589000025,
+      15.018696948000013,
+      15.282071693000006
+    ],
+    "e2e_seconds": 15.282168193000018
+  },
+  "token_metrics": {
+    "prompt_tokens": 726,
+    "completion_tokens": 121,
+    "total_tokens": 847,
+    "end_to_end_tokens_per_second": 55.42407263832939,
+    "total_tokens_per_second": 55.42407263832939,
+    "completion_tokens_per_second": 7.917724662618484,
+    "tokens_after_first_block": 111,
+    "generated_tokens_per_second_after_first_block": 102.19244358966621
+  },
+  "final_meta_info": {
+    "id": "e773298d9b914abd97c195ac56e6ef5f",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 726,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 121,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      3,
+      4,
+      5,
+      6,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.20664944300000343,
+      0.19840443499998628,
+      0.08068005999999173,
+      0.5429899560000138,
+      0.26396560800000657
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.304554263
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 14.195982208000004,
+      "output_token_count": 10,
+      "new_output_tokens": 10,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.20664944300000343
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Cindy has 4 pets.",
+      "meta_info": {
+        "id": "e773298d9b914abd97c195ac56e6ef5f",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 10,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.20664944300000343
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874467.655985
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 14.394582084000007,
+      "output_token_count": 42,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.19840443499998628
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Cindy has 4 pets.\n2. Marcia has 2 more than Cindy, so Marcia has 4 + 2 = 6 pets.\n3. Jan has three",
+      "meta_info": {
+        "id": "e773298d9b914abd97c195ac56e6ef5f",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 42,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.20664944300000343,
+          0.19840443499998628
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 14.475729589000025,
+      "output_token_count": 74,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.08068005999999173
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Cindy has 4 pets.\n2. Marcia has 2 more than Cindy, so Marcia has 4 + 2 = 6 pets.\n3. Jan has three times the number of pets as Marcia, so Jan has 3 * 6 = 18 pets.\n4. Total pets = Cindy's pets",
+      "meta_info": {
+        "id": "e773298d9b914abd97c195ac56e6ef5f",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          4,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.20664944300000343,
+          0.19840443499998628,
+          0.08068005999999173
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 15.018696948000013,
+      "output_token_count": 106,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5429899560000138
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Cindy has 4 pets.\n2. Marcia has 2 more than Cindy, so Marcia has 4 + 2 = 6 pets.\n3. Jan has three times the number of pets as Marcia, so Jan has 3 * 6 = 18 pets.\n4. Total pets = Cindy's pets + Marcia's pets + Jan's pets = 4 + 6 + 18 = 28.\n\nSo, the three have a",
+      "meta_info": {
+        "id": "e773298d9b914abd97c195ac56e6ef5f",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.20664944300000343,
+          0.19840443499998628,
+          0.08068005999999173,
+          0.5429899560000138
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 15.282071693000006,
+      "output_token_count": 121,
+      "new_output_tokens": 15,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.26396560800000657
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Cindy has 4 pets.\n2. Marcia has 2 more than Cindy, so Marcia has 4 + 2 = 6 pets.\n3. Jan has three times the number of pets as Marcia, so Jan has 3 * 6 = 18 pets.\n4. Total pets = Cindy's pets + Marcia's pets + Jan's pets = 4 + 6 + 18 = 28.\n\nSo, the three have a total of 28 pets.\n#### 28",
+      "meta_info": {
+        "id": "e773298d9b914abd97c195ac56e6ef5f",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 121,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          4,
+          5,
+          6,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.20664944300000343,
+          0.19840443499998628,
+          0.08068005999999173,
+          0.5429899560000138,
+          0.26396560800000657
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.304554263
+      }
+    }
+  ]
+}

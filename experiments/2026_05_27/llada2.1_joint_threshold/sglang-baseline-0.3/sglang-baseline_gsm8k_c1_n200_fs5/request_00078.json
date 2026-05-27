@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 78,
+  "eval_index": 78,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Vincent can buy flowers in packages of 3 for $2.50 or in packages of 2 for $1. How much money does he save by buying 18 flowers at the better price?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Vincent can buy flowers in packages of 3 for $2.50 or in packages of 2 for $1. How much money does he save by buying 18 flowers at the better price?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 7.800000000000001,
+  "request_start_realtime": "2026-05-27T09:37:32.733",
+  "benchmark": {
+    "question": "Vincent can buy flowers in packages of 3 for $2.50 or in packages of 2 for $1. How much money does he save by buying 18 flowers at the better price?",
+    "gold_solution": "Find how many packages of 3 would be needed which is 18 ÷ 3 = <<18/3=6>>6.\nThe cost of using packages of 3 is 6 × $2.50 = $<<6*2.5=15>>15.\nFind how many packages of 2 would be needed which is 18 ÷ 2 = <<18/2=9>>9.\nThe cost of using packages of 2 is 9 × $1 = $<<9*1=9>>9.\nVincent would save $15 - $9 = $<<15-9=6>>6.\n#### 6",
+    "gold_answer": "6",
+    "model_text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50 per flower\n\nClearly, the package of 2 for $1 is the better price.\n\nNow, Vincent wants to buy 18 flowers.\n\nIf he buys only packages of 2, he would need 18 / 2 = 9 packages.\n\nCost = 9 packages * $1 = $9\n\nIf he bought flowers in packages of 3, he would need 18 / 3 = 6 packages.\n\nCost = 6 packages * $2.50 = $15\n\nSo, by choosing the better price (packages of 2), he saves $15 - $9 = $6.\n\nAnswer: 6",
+    "predicted_answer": "6",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      2,
+      8,
+      4,
+      7,
+      7,
+      4,
+      5,
+      5
+    ],
+    "ttfb_seconds": 0.15671281100000556,
+    "tbb_seconds": [
+      0.04778784099997324,
+      0.024391567000009218,
+      0.044088826999995945,
+      0.04293634600000473,
+      0.02537223300001301,
+      0.03239358599998354,
+      0.03077887000000601
+    ],
+    "dllm_block_completion_latencies": [
+      0.15671281100000556,
+      0.04778784099997324,
+      0.024391567000009218,
+      0.044088826999995945,
+      0.04293634600000473,
+      0.02537223300001301,
+      0.03239358599998354,
+      0.03077887000000601
+    ],
+    "dllm_forward_counts_per_block": [
+      2,
+      8,
+      4,
+      7,
+      7,
+      4,
+      5,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 21.234631991,
+    "first_new_token_ttfb_seconds": 21.234631991,
+    "block_ttfb_seconds": 21.234631991,
+    "tbb_seconds": [
+      0.0478119230000118,
+      0.024266486999977133,
+      0.04436315800001012,
+      0.04281073500001753,
+      0.025308506999977,
+      0.03241099600001007,
+      0.030931656000007024
+    ],
+    "block_arrival_elapsed_seconds": [
+      21.234631991,
+      21.282443914000012,
+      21.30671040099999,
+      21.351073559,
+      21.393884294000017,
+      21.419192800999994,
+      21.451603797000004,
+      21.48253545300001
+    ],
+    "e2e_seconds": 21.482586142000017
+  },
+  "token_metrics": {
+    "prompt_tokens": 732,
+    "completion_tokens": 216,
+    "total_tokens": 948,
+    "end_to_end_tokens_per_second": 44.12876521167957,
+    "total_tokens_per_second": 44.12876521167957,
+    "completion_tokens_per_second": 10.054655364686484,
+    "tokens_after_first_block": 212,
+    "generated_tokens_per_second_after_first_block": 854.9967772065501
+  },
+  "final_meta_info": {
+    "id": "914d34bd340b46579875a62f2f31263a",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 732,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 216,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      2,
+      8,
+      4,
+      7,
+      7,
+      4,
+      5,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.15671281100000556,
+      0.04778784099997324,
+      0.024391567000009218,
+      0.044088826999995945,
+      0.04293634600000473,
+      0.02537223300001301,
+      0.03239358599998354,
+      0.03077887000000601
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.4070778990000008
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 21.234631991,
+      "output_token_count": 4,
+      "new_output_tokens": 4,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.15671281100000556
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst,",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 4,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874673.9683263
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 21.282443914000012,
+      "output_token_count": 36,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.04778784099997324
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 /",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 36,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 21.30671040099999,
+      "output_token_count": 68,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.024391567000009218
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 68,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324,
+          0.024391567000009218
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 21.351073559,
+      "output_token_count": 100,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.044088826999995945
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50 per flower\n\nClearly, the package of 2 for $1 is the better price.\n\nNow, Vincent wants to buy 18 flowers.",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 100,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8,
+          4,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324,
+          0.024391567000009218,
+          0.044088826999995945
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 21.393884294000017,
+      "output_token_count": 132,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.04293634600000473
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50 per flower\n\nClearly, the package of 2 for $1 is the better price.\n\nNow, Vincent wants to buy 18 flowers.\n\nIf he buys only packages of 2, he would need 18 / 2 = 9 packages.\n\nCost = 9 packages",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 132,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8,
+          4,
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324,
+          0.024391567000009218,
+          0.044088826999995945,
+          0.04293634600000473
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 21.419192800999994,
+      "output_token_count": 164,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.02537223300001301
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50 per flower\n\nClearly, the package of 2 for $1 is the better price.\n\nNow, Vincent wants to buy 18 flowers.\n\nIf he buys only packages of 2, he would need 18 / 2 = 9 packages.\n\nCost = 9 packages * $1 = $9\n\nIf he bought flowers in packages of 3, he would need 18 / 3 = 6 packages.",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 164,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8,
+          4,
+          7,
+          7,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324,
+          0.024391567000009218,
+          0.044088826999995945,
+          0.04293634600000473,
+          0.02537223300001301
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 21.451603797000004,
+      "output_token_count": 196,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.03239358599998354
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50 per flower\n\nClearly, the package of 2 for $1 is the better price.\n\nNow, Vincent wants to buy 18 flowers.\n\nIf he buys only packages of 2, he would need 18 / 2 = 9 packages.\n\nCost = 9 packages * $1 = $9\n\nIf he bought flowers in packages of 3, he would need 18 / 3 = 6 packages.\n\nCost = 6 packages * $2.50 = $15\n\nSo, by choosing the better price (packages of 2),",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 196,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8,
+          4,
+          7,
+          7,
+          4,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324,
+          0.024391567000009218,
+          0.044088826999995945,
+          0.04293634600000473,
+          0.02537223300001301,
+          0.03239358599998354
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 21.48253545300001,
+      "output_token_count": 216,
+      "new_output_tokens": 20,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.03077887000000601
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, let's figure out the price per flower for each option:\n\n- Package of 3 for $2.50: $2.50 / 3 = $0.833 per flower\n- Package of 2 for $1: $1 / 2 = $0.50 per flower\n\nClearly, the package of 2 for $1 is the better price.\n\nNow, Vincent wants to buy 18 flowers.\n\nIf he buys only packages of 2, he would need 18 / 2 = 9 packages.\n\nCost = 9 packages * $1 = $9\n\nIf he bought flowers in packages of 3, he would need 18 / 3 = 6 packages.\n\nCost = 6 packages * $2.50 = $15\n\nSo, by choosing the better price (packages of 2), he saves $15 - $9 = $6.\n\nAnswer: 6",
+      "meta_info": {
+        "id": "914d34bd340b46579875a62f2f31263a",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 216,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          8,
+          4,
+          7,
+          7,
+          4,
+          5,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.15671281100000556,
+          0.04778784099997324,
+          0.024391567000009218,
+          0.044088826999995945,
+          0.04293634600000473,
+          0.02537223300001301,
+          0.03239358599998354,
+          0.03077887000000601
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.4070778990000008
+      }
+    }
+  ]
+}

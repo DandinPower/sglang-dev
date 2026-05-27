@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "request_index": 139,
+  "eval_index": 139,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a candy machine, there are 22 more than four times the number of pink gumballs as there are blue gumballs. If there are 12 blue gumballs how many pink ones are there?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a candy machine, there are 22 more than four times the number of pink gumballs as there are blue gumballs. If there are 12 blue gumballs how many pink ones are there?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 13.9,
+  "request_start_realtime": "2026-05-27T09:17:56.440",
+  "benchmark": {
+    "question": "In a candy machine, there are 22 more than four times the number of pink gumballs as there are blue gumballs. If there are 12 blue gumballs how many pink ones are there?",
+    "gold_solution": "Four times the number of blue gumballs is 12*4=<<12*4=48>>48 gumballs\nThere are 48+22=<<48+22=70>>70 pink gumballs\n#### 70",
+    "gold_answer": "70",
+    "model_text": "\n\nStep 1: the number of blue gumballs.  \nGiven: 12 blue gumballs.  \n\n\nStep 2: calculate times times number of blue gumballs.  \n4 * 12 = 48.  \n\nStep 3: add 22 to that number.  \n48 + 22 = 70.  \n\nSo, there are 70 pink gumballs.  \n machine: 70",
+    "predicted_answer": "70",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      18,
+      8,
+      7,
+      5
+    ],
+    "ttfb_seconds": 0.29033098600001495,
+    "tbb_seconds": [
+      0.059375794999994014,
+      0.05011872899999048,
+      0.0328475370000092
+    ],
+    "dllm_block_completion_latencies": [
+      0.29033098600001495,
+      0.059375794999994014,
+      0.05011872899999048,
+      0.0328475370000092
+    ],
+    "dllm_forward_counts_per_block": [
+      18,
+      8,
+      7,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 72.147687422,
+    "first_new_token_ttfb_seconds": 72.147687422,
+    "block_ttfb_seconds": 72.147687422,
+    "tbb_seconds": [
+      0.05942331299999637,
+      0.04989550599998438,
+      0.03318246900002464
+    ],
+    "block_arrival_elapsed_seconds": [
+      72.147687422,
+      72.207110735,
+      72.25700624099998,
+      72.29018871000001
+    ],
+    "e2e_seconds": 72.29026659699998
+  },
+  "token_metrics": {
+    "prompt_tokens": 736,
+    "completion_tokens": 108,
+    "total_tokens": 844,
+    "end_to_end_tokens_per_second": 11.675154066108059,
+    "total_tokens_per_second": 11.675154066108059,
+    "completion_tokens_per_second": 1.4939770605920266,
+    "tokens_after_first_block": 76,
+    "generated_tokens_per_second_after_first_block": 533.0371704003092
+  },
+  "final_meta_info": {
+    "id": "2f2fa35e1ca64d0aa32276ffa2ed8953",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 736,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 108,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      18,
+      8,
+      7,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.29033098600001495,
+      0.059375794999994014,
+      0.05011872899999048,
+      0.0328475370000092
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.4361597300000142
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 72.147687422,
+      "output_token_count": 32,
+      "new_output_tokens": 32,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.29033098600001495
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nStep 1: the number of blue gumballs.  \nGiven: 12 blue gumballs.  \n\n\nStep ",
+      "meta_info": {
+        "id": "2f2fa35e1ca64d0aa32276ffa2ed8953",
+        "finish_reason": null,
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 32,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.29033098600001495
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873548.5879788
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 72.207110735,
+      "output_token_count": 64,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.059375794999994014
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nStep 1: the number of blue gumballs.  \nGiven: 12 blue gumballs.  \n\n\nStep 2: calculate times times number of blue gumballs.  \n4 * 12 = 48.  \n\nStep 3: add",
+      "meta_info": {
+        "id": "2f2fa35e1ca64d0aa32276ffa2ed8953",
+        "finish_reason": null,
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 64,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.29033098600001495,
+          0.059375794999994014
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 72.25700624099998,
+      "output_token_count": 96,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.05011872899999048
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nStep 1: the number of blue gumballs.  \nGiven: 12 blue gumballs.  \n\n\nStep 2: calculate times times number of blue gumballs.  \n4 * 12 = 48.  \n\nStep 3: add 22 to that number.  \n48 + 22 = 70.  \n\nSo, there are 70 pink g",
+      "meta_info": {
+        "id": "2f2fa35e1ca64d0aa32276ffa2ed8953",
+        "finish_reason": null,
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 96,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          8,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.29033098600001495,
+          0.059375794999994014,
+          0.05011872899999048
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 72.29018871000001,
+      "output_token_count": 108,
+      "new_output_tokens": 12,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.0328475370000092
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nStep 1: the number of blue gumballs.  \nGiven: 12 blue gumballs.  \n\n\nStep 2: calculate times times number of blue gumballs.  \n4 * 12 = 48.  \n\nStep 3: add 22 to that number.  \n48 + 22 = 70.  \n\nSo, there are 70 pink gumballs.  \n machine: 70",
+      "meta_info": {
+        "id": "2f2fa35e1ca64d0aa32276ffa2ed8953",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          8,
+          7,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.29033098600001495,
+          0.059375794999994014,
+          0.05011872899999048,
+          0.0328475370000092
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.4361597300000142
+      }
+    }
+  ]
+}

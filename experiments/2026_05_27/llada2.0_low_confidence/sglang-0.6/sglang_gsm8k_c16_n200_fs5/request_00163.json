@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 163,
+  "eval_index": 163,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a room, there are various toys: 5 red cars, 3 action figures, and a doll. The doll cost as much as 3 action figures and one red car cost $4. How much are all toys worth, of an action figure costs $5?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a room, there are various toys: 5 red cars, 3 action figures, and a doll. The doll cost as much as 3 action figures and one red car cost $4. How much are all toys worth, of an action figure costs $5?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.3,
+  "request_start_realtime": "2026-05-27T09:21:14.592",
+  "benchmark": {
+    "question": "In a room, there are various toys: 5 red cars, 3 action figures, and a doll. The doll cost as much as 3 action figures and one red car cost $4. How much are all toys worth, of an action figure costs $5?",
+    "gold_solution": "Three actions figures are worth 3 * 5 = $<<3*5=15>>15, as much as the doll.\nThe red cars are worth 5 * 4 = $<<5*4=20>>20.\nSo all toys are worth 20 + 15 + 15 = $<<20+15+15=50>>50.\n#### 50",
+    "gold_answer": "50",
+    "model_text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n- Red cars = 5 × $4 = $20\n- Action figures = 3 × $5 = $15\n\nTotal = $20 + $15 + $15 = $50.\n\nBut wait — the problem says \"the doll cost as much as 3 action figures\" — that’s $15.\n\nOne red car costs $4 — correct.\n\nSo total value of all toys:\n= (5 × $4) + (3 × $5) + (1 × $15)\n= $20 + $15 + $15\n= $5.\n\n#### 50",
+    "predicted_answer": "50",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      6,
+      7,
+      11,
+      11,
+      4,
+      11,
+      11,
+      11,
+      7,
+      9,
+      17,
+      7,
+      6
+    ],
+    "ttfb_seconds": 0.5058961039999872,
+    "tbb_seconds": [
+      0.3909693539999921,
+      0.6511290490000192,
+      0.5114712639999652,
+      0.1074375460000283,
+      0.5078725440000085,
+      0.5684288259999448,
+      0.8922552560000554,
+      0.3725547929999493,
+      0.8158556900000349,
+      0.8682113009999739,
+      0.5347408009999981,
+      0.3214126620000002
+    ],
+    "dllm_block_completion_latencies": [
+      0.5058961039999872,
+      0.3909693539999921,
+      0.6511290490000192,
+      0.5114712639999652,
+      0.1074375460000283,
+      0.5078725440000085,
+      0.5684288259999448,
+      0.8922552560000554,
+      0.3725547929999493,
+      0.8158556900000349,
+      0.8682113009999739,
+      0.5347408009999981,
+      0.3214126620000002
+    ],
+    "dllm_forward_counts_per_block": [
+      6,
+      7,
+      11,
+      11,
+      4,
+      11,
+      11,
+      11,
+      7,
+      9,
+      17,
+      7,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 25.678445458,
+    "first_new_token_ttfb_seconds": 25.678445458,
+    "block_ttfb_seconds": 25.678445458,
+    "tbb_seconds": [
+      0.39090074799997865,
+      0.652096854999968,
+      0.510801529000048,
+      0.10681676999996625,
+      0.5093590960000256,
+      0.5671630769999751,
+      0.8920559680000224,
+      0.3738487379999924,
+      0.8145316839999737,
+      0.86922770700005,
+      0.5342626519999953,
+      0.32171208199997636
+    ],
+    "block_arrival_elapsed_seconds": [
+      25.678445458,
+      26.069346205999977,
+      26.721443060999945,
+      27.232244589999993,
+      27.33906135999996,
+      27.848420455999985,
+      28.41558353299996,
+      29.307639500999983,
+      29.681488238999975,
+      30.49601992299995,
+      31.36524763,
+      31.899510281999994,
+      32.22122236399997
+    ],
+    "e2e_seconds": 32.221313848999955
+  },
+  "token_metrics": {
+    "prompt_tokens": 746,
+    "completion_tokens": 389,
+    "total_tokens": 1135,
+    "end_to_end_tokens_per_second": 35.22513095893595,
+    "total_tokens_per_second": 35.22513095893595,
+    "completion_tokens_per_second": 12.072754134824745,
+    "tokens_after_first_block": 367,
+    "generated_tokens_per_second_after_first_block": 56.09160662696913
+  },
+  "final_meta_info": {
+    "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 746,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 389,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      6,
+      7,
+      11,
+      11,
+      4,
+      11,
+      11,
+      11,
+      7,
+      9,
+      17,
+      7,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.5058961039999872,
+      0.3909693539999921,
+      0.6511290490000192,
+      0.5114712639999652,
+      0.1074375460000283,
+      0.5078725440000085,
+      0.5684288259999448,
+      0.8922552560000554,
+      0.3725547929999493,
+      0.8158556900000349,
+      0.8682113009999739,
+      0.5347408009999981,
+      0.3214126620000002
+    ],
+    "dp_rank": null,
+    "e2e_latency": 7.071886297999981
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 25.678445458,
+      "output_token_count": 22,
+      "new_output_tokens": 22,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5058961039999872
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 22,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873700.2704062
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 26.069346205999977,
+      "output_token_count": 54,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.3909693539999921
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 54,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 26.721443060999945,
+      "output_token_count": 86,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6511290490000192
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 86,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 27.232244589999993,
+      "output_token_count": 118,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5114712639999652
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 118,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 27.33906135999996,
+      "output_token_count": 150,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.1074375460000283
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures =",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 150,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 27.848420455999985,
+      "output_token_count": 182,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.5078725440000085
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 182,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 28.41558353299996,
+      "output_token_count": 214,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.5684288259999448
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 214,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 29.307639500999983,
+      "output_token_count": 246,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.8922552560000554
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 246,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448,
+          0.8922552560000554
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 29.681488238999975,
+      "output_token_count": 278,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.3725547929999493
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n- Red cars = 5 × $4 = $20\n- Action figures = 3 × $5 = $15\n\nTotal = $",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 278,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448,
+          0.8922552560000554,
+          0.3725547929999493
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 30.49601992299995,
+      "output_token_count": 310,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.8158556900000349
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n- Red cars = 5 × $4 = $20\n- Action figures = 3 × $5 = $15\n\nTotal = $20 + $15 + $15 = $50.\n\nBut wait — the problem says \"the doll cost as much as 3",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 310,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11,
+          11,
+          7,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448,
+          0.8922552560000554,
+          0.3725547929999493,
+          0.8158556900000349
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 31.36524763,
+      "output_token_count": 342,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.8682113009999739
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n- Red cars = 5 × $4 = $20\n- Action figures = 3 × $5 = $15\n\nTotal = $20 + $15 + $15 = $50.\n\nBut wait — the problem says \"the doll cost as much as 3 action figures\" — that’s $15.\n\nOne red car costs $4 — correct.\n\nSo total value of all toys:\n=",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 342,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11,
+          11,
+          7,
+          9,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448,
+          0.8922552560000554,
+          0.3725547929999493,
+          0.8158556900000349,
+          0.8682113009999739
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 31.899510281999994,
+      "output_token_count": 374,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.5347408009999981
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n- Red cars = 5 × $4 = $20\n- Action figures = 3 × $5 = $15\n\nTotal = $20 + $15 + $15 = $50.\n\nBut wait — the problem says \"the doll cost as much as 3 action figures\" — that’s $15.\n\nOne red car costs $4 — correct.\n\nSo total value of all toys:\n= (5 × $4) + (3 × $5) + (1 × $15)\n= $20 + $15 + $",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 374,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11,
+          11,
+          7,
+          9,
+          17,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448,
+          0.8922552560000554,
+          0.3725547929999493,
+          0.8158556900000349,
+          0.8682113009999739,
+          0.5347408009999981
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 32.22122236399997,
+      "output_token_count": 389,
+      "new_output_tokens": 15,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.3214126620000002
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\nWe are told:\n- An action figure costs $5.\n- The doll costs as much as 3 action figures.\n- One red car costs $4.\n- There are 5 red cars, 3 action figures, and 1 doll.\n\nStep 1: Find the cost of the doll.\n3 action figures = 3 × $5 = $15.\nSo, the doll costs $1.\n\nStepStep 2: Find the cost of the red cars.\nOne red car = $4.\n5 red cars = 5 × $4 = $20.\n\nStep 3: Find the cost of the action figures.\n3 action figures = 3 × $5 = $15.\n\nStep 4: Add up all the costs.\nTotal value = cost of red cars + cost of action figures + cost of doll\n= $20 + $15 + $15 = $50.\n\nWait — correction: the doll costs $15, not $15.\n\nLet's correct:\n\n- Doll = 3 × $5 = $15\n- Red cars = 5 × $4 = $20\n- Action figures = 3 × $5 = $15\n\nTotal = $20 + $15 + $15 = $50.\n\nBut wait — the problem says \"the doll cost as much as 3 action figures\" — that’s $15.\n\nOne red car costs $4 — correct.\n\nSo total value of all toys:\n= (5 × $4) + (3 × $5) + (1 × $15)\n= $20 + $15 + $15\n= $5.\n\n#### 50",
+      "meta_info": {
+        "id": "5d42c4a2b8344c7f96d6a62ea8cc6e26",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 389,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          7,
+          11,
+          11,
+          4,
+          11,
+          11,
+          11,
+          7,
+          9,
+          17,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.5058961039999872,
+          0.3909693539999921,
+          0.6511290490000192,
+          0.5114712639999652,
+          0.1074375460000283,
+          0.5078725440000085,
+          0.5684288259999448,
+          0.8922552560000554,
+          0.3725547929999493,
+          0.8158556900000349,
+          0.8682113009999739,
+          0.5347408009999981,
+          0.3214126620000002
+        ],
+        "dp_rank": null,
+        "e2e_latency": 7.071886297999981
+      }
+    }
+  ]
+}

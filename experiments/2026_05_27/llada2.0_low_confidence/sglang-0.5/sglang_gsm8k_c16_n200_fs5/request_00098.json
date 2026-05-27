@@ -1,0 +1,670 @@
+{
+  "ok": true,
+  "request_index": 98,
+  "eval_index": 98,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Cars have lined up on the motorway. Some of the cars drive through in the first 15 minutes of the traffic jam, then 20 more cars drive through in the remaining 15 minutes of the jam. 5 cars from the line take an exit so they don't have to drive through the traffic jam. If there were originally 30 cars on the motorway, how many cars drove through the traffic jam in the first 15 minutes?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Cars have lined up on the motorway. Some of the cars drive through in the first 15 minutes of the traffic jam, then 20 more cars drive through in the remaining 15 minutes of the jam. 5 cars from the line take an exit so they don't have to drive through the traffic jam. If there were originally 30 cars on the motorway, how many cars drove through the traffic jam in the first 15 minutes?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 9.8,
+  "request_start_realtime": "2026-05-27T10:03:36.915",
+  "benchmark": {
+    "question": "Cars have lined up on the motorway. Some of the cars drive through in the first 15 minutes of the traffic jam, then 20 more cars drive through in the remaining 15 minutes of the jam. 5 cars from the line take an exit so they don't have to drive through the traffic jam. If there were originally 30 cars on the motorway, how many cars drove through the traffic jam in the first 15 minutes?",
+    "gold_solution": "The cars that exited do not need to be included so there were 30 original cars – 5 cars that exited = <<30-5=25>>25 cars that drove through the traffic jam.\nMost of the cars exited in the final 15 minutes so in the first 15 minutes, there must have been 25 total cars – 20 cars that drove through in the final 15 minutes = 5 cars that drove through the traffic jam.\n#### 5",
+    "gold_answer": "5",
+    "model_text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\nWait — this leads to contradiction.\n\nLet’s reassign.\n\nLet x = number of cars that drove through in the first 15 minutes.\n\nThen, 20 cars passed in the last 15 minutes.\n\nTotal cars passed through jam jam = x + 20.\n\nBut 5 cars took an exit, so they didn’t go through.\n\nTotal cars originally = 30.\n\nSo:\nx + 20 + 5 = 30  \nx + 25 = 30  \nx = 5.\n\nYes, that works.\n\nSo 5 cars drove through the traffic jam in the first 15 minutes.\n\n#### 5",
+    "predicted_answer": "5",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      10,
+      16,
+      12,
+      9,
+      15,
+      8,
+      15,
+      7,
+      11,
+      7,
+      10
+    ],
+    "ttfb_seconds": 0.7641734779999751,
+    "tbb_seconds": [
+      0.5555060300000036,
+      0.8821698350000133,
+      0.7908468520000156,
+      0.6700032609999766,
+      0.6716660879999949,
+      0.3977395360000173,
+      0.7062351550000017,
+      0.514745511000001,
+      0.5588617029999909,
+      0.35495047500000965,
+      0.6087609369999996
+    ],
+    "dllm_block_completion_latencies": [
+      0.7641734779999751,
+      0.5555060300000036,
+      0.8821698350000133,
+      0.7908468520000156,
+      0.6700032609999766,
+      0.6716660879999949,
+      0.3977395360000173,
+      0.7062351550000017,
+      0.514745511000001,
+      0.5588617029999909,
+      0.35495047500000965,
+      0.6087609369999996
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      16,
+      12,
+      9,
+      15,
+      8,
+      15,
+      7,
+      11,
+      7,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 13.887380947999986,
+    "first_new_token_ttfb_seconds": 13.887380947999986,
+    "block_ttfb_seconds": 13.887380947999986,
+    "tbb_seconds": [
+      0.5537185240000326,
+      0.8815280970000003,
+      0.7918272129999764,
+      0.6765866310000206,
+      0.6641749839999989,
+      0.40050378299997647,
+      0.706103105000011,
+      0.5157597040000041,
+      0.5548276760000022,
+      0.3558851660000073,
+      0.6082625610000036
+    ],
+    "block_arrival_elapsed_seconds": [
+      13.887380947999986,
+      14.441099472000019,
+      15.32262756900002,
+      16.114454781999996,
+      16.791041413000016,
+      17.455216397000015,
+      17.85572017999999,
+      18.561823285000003,
+      19.077582989000007,
+      19.63241066500001,
+      19.988295831000016,
+      20.59655839200002
+    ],
+    "e2e_seconds": 20.596664061000013
+  },
+  "token_metrics": {
+    "prompt_tokens": 786,
+    "completion_tokens": 366,
+    "total_tokens": 1152,
+    "end_to_end_tokens_per_second": 55.93138755811061,
+    "total_tokens_per_second": 55.93138755811061,
+    "completion_tokens_per_second": 17.76986792210806,
+    "tokens_after_first_block": 352,
+    "generated_tokens_per_second_after_first_block": 52.46462164012107
+  },
+  "final_meta_info": {
+    "id": "9a18d5de6c1f426ebb062c479d80a074",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 786,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 366,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      16,
+      12,
+      9,
+      15,
+      8,
+      15,
+      7,
+      11,
+      7,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.7641734779999751,
+      0.5555060300000036,
+      0.8821698350000133,
+      0.7908468520000156,
+      0.6700032609999766,
+      0.6716660879999949,
+      0.3977395360000173,
+      0.7062351550000017,
+      0.514745511000001,
+      0.5588617029999909,
+      0.35495047500000965,
+      0.6087609369999996
+    ],
+    "dp_rank": null,
+    "e2e_latency": 7.499568543000009
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 13.887380947999986,
+      "output_token_count": 14,
+      "new_output_tokens": 14,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.7641734779999751
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n- 20 cars drove through",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 14,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876230.800258
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 14.441099472000019,
+      "output_token_count": 46,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.5555060300000036
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 46,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 15.32262756900002,
+      "output_token_count": 78,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.8821698350000133
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 78,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 16.114454781999996,
+      "output_token_count": 110,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.7908468520000156
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 110,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 16.791041413000016,
+      "output_token_count": 142,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6700032609999766
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 1",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 142,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 17.455216397000015,
+      "output_token_count": 174,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.6716660879999949
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 174,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 17.85572017999999,
+      "output_token_count": 206,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.3977395360000173
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\n",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 206,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949,
+          0.3977395360000173
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 18.561823285000003,
+      "output_token_count": 238,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.7062351550000017
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\nWait — this leads to contradiction.\n\nLet’s reassign.\n\nLet x = number of cars that drove through in the first 15 minutes",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 238,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15,
+          8,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949,
+          0.3977395360000173,
+          0.7062351550000017
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 19.077582989000007,
+      "output_token_count": 270,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.514745511000001
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\nWait — this leads to contradiction.\n\nLet’s reassign.\n\nLet x = number of cars that drove through in the first 15 minutes.\n\nThen, 20 cars passed in the last 15 minutes.\n\nTotal cars passed through jam jam = x + 20",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 270,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15,
+          8,
+          15,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949,
+          0.3977395360000173,
+          0.7062351550000017,
+          0.514745511000001
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 19.63241066500001,
+      "output_token_count": 302,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.5588617029999909
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\nWait — this leads to contradiction.\n\nLet’s reassign.\n\nLet x = number of cars that drove through in the first 15 minutes.\n\nThen, 20 cars passed in the last 15 minutes.\n\nTotal cars passed through jam jam = x + 20.\n\nBut 5 cars took an exit, so they didn’t go through.\n\nTotal cars originally = 30.\n\nSo:",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 302,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15,
+          8,
+          15,
+          7,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949,
+          0.3977395360000173,
+          0.7062351550000017,
+          0.514745511000001,
+          0.5588617029999909
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 19.988295831000016,
+      "output_token_count": 334,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.35495047500000965
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\nWait — this leads to contradiction.\n\nLet’s reassign.\n\nLet x = number of cars that drove through in the first 15 minutes.\n\nThen, 20 cars passed in the last 15 minutes.\n\nTotal cars passed through jam jam = x + 20.\n\nBut 5 cars took an exit, so they didn’t go through.\n\nTotal cars originally = 30.\n\nSo:\nx + 20 + 5 = 30  \nx + 25 = 30  \nx = 5.\n",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": null,
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 334,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15,
+          8,
+          15,
+          7,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949,
+          0.3977395360000173,
+          0.7062351550000017,
+          0.514745511000001,
+          0.5588617029999909,
+          0.35495047500000965
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 20.59655839200002,
+      "output_token_count": 366,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.6087609369999996
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nWe are told:\n- 20 cars drove through in the last 15 minutes.\n- 5 cars took an exit, so they didn't go through the jam.\n- Originally, originally there were 30 cars on the motorway.\n\nLet’s calculate how many cars drove through through traffic jam.\n\nTotal cars = cars that drove through jam + cars that took exit\nSo: 30 = (cars that drove through jam) + 5\n\nTherefore, cars that drove through jam = 30 - 5 = 25.\n\nBut wait — we are told that 20 cars passed in the last 15 minutes. So the rest must have passed in the first 15 minutes.\n\nSo:\nCars in first 15 minutes = total jam drivers - cars in last 15 minutes\n= 25 - 20 = 5.\n\nBut let’s double-check.\n\nWait — this leads to contradiction.\n\nLet’s reassign.\n\nLet x = number of cars that drove through in the first 15 minutes.\n\nThen, 20 cars passed in the last 15 minutes.\n\nTotal cars passed through jam jam = x + 20.\n\nBut 5 cars took an exit, so they didn’t go through.\n\nTotal cars originally = 30.\n\nSo:\nx + 20 + 5 = 30  \nx + 25 = 30  \nx = 5.\n\nYes, that works.\n\nSo 5 cars drove through the traffic jam in the first 15 minutes.\n\n#### 5",
+      "meta_info": {
+        "id": "9a18d5de6c1f426ebb062c479d80a074",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 786,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 366,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          12,
+          9,
+          15,
+          8,
+          15,
+          7,
+          11,
+          7,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.7641734779999751,
+          0.5555060300000036,
+          0.8821698350000133,
+          0.7908468520000156,
+          0.6700032609999766,
+          0.6716660879999949,
+          0.3977395360000173,
+          0.7062351550000017,
+          0.514745511000001,
+          0.5588617029999909,
+          0.35495047500000965,
+          0.6087609369999996
+        ],
+        "dp_rank": null,
+        "e2e_latency": 7.499568543000009
+      }
+    }
+  ]
+}

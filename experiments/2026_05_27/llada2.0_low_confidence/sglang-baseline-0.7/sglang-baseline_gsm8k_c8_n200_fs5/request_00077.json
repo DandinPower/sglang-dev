@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 77,
+  "eval_index": 77,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If Raymond does half as much laundry as Sarah, and Sarah does 4 times as much laundry as David, calculate the difference in the amount of laundry Raymond and David do if Sarah does 400 pounds of laundry.\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If Raymond does half as much laundry as Sarah, and Sarah does 4 times as much laundry as David, calculate the difference in the amount of laundry Raymond and David do if Sarah does 400 pounds of laundry.\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 7.7,
+  "request_start_realtime": "2026-05-27T08:58:04.119",
+  "benchmark": {
+    "question": "If Raymond does half as much laundry as Sarah, and Sarah does 4 times as much laundry as David, calculate the difference in the amount of laundry Raymond and David do if Sarah does 400 pounds of laundry.",
+    "gold_solution": "If Sarah does 400 pounds of laundry, and Raymond does half as much laundry as Sarah, Raymond does 1/2*400 = 200 pounds of laundry.\nSara also does 4 times as much laundry as David, meaning David does 400/4 = <<400/4=100>>100 pounds of laundry.\nThe difference in the amount of laundry Raymond and David do is 200-100 = <<200-100=100>>100 pounds\n#### 100",
+    "gold_answer": "100",
+    "model_text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n- Raymond does half as much laundry as Sarah.\n\nStep 1: Find how much laundry David does.\nSince Sarah does 4 times as much as David:\nDavid = Sarah / 4 = 400 / 4 = 100 pounds.\n\nStep 2: Find how much laundry Raymond does.\nRaymond does half as much as Sarah:\nRaymond = Sarah / 2 = 400 / 2 = 200 pounds.\n\nStep 3: Calculate the difference between Raymond and David.\nDifference = Raymond - David = 200 - 100 = 100 pounds.\n\n#### 100",
+    "predicted_answer": "100",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      17,
+      17,
+      14,
+      15,
+      15,
+      10
+    ],
+    "ttfb_seconds": 0.3877346799999941,
+    "tbb_seconds": [
+      0.20892469599999686,
+      0.1915210970000203,
+      0.3267809700000157,
+      0.17196256799996945,
+      0.34173166300001867,
+      0.11440821999997297
+    ],
+    "dllm_block_completion_latencies": [
+      0.3877346799999941,
+      0.20892469599999686,
+      0.1915210970000203,
+      0.3267809700000157,
+      0.17196256799996945,
+      0.34173166300001867,
+      0.11440821999997297
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      17,
+      17,
+      14,
+      15,
+      15,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 10.796572633999972,
+    "first_new_token_ttfb_seconds": 10.796572633999972,
+    "block_ttfb_seconds": 10.796572633999972,
+    "tbb_seconds": [
+      0.2116440240000088,
+      0.187597095000001,
+      0.3295643559999917,
+      0.16948275300001114,
+      0.34465635200001543,
+      0.11183339100000467
+    ],
+    "block_arrival_elapsed_seconds": [
+      10.796572633999972,
+      11.00821665799998,
+      11.195813752999982,
+      11.525378108999973,
+      11.694860861999985,
+      12.039517214,
+      12.151350605000005
+    ],
+    "e2e_seconds": 12.151410711999972
+  },
+  "token_metrics": {
+    "prompt_tokens": 735,
+    "completion_tokens": 181,
+    "total_tokens": 916,
+    "end_to_end_tokens_per_second": 75.3821940275145,
+    "total_tokens_per_second": 75.3821940275145,
+    "completion_tokens_per_second": 14.895389867882232,
+    "tokens_after_first_block": 180,
+    "generated_tokens_per_second_after_first_block": 132.85720480023295
+  },
+  "final_meta_info": {
+    "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 735,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 181,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      17,
+      17,
+      14,
+      15,
+      15,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.3877346799999941,
+      0.20892469599999686,
+      0.1915210970000203,
+      0.3267809700000157,
+      0.17196256799996945,
+      0.34173166300001867,
+      0.11440821999997297
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.7602119659999858
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 10.796572633999972,
+      "output_token_count": 1,
+      "new_output_tokens": 1,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.3877346799999941
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 1,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872294.9153626
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 11.00821665799998,
+      "output_token_count": 33,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.20892469599999686
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n-",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 33,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941,
+          0.20892469599999686
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 11.195813752999982,
+      "output_token_count": 65,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.1915210970000203
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n- Raymond does half as much laundry as Sarah.\n\nStep 1: Find how much laundry David does.\nSince Sarah does 4 times as much as",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 65,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          17,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941,
+          0.20892469599999686,
+          0.1915210970000203
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 11.525378108999973,
+      "output_token_count": 97,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3267809700000157
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n- Raymond does half as much laundry as Sarah.\n\nStep 1: Find how much laundry David does.\nSince Sarah does 4 times as much as David:\nDavid = Sarah / 4 = 400 / 4 = 100 pounds.\n\nStep 2: Find how",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 97,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          17,
+          17,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941,
+          0.20892469599999686,
+          0.1915210970000203,
+          0.3267809700000157
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 11.694860861999985,
+      "output_token_count": 129,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.17196256799996945
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n- Raymond does half as much laundry as Sarah.\n\nStep 1: Find how much laundry David does.\nSince Sarah does 4 times as much as David:\nDavid = Sarah / 4 = 400 / 4 = 100 pounds.\n\nStep 2: Find how much laundry Raymond does.\nRaymond does half as much as Sarah:\nRaymond = Sarah / 2 = 400 / 2 =",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 129,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          17,
+          17,
+          14,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941,
+          0.20892469599999686,
+          0.1915210970000203,
+          0.3267809700000157,
+          0.17196256799996945
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 12.039517214,
+      "output_token_count": 161,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.34173166300001867
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n- Raymond does half as much laundry as Sarah.\n\nStep 1: Find how much laundry David does.\nSince Sarah does 4 times as much as David:\nDavid = Sarah / 4 = 400 / 4 = 100 pounds.\n\nStep 2: Find how much laundry Raymond does.\nRaymond does half as much as Sarah:\nRaymond = Sarah / 2 = 400 / 2 = 200 pounds.\n\nStep 3: Calculate the difference between Raymond and David.\nDifference = Raymond - David = 200 -",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 161,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          17,
+          17,
+          14,
+          15,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941,
+          0.20892469599999686,
+          0.1915210970000203,
+          0.3267809700000157,
+          0.17196256799996945,
+          0.34173166300001867
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 12.151350605000005,
+      "output_token_count": 181,
+      "new_output_tokens": 20,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.11440821999997297
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- Sarah does 400 pounds of laundry.\n- Sarah does 4 times as much laundry as David.\n- Raymond does half as much laundry as Sarah.\n\nStep 1: Find how much laundry David does.\nSince Sarah does 4 times as much as David:\nDavid = Sarah / 4 = 400 / 4 = 100 pounds.\n\nStep 2: Find how much laundry Raymond does.\nRaymond does half as much as Sarah:\nRaymond = Sarah / 2 = 400 / 2 = 200 pounds.\n\nStep 3: Calculate the difference between Raymond and David.\nDifference = Raymond - David = 200 - 100 = 100 pounds.\n\n#### 100",
+      "meta_info": {
+        "id": "76b73c0bb93946faa0c74b5bc06e1c7a",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          17,
+          17,
+          14,
+          15,
+          15,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.3877346799999941,
+          0.20892469599999686,
+          0.1915210970000203,
+          0.3267809700000157,
+          0.17196256799996945,
+          0.34173166300001867,
+          0.11440821999997297
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.7602119659999858
+      }
+    }
+  ]
+}

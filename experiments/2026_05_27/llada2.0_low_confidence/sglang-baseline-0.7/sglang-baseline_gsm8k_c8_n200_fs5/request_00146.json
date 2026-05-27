@@ -1,0 +1,862 @@
+{
+  "ok": true,
+  "request_index": 146,
+  "eval_index": 146,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 14.600000000000001,
+  "request_start_realtime": "2026-05-27T08:58:11.018",
+  "benchmark": {
+    "question": "Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos?",
+    "gold_solution": "The first set had 500 pieces, and the second set had 3 times as many as the first set, so the second set has 500*3=<<500*3=1500>>1500 pieces\nThe third set had one-quarter of the 500 pieces, so that means it had 500*.25= <<500*.25=125>>125 pieces\nIn total, that means Johnny picked up 500 + 1500+ 125= <<500+1500+125=2125>>2125 blocks\n#### 2,125",
+    "gold_answer": "2,125",
+    "model_text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n\nWait — earlier I said 15,000, but that's wrong.\n\nLet's go step by step:\n\n1. First set: 500 pieces.\n2. Second set: 3 times more than the first → 3 × 500 = 1500 pieces.\n3. Third set: 1/4 the number of pieces as the first → 500 / 4 = 125 pieces.\n\nNow sum:\n500 + 1500 + 125 = 2,125\n\nSo Johnny picks up 2,125 pieces.\n\n#### 2125",
+    "predicted_answer": "2125",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      26,
+      16,
+      15,
+      15,
+      25,
+      27,
+      27,
+      18,
+      17,
+      17,
+      22,
+      17,
+      18,
+      18,
+      27
+    ],
+    "ttfb_seconds": 0.4732493070000032,
+    "tbb_seconds": [
+      0.19613688800001228,
+      0.18686100200000055,
+      0.1796935319999875,
+      0.5347751870000366,
+      0.33030620699997826,
+      0.3226813950000178,
+      0.3797320299999569,
+      0.20510863500004461,
+      0.4204976229999602,
+      0.2616825750000089,
+      0.35802452900003345,
+      0.20971684399995638,
+      0.3696065550000185,
+      0.31860260199999857
+    ],
+    "dllm_block_completion_latencies": [
+      0.4732493070000032,
+      0.19613688800001228,
+      0.18686100200000055,
+      0.1796935319999875,
+      0.5347751870000366,
+      0.33030620699997826,
+      0.3226813950000178,
+      0.3797320299999569,
+      0.20510863500004461,
+      0.4204976229999602,
+      0.2616825750000089,
+      0.35802452900003345,
+      0.20971684399995638,
+      0.3696065550000185,
+      0.31860260199999857
+    ],
+    "dllm_forward_counts_per_block": [
+      26,
+      16,
+      15,
+      15,
+      25,
+      27,
+      27,
+      18,
+      17,
+      17,
+      22,
+      17,
+      18,
+      18,
+      27
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 24.054626068000005,
+    "first_new_token_ttfb_seconds": 24.054626068000005,
+    "block_ttfb_seconds": 24.054626068000005,
+    "tbb_seconds": [
+      0.19581282000001465,
+      0.18951953499998808,
+      0.17963314799999353,
+      0.5324564570000234,
+      0.33633983400000034,
+      0.31614766799998506,
+      0.3824025670000424,
+      0.2101415049999673,
+      0.413170421000018,
+      0.26080727599998,
+      0.3586014169999885,
+      0.20851625700004206,
+      0.37241664299995136,
+      0.3178237930000023
+    ],
+    "block_arrival_elapsed_seconds": [
+      24.054626068000005,
+      24.25043888800002,
+      24.439958423000007,
+      24.619591571,
+      25.152048028000024,
+      25.488387862000025,
+      25.80453553000001,
+      26.186938097000052,
+      26.39707960200002,
+      26.810250023000037,
+      27.071057299000017,
+      27.429658716000006,
+      27.638174973000048,
+      28.010591616,
+      28.328415409
+    ],
+    "e2e_seconds": 28.328528094000035
+  },
+  "token_metrics": {
+    "prompt_tokens": 772,
+    "completion_tokens": 469,
+    "total_tokens": 1241,
+    "end_to_end_tokens_per_second": 43.80742959472162,
+    "total_tokens_per_second": 43.80742959472162,
+    "completion_tokens_per_second": 16.55574897657086,
+    "tokens_after_first_block": 441,
+    "generated_tokens_per_second_after_first_block": 103.18439620683922
+  },
+  "final_meta_info": {
+    "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 772,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 469,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      26,
+      16,
+      15,
+      15,
+      25,
+      27,
+      27,
+      18,
+      17,
+      17,
+      22,
+      17,
+      18,
+      18,
+      27
+    ],
+    "dllm_block_completion_latencies": [
+      0.4732493070000032,
+      0.19613688800001228,
+      0.18686100200000055,
+      0.1796935319999875,
+      0.5347751870000366,
+      0.33030620699997826,
+      0.3226813950000178,
+      0.3797320299999569,
+      0.20510863500004461,
+      0.4204976229999602,
+      0.2616825750000089,
+      0.35802452900003345,
+      0.20971684399995638,
+      0.3696065550000185,
+      0.31860260199999857
+    ],
+    "dp_rank": null,
+    "e2e_latency": 5.029462916999989
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 24.054626068000005,
+      "output_token_count": 28,
+      "new_output_tokens": 28,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4732493070000032
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 28,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872315.072363
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 24.25043888800002,
+      "output_token_count": 60,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.19613688800001228
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 60,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 24.439958423000007,
+      "output_token_count": 92,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.18686100200000055
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 50",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 92,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 24.619591571,
+      "output_token_count": 124,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.1796935319999875
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 124,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 25.152048028000024,
+      "output_token_count": 156,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5347751870000366
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = ",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 156,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 25.488387862000025,
+      "output_token_count": 188,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.33030620699997826
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 188,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 25.80453553000001,
+      "output_token_count": 220,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.3226813950000178
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × ",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 220,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 26.186938097000052,
+      "output_token_count": 252,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.3797320299999569
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 252,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 26.39707960200002,
+      "output_token_count": 284,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.20510863500004461
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 =",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 284,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 26.810250023000037,
+      "output_token_count": 316,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.4204976229999602
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 316,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461,
+          0.4204976229999602
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 27.071057299000017,
+      "output_token_count": 348,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.2616825750000089
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n\nWait — earlier I said 15,000, but that's wrong.\n\nLet's go step by step:\n\n1.",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 348,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17,
+          17,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461,
+          0.4204976229999602,
+          0.2616825750000089
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 27.429658716000006,
+      "output_token_count": 380,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.35802452900003345
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n\nWait — earlier I said 15,000, but that's wrong.\n\nLet's go step by step:\n\n1. First set: 500 pieces.\n2. Second set: 3 times more than the first → 3 × 500 = ",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 380,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17,
+          17,
+          22,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461,
+          0.4204976229999602,
+          0.2616825750000089,
+          0.35802452900003345
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 27.638174973000048,
+      "output_token_count": 412,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.20971684399995638
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n\nWait — earlier I said 15,000, but that's wrong.\n\nLet's go step by step:\n\n1. First set: 500 pieces.\n2. Second set: 3 times more than the first → 3 × 500 = 1500 pieces.\n3. Third set: 1/4 the number of pieces as the first → 500 / 4 =",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 412,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17,
+          17,
+          22,
+          17,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461,
+          0.4204976229999602,
+          0.2616825750000089,
+          0.35802452900003345,
+          0.20971684399995638
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 28.010591616,
+      "output_token_count": 444,
+      "new_output_tokens": 32,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.3696065550000185
+      ],
+      "forward_count_metric_count": 14,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n\nWait — earlier I said 15,000, but that's wrong.\n\nLet's go step by step:\n\n1. First set: 500 pieces.\n2. Second set: 3 times more than the first → 3 × 500 = 1500 pieces.\n3. Third set: 1/4 the number of pieces as the first → 500 / 4 = 125 pieces.\n\nNow sum:\n500 + 1500 + 125 = 2,12",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 444,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17,
+          17,
+          22,
+          17,
+          18,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461,
+          0.4204976229999602,
+          0.2616825750000089,
+          0.35802452900003345,
+          0.20971684399995638,
+          0.3696065550000185
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 14,
+      "elapsed_seconds": 28.328415409,
+      "output_token_count": 469,
+      "new_output_tokens": 25,
+      "block_metric_count": 15,
+      "new_block_latencies": [
+        0.31860260199999857
+      ],
+      "forward_count_metric_count": 15,
+      "text": "\n\n1. The first lego set has 500 pieces.\n2. The second lego set has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 × 500 = 1500 pieces.\n3. The third lego set has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 500 / 4 = 125 pieces.\n\nNow, let's add all the pieces together:\n- First set: 500\n- Second set: 15,000\n- Third set: 125\n\nTotal pieces = 500 + 15,000 + 125 = 16,625\n\nWait — correction: \"3 times more\" could be ambiguous. But in standard usage, \"3 times more\" often means 3 times as many, i.e., 3 × 500 = 1500.\n\nBut let's double-check:  \n- First set: 500  \n- Second set: 3 × 500 = 1500  \n- Third set: (1/4) × 500 = 125  \n\nTotal = 500 + 1500 + 125 = 2,125\n\nWait — earlier I said 15,000, but that's wrong.\n\nLet's go step by step:\n\n1. First set: 500 pieces.\n2. Second set: 3 times more than the first → 3 × 500 = 1500 pieces.\n3. Third set: 1/4 the number of pieces as the first → 500 / 4 = 125 pieces.\n\nNow sum:\n500 + 1500 + 125 = 2,125\n\nSo Johnny picks up 2,125 pieces.\n\n#### 2125",
+      "meta_info": {
+        "id": "a0b03a7afe0f497ea4a11333a6bdc374",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 469,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          16,
+          15,
+          15,
+          25,
+          27,
+          27,
+          18,
+          17,
+          17,
+          22,
+          17,
+          18,
+          18,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.4732493070000032,
+          0.19613688800001228,
+          0.18686100200000055,
+          0.1796935319999875,
+          0.5347751870000366,
+          0.33030620699997826,
+          0.3226813950000178,
+          0.3797320299999569,
+          0.20510863500004461,
+          0.4204976229999602,
+          0.2616825750000089,
+          0.35802452900003345,
+          0.20971684399995638,
+          0.3696065550000185,
+          0.31860260199999857
+        ],
+        "dp_rank": null,
+        "e2e_latency": 5.029462916999989
+      }
+    }
+  ]
+}

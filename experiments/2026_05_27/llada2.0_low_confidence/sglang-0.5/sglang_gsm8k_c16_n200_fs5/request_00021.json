@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "request_index": 21,
+  "eval_index": 21,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.1,
+  "request_start_realtime": "2026-05-27T10:03:29.215",
+  "benchmark": {
+    "question": "Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born?",
+    "gold_solution": "When Raymond's son was born Samantha was 23 - 6 = <<23-6=17>>17 years old.\nThus it has been 31 - 17 = <<31-17=14>>14 years since Raymond's son was born.\n#### 14",
+    "gold_answer": "14",
+    "model_text": "\n\nSamantha is now 31, and Raymond was born 6 years before Samantha, so Raymond is 31 + 6 = 27 years old.\n\nRaymond had a son at the age of 23, so the son was born 27 - 23 = 4 years ago.\n\nTherefore, Raymond's son was born  years ago..\n#### 4",
+    "predicted_answer": "4",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      2,
+      9,
+      6,
+      5
+    ],
+    "ttfb_seconds": 0.18731145499998547,
+    "tbb_seconds": [
+      0.46911032299999533,
+      0.31398882000002004,
+      0.14073008599996228
+    ],
+    "dllm_block_completion_latencies": [
+      0.18731145499998547,
+      0.46911032299999533,
+      0.31398882000002004,
+      0.14073008599996228
+    ],
+    "dllm_forward_counts_per_block": [
+      2,
+      9,
+      6,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 1.8634937329999843,
+    "first_new_token_ttfb_seconds": 1.8634937329999843,
+    "block_ttfb_seconds": 1.8634937329999843,
+    "tbb_seconds": [
+      0.470303758,
+      0.31305810300000303,
+      0.14046897200000785
+    ],
+    "block_arrival_elapsed_seconds": [
+      1.8634937329999843,
+      2.3337974909999843,
+      2.6468555939999874,
+      2.7873245659999952
+    ],
+    "e2e_seconds": 2.7874018649999925
+  },
+  "token_metrics": {
+    "prompt_tokens": 735,
+    "completion_tokens": 89,
+    "total_tokens": 824,
+    "end_to_end_tokens_per_second": 295.6157884324305,
+    "total_tokens_per_second": 295.6157884324305,
+    "completion_tokens_per_second": 31.92937520690087,
+    "tokens_after_first_block": 88,
+    "generated_tokens_per_second_after_first_block": 95.24756515510269
+  },
+  "final_meta_info": {
+    "id": "7ea55e7e68e74701bb96161750b8572b",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 735,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 89,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      2,
+      9,
+      6,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.18731145499998547,
+      0.46911032299999533,
+      0.31398882000002004,
+      0.14073008599996228
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.1326202050000234
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 1.8634937329999843,
+      "output_token_count": 1,
+      "new_output_tokens": 1,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.18731145499998547
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n",
+      "meta_info": {
+        "id": "7ea55e7e68e74701bb96161750b8572b",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 1,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.18731145499998547
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876211.0791452
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 2.3337974909999843,
+      "output_token_count": 33,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.46911032299999533
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nSamantha is now 31, and Raymond was born 6 years before Samantha, so Raymond is 31 + 6 = 27",
+      "meta_info": {
+        "id": "7ea55e7e68e74701bb96161750b8572b",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 33,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.18731145499998547,
+          0.46911032299999533
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.6468555939999874,
+      "output_token_count": 65,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.31398882000002004
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nSamantha is now 31, and Raymond was born 6 years before Samantha, so Raymond is 31 + 6 = 27 years old.\n\nRaymond had a son at the age of 23, so the son was born 27 - 23 = ",
+      "meta_info": {
+        "id": "7ea55e7e68e74701bb96161750b8572b",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 65,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          9,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18731145499998547,
+          0.46911032299999533,
+          0.31398882000002004
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.7873245659999952,
+      "output_token_count": 89,
+      "new_output_tokens": 24,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.14073008599996228
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nSamantha is now 31, and Raymond was born 6 years before Samantha, so Raymond is 31 + 6 = 27 years old.\n\nRaymond had a son at the age of 23, so the son was born 27 - 23 = 4 years ago.\n\nTherefore, Raymond's son was born  years ago..\n#### 4",
+      "meta_info": {
+        "id": "7ea55e7e68e74701bb96161750b8572b",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 89,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          9,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.18731145499998547,
+          0.46911032299999533,
+          0.31398882000002004,
+          0.14073008599996228
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.1326202050000234
+      }
+    }
+  ]
+}

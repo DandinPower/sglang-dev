@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 81,
+  "eval_index": 81,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. How many stickers does Charlie have left?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. How many stickers does Charlie have left?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 8.1,
+  "request_start_realtime": "2026-05-27T09:17:50.639",
+  "benchmark": {
+    "question": "Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. How many stickers does Charlie have left?",
+    "gold_solution": "The total number of stickers is 10 + 21 + 23 = <<10+21+23=54>>54.\nThe number of stickers given away and used on the greeting card is 9 + 28 = <<9+28=37>>37.\nCharlie has 54 − 37 = 17 stickers left.\n#### 17",
+    "gold_answer": "17",
+    "model_text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used 28: 45 - 28 = 17.\n\nAh, I made a mistake in subtraction.\n\nLet’s recompute carefully:\n\n- Start: 10\n- Bought 21: 10 + 21 = 31\n- Got 23: 31 + 23 = 54\n- Gaveave 9: 54 - 9 = 45\n- Used 28: 45 - 28 = 17\n\nSo Charlie has 17 stickers left.\n\n#### 17",
+    "predicted_answer": "17",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      6,
+      3,
+      4,
+      15,
+      14,
+      13,
+      11,
+      13,
+      5,
+      4,
+      6,
+      3
+    ],
+    "ttfb_seconds": 0.1977691729999833,
+    "tbb_seconds": [
+      0.039859757000016316,
+      0.021471684000005098,
+      0.029538101999975197,
+      0.10736371900000563,
+      0.09986993800001187,
+      0.09767158200000381,
+      0.0765711049999993,
+      0.09660138699999266,
+      0.034651457999984814,
+      0.02796701700000881,
+      0.04508522599999765,
+      0.01819043200001147
+    ],
+    "dllm_block_completion_latencies": [
+      0.1977691729999833,
+      0.039859757000016316,
+      0.021471684000005098,
+      0.029538101999975197,
+      0.10736371900000563,
+      0.09986993800001187,
+      0.09767158200000381,
+      0.0765711049999993,
+      0.09660138699999266,
+      0.034651457999984814,
+      0.02796701700000881,
+      0.04508522599999765,
+      0.01819043200001147
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      3,
+      4,
+      15,
+      14,
+      13,
+      11,
+      13,
+      5,
+      4,
+      6,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 37.394496473000004,
+    "first_new_token_ttfb_seconds": 37.394496473000004,
+    "block_ttfb_seconds": 37.394496473000004,
+    "tbb_seconds": [
+      0.04007509299998446,
+      0.02148351300002105,
+      0.029430851999990182,
+      0.10740479500000788,
+      0.09973429499999042,
+      0.09778828599999656,
+      0.0767086380000137,
+      0.09646950999999149,
+      0.0345786999999973,
+      0.02808298900001205,
+      0.045005246999977544,
+      0.01832012799999916
+    ],
+    "block_arrival_elapsed_seconds": [
+      37.394496473000004,
+      37.43457156599999,
+      37.45605507900001,
+      37.485485931,
+      37.59289072600001,
+      37.692625021,
+      37.790413306999994,
+      37.86712194500001,
+      37.963591455,
+      37.998170155,
+      38.02625314400001,
+      38.071258390999986,
+      38.089578518999986
+    ],
+    "e2e_seconds": 38.08968119400001
+  },
+  "token_metrics": {
+    "prompt_tokens": 749,
+    "completion_tokens": 378,
+    "total_tokens": 1127,
+    "end_to_end_tokens_per_second": 29.588065971461273,
+    "total_tokens_per_second": 29.588065971461273,
+    "completion_tokens_per_second": 9.923947592912477,
+    "tokens_after_first_block": 359,
+    "generated_tokens_per_second_after_first_block": 516.4095083729522
+  },
+  "final_meta_info": {
+    "id": "7c763b3293d7413484aa798787621616",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 749,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 378,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      3,
+      4,
+      15,
+      14,
+      13,
+      11,
+      13,
+      5,
+      4,
+      6,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.1977691729999833,
+      0.039859757000016316,
+      0.021471684000005098,
+      0.029538101999975197,
+      0.10736371900000563,
+      0.09986993800001187,
+      0.09767158200000381,
+      0.0765711049999993,
+      0.09660138699999266,
+      0.034651457999984814,
+      0.02796701700000881,
+      0.04508522599999765,
+      0.01819043200001147
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.8955043800000055
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 37.394496473000004,
+      "output_token_count": 19,
+      "new_output_tokens": 19,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.1977691729999833
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 2",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 19,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873508.0342684
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 37.43457156599999,
+      "output_token_count": 51,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.039859757000016316
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 +",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 51,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 37.45605507900001,
+      "output_token_count": 83,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.021471684000005098
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 83,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 37.485485931,
+      "output_token_count": 115,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.029538101999975197
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>1",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 115,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 37.59289072600001,
+      "output_token_count": 147,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.10736371900000563
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" —",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 147,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 37.692625021,
+      "output_token_count": 179,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.09986993800001187
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37,",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 179,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 37.790413306999994,
+      "output_token_count": 211,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.09767158200000381
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 211,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 37.86712194500001,
+      "output_token_count": 243,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.0765711049999993
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 243,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381,
+          0.0765711049999993
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 37.963591455,
+      "output_token_count": 275,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.09660138699999266
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used 28: 45 - 28 = 17.\n\nAh, I made a mistake in subtraction.\n\nLet’s re",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 275,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13,
+          11,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381,
+          0.0765711049999993,
+          0.09660138699999266
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 37.998170155,
+      "output_token_count": 307,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.034651457999984814
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used 28: 45 - 28 = 17.\n\nAh, I made a mistake in subtraction.\n\nLet’s recompute carefully:\n\n- Start: 10\n- Bought 21: 10 + 21 = 31\n-",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 307,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13,
+          11,
+          13,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381,
+          0.0765711049999993,
+          0.09660138699999266,
+          0.034651457999984814
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 38.02625314400001,
+      "output_token_count": 339,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.02796701700000881
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used 28: 45 - 28 = 17.\n\nAh, I made a mistake in subtraction.\n\nLet’s recompute carefully:\n\n- Start: 10\n- Bought 21: 10 + 21 = 31\n- Got 23: 31 + 23 = 54\n- Gaveave 9: 54 - 9 = ",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 339,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13,
+          11,
+          13,
+          5,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381,
+          0.0765711049999993,
+          0.09660138699999266,
+          0.034651457999984814,
+          0.02796701700000881
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 38.071258390999986,
+      "output_token_count": 371,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.04508522599999765
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used 28: 45 - 28 = 17.\n\nAh, I made a mistake in subtraction.\n\nLet’s recompute carefully:\n\n- Start: 10\n- Bought 21: 10 + 21 = 31\n- Got 23: 31 + 23 = 54\n- Gaveave 9: 54 - 9 = 45\n- Used 28: 45 - 28 = 17\n\nSo Charlie has 17 stickers left.\n",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": null,
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 371,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13,
+          11,
+          13,
+          5,
+          4,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381,
+          0.0765711049999993,
+          0.09660138699999266,
+          0.034651457999984814,
+          0.02796701700000881,
+          0.04508522599999765
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 38.089578518999986,
+      "output_token_count": 378,
+      "new_output_tokens": 7,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.01819043200001147
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n1. Charlie started with 10 stickers.\n2. He bought 21 more: 10 + 21 = 31 stickers.\n3. Got got 23 for his birthday: 31 + 23 = 54 stickers.\n4. Gave 9 to his sister: 54 - 9 = 45 stickers.\n5. Used 28 to decorate a greeting card: 45 - -28 = <<45-28=17>>17 stickers.\n\nWait, there's a typo in the question: \"gave 9 of the stickers to his sister and used 28\" — it should be \"used 28\", not \"used 28\".\n\nSo correcting: 45 - 9 = 37, then 37 - 28 = <<37-28=9>>9 stickers.\n\nBut wait — step 4: after receiving birthday stickers, he had 54.\n\nThen he gave 9: 54 - 9 = 45.\n\nThen used 28: 45 - 28 = 17.\n\nAh, I made a mistake in subtraction.\n\nLet’s recompute carefully:\n\n- Start: 10\n- Bought 21: 10 + 21 = 31\n- Got 23: 31 + 23 = 54\n- Gaveave 9: 54 - 9 = 45\n- Used 28: 45 - 28 = 17\n\nSo Charlie has 17 stickers left.\n\n#### 17",
+      "meta_info": {
+        "id": "7c763b3293d7413484aa798787621616",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 749,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 378,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          3,
+          4,
+          15,
+          14,
+          13,
+          11,
+          13,
+          5,
+          4,
+          6,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.1977691729999833,
+          0.039859757000016316,
+          0.021471684000005098,
+          0.029538101999975197,
+          0.10736371900000563,
+          0.09986993800001187,
+          0.09767158200000381,
+          0.0765711049999993,
+          0.09660138699999266,
+          0.034651457999984814,
+          0.02796701700000881,
+          0.04508522599999765,
+          0.01819043200001147
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.8955043800000055
+      }
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 13,
+  "eval_index": 13,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.3,
+  "request_start_realtime": "2026-05-27T09:32:20.373",
+  "benchmark": {
+    "question": "Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with?",
+    "gold_solution": "First multiply the five remaining vacuum cleaners by two to find out how many Melanie had before she visited the orange house: 5 * 2 = <<5*2=10>>10\nThen add two to figure out how many vacuum cleaners she had before visiting the red house: 10 + 2 = <<10+2=12>>12\nNow we know that 2/3 * x = 12, where x is the number of vacuum cleaners Melanie started with. We can find x by dividing each side of the equation by 2/3, which produces x = 18\n#### 18",
+    "gold_answer": "18",
+    "model_text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**\n6. So, after the orange house, she has: **(2/3)x - 2 - [(1/3)x - 1) = (2/3)x - 2 - (1/3)x + 1 = (1/3)x - 1**\n7. We are told she has **5 vacuum cleaners left**, so:\n   **(1/3)x - 1 = 5**\n\nNow solve for **x**:\n\n(1/3)x = 5 + 1 = 6  \nx = 6 * 3 = **18**\n\nSo, Melanie started with **18 vacuum cleaners**.\n\n#### 18",
+    "predicted_answer": "18",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      11,
+      9,
+      4,
+      4,
+      14,
+      3,
+      8,
+      6,
+      3
+    ],
+    "ttfb_seconds": 0.18041178600000762,
+    "tbb_seconds": [
+      0.06611581899998953,
+      0.05659544200000255,
+      0.02572928100001093,
+      0.024693747999990023,
+      0.08127346800000623,
+      0.018076546999992615,
+      0.05183026100000632,
+      0.03577435799999762,
+      0.018576139000003877
+    ],
+    "dllm_block_completion_latencies": [
+      0.18041178600000762,
+      0.06611581899998953,
+      0.05659544200000255,
+      0.02572928100001093,
+      0.024693747999990023,
+      0.08127346800000623,
+      0.018076546999992615,
+      0.05183026100000632,
+      0.03577435799999762,
+      0.018576139000003877
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      11,
+      9,
+      4,
+      4,
+      14,
+      3,
+      8,
+      6,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 6.358731843000001,
+    "first_new_token_ttfb_seconds": 6.358731843000001,
+    "block_ttfb_seconds": 6.358731843000001,
+    "tbb_seconds": [
+      0.06616638399999886,
+      0.056570363999995266,
+      0.025686032999999497,
+      0.024707055999996896,
+      0.0813228960000032,
+      0.017915674999997577,
+      0.05183933300000376,
+      0.03580589199999906,
+      0.018766462000002093
+    ],
+    "block_arrival_elapsed_seconds": [
+      6.358731843000001,
+      6.424898227,
+      6.481468590999995,
+      6.507154623999995,
+      6.531861679999992,
+      6.613184575999995,
+      6.631100250999992,
+      6.682939583999996,
+      6.718745475999995,
+      6.737511937999997
+    ],
+    "e2e_seconds": 6.7375719939999925
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 297,
+    "total_tokens": 1044,
+    "end_to_end_tokens_per_second": 154.95196206136467,
+    "total_tokens_per_second": 154.95196206136467,
+    "completion_tokens_per_second": 44.08116162090547,
+    "tokens_after_first_block": 276,
+    "generated_tokens_per_second_after_first_block": 728.5394625449989
+  },
+  "final_meta_info": {
+    "id": "f3cf831ef38d4d41a80775d355bf512e",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 297,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      11,
+      9,
+      4,
+      4,
+      14,
+      3,
+      8,
+      6,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.18041178600000762,
+      0.06611581899998953,
+      0.05659544200000255,
+      0.02572928100001093,
+      0.024693747999990023,
+      0.08127346800000623,
+      0.018076546999992615,
+      0.05183026100000632,
+      0.03577435799999762,
+      0.018576139000003877
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5618893110000016
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 6.358731843000001,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.18041178600000762
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874346.7325525
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 6.424898227,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.06611581899998953
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 6.481468590999995,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.05659544200000255
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses:",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 6.507154623999995,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.02572928100001093
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 6.531861679999992,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.024693747999990023
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093,
+          0.024693747999990023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 6.613184575999995,
+      "output_token_count": 181,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.08127346800000623
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**\n6. So, after the orange house, she has: **(2/3)x - 2 - [(1/3)x - 1) =",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4,
+          4,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093,
+          0.024693747999990023,
+          0.08127346800000623
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 6.631100250999992,
+      "output_token_count": 213,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.018076546999992615
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**\n6. So, after the orange house, she has: **(2/3)x - 2 - [(1/3)x - 1) = (2/3)x - 2 - (1/3)x + 1 = (1/3)x - 1**\n7. We are",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 213,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4,
+          4,
+          14,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093,
+          0.024693747999990023,
+          0.08127346800000623,
+          0.018076546999992615
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 6.682939583999996,
+      "output_token_count": 245,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.05183026100000632
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**\n6. So, after the orange house, she has: **(2/3)x - 2 - [(1/3)x - 1) = (2/3)x - 2 - (1/3)x + 1 = (1/3)x - 1**\n7. We are told she has **5 vacuum cleaners left**, so:\n   **(1/3)x - 1 = 5**\n\nNow solve for **x",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 245,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4,
+          4,
+          14,
+          3,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093,
+          0.024693747999990023,
+          0.08127346800000623,
+          0.018076546999992615,
+          0.05183026100000632
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 6.718745475999995,
+      "output_token_count": 277,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.03577435799999762
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**\n6. So, after the orange house, she has: **(2/3)x - 2 - [(1/3)x - 1) = (2/3)x - 2 - (1/3)x + 1 = (1/3)x - 1**\n7. We are told she has **5 vacuum cleaners left**, so:\n   **(1/3)x - 1 = 5**\n\nNow solve for **x**:\n\n(1/3)x = 5 + 1 = 6  \nx = 6 * 3 = **18**\n",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 277,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4,
+          4,
+          14,
+          3,
+          8,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093,
+          0.024693747999990023,
+          0.08127346800000623,
+          0.018076546999992615,
+          0.05183026100000632,
+          0.03577435799999762
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 6.737511937999997,
+      "output_token_count": 297,
+      "new_output_tokens": 20,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.018576139000003877
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nLet the total number of vacuum cleaners Melanie started with be **x**.\n\n1. She sold **1/3** of them at the green house: **(1/3)x**\n2. She sold **2 more** to the red house: **2**\n3. So far, she has sold **(1/3)x + 2**\n4. Remaining after green and red houses: **x - ((1/3)x + 2) = (2/3)x - 2**\n5. She sold **half of what was left** at the orange house: **(1/2) * [(2/3)x - 2) = (1/3)x - 1**\n6. So, after the orange house, she has: **(2/3)x - 2 - [(1/3)x - 1) = (2/3)x - 2 - (1/3)x + 1 = (1/3)x - 1**\n7. We are told she has **5 vacuum cleaners left**, so:\n   **(1/3)x - 1 = 5**\n\nNow solve for **x**:\n\n(1/3)x = 5 + 1 = 6  \nx = 6 * 3 = **18**\n\nSo, Melanie started with **18 vacuum cleaners**.\n\n#### 18",
+      "meta_info": {
+        "id": "f3cf831ef38d4d41a80775d355bf512e",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 297,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          11,
+          9,
+          4,
+          4,
+          14,
+          3,
+          8,
+          6,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.18041178600000762,
+          0.06611581899998953,
+          0.05659544200000255,
+          0.02572928100001093,
+          0.024693747999990023,
+          0.08127346800000623,
+          0.018076546999992615,
+          0.05183026100000632,
+          0.03577435799999762,
+          0.018576139000003877
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5618893110000016
+      }
+    }
+  ]
+}

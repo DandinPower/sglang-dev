@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 12,
+  "eval_index": 12,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.2000000000000002,
+  "request_start_realtime": "2026-05-27T09:39:57.336",
+  "benchmark": {
+    "question": "Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?",
+    "gold_solution": "He makes $10.5 selling lemons each year because 7 x 1.5 = <<7*1.5=10.5>>10.5\nHe earns $7.5 each year from the lemon tree because 10.5 - 3 = <<10.5-3=7.5>>7.5\nIt will take 12 years to earn enough to pay off the tree because 90 / 7.5 = <<90/7.5=12>>12\nHe will make money in year 13 because 12 + 1 = <<12+1=13>>13\n#### 13",
+    "gold_answer": "13",
+    "model_text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for $1.5, so the revenue per year is:\n\n7 lemons × $1.5 = $10.5 in revenue per year.\n\nIt costs $3 per year to water and feed the tree, so the net profit per year is:\n\n$10.5 - $3 = $7.5 profit per year.\n\nThe initial cost of the tree is $90, so the number of years it takes to earn even is:\n\n$90 ÷ $7.5 = 12 years.\n\nTherefore, it will take 12 years for Carlos to start earning money on the lemon tree.\n\n#### 12",
+    "predicted_answer": "12",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      16,
+      13,
+      14,
+      19,
+      14,
+      21,
+      8
+    ],
+    "ttfb_seconds": 0.7557301319999965,
+    "tbb_seconds": [
+      0.2467070010000043,
+      0.2559835110000108,
+      0.3367191939999543,
+      0.46323101400003,
+      0.35819514700000354,
+      0.36479223099996716
+    ],
+    "dllm_block_completion_latencies": [
+      0.7557301319999965,
+      0.2467070010000043,
+      0.2559835110000108,
+      0.3367191939999543,
+      0.46323101400003,
+      0.35819514700000354,
+      0.36479223099996716
+    ],
+    "dllm_forward_counts_per_block": [
+      16,
+      13,
+      14,
+      19,
+      14,
+      21,
+      8
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.7679589709999846,
+    "first_new_token_ttfb_seconds": 0.7679589709999846,
+    "block_ttfb_seconds": 0.7679589709999846,
+    "tbb_seconds": [
+      0.2468084040000349,
+      0.25648839000001544,
+      0.33702821399998584,
+      0.4634085259999665,
+      0.35797219300002325,
+      0.3651600900000176
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.7679589709999846,
+      1.0147673750000195,
+      1.271255765000035,
+      1.6082839790000207,
+      2.0716925049999872,
+      2.4296646980000105,
+      2.794824788000028
+    ],
+    "e2e_seconds": 2.794932844000016
+  },
+  "token_metrics": {
+    "prompt_tokens": 756,
+    "completion_tokens": 189,
+    "total_tokens": 945,
+    "end_to_end_tokens_per_second": 338.1118805872799,
+    "total_tokens_per_second": 338.1118805872799,
+    "completion_tokens_per_second": 67.62237611745599,
+    "tokens_after_first_block": 177,
+    "generated_tokens_per_second_after_first_block": 87.32228982213293
+  },
+  "final_meta_info": {
+    "id": "50c89f0c60974d2e9687efb404ef4f15",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 756,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 189,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      16,
+      13,
+      14,
+      19,
+      14,
+      21,
+      8
+    ],
+    "dllm_block_completion_latencies": [
+      0.7557301319999965,
+      0.2467070010000043,
+      0.2559835110000108,
+      0.3367191939999543,
+      0.46323101400003,
+      0.35819514700000354,
+      0.36479223099996716
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.7907740769999805
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.7679589709999846,
+      "output_token_count": 12,
+      "new_output_tokens": 12,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.7557301319999965
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, we need to calculate how many years Carlos",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 12,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874798.1040955
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.0147673750000195,
+      "output_token_count": 44,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2467070010000043
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 44,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965,
+          0.2467070010000043
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 1.271255765000035,
+      "output_token_count": 76,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2559835110000108
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for $1.5, so the revenue per year is:\n\n7 lemons × $1.5 = $10.5 in revenue per year.",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 76,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          13,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965,
+          0.2467070010000043,
+          0.2559835110000108
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 1.6082839790000207,
+      "output_token_count": 108,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3367191939999543
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for $1.5, so the revenue per year is:\n\n7 lemons × $1.5 = $10.5 in revenue per year.\n\nIt costs $3 per year to water and feed the tree, so the net profit per year is:\n\n$10.5 - $",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          13,
+          14,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965,
+          0.2467070010000043,
+          0.2559835110000108,
+          0.3367191939999543
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.0716925049999872,
+      "output_token_count": 140,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.46323101400003
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for $1.5, so the revenue per year is:\n\n7 lemons × $1.5 = $10.5 in revenue per year.\n\nIt costs $3 per year to water and feed the tree, so the net profit per year is:\n\n$10.5 - $3 = $7.5 profit per year.\n\nThe initial cost of the tree is $90, so the number of years it takes to earn",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 140,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          13,
+          14,
+          19,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965,
+          0.2467070010000043,
+          0.2559835110000108,
+          0.3367191939999543,
+          0.46323101400003
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.4296646980000105,
+      "output_token_count": 172,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.35819514700000354
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for $1.5, so the revenue per year is:\n\n7 lemons × $1.5 = $10.5 in revenue per year.\n\nIt costs $3 per year to water and feed the tree, so the net profit per year is:\n\n$10.5 - $3 = $7.5 profit per year.\n\nThe initial cost of the tree is $90, so the number of years it takes to earn even is:\n\n$90 ÷ $7.5 = 12 years.\n\nTherefore, it will take 12 years for Carlos",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 172,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          13,
+          14,
+          19,
+          14,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965,
+          0.2467070010000043,
+          0.2559835110000108,
+          0.3367191939999543,
+          0.46323101400003,
+          0.35819514700000354
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 2.794824788000028,
+      "output_token_count": 189,
+      "new_output_tokens": 17,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.36479223099996716
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, we need to calculate how many years Carlos needs to sell the lemons to cover the initial cost of the tree.\n\nEach year, the tree produces 7 lemons, and each lemon is sold for $1.5, so the revenue per year is:\n\n7 lemons × $1.5 = $10.5 in revenue per year.\n\nIt costs $3 per year to water and feed the tree, so the net profit per year is:\n\n$10.5 - $3 = $7.5 profit per year.\n\nThe initial cost of the tree is $90, so the number of years it takes to earn even is:\n\n$90 ÷ $7.5 = 12 years.\n\nTherefore, it will take 12 years for Carlos to start earning money on the lemon tree.\n\n#### 12",
+      "meta_info": {
+        "id": "50c89f0c60974d2e9687efb404ef4f15",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 189,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          13,
+          14,
+          19,
+          14,
+          21,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.7557301319999965,
+          0.2467070010000043,
+          0.2559835110000108,
+          0.3367191939999543,
+          0.46323101400003,
+          0.35819514700000354,
+          0.36479223099996716
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.7907740769999805
+      }
+    }
+  ]
+}

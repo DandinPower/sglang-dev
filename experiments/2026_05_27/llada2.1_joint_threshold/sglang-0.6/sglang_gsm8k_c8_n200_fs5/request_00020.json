@@ -1,0 +1,796 @@
+{
+  "ok": true,
+  "request_index": 20,
+  "eval_index": 20,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pineapple drink that is three-fifths water. But as I pour it, I spill one liter of the orange drink. How much water is in the remaining 24 liters?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pineapple drink that is three-fifths water. But as I pour it, I spill one liter of the orange drink. How much water is in the remaining 24 liters?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.0,
+  "request_start_realtime": "2026-05-27T09:35:50.603",
+  "benchmark": {
+    "question": "I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pineapple drink that is three-fifths water. But as I pour it, I spill one liter of the orange drink. How much water is in the remaining 24 liters?",
+    "gold_solution": "There are 15 x 3/5 = <<15*3/5=9>>9 liters of water from the 15 liters pineapple drink.\nAfter 1 liter of orange drink was spilled, there were 10 - 1 = <<10-1=9>>9 liters of orange drink left.\nOut of the 9 liters, 9 x 2/3 = <<9*2/3=6>>6 liters are water.\nThus, there are a total of 9 + 6 = <<9+6=15>>15 liters of water out of the 24 liters.\n#### 15",
+    "gold_answer": "15",
+    "model_text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2/3 = 18/3 = 6 liters\n\n### Step 2: Water in the pineapple drink\n\nPineapple drink: 15 liters, three-fifths water\n\n→ Water = (3/5) × 15 = 9 liters\n\nNo spill in pineapple drink, so all 9 liters remain.\n\n### Step 3: Total water in remaining 24 liters\n\n= Water from remaining orange drink + Water from pineapple drink  \n= 6 + 9 = 15 liters\n\n### Final Answer:\n**15 liters** of water are in the remaining 24 liters.\n\nAnswer: **15**",
+    "predicted_answer": "15",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      12,
+      14,
+      15,
+      16,
+      30,
+      16,
+      23,
+      11,
+      7,
+      7,
+      7,
+      8,
+      5
+    ],
+    "ttfb_seconds": 0.4657297939999978,
+    "tbb_seconds": [
+      0.573663775,
+      0.6112222030000112,
+      0.4464514879999797,
+      0.6703254710000124,
+      1.2595467990000202,
+      0.49372101299996984,
+      0.8134535070000197,
+      0.511783376999972,
+      0.29700424700001804,
+      0.32273706899997023,
+      0.26635868500000015,
+      0.3078859730000545,
+      0.08105209699999705
+    ],
+    "dllm_block_completion_latencies": [
+      0.4657297939999978,
+      0.573663775,
+      0.6112222030000112,
+      0.4464514879999797,
+      0.6703254710000124,
+      1.2595467990000202,
+      0.49372101299996984,
+      0.8134535070000197,
+      0.511783376999972,
+      0.29700424700001804,
+      0.32273706899997023,
+      0.26635868500000015,
+      0.3078859730000545,
+      0.08105209699999705
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      12,
+      14,
+      15,
+      16,
+      30,
+      16,
+      23,
+      11,
+      7,
+      7,
+      7,
+      8,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 3.7021938170000226,
+    "first_new_token_ttfb_seconds": 3.7021938170000226,
+    "block_ttfb_seconds": 3.7021938170000226,
+    "tbb_seconds": [
+      0.572978753000001,
+      0.6115281849999974,
+      0.4458305290000055,
+      0.6707198279999886,
+      1.2591624559999843,
+      0.4934081250000304,
+      0.8141540699999723,
+      0.5115664269999911,
+      0.29718069800003377,
+      0.3237620429999879,
+      0.26512746700001344,
+      0.308735573999968,
+      0.08009841300003018
+    ],
+    "block_arrival_elapsed_seconds": [
+      3.7021938170000226,
+      4.275172570000024,
+      4.886700755000021,
+      5.3325312840000265,
+      6.003251112000015,
+      7.2624135679999995,
+      7.75582169300003,
+      8.569975763000002,
+      9.081542189999993,
+      9.378722888000027,
+      9.702484931000015,
+      9.967612398000028,
+      10.276347971999996,
+      10.356446385000027
+    ],
+    "e2e_seconds": 10.356564023000033
+  },
+  "token_metrics": {
+    "prompt_tokens": 753,
+    "completion_tokens": 419,
+    "total_tokens": 1172,
+    "end_to_end_tokens_per_second": 113.16494518811476,
+    "total_tokens_per_second": 113.16494518811476,
+    "completion_tokens_per_second": 40.4574334759557,
+    "tokens_after_first_block": 404,
+    "generated_tokens_per_second_after_first_block": 60.71198137364337
+  },
+  "final_meta_info": {
+    "id": "211660124d0840f6bbfbb5deac458e83",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 753,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 419,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      12,
+      14,
+      15,
+      16,
+      30,
+      16,
+      23,
+      11,
+      7,
+      7,
+      7,
+      8,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.4657297939999978,
+      0.573663775,
+      0.6112222030000112,
+      0.4464514879999797,
+      0.6703254710000124,
+      1.2595467990000202,
+      0.49372101299996984,
+      0.8134535070000197,
+      0.511783376999972,
+      0.29700424700001804,
+      0.32273706899997023,
+      0.26635868500000015,
+      0.3078859730000545,
+      0.08105209699999705
+    ],
+    "dp_rank": null,
+    "e2e_latency": 7.1318076040000165
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 3.7021938170000226,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4657297939999978
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874554.3052359
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 4.275172570000024,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.573663775
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.886700755000021,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6112222030000112
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait —",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 5.3325312840000265,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.4464514879999797
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 6.003251112000015,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6703254710000124
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in ",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 7.2624135679999995,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        1.2595467990000202
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 7.75582169300003,
+      "output_token_count": 207,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.49372101299996984
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\n",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 8.569975763000002,
+      "output_token_count": 239,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.8134535070000197
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled =",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 239,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 9.081542189999993,
+      "output_token_count": 271,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.511783376999972
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 271,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197,
+          0.511783376999972
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 9.378722888000027,
+      "output_token_count": 303,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.29700424700001804
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2/3 = 18/3 = 6 liters\n\n### Step 2: Water in the pineapple drink\n\nPineapple drink: ",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 303,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197,
+          0.511783376999972,
+          0.29700424700001804
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 9.702484931000015,
+      "output_token_count": 335,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.32273706899997023
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2/3 = 18/3 = 6 liters\n\n### Step 2: Water in the pineapple drink\n\nPineapple drink: 15 liters, three-fifths water\n\n→ Water = (3/5) × 15 = 9 liters\n\nNo spill in",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 335,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23,
+          11,
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197,
+          0.511783376999972,
+          0.29700424700001804,
+          0.32273706899997023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 9.967612398000028,
+      "output_token_count": 367,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.26635868500000015
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2/3 = 18/3 = 6 liters\n\n### Step 2: Water in the pineapple drink\n\nPineapple drink: 15 liters, three-fifths water\n\n→ Water = (3/5) × 15 = 9 liters\n\nNo spill in pineapple drink, so all 9 liters remain.\n\n### Step 3: Total water in remaining 24 liters\n\n= Water from remaining orange",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 367,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23,
+          11,
+          7,
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197,
+          0.511783376999972,
+          0.29700424700001804,
+          0.32273706899997023,
+          0.26635868500000015
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 10.276347971999996,
+      "output_token_count": 399,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.3078859730000545
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2/3 = 18/3 = 6 liters\n\n### Step 2: Water in the pineapple drink\n\nPineapple drink: 15 liters, three-fifths water\n\n→ Water = (3/5) × 15 = 9 liters\n\nNo spill in pineapple drink, so all 9 liters remain.\n\n### Step 3: Total water in remaining 24 liters\n\n= Water from remaining orange drink + Water from pineapple drink  \n= 6 + 9 = 15 liters\n\n### Final Answer:\n**15 liters** of",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 399,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23,
+          11,
+          7,
+          7,
+          7,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197,
+          0.511783376999972,
+          0.29700424700001804,
+          0.32273706899997023,
+          0.26635868500000015,
+          0.3078859730000545
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 10.356446385000027,
+      "output_token_count": 419,
+      "new_output_tokens": 20,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.08105209699999705
+      ],
+      "forward_count_metric_count": 14,
+      "text": "\n\nWe are given:\n\n- 10 liters of orange drink, which is two-thirds water.\n- 15 liters of pineapple drink, which is three-fifths water.\n- We spill 1 liter of the orange drink.\n- We are to find how much water is in the **remaining 24 liters** after mixing.\n\nWait — total liquid initially: 10 (orange) + 15 (pineapple) = 25 liters.\nWe spill 1 liter of orange drink → remaining liquid = 25 - 1 = 24 liters.\n\nWe need to find the **total of water water in in  24-liter mixture.\n\n### Step 1: Water in the orange drink\n\nOrange drink: 10 liters, two-thirds water water\n\n→ Water in orange drink = (2/3) × 10 = 20/3 ≈ 6.67 liters\n\nBut we spilled 1 liter of orange drink. Since the orange drink is uniform, the spilled liter has the same composition.\n\nSo, water spilled = (2/3) × 1 = 2/3 liter\n\nTherefore, water remaining in orange drink = 20/3 - 2/3 = 18/3 = 6 liters\n\n### Step 2: Water in the pineapple drink\n\nPineapple drink: 15 liters, three-fifths water\n\n→ Water = (3/5) × 15 = 9 liters\n\nNo spill in pineapple drink, so all 9 liters remain.\n\n### Step 3: Total water in remaining 24 liters\n\n= Water from remaining orange drink + Water from pineapple drink  \n= 6 + 9 = 15 liters\n\n### Final Answer:\n**15 liters** of water are in the remaining 24 liters.\n\nAnswer: **15**",
+      "meta_info": {
+        "id": "211660124d0840f6bbfbb5deac458e83",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 419,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          12,
+          14,
+          15,
+          16,
+          30,
+          16,
+          23,
+          11,
+          7,
+          7,
+          7,
+          8,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.4657297939999978,
+          0.573663775,
+          0.6112222030000112,
+          0.4464514879999797,
+          0.6703254710000124,
+          1.2595467990000202,
+          0.49372101299996984,
+          0.8134535070000197,
+          0.511783376999972,
+          0.29700424700001804,
+          0.32273706899997023,
+          0.26635868500000015,
+          0.3078859730000545,
+          0.08105209699999705
+        ],
+        "dp_rank": null,
+        "e2e_latency": 7.1318076040000165
+      }
+    }
+  ]
+}

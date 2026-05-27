@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 159,
+  "eval_index": 159,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Finn watches 11 tadpoles swimming in the pond.  Suddenly he sees 6 of them come out of hiding from under a lily pad ,then he sees 2 of them hide under a rock.  How many tadpoles can Finn see in the pond now?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Finn watches 11 tadpoles swimming in the pond.  Suddenly he sees 6 of them come out of hiding from under a lily pad ,then he sees 2 of them hide under a rock.  How many tadpoles can Finn see in the pond now?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 15.9,
+  "request_start_realtime": "2026-05-27T08:56:52.214",
+  "benchmark": {
+    "question": "Finn watches 11 tadpoles swimming in the pond.  Suddenly he sees 6 of them come out of hiding from under a lily pad ,then he sees 2 of them hide under a rock.  How many tadpoles can Finn see in the pond now?",
+    "gold_solution": "When the hidden tadpoles come out, Finn sees 11 + 6 = <<11+6=17>>17 tadpoles swimming.\nAfter some of them hide under a rock, he now sees 17 - 2 = <<17-2=15>>15 tadpoles swimming.\n#### 15",
+    "gold_answer": "15",
+    "model_text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, 6 tadpoles come out of hiding, meaning they were not visible before.\n- So, the total number of tadpoles in the pond increases by 6.\n- Later, 2 tadpoles hide under a rock, so they are no longer visible.\n- We subtract those 2 from the new total.\n\nStep-by-step:\n- Start with 11 tadpoles.\n- Add 6 that came out of hiding: 11 + 6 = 17.\n- Subtract 2 that hid under the rock: 17 - 2 = 15.\n\nSo, Finn can see 15 tadpoles in the pond now.\n#### 15",
+    "predicted_answer": "15",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      27,
+      27,
+      25,
+      8,
+      14
+    ],
+    "ttfb_seconds": 0.25580544399997507,
+    "tbb_seconds": [
+      0.1688479750000056,
+      0.1732130010000219,
+      0.16489327299996148,
+      0.05475939500001914,
+      0.09253705800000489
+    ],
+    "dllm_block_completion_latencies": [
+      0.25580544399997507,
+      0.1688479750000056,
+      0.1732130010000219,
+      0.16489327299996148,
+      0.05475939500001914,
+      0.09253705800000489
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      27,
+      27,
+      25,
+      8,
+      14
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 119.239329416,
+    "first_new_token_ttfb_seconds": 119.239329416,
+    "block_ttfb_seconds": 119.239329416,
+    "tbb_seconds": [
+      0.1684295619999716,
+      0.17340927700001885,
+      0.16540781700001617,
+      0.05470937299998013,
+      0.09258989800002837
+    ],
+    "block_arrival_elapsed_seconds": [
+      119.239329416,
+      119.40775897799998,
+      119.581168255,
+      119.74657607200001,
+      119.80128544499999,
+      119.89387534300002
+    ],
+    "e2e_seconds": 119.893971118
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 176,
+    "total_tokens": 923,
+    "end_to_end_tokens_per_second": 7.698468833696239,
+    "total_tokens_per_second": 7.698468833696239,
+    "completion_tokens_per_second": 1.4679637212681886,
+    "tokens_after_first_block": 155,
+    "generated_tokens_per_second_after_first_block": 236.77073966791357
+  },
+  "final_meta_info": {
+    "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 176,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      27,
+      27,
+      25,
+      8,
+      14
+    ],
+    "dllm_block_completion_latencies": [
+      0.25580544399997507,
+      0.1688479750000056,
+      0.1732130010000219,
+      0.16489327299996148,
+      0.05475939500001914,
+      0.09253705800000489
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.9203212630000053
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 119.239329416,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.25580544399997507
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, ",
+      "meta_info": {
+        "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.25580544399997507
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872331.453269
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 119.40775897799998,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.1688479750000056
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, 6 tadpoles come out of hiding, meaning they were not visible before.\n- So, the total number of tadpoles in the pond increases by",
+      "meta_info": {
+        "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.25580544399997507,
+          0.1688479750000056
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 119.581168255,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.1732130010000219
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, 6 tadpoles come out of hiding, meaning they were not visible before.\n- So, the total number of tadpoles in the pond increases by 6.\n- Later, 2 tadpoles hide under a rock, so they are no longer visible.\n- We subtract those 2 from",
+      "meta_info": {
+        "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          27,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.25580544399997507,
+          0.1688479750000056,
+          0.1732130010000219
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 119.74657607200001,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.16489327299996148
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, 6 tadpoles come out of hiding, meaning they were not visible before.\n- So, the total number of tadpoles in the pond increases by 6.\n- Later, 2 tadpoles hide under a rock, so they are no longer visible.\n- We subtract those 2 from the new total.\n\nStep-by-step:\n- Start with 11 tadpoles.\n- Add 6 that came out of hiding:",
+      "meta_info": {
+        "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          27,
+          27,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.25580544399997507,
+          0.1688479750000056,
+          0.1732130010000219,
+          0.16489327299996148
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 119.80128544499999,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.05475939500001914
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, 6 tadpoles come out of hiding, meaning they were not visible before.\n- So, the total number of tadpoles in the pond increases by 6.\n- Later, 2 tadpoles hide under a rock, so they are no longer visible.\n- We subtract those 2 from the new total.\n\nStep-by-step:\n- Start with 11 tadpoles.\n- Add 6 that came out of hiding: 11 + 6 = 17.\n- Subtract 2 that hid under the rock: 17 - 2 = 1",
+      "meta_info": {
+        "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          27,
+          27,
+          25,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.25580544399997507,
+          0.1688479750000056,
+          0.1732130010000219,
+          0.16489327299996148,
+          0.05475939500001914
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 119.89387534300002,
+      "output_token_count": 176,
+      "new_output_tokens": 27,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.09253705800000489
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n- Initially, Finn sees 11 tadpoles in the pond.\n- Then, 6 tadpoles come out of hiding, meaning they were not visible before.\n- So, the total number of tadpoles in the pond increases by 6.\n- Later, 2 tadpoles hide under a rock, so they are no longer visible.\n- We subtract those 2 from the new total.\n\nStep-by-step:\n- Start with 11 tadpoles.\n- Add 6 that came out of hiding: 11 + 6 = 17.\n- Subtract 2 that hid under the rock: 17 - 2 = 15.\n\nSo, Finn can see 15 tadpoles in the pond now.\n#### 15",
+      "meta_info": {
+        "id": "442c4f973ae342b2bd8bc2016bc38ec7",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          27,
+          27,
+          25,
+          8,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.25580544399997507,
+          0.1688479750000056,
+          0.1732130010000219,
+          0.16489327299996148,
+          0.05475939500001914,
+          0.09253705800000489
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.9203212630000053
+      }
+    }
+  ]
+}

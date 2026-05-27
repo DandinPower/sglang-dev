@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 143,
+  "eval_index": 143,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John buys milk for 2 dollars, eggs for 3 dollars, light bulbs for 3 dollars, cups for 3 dollars, and roach traps for 4 dollars.  If there is a 10% tax on all nonfood items how much did everything cost.\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John buys milk for 2 dollars, eggs for 3 dollars, light bulbs for 3 dollars, cups for 3 dollars, and roach traps for 4 dollars.  If there is a 10% tax on all nonfood items how much did everything cost.\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 14.3,
+  "request_start_realtime": "2026-05-27T09:17:37.105",
+  "benchmark": {
+    "question": "John buys milk for 2 dollars, eggs for 3 dollars, light bulbs for 3 dollars, cups for 3 dollars, and roach traps for 4 dollars.  If there is a 10% tax on all nonfood items how much did everything cost.",
+    "gold_solution": "The foodstuff cost 2+3=$<<2+3=5>>5\nThe nonfood stuff comes out to 3+3+4=$<<3+3+4=10>>10\nTax on the nonfood stuff comes out to 10*.1=$<<10*.1=1>>1\nSo the total cost is 5+10+1=$<<5+10+1=16>>16\n#### 16",
+    "gold_answer": "16",
+    "model_text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Roach traps: $4 (nonfood)\n\nNonfood items: light bulbs, cups, roach traps → $3 + $3 + $4 = $10\n\nTax on $10% of $10 = 0.10 * 10 = $1\n\nSo, nonfood items with tax: $10 + $1 = $11\n\nFood items: milk + $2 + $3 = $5 (no tax)\n\nTotal cost = food + nonfood with tax = $5 + $11 = $16\n\n#### 16",
+    "predicted_answer": "16",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      3,
+      9,
+      11,
+      13,
+      9,
+      2
+    ],
+    "ttfb_seconds": 0.20993565500000955,
+    "tbb_seconds": [
+      0.01916070100000411,
+      0.05683951199998205,
+      0.06819246300000259,
+      0.08087843800001338,
+      0.05627930899999001,
+      0.013461618000008002
+    ],
+    "dllm_block_completion_latencies": [
+      0.20993565500000955,
+      0.01916070100000411,
+      0.05683951199998205,
+      0.06819246300000259,
+      0.08087843800001338,
+      0.05627930899999001,
+      0.013461618000008002
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      3,
+      9,
+      11,
+      13,
+      9,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 66.089130472,
+    "first_new_token_ttfb_seconds": 66.089130472,
+    "block_ttfb_seconds": 66.089130472,
+    "tbb_seconds": [
+      0.018034589999984973,
+      0.056887184000004254,
+      0.068729315000013,
+      0.08088285400000927,
+      0.056801996999979565,
+      0.010699533999996902
+    ],
+    "block_arrival_elapsed_seconds": [
+      66.089130472,
+      66.10716506199998,
+      66.16405224599998,
+      66.232781561,
+      66.313664415,
+      66.37046641199998,
+      66.38116594599998
+    ],
+    "e2e_seconds": 66.381328048
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 183,
+    "total_tokens": 930,
+    "end_to_end_tokens_per_second": 14.009963755583826,
+    "total_tokens_per_second": 14.009963755583826,
+    "completion_tokens_per_second": 2.75679931964714,
+    "tokens_after_first_block": 162,
+    "generated_tokens_per_second_after_first_block": 554.4193836844024
+  },
+  "final_meta_info": {
+    "id": "68afbb737d4d41298141c417e7d19ded",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 183,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      3,
+      9,
+      11,
+      13,
+      9,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.20993565500000955,
+      0.01916070100000411,
+      0.05683951199998205,
+      0.06819246300000259,
+      0.08087843800001338,
+      0.05627930899999001,
+      0.013461618000008002
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5142721809999955
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 66.089130472,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.20993565500000955
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873523.1941166
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 66.10716506199998,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.01916070100000411
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Ro",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955,
+          0.01916070100000411
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 66.16405224599998,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.05683951199998205
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Roach traps: $4 (nonfood)\n\nNonfood items: light bulbs, cups, roach traps → $3 + $3 + $4",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          3,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955,
+          0.01916070100000411,
+          0.05683951199998205
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 66.232781561,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.06819246300000259
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Roach traps: $4 (nonfood)\n\nNonfood items: light bulbs, cups, roach traps → $3 + $3 + $4 = $10\n\nTax on $10% of $10 = 0.10 * 10 = $1\n\nSo",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          3,
+          9,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955,
+          0.01916070100000411,
+          0.05683951199998205,
+          0.06819246300000259
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 66.313664415,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.08087843800001338
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Roach traps: $4 (nonfood)\n\nNonfood items: light bulbs, cups, roach traps → $3 + $3 + $4 = $10\n\nTax on $10% of $10 = 0.10 * 10 = $1\n\nSo, nonfood items with tax: $10 + $1 = $11\n\nFood items: milk + $2 + $3 = $5",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          3,
+          9,
+          11,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955,
+          0.01916070100000411,
+          0.05683951199998205,
+          0.06819246300000259,
+          0.08087843800001338
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 66.37046641199998,
+      "output_token_count": 181,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.05627930899999001
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Roach traps: $4 (nonfood)\n\nNonfood items: light bulbs, cups, roach traps → $3 + $3 + $4 = $10\n\nTax on $10% of $10 = 0.10 * 10 = $1\n\nSo, nonfood items with tax: $10 + $1 = $11\n\nFood items: milk + $2 + $3 = $5 (no tax)\n\nTotal cost = food + nonfood with tax = $5 + $11 = $16\n\n#### 16",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          3,
+          9,
+          11,
+          13,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955,
+          0.01916070100000411,
+          0.05683951199998205,
+          0.06819246300000259,
+          0.08087843800001338,
+          0.05627930899999001
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 66.38116594599998,
+      "output_token_count": 183,
+      "new_output_tokens": 2,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.013461618000008002
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, identify the items and their prices:\n- Milk: $2 (food)\n- Eggs: $3 (food)\n- Light bulbs: $3 (nonfood)\n- Cups: $3 (nonfood)\n- Roach traps: $4 (nonfood)\n\nNonfood items: light bulbs, cups, roach traps → $3 + $3 + $4 = $10\n\nTax on $10% of $10 = 0.10 * 10 = $1\n\nSo, nonfood items with tax: $10 + $1 = $11\n\nFood items: milk + $2 + $3 = $5 (no tax)\n\nTotal cost = food + nonfood with tax = $5 + $11 = $16\n\n#### 16",
+      "meta_info": {
+        "id": "68afbb737d4d41298141c417e7d19ded",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 183,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          3,
+          9,
+          11,
+          13,
+          9,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.20993565500000955,
+          0.01916070100000411,
+          0.05683951199998205,
+          0.06819246300000259,
+          0.08087843800001338,
+          0.05627930899999001,
+          0.013461618000008002
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5142721809999955
+      }
+    }
+  ]
+}

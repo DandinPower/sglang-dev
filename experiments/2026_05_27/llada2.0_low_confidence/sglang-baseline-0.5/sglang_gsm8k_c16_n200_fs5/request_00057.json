@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 57,
+  "eval_index": 57,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.7,
+  "request_start_realtime": "2026-05-27T10:03:26.034",
+  "benchmark": {
+    "question": "A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?",
+    "gold_solution": "The boxes can weigh up to 5000 pounds - 3755 pounds = <<5000-3755=1245>>1245 pounds in total.\nThere can be 1245 / 15 = <<1245/15=83>>83 boxes loaded onto the truck without exceeding the bridge's weight limit.\n#### 83",
+    "gold_answer": "83",
+    "model_text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = 3755 pounds.\n\nSo remaining weight for boxes = 5000 - 3755 = 1245 pounds.\n\nEach box weighs 15 pounds.\n\nSo number of boxes = 1245 / 15 = 83.\n\nBut we can't have a fraction of a box, so maximum is 83.\n\nLet’s verify:\n\n83 boxes × 15 = 1245 pounds.\n\nTotal weight = 3755 + 1245 = 5000 pounds.\n\nPerfect — exactly the limit.\n\nSo the maximum number of boxes is 83.\n\n#### 83",
+    "predicted_answer": "83",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      2,
+      10,
+      16,
+      14,
+      12,
+      12,
+      20,
+      11,
+      5,
+      5,
+      14,
+      4,
+      10
+    ],
+    "ttfb_seconds": 0.266556664999996,
+    "tbb_seconds": [
+      0.6176571199999898,
+      1.0730762730000265,
+      0.9247159799999736,
+      0.6130140190000475,
+      0.9464023409999527,
+      1.4495585480000273,
+      0.6850078800000006,
+      0.31729269599998133,
+      0.29238342299998976,
+      0.8331624420000026,
+      0.10993614200003776,
+      0.6917129820000127
+    ],
+    "dllm_block_completion_latencies": [
+      0.266556664999996,
+      0.6176571199999898,
+      1.0730762730000265,
+      0.9247159799999736,
+      0.6130140190000475,
+      0.9464023409999527,
+      1.4495585480000273,
+      0.6850078800000006,
+      0.31729269599998133,
+      0.29238342299998976,
+      0.8331624420000026,
+      0.10993614200003776,
+      0.6917129820000127
+    ],
+    "dllm_forward_counts_per_block": [
+      2,
+      10,
+      16,
+      14,
+      12,
+      12,
+      20,
+      11,
+      5,
+      5,
+      14,
+      4,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 5.89176511200003,
+    "first_new_token_ttfb_seconds": 5.89176511200003,
+    "block_ttfb_seconds": 5.89176511200003,
+    "tbb_seconds": [
+      0.6198577179999916,
+      1.0703047289999859,
+      0.9251418650000005,
+      0.6130910180000342,
+      0.9469363029999727,
+      1.4493793149999874,
+      0.6856643600000325,
+      0.3161072279999644,
+      0.2925100710000379,
+      0.834300796999969,
+      0.11162118200002169,
+      0.6899261739999929
+    ],
+    "block_arrival_elapsed_seconds": [
+      5.89176511200003,
+      6.511622830000022,
+      7.5819275590000075,
+      8.507069424000008,
+      9.120160442000042,
+      10.067096745000015,
+      11.516476060000002,
+      12.202140420000035,
+      12.518247648,
+      12.810757719000037,
+      13.645058516000006,
+      13.756679698000028,
+      14.44660587200002
+    ],
+    "e2e_seconds": 14.446746191000045
+  },
+  "token_metrics": {
+    "prompt_tokens": 767,
+    "completion_tokens": 385,
+    "total_tokens": 1152,
+    "end_to_end_tokens_per_second": 79.74113926897024,
+    "total_tokens_per_second": 79.74113926897024,
+    "completion_tokens_per_second": 26.649599495272174,
+    "tokens_after_first_block": 384,
+    "generated_tokens_per_second_after_first_block": 44.88613083465586
+  },
+  "final_meta_info": {
+    "id": "a1f8bce7d1de40608c6865b1d63abe65",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 767,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 385,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      2,
+      10,
+      16,
+      14,
+      12,
+      12,
+      20,
+      11,
+      5,
+      5,
+      14,
+      4,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.266556664999996,
+      0.6176571199999898,
+      1.0730762730000265,
+      0.9247159799999736,
+      0.6130140190000475,
+      0.9464023409999527,
+      1.4495585480000273,
+      0.6850078800000006,
+      0.31729269599998133,
+      0.29238342299998976,
+      0.8331624420000026,
+      0.10993614200003776,
+      0.6917129820000127
+    ],
+    "dp_rank": null,
+    "e2e_latency": 8.845396719000007
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 5.89176511200003,
+      "output_token_count": 1,
+      "new_output_tokens": 1,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.266556664999996
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 1,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876211.9258687
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 6.511622830000022,
+      "output_token_count": 33,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.6176571199999898
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 33,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 7.5819275590000075,
+      "output_token_count": 65,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        1.0730762730000265
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 65,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 8.507069424000008,
+      "output_token_count": 97,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.9247159799999736
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 97,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 9.120160442000042,
+      "output_token_count": 129,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6130140190000475
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 129,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 10.067096745000015,
+      "output_token_count": 161,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.9464023409999527
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 161,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 11.516476060000002,
+      "output_token_count": 193,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        1.4495585480000273
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 500",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 193,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 12.202140420000035,
+      "output_token_count": 225,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.6850078800000006
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = ",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 225,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273,
+          0.6850078800000006
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 12.518247648,
+      "output_token_count": 257,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.31729269599998133
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = 3755 pounds.\n\nSo remaining weight for boxes = 5000 - 3755 = 1245 pounds",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 257,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20,
+          11,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273,
+          0.6850078800000006,
+          0.31729269599998133
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 12.810757719000037,
+      "output_token_count": 289,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.29238342299998976
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = 3755 pounds.\n\nSo remaining weight for boxes = 5000 - 3755 = 1245 pounds.\n\nEach box weighs 15 pounds.\n\nSo number of boxes = 1245 / 15 = 83.",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 289,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20,
+          11,
+          5,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273,
+          0.6850078800000006,
+          0.31729269599998133,
+          0.29238342299998976
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 13.645058516000006,
+      "output_token_count": 321,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.8331624420000026
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = 3755 pounds.\n\nSo remaining weight for boxes = 5000 - 3755 = 1245 pounds.\n\nEach box weighs 15 pounds.\n\nSo number of boxes = 1245 / 15 = 83.\n\nBut we can't have a fraction of a box, so maximum is 83.\n\nLet’s verify:\n\n83 boxes ×",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 321,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20,
+          11,
+          5,
+          5,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273,
+          0.6850078800000006,
+          0.31729269599998133,
+          0.29238342299998976,
+          0.8331624420000026
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 13.756679698000028,
+      "output_token_count": 353,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.10993614200003776
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = 3755 pounds.\n\nSo remaining weight for boxes = 5000 - 3755 = 1245 pounds.\n\nEach box weighs 15 pounds.\n\nSo number of boxes = 1245 / 15 = 83.\n\nBut we can't have a fraction of a box, so maximum is 83.\n\nLet’s verify:\n\n83 boxes × 15 = 1245 pounds.\n\nTotal weight = 3755 + 1245 = 500",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 353,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20,
+          11,
+          5,
+          5,
+          14,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273,
+          0.6850078800000006,
+          0.31729269599998133,
+          0.29238342299998976,
+          0.8331624420000026,
+          0.10993614200003776
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 14.44660587200002,
+      "output_token_count": 385,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.6917129820000127
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n1. The bridge can carry a maximum of 5000 pounds.\n2. The empty truck with driver driver weighs 7755 pounds? Wait — no, the problem says the combined weight of the driver and the empty truck is 3755 pounds.\n\nWait — correction: The problem says: \"The combined weight of the driver and the empty truck is 3755 pounds.\"\n\nSo:\n- Empty truck + driver = 3755 pounds.\n- Each weighs weighs 15 pounds.\n- We need to find how many boxes (each5 pounds) can be added without exceeding the bridge's 5000 pounds.\n\nWait — no: each box weighs 15 pounds.\n\nSo total weight allowed on 505000 pounds.\n\nWait — no: the bridge can carry no more than 5000 pounds.\n\nSo total weight ( truck + driver + boxes ) must be ≤ 5000.\n\nBut truck + driver = 3755 pounds.\n\nSo remaining weight for boxes = 5000 - 3755 = 1245 pounds.\n\nEach box weighs 15 pounds.\n\nSo number of boxes = 1245 / 15 = 83.\n\nBut we can't have a fraction of a box, so maximum is 83.\n\nLet’s verify:\n\n83 boxes × 15 = 1245 pounds.\n\nTotal weight = 3755 + 1245 = 5000 pounds.\n\nPerfect — exactly the limit.\n\nSo the maximum number of boxes is 83.\n\n#### 83",
+      "meta_info": {
+        "id": "a1f8bce7d1de40608c6865b1d63abe65",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 385,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          16,
+          14,
+          12,
+          12,
+          20,
+          11,
+          5,
+          5,
+          14,
+          4,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.266556664999996,
+          0.6176571199999898,
+          1.0730762730000265,
+          0.9247159799999736,
+          0.6130140190000475,
+          0.9464023409999527,
+          1.4495585480000273,
+          0.6850078800000006,
+          0.31729269599998133,
+          0.29238342299998976,
+          0.8331624420000026,
+          0.10993614200003776,
+          0.6917129820000127
+        ],
+        "dp_rank": null,
+        "e2e_latency": 8.845396719000007
+      }
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 47,
+  "eval_index": 47,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John buys twice as many red ties as blue ties.  The red ties cost 50% more than blue ties.  He spent $200 on blue ties that cost $40 each. How much did he spend on ties?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John buys twice as many red ties as blue ties.  The red ties cost 50% more than blue ties.  He spent $200 on blue ties that cost $40 each. How much did he spend on ties?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 4.7,
+  "request_start_realtime": "2026-05-27T08:58:01.118",
+  "benchmark": {
+    "question": "John buys twice as many red ties as blue ties.  The red ties cost 50% more than blue ties.  He spent $200 on blue ties that cost $40 each. How much did he spend on ties?",
+    "gold_solution": "He bought 200 / 40 = <<200/40=5>>5 blue ties\nSo he bought 5 * 2 = <<5*2=10>>10 red ties\nEach red tie cost $40 * .5 = $<<40*.5=20>>20 more than blue ties\nSo they each cost $40 + $20 = $<<40+20=60>>60\nSo he spent $60 * 10 = $<<60*10=600>>600 on red ties\nSo he spent $200 + $600 = $<<200+600=800>>800 on ties\n#### 800",
+    "gold_answer": "800",
+    "model_text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.\n   - Number of red ties = 2 × 5 = 10.\n\n3. The red ties cost 50% more than blue ties.\n   - Cost of one red tie = $40 + (50% of $40) = $40 + $20 = $60.\n\n4. Total cost for red ties = 10 × $60 = $600.\n\n5. Total cost for blue ties = $200.\n\n6. Total amount spent on ties = $200 + $600 = $800.\n\n#### 800",
+    "predicted_answer": "800",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      16,
+      22,
+      12,
+      10,
+      17,
+      18,
+      17
+    ],
+    "ttfb_seconds": 0.37521508000003223,
+    "tbb_seconds": [
+      0.2692347039999845,
+      0.14227278499998874,
+      0.27029427700000497,
+      0.1937314230000311,
+      0.4580220919999647,
+      0.19385225199999923
+    ],
+    "dllm_block_completion_latencies": [
+      0.37521508000003223,
+      0.2692347039999845,
+      0.14227278499998874,
+      0.27029427700000497,
+      0.1937314230000311,
+      0.4580220919999647,
+      0.19385225199999923
+    ],
+    "dllm_forward_counts_per_block": [
+      16,
+      22,
+      12,
+      10,
+      17,
+      18,
+      17
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 7.617759046000003,
+    "first_new_token_ttfb_seconds": 7.617759046000003,
+    "block_ttfb_seconds": 7.617759046000003,
+    "tbb_seconds": [
+      0.26992982200005144,
+      0.14110890899996775,
+      0.2711852759999829,
+      0.19304456100002199,
+      0.4586386440000183,
+      0.1927619829999685
+    ],
+    "block_arrival_elapsed_seconds": [
+      7.617759046000003,
+      7.887688868000055,
+      8.028797777000023,
+      8.299983053000005,
+      8.493027614000027,
+      8.951666258000046,
+      9.144428241000014
+    ],
+    "e2e_seconds": 9.144494572000042
+  },
+  "token_metrics": {
+    "prompt_tokens": 740,
+    "completion_tokens": 202,
+    "total_tokens": 942,
+    "end_to_end_tokens_per_second": 103.01280104472413,
+    "total_tokens_per_second": 103.01280104472413,
+    "completion_tokens_per_second": 22.08979385460114,
+    "tokens_after_first_block": 174,
+    "generated_tokens_per_second_after_first_block": 113.96865864245017
+  },
+  "final_meta_info": {
+    "id": "5aacef57b88c4233bd3a999486c08fa3",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 740,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 202,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      16,
+      22,
+      12,
+      10,
+      17,
+      18,
+      17
+    ],
+    "dllm_block_completion_latencies": [
+      0.37521508000003223,
+      0.2692347039999845,
+      0.14227278499998874,
+      0.27029427700000497,
+      0.1937314230000311,
+      0.4580220919999647,
+      0.19385225199999923
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.2013607590000106
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 7.617759046000003,
+      "output_token_count": 28,
+      "new_output_tokens": 28,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.37521508000003223
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So,",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 28,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872288.7357113
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 7.887688868000055,
+      "output_token_count": 60,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2692347039999845
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 60,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223,
+          0.2692347039999845
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 8.028797777000023,
+      "output_token_count": 92,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.14227278499998874
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.\n   - Number of red ties = 2 × 5 = 10.\n\n3. The red ties cost 50% more than",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 92,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          22,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223,
+          0.2692347039999845,
+          0.14227278499998874
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 8.299983053000005,
+      "output_token_count": 124,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.27029427700000497
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.\n   - Number of red ties = 2 × 5 = 10.\n\n3. The red ties cost 50% more than blue ties.\n   - Cost of one red tie = $40 + (50% of $40) = $40 + $2",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 124,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          22,
+          12,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223,
+          0.2692347039999845,
+          0.14227278499998874,
+          0.27029427700000497
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 8.493027614000027,
+      "output_token_count": 156,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.1937314230000311
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.\n   - Number of red ties = 2 × 5 = 10.\n\n3. The red ties cost 50% more than blue ties.\n   - Cost of one red tie = $40 + (50% of $40) = $40 + $20 = $60.\n\n4. Total cost for red ties = 10 × $60 = $600.\n\n5",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 156,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          22,
+          12,
+          10,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223,
+          0.2692347039999845,
+          0.14227278499998874,
+          0.27029427700000497,
+          0.1937314230000311
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 8.951666258000046,
+      "output_token_count": 188,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.4580220919999647
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.\n   - Number of red ties = 2 × 5 = 10.\n\n3. The red ties cost 50% more than blue ties.\n   - Cost of one red tie = $40 + (50% of $40) = $40 + $20 = $60.\n\n4. Total cost for red ties = 10 × $60 = $600.\n\n5. Total cost for blue ties = $200.\n\n6. Total amount spent on ties = $200 + $600 =",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 188,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          22,
+          12,
+          10,
+          17,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223,
+          0.2692347039999845,
+          0.14227278499998874,
+          0.27029427700000497,
+          0.1937314230000311,
+          0.4580220919999647
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 9.144428241000014,
+      "output_token_count": 202,
+      "new_output_tokens": 14,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.19385225199999923
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. John spent $200 on blue ties, and each blue tie costs $40.\n   - So, number of blue ties = $200 / $40 = 5.\n\n2. John buys twice as many red ties as blue ties.\n   - Number of red ties = 2 × 5 = 10.\n\n3. The red ties cost 50% more than blue ties.\n   - Cost of one red tie = $40 + (50% of $40) = $40 + $20 = $60.\n\n4. Total cost for red ties = 10 × $60 = $600.\n\n5. Total cost for blue ties = $200.\n\n6. Total amount spent on ties = $200 + $600 = $800.\n\n#### 800",
+      "meta_info": {
+        "id": "5aacef57b88c4233bd3a999486c08fa3",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 202,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          22,
+          12,
+          10,
+          17,
+          18,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.37521508000003223,
+          0.2692347039999845,
+          0.14227278499998874,
+          0.27029427700000497,
+          0.1937314230000311,
+          0.4580220919999647,
+          0.19385225199999923
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.2013607590000106
+      }
+    }
+  ]
+}

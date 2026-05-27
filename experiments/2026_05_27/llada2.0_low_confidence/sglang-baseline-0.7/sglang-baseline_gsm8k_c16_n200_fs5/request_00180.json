@@ -1,0 +1,202 @@
+{
+  "ok": true,
+  "request_index": 180,
+  "eval_index": 180,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Two candidates are running for class representative at Sarai's school. If the winner got 3/4 of the votes and the total number of students who voted in the class was 80, calculate the number of votes the loser got.\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Two candidates are running for class representative at Sarai's school. If the winner got 3/4 of the votes and the total number of students who voted in the class was 80, calculate the number of votes the loser got.\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.0,
+  "request_start_realtime": "2026-05-27T08:59:12.902",
+  "benchmark": {
+    "question": "Two candidates are running for class representative at Sarai's school. If the winner got 3/4 of the votes and the total number of students who voted in the class was 80, calculate the number of votes the loser got.",
+    "gold_solution": "The winner got 3/4*80 = <<3/4*80=60>>60 votes.\nThe loser got 80-60 = <<80-60=20>>20 votes.\n#### 20",
+    "gold_answer": "20",
+    "model_text": "\n\nThe winner got 3/4 of the votes.  \nTotal votes = 80  \nSo, the winner got (3/4)*80 = 60 votes.\n\nThe remaining votes went to the loser.  \nSo, the loser got 80 - 60 = 20 votes.\n\n#### 20",
+    "predicted_answer": "20",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      20,
+      25,
+      23
+    ],
+    "ttfb_seconds": 0.5334257919999459,
+    "tbb_seconds": [
+      0.4434742040000401,
+      0.3822687659999815
+    ],
+    "dllm_block_completion_latencies": [
+      0.5334257919999459,
+      0.4434742040000401,
+      0.3822687659999815
+    ],
+    "dllm_forward_counts_per_block": [
+      20,
+      25,
+      23
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 19.289118766,
+    "first_new_token_ttfb_seconds": 19.289118766,
+    "block_ttfb_seconds": 19.289118766,
+    "tbb_seconds": [
+      0.44905747000001384,
+      0.3779881959999898
+    ],
+    "block_arrival_elapsed_seconds": [
+      19.289118766,
+      19.738176236000015,
+      20.116164432000005
+    ],
+    "e2e_seconds": 20.116215277000038
+  },
+  "token_metrics": {
+    "prompt_tokens": 739,
+    "completion_tokens": 79,
+    "total_tokens": 818,
+    "end_to_end_tokens_per_second": 40.663712767841766,
+    "total_tokens_per_second": 40.663712767841766,
+    "completion_tokens_per_second": 3.9271800839358186,
+    "tokens_after_first_block": 50,
+    "generated_tokens_per_second_after_first_block": 60.45243733351671
+  },
+  "final_meta_info": {
+    "id": "fc519ee8c189418ea20b7b7766df7140",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 739,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 79,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      20,
+      25,
+      23
+    ],
+    "dllm_block_completion_latencies": [
+      0.5334257919999459,
+      0.4434742040000401,
+      0.3822687659999815
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.7568385420000254
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 19.289118766,
+      "output_token_count": 29,
+      "new_output_tokens": 29,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5334257919999459
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nThe winner got 3/4 of the votes.  \nTotal votes = 80  \nSo, the winner got (",
+      "meta_info": {
+        "id": "fc519ee8c189418ea20b7b7766df7140",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 29,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.5334257919999459
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872372.190182
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 19.738176236000015,
+      "output_token_count": 61,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.4434742040000401
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nThe winner got 3/4 of the votes.  \nTotal votes = 80  \nSo, the winner got (3/4)*80 = 60 votes.\n\nThe remaining votes went to the loser.  \nSo, the loser got 80",
+      "meta_info": {
+        "id": "fc519ee8c189418ea20b7b7766df7140",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 61,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5334257919999459,
+          0.4434742040000401
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 20.116164432000005,
+      "output_token_count": 79,
+      "new_output_tokens": 18,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3822687659999815
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nThe winner got 3/4 of the votes.  \nTotal votes = 80  \nSo, the winner got (3/4)*80 = 60 votes.\n\nThe remaining votes went to the loser.  \nSo, the loser got 80 - 60 = 20 votes.\n\n#### 20",
+      "meta_info": {
+        "id": "fc519ee8c189418ea20b7b7766df7140",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          25,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.5334257919999459,
+          0.4434742040000401,
+          0.3822687659999815
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.7568385420000254
+      }
+    }
+  ]
+}

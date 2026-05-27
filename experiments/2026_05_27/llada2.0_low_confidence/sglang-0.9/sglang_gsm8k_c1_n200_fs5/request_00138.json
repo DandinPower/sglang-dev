@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 138,
+  "eval_index": 138,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 13.8,
+  "request_start_realtime": "2026-05-27T08:56:40.011",
+  "benchmark": {
+    "question": "Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?",
+    "gold_solution": "Questions Mark completed in yesterday’s test: 5*8 = <<5*8=40>>40.\nQuestions Mark completed in today’s test: 5*6 = <<5*6=30>>30.\nQuestions Mark left incomplete in yesterday’s test: 75-40 = <<75-40=35>>35\nQuestions Mark left incomplete in today's test: 100-30 = <<100-30=70>>70\nMissed questions in total 35+70 = <<35+70=105>>105.\n#### 105",
+    "gold_answer": "105",
+    "model_text": "\n\nFirst, calculate how many questions Mark could complete in 8 hours:\n5 questions/hour * 8 hours = 40 questions.\n\nBut the first test had 75 questions, so he left 75 - 40 = 35 questions incomplete in the first test.\n\nNext, calculate how many questions Mark could complete in 6 hours:\n5 questions/hour * 6 hours = 30 questions.\n\nThe second test had 100 questions, so he left 100 - 30 = 70 questions incomplete in the second test.\n\nNow, add the incomplete questions from both tests:\n35 + 70 = 105 questions left incomplete.\n#### 105",
+    "predicted_answer": "105",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      25,
+      13,
+      5,
+      6,
+      14
+    ],
+    "ttfb_seconds": 0.21915726999998242,
+    "tbb_seconds": [
+      0.19729991400001268,
+      0.10350510999998619,
+      0.03973682800000233,
+      0.04943556500001023,
+      0.11370934900000407
+    ],
+    "dllm_block_completion_latencies": [
+      0.21915726999998242,
+      0.19729991400001268,
+      0.10350510999998619,
+      0.03973682800000233,
+      0.04943556500001023,
+      0.11370934900000407
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      25,
+      13,
+      5,
+      6,
+      14
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 120.61204573800002,
+    "first_new_token_ttfb_seconds": 120.61204573800002,
+    "block_ttfb_seconds": 120.61204573800002,
+    "tbb_seconds": [
+      0.1970507199999929,
+      0.10357483299998194,
+      0.039774219999998195,
+      0.049507219000020086,
+      0.1137533259999941
+    ],
+    "block_arrival_elapsed_seconds": [
+      120.61204573800002,
+      120.80909645800001,
+      120.912671291,
+      120.952445511,
+      121.00195273000001,
+      121.11570605600001
+    ],
+    "e2e_seconds": 121.115781885
+  },
+  "token_metrics": {
+    "prompt_tokens": 763,
+    "completion_tokens": 163,
+    "total_tokens": 926,
+    "end_to_end_tokens_per_second": 7.645576700146652,
+    "total_tokens_per_second": 7.645576700146652,
+    "completion_tokens_per_second": 1.345819656721279,
+    "tokens_after_first_block": 158,
+    "generated_tokens_per_second_after_first_block": 313.65626814945466
+  },
+  "final_meta_info": {
+    "id": "b23b86ea6b5a4573a759170670f32dec",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 763,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 163,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      25,
+      13,
+      5,
+      6,
+      14
+    ],
+    "dllm_block_completion_latencies": [
+      0.21915726999998242,
+      0.19729991400001268,
+      0.10350510999998619,
+      0.03973682800000233,
+      0.04943556500001023,
+      0.11370934900000407
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7258127300000012
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 120.61204573800002,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.21915726999998242
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, calculate",
+      "meta_info": {
+        "id": "b23b86ea6b5a4573a759170670f32dec",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.21915726999998242
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872320.6237118
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 120.80909645800001,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.19729991400001268
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, calculate how many questions Mark could complete in 8 hours:\n5 questions/hour * 8 hours = 40 questions.\n\nBut the first test had",
+      "meta_info": {
+        "id": "b23b86ea6b5a4573a759170670f32dec",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.21915726999998242,
+          0.19729991400001268
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 120.912671291,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.10350510999998619
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, calculate how many questions Mark could complete in 8 hours:\n5 questions/hour * 8 hours = 40 questions.\n\nBut the first test had 75 questions, so he left 75 - 40 = 35 questions incomplete in the first test.\n\nNext, calculate how",
+      "meta_info": {
+        "id": "b23b86ea6b5a4573a759170670f32dec",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          25,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.21915726999998242,
+          0.19729991400001268,
+          0.10350510999998619
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 120.952445511,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.03973682800000233
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, calculate how many questions Mark could complete in 8 hours:\n5 questions/hour * 8 hours = 40 questions.\n\nBut the first test had 75 questions, so he left 75 - 40 = 35 questions incomplete in the first test.\n\nNext, calculate how many questions Mark could complete in 6 hours:\n5 questions/hour * 6 hours = 30 questions.\n\nThe second test had 1",
+      "meta_info": {
+        "id": "b23b86ea6b5a4573a759170670f32dec",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          25,
+          13,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.21915726999998242,
+          0.19729991400001268,
+          0.10350510999998619,
+          0.03973682800000233
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 121.00195273000001,
+      "output_token_count": 133,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.04943556500001023
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, calculate how many questions Mark could complete in 8 hours:\n5 questions/hour * 8 hours = 40 questions.\n\nBut the first test had 75 questions, so he left 75 - 40 = 35 questions incomplete in the first test.\n\nNext, calculate how many questions Mark could complete in 6 hours:\n5 questions/hour * 6 hours = 30 questions.\n\nThe second test had 100 questions, so he left 100 - 30 = 70 questions incomplete in the second test.\n\nNow, add the",
+      "meta_info": {
+        "id": "b23b86ea6b5a4573a759170670f32dec",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 133,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          25,
+          13,
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.21915726999998242,
+          0.19729991400001268,
+          0.10350510999998619,
+          0.03973682800000233,
+          0.04943556500001023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 121.11570605600001,
+      "output_token_count": 163,
+      "new_output_tokens": 30,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.11370934900000407
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, calculate how many questions Mark could complete in 8 hours:\n5 questions/hour * 8 hours = 40 questions.\n\nBut the first test had 75 questions, so he left 75 - 40 = 35 questions incomplete in the first test.\n\nNext, calculate how many questions Mark could complete in 6 hours:\n5 questions/hour * 6 hours = 30 questions.\n\nThe second test had 100 questions, so he left 100 - 30 = 70 questions incomplete in the second test.\n\nNow, add the incomplete questions from both tests:\n35 + 70 = 105 questions left incomplete.\n#### 105",
+      "meta_info": {
+        "id": "b23b86ea6b5a4573a759170670f32dec",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 163,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          25,
+          13,
+          5,
+          6,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.21915726999998242,
+          0.19729991400001268,
+          0.10350510999998619,
+          0.03973682800000233,
+          0.04943556500001023,
+          0.11370934900000407
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7258127300000012
+      }
+    }
+  ]
+}

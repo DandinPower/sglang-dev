@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 9,
+  "eval_index": 9,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If Eliza worked for 45 hours this week, how much are her earnings for this week?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If Eliza worked for 45 hours this week, how much are her earnings for this week?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.9,
+  "request_start_realtime": "2026-05-27T08:56:22.133",
+  "benchmark": {
+    "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If Eliza worked for 45 hours this week, how much are her earnings for this week?",
+    "gold_solution": "Eliza is entitled to 45 -40 = <<45-40=5>>5 hours overtime pay.\nHer hourly rate for the overtime pay is $10 x 1.2 = $<<10*1.2=12>>12.\nSo, Eliza will receive $12 x 5 =$<<12*5=60>>60 for overtime pay.\nHer regular weekly earning is $10 x 40 = $<<10*40=400>>400.\nThus, Eliza will receive a total of $400 + $60 = $<<400+60=460>>460 for this week's work.\n#### 460",
+    "gold_answer": "460",
+    "model_text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45 - 40 = 5).\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $122 = $60\n\nWait, let's correct that:\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $12 = $60\n\n3. Total earnings = Regular earnings + Overtime earnings\n   - Total = $400 + $60 = $460\n\n#### 460",
+    "predicted_answer": "460",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      14,
+      7,
+      14,
+      6,
+      7,
+      6
+    ],
+    "ttfb_seconds": 0.2207585520000066,
+    "tbb_seconds": [
+      0.10098485599999663,
+      0.04872976600000811,
+      0.10828284300001201,
+      0.041161446999979034,
+      0.049991430999995146,
+      0.03783424100001298
+    ],
+    "dllm_block_completion_latencies": [
+      0.2207585520000066,
+      0.10098485599999663,
+      0.04872976600000811,
+      0.10828284300001201,
+      0.041161446999979034,
+      0.049991430999995146,
+      0.03783424100001298
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      14,
+      7,
+      14,
+      6,
+      7,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 4.686305117999979,
+    "first_new_token_ttfb_seconds": 4.686305117999979,
+    "block_ttfb_seconds": 4.686305117999979,
+    "tbb_seconds": [
+      0.10093510699999797,
+      0.048716968999997334,
+      0.10820349100001181,
+      0.04120145799998909,
+      0.04985391800002503,
+      0.0385438259999944
+    ],
+    "block_arrival_elapsed_seconds": [
+      4.686305117999979,
+      4.787240224999977,
+      4.835957193999974,
+      4.944160684999986,
+      4.985362142999975,
+      5.035216061,
+      5.073759886999994
+    ],
+    "e2e_seconds": 5.07385223899999
+  },
+  "token_metrics": {
+    "prompt_tokens": 748,
+    "completion_tokens": 191,
+    "total_tokens": 939,
+    "end_to_end_tokens_per_second": 185.06648514168563,
+    "total_tokens_per_second": 185.06648514168563,
+    "completion_tokens_per_second": 37.64398153574223,
+    "tokens_after_first_block": 171,
+    "generated_tokens_per_second_after_first_block": 441.236667063242
+  },
+  "final_meta_info": {
+    "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 748,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 191,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      14,
+      7,
+      14,
+      6,
+      7,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.2207585520000066,
+      0.10098485599999663,
+      0.04872976600000811,
+      0.10828284300001201,
+      0.041161446999979034,
+      0.049991430999995146,
+      0.03783424100001298
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.6126151109999967
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 4.686305117999979,
+      "output_token_count": 20,
+      "new_output_tokens": 20,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2207585520000066
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": null,
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 20,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872186.8193765
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 4.787240224999977,
+      "output_token_count": 52,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.10098485599999663
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": null,
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 52,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066,
+          0.10098485599999663
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.835957193999974,
+      "output_token_count": 84,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.04872976600000811
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45 - 40 = 5).\n   - Overtime rate = 1.2 * $10 = $12 per hour\n  ",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": null,
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 84,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          14,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066,
+          0.10098485599999663,
+          0.04872976600000811
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 4.944160684999986,
+      "output_token_count": 116,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.10828284300001201
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45 - 40 = 5).\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $122 = $60\n\nWait, let's correct that:\n   - Overtime",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": null,
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 116,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          14,
+          7,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066,
+          0.10098485599999663,
+          0.04872976600000811,
+          0.10828284300001201
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 4.985362142999975,
+      "output_token_count": 148,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.041161446999979034
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45 - 40 = 5).\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $122 = $60\n\nWait, let's correct that:\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $12 = $",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": null,
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 148,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          14,
+          7,
+          14,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066,
+          0.10098485599999663,
+          0.04872976600000811,
+          0.10828284300001201,
+          0.041161446999979034
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 5.035216061,
+      "output_token_count": 180,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.049991430999995146
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45 - 40 = 5).\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $122 = $60\n\nWait, let's correct that:\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $12 = $60\n\n3. Total earnings = Regular earnings + Overtime earnings\n   - Total = $400 + $60 = $4",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": null,
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 180,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          14,
+          7,
+          14,
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066,
+          0.10098485599999663,
+          0.04872976600000811,
+          0.10828284300001201,
+          0.041161446999979034,
+          0.049991430999995146
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 5.073759886999994,
+      "output_token_count": 191,
+      "new_output_tokens": 11,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.03783424100001298
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Eliza worked 40 hours at her regular rate of $10 per hour.\n   - Regular earnings = 40 * $10 = $400\n\n2. She worked 5 overtime hours (45 - 40 = 5).\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $122 = $60\n\nWait, let's correct that:\n   - Overtime rate = 1.2 * $10 = $12 per hour\n   - Overtime earnings = 5 * $12 = $60\n\n3. Total earnings = Regular earnings + Overtime earnings\n   - Total = $400 + $60 = $460\n\n#### 460",
+      "meta_info": {
+        "id": "9b133da7ebde486f8b78e3c1c97e52a3",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 748,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 191,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          14,
+          7,
+          14,
+          6,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2207585520000066,
+          0.10098485599999663,
+          0.04872976600000811,
+          0.10828284300001201,
+          0.041161446999979034,
+          0.049991430999995146,
+          0.03783424100001298
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.6126151109999967
+      }
+    }
+  ]
+}

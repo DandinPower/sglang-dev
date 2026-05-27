@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 10,
+  "eval_index": 10,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.0,
+  "request_start_realtime": "2026-05-27T09:33:49.544",
+  "benchmark": {
+    "question": "A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?",
+    "gold_solution": "The number of downloads of the program in the second month increased to 3*60 = <<3*60=180>>180\nIn the first two months, the total number of downloads of the program was 180+60 = <<180+60=240>>240\nIn the third month, the number of downloads of the program reduced by 30/100*180 = <<30/100*180=54>>54\nThere were 180-54 = <<180-54=126>>126 downloads in the third month.\nIn the three months, the total number of downloads of the program was 126+240 = <<126+240=366>>366\n#### 366",
+    "gold_answer": "366",
+    "model_text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30% from the second month's downloads.\n   - 30% of 180 = 0.30 × 180 = 54\n   - So, third month downloads = 180 - 54 = 126 downloads.\n\n4. Total downloads over three months:\n   - First month: 60\n   - Second month: 180\n   - Third month: 126\n   - Total = 60 + 180 + 126 = 366 downloads\n\n#### 366",
+    "predicted_answer": "366",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      6,
+      15,
+      10,
+      7,
+      12,
+      9,
+      9
+    ],
+    "ttfb_seconds": 0.2818277249999994,
+    "tbb_seconds": [
+      0.17643072100000268,
+      0.32269729500001176,
+      0.08263294299999302,
+      0.29350162500000465,
+      0.11467250499998727,
+      0.11467936500000064
+    ],
+    "dllm_block_completion_latencies": [
+      0.2818277249999994,
+      0.17643072100000268,
+      0.32269729500001176,
+      0.08263294299999302,
+      0.29350162500000465,
+      0.11467250499998727,
+      0.11467936500000064
+    ],
+    "dllm_forward_counts_per_block": [
+      6,
+      15,
+      10,
+      7,
+      12,
+      9,
+      9
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 1.9158343610000088,
+    "first_new_token_ttfb_seconds": 1.9158343610000088,
+    "block_ttfb_seconds": 1.9158343610000088,
+    "tbb_seconds": [
+      0.1762494639999943,
+      0.32112383899999486,
+      0.08242421400001376,
+      0.2936415959999863,
+      0.11454818600000749,
+      0.11644888399999331
+    ],
+    "block_arrival_elapsed_seconds": [
+      1.9158343610000088,
+      2.092083825000003,
+      2.413207663999998,
+      2.4956318780000117,
+      2.789273473999998,
+      2.9038216600000055,
+      3.020270543999999
+    ],
+    "e2e_seconds": 3.020329354000012
+  },
+  "token_metrics": {
+    "prompt_tokens": 750,
+    "completion_tokens": 181,
+    "total_tokens": 931,
+    "end_to_end_tokens_per_second": 308.2445292818872,
+    "total_tokens_per_second": 308.2445292818872,
+    "completion_tokens_per_second": 59.92723931259031,
+    "tokens_after_first_block": 163,
+    "generated_tokens_per_second_after_first_block": 147.57875864811598
+  },
+  "final_meta_info": {
+    "id": "e8970203f83848ef85fd358a0a662227",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 750,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 181,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      6,
+      15,
+      10,
+      7,
+      12,
+      9,
+      9
+    ],
+    "dllm_block_completion_latencies": [
+      0.2818277249999994,
+      0.17643072100000268,
+      0.32269729500001176,
+      0.08263294299999302,
+      0.29350162500000465,
+      0.11467250499998727,
+      0.11467936500000064
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.4977086490000033
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 1.9158343610000088,
+      "output_token_count": 18,
+      "new_output_tokens": 18,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2818277249999994
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": null,
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 18,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874431.4582994
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 2.092083825000003,
+      "output_token_count": 50,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.17643072100000268
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": null,
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 50,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994,
+          0.17643072100000268
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.413207663999998,
+      "output_token_count": 82,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.32269729500001176
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30% from the second month's downloads.\n   - 30% of 180 = 0.30 × 180 =",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": null,
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 82,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          15,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994,
+          0.17643072100000268,
+          0.32269729500001176
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.4956318780000117,
+      "output_token_count": 114,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.08263294299999302
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30% from the second month's downloads.\n   - 30% of 180 = 0.30 × 180 = 54\n   - So, third month downloads = 180 - 54 = 126 downloads.\n\n4. Total",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": null,
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 114,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          15,
+          10,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994,
+          0.17643072100000268,
+          0.32269729500001176,
+          0.08263294299999302
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.789273473999998,
+      "output_token_count": 146,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.29350162500000465
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30% from the second month's downloads.\n   - 30% of 180 = 0.30 × 180 = 54\n   - So, third month downloads = 180 - 54 = 126 downloads.\n\n4. Total downloads over three months:\n   - First month: 60\n   - Second month: 180\n   - Third month: 1",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": null,
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 146,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          15,
+          10,
+          7,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994,
+          0.17643072100000268,
+          0.32269729500001176,
+          0.08263294299999302,
+          0.29350162500000465
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.9038216600000055,
+      "output_token_count": 178,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.11467250499998727
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30% from the second month's downloads.\n   - 30% of 180 = 0.30 × 180 = 54\n   - So, third month downloads = 180 - 54 = 126 downloads.\n\n4. Total downloads over three months:\n   - First month: 60\n   - Second month: 180\n   - Third month: 126\n   - Total = 60 + 180 + 126 = 366 downloads\n\n#### 36",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": null,
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 178,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          15,
+          10,
+          7,
+          12,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994,
+          0.17643072100000268,
+          0.32269729500001176,
+          0.08263294299999302,
+          0.29350162500000465,
+          0.11467250499998727
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 3.020270543999999,
+      "output_token_count": 181,
+      "new_output_tokens": 3,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.11467936500000064
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First month: 60 downloads.\n\n2. Second month: three times the first month = 3 × 60 = 180 downloads.\n\n3. Third month: reduced by 30% from the second month's downloads.\n   - 30% of 180 = 0.30 × 180 = 54\n   - So, third month downloads = 180 - 54 = 126 downloads.\n\n4. Total downloads over three months:\n   - First month: 60\n   - Second month: 180\n   - Third month: 126\n   - Total = 60 + 180 + 126 = 366 downloads\n\n#### 366",
+      "meta_info": {
+        "id": "e8970203f83848ef85fd358a0a662227",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 750,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          15,
+          10,
+          7,
+          12,
+          9,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2818277249999994,
+          0.17643072100000268,
+          0.32269729500001176,
+          0.08263294299999302,
+          0.29350162500000465,
+          0.11467250499998727,
+          0.11467936500000064
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.4977086490000033
+      }
+    }
+  ]
+}

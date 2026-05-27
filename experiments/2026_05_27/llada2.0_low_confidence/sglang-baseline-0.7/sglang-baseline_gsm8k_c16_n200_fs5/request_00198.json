@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 198,
+  "eval_index": 198,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Elaine initially had 20 Pokemon cards. After a month, she collected three times that number. In the second month, she collected 20 fewer cards than those she collected in the first month. In the third month, she collected twice the combined number of pokemon cards she collected in the first and second months. How many pokemon cards does she have now in total?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Elaine initially had 20 Pokemon cards. After a month, she collected three times that number. In the second month, she collected 20 fewer cards than those she collected in the first month. In the third month, she collected twice the combined number of pokemon cards she collected in the first and second months. How many pokemon cards does she have now in total?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 19.8,
+  "request_start_realtime": "2026-05-27T08:59:14.702",
+  "benchmark": {
+    "question": "Elaine initially had 20 Pokemon cards. After a month, she collected three times that number. In the second month, she collected 20 fewer cards than those she collected in the first month. In the third month, she collected twice the combined number of pokemon cards she collected in the first and second months. How many pokemon cards does she have now in total?",
+    "gold_solution": "In the first month, Elaine collected 3*20= <<3*20=60>>60 pokemon cards.\nIn the second month, she collected 60-20 = <<60-20=40>>40 cards.\nAfter the two months, the new pokemon cards she'd collected is 40+60 = <<40+60=100>>100\nThe number of cards in the third month is twice the combined number in the first and second month, which totals 2*100 = <<2*100=200>>200 pokemon cards.\nIn total, Elaine has 20 cards she initially had+100 cards collected in the first and second month +200 cards collected in the third month = <<20+100+200=320>>320 cards\n#### 320",
+    "gold_answer": "320",
+    "model_text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the second month, she collected 20 fewer than the first month:  \n   60 - 20 = 40 cards.  \n   So now she has 80 + 40 = 120 cards.\n4. In the third month, she collected twice the combined number from the first and second months:  \n   Combined from first and second months: 60 + 40 = 100 cards.  \n   Twice that: 2 × 100 = 200 cards.  \n   So now she has 120 + 200 = 320 cards.\n\n#### 320",
+    "predicted_answer": "320",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      20,
+      26,
+      22,
+      21,
+      25,
+      22,
+      19,
+      26
+    ],
+    "ttfb_seconds": 0.5356511780000233,
+    "tbb_seconds": [
+      0.4104649459999905,
+      0.47885266899999124,
+      0.31201522300000306,
+      0.298501707000014,
+      0.2626065370000106,
+      0.2161794999999529,
+      0.2794922900000074
+    ],
+    "dllm_block_completion_latencies": [
+      0.5356511780000233,
+      0.4104649459999905,
+      0.47885266899999124,
+      0.31201522300000306,
+      0.298501707000014,
+      0.2626065370000106,
+      0.2161794999999529,
+      0.2794922900000074
+    ],
+    "dllm_forward_counts_per_block": [
+      20,
+      26,
+      22,
+      21,
+      25,
+      22,
+      19,
+      26
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 22.03289479900002,
+    "first_new_token_ttfb_seconds": 22.03289479900002,
+    "block_ttfb_seconds": 22.03289479900002,
+    "tbb_seconds": [
+      0.407037192999951,
+      0.4745343440000056,
+      0.31564471100000446,
+      0.2918213910000418,
+      0.26439461699999356,
+      0.21564291900000399,
+      0.2773112049999895
+    ],
+    "block_arrival_elapsed_seconds": [
+      22.03289479900002,
+      22.43993199199997,
+      22.914466335999975,
+      23.23011104699998,
+      23.52193243800002,
+      23.786327055000015,
+      24.00196997400002,
+      24.27928117900001
+    ],
+    "e2e_seconds": 24.279346883000017
+  },
+  "token_metrics": {
+    "prompt_tokens": 765,
+    "completion_tokens": 215,
+    "total_tokens": 980,
+    "end_to_end_tokens_per_second": 40.363523974616434,
+    "total_tokens_per_second": 40.363523974616434,
+    "completion_tokens_per_second": 8.855262912798503,
+    "tokens_after_first_block": 212,
+    "generated_tokens_per_second_after_first_block": 94.37103132977406
+  },
+  "final_meta_info": {
+    "id": "30e32e288c2f4347bc444448aef89de3",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 765,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 215,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      20,
+      26,
+      22,
+      21,
+      25,
+      22,
+      19,
+      26
+    ],
+    "dllm_block_completion_latencies": [
+      0.5356511780000233,
+      0.4104649459999905,
+      0.47885266899999124,
+      0.31201522300000306,
+      0.298501707000014,
+      0.2626065370000106,
+      0.2161794999999529,
+      0.2794922900000074
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.813314840999965
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 22.03289479900002,
+      "output_token_count": 3,
+      "new_output_tokens": 3,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5356511780000233
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 3,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872376.7306309
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 22.43993199199997,
+      "output_token_count": 35,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.4104649459999905
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 2",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 35,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 22.914466335999975,
+      "output_token_count": 67,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.47885266899999124
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 67,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905,
+          0.47885266899999124
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 23.23011104699998,
+      "output_token_count": 99,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.31201522300000306
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the second month, she collected 20 fewer than the first month:  \n   60 - 20 = 40 cards.  \n",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 99,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26,
+          22,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905,
+          0.47885266899999124,
+          0.31201522300000306
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 23.52193243800002,
+      "output_token_count": 131,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.298501707000014
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the second month, she collected 20 fewer than the first month:  \n   60 - 20 = 40 cards.  \n   So now she has 80 + 40 = 120 cards.\n4. In the third month, she collected twice the combined",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 131,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26,
+          22,
+          21,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905,
+          0.47885266899999124,
+          0.31201522300000306,
+          0.298501707000014
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 23.786327055000015,
+      "output_token_count": 163,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.2626065370000106
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the second month, she collected 20 fewer than the first month:  \n   60 - 20 = 40 cards.  \n   So now she has 80 + 40 = 120 cards.\n4. In the third month, she collected twice the combined number from the first and second months:  \n   Combined from first and second months: 60 + 40 = 100 cards.",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 163,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26,
+          22,
+          21,
+          25,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905,
+          0.47885266899999124,
+          0.31201522300000306,
+          0.298501707000014,
+          0.2626065370000106
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 24.00196997400002,
+      "output_token_count": 195,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.2161794999999529
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the second month, she collected 20 fewer than the first month:  \n   60 - 20 = 40 cards.  \n   So now she has 80 + 40 = 120 cards.\n4. In the third month, she collected twice the combined number from the first and second months:  \n   Combined from first and second months: 60 + 40 = 100 cards.  \n   Twice that: 2 × 100 = 200 cards.  \n   So now she has 120 +",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": null,
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 195,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26,
+          22,
+          21,
+          25,
+          22,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905,
+          0.47885266899999124,
+          0.31201522300000306,
+          0.298501707000014,
+          0.2626065370000106,
+          0.2161794999999529
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 24.27928117900001,
+      "output_token_count": 215,
+      "new_output_tokens": 20,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.2794922900000074
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. Elaine initially had 20 cards.\n2. After the first month, she collected three times that number:  \n   3 × 20 = 60 cards.  \n   So now she has 20 + 60 = 80 cards.\n3. In the second month, she collected 20 fewer than the first month:  \n   60 - 20 = 40 cards.  \n   So now she has 80 + 40 = 120 cards.\n4. In the third month, she collected twice the combined number from the first and second months:  \n   Combined from first and second months: 60 + 40 = 100 cards.  \n   Twice that: 2 × 100 = 200 cards.  \n   So now she has 120 + 200 = 320 cards.\n\n#### 320",
+      "meta_info": {
+        "id": "30e32e288c2f4347bc444448aef89de3",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 765,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 215,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          26,
+          22,
+          21,
+          25,
+          22,
+          19,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.5356511780000233,
+          0.4104649459999905,
+          0.47885266899999124,
+          0.31201522300000306,
+          0.298501707000014,
+          0.2626065370000106,
+          0.2161794999999529,
+          0.2794922900000074
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.813314840999965
+      }
+    }
+  ]
+}

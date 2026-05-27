@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 24,
+  "eval_index": 24,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original price. What was the original price of the book?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original price. What was the original price of the book?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.4000000000000004,
+  "request_start_realtime": "2026-05-27T09:37:03.352",
+  "benchmark": {
+    "question": "Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original price. What was the original price of the book?",
+    "gold_solution": "Let X be the original price of the book. The discounted price is X - X*25% = $19.50.\nCombining like terms, we get .75X = $19.50\nDividing both sides by .75, we get X = $26.\n#### 26",
+    "gold_answer": "26",
+    "model_text": "\n\nKyle bought the book for $19.50, which is after a 25% discount from the original price.\n\nThat means he paid 75% of the original price (since 100% - 25% = 75%).\n\nLet the original price be P.\n\nThen, 0.75 * P = 19.50\n\nTo find P, divide both sides by 0.75:\n\nP = 19.50 / 0.75\n\nP = 26\n\nSo, the original price of the book was $26.\n\n#### 26",
+    "predicted_answer": "26",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      9,
+      7,
+      9,
+      3,
+      3
+    ],
+    "ttfb_seconds": 0.26176899800000797,
+    "tbb_seconds": [
+      0.33172089699999674,
+      0.11115209300001538,
+      0.3293555319999939,
+      0.044212603999994826,
+      0.05299047799999812
+    ],
+    "dllm_block_completion_latencies": [
+      0.26176899800000797,
+      0.33172089699999674,
+      0.11115209300001538,
+      0.3293555319999939,
+      0.044212603999994826,
+      0.05299047799999812
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      9,
+      7,
+      9,
+      3,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 4.418575546999989,
+    "first_new_token_ttfb_seconds": 4.418575546999989,
+    "block_ttfb_seconds": 4.418575546999989,
+    "tbb_seconds": [
+      0.33132403300001556,
+      0.11176451000000043,
+      0.3283839579999892,
+      0.04420128500001397,
+      0.053498093000001745
+    ],
+    "block_arrival_elapsed_seconds": [
+      4.418575546999989,
+      4.749899580000005,
+      4.861664090000005,
+      5.190048047999994,
+      5.234249333000008,
+      5.28774742600001
+    ],
+    "e2e_seconds": 5.287825459999993
+  },
+  "token_metrics": {
+    "prompt_tokens": 729,
+    "completion_tokens": 148,
+    "total_tokens": 877,
+    "end_to_end_tokens_per_second": 165.85267547768134,
+    "total_tokens_per_second": 165.85267547768134,
+    "completion_tokens_per_second": 27.988820947202782,
+    "tokens_after_first_block": 141,
+    "generated_tokens_per_second_after_first_block": 162.20881692512665
+  },
+  "final_meta_info": {
+    "id": "5c314568f5d442809aa98acff4d09b3e",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 729,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 148,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      9,
+      7,
+      9,
+      3,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.26176899800000797,
+      0.33172089699999674,
+      0.11115209300001538,
+      0.3293555319999939,
+      0.044212603999994826,
+      0.05299047799999812
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.1354068140000209
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 4.418575546999989,
+      "output_token_count": 7,
+      "new_output_tokens": 7,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.26176899800000797
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nKyle bought the book for",
+      "meta_info": {
+        "id": "5c314568f5d442809aa98acff4d09b3e",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 7,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.26176899800000797
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874627.7710905
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 4.749899580000005,
+      "output_token_count": 39,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.33172089699999674
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nKyle bought the book for $19.50, which is after a 25% discount from the original price.\n\nThat means he paid 75% of",
+      "meta_info": {
+        "id": "5c314568f5d442809aa98acff4d09b3e",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 39,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.26176899800000797,
+          0.33172089699999674
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.861664090000005,
+      "output_token_count": 71,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.11115209300001538
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nKyle bought the book for $19.50, which is after a 25% discount from the original price.\n\nThat means he paid 75% of the original price (since 100% - 25% = 75%).\n\nLet the original price be P.\n\nThen",
+      "meta_info": {
+        "id": "5c314568f5d442809aa98acff4d09b3e",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 71,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          9,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.26176899800000797,
+          0.33172089699999674,
+          0.11115209300001538
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 5.190048047999994,
+      "output_token_count": 103,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3293555319999939
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nKyle bought the book for $19.50, which is after a 25% discount from the original price.\n\nThat means he paid 75% of the original price (since 100% - 25% = 75%).\n\nLet the original price be P.\n\nThen, 0.75 * P = 19.50\n\nTo find P, divide both sides by 0.75:\n",
+      "meta_info": {
+        "id": "5c314568f5d442809aa98acff4d09b3e",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 103,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          9,
+          7,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.26176899800000797,
+          0.33172089699999674,
+          0.11115209300001538,
+          0.3293555319999939
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 5.234249333000008,
+      "output_token_count": 135,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.044212603999994826
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nKyle bought the book for $19.50, which is after a 25% discount from the original price.\n\nThat means he paid 75% of the original price (since 100% - 25% = 75%).\n\nLet the original price be P.\n\nThen, 0.75 * P = 19.50\n\nTo find P, divide both sides by 0.75:\n\nP = 19.50 / 0.75\n\nP = 26\n\nSo, the original price of the book",
+      "meta_info": {
+        "id": "5c314568f5d442809aa98acff4d09b3e",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 135,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          9,
+          7,
+          9,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.26176899800000797,
+          0.33172089699999674,
+          0.11115209300001538,
+          0.3293555319999939,
+          0.044212603999994826
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 5.28774742600001,
+      "output_token_count": 148,
+      "new_output_tokens": 13,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.05299047799999812
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nKyle bought the book for $19.50, which is after a 25% discount from the original price.\n\nThat means he paid 75% of the original price (since 100% - 25% = 75%).\n\nLet the original price be P.\n\nThen, 0.75 * P = 19.50\n\nTo find P, divide both sides by 0.75:\n\nP = 19.50 / 0.75\n\nP = 26\n\nSo, the original price of the book was $26.\n\n#### 26",
+      "meta_info": {
+        "id": "5c314568f5d442809aa98acff4d09b3e",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 148,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          9,
+          7,
+          9,
+          3,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.26176899800000797,
+          0.33172089699999674,
+          0.11115209300001538,
+          0.3293555319999939,
+          0.044212603999994826,
+          0.05299047799999812
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.1354068140000209
+      }
+    }
+  ]
+}

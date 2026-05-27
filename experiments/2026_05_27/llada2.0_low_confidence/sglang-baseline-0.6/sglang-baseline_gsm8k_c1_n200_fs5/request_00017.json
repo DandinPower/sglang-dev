@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 17,
+  "eval_index": 17,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.7000000000000002,
+  "request_start_realtime": "2026-05-27T09:17:24.505",
+  "benchmark": {
+    "question": "Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?",
+    "gold_solution": "First find the total amount Jill makes per week teaching: $20/hour * 35 hours/week = $<<20*35=700>>700/week\nThen find the total amount Jill makes per week coaching: $30/hour * 15 hours/week = $<<30*15=450>>450/week\nThen add those two amounts to find the total amount Jill makes per week: $700/week + $450/week = $<<700+450=1150>>1150/week\nThen multiply that number by the number of weeks Jill works in a year to find her annual salary: $1150/week * 50 weeks/year = $<<1150*50=57500>>57,500\n#### 57500",
+    "gold_answer": "57500",
+    "model_text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,000 + 22,500 = 57,500.\n\nWait, let's recalculate carefully:\n- 20 * 35 = 700 dollars per week for teaching.\n- 700 * 50 = 35,000 dollars per year for teaching.\n- 30 * 15 = 450 dollars per week for coaching.\n- 450 * 50 = 22,500 dollars per year for coaching.\n- Total = 35,000 + 22,500 = 57,500.\n\n#### 57,500",
+    "predicted_answer": "57500",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      13,
+      9,
+      11,
+      4,
+      7,
+      11,
+      7,
+      4,
+      7,
+      6,
+      6,
+      4,
+      4
+    ],
+    "ttfb_seconds": 0.23117996299998822,
+    "tbb_seconds": [
+      0.055782700000008845,
+      0.07030242799999087,
+      0.025787395999998353,
+      0.047691944000007425,
+      0.07117300500001988,
+      0.04346879199999876,
+      0.027002765999981193,
+      0.04635586599999897,
+      0.037201667000005045,
+      0.03754743700000063,
+      0.025975888999994368,
+      0.026457124000017984
+    ],
+    "dllm_block_completion_latencies": [
+      0.23117996299998822,
+      0.055782700000008845,
+      0.07030242799999087,
+      0.025787395999998353,
+      0.047691944000007425,
+      0.07117300500001988,
+      0.04346879199999876,
+      0.027002765999981193,
+      0.04635586599999897,
+      0.037201667000005045,
+      0.03754743700000063,
+      0.025975888999994368,
+      0.026457124000017984
+    ],
+    "dllm_forward_counts_per_block": [
+      13,
+      9,
+      11,
+      4,
+      7,
+      11,
+      7,
+      4,
+      7,
+      6,
+      6,
+      4,
+      4
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 7.488792157999995,
+    "first_new_token_ttfb_seconds": 7.488792157999995,
+    "block_ttfb_seconds": 7.488792157999995,
+    "tbb_seconds": [
+      0.05451342899999645,
+      0.07156782600000611,
+      0.02523416300002168,
+      0.04829385999997271,
+      0.07106574000002297,
+      0.04312770299998192,
+      0.026674376000016764,
+      0.046117460999994364,
+      0.037339247999994996,
+      0.03755518500000221,
+      0.02573126199999365,
+      0.02642616299999645
+    ],
+    "block_arrival_elapsed_seconds": [
+      7.488792157999995,
+      7.543305586999992,
+      7.614873412999998,
+      7.64010757600002,
+      7.688401435999992,
+      7.759467176000015,
+      7.802594878999997,
+      7.829269255000014,
+      7.875386716000008,
+      7.912725964000003,
+      7.950281149000006,
+      7.976012410999999,
+      8.002438573999996
+    ],
+    "e2e_seconds": 8.002576957999992
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 402,
+    "total_tokens": 1149,
+    "end_to_end_tokens_per_second": 143.57875044880026,
+    "total_tokens_per_second": 143.57875044880026,
+    "completion_tokens_per_second": 50.23381869488051,
+    "tokens_after_first_block": 381,
+    "generated_tokens_per_second_after_first_block": 741.5556084960139
+  },
+  "final_meta_info": {
+    "id": "02bd1853c97c40dab6d4cb2210293357",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 402,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      13,
+      9,
+      11,
+      4,
+      7,
+      11,
+      7,
+      4,
+      7,
+      6,
+      6,
+      4,
+      4
+    ],
+    "dllm_block_completion_latencies": [
+      0.23117996299998822,
+      0.055782700000008845,
+      0.07030242799999087,
+      0.025787395999998353,
+      0.047691944000007425,
+      0.07117300500001988,
+      0.04346879199999876,
+      0.027002765999981193,
+      0.04635586599999897,
+      0.037201667000005045,
+      0.03754743700000063,
+      0.025975888999994368,
+      0.026457124000017984
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7564655120000054
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 7.488792157999995,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.23117996299998822
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $2",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873451.9934726
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 7.543305586999992,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.055782700000008845
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 7.614873412999998,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.07030242799999087
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 7.64010757600002,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.025787395999998353
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 7.688401435999992,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.047691944000007425
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 7.759467176000015,
+      "output_token_count": 181,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.07117300500001988
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 =",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 7.802594878999997,
+      "output_token_count": 213,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.04346879199999876
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 *",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 213,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 7.829269255000014,
+      "output_token_count": 245,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.027002765999981193
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,0",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 245,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876,
+          0.027002765999981193
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 7.875386716000008,
+      "output_token_count": 277,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.04635586599999897
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,000 + 22,500 = 57,500.\n\nWait, let's recalculate carefully:\n- ",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 277,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7,
+          4,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876,
+          0.027002765999981193,
+          0.04635586599999897
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 7.912725964000003,
+      "output_token_count": 309,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.037201667000005045
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,000 + 22,500 = 57,500.\n\nWait, let's recalculate carefully:\n- 20 * 35 = 700 dollars per week for teaching.\n- 700 * 50 = 35,",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 309,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7,
+          4,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876,
+          0.027002765999981193,
+          0.04635586599999897,
+          0.037201667000005045
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 7.950281149000006,
+      "output_token_count": 341,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.03754743700000063
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,000 + 22,500 = 57,500.\n\nWait, let's recalculate carefully:\n- 20 * 35 = 700 dollars per week for teaching.\n- 700 * 50 = 35,000 dollars per year for teaching.\n- 30 * 15 = 450 dollars per week for coaching.\n- ",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 341,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7,
+          4,
+          7,
+          6,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876,
+          0.027002765999981193,
+          0.04635586599999897,
+          0.037201667000005045,
+          0.03754743700000063
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 7.976012410999999,
+      "output_token_count": 373,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.025975888999994368
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,000 + 22,500 = 57,500.\n\nWait, let's recalculate carefully:\n- 20 * 35 = 700 dollars per week for teaching.\n- 700 * 50 = 35,000 dollars per year for teaching.\n- 30 * 15 = 450 dollars per week for coaching.\n- 450 * 50 = 22,500 dollars per year for coaching.\n- Total = 35,000",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 373,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7,
+          4,
+          7,
+          6,
+          6,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876,
+          0.027002765999981193,
+          0.04635586599999897,
+          0.037201667000005045,
+          0.03754743700000063,
+          0.025975888999994368
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 8.002438573999996,
+      "output_token_count": 402,
+      "new_output_tokens": 29,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.026457124000017984
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n1. First, calculate how much Jill earns from teaching:\n   - She earns $20 per hour.\n   - She works 35 hours per week.\n   - She works 50 weeks a year.\n   - So, annual teaching earnings = 20 * 35 * 50.\n\n2. Next, calculate how much Jill earns from coaching:\n   - She earns $30 per session.\n   - She works 15 hours per week.\n   - She works 50 weeks a year.\n   - So, annual coaching earnings = 30 * 15 * 50.\n\n3. Finally, add both earnings to get her total annual salary.\n\nNow let's compute:\n- Annual teaching earnings = 20 * 35 * 50 = 70 * 10*0 = 35,000.\n- Annual coaching earnings = 30 * 15 * 50 = 450 * 50 = 22,500.\n- Total annual salary = 35,000 + 22,500 = 57,500.\n\nWait, let's recalculate carefully:\n- 20 * 35 = 700 dollars per week for teaching.\n- 700 * 50 = 35,000 dollars per year for teaching.\n- 30 * 15 = 450 dollars per week for coaching.\n- 450 * 50 = 22,500 dollars per year for coaching.\n- Total = 35,000 + 22,500 = 57,500.\n\n#### 57,500",
+      "meta_info": {
+        "id": "02bd1853c97c40dab6d4cb2210293357",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 402,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          9,
+          11,
+          4,
+          7,
+          11,
+          7,
+          4,
+          7,
+          6,
+          6,
+          4,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.23117996299998822,
+          0.055782700000008845,
+          0.07030242799999087,
+          0.025787395999998353,
+          0.047691944000007425,
+          0.07117300500001988,
+          0.04346879199999876,
+          0.027002765999981193,
+          0.04635586599999897,
+          0.037201667000005045,
+          0.03754743700000063,
+          0.025975888999994368,
+          0.026457124000017984
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7564655120000054
+      }
+    }
+  ]
+}

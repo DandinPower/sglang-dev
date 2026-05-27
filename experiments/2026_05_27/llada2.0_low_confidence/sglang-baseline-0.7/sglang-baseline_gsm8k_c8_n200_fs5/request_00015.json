@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 15,
+  "eval_index": 15,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.5,
+  "request_start_realtime": "2026-05-27T08:57:57.917",
+  "benchmark": {
+    "question": "A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?",
+    "gold_solution": "If he purchases jewelry, he will make a profit of 2.5% which is $5000*(2.5/100) = $<<5000*(2.5/100)=125>>125\nIf he purchases electronic gadgets, he will make a profit of 1.2% which is $8000*(1.2/100) = $<<8000*(1.2/100)=96>>96\nIf he wants to maximize profit, since $125 > $96, he will choose to purchase jewelry, thereby making a profit of $<<125=125>>125\n#### 125",
+    "gold_answer": "125",
+    "model_text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected increase: 1.2%\n   - Profit from gadgets: $8,000 × (1.2/100) = $8,000 × 0.012 = $96\n\n3. Compare the profits:\n   - Jewelry profit: $125\n   - Gadgets profit: $96\n\n4. The merchant wants to maximize profit, so he should choose the option with the higher profit.\n   - The difference in profit is $125 - $96 = $29\n\nTherefore, by choosing the jewelry, the merchant would make an additional profit of $29.\n#### 29",
+    "predicted_answer": "29",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      14,
+      15,
+      29,
+      15,
+      16,
+      12,
+      12,
+      16,
+      11
+    ],
+    "ttfb_seconds": 0.36915849799999023,
+    "tbb_seconds": [
+      0.18504071000000977,
+      0.35254112399999826,
+      0.18827780999998822,
+      0.1964861970000129,
+      0.13589077399998928,
+      0.3598492910000175,
+      0.18877098799998748,
+      0.28602111899999727
+    ],
+    "dllm_block_completion_latencies": [
+      0.36915849799999023,
+      0.18504071000000977,
+      0.35254112399999826,
+      0.18827780999998822,
+      0.1964861970000129,
+      0.13589077399998928,
+      0.3598492910000175,
+      0.18877098799998748,
+      0.28602111899999727
+    ],
+    "dllm_forward_counts_per_block": [
+      14,
+      15,
+      29,
+      15,
+      16,
+      12,
+      12,
+      16,
+      11
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 1.804265514000008,
+    "first_new_token_ttfb_seconds": 1.804265514000008,
+    "block_ttfb_seconds": 1.804265514000008,
+    "tbb_seconds": [
+      0.18512038999998026,
+      0.35257947700000614,
+      0.188141977000015,
+      0.20131709199998227,
+      0.13193785300001082,
+      0.3607677270000238,
+      0.1866509459999861,
+      0.29019232100000636
+    ],
+    "block_arrival_elapsed_seconds": [
+      1.804265514000008,
+      1.9893859039999882,
+      2.3419653809999943,
+      2.5301073580000093,
+      2.7314244499999916,
+      2.8633623030000024,
+      3.224130030000026,
+      3.4107809760000123,
+      3.7009732970000186
+    ],
+    "e2e_seconds": 3.7010357539999745
+  },
+  "token_metrics": {
+    "prompt_tokens": 784,
+    "completion_tokens": 257,
+    "total_tokens": 1041,
+    "end_to_end_tokens_per_second": 281.27261372033945,
+    "total_tokens_per_second": 281.27261372033945,
+    "completion_tokens_per_second": 69.44002087043923,
+    "tokens_after_first_block": 241,
+    "generated_tokens_per_second_after_first_block": 127.05808796325496
+  },
+  "final_meta_info": {
+    "id": "9175ffc522554099955c28c77d8c340a",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 784,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 257,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      14,
+      15,
+      29,
+      15,
+      16,
+      12,
+      12,
+      16,
+      11
+    ],
+    "dllm_block_completion_latencies": [
+      0.36915849799999023,
+      0.18504071000000977,
+      0.35254112399999826,
+      0.18827780999998822,
+      0.1964861970000129,
+      0.13589077399998928,
+      0.3598492910000175,
+      0.18877098799998748,
+      0.28602111899999727
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.280669138999997
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 1.804265514000008,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.36915849799999023
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872279.7213526
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.9893859039999882,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.18504071000000977
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.3419653809999943,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.35254112399999826
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.5301073580000093,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.18827780999998822
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826,
+          0.18827780999998822
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.7314244499999916,
+      "output_token_count": 144,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.1964861970000129
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected increase: 1.2%\n   - Profit from gadgets: $8,000 × (1.2/100) = $",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29,
+          15,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826,
+          0.18827780999998822,
+          0.1964861970000129
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.8633623030000024,
+      "output_token_count": 176,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.13589077399998928
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected increase: 1.2%\n   - Profit from gadgets: $8,000 × (1.2/100) = $8,000 × 0.012 = $96\n\n3. Compare the profits:\n   - Jewelry profit: $1",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29,
+          15,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826,
+          0.18827780999998822,
+          0.1964861970000129,
+          0.13589077399998928
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 3.224130030000026,
+      "output_token_count": 208,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.3598492910000175
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected increase: 1.2%\n   - Profit from gadgets: $8,000 × (1.2/100) = $8,000 × 0.012 = $96\n\n3. Compare the profits:\n   - Jewelry profit: $125\n   - Gadgets profit: $96\n\n4. The merchant wants to maximize profit, so he should choose the option with the higher profit",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29,
+          15,
+          16,
+          12,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826,
+          0.18827780999998822,
+          0.1964861970000129,
+          0.13589077399998928,
+          0.3598492910000175
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 3.4107809760000123,
+      "output_token_count": 240,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.18877098799998748
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected increase: 1.2%\n   - Profit from gadgets: $8,000 × (1.2/100) = $8,000 × 0.012 = $96\n\n3. Compare the profits:\n   - Jewelry profit: $125\n   - Gadgets profit: $96\n\n4. The merchant wants to maximize profit, so he should choose the option with the higher profit.\n   - The difference in profit is $125 - $96 = $29\n\nTherefore, by choosing the jewelry, the merchant",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 240,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29,
+          15,
+          16,
+          12,
+          12,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826,
+          0.18827780999998822,
+          0.1964861970000129,
+          0.13589077399998928,
+          0.3598492910000175,
+          0.18877098799998748
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 3.7009732970000186,
+      "output_token_count": 257,
+      "new_output_tokens": 17,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.28602111899999727
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. First, calculate the increase in value for the jewelry:\n   - Jewelry cost: $5,000\n   - Expected increase: 2.5%\n   - Profit from jewelry: $5,000 × (2.5/100) = $5,000 × 0.025 = $125\n\n2. Next, calculate the increase in value for the electronic gadgets:\n   - Gadgets cost: $8,000\n   - Expected increase: 1.2%\n   - Profit from gadgets: $8,000 × (1.2/100) = $8,000 × 0.012 = $96\n\n3. Compare the profits:\n   - Jewelry profit: $125\n   - Gadgets profit: $96\n\n4. The merchant wants to maximize profit, so he should choose the option with the higher profit.\n   - The difference in profit is $125 - $96 = $29\n\nTherefore, by choosing the jewelry, the merchant would make an additional profit of $29.\n#### 29",
+      "meta_info": {
+        "id": "9175ffc522554099955c28c77d8c340a",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 257,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          15,
+          29,
+          15,
+          16,
+          12,
+          12,
+          16,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.36915849799999023,
+          0.18504071000000977,
+          0.35254112399999826,
+          0.18827780999998822,
+          0.1964861970000129,
+          0.13589077399998928,
+          0.3598492910000175,
+          0.18877098799998748,
+          0.28602111899999727
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.280669138999997
+      }
+    }
+  ]
+}

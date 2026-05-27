@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 164,
+  "eval_index": 164,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jackie is trying to decide whether to do her taxes herself or hire an accountant. If she does the taxes herself, she'll be able to do 3 fewer hours of freelance work, losing $35/hour in missed income. The accountant charges $90. How much more money will she have if she hires the accountant?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jackie is trying to decide whether to do her taxes herself or hire an accountant. If she does the taxes herself, she'll be able to do 3 fewer hours of freelance work, losing $35/hour in missed income. The accountant charges $90. How much more money will she have if she hires the accountant?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.400000000000002,
+  "request_start_realtime": "2026-05-27T09:39:00.842",
+  "benchmark": {
+    "question": "Jackie is trying to decide whether to do her taxes herself or hire an accountant. If she does the taxes herself, she'll be able to do 3 fewer hours of freelance work, losing $35/hour in missed income. The accountant charges $90. How much more money will she have if she hires the accountant?",
+    "gold_solution": "First find the total lost revenue if Jackie does her taxes herself: $35/hour * 3 hours = $<<35*3=105>>105\nThen subtract the accountant's charge to find how much money Janet saves: $105 - $90 = $<<105-90=15>>15\n#### 15",
+    "gold_answer": "15",
+    "model_text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the accountant to the lost income:\n   - The accountant charges $90.\n   - The lost income from doing it herself is $105.\n\n3. Calculate the difference in money if she hires the accountant:\n   - Money lost by doing it herself: $105.\n   - Cost of hiring the accountant: $90.\n   - So, the net difference is:\n     $105 - $90 = $15.\n\n   Therefore, Jackie will have $15 more if she hires the accountant instead of doing it herself.\n\n#### 15",
+    "predicted_answer": "15",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      8,
+      8,
+      7,
+      12,
+      6,
+      9,
+      7
+    ],
+    "ttfb_seconds": 0.2942576640000141,
+    "tbb_seconds": [
+      0.09432219099997496,
+      0.3068300900000054,
+      0.0897729940000147,
+      0.14968395500000042,
+      0.07566393499999435,
+      0.30252230100001043,
+      0.081476250999998
+    ],
+    "dllm_block_completion_latencies": [
+      0.2942576640000141,
+      0.09432219099997496,
+      0.3068300900000054,
+      0.0897729940000147,
+      0.14968395500000042,
+      0.07566393499999435,
+      0.30252230100001043,
+      0.081476250999998
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      8,
+      7,
+      12,
+      6,
+      9,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 18.135689565999996,
+    "first_new_token_ttfb_seconds": 18.135689565999996,
+    "block_ttfb_seconds": 18.135689565999996,
+    "tbb_seconds": [
+      0.09397801700001196,
+      0.3054381689999843,
+      0.08931357599999501,
+      0.1503863009999975,
+      0.07654122000002417,
+      0.3047311299999933,
+      0.08126116299999353
+    ],
+    "block_arrival_elapsed_seconds": [
+      18.135689565999996,
+      18.22966758300001,
+      18.535105751999993,
+      18.624419327999988,
+      18.774805628999985,
+      18.85134684900001,
+      19.156077979000003,
+      19.237339141999996
+    ],
+    "e2e_seconds": 19.237402847
+  },
+  "token_metrics": {
+    "prompt_tokens": 756,
+    "completion_tokens": 207,
+    "total_tokens": 963,
+    "end_to_end_tokens_per_second": 50.05873233819482,
+    "total_tokens_per_second": 50.05873233819482,
+    "completion_tokens_per_second": 10.760288259611972,
+    "tokens_after_first_block": 195,
+    "generated_tokens_per_second_after_first_block": 176.99704938021858
+  },
+  "final_meta_info": {
+    "id": "e606d1534bee4b80982dca55a55998ed",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 756,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 207,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      8,
+      7,
+      12,
+      6,
+      9,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.2942576640000141,
+      0.09432219099997496,
+      0.3068300900000054,
+      0.0897729940000147,
+      0.14968395500000042,
+      0.07566393499999435,
+      0.30252230100001043,
+      0.081476250999998
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.3984595430000013
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 18.135689565999996,
+      "output_token_count": 12,
+      "new_output_tokens": 12,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2942576640000141
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate how much money Jackie would",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 12,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874758.9761171
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 18.22966758300001,
+      "output_token_count": 44,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.09432219099997496
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 44,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 18.535105751999993,
+      "output_token_count": 76,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3068300900000054
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 76,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496,
+          0.3068300900000054
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 18.624419327999988,
+      "output_token_count": 108,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.0897729940000147
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the accountant to the lost income:\n   - The accountant charges $90.\n   - The lost income from doing it herself is $105.",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 18.774805628999985,
+      "output_token_count": 140,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.14968395500000042
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the accountant to the lost income:\n   - The accountant charges $90.\n   - The lost income from doing it herself is $105.\n\n3. Calculate the difference in money if she hires the accountant:\n   - Money lost by doing it herself: $105.\n  ",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 140,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 18.85134684900001,
+      "output_token_count": 172,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.07566393499999435
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the accountant to the lost income:\n   - The accountant charges $90.\n   - The lost income from doing it herself is $105.\n\n3. Calculate the difference in money if she hires the accountant:\n   - Money lost by doing it herself: $105.\n   - Cost of hiring the accountant: $90.\n   - So, the net difference is:\n     $105 - $90 =",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 172,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042,
+          0.07566393499999435
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 19.156077979000003,
+      "output_token_count": 204,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.30252230100001043
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the accountant to the lost income:\n   - The accountant charges $90.\n   - The lost income from doing it herself is $105.\n\n3. Calculate the difference in money if she hires the accountant:\n   - Money lost by doing it herself: $105.\n   - Cost of hiring the accountant: $90.\n   - So, the net difference is:\n     $105 - $90 = $15.\n\n   Therefore, Jackie will have $15 more if she hires the accountant instead of doing it herself.\n\n#### 1",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 204,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12,
+          6,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042,
+          0.07566393499999435,
+          0.30252230100001043
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 19.237339141999996,
+      "output_token_count": 207,
+      "new_output_tokens": 3,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.081476250999998
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate how much money Jackie would lose by doing her taxes herself:\n   - She loses 3 fewer hours of freelance work.\n   - Each hour costs $35, so the lost income is:\n     3 hours × $35/hour = $105.\n\n2. Now, compare the cost of hiring the accountant to the lost income:\n   - The accountant charges $90.\n   - The lost income from doing it herself is $105.\n\n3. Calculate the difference in money if she hires the accountant:\n   - Money lost by doing it herself: $105.\n   - Cost of hiring the accountant: $90.\n   - So, the net difference is:\n     $105 - $90 = $15.\n\n   Therefore, Jackie will have $15 more if she hires the accountant instead of doing it herself.\n\n#### 15",
+      "meta_info": {
+        "id": "e606d1534bee4b80982dca55a55998ed",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12,
+          6,
+          9,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2942576640000141,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042,
+          0.07566393499999435,
+          0.30252230100001043,
+          0.081476250999998
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.3984595430000013
+      }
+    }
+  ]
+}

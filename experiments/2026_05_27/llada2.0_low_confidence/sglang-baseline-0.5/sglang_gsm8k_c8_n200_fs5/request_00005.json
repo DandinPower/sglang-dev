@@ -1,0 +1,610 @@
+{
+  "ok": true,
+  "request_index": 5,
+  "eval_index": 5,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glasses. How much does he need to pay for them?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glasses. How much does he need to pay for them?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.5,
+  "request_start_realtime": "2026-05-27T10:02:09.759",
+  "benchmark": {
+    "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glasses. How much does he need to pay for them?",
+    "gold_solution": "The discount price of one glass is 60/100 * 5 = $<<60/100*5=3>>3.\nIf every second glass is cheaper, that means Kylar is going to buy 16 / 2 = <<16/2=8>>8 cheaper glasses.\nSo for the cheaper glasses, Kylar is going to pay 8 * 3 = $<<8*3=24>>24.\nAnd for the regular-priced glasses, Kylar will pay 8 * 5 = $<<8*5=40>>40.\nSo in total Kylar needs to pay 24 + 40 = $<<24+40=64>>64 for the glasses he wants to buy.\n#### 64",
+    "gold_answer": "64",
+    "model_text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.\n\nBut let's verify:\n- Glasses 1: $5\n- Glasses 2: $5 * 0.6 = $3\n- Glasses 3: $5\n- Glasses 4: $3\n- ...\n- Glasses 15: $5\n- Glasses 16: $3\n\nThat’s 8 glasses at $5 and 8 glasses at $3.\nTotal = (8 * $5) + (8 * $3) = $40 + $24 = $64.\n\nSo Kylar needs to pay $64.\n\n#### 64",
+    "predicted_answer": "64",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      9,
+      17,
+      12,
+      9,
+      18,
+      13,
+      11,
+      6,
+      10,
+      5,
+      3
+    ],
+    "ttfb_seconds": 0.5511267690000068,
+    "tbb_seconds": [
+      0.5461708699999974,
+      0.4561721020000107,
+      0.18678277799998,
+      0.5463004830000102,
+      0.5768324029999974,
+      0.38168602700000065,
+      0.11318247500000211,
+      0.19495683499999927,
+      0.08545913399998994,
+      0.052990780000016
+    ],
+    "dllm_block_completion_latencies": [
+      0.5511267690000068,
+      0.5461708699999974,
+      0.4561721020000107,
+      0.18678277799998,
+      0.5463004830000102,
+      0.5768324029999974,
+      0.38168602700000065,
+      0.11318247500000211,
+      0.19495683499999927,
+      0.08545913399998994,
+      0.052990780000016
+    ],
+    "dllm_forward_counts_per_block": [
+      9,
+      17,
+      12,
+      9,
+      18,
+      13,
+      11,
+      6,
+      10,
+      5,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.5630761580000012,
+    "first_new_token_ttfb_seconds": 0.5630761580000012,
+    "block_ttfb_seconds": 0.5630761580000012,
+    "tbb_seconds": [
+      0.5454939130000014,
+      0.45553513999999495,
+      0.18689189599999168,
+      0.5466849170000216,
+      0.5771615439999778,
+      0.3810736610000163,
+      0.11405862199998751,
+      0.194794303000009,
+      0.08499467499999014,
+      0.05384791800000244
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.5630761580000012,
+      1.1085700710000026,
+      1.5641052109999976,
+      1.7509971069999892,
+      2.297682024000011,
+      2.8748435679999886,
+      3.255917229000005,
+      3.3699758509999924,
+      3.5647701540000014,
+      3.6497648289999916,
+      3.703612746999994
+    ],
+    "e2e_seconds": 3.703696435000012
+  },
+  "token_metrics": {
+    "prompt_tokens": 746,
+    "completion_tokens": 318,
+    "total_tokens": 1064,
+    "end_to_end_tokens_per_second": 287.28056380246954,
+    "total_tokens_per_second": 287.28056380246954,
+    "completion_tokens_per_second": 85.86016850487343,
+    "tokens_after_first_block": 296,
+    "generated_tokens_per_second_after_first_block": 94.24889795424288
+  },
+  "final_meta_info": {
+    "id": "25c034d2da6943819da19dd8a6ff9d0e",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 746,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 318,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      9,
+      17,
+      12,
+      9,
+      18,
+      13,
+      11,
+      6,
+      10,
+      5,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.5511267690000068,
+      0.5461708699999974,
+      0.4561721020000107,
+      0.18678277799998,
+      0.5463004830000102,
+      0.5768324029999974,
+      0.38168602700000065,
+      0.11318247500000211,
+      0.19495683499999927,
+      0.08545913399998994,
+      0.052990780000016
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.7018709719999947
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.5630761580000012,
+      "output_token_count": 22,
+      "new_output_tokens": 22,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5511267690000068
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2.",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 22,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876130.3226125
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.1085700710000026,
+      "output_token_count": 54,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.5461708699999974
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 54,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 1.5641052109999976,
+      "output_token_count": 86,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.4561721020000107
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 86,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 1.7509971069999892,
+      "output_token_count": 118,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.18678277799998
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / ",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 118,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.297682024000011,
+      "output_token_count": 150,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5463004830000102
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\n",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 150,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.8748435679999886,
+      "output_token_count": 182,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.5768324029999974
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 182,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102,
+          0.5768324029999974
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 3.255917229000005,
+      "output_token_count": 214,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.38168602700000065
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.\n\nBut let's verify:\n- Glasses 1: $5\n- Glasses 2: $5 * 0.6 = $3\n",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 214,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18,
+          13,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102,
+          0.5768324029999974,
+          0.38168602700000065
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 3.3699758509999924,
+      "output_token_count": 246,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.11318247500000211
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.\n\nBut let's verify:\n- Glasses 1: $5\n- Glasses 2: $5 * 0.6 = $3\n- Glasses 3: $5\n- Glasses 4: $3\n- ...\n- Glasses 15: $5\n- Glasses 1",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 246,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18,
+          13,
+          11,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102,
+          0.5768324029999974,
+          0.38168602700000065,
+          0.11318247500000211
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 3.5647701540000014,
+      "output_token_count": 278,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.19495683499999927
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.\n\nBut let's verify:\n- Glasses 1: $5\n- Glasses 2: $5 * 0.6 = $3\n- Glasses 3: $5\n- Glasses 4: $3\n- ...\n- Glasses 15: $5\n- Glasses 16: $3\n\nThat’s 8 glasses at $5 and 8 glasses at $3.\nTotal = (8 * $5) +",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 278,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18,
+          13,
+          11,
+          6,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102,
+          0.5768324029999974,
+          0.38168602700000065,
+          0.11318247500000211,
+          0.19495683499999927
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 3.6497648289999916,
+      "output_token_count": 310,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.08545913399998994
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.\n\nBut let's verify:\n- Glasses 1: $5\n- Glasses 2: $5 * 0.6 = $3\n- Glasses 3: $5\n- Glasses 4: $3\n- ...\n- Glasses 15: $5\n- Glasses 16: $3\n\nThat’s 8 glasses at $5 and 8 glasses at $3.\nTotal = (8 * $5) + (8 * $3) = $40 + $24 = $64.\n\nSo Kylar needs to pay $64.",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": null,
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 310,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18,
+          13,
+          11,
+          6,
+          10,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102,
+          0.5768324029999974,
+          0.38168602700000065,
+          0.11318247500000211,
+          0.19495683499999927,
+          0.08545913399998994
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 3.703612746999994,
+      "output_token_count": 318,
+      "new_output_tokens": 8,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.052990780000016
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. Kylar wants to buy regular glasses and glasses at a discounted price.\n2. Every second glass costs 60% of the regular price.\n3. So for for every pair of glasses, he pays:\n   - First glass: $5\n   - Second glass: $5 * 60% = $3 * 0.6 = $3\n   - Total for a pair: $5 + $3 = $8\n4. Kylar wants to buy 16 glasses, which is 8 pairs / 2 glasses per pair.\n5. So he pays 8 pairs * $8 = pair64\n\nWait, let's recalculate:\n\nEach pair of 2 glasses costs $8.\n16 glasses = 8 pairs.\nTotal = 8 * $8 = $64.\n\nBut let's verify:\n- Glasses 1: $5\n- Glasses 2: $5 * 0.6 = $3\n- Glasses 3: $5\n- Glasses 4: $3\n- ...\n- Glasses 15: $5\n- Glasses 16: $3\n\nThat’s 8 glasses at $5 and 8 glasses at $3.\nTotal = (8 * $5) + (8 * $3) = $40 + $24 = $64.\n\nSo Kylar needs to pay $64.\n\n#### 64",
+      "meta_info": {
+        "id": "25c034d2da6943819da19dd8a6ff9d0e",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 746,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 318,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          17,
+          12,
+          9,
+          18,
+          13,
+          11,
+          6,
+          10,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.5511267690000068,
+          0.5461708699999974,
+          0.4561721020000107,
+          0.18678277799998,
+          0.5463004830000102,
+          0.5768324029999974,
+          0.38168602700000065,
+          0.11318247500000211,
+          0.19495683499999927,
+          0.08545913399998994,
+          0.052990780000016
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.7018709719999947
+      }
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 43,
+  "eval_index": 43,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: According to its nutritional info, a bag of chips has 250 calories per serving. If a 300g bag has 5 servings, how many grams can you eat if your daily calorie target is 2000 and you have already consumed 1800 calories?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: According to its nutritional info, a bag of chips has 250 calories per serving. If a 300g bag has 5 servings, how many grams can you eat if your daily calorie target is 2000 and you have already consumed 1800 calories?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 4.3,
+  "request_start_realtime": "2026-05-27T09:37:50.098",
+  "benchmark": {
+    "question": "According to its nutritional info, a bag of chips has 250 calories per serving. If a 300g bag has 5 servings, how many grams can you eat if your daily calorie target is 2000 and you have already consumed 1800 calories?",
+    "gold_solution": "If the total calorie target is 2000 and I have consumed 1800 calories then I have 2000-1800 = <<2000-1800=200>>200 calories left to eat\nIf each serving of chips has 250 calories and I only have 200 calories left to eat, then I can only eat 200/250 of a serving = 4/5 of a serving\nWe also know that a 300g bag of chips has 5 servings, hence each serving has 300g/5 = <<300/5=60>>60 grams\nIf I can only eat 4/5 of a serving, then I can eat only 60g * 4/5 = 240g/5 = 48 grams\n#### 48",
+    "gold_answer": "48",
+    "model_text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.\n\n3. Determine how many servings you can eat with the remaining 200 calories:\n   - Each serving has 250 calories.\n   - Number of servings you can eat = 200 / 250 = 0.8 servings.\n\n4. Convert servings to grams:\n   - The bag is 300g for 5 servings, so each serving is 300g / 5 = 60g.\n   - So, 0.8 servings = 0.8 × 60g = 48 grams.\n\nTherefore, you can eat 48 grams of the bag.\n\nAnswer: 48",
+    "predicted_answer": "48",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      20,
+      16,
+      12,
+      22,
+      33,
+      15,
+      20,
+      16,
+      20,
+      24
+    ],
+    "ttfb_seconds": 0.4932373949999942,
+    "tbb_seconds": [
+      0.22997372900005075,
+      0.37105261299996073,
+      0.2934458220000238,
+      0.6881235959999685,
+      0.21101108200002727,
+      0.4995419559999732,
+      0.23851435000000265,
+      0.28495868200002406,
+      0.3077574629999731
+    ],
+    "dllm_block_completion_latencies": [
+      0.4932373949999942,
+      0.22997372900005075,
+      0.37105261299996073,
+      0.2934458220000238,
+      0.6881235959999685,
+      0.21101108200002727,
+      0.4995419559999732,
+      0.23851435000000265,
+      0.28495868200002406,
+      0.3077574629999731
+    ],
+    "dllm_forward_counts_per_block": [
+      20,
+      16,
+      12,
+      22,
+      33,
+      15,
+      20,
+      16,
+      20,
+      24
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 9.424026859000037,
+    "first_new_token_ttfb_seconds": 9.424026859000037,
+    "block_ttfb_seconds": 9.424026859000037,
+    "tbb_seconds": [
+      0.22873877099999618,
+      0.3712838280000028,
+      0.29330648999996356,
+      0.6879851220000432,
+      0.2117703999999776,
+      0.4985600730000215,
+      0.24015706699998418,
+      0.2843516290000139,
+      0.30704664699999284
+    ],
+    "block_arrival_elapsed_seconds": [
+      9.424026859000037,
+      9.652765630000033,
+      10.024049458000036,
+      10.317355948,
+      11.005341070000043,
+      11.21711147000002,
+      11.715671543000042,
+      11.955828610000026,
+      12.24018023900004,
+      12.547226886000033
+    ],
+    "e2e_seconds": 12.547421590999988
+  },
+  "token_metrics": {
+    "prompt_tokens": 751,
+    "completion_tokens": 296,
+    "total_tokens": 1047,
+    "end_to_end_tokens_per_second": 83.44343835158865,
+    "total_tokens_per_second": 83.44343835158865,
+    "completion_tokens_per_second": 23.590504061194117,
+    "tokens_after_first_block": 279,
+    "generated_tokens_per_second_after_first_block": 89.32588543534891
+  },
+  "final_meta_info": {
+    "id": "14156168994745b19cbc7cb7209d64ff",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 751,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 296,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      20,
+      16,
+      12,
+      22,
+      33,
+      15,
+      20,
+      16,
+      20,
+      24
+    ],
+    "dllm_block_completion_latencies": [
+      0.4932373949999942,
+      0.22997372900005075,
+      0.37105261299996073,
+      0.2934458220000238,
+      0.6881235959999685,
+      0.21101108200002727,
+      0.4995419559999732,
+      0.23851435000000265,
+      0.28495868200002406,
+      0.3077574629999731
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.6276399629999787
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 9.424026859000037,
+      "output_token_count": 17,
+      "new_output_tokens": 17,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4932373949999942
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, determine how many calories are in the entire 30",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 17,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874679.5220969
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 9.652765630000033,
+      "output_token_count": 49,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.22997372900005075
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 49,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 10.024049458000036,
+      "output_token_count": 81,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.37105261299996073
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 81,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 10.317355948,
+      "output_token_count": 113,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2934458220000238
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed ",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 113,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 11.005341070000043,
+      "output_token_count": 145,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6881235959999685
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 145,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22,
+          33
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238,
+          0.6881235959999685
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 11.21711147000002,
+      "output_token_count": 177,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.21101108200002727
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.\n\n3. Determine how many servings you can eat with the remaining 200 calories:\n   - Each serving has 250 calories.",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 177,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22,
+          33,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238,
+          0.6881235959999685,
+          0.21101108200002727
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 11.715671543000042,
+      "output_token_count": 209,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.4995419559999732
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.\n\n3. Determine how many servings you can eat with the remaining 200 calories:\n   - Each serving has 250 calories.\n   - Number of servings you can eat = 200 / 250 = 0.8 servings.\n\n4. Convert servings",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 209,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22,
+          33,
+          15,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238,
+          0.6881235959999685,
+          0.21101108200002727,
+          0.4995419559999732
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 11.955828610000026,
+      "output_token_count": 241,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.23851435000000265
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.\n\n3. Determine how many servings you can eat with the remaining 200 calories:\n   - Each serving has 250 calories.\n   - Number of servings you can eat = 200 / 250 = 0.8 servings.\n\n4. Convert servings to grams:\n   - The bag is 300g for 5 servings, so each serving is 300g / 5 =",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 241,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22,
+          33,
+          15,
+          20,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238,
+          0.6881235959999685,
+          0.21101108200002727,
+          0.4995419559999732,
+          0.23851435000000265
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 12.24018023900004,
+      "output_token_count": 273,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.28495868200002406
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.\n\n3. Determine how many servings you can eat with the remaining 200 calories:\n   - Each serving has 250 calories.\n   - Number of servings you can eat = 200 / 250 = 0.8 servings.\n\n4. Convert servings to grams:\n   - The bag is 300g for 5 servings, so each serving is 300g / 5 = 60g.\n   - So, 0.8 servings = 0.8 × 60g = 48 grams.\n",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 273,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22,
+          33,
+          15,
+          20,
+          16,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238,
+          0.6881235959999685,
+          0.21101108200002727,
+          0.4995419559999732,
+          0.23851435000000265,
+          0.28495868200002406
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 12.547226886000033,
+      "output_token_count": 296,
+      "new_output_tokens": 23,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.3077574629999731
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. First, determine how many calories are in the entire 300g bag:\n   - Each serving has 250 calories, and there are 5 servings in the bag.\n   - So, total calories in the bag = 250 calories/serving × 5 servings = 1250 calories.\n\n2. Now, find out how many calories you have left in the day:\n   - Your daily target is 2000 calories.\n   - You've already consumed 1800 calories.\n   - So, remaining calories = 2000 - 1800 = 200 calories.\n\n3. Determine how many servings you can eat with the remaining 200 calories:\n   - Each serving has 250 calories.\n   - Number of servings you can eat = 200 / 250 = 0.8 servings.\n\n4. Convert servings to grams:\n   - The bag is 300g for 5 servings, so each serving is 300g / 5 = 60g.\n   - So, 0.8 servings = 0.8 × 60g = 48 grams.\n\nTherefore, you can eat 48 grams of the bag.\n\nAnswer: 48",
+      "meta_info": {
+        "id": "14156168994745b19cbc7cb7209d64ff",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 296,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          16,
+          12,
+          22,
+          33,
+          15,
+          20,
+          16,
+          20,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.4932373949999942,
+          0.22997372900005075,
+          0.37105261299996073,
+          0.2934458220000238,
+          0.6881235959999685,
+          0.21101108200002727,
+          0.4995419559999732,
+          0.23851435000000265,
+          0.28495868200002406,
+          0.3077574629999731
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.6276399629999787
+      }
+    }
+  ]
+}

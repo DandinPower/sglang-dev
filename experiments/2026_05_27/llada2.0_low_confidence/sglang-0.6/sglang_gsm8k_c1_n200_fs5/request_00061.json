@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 61,
+  "eval_index": 61,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then another $800 for the jeweler to construct it.  After that, she pays 10% of that to get it insured.  How much did she pay?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then another $800 for the jeweler to construct it.  After that, she pays 10% of that to get it insured.  How much did she pay?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 6.1000000000000005,
+  "request_start_realtime": "2026-05-27T09:17:48.641",
+  "benchmark": {
+    "question": "Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then another $800 for the jeweler to construct it.  After that, she pays 10% of that to get it insured.  How much did she pay?",
+    "gold_solution": "The total cost of the broch was 500+800=$<<500+800=1300>>1300\nThe insurance was 1300*.1=$<<1300*.1=130>>130\nSo she pays 1300+130=$<<1300+130=1430>>1430\n#### 1430",
+    "gold_answer": "1430",
+    "model_text": "\n\n1. Janet pays $500 for the material.\n2. She pays $800 for the jeweler.\n   So far, the cost is $500 + $800 = $1300.\n\n3. She pays 10% of the total cost (material + jeweler) for insurance.\n   10% of $1300 = 0.10 * $1300 = $130.\n\n4. Total amount paid = material + jeweler + insurance\n   = $500 + $800 + + $130 = $1430.\n\n#### 1430",
+    "predicted_answer": "1430",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      7,
+      11,
+      11,
+      7,
+      6,
+      3
+    ],
+    "ttfb_seconds": 0.2142941920000112,
+    "tbb_seconds": [
+      0.07951857099999415,
+      0.08093377599999485,
+      0.04939501100000143,
+      0.04144924700000274,
+      0.018080491000006305
+    ],
+    "dllm_block_completion_latencies": [
+      0.2142941920000112,
+      0.07951857099999415,
+      0.08093377599999485,
+      0.04939501100000143,
+      0.04144924700000274,
+      0.018080491000006305
+    ],
+    "dllm_forward_counts_per_block": [
+      7,
+      11,
+      11,
+      7,
+      6,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 29.53944843500001,
+    "first_new_token_ttfb_seconds": 29.53944843500001,
+    "block_ttfb_seconds": 29.53944843500001,
+    "tbb_seconds": [
+      0.07958228199998985,
+      0.08114883700000064,
+      0.04901360700000623,
+      0.04151335099999187,
+      0.018217666999987614
+    ],
+    "block_arrival_elapsed_seconds": [
+      29.53944843500001,
+      29.619030717,
+      29.700179554,
+      29.749193161000008,
+      29.790706512,
+      29.808924178999987
+    ],
+    "e2e_seconds": 29.80898496799999
+  },
+  "token_metrics": {
+    "prompt_tokens": 751,
+    "completion_tokens": 154,
+    "total_tokens": 905,
+    "end_to_end_tokens_per_second": 30.35997371166846,
+    "total_tokens_per_second": 30.35997371166846,
+    "completion_tokens_per_second": 5.166227570825352,
+    "tokens_after_first_block": 137,
+    "generated_tokens_per_second_after_first_block": 508.279892433026
+  },
+  "final_meta_info": {
+    "id": "c708bfa35d204b3b897fde580aeba145",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 751,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 154,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      7,
+      11,
+      11,
+      7,
+      6,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.2142941920000112,
+      0.07951857099999415,
+      0.08093377599999485,
+      0.04939501100000143,
+      0.04144924700000274,
+      0.018080491000006305
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.4866336099999842
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 29.53944843500001,
+      "output_token_count": 17,
+      "new_output_tokens": 17,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2142941920000112
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Janet pays $500 for the material.\n2.",
+      "meta_info": {
+        "id": "c708bfa35d204b3b897fde580aeba145",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 17,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2142941920000112
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873498.180479
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 29.619030717,
+      "output_token_count": 49,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.07951857099999415
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Janet pays $500 for the material.\n2. She pays $800 for the jeweler.\n   So far, the cost is $500 + $800 = $13",
+      "meta_info": {
+        "id": "c708bfa35d204b3b897fde580aeba145",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 49,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2142941920000112,
+          0.07951857099999415
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 29.700179554,
+      "output_token_count": 81,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.08093377599999485
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Janet pays $500 for the material.\n2. She pays $800 for the jeweler.\n   So far, the cost is $500 + $800 = $1300.\n\n3. She pays 10% of the total cost (material + jeweler) for insurance.\n   10%",
+      "meta_info": {
+        "id": "c708bfa35d204b3b897fde580aeba145",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 81,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2142941920000112,
+          0.07951857099999415,
+          0.08093377599999485
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 29.749193161000008,
+      "output_token_count": 113,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.04939501100000143
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Janet pays $500 for the material.\n2. She pays $800 for the jeweler.\n   So far, the cost is $500 + $800 = $1300.\n\n3. She pays 10% of the total cost (material + jeweler) for insurance.\n   10% of $1300 = 0.10 * $1300 = $130.\n\n4. Total amount paid =",
+      "meta_info": {
+        "id": "c708bfa35d204b3b897fde580aeba145",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 113,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          11,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2142941920000112,
+          0.07951857099999415,
+          0.08093377599999485,
+          0.04939501100000143
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 29.790706512,
+      "output_token_count": 145,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.04144924700000274
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Janet pays $500 for the material.\n2. She pays $800 for the jeweler.\n   So far, the cost is $500 + $800 = $1300.\n\n3. She pays 10% of the total cost (material + jeweler) for insurance.\n   10% of $1300 = 0.10 * $1300 = $130.\n\n4. Total amount paid = material + jeweler + insurance\n   = $500 + $800 + + $130 = $1430.\n",
+      "meta_info": {
+        "id": "c708bfa35d204b3b897fde580aeba145",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 145,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          11,
+          11,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2142941920000112,
+          0.07951857099999415,
+          0.08093377599999485,
+          0.04939501100000143,
+          0.04144924700000274
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 29.808924178999987,
+      "output_token_count": 154,
+      "new_output_tokens": 9,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.018080491000006305
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Janet pays $500 for the material.\n2. She pays $800 for the jeweler.\n   So far, the cost is $500 + $800 = $1300.\n\n3. She pays 10% of the total cost (material + jeweler) for insurance.\n   10% of $1300 = 0.10 * $1300 = $130.\n\n4. Total amount paid = material + jeweler + insurance\n   = $500 + $800 + + $130 = $1430.\n\n#### 1430",
+      "meta_info": {
+        "id": "c708bfa35d204b3b897fde580aeba145",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 154,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          11,
+          11,
+          7,
+          6,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.2142941920000112,
+          0.07951857099999415,
+          0.08093377599999485,
+          0.04939501100000143,
+          0.04144924700000274,
+          0.018080491000006305
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.4866336099999842
+      }
+    }
+  ]
+}

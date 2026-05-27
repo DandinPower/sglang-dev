@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 84,
+  "eval_index": 84,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A football team played 22 games. They won 8 more than they lost. How many did they win?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A football team played 22 games. They won 8 more than they lost. How many did they win?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 8.4,
+  "request_start_realtime": "2026-05-27T09:34:05.937",
+  "benchmark": {
+    "question": "A football team played 22 games. They won 8 more than they lost. How many did they win?",
+    "gold_solution": "Let L be the number of losses.\nThe number of wins is L + <<+8=8>>8.\nThe team played (L+8) + L = 2L + 8 = 22 games.\nSo, 2L = 22 - 8 = 14\nSo L = 14/2 = <<14/2=7>>7 losses.\nTherefore, the team won 22 – 7 = <<22-7=15>>15 games.\n#### 15",
+    "gold_answer": "15",
+    "model_text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they won is $ L + 8 $.\n\nThe total number of games played is the sum of wins and losses:\n$$\nL + (L + 8) = 22\n$$\n\nSimplify the equation:\n$$\n2L + 8 = 22\n$$\n\nSubtract 8 from both sides:\n$$\n2L = 14\n$$\n\nDivide by 2:\n$$\nL = 7\n$$\n\nSo, they lost 7 games, and they won:\n$$\n7 + 8 = 15\n$$\n\nAnswer: They won 15 games.\n\n#### 15",
+    "predicted_answer": "15",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      10,
+      3,
+      2,
+      10,
+      4
+    ],
+    "ttfb_seconds": 0.19519178000001602,
+    "tbb_seconds": [
+      0.06411122299999761,
+      0.01949427899998568,
+      0.013675981999995201,
+      0.06381958300002566,
+      0.02348831199998358
+    ],
+    "dllm_block_completion_latencies": [
+      0.19519178000001602,
+      0.06411122299999761,
+      0.01949427899998568,
+      0.013675981999995201,
+      0.06381958300002566,
+      0.02348831199998358
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      3,
+      2,
+      10,
+      4
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 33.862521332,
+    "first_new_token_ttfb_seconds": 33.862521332,
+    "block_ttfb_seconds": 33.862521332,
+    "tbb_seconds": [
+      0.06375013999999624,
+      0.019657625999997208,
+      0.013941951000020936,
+      0.06321176099999093,
+      0.024164506999994728
+    ],
+    "block_arrival_elapsed_seconds": [
+      33.862521332,
+      33.926271471999996,
+      33.94592909799999,
+      33.959871049000014,
+      34.023082810000005,
+      34.047247317
+    ],
+    "e2e_seconds": 34.047353533000006
+  },
+  "token_metrics": {
+    "prompt_tokens": 714,
+    "completion_tokens": 165,
+    "total_tokens": 879,
+    "end_to_end_tokens_per_second": 25.81698454618622,
+    "total_tokens_per_second": 25.81698454618622,
+    "completion_tokens_per_second": 4.846191638362601,
+    "tokens_after_first_block": 143,
+    "generated_tokens_per_second_after_first_block": 773.674712665437
+  },
+  "final_meta_info": {
+    "id": "a829ef010e61441799c20536ac19d143",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 714,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 165,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      3,
+      2,
+      10,
+      4
+    ],
+    "dllm_block_completion_latencies": [
+      0.19519178000001602,
+      0.06411122299999761,
+      0.01949427899998568,
+      0.013675981999995201,
+      0.06381958300002566,
+      0.02348831199998358
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.3847143699999833
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 33.862521332,
+      "output_token_count": 22,
+      "new_output_tokens": 22,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.19519178000001602
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they",
+      "meta_info": {
+        "id": "a829ef010e61441799c20536ac19d143",
+        "finish_reason": null,
+        "prompt_tokens": 714,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 22,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.19519178000001602
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874479.7994728
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 33.926271471999996,
+      "output_token_count": 54,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.06411122299999761
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they won is $ L + 8 $.\n\nThe total number of games played is the sum of wins and losses:\n$$\nL + (L +",
+      "meta_info": {
+        "id": "a829ef010e61441799c20536ac19d143",
+        "finish_reason": null,
+        "prompt_tokens": 714,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 54,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.19519178000001602,
+          0.06411122299999761
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 33.94592909799999,
+      "output_token_count": 86,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.01949427899998568
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they won is $ L + 8 $.\n\nThe total number of games played is the sum of wins and losses:\n$$\nL + (L + 8) = 22\n$$\n\nSimplify the equation:\n$$\n2L + 8 = 22\n$$\n\nSubtract",
+      "meta_info": {
+        "id": "a829ef010e61441799c20536ac19d143",
+        "finish_reason": null,
+        "prompt_tokens": 714,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 86,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.19519178000001602,
+          0.06411122299999761,
+          0.01949427899998568
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 33.959871049000014,
+      "output_token_count": 118,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.013675981999995201
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they won is $ L + 8 $.\n\nThe total number of games played is the sum of wins and losses:\n$$\nL + (L + 8) = 22\n$$\n\nSimplify the equation:\n$$\n2L + 8 = 22\n$$\n\nSubtract 8 from both sides:\n$$\n2L = 14\n$$\n\nDivide by 2:\n$$\nL = 7\n",
+      "meta_info": {
+        "id": "a829ef010e61441799c20536ac19d143",
+        "finish_reason": null,
+        "prompt_tokens": 714,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 118,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          3,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.19519178000001602,
+          0.06411122299999761,
+          0.01949427899998568,
+          0.013675981999995201
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 34.023082810000005,
+      "output_token_count": 150,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.06381958300002566
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they won is $ L + 8 $.\n\nThe total number of games played is the sum of wins and losses:\n$$\nL + (L + 8) = 22\n$$\n\nSimplify the equation:\n$$\n2L + 8 = 22\n$$\n\nSubtract 8 from both sides:\n$$\n2L = 14\n$$\n\nDivide by 2:\n$$\nL = 7\n$$\n\nSo, they lost 7 games, and they won:\n$$\n7 + 8 = 15\n$$\n\nAnswer:",
+      "meta_info": {
+        "id": "a829ef010e61441799c20536ac19d143",
+        "finish_reason": null,
+        "prompt_tokens": 714,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 150,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          3,
+          2,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.19519178000001602,
+          0.06411122299999761,
+          0.01949427899998568,
+          0.013675981999995201,
+          0.06381958300002566
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 34.047247317,
+      "output_token_count": 165,
+      "new_output_tokens": 15,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.02348831199998358
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet the number of games they lost be $ L $.  \nThen, the number of games they won is $ L + 8 $.\n\nThe total number of games played is the sum of wins and losses:\n$$\nL + (L + 8) = 22\n$$\n\nSimplify the equation:\n$$\n2L + 8 = 22\n$$\n\nSubtract 8 from both sides:\n$$\n2L = 14\n$$\n\nDivide by 2:\n$$\nL = 7\n$$\n\nSo, they lost 7 games, and they won:\n$$\n7 + 8 = 15\n$$\n\nAnswer: They won 15 games.\n\n#### 15",
+      "meta_info": {
+        "id": "a829ef010e61441799c20536ac19d143",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 714,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 165,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          3,
+          2,
+          10,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.19519178000001602,
+          0.06411122299999761,
+          0.01949427899998568,
+          0.013675981999995201,
+          0.06381958300002566,
+          0.02348831199998358
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.3847143699999833
+      }
+    }
+  ]
+}

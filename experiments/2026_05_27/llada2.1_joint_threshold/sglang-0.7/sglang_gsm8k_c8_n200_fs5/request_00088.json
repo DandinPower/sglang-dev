@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 88,
+  "eval_index": 88,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 8.8,
+  "request_start_realtime": "2026-05-27T09:37:09.751",
+  "benchmark": {
+    "question": "Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?",
+    "gold_solution": "Let m be the number of copies Marilyn sold and h be the number Harald sold. We know that m + h = 80,000 and m = 10h.\nSubstituting the second equation into the first, we get 10h + h = 88,000\nCombining like terms, we get 11h = 88,000\nDividing both sides by 11, we get h = 8,000\n#### 8000",
+    "gold_answer": "8000",
+    "model_text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10x $ copies.\n\nTogether, they sold $ x + 10x = 11x $ copies.\n\nWe are told that the total number of copies sold combined is 88,000, so:\n\n$$\n11x = 88,000\n$$\n\nNow solve for $ x $:\n\n$$\nx = \\frac{88,000}{11} = 8,000\n$$\n\nSo, Harald sold 8,000 copies.\n\nAnswer: 8,000",
+    "predicted_answer": "8000",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      3,
+      12,
+      6,
+      10,
+      3,
+      7,
+      2
+    ],
+    "ttfb_seconds": 0.20127915300002996,
+    "tbb_seconds": [
+      0.2148509419999982,
+      0.27122647499999175,
+      0.3281595849999803,
+      0.050320796999983486,
+      0.11418044399999872,
+      0.02286802000003263
+    ],
+    "dllm_block_completion_latencies": [
+      0.20127915300002996,
+      0.2148509419999982,
+      0.27122647499999175,
+      0.3281595849999803,
+      0.050320796999983486,
+      0.11418044399999872,
+      0.02286802000003263
+    ],
+    "dllm_forward_counts_per_block": [
+      3,
+      12,
+      6,
+      10,
+      3,
+      7,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 18.301173789000018,
+    "first_new_token_ttfb_seconds": 18.301173789000018,
+    "block_ttfb_seconds": 18.301173789000018,
+    "tbb_seconds": [
+      0.2144082629999957,
+      0.2717224890000125,
+      0.3274868789999914,
+      0.050575984999966295,
+      0.1138073750000217,
+      0.023514550000015788
+    ],
+    "block_arrival_elapsed_seconds": [
+      18.301173789000018,
+      18.515582052000013,
+      18.787304541000026,
+      19.114791420000017,
+      19.165367404999984,
+      19.279174780000005,
+      19.30268933000002
+    ],
+    "e2e_seconds": 19.30276966399998
+  },
+  "token_metrics": {
+    "prompt_tokens": 728,
+    "completion_tokens": 170,
+    "total_tokens": 898,
+    "end_to_end_tokens_per_second": 46.521821253184534,
+    "total_tokens_per_second": 46.521821253184534,
+    "completion_tokens_per_second": 8.807026295146292,
+    "tokens_after_first_block": 162,
+    "generated_tokens_per_second_after_first_block": 161.74188017697838
+  },
+  "final_meta_info": {
+    "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 728,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 170,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      3,
+      12,
+      6,
+      10,
+      3,
+      7,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.20127915300002996,
+      0.2148509419999982,
+      0.27122647499999175,
+      0.3281595849999803,
+      0.050320796999983486,
+      0.11418044399999872,
+      0.02286802000003263
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.215648975000022
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 18.301173789000018,
+      "output_token_count": 8,
+      "new_output_tokens": 8,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.20127915300002996
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the number of copies Har",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 8,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874648.052124
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 18.515582052000013,
+      "output_token_count": 40,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2148509419999982
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 40,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996,
+          0.2148509419999982
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 18.787304541000026,
+      "output_token_count": 72,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.27122647499999175
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10x $ copies.\n\nTogether, they sold $ x + 10x = 11x $ copies.\n\nWe are told that the",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 72,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          12,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996,
+          0.2148509419999982,
+          0.27122647499999175
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 19.114791420000017,
+      "output_token_count": 104,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3281595849999803
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10x $ copies.\n\nTogether, they sold $ x + 10x = 11x $ copies.\n\nWe are told that the total number of copies sold combined is 88,000, so:\n\n$$\n11x = 88,000",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 104,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          12,
+          6,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996,
+          0.2148509419999982,
+          0.27122647499999175,
+          0.3281595849999803
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 19.165367404999984,
+      "output_token_count": 136,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.050320796999983486
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10x $ copies.\n\nTogether, they sold $ x + 10x = 11x $ copies.\n\nWe are told that the total number of copies sold combined is 88,000, so:\n\n$$\n11x = 88,000\n$$\n\nNow solve for $ x $:\n\n$$\nx = \\frac{88,000}{11} = ",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 136,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          12,
+          6,
+          10,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996,
+          0.2148509419999982,
+          0.27122647499999175,
+          0.3281595849999803,
+          0.050320796999983486
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 19.279174780000005,
+      "output_token_count": 168,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.11418044399999872
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10x $ copies.\n\nTogether, they sold $ x + 10x = 11x $ copies.\n\nWe are told that the total number of copies sold combined is 88,000, so:\n\n$$\n11x = 88,000\n$$\n\nNow solve for $ x $:\n\n$$\nx = \\frac{88,000}{11} = 8,000\n$$\n\nSo, Harald sold 8,000 copies.\n\nAnswer: 8,000",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 168,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          12,
+          6,
+          10,
+          3,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996,
+          0.2148509419999982,
+          0.27122647499999175,
+          0.3281595849999803,
+          0.050320796999983486,
+          0.11418044399999872
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 19.30268933000002,
+      "output_token_count": 170,
+      "new_output_tokens": 2,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.02286802000003263
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nLet the number of copies Harald sold be $ x $.\n\nThen Marilyn's first record sold 10 times as many as Harald's, so it sold $ 10x $ copies.\n\nTogether, they sold $ x + 10x = 11x $ copies.\n\nWe are told that the total number of copies sold combined is 88,000, so:\n\n$$\n11x = 88,000\n$$\n\nNow solve for $ x $:\n\n$$\nx = \\frac{88,000}{11} = 8,000\n$$\n\nSo, Harald sold 8,000 copies.\n\nAnswer: 8,000",
+      "meta_info": {
+        "id": "cdbfbd6837914c9bae5bf7c88fdf1d62",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 170,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          12,
+          6,
+          10,
+          3,
+          7,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.20127915300002996,
+          0.2148509419999982,
+          0.27122647499999175,
+          0.3281595849999803,
+          0.050320796999983486,
+          0.11418044399999872,
+          0.02286802000003263
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.215648975000022
+      }
+    }
+  ]
+}

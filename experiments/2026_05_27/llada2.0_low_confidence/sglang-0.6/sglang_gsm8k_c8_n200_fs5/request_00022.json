@@ -1,0 +1,670 @@
+{
+  "ok": true,
+  "request_index": 22,
+  "eval_index": 22,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.2,
+  "request_start_realtime": "2026-05-27T09:19:51.448",
+  "benchmark": {
+    "question": "Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday?",
+    "gold_solution": "His first 3 customers buy 3 * 1 = <<3*1=3>>3 DVDs.\nHis next 2 buy 2 * 2 = <<2*2=4>>4 DVDs.\nHe sells a total of 3 + 4 + 0 = <<3+4+0=7>>7 DVDs.\n#### 7",
+    "gold_answer": "7",
+    "model_text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3 + 2 + 3 = 8 customers, correct.\n\nSo total DVDs = 3 + 4 + 0 = 7.\n\nBut let's double-check:\n- Customer 1: 1 DVD\n- Customer 2: 1 DVD\n- Customer 3: 1 DVD → total so far:\n- Customer 4: 2 DVDs\n- Customer 5: 2 DVDs → total: 3×1 + 2×2 = 3 + 4 = 7\n- Customers 6,7,8: 0\n\nYes, total DVDs sold = 7.\n\n#### 7",
+    "predicted_answer": "7",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      7,
+      13,
+      8,
+      19,
+      5,
+      8,
+      16,
+      11,
+      14,
+      11,
+      5
+    ],
+    "ttfb_seconds": 0.48622511599998575,
+    "tbb_seconds": [
+      0.1404737080000018,
+      0.6055536080000081,
+      0.4782444079999948,
+      0.5878925419999916,
+      0.44785308900000587,
+      0.15199272600000313,
+      0.5011567290000016,
+      0.3815766060000101,
+      0.8315670359999956,
+      0.3617823710000039,
+      0.09046430899999791
+    ],
+    "dllm_block_completion_latencies": [
+      0.48622511599998575,
+      0.1404737080000018,
+      0.6055536080000081,
+      0.4782444079999948,
+      0.5878925419999916,
+      0.44785308900000587,
+      0.15199272600000313,
+      0.5011567290000016,
+      0.3815766060000101,
+      0.8315670359999956,
+      0.3617823710000039,
+      0.09046430899999791
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      7,
+      13,
+      8,
+      19,
+      5,
+      8,
+      16,
+      11,
+      14,
+      11,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 3.8177278779999995,
+    "first_new_token_ttfb_seconds": 3.8177278779999995,
+    "block_ttfb_seconds": 3.8177278779999995,
+    "tbb_seconds": [
+      0.1401383110000154,
+      0.6058145769999896,
+      0.4781999730000166,
+      0.5879241989999855,
+      0.44801499700000136,
+      0.15167165899998736,
+      0.5016417710000098,
+      0.38185425500000747,
+      0.8315742359999945,
+      0.3611936309999919,
+      0.09032261400000152
+    ],
+    "block_arrival_elapsed_seconds": [
+      3.8177278779999995,
+      3.957866189000015,
+      4.5636807660000045,
+      5.041880739000021,
+      5.629804938000007,
+      6.077819935000008,
+      6.229491593999995,
+      6.731133365000005,
+      7.112987620000013,
+      7.944561856000007,
+      8.305755486999999,
+      8.396078101
+    ],
+    "e2e_seconds": 8.396170302000002
+  },
+  "token_metrics": {
+    "prompt_tokens": 745,
+    "completion_tokens": 355,
+    "total_tokens": 1100,
+    "end_to_end_tokens_per_second": 131.01211152636762,
+    "total_tokens_per_second": 131.01211152636762,
+    "completion_tokens_per_second": 42.28118144714592,
+    "tokens_after_first_block": 332,
+    "generated_tokens_per_second_after_first_block": 72.51374359534806
+  },
+  "final_meta_info": {
+    "id": "2d95ab94a66c449d8391bf74818d6070",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 745,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 355,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      7,
+      13,
+      8,
+      19,
+      5,
+      8,
+      16,
+      11,
+      14,
+      11,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.48622511599998575,
+      0.1404737080000018,
+      0.6055536080000081,
+      0.4782444079999948,
+      0.5878925419999916,
+      0.44785308900000587,
+      0.15199272600000313,
+      0.5011567290000016,
+      0.3815766060000101,
+      0.8315670359999956,
+      0.3617823710000039,
+      0.09046430899999791
+    ],
+    "dp_rank": null,
+    "e2e_latency": 5.078656422999984
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 3.8177278779999995,
+      "output_token_count": 23,
+      "new_output_tokens": 23,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.48622511599998575
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 23,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873595.266006
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 3.957866189000015,
+      "output_token_count": 55,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.1404737080000018
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy ",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 55,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.5636807660000045,
+      "output_token_count": 87,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6055536080000081
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 87,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 5.041880739000021,
+      "output_token_count": 119,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.4782444079999948
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 119,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 5.629804938000007,
+      "output_token_count": 151,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5878925419999916
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 ×",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 151,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 6.077819935000008,
+      "output_token_count": 183,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.44785308900000587
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 ×",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 183,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 6.229491593999995,
+      "output_token_count": 215,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.15199272600000313
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 215,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587,
+          0.15199272600000313
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 6.731133365000005,
+      "output_token_count": 247,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.5011567290000016
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3 + 2 + 3 = 8 customers, correct.\n\nSo total DVDs = 3 + 4 + 0 = 7.\n",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 247,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5,
+          8,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587,
+          0.15199272600000313,
+          0.5011567290000016
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 7.112987620000013,
+      "output_token_count": 279,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.3815766060000101
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3 + 2 + 3 = 8 customers, correct.\n\nSo total DVDs = 3 + 4 + 0 = 7.\n\nBut let's double-check:\n- Customer 1: 1 DVD\n- Customer 2: 1 DVD\n- Customer 3: ",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 279,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5,
+          8,
+          16,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587,
+          0.15199272600000313,
+          0.5011567290000016,
+          0.3815766060000101
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 7.944561856000007,
+      "output_token_count": 311,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.8315670359999956
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3 + 2 + 3 = 8 customers, correct.\n\nSo total DVDs = 3 + 4 + 0 = 7.\n\nBut let's double-check:\n- Customer 1: 1 DVD\n- Customer 2: 1 DVD\n- Customer 3: 1 DVD → total so far:\n- Customer 4: 2 DVDs\n- Customer 5: 2 DVDs → total: 3×1",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 311,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5,
+          8,
+          16,
+          11,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587,
+          0.15199272600000313,
+          0.5011567290000016,
+          0.3815766060000101,
+          0.8315670359999956
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 8.305755486999999,
+      "output_token_count": 343,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.3617823710000039
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3 + 2 + 3 = 8 customers, correct.\n\nSo total DVDs = 3 + 4 + 0 = 7.\n\nBut let's double-check:\n- Customer 1: 1 DVD\n- Customer 2: 1 DVD\n- Customer 3: 1 DVD → total so far:\n- Customer 4: 2 DVDs\n- Customer 5: 2 DVDs → total: 3×1 + 2×2 = 3 + 4 = 7\n- Customers 6,7,8: 0\n\nYes, total DVDs",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 343,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5,
+          8,
+          16,
+          11,
+          14,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587,
+          0.15199272600000313,
+          0.5011567290000016,
+          0.3815766060000101,
+          0.8315670359999956,
+          0.3617823710000039
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 8.396078101,
+      "output_token_count": 355,
+      "new_output_tokens": 12,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.09046430899999791
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n- The first 3 customers each buy 1 DVD: 3 × 1 = 3 DVDs.\nThe next next two customers each buy 2 DVDs: 2 × 2 = 4 additional DVDs.\nThe last 3 customers buy 0 DVDs: 3 × 0 = 0 DVDs.\n\nNow, let's add up the DVDs sold:\n3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs.\n\nWait, correction: \"next 2 customers\" — but there are only 8 customers total.\n\nBreakdown:\n- First 3 customers: 3 × 1 = 3 DVDs\n- Next 2 customers: 2 × 2 = 4 DVDs\n- Last 3 customers: 3 × 0 = 0 DVDs\n\nTotal DVDs sold = 3 + 4 + 0 = 7 DVDs.\n\nBut wait — 3 + 2 + 3 = 8 customers, correct.\n\nSo total DVDs = 3 + 4 + 0 = 7.\n\nBut let's double-check:\n- Customer 1: 1 DVD\n- Customer 2: 1 DVD\n- Customer 3: 1 DVD → total so far:\n- Customer 4: 2 DVDs\n- Customer 5: 2 DVDs → total: 3×1 + 2×2 = 3 + 4 = 7\n- Customers 6,7,8: 0\n\nYes, total DVDs sold = 7.\n\n#### 7",
+      "meta_info": {
+        "id": "2d95ab94a66c449d8391bf74818d6070",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 355,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          7,
+          13,
+          8,
+          19,
+          5,
+          8,
+          16,
+          11,
+          14,
+          11,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.48622511599998575,
+          0.1404737080000018,
+          0.6055536080000081,
+          0.4782444079999948,
+          0.5878925419999916,
+          0.44785308900000587,
+          0.15199272600000313,
+          0.5011567290000016,
+          0.3815766060000101,
+          0.8315670359999956,
+          0.3617823710000039,
+          0.09046430899999791
+        ],
+        "dp_rank": null,
+        "e2e_latency": 5.078656422999984
+      }
+    }
+  ]
+}

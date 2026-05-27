@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 57,
+  "eval_index": 57,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.7,
+  "request_start_realtime": "2026-05-27T09:38:13.548",
+  "benchmark": {
+    "question": "A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?",
+    "gold_solution": "The boxes can weigh up to 5000 pounds - 3755 pounds = <<5000-3755=1245>>1245 pounds in total.\nThere can be 1245 / 15 = <<1245/15=83>>83 boxes loaded onto the truck without exceeding the bridge's weight limit.\n#### 83",
+    "gold_answer": "83",
+    "model_text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 3755 pounds.\nSo, the remaining weight capacity for the boxes is:\n5000 - 3755 = 1245 pounds.\n\nStep 3: Determine how many boxes can be loaded with the remaining weight.\nEach box weighs 15 pounds.\nSo, the number of boxes that can be loaded is:\n1245 ÷ 15 = 83.\n\nStep 4: Ensure the result is a whole number (since you can't load a fraction of a box).\n1245 ÷ 15 = 83 exactly.\n\nTherefore, the maximum number of boxes that can be loaded is 83.\n\nAnswer: 83",
+    "predicted_answer": "83",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      2,
+      10,
+      17,
+      8,
+      10,
+      10,
+      11,
+      14
+    ],
+    "ttfb_seconds": 0.20842094900001484,
+    "tbb_seconds": [
+      0.8517847169999868,
+      1.2870744229999787,
+      0.56857278800004,
+      0.49772960999996485,
+      0.6345878640000251,
+      1.012421474000007,
+      0.8017490529999804
+    ],
+    "dllm_block_completion_latencies": [
+      0.20842094900001484,
+      0.8517847169999868,
+      1.2870744229999787,
+      0.56857278800004,
+      0.49772960999996485,
+      0.6345878640000251,
+      1.012421474000007,
+      0.8017490529999804
+    ],
+    "dllm_forward_counts_per_block": [
+      2,
+      10,
+      17,
+      8,
+      10,
+      10,
+      11,
+      14
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 7.941673315999992,
+    "first_new_token_ttfb_seconds": 7.941673315999992,
+    "block_ttfb_seconds": 7.941673315999992,
+    "tbb_seconds": [
+      0.8495334290000187,
+      1.2871289759999627,
+      0.5709847830000285,
+      0.4954675369999677,
+      0.6385468130000049,
+      1.0175823280000031,
+      0.7929704640000068
+    ],
+    "block_arrival_elapsed_seconds": [
+      7.941673315999992,
+      8.79120674500001,
+      10.078335720999974,
+      10.649320504000002,
+      11.14478804099997,
+      11.783334853999975,
+      12.800917181999978,
+      13.593887645999985
+    ],
+    "e2e_seconds": 13.593974086000003
+  },
+  "token_metrics": {
+    "prompt_tokens": 767,
+    "completion_tokens": 220,
+    "total_tokens": 987,
+    "end_to_end_tokens_per_second": 72.60569968398569,
+    "total_tokens_per_second": 72.60569968398569,
+    "completion_tokens_per_second": 16.183641266947163,
+    "tokens_after_first_block": 219,
+    "generated_tokens_per_second_after_first_block": 38.745284249974475
+  },
+  "final_meta_info": {
+    "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 767,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 220,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      2,
+      10,
+      17,
+      8,
+      10,
+      10,
+      11,
+      14
+    ],
+    "dllm_block_completion_latencies": [
+      0.20842094900001484,
+      0.8517847169999868,
+      1.2870744229999787,
+      0.56857278800004,
+      0.49772960999996485,
+      0.6345878640000251,
+      1.012421474000007,
+      0.8017490529999804
+    ],
+    "dp_rank": null,
+    "e2e_latency": 5.881584337999982
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 7.941673315999992,
+      "output_token_count": 1,
+      "new_output_tokens": 1,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.20842094900001484
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 1,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874701.489461
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 8.79120674500001,
+      "output_token_count": 33,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.8517847169999868
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 33,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 10.078335720999974,
+      "output_token_count": 65,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        1.2870744229999787
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 375",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 65,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868,
+          1.2870744229999787
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 10.649320504000002,
+      "output_token_count": 97,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.56857278800004
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 3755 pounds.\nSo, the remaining weight capacity for the boxes is:\n5000 - 3755 = 1245",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 97,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          17,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868,
+          1.2870744229999787,
+          0.56857278800004
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 11.14478804099997,
+      "output_token_count": 129,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.49772960999996485
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 3755 pounds.\nSo, the remaining weight capacity for the boxes is:\n5000 - 3755 = 1245 pounds.\n\nStep 3: Determine how many boxes can be loaded with the remaining weight.\nEach box weighs 15 pounds.\nSo,",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 129,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          17,
+          8,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868,
+          1.2870744229999787,
+          0.56857278800004,
+          0.49772960999996485
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 11.783334853999975,
+      "output_token_count": 161,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.6345878640000251
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 3755 pounds.\nSo, the remaining weight capacity for the boxes is:\n5000 - 3755 = 1245 pounds.\n\nStep 3: Determine how many boxes can be loaded with the remaining weight.\nEach box weighs 15 pounds.\nSo, the number of boxes that can be loaded is:\n1245 ÷ 15 = 83.\n\nStep 4: Ensure the",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 161,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          17,
+          8,
+          10,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868,
+          1.2870744229999787,
+          0.56857278800004,
+          0.49772960999996485,
+          0.6345878640000251
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 12.800917181999978,
+      "output_token_count": 193,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        1.012421474000007
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 3755 pounds.\nSo, the remaining weight capacity for the boxes is:\n5000 - 3755 = 1245 pounds.\n\nStep 3: Determine how many boxes can be loaded with the remaining weight.\nEach box weighs 15 pounds.\nSo, the number of boxes that can be loaded is:\n1245 ÷ 15 = 83.\n\nStep 4: Ensure the result is a whole number (since you can't load a fraction of a box).\n1245 ÷ 15 = 83 exactly.",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": null,
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 193,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          17,
+          8,
+          10,
+          10,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868,
+          1.2870744229999787,
+          0.56857278800004,
+          0.49772960999996485,
+          0.6345878640000251,
+          1.012421474000007
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 13.593887645999985,
+      "output_token_count": 220,
+      "new_output_tokens": 27,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.8017490529999804
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nStep 1: Determine the maximum weight the bridge can carry.\nThe bridge can carry no more than 5000 pounds.\n\nStep 2: Subtract the weight of the empty truck and the driver from the bridge's weight limit.\nThe truck and driver together weigh 3755 pounds.\nSo, the remaining weight capacity for the boxes is:\n5000 - 3755 = 1245 pounds.\n\nStep 3: Determine how many boxes can be loaded with the remaining weight.\nEach box weighs 15 pounds.\nSo, the number of boxes that can be loaded is:\n1245 ÷ 15 = 83.\n\nStep 4: Ensure the result is a whole number (since you can't load a fraction of a box).\n1245 ÷ 15 = 83 exactly.\n\nTherefore, the maximum number of boxes that can be loaded is 83.\n\nAnswer: 83",
+      "meta_info": {
+        "id": "7fea4c984f05464b8b0cb445d48d6cc8",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 767,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 220,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          17,
+          8,
+          10,
+          10,
+          11,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.20842094900001484,
+          0.8517847169999868,
+          1.2870744229999787,
+          0.56857278800004,
+          0.49772960999996485,
+          0.6345878640000251,
+          1.012421474000007,
+          0.8017490529999804
+        ],
+        "dp_rank": null,
+        "e2e_latency": 5.881584337999982
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 17,
+  "eval_index": 17,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.7000000000000002,
+  "request_start_realtime": "2026-05-27T09:19:50.949",
+  "benchmark": {
+    "question": "Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?",
+    "gold_solution": "First find the total amount Jill makes per week teaching: $20/hour * 35 hours/week = $<<20*35=700>>700/week\nThen find the total amount Jill makes per week coaching: $30/hour * 15 hours/week = $<<30*15=450>>450/week\nThen add those two amounts to find the total amount Jill makes per week: $700/week + $450/week = $<<700+450=1150>>1150/week\nThen multiply that number by the number of weeks Jill works in a year to find her annual salary: $1150/week * 50 weeks/year = $<<1150*50=57500>>57,500\n#### 57500",
+    "gold_answer": "57500",
+    "model_text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n   - She works 15 hours a week as a coach.\n   - She earns $30 per hour.\n   - So, weekly earnings as a coach = 15 * $30 = $450.\n\n3. Now, find her total weekly earnings:\n   - Weekly earnings = Teacher earnings + Coach earnings\n   - Weekly earnings = $700 + $450 = $1,150.\n\n4. Calculate her annual earnings:\n   - She works 50 weeks a year.\n   - So, annual salary = $1,150 * 50 = $57,500.\n\n#### 57500",
+    "predicted_answer": "57500",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      11,
+      11,
+      4,
+      4,
+      5,
+      7,
+      8,
+      5
+    ],
+    "ttfb_seconds": 0.44786393699999394,
+    "tbb_seconds": [
+      0.22203612100000214,
+      0.07573695100001032,
+      0.07161316299999498,
+      0.4620027729999947,
+      0.45981893700002274,
+      0.15962612599997783,
+      0.09397886300001801
+    ],
+    "dllm_block_completion_latencies": [
+      0.44786393699999394,
+      0.22203612100000214,
+      0.07573695100001032,
+      0.07161316299999498,
+      0.4620027729999947,
+      0.45981893700002274,
+      0.15962612599997783,
+      0.09397886300001801
+    ],
+    "dllm_forward_counts_per_block": [
+      11,
+      11,
+      4,
+      4,
+      5,
+      7,
+      8,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 2.9815830430000005,
+    "first_new_token_ttfb_seconds": 2.9815830430000005,
+    "block_ttfb_seconds": 2.9815830430000005,
+    "tbb_seconds": [
+      0.22194607699998414,
+      0.07558692899999642,
+      0.07190363600000182,
+      0.4669949880000104,
+      0.45510943299998985,
+      0.15945748700002582,
+      0.09374735999998052
+    ],
+    "block_arrival_elapsed_seconds": [
+      2.9815830430000005,
+      3.2035291199999847,
+      3.279116048999981,
+      3.351019684999983,
+      3.8180146729999933,
+      4.273124105999983,
+      4.432581593000009,
+      4.5263289529999895
+    ],
+    "e2e_seconds": 4.5264097369999945
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 239,
+    "total_tokens": 986,
+    "end_to_end_tokens_per_second": 217.8326879999819,
+    "total_tokens_per_second": 217.8326879999819,
+    "completion_tokens_per_second": 52.80122964705444,
+    "tokens_after_first_block": 218,
+    "generated_tokens_per_second_after_first_block": 141.11615292945012
+  },
+  "final_meta_info": {
+    "id": "a0044b244f514af9ba9997d7b4cba284",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 239,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      11,
+      11,
+      4,
+      4,
+      5,
+      7,
+      8,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.44786393699999394,
+      0.22203612100000214,
+      0.07573695100001032,
+      0.07161316299999498,
+      0.4620027729999947,
+      0.45981893700002274,
+      0.15962612599997783,
+      0.09397886300001801
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.0070281030000103
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 2.9815830430000005,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.44786393699999394
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873593.9309835
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 3.2035291199999847,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.22203612100000214
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 3.279116048999981,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.07573695100001032
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214,
+          0.07573695100001032
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 3.351019684999983,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.07161316299999498
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n   - She works 15 hours a week as a coach.\n   - She earns $30 per hour.\n   - So, weekly earnings",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          4,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214,
+          0.07573695100001032,
+          0.07161316299999498
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 3.8180146729999933,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.4620027729999947
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n   - She works 15 hours a week as a coach.\n   - She earns $30 per hour.\n   - So, weekly earnings as a coach = 15 * $30 = $450.\n\n3. Now, find her total weekly earnings:\n   -",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          4,
+          4,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214,
+          0.07573695100001032,
+          0.07161316299999498,
+          0.4620027729999947
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 4.273124105999983,
+      "output_token_count": 181,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.45981893700002274
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n   - She works 15 hours a week as a coach.\n   - She earns $30 per hour.\n   - So, weekly earnings as a coach = 15 * $30 = $450.\n\n3. Now, find her total weekly earnings:\n   - Weekly earnings = Teacher earnings + Coach earnings\n   - Weekly earnings = $700 + $450 = $1,150.\n",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          4,
+          4,
+          5,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214,
+          0.07573695100001032,
+          0.07161316299999498,
+          0.4620027729999947,
+          0.45981893700002274
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 4.432581593000009,
+      "output_token_count": 213,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.15962612599997783
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n   - She works 15 hours a week as a coach.\n   - She earns $30 per hour.\n   - So, weekly earnings as a coach = 15 * $30 = $450.\n\n3. Now, find her total weekly earnings:\n   - Weekly earnings = Teacher earnings + Coach earnings\n   - Weekly earnings = $700 + $450 = $1,150.\n\n4. Calculate her annual earnings:\n   - She works 50 weeks a year.\n   - So, annual salary = $1,1",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 213,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          4,
+          4,
+          5,
+          7,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214,
+          0.07573695100001032,
+          0.07161316299999498,
+          0.4620027729999947,
+          0.45981893700002274,
+          0.15962612599997783
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 4.5263289529999895,
+      "output_token_count": 239,
+      "new_output_tokens": 26,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.09397886300001801
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate how much Jill earns per week as a teacher:\n   - She works 35 hours a week as a teacher.\n   - She earns $20 per hour.\n   - So, weekly earnings as a teacher = 35 * $20 = $700.\n\n2. Next, calculate how much Jill earns per week as a coach:\n   - She works 15 hours a week as a coach.\n   - She earns $30 per hour.\n   - So, weekly earnings as a coach = 15 * $30 = $450.\n\n3. Now, find her total weekly earnings:\n   - Weekly earnings = Teacher earnings + Coach earnings\n   - Weekly earnings = $700 + $450 = $1,150.\n\n4. Calculate her annual earnings:\n   - She works 50 weeks a year.\n   - So, annual salary = $1,150 * 50 = $57,500.\n\n#### 57500",
+      "meta_info": {
+        "id": "a0044b244f514af9ba9997d7b4cba284",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 239,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          4,
+          4,
+          5,
+          7,
+          8,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.44786393699999394,
+          0.22203612100000214,
+          0.07573695100001032,
+          0.07161316299999498,
+          0.4620027729999947,
+          0.45981893700002274,
+          0.15962612599997783,
+          0.09397886300001801
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.0070281030000103
+      }
+    }
+  ]
+}

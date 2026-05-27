@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 129,
+  "eval_index": 129,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 12.9,
+  "request_start_realtime": "2026-05-27T09:36:52.692",
+  "benchmark": {
+    "question": "A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?",
+    "gold_solution": "The hospital sees patients for 500*24=<<500*24=12000>>12000 minutes a day\nThat means they see patients for 12000/60=<<12000/60=200>>200 hours a day\nThey profit 200-150=$<<200-150=50>>50 per hour\nSo they make a profit of 200 hours * $50/hour = $<<200*50=10000>>10000 a day from patient visits\n#### 10000",
+    "gold_answer": "10000",
+    "model_text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital collects from the patients:\n   200 hours × $200/hour = $40,000.\n\n4. Calculate the cost the hospital pays to the doctors:\n   200 hours × $150/hour = $30,000.\n\n5. Calculate the profit:\n   Profit = Revenue - Cost = $40,000 - $30,000 = $10,000.\n\nSo, the hospital makes a profit of $10,000 from these visits.\n\n#### 10000",
+    "predicted_answer": "10000",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      19,
+      19,
+      19,
+      27,
+      22,
+      16,
+      31,
+      13
+    ],
+    "ttfb_seconds": 0.5835839619999774,
+    "tbb_seconds": [
+      0.33479551700003185,
+      0.5751502949999576,
+      0.46961669199998823,
+      0.6572193330000005,
+      0.2884933349999983,
+      0.7848534920000247,
+      0.23660497800000257
+    ],
+    "dllm_block_completion_latencies": [
+      0.5835839619999774,
+      0.33479551700003185,
+      0.5751502949999576,
+      0.46961669199998823,
+      0.6572193330000005,
+      0.2884933349999983,
+      0.7848534920000247,
+      0.23660497800000257
+    ],
+    "dllm_forward_counts_per_block": [
+      19,
+      19,
+      19,
+      27,
+      22,
+      16,
+      31,
+      13
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 11.374223770000015,
+    "first_new_token_ttfb_seconds": 11.374223770000015,
+    "block_ttfb_seconds": 11.374223770000015,
+    "tbb_seconds": [
+      0.33390030800001114,
+      0.5781939780000016,
+      0.46722910800002637,
+      0.6565915869999799,
+      0.2886343480000164,
+      0.7853516849999664,
+      0.2362022909999837
+    ],
+    "block_arrival_elapsed_seconds": [
+      11.374223770000015,
+      11.708124078000026,
+      12.286318056000027,
+      12.753547164000054,
+      13.410138751000034,
+      13.69877309900005,
+      14.484124784000016,
+      14.720327075
+    ],
+    "e2e_seconds": 14.720432473000017
+  },
+  "token_metrics": {
+    "prompt_tokens": 753,
+    "completion_tokens": 214,
+    "total_tokens": 967,
+    "end_to_end_tokens_per_second": 65.6910047835657,
+    "total_tokens_per_second": 65.6910047835657,
+    "completion_tokens_per_second": 14.537616363684654,
+    "tokens_after_first_block": 199,
+    "generated_tokens_per_second_after_first_block": 59.470289411891436
+  },
+  "final_meta_info": {
+    "id": "c032a5e02d2948be93250e5b6b58b23d",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 753,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 214,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      19,
+      19,
+      19,
+      27,
+      22,
+      16,
+      31,
+      13
+    ],
+    "dllm_block_completion_latencies": [
+      0.5835839619999774,
+      0.33479551700003185,
+      0.5751502949999576,
+      0.46961669199998823,
+      0.6572193330000005,
+      0.2884933349999983,
+      0.7848534920000247,
+      0.23660497800000257
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.307781110000008
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 11.374223770000015,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5835839619999774
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874624.0659113
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 11.708124078000026,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.33479551700003185
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 12.286318056000027,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5751502949999576
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185,
+          0.5751502949999576
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 12.753547164000054,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.46961669199998823
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital collects from the patients:\n   200 hours × $200/hour = $40,000.\n\n4. Calculate",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19,
+          19,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185,
+          0.5751502949999576,
+          0.46961669199998823
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 13.410138751000034,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6572193330000005
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital collects from the patients:\n   200 hours × $200/hour = $40,000.\n\n4. Calculate the cost the hospital pays to the doctors:\n   200 hours × $150/hour = $30,000.\n",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19,
+          19,
+          27,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185,
+          0.5751502949999576,
+          0.46961669199998823,
+          0.6572193330000005
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 13.69877309900005,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.2884933349999983
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital collects from the patients:\n   200 hours × $200/hour = $40,000.\n\n4. Calculate the cost the hospital pays to the doctors:\n   200 hours × $150/hour = $30,000.\n\n5. Calculate the profit:\n   Profit = Revenue - Cost = $40,000 - $30,000 = $",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19,
+          19,
+          27,
+          22,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185,
+          0.5751502949999576,
+          0.46961669199998823,
+          0.6572193330000005,
+          0.2884933349999983
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 14.484124784000016,
+      "output_token_count": 207,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.7848534920000247
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital collects from the patients:\n   200 hours × $200/hour = $40,000.\n\n4. Calculate the cost the hospital pays to the doctors:\n   200 hours × $150/hour = $30,000.\n\n5. Calculate the profit:\n   Profit = Revenue - Cost = $40,000 - $30,000 = $10,000.\n\nSo, the hospital makes a profit of $10,000 from these visits.\n\n#### ",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19,
+          19,
+          27,
+          22,
+          16,
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185,
+          0.5751502949999576,
+          0.46961669199998823,
+          0.6572193330000005,
+          0.2884933349999983,
+          0.7848534920000247
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 14.720327075,
+      "output_token_count": 214,
+      "new_output_tokens": 7,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.23660497800000257
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate the total time spent seeing patients in minutes:\n   500 patients × 24 minutes/patient = 12,000 minutes.\n\n2. Convert minutes to hours:\n   12,000 minutes ÷ 60 = 200 hours.\n\n3. Calculate the revenue the hospital collects from the patients:\n   200 hours × $200/hour = $40,000.\n\n4. Calculate the cost the hospital pays to the doctors:\n   200 hours × $150/hour = $30,000.\n\n5. Calculate the profit:\n   Profit = Revenue - Cost = $40,000 - $30,000 = $10,000.\n\nSo, the hospital makes a profit of $10,000 from these visits.\n\n#### 10000",
+      "meta_info": {
+        "id": "c032a5e02d2948be93250e5b6b58b23d",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 214,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          19,
+          19,
+          19,
+          27,
+          22,
+          16,
+          31,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.5835839619999774,
+          0.33479551700003185,
+          0.5751502949999576,
+          0.46961669199998823,
+          0.6572193330000005,
+          0.2884933349999983,
+          0.7848534920000247,
+          0.23660497800000257
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.307781110000008
+      }
+    }
+  ]
+}

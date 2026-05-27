@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 146,
+  "eval_index": 146,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 14.600000000000001,
+  "request_start_realtime": "2026-05-27T08:56:40.813",
+  "benchmark": {
+    "question": "Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos?",
+    "gold_solution": "The first set had 500 pieces, and the second set had 3 times as many as the first set, so the second set has 500*3=<<500*3=1500>>1500 pieces\nThe third set had one-quarter of the 500 pieces, so that means it had 500*.25= <<500*.25=125>>125 pieces\nIn total, that means Johnny picked up 500 + 1500+ 125= <<500+1500+125=2125>>2125 blocks\n#### 2,125",
+    "gold_answer": "2,125",
+    "model_text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n3. The third lego box has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 125 pieces.\n\nNow, let's add up all the pieces:\n- First box: 500\n- Second box: 1500\n- Third box: 125\n\nTotal pieces = 500 + 1500 + 125 = 2125\n\nJohnny picks up 2125 lego pieces.\n#### 2125",
+    "predicted_answer": "2125",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      17,
+      23,
+      13,
+      20,
+      8,
+      18,
+      2
+    ],
+    "ttfb_seconds": 0.31935963099999753,
+    "tbb_seconds": [
+      0.1814887600000077,
+      0.1059632699999895,
+      0.16080940899999518,
+      0.06279477699999347,
+      0.14413712300000725,
+      0.012435678000002781
+    ],
+    "dllm_block_completion_latencies": [
+      0.31935963099999753,
+      0.1814887600000077,
+      0.1059632699999895,
+      0.16080940899999518,
+      0.06279477699999347,
+      0.14413712300000725,
+      0.012435678000002781
+    ],
+    "dllm_forward_counts_per_block": [
+      17,
+      23,
+      13,
+      20,
+      8,
+      18,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 126.235954104,
+    "first_new_token_ttfb_seconds": 126.235954104,
+    "block_ttfb_seconds": 126.235954104,
+    "tbb_seconds": [
+      0.18148104200000148,
+      0.10592334199998277,
+      0.16077177900001516,
+      0.06279177100000766,
+      0.14415082099998244,
+      0.012630029000007426
+    ],
+    "block_arrival_elapsed_seconds": [
+      126.235954104,
+      126.417435146,
+      126.52335848799999,
+      126.684130267,
+      126.74692203800001,
+      126.89107285899999,
+      126.903702888
+    ],
+    "e2e_seconds": 126.903763809
+  },
+  "token_metrics": {
+    "prompt_tokens": 772,
+    "completion_tokens": 189,
+    "total_tokens": 961,
+    "end_to_end_tokens_per_second": 7.5726674383462695,
+    "total_tokens_per_second": 7.5726674383462695,
+    "completion_tokens_per_second": 1.4893175294978616,
+    "tokens_after_first_block": 161,
+    "generated_tokens_per_second_after_first_block": 241.0866430879451
+  },
+  "final_meta_info": {
+    "id": "d439789f6f4840f1b8387c6b68754bd1",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 772,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 189,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      17,
+      23,
+      13,
+      20,
+      8,
+      18,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.31935963099999753,
+      0.1814887600000077,
+      0.1059632699999895,
+      0.16080940899999518,
+      0.06279477699999347,
+      0.14413712300000725,
+      0.012435678000002781
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.9901787090000198
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 126.235954104,
+      "output_token_count": 28,
+      "new_output_tokens": 28,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.31935963099999753
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 28,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872327.048813
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 126.417435146,
+      "output_token_count": 60,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.1814887600000077
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 60,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753,
+          0.1814887600000077
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 126.52335848799999,
+      "output_token_count": 92,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.1059632699999895
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n3. The third lego box has 1/4 the number of pieces as the first one.  \n   1/4 of 50",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 92,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          23,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753,
+          0.1814887600000077,
+          0.1059632699999895
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 126.684130267,
+      "output_token_count": 124,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.16080940899999518
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n3. The third lego box has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 125 pieces.\n\nNow, let's add up all the pieces:\n- First box: 500\n- Second",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 124,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          23,
+          13,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753,
+          0.1814887600000077,
+          0.1059632699999895,
+          0.16080940899999518
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 126.74692203800001,
+      "output_token_count": 156,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.06279477699999347
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n3. The third lego box has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 125 pieces.\n\nNow, let's add up all the pieces:\n- First box: 500\n- Second box: 1500\n- Third box: 125\n\nTotal pieces = 500 + 1500 +",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 156,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          23,
+          13,
+          20,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753,
+          0.1814887600000077,
+          0.1059632699999895,
+          0.16080940899999518,
+          0.06279477699999347
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 126.89107285899999,
+      "output_token_count": 188,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.14413712300000725
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n3. The third lego box has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 125 pieces.\n\nNow, let's add up all the pieces:\n- First box: 500\n- Second box: 1500\n- Third box: 125\n\nTotal pieces = 500 + 1500 + 125 = 2125\n\nJohnny picks up 2125 lego pieces.\n#### 2125",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": null,
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 188,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          23,
+          13,
+          20,
+          8,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753,
+          0.1814887600000077,
+          0.1059632699999895,
+          0.16080940899999518,
+          0.06279477699999347,
+          0.14413712300000725
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 126.903702888,
+      "output_token_count": 189,
+      "new_output_tokens": 1,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.012435678000002781
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. The first lego box has 500 pieces.\n2. The second lego box has 3 times more pieces than the first one.  \n   \"3 times more\" means 3 * 500 = 1500 pieces.\n3. The third lego box has 1/4 the number of pieces as the first one.  \n   1/4 of 500 = 125 pieces.\n\nNow, let's add up all the pieces:\n- First box: 500\n- Second box: 1500\n- Third box: 125\n\nTotal pieces = 500 + 1500 + 125 = 2125\n\nJohnny picks up 2125 lego pieces.\n#### 2125",
+      "meta_info": {
+        "id": "d439789f6f4840f1b8387c6b68754bd1",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 772,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 189,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          23,
+          13,
+          20,
+          8,
+          18,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.31935963099999753,
+          0.1814887600000077,
+          0.1059632699999895,
+          0.16080940899999518,
+          0.06279477699999347,
+          0.14413712300000725,
+          0.012435678000002781
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.9901787090000198
+      }
+    }
+  ]
+}

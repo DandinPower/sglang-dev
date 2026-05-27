@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 6,
+  "eval_index": 6,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.6000000000000001,
+  "request_start_realtime": "2026-05-27T09:38:37.568",
+  "benchmark": {
+    "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?",
+    "gold_solution": "If Seattle has 20 sheep, Charleston has 4 * 20 sheep = <<20*4=80>>80 sheep\nToulouse has twice as many sheep as Charleston, which is 2 * 80 sheep = <<2*80=160>>160 sheep\nTogether, the three has 20 sheep + 160 sheep + 80 sheep = <<20+160+80=260>>260 sheep\n#### 260",
+    "gold_answer": "260",
+    "model_text": "\n\nSeattle has 20 sheep.\n\nCharleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep.\n\nToulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep.\n\nTogether, the three towns have 20 + 80 + 160 = 260 sheep.\n\n#### 260",
+    "predicted_answer": "260",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      3,
+      2,
+      6,
+      2
+    ],
+    "ttfb_seconds": 0.32349489100002415,
+    "tbb_seconds": [
+      0.048141974999992954,
+      0.03303909499999236,
+      0.11082941000000801,
+      0.023656154999997625
+    ],
+    "dllm_block_completion_latencies": [
+      0.32349489100002415,
+      0.048141974999992954,
+      0.03303909499999236,
+      0.11082941000000801,
+      0.023656154999997625
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      3,
+      2,
+      6,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.3315346839999904,
+    "first_new_token_ttfb_seconds": 0.3315346839999904,
+    "block_ttfb_seconds": 0.3315346839999904,
+    "tbb_seconds": [
+      0.04920879900001296,
+      0.03241384899999389,
+      0.11077040300000363,
+      0.023980816000005234
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.3315346839999904,
+      0.3807434830000034,
+      0.41315733199999727,
+      0.5239277350000009,
+      0.5479085510000061
+    ],
+    "e2e_seconds": 0.5479787959999953
+  },
+  "token_metrics": {
+    "prompt_tokens": 732,
+    "completion_tokens": 104,
+    "total_tokens": 836,
+    "end_to_end_tokens_per_second": 1525.6064762038843,
+    "total_tokens_per_second": 1525.6064762038843,
+    "completion_tokens_per_second": 189.78836546077028,
+    "tokens_after_first_block": 100,
+    "generated_tokens_per_second_after_first_block": 462.0130299501875
+  },
+  "final_meta_info": {
+    "id": "1126bcf550a24864802fd50ebd63533d",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 732,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 104,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      3,
+      2,
+      6,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.32349489100002415,
+      0.048141974999992954,
+      0.03303909499999236,
+      0.11082941000000801,
+      0.023656154999997625
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5452414149999925
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.3315346839999904,
+      "output_token_count": 4,
+      "new_output_tokens": 4,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.32349489100002415
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nSeattle has",
+      "meta_info": {
+        "id": "1126bcf550a24864802fd50ebd63533d",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 4,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.32349489100002415
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874717.8994746
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 0.3807434830000034,
+      "output_token_count": 36,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.048141974999992954
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nSeattle has 20 sheep.\n\nCharleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80",
+      "meta_info": {
+        "id": "1126bcf550a24864802fd50ebd63533d",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 36,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.32349489100002415,
+          0.048141974999992954
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 0.41315733199999727,
+      "output_token_count": 68,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.03303909499999236
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nSeattle has 20 sheep.\n\nCharleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep.\n\nToulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep.",
+      "meta_info": {
+        "id": "1126bcf550a24864802fd50ebd63533d",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 68,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          3,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.32349489100002415,
+          0.048141974999992954,
+          0.03303909499999236
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 0.5239277350000009,
+      "output_token_count": 100,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.11082941000000801
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nSeattle has 20 sheep.\n\nCharleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep.\n\nToulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep.\n\nTogether, the three towns have 20 + 80 + 160 = 260 sheep.\n\n#### 2",
+      "meta_info": {
+        "id": "1126bcf550a24864802fd50ebd63533d",
+        "finish_reason": null,
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 100,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          3,
+          2,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.32349489100002415,
+          0.048141974999992954,
+          0.03303909499999236,
+          0.11082941000000801
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 0.5479085510000061,
+      "output_token_count": 104,
+      "new_output_tokens": 4,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.023656154999997625
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nSeattle has 20 sheep.\n\nCharleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep.\n\nToulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep.\n\nTogether, the three towns have 20 + 80 + 160 = 260 sheep.\n\n#### 260",
+      "meta_info": {
+        "id": "1126bcf550a24864802fd50ebd63533d",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 732,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 104,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          3,
+          2,
+          6,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.32349489100002415,
+          0.048141974999992954,
+          0.03303909499999236,
+          0.11082941000000801,
+          0.023656154999997625
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5452414149999925
+      }
+    }
+  ]
+}

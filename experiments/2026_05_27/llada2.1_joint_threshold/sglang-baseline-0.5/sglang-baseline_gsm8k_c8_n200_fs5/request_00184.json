@@ -1,0 +1,796 @@
+{
+  "ok": true,
+  "request_index": 184,
+  "eval_index": 184,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jerry is rolling a six-sided die. How much more likely is it (expressed as a percentage) that he rolls a number greater than 3 than that he rolls two even numbers in a row?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jerry is rolling a six-sided die. How much more likely is it (expressed as a percentage) that he rolls a number greater than 3 than that he rolls two even numbers in a row?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.400000000000002,
+  "request_start_realtime": "2026-05-27T09:34:06.943",
+  "benchmark": {
+    "question": "Jerry is rolling a six-sided die. How much more likely is it (expressed as a percentage) that he rolls a number greater than 3 than that he rolls two even numbers in a row?",
+    "gold_solution": "There are 3 numbers greater than 3 on the dice, so the chances of rolling one of them are 3 / 6 = 50%.\nThe chance of rolling one even number is 50%, so the chance of rolling two in a row is 50% * 50% = 25%.\nThe difference between these two probabilities is 50% - 25% = 25%.\n#### 25",
+    "gold_answer": "25",
+    "model_text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\nDifference in probability:\n\n\\[\n0.5 - 0.25 = 0.25\n\\]\n\nNow, express this difference as a **percentage relative to the probability of rolling two evens**:\n\n\\[\n\\text{More likely} = \\frac{0.25}{0.25} \\times 100\\% = 100\\%\n\\]\n\n### Final Answer:\n\nIt is **100% more likely** that Jerry rolls a number greater than 3 than rolls two even numbers in a row.\n\n#### 100\n",
+    "predicted_answer": "100",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      23,
+      17,
+      30,
+      18,
+      18,
+      12,
+      13,
+      13,
+      21,
+      20,
+      36,
+      20,
+      9
+    ],
+    "ttfb_seconds": 0.3459741129999827,
+    "tbb_seconds": [
+      0.2887529410000127,
+      0.20669722899998533,
+      0.5169107590000124,
+      0.218715933999988,
+      0.3719336290000115,
+      0.14748690599998326,
+      0.31171574700002225,
+      0.16366415699999948,
+      0.22931003200000077,
+      0.4052093629999831,
+      0.4039118999999971,
+      0.4080985880000014,
+      0.11077746600000182
+    ],
+    "dllm_block_completion_latencies": [
+      0.3459741129999827,
+      0.2887529410000127,
+      0.20669722899998533,
+      0.5169107590000124,
+      0.218715933999988,
+      0.3719336290000115,
+      0.14748690599998326,
+      0.31171574700002225,
+      0.16366415699999948,
+      0.22931003200000077,
+      0.4052093629999831,
+      0.4039118999999971,
+      0.4080985880000014,
+      0.11077746600000182
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      23,
+      17,
+      30,
+      18,
+      18,
+      12,
+      13,
+      13,
+      21,
+      20,
+      36,
+      20,
+      9
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 24.75821565200002,
+    "first_new_token_ttfb_seconds": 24.75821565200002,
+    "block_ttfb_seconds": 24.75821565200002,
+    "tbb_seconds": [
+      0.28945411499998386,
+      0.2062701400000151,
+      0.5181444749999855,
+      0.21741860700001325,
+      0.3740229019999788,
+      0.14511135100002548,
+      0.3122390999999993,
+      0.16784449599998652,
+      0.22464043700000502,
+      0.407103482999986,
+      0.4022149350000177,
+      0.40828079499999603,
+      0.11216713499999287
+    ],
+    "block_arrival_elapsed_seconds": [
+      24.75821565200002,
+      25.047669767000002,
+      25.253939907000017,
+      25.772084382000003,
+      25.989502989000016,
+      26.363525890999995,
+      26.50863724200002,
+      26.82087634200002,
+      26.988720838000006,
+      27.21336127500001,
+      27.620464757999997,
+      28.022679693000015,
+      28.43096048800001,
+      28.543127623000004
+    ],
+    "e2e_seconds": 28.543193821000017
+  },
+  "token_metrics": {
+    "prompt_tokens": 731,
+    "completion_tokens": 390,
+    "total_tokens": 1121,
+    "end_to_end_tokens_per_second": 39.27381101883733,
+    "total_tokens_per_second": 39.27381101883733,
+    "completion_tokens_per_second": 13.663502495402817,
+    "tokens_after_first_block": 385,
+    "generated_tokens_per_second_after_first_block": 101.71789183706653
+  },
+  "final_meta_info": {
+    "id": "2233f0f3eb6e482e855942d2c04e19a7",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 731,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 390,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      23,
+      17,
+      30,
+      18,
+      18,
+      12,
+      13,
+      13,
+      21,
+      20,
+      36,
+      20,
+      9
+    ],
+    "dllm_block_completion_latencies": [
+      0.3459741129999827,
+      0.2887529410000127,
+      0.20669722899998533,
+      0.5169107590000124,
+      0.218715933999988,
+      0.3719336290000115,
+      0.14748690599998326,
+      0.31171574700002225,
+      0.16366415699999948,
+      0.22931003200000077,
+      0.4052093629999831,
+      0.4039118999999971,
+      0.4080985880000014,
+      0.11077746600000182
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.273500804999998
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 24.75821565200002,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.3459741129999827
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n### Step ",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874471.7017596
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 25.047669767000002,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2887529410000127
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4,",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 25.253939907000017,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.20669722899998533
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 25.772084382000003,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5169107590000124
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 25.989502989000016,
+      "output_token_count": 133,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.218715933999988
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 133,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 26.363525890999995,
+      "output_token_count": 165,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.3719336290000115
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 165,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 26.50863724200002,
+      "output_token_count": 197,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.14748690599998326
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens})",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 197,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 26.82087634200002,
+      "output_token_count": 229,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.31171574700002225
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\n",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 229,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 26.988720838000006,
+      "output_token_count": 261,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.16366415699999948
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\n",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 261,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225,
+          0.16366415699999948
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 27.21336127500001,
+      "output_token_count": 293,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.22931003200000077
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\nDifference in probability:\n\n\\[\n0.5 - 0.25 = 0.25\n\\]\n\nNow, express this difference",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 293,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13,
+          13,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225,
+          0.16366415699999948,
+          0.22931003200000077
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 27.620464757999997,
+      "output_token_count": 325,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.4052093629999831
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\nDifference in probability:\n\n\\[\n0.5 - 0.25 = 0.25\n\\]\n\nNow, express this difference as a **percentage relative to the probability of rolling two evens**:\n\n\\[\n\\text{More likely} = \\frac{0.25}{",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 325,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13,
+          13,
+          21,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225,
+          0.16366415699999948,
+          0.22931003200000077,
+          0.4052093629999831
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 28.022679693000015,
+      "output_token_count": 357,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.4039118999999971
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\nDifference in probability:\n\n\\[\n0.5 - 0.25 = 0.25\n\\]\n\nNow, express this difference as a **percentage relative to the probability of rolling two evens**:\n\n\\[\n\\text{More likely} = \\frac{0.25}{0.25} \\times 100\\% = 100\\%\n\\]\n\n### Final Answer:\n\nIt is **1",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 357,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13,
+          13,
+          21,
+          20,
+          36
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225,
+          0.16366415699999948,
+          0.22931003200000077,
+          0.4052093629999831,
+          0.4039118999999971
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 28.43096048800001,
+      "output_token_count": 389,
+      "new_output_tokens": 32,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.4080985880000014
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\nDifference in probability:\n\n\\[\n0.5 - 0.25 = 0.25\n\\]\n\nNow, express this difference as a **percentage relative to the probability of rolling two evens**:\n\n\\[\n\\text{More likely} = \\frac{0.25}{0.25} \\times 100\\% = 100\\%\n\\]\n\n### Final Answer:\n\nIt is **100% more likely** that Jerry rolls a number greater than 3 than rolls two even numbers in a row.\n\n#### 100\n",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 389,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13,
+          13,
+          21,
+          20,
+          36,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225,
+          0.16366415699999948,
+          0.22931003200000077,
+          0.4052093629999831,
+          0.4039118999999971,
+          0.4080985880000014
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 13,
+      "elapsed_seconds": 28.543127623000004,
+      "output_token_count": 390,
+      "new_output_tokens": 1,
+      "block_metric_count": 14,
+      "new_block_latencies": [
+        0.11077746600000182
+      ],
+      "forward_count_metric_count": 14,
+      "text": "\n\n### Step 1: Probability of rolling a number greater than 3\n\nA six-sided die has outcomes: 1, 2, 3, 4, 5, 6.\n\nNumbers greater than 3: 4, 5, 6 → 3 outcomes.\n\nSo, probability of rolling a number greater than 3:\n\n\\[\nP(\\text{>3}) = \\frac{3}{6} = 0.5\n\\]\n\n### Step 2: Probability of rolling two even numbers in a row\n\nEven numbers on a die: 2, 4, 6 → 3 outcomes.\n\nProbability of rolling an even number on one roll:\n\n\\[\nP(\\text{even}) = \\frac{3}{6} = 0.5\n\\]\n\nFor two independent rolls:\n\n\\[\nP(\\text{two evens}) = 0.5 \\times 0.5 = 0.25\n\\]\n\n### Step 3: Compare the two probabilities\n\nWe want to find how much **more likely** it is to roll a number greater than 3 than to roll two even numbers in a row.\n\nDifference in probability:\n\n\\[\n0.5 - 0.25 = 0.25\n\\]\n\nNow, express this difference as a **percentage relative to the probability of rolling two evens**:\n\n\\[\n\\text{More likely} = \\frac{0.25}{0.25} \\times 100\\% = 100\\%\n\\]\n\n### Final Answer:\n\nIt is **100% more likely** that Jerry rolls a number greater than 3 than rolls two even numbers in a row.\n\n#### 100\n",
+      "meta_info": {
+        "id": "2233f0f3eb6e482e855942d2c04e19a7",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 390,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          23,
+          17,
+          30,
+          18,
+          18,
+          12,
+          13,
+          13,
+          21,
+          20,
+          36,
+          20,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.3459741129999827,
+          0.2887529410000127,
+          0.20669722899998533,
+          0.5169107590000124,
+          0.218715933999988,
+          0.3719336290000115,
+          0.14748690599998326,
+          0.31171574700002225,
+          0.16366415699999948,
+          0.22931003200000077,
+          0.4052093629999831,
+          0.4039118999999971,
+          0.4080985880000014,
+          0.11077746600000182
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.273500804999998
+      }
+    }
+  ]
+}

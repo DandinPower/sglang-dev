@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 58,
+  "eval_index": 58,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.800000000000001,
+  "request_start_realtime": "2026-05-27T09:39:43.631",
+  "benchmark": {
+    "question": "Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?",
+    "gold_solution": "He spent $40.00 on groceries but they charged him a 25% fee so that's 40*.25 = $10.00\nThere is also a $3.00 delivery fee and a $4.00 tip for an extra $3 + $4 = $<<3+4=7.00>>7.00 in fees\nHis groceries were $40.00, there's a $10.00 fee plus another $7.00 in delivery/tip fees for a final total of $40 + $10 + $7 = $<<40+10+7=57.00>>57.00\n#### 57",
+    "gold_answer": "57",
+    "model_text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost was $26.40.\n\nBut the question is: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nThe final bill is already $40.00, which includes all fees.\n\nSo the final price of Stephen's groceries, including all extra fees and tip, is $40.00.\n\nAnswer: $40.00\n\nBut let's double-check the question: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nYes — the final bill is $40.00, and it includes the fee and tip.\n\nSo the final price is $40.00.\n\n#### 40",
+    "predicted_answer": "40",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      11,
+      13,
+      19,
+      7,
+      6,
+      5,
+      3,
+      4,
+      6,
+      13,
+      9,
+      4,
+      6
+    ],
+    "ttfb_seconds": 0.6887777040000174,
+    "tbb_seconds": [
+      0.8786943069999893,
+      0.8651384439999958,
+      0.47835381300001245,
+      0.2797256669999797,
+      0.063365282999996,
+      0.21233885300000566,
+      0.09762596100000565,
+      0.45056242900000143,
+      0.42958639799999787,
+      0.3697781490000125,
+      0.08308826100000033,
+      0.34612322799998196
+    ],
+    "dllm_block_completion_latencies": [
+      0.6887777040000174,
+      0.8786943069999893,
+      0.8651384439999958,
+      0.47835381300001245,
+      0.2797256669999797,
+      0.063365282999996,
+      0.21233885300000566,
+      0.09762596100000565,
+      0.45056242900000143,
+      0.42958639799999787,
+      0.3697781490000125,
+      0.08308826100000033,
+      0.34612322799998196
+    ],
+    "dllm_forward_counts_per_block": [
+      11,
+      13,
+      19,
+      7,
+      6,
+      5,
+      3,
+      4,
+      6,
+      13,
+      9,
+      4,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 11.162934442999983,
+    "first_new_token_ttfb_seconds": 11.162934442999983,
+    "block_ttfb_seconds": 11.162934442999983,
+    "tbb_seconds": [
+      0.8784600730000136,
+      0.8652456029999769,
+      0.47862684700001523,
+      0.2795469490000073,
+      0.06324494699998695,
+      0.21185216200001378,
+      0.099036773999984,
+      0.45116541300001245,
+      0.42750383699998906,
+      0.3708722009999974,
+      0.08324586899999531,
+      0.345660305000024
+    ],
+    "block_arrival_elapsed_seconds": [
+      11.162934442999983,
+      12.041394515999997,
+      12.906640118999974,
+      13.385266965999989,
+      13.664813914999996,
+      13.728058861999983,
+      13.939911023999997,
+      14.038947797999981,
+      14.490113210999993,
+      14.917617047999983,
+      15.28848924899998,
+      15.371735117999975,
+      15.717395423
+    ],
+    "e2e_seconds": 15.71753177299999
+  },
+  "token_metrics": {
+    "prompt_tokens": 774,
+    "completion_tokens": 407,
+    "total_tokens": 1181,
+    "end_to_end_tokens_per_second": 75.13902418373057,
+    "total_tokens_per_second": 75.13902418373057,
+    "completion_tokens_per_second": 25.894651009973195,
+    "tokens_after_first_block": 381,
+    "generated_tokens_per_second_after_first_block": 83.6517418324661
+  },
+  "final_meta_info": {
+    "id": "b931c9f0dc794b99a96845bd762021b9",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 774,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 407,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      11,
+      13,
+      19,
+      7,
+      6,
+      5,
+      3,
+      4,
+      6,
+      13,
+      9,
+      4,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.6887777040000174,
+      0.8786943069999893,
+      0.8651384439999958,
+      0.47835381300001245,
+      0.2797256669999797,
+      0.063365282999996,
+      0.21233885300000566,
+      0.09762596100000565,
+      0.45056242900000143,
+      0.42958639799999787,
+      0.3697781490000125,
+      0.08308826100000033,
+      0.34612322799998196
+    ],
+    "dp_rank": null,
+    "e2e_latency": 5.255220648000005
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 11.162934442999983,
+      "output_token_count": 26,
+      "new_output_tokens": 26,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.6887777040000174
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 26,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874794.7939608
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 12.041394515999997,
+      "output_token_count": 58,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.8786943069999893
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 58,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 12.906640118999974,
+      "output_token_count": 90,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.8651384439999958
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 90,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 13.385266965999989,
+      "output_token_count": 122,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.47835381300001245
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee:",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 13.664813914999996,
+      "output_token_count": 154,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.2797256669999797
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 154,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 13.728058861999983,
+      "output_token_count": 186,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.063365282999996
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 +",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 186,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 13.939911023999997,
+      "output_token_count": 218,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.21233885300000566
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 -",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 218,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 14.038947797999981,
+      "output_token_count": 250,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.09762596100000565
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 250,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566,
+          0.09762596100000565
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 14.490113210999993,
+      "output_token_count": 282,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.45056242900000143
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost was $26.40.\n\nBut the question is: \"After the extra fees, what was the final price of Stephen's groceries?\"\n",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 282,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3,
+          4,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566,
+          0.09762596100000565,
+          0.45056242900000143
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 14.917617047999983,
+      "output_token_count": 314,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.42958639799999787
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost was $26.40.\n\nBut the question is: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nThe final bill is already $40.00, which includes all fees.\n\nSo the final price of Stephen's groceries, including all extra",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 314,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3,
+          4,
+          6,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566,
+          0.09762596100000565,
+          0.45056242900000143,
+          0.42958639799999787
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 15.28848924899998,
+      "output_token_count": 346,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.3697781490000125
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost was $26.40.\n\nBut the question is: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nThe final bill is already $40.00, which includes all fees.\n\nSo the final price of Stephen's groceries, including all extra fees and tip, is $40.00.\n\nAnswer: $40.00\n\nBut let's double-check the question:",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 346,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3,
+          4,
+          6,
+          13,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566,
+          0.09762596100000565,
+          0.45056242900000143,
+          0.42958639799999787,
+          0.3697781490000125
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 15.371735117999975,
+      "output_token_count": 378,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.08308826100000033
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost was $26.40.\n\nBut the question is: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nThe final bill is already $40.00, which includes all fees.\n\nSo the final price of Stephen's groceries, including all extra fees and tip, is $40.00.\n\nAnswer: $40.00\n\nBut let's double-check the question: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nYes — the final bill is $40.00, and",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 378,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3,
+          4,
+          6,
+          13,
+          9,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566,
+          0.09762596100000565,
+          0.45056242900000143,
+          0.42958639799999787,
+          0.3697781490000125,
+          0.08308826100000033
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 15.717395423,
+      "output_token_count": 407,
+      "new_output_tokens": 29,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.34612322799998196
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\nFirst, we need to calculate the 25% fee on the original grocery cost.\n\nBut the fee of 25% is applied to the original bill amount, and the final bill is $40.00, which includes the fee and delivery fee.\n\nWait — let's re-express the problem to clarify what's happening.\n\nWe know:\n\nLet’s denote the original cost of the groceries as C.\n\nThen:\n- A 25% delivery fee is added: 0.25 × C\n- Delivery fee: $3.00\n- Tip: $4.00\n\nFinal bill = Original cost + 0.25C + 3.00 + 4.00 = 40.00\n\nSo:\nC + 0.25C + 3 + 4 = 40  \n1.25C + 7 = 40  \n1.25C = 40 - 7 = 33  \nC = 33 / 1.25 = 26.4\n\nSo the original cost cost was $26.40.\n\nBut the question is: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nThe final bill is already $40.00, which includes all fees.\n\nSo the final price of Stephen's groceries, including all extra fees and tip, is $40.00.\n\nAnswer: $40.00\n\nBut let's double-check the question: \"After the extra fees, what was the final price of Stephen's groceries?\"\n\nYes — the final bill is $40.00, and it includes the fee and tip.\n\nSo the final price is $40.00.\n\n#### 40",
+      "meta_info": {
+        "id": "b931c9f0dc794b99a96845bd762021b9",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 407,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          13,
+          19,
+          7,
+          6,
+          5,
+          3,
+          4,
+          6,
+          13,
+          9,
+          4,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.6887777040000174,
+          0.8786943069999893,
+          0.8651384439999958,
+          0.47835381300001245,
+          0.2797256669999797,
+          0.063365282999996,
+          0.21233885300000566,
+          0.09762596100000565,
+          0.45056242900000143,
+          0.42958639799999787,
+          0.3697781490000125,
+          0.08308826100000033,
+          0.34612322799998196
+        ],
+        "dp_rank": null,
+        "e2e_latency": 5.255220648000005
+      }
+    }
+  ]
+}

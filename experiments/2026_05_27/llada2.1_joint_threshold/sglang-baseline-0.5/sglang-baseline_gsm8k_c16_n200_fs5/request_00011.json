@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 11,
+  "eval_index": 11,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost $68 per dozen, 2 dozen mini cupcakes which cost $80 per dozen, and 6 dozen mini cheesecakes for $55 per dozen. How much was the total cost?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost $68 per dozen, 2 dozen mini cupcakes which cost $80 per dozen, and 6 dozen mini cheesecakes for $55 per dozen. How much was the total cost?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.1,
+  "request_start_realtime": "2026-05-27T09:34:38.326",
+  "benchmark": {
+    "question": "Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost $68 per dozen, 2 dozen mini cupcakes which cost $80 per dozen, and 6 dozen mini cheesecakes for $55 per dozen. How much was the total cost?",
+    "gold_solution": "The total charge for the doughnuts was 3 x $68 = $<<3*68=204>>204.\nThe total charge for the mini cupcakes was 2 x $80 = $<<2*80=160>>160.\nThe total charge for the mini cheesecakes was 6 x $55 = $<<6*55=330>>330.\nTherefore the total amount Toula paid for the pastries was $204 + $160 + $330 = $<<204+160+330=694>>694.\n#### 694",
+    "gold_answer": "694",
+    "model_text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of mini cheesecakes**:\n   - She bought 6 dozen mini cheesecakes.\n   - Each dozen costs $55.\n   - So, total cost for cheesecakes = 6 × $55 = $330.\n\n4. **Total cost**:\n   - Add all the costs together:\n   - $204 (donuts) + $160 (cupcakes) + $330 (cheesecakes) = $694.\n\nSo, the total cost is $694.\n\nAnswer: 694",
+    "predicted_answer": "694",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      18,
+      13,
+      23,
+      18,
+      21,
+      9,
+      10,
+      15,
+      12
+    ],
+    "ttfb_seconds": 0.8741902160000166,
+    "tbb_seconds": [
+      0.23023598799997558,
+      0.3933960380000201,
+      0.3076229049999881,
+      0.5531553449999933,
+      0.1593145120000088,
+      0.3630762479999987,
+      0.2303934950000155,
+      0.462419782999973
+    ],
+    "dllm_block_completion_latencies": [
+      0.8741902160000166,
+      0.23023598799997558,
+      0.3933960380000201,
+      0.3076229049999881,
+      0.5531553449999933,
+      0.1593145120000088,
+      0.3630762479999987,
+      0.2303934950000155,
+      0.462419782999973
+    ],
+    "dllm_forward_counts_per_block": [
+      18,
+      13,
+      23,
+      18,
+      21,
+      9,
+      10,
+      15,
+      12
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.880019228000009,
+    "first_new_token_ttfb_seconds": 0.880019228000009,
+    "block_ttfb_seconds": 0.880019228000009,
+    "tbb_seconds": [
+      0.23123438199999669,
+      0.3930819689999794,
+      0.30764793500000565,
+      0.5544232850000128,
+      0.1580468450000012,
+      0.36733917000000815,
+      0.22855547599999682,
+      0.4595681399999876
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.880019228000009,
+      1.1112536100000057,
+      1.504335578999985,
+      1.8119835139999907,
+      2.3664067990000035,
+      2.5244536440000047,
+      2.891792814000013,
+      3.1203482900000097,
+      3.5799164299999973
+    ],
+    "e2e_seconds": 3.579973795000001
+  },
+  "token_metrics": {
+    "prompt_tokens": 752,
+    "completion_tokens": 241,
+    "total_tokens": 993,
+    "end_to_end_tokens_per_second": 277.37633202424036,
+    "total_tokens_per_second": 277.37633202424036,
+    "completion_tokens_per_second": 67.31892851746417,
+    "tokens_after_first_block": 225,
+    "generated_tokens_per_second_after_first_block": 83.33473561001617
+  },
+  "final_meta_info": {
+    "id": "49a4495733934315a2a704d32e0f559a",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 752,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 241,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      18,
+      13,
+      23,
+      18,
+      21,
+      9,
+      10,
+      15,
+      12
+    ],
+    "dllm_block_completion_latencies": [
+      0.8741902160000166,
+      0.23023598799997558,
+      0.3933960380000201,
+      0.3076229049999881,
+      0.5531553449999933,
+      0.1593145120000088,
+      0.3630762479999987,
+      0.2303934950000155,
+      0.462419782999973
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.577860895000015
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.880019228000009,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.8741902160000166
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought ",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874479.2063403
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.1112536100000057,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.23023598799997558
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 1.504335578999985,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3933960380000201
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 1.8119835139999907,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3076229049999881
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201,
+          0.3076229049999881
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.3664067990000035,
+      "output_token_count": 144,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5531553449999933
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of mini cheesecakes**:\n   - She bought 6 dozen mini cheesecakes.\n   - Each dozen costs $55.\n   - So",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23,
+          18,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201,
+          0.3076229049999881,
+          0.5531553449999933
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.5244536440000047,
+      "output_token_count": 176,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.1593145120000088
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of mini cheesecakes**:\n   - She bought 6 dozen mini cheesecakes.\n   - Each dozen costs $55.\n   - So, total cost for cheesecakes = 6 × $55 = $330.\n\n4. **Total cost**:\n   - Add",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23,
+          18,
+          21,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201,
+          0.3076229049999881,
+          0.5531553449999933,
+          0.1593145120000088
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 2.891792814000013,
+      "output_token_count": 208,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.3630762479999987
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of mini cheesecakes**:\n   - She bought 6 dozen mini cheesecakes.\n   - Each dozen costs $55.\n   - So, total cost for cheesecakes = 6 × $55 = $330.\n\n4. **Total cost**:\n   - Add all the costs together:\n   - $204 (donuts) + $160 (cupcakes) + $330 (che",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23,
+          18,
+          21,
+          9,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201,
+          0.3076229049999881,
+          0.5531553449999933,
+          0.1593145120000088,
+          0.3630762479999987
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 3.1203482900000097,
+      "output_token_count": 240,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.2303934950000155
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of mini cheesecakes**:\n   - She bought 6 dozen mini cheesecakes.\n   - Each dozen costs $55.\n   - So, total cost for cheesecakes = 6 × $55 = $330.\n\n4. **Total cost**:\n   - Add all the costs together:\n   - $204 (donuts) + $160 (cupcakes) + $330 (cheesecakes) = $694.\n\nSo, the total cost is $694.\n\nAnswer: 694",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 240,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23,
+          18,
+          21,
+          9,
+          10,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201,
+          0.3076229049999881,
+          0.5531553449999933,
+          0.1593145120000088,
+          0.3630762479999987,
+          0.2303934950000155
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 3.5799164299999973,
+      "output_token_count": 241,
+      "new_output_tokens": 1,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.462419782999973
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. **Cost of donuts**:\n   - Toula bought 3 dozen donuts.\n   - Each dozen costs $68.\n   - So, total cost for donuts = 3 × $68 = $204.\n\n2. **Cost of mini cupcakes**:\n   - She bought 2 dozen mini cupcakes.\n   - Each dozen costs $80.\n   - So, total cost for cupcakes = 2 × $80 = $160.\n\n3. **Cost of mini cheesecakes**:\n   - She bought 6 dozen mini cheesecakes.\n   - Each dozen costs $55.\n   - So, total cost for cheesecakes = 6 × $55 = $330.\n\n4. **Total cost**:\n   - Add all the costs together:\n   - $204 (donuts) + $160 (cupcakes) + $330 (cheesecakes) = $694.\n\nSo, the total cost is $694.\n\nAnswer: 694",
+      "meta_info": {
+        "id": "49a4495733934315a2a704d32e0f559a",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 241,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          13,
+          23,
+          18,
+          21,
+          9,
+          10,
+          15,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.8741902160000166,
+          0.23023598799997558,
+          0.3933960380000201,
+          0.3076229049999881,
+          0.5531553449999933,
+          0.1593145120000088,
+          0.3630762479999987,
+          0.2303934950000155,
+          0.462419782999973
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.577860895000015
+      }
+    }
+  ]
+}

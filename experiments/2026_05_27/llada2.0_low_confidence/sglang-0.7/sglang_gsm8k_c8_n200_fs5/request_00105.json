@@ -1,0 +1,202 @@
+{
+  "ok": true,
+  "request_index": 105,
+  "eval_index": 105,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Cody eats three times as many cookies as Amir eats. If Amir eats 5 cookies, how many cookies do both of them eat together?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Cody eats three times as many cookies as Amir eats. If Amir eats 5 cookies, how many cookies do both of them eat together?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 10.5,
+  "request_start_realtime": "2026-05-27T08:59:00.295",
+  "benchmark": {
+    "question": "Cody eats three times as many cookies as Amir eats. If Amir eats 5 cookies, how many cookies do both of them eat together?",
+    "gold_solution": "Cody eats 5*3 = <<5*3=15>>15 cookies.\nCody and Amir eat 15+5 = <<15+5=20>>20 cookies together.\n#### 20",
+    "gold_answer": "20",
+    "model_text": "\n\n1. Amir eats 5 cookies.\n2. Cody eats three times as many cookies as Amir:  \n   3 * 5 = 15 cookies.\n3. Together, they eat:  \n   5 (Amir) + 15 (Cody) = 20 cookies.\n\n20",
+    "predicted_answer": "20",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      6,
+      13,
+      7
+    ],
+    "ttfb_seconds": 0.2868636409999681,
+    "tbb_seconds": [
+      0.24481936800003723,
+      0.2969652559999645
+    ],
+    "dllm_block_completion_latencies": [
+      0.2868636409999681,
+      0.24481936800003723,
+      0.2969652559999645
+    ],
+    "dllm_forward_counts_per_block": [
+      6,
+      13,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 19.72955947300005,
+    "first_new_token_ttfb_seconds": 19.72955947300005,
+    "block_ttfb_seconds": 19.72955947300005,
+    "tbb_seconds": [
+      0.2450760579999951,
+      0.29725826999998617
+    ],
+    "block_arrival_elapsed_seconds": [
+      19.72955947300005,
+      19.974635531000047,
+      20.271893801000033
+    ],
+    "e2e_seconds": 20.27196754800002
+  },
+  "token_metrics": {
+    "prompt_tokens": 719,
+    "completion_tokens": 74,
+    "total_tokens": 793,
+    "end_to_end_tokens_per_second": 39.11805788571496,
+    "total_tokens_per_second": 39.11805788571496,
+    "completion_tokens_per_second": 3.650361013294965,
+    "tokens_after_first_block": 57,
+    "generated_tokens_per_second_after_first_block": 105.08693108966578
+  },
+  "final_meta_info": {
+    "id": "2a930040b33c43f881d639c0e017c257",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 719,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 74,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      6,
+      13,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.2868636409999681,
+      0.24481936800003723,
+      0.2969652559999645
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.8331352299999821
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 19.72955947300005,
+      "output_token_count": 17,
+      "new_output_tokens": 17,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2868636409999681
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Amir eats 5 cookies.\n2. Cody eats three times",
+      "meta_info": {
+        "id": "2a930040b33c43f881d639c0e017c257",
+        "finish_reason": null,
+        "prompt_tokens": 719,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 17,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2868636409999681
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872360.024866
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 19.974635531000047,
+      "output_token_count": 49,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.24481936800003723
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Amir eats 5 cookies.\n2. Cody eats three times as many cookies as Amir:  \n   3 * 5 = 15 cookies.\n3. Together, they eat:  \n   ",
+      "meta_info": {
+        "id": "2a930040b33c43f881d639c0e017c257",
+        "finish_reason": null,
+        "prompt_tokens": 719,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 49,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.2868636409999681,
+          0.24481936800003723
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 20.271893801000033,
+      "output_token_count": 74,
+      "new_output_tokens": 25,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2969652559999645
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Amir eats 5 cookies.\n2. Cody eats three times as many cookies as Amir:  \n   3 * 5 = 15 cookies.\n3. Together, they eat:  \n   5 (Amir) + 15 (Cody) = 20 cookies.\n\n20",
+      "meta_info": {
+        "id": "2a930040b33c43f881d639c0e017c257",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 719,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.2868636409999681,
+          0.24481936800003723,
+          0.2969652559999645
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.8331352299999821
+      }
+    }
+  ]
+}

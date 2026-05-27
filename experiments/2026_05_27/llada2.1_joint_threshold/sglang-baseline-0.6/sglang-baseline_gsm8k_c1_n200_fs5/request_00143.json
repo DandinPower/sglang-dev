@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 143,
+  "eval_index": 143,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John buys milk for 2 dollars, eggs for 3 dollars, light bulbs for 3 dollars, cups for 3 dollars, and roach traps for 4 dollars.  If there is a 10% tax on all nonfood items how much did everything cost.\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John buys milk for 2 dollars, eggs for 3 dollars, light bulbs for 3 dollars, cups for 3 dollars, and roach traps for 4 dollars.  If there is a 10% tax on all nonfood items how much did everything cost.\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 14.3,
+  "request_start_realtime": "2026-05-27T09:34:11.836",
+  "benchmark": {
+    "question": "John buys milk for 2 dollars, eggs for 3 dollars, light bulbs for 3 dollars, cups for 3 dollars, and roach traps for 4 dollars.  If there is a 10% tax on all nonfood items how much did everything cost.",
+    "gold_solution": "The foodstuff cost 2+3=$<<2+3=5>>5\nThe nonfood stuff comes out to 3+3+4=$<<3+3+4=10>>10\nTax on the nonfood stuff comes out to 10*.1=$<<10*.1=1>>1\nSo the total cost is 5+10+1=$<<5+10+1=16>>16\n#### 16",
+    "gold_answer": "16",
+    "model_text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 * 10 = 1 dollar\n\nSo, tax amount = 1 dollar\n\nNow, add the tax to the original nonfood cost:\nTotal nonfood cost with tax = 10 + 1 = 11 dollars\n\nNow, add the cost of food items (milk and cups):\n- Milk: 2\n- Cups: 3 dollars\nTotal food cost = 2 + 3 = 5 dollars\n\nNow, total cost of everything = nonfood cost with tax + food cost\n= 11 + 5 = 16 dollars\n\n#### 16",
+    "predicted_answer": "16",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      12,
+      4,
+      10,
+      3,
+      6,
+      13,
+      7,
+      6,
+      9,
+      2
+    ],
+    "ttfb_seconds": 0.22786093199999868,
+    "tbb_seconds": [
+      0.02577163899999846,
+      0.06492361099998334,
+      0.02553326900002162,
+      0.043152996999992865,
+      0.0877106920000017,
+      0.05095408500000076,
+      0.03944309599998519,
+      0.057483865000023115,
+      0.010912257000001091
+    ],
+    "dllm_block_completion_latencies": [
+      0.22786093199999868,
+      0.02577163899999846,
+      0.06492361099998334,
+      0.02553326900002162,
+      0.043152996999992865,
+      0.0877106920000017,
+      0.05095408500000076,
+      0.03944309599998519,
+      0.057483865000023115,
+      0.010912257000001091
+    ],
+    "dllm_forward_counts_per_block": [
+      12,
+      4,
+      10,
+      3,
+      6,
+      13,
+      7,
+      6,
+      9,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 61.168612259000014,
+    "first_new_token_ttfb_seconds": 61.168612259000014,
+    "block_ttfb_seconds": 61.168612259000014,
+    "tbb_seconds": [
+      0.025734932000005983,
+      0.06562552200000482,
+      0.030455164999978024,
+      0.038516264999998384,
+      0.09067523000001643,
+      0.05279025799998749,
+      0.03404461600001696,
+      0.05665547199998855,
+      0.01179933599999572
+    ],
+    "block_arrival_elapsed_seconds": [
+      61.168612259000014,
+      61.19434719100002,
+      61.259972713000025,
+      61.290427878,
+      61.328944143,
+      61.41961937300002,
+      61.472409631000005,
+      61.50645424700002,
+      61.56310971900001,
+      61.574909055000006
+    ],
+    "e2e_seconds": 61.57505409000001
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 279,
+    "total_tokens": 1026,
+    "end_to_end_tokens_per_second": 16.66259194024201,
+    "total_tokens_per_second": 16.66259194024201,
+    "completion_tokens_per_second": 4.531055703048266,
+    "tokens_after_first_block": 258,
+    "generated_tokens_per_second_after_first_block": 634.7771816823724
+  },
+  "final_meta_info": {
+    "id": "07b19f105f674cc9a94c9c80dd081f00",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 279,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      12,
+      4,
+      10,
+      3,
+      6,
+      13,
+      7,
+      6,
+      9,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.22786093199999868,
+      0.02577163899999846,
+      0.06492361099998334,
+      0.02553326900002162,
+      0.043152996999992865,
+      0.0877106920000017,
+      0.05095408500000076,
+      0.03944309599998519,
+      0.057483865000023115,
+      0.010912257000001091
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.6389627350000069
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 61.168612259000014,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.22786093199999868
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (non",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874513.0051262
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 61.19434719100002,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.02577163899999846
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 61.259972713000025,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.06492361099998334
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 61.290427878,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.02553326900002162
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 1",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 61.328944143,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.043152996999992865
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 *",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162,
+          0.043152996999992865
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 61.41961937300002,
+      "output_token_count": 181,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.0877106920000017
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 * 10 = 1 dollar\n\nSo, tax amount = 1 dollar\n\nNow, add the tax to the original nonfood cost:\n",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3,
+          6,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162,
+          0.043152996999992865,
+          0.0877106920000017
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 61.472409631000005,
+      "output_token_count": 213,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.05095408500000076
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 * 10 = 1 dollar\n\nSo, tax amount = 1 dollar\n\nNow, add the tax to the original nonfood cost:\nTotal nonfood cost with tax = 10 + 1 = 11 dollars\n\nNow, add the cost of food items (milk and cups",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 213,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3,
+          6,
+          13,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162,
+          0.043152996999992865,
+          0.0877106920000017,
+          0.05095408500000076
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 61.50645424700002,
+      "output_token_count": 245,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.03944309599998519
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 * 10 = 1 dollar\n\nSo, tax amount = 1 dollar\n\nNow, add the tax to the original nonfood cost:\nTotal nonfood cost with tax = 10 + 1 = 11 dollars\n\nNow, add the cost of food items (milk and cups):\n- Milk: 2\n- Cups: 3 dollars\nTotal food cost = 2 + 3 = 5 dollars\n\nNow,",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 245,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3,
+          6,
+          13,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162,
+          0.043152996999992865,
+          0.0877106920000017,
+          0.05095408500000076,
+          0.03944309599998519
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 61.56310971900001,
+      "output_token_count": 277,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.057483865000023115
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 * 10 = 1 dollar\n\nSo, tax amount = 1 dollar\n\nNow, add the tax to the original nonfood cost:\nTotal nonfood cost with tax = 10 + 1 = 11 dollars\n\nNow, add the cost of food items (milk and cups):\n- Milk: 2\n- Cups: 3 dollars\nTotal food cost = 2 + 3 = 5 dollars\n\nNow, total cost of everything = nonfood cost with tax + food cost\n= 11 + 5 = 16 dollars\n\n#### 16",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 277,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3,
+          6,
+          13,
+          7,
+          6,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162,
+          0.043152996999992865,
+          0.0877106920000017,
+          0.05095408500000076,
+          0.03944309599998519,
+          0.057483865000023115
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 61.574909055000006,
+      "output_token_count": 279,
+      "new_output_tokens": 2,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.010912257000001091
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nFirst, identify which items are nonfood items:\n- Eggs: 3 dollars (nonfood)\n- Light bulbs: 3 dollars (nonfood)\n- Roach traps: 4 dollars (nonfood)\n\nMilk and cups are food items, so they are not subject to tax.\n\nNow, calculate the total cost of nonfood items:\n- Eggs: 3\n- Light bulbs: 3\n- Roach traps: 4\nTotal nonfood cost = 3 + 3 + 4 = 10 dollars\n\nNow apply the 10% tax on nonfood items:\n10% of 10 = 0.10 * 10 = 1 dollar\n\nSo, tax amount = 1 dollar\n\nNow, add the tax to the original nonfood cost:\nTotal nonfood cost with tax = 10 + 1 = 11 dollars\n\nNow, add the cost of food items (milk and cups):\n- Milk: 2\n- Cups: 3 dollars\nTotal food cost = 2 + 3 = 5 dollars\n\nNow, total cost of everything = nonfood cost with tax + food cost\n= 11 + 5 = 16 dollars\n\n#### 16",
+      "meta_info": {
+        "id": "07b19f105f674cc9a94c9c80dd081f00",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 279,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          12,
+          4,
+          10,
+          3,
+          6,
+          13,
+          7,
+          6,
+          9,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.22786093199999868,
+          0.02577163899999846,
+          0.06492361099998334,
+          0.02553326900002162,
+          0.043152996999992865,
+          0.0877106920000017,
+          0.05095408500000076,
+          0.03944309599998519,
+          0.057483865000023115,
+          0.010912257000001091
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.6389627350000069
+      }
+    }
+  ]
+}

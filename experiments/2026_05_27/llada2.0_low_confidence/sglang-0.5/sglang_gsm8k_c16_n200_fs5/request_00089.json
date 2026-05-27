@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "request_index": 89,
+  "eval_index": 89,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Christina is planning a birthday party and needs .75 gift bags per invited guest, because 1/4 of attendees don't show up. She invited 16 friends. Gift bags are $2 each. How much will she spend?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Christina is planning a birthday party and needs .75 gift bags per invited guest, because 1/4 of attendees don't show up. She invited 16 friends. Gift bags are $2 each. How much will she spend?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 8.9,
+  "request_start_realtime": "2026-05-27T10:03:36.016",
+  "benchmark": {
+    "question": "Christina is planning a birthday party and needs .75 gift bags per invited guest, because 1/4 of attendees don't show up. She invited 16 friends. Gift bags are $2 each. How much will she spend?",
+    "gold_solution": "She needs 12 gift bags because 16 x .75 = <<16*.75=12>>12\nShe will spend $24 because 12 x 2 = <<12*2=24>>24\n#### 24",
+    "gold_answer": "24",
+    "model_text": "\nChristina invited 16 friends. but 1/4 of them show up, so the number of attendees is 16 * (1 - 1/4) = 16 * 3/4 = 12 attendees\nChristina needs 0.75 gift bags per attend, so she needs 12 * 0.75 = 9 gift bags.\nEach gift bag costs $2, so the total cost is 9 * $2 = $18.\n#### #### 1",
+    "predicted_answer": "1",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      13,
+      8,
+      11,
+      6
+    ],
+    "ttfb_seconds": 0.9867597470000078,
+    "tbb_seconds": [
+      0.2542744890000108,
+      0.9169474450000052,
+      0.3567805129999897
+    ],
+    "dllm_block_completion_latencies": [
+      0.9867597470000078,
+      0.2542744890000108,
+      0.9169474450000052,
+      0.3567805129999897
+    ],
+    "dllm_forward_counts_per_block": [
+      13,
+      8,
+      11,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 12.707786829999975,
+    "first_new_token_ttfb_seconds": 12.707786829999975,
+    "block_ttfb_seconds": 12.707786829999975,
+    "tbb_seconds": [
+      0.25379649299998164,
+      0.9167328800000405,
+      0.3578192599999852
+    ],
+    "block_arrival_elapsed_seconds": [
+      12.707786829999975,
+      12.961583322999957,
+      13.878316202999997,
+      14.236135462999982
+    ],
+    "e2e_seconds": 14.236232216999952
+  },
+  "token_metrics": {
+    "prompt_tokens": 739,
+    "completion_tokens": 111,
+    "total_tokens": 850,
+    "end_to_end_tokens_per_second": 59.70680915031627,
+    "total_tokens_per_second": 59.70680915031627,
+    "completion_tokens_per_second": 7.797006841982478,
+    "tokens_after_first_block": 82,
+    "generated_tokens_per_second_after_first_block": 53.649283577576234
+  },
+  "final_meta_info": {
+    "id": "450862ef50db4d81af4bb6a4f54d86c0",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 739,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 111,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      13,
+      8,
+      11,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.9867597470000078,
+      0.2542744890000108,
+      0.9169474450000052,
+      0.3567805129999897
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.5392499289999932
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 12.707786829999975,
+      "output_token_count": 29,
+      "new_output_tokens": 29,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.9867597470000078
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\nChristina invited 16 friends. but 1/4 of them show up, so the number of attendees is 16 * (",
+      "meta_info": {
+        "id": "450862ef50db4d81af4bb6a4f54d86c0",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 29,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.9867597470000078
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876228.7237175
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 12.961583322999957,
+      "output_token_count": 61,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2542744890000108
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\nChristina invited 16 friends. but 1/4 of them show up, so the number of attendees is 16 * (1 - 1/4) = 16 * 3/4 = 12 attendees\nChristina needs 0.75 gift bags per",
+      "meta_info": {
+        "id": "450862ef50db4d81af4bb6a4f54d86c0",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 61,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.9867597470000078,
+          0.2542744890000108
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 13.878316202999997,
+      "output_token_count": 93,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.9169474450000052
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\nChristina invited 16 friends. but 1/4 of them show up, so the number of attendees is 16 * (1 - 1/4) = 16 * 3/4 = 12 attendees\nChristina needs 0.75 gift bags per attend, so she needs 12 * 0.75 = 9 gift bags.\nEach gift bag costs $2, so the total cost",
+      "meta_info": {
+        "id": "450862ef50db4d81af4bb6a4f54d86c0",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 93,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          8,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.9867597470000078,
+          0.2542744890000108,
+          0.9169474450000052
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 14.236135462999982,
+      "output_token_count": 111,
+      "new_output_tokens": 18,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3567805129999897
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\nChristina invited 16 friends. but 1/4 of them show up, so the number of attendees is 16 * (1 - 1/4) = 16 * 3/4 = 12 attendees\nChristina needs 0.75 gift bags per attend, so she needs 12 * 0.75 = 9 gift bags.\nEach gift bag costs $2, so the total cost is 9 * $2 = $18.\n#### #### 1",
+      "meta_info": {
+        "id": "450862ef50db4d81af4bb6a4f54d86c0",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          8,
+          11,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.9867597470000078,
+          0.2542744890000108,
+          0.9169474450000052,
+          0.3567805129999897
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.5392499289999932
+      }
+    }
+  ]
+}

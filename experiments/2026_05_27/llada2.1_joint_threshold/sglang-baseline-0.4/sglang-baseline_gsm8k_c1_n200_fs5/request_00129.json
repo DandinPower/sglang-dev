@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 129,
+  "eval_index": 129,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 12.9,
+  "request_start_realtime": "2026-05-27T09:37:42.236",
+  "benchmark": {
+    "question": "A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?",
+    "gold_solution": "The hospital sees patients for 500*24=<<500*24=12000>>12000 minutes a day\nThat means they see patients for 12000/60=<<12000/60=200>>200 hours a day\nThey profit 200-150=$<<200-150=50>>50 per hour\nSo they make a profit of 200 hours * $50/hour = $<<200*50=10000>>10000 a day from patient visits\n#### 10000",
+    "gold_answer": "10000",
+    "model_text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,000 per day.\n\nStep 3: Calculate the total cost to the hospital.\nThe doctors charge the hospital $150 per hour of service.\nTotal cost = 200 hours × $150/hour = $30,000 per day.\n\nStep 4: Calculate the profit.\nProfit = Revenue - Cost\nProfit = $40,000 - $30,000 = $10,000 per day.\n\nSo, the hospital makes a profit of $10,000 from day these visits.\n#### 10000",
+    "predicted_answer": "10000",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      6,
+      6,
+      6,
+      7,
+      7,
+      3,
+      5,
+      6,
+      2
+    ],
+    "ttfb_seconds": 0.18697537100001682,
+    "tbb_seconds": [
+      0.038743570000008276,
+      0.03927899599997886,
+      0.04067873400001076,
+      0.044793488000010484,
+      0.04704956199998378,
+      0.020606667999999217,
+      0.03137706800001183,
+      0.03878416599999923,
+      0.011675773999996863
+    ],
+    "dllm_block_completion_latencies": [
+      0.18697537100001682,
+      0.038743570000008276,
+      0.03927899599997886,
+      0.04067873400001076,
+      0.044793488000010484,
+      0.04704956199998378,
+      0.020606667999999217,
+      0.03137706800001183,
+      0.03878416599999923,
+      0.011675773999996863
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      6,
+      6,
+      7,
+      7,
+      3,
+      5,
+      6,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 53.86109189800001,
+    "first_new_token_ttfb_seconds": 53.86109189800001,
+    "block_ttfb_seconds": 53.86109189800001,
+    "tbb_seconds": [
+      0.03834981200000698,
+      0.03918599799999356,
+      0.040713684999985844,
+      0.04468888900001389,
+      0.04730937799999424,
+      0.019965525999992906,
+      0.031181756000023597,
+      0.03889041599998677,
+      0.01163417199998662
+    ],
+    "block_arrival_elapsed_seconds": [
+      53.86109189800001,
+      53.89944171000002,
+      53.93862770800001,
+      53.979341393,
+      54.02403028200001,
+      54.07133966000001,
+      54.091305186,
+      54.12248694200002,
+      54.16137735800001,
+      54.17301153
+    ],
+    "e2e_seconds": 54.173152595000005
+  },
+  "token_metrics": {
+    "prompt_tokens": 753,
+    "completion_tokens": 279,
+    "total_tokens": 1032,
+    "end_to_end_tokens_per_second": 19.050026638014973,
+    "total_tokens_per_second": 19.050026638014973,
+    "completion_tokens_per_second": 5.1501525503935826,
+    "tokens_after_first_block": 264,
+    "generated_tokens_per_second_after_first_block": 845.989265992078
+  },
+  "final_meta_info": {
+    "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 753,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 279,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      6,
+      6,
+      7,
+      7,
+      3,
+      5,
+      6,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.18697537100001682,
+      0.038743570000008276,
+      0.03927899599997886,
+      0.04067873400001076,
+      0.044793488000010484,
+      0.04704956199998378,
+      0.020606667999999217,
+      0.03137706800001183,
+      0.03878416599999923,
+      0.011675773999996863
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5048667809999756
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 53.86109189800001,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.18697537100001682
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874716.0971625
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 53.89944171000002,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.038743570000008276
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 53.93862770800001,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.03927899599997886
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 53.979341393,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.04067873400001076
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 54.02403028200001,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.044793488000010484
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,00",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076,
+          0.044793488000010484
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 54.07133966000001,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.04704956199998378
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,000 per day.\n\nStep 3: Calculate the total cost to the hospital.\nThe doctors charge the hospital $150 per hour of service",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6,
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076,
+          0.044793488000010484,
+          0.04704956199998378
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 54.091305186,
+      "output_token_count": 207,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.020606667999999217
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,000 per day.\n\nStep 3: Calculate the total cost to the hospital.\nThe doctors charge the hospital $150 per hour of service.\nTotal cost = 200 hours × $150/hour = $30,000 per day.\n\nStep 4",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076,
+          0.044793488000010484,
+          0.04704956199998378,
+          0.020606667999999217
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 54.12248694200002,
+      "output_token_count": 239,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.03137706800001183
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,000 per day.\n\nStep 3: Calculate the total cost to the hospital.\nThe doctors charge the hospital $150 per hour of service.\nTotal cost = 200 hours × $150/hour = $30,000 per day.\n\nStep 4: Calculate the profit.\nProfit = Revenue - Cost\nProfit = $40,000 - $30,000 = $1",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 239,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          3,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076,
+          0.044793488000010484,
+          0.04704956199998378,
+          0.020606667999999217,
+          0.03137706800001183
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 54.16137735800001,
+      "output_token_count": 271,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.03878416599999923
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,000 per day.\n\nStep 3: Calculate the total cost to the hospital.\nThe doctors charge the hospital $150 per hour of service.\nTotal cost = 200 hours × $150/hour = $30,000 per day.\n\nStep 4: Calculate the profit.\nProfit = Revenue - Cost\nProfit = $40,000 - $30,000 = $10,000 per day.\n\nSo, the hospital makes a profit of $10,000 from day these visits.\n####",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 271,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          3,
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076,
+          0.044793488000010484,
+          0.04704956199998378,
+          0.020606667999999217,
+          0.03137706800001183,
+          0.03878416599999923
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 54.17301153,
+      "output_token_count": 279,
+      "new_output_tokens": 8,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.011675773999996863
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nStep 1: Calculate the total time spent seeing patients in day.\nEach patient is seen for 24 minutes, and there are 500 patients per day.\nTotal time = 500 patients × 24 minutes/patient = 12,000 minutes.\n\nConvert minutes to hours:\n12,000 minutes ÷ 60 = 200 hours per day.\n\nStep 2: Calculate the total revenue to the hospital.\nThe hospital charges the patients $200 per hour of service.\nTotal revenue = 200 hours × $200/hour = $40,000 per day.\n\nStep 3: Calculate the total cost to the hospital.\nThe doctors charge the hospital $150 per hour of service.\nTotal cost = 200 hours × $150/hour = $30,000 per day.\n\nStep 4: Calculate the profit.\nProfit = Revenue - Cost\nProfit = $40,000 - $30,000 = $10,000 per day.\n\nSo, the hospital makes a profit of $10,000 from day these visits.\n#### 10000",
+      "meta_info": {
+        "id": "3f34e55ce1f647aebaec03f3c5d9dfa9",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 279,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          3,
+          5,
+          6,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.18697537100001682,
+          0.038743570000008276,
+          0.03927899599997886,
+          0.04067873400001076,
+          0.044793488000010484,
+          0.04704956199998378,
+          0.020606667999999217,
+          0.03137706800001183,
+          0.03878416599999923,
+          0.011675773999996863
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5048667809999756
+      }
+    }
+  ]
+}

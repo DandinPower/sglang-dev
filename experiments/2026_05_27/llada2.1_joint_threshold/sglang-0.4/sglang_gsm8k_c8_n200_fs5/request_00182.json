@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 182,
+  "eval_index": 182,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jean is two years older than Mark.  Two years ago Mark was 5 years older than half Jan's age.  If Jan is 30 how old is Jean?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jean is two years older than Mark.  Two years ago Mark was 5 years older than half Jan's age.  If Jan is 30 how old is Jean?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.2,
+  "request_start_realtime": "2026-05-27T09:38:55.167",
+  "benchmark": {
+    "question": "Jean is two years older than Mark.  Two years ago Mark was 5 years older than half Jan's age.  If Jan is 30 how old is Jean?",
+    "gold_solution": "2 years ago Jan was 30-2=<<30-2=28>>28 years old\nSo Marks age two years ago was 5+28/2=<<5+28/2=19>>19 years old\nMark is now 19+2=<<19+2=21>>21 years old\nSo Jean is 21+2=<<21+2=23>>23 years old\n#### 23",
+    "gold_answer": "23",
+    "model_text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / 2 = 14.\n\nTwo years ago, Mark was 5 years older than half of Jan's age at that time:\nSo, Mark's age two years ago = 14 + 5 = 19 years.\n\nTherefore, Mark is now 19 + 2 = 21 years old.\n\nStep 2: Jean is 2 years older than Mark.\nSo, Jean's age = Mark's age + 2 = 21 + 2 = 23 years old.\n\nAnswer: Jean is 23 years old.\n\n#### 23",
+    "predicted_answer": "23",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      7,
+      5,
+      7,
+      8,
+      6,
+      7,
+      5,
+      2
+    ],
+    "ttfb_seconds": 0.24568729999998595,
+    "tbb_seconds": [
+      0.33567708399999674,
+      0.46168644200002973,
+      0.1529768009999657,
+      0.3188193440000191,
+      0.2621066389999669,
+      0.1433317050000369,
+      0.07949137999997902,
+      0.028390224000020226
+    ],
+    "dllm_block_completion_latencies": [
+      0.24568729999998595,
+      0.33567708399999674,
+      0.46168644200002973,
+      0.1529768009999657,
+      0.3188193440000191,
+      0.2621066389999669,
+      0.1433317050000369,
+      0.07949137999997902,
+      0.028390224000020226
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      7,
+      5,
+      7,
+      8,
+      6,
+      7,
+      5,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 28.256734875000006,
+    "first_new_token_ttfb_seconds": 28.256734875000006,
+    "block_ttfb_seconds": 28.256734875000006,
+    "tbb_seconds": [
+      0.3386375789999647,
+      0.4589115990000323,
+      0.15317781999999625,
+      0.3186071819999938,
+      0.2621735390000026,
+      0.14423808499998358,
+      0.07893277099998386,
+      0.027976392000027772
+    ],
+    "block_arrival_elapsed_seconds": [
+      28.256734875000006,
+      28.59537245399997,
+      29.054284053000003,
+      29.207461873,
+      29.526069054999994,
+      29.788242593999996,
+      29.93248067899998,
+      30.011413449999964,
+      30.03938984199999
+    ],
+    "e2e_seconds": 30.039493041000014
+  },
+  "token_metrics": {
+    "prompt_tokens": 726,
+    "completion_tokens": 238,
+    "total_tokens": 964,
+    "end_to_end_tokens_per_second": 32.09108751217156,
+    "total_tokens_per_second": 32.09108751217156,
+    "completion_tokens_per_second": 7.922903348440696,
+    "tokens_after_first_block": 228,
+    "generated_tokens_per_second_after_first_block": 127.89171540387099
+  },
+  "final_meta_info": {
+    "id": "e950dd4f31364b0681f93e8283a9638a",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 726,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 238,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      7,
+      5,
+      7,
+      8,
+      6,
+      7,
+      5,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.24568729999998595,
+      0.33567708399999674,
+      0.46168644200002973,
+      0.1529768009999657,
+      0.3188193440000191,
+      0.2621066389999669,
+      0.1433317050000369,
+      0.07949137999997902,
+      0.028390224000020226
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.035404509999978
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 28.256734875000006,
+      "output_token_count": 10,
+      "new_output_tokens": 10,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.24568729999998595
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n- Jean is",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 10,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874763.4238057
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 28.59537245399997,
+      "output_token_count": 42,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.33567708399999674
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently ",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 42,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 29.054284053000003,
+      "output_token_count": 74,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.46168644200002973
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 29.207461873,
+      "output_token_count": 106,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.1529768009999657
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / ",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973,
+          0.1529768009999657
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 29.526069054999994,
+      "output_token_count": 138,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.3188193440000191
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / 2 = 14.\n\nTwo years ago, Mark was 5 years older than half of Jan's age at that time:\nSo, Mark",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 138,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5,
+          7,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973,
+          0.1529768009999657,
+          0.3188193440000191
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 29.788242593999996,
+      "output_token_count": 170,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.2621066389999669
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / 2 = 14.\n\nTwo years ago, Mark was 5 years older than half of Jan's age at that time:\nSo, Mark's age two years ago = 14 + 5 = 19 years.\n\nTherefore, Mark is now 19 + 2 =",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 170,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5,
+          7,
+          8,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973,
+          0.1529768009999657,
+          0.3188193440000191,
+          0.2621066389999669
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 29.93248067899998,
+      "output_token_count": 202,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.1433317050000369
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / 2 = 14.\n\nTwo years ago, Mark was 5 years older than half of Jan's age at that time:\nSo, Mark's age two years ago = 14 + 5 = 19 years.\n\nTherefore, Mark is now 19 + 2 = 21 years old.\n\nStep 2: Jean is 2 years older than Mark.\nSo, Jean's age = Mark's age +",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 202,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5,
+          7,
+          8,
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973,
+          0.1529768009999657,
+          0.3188193440000191,
+          0.2621066389999669,
+          0.1433317050000369
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 30.011413449999964,
+      "output_token_count": 234,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.07949137999997902
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / 2 = 14.\n\nTwo years ago, Mark was 5 years older than half of Jan's age at that time:\nSo, Mark's age two years ago = 14 + 5 = 19 years.\n\nTherefore, Mark is now 19 + 2 = 21 years old.\n\nStep 2: Jean is 2 years older than Mark.\nSo, Jean's age = Mark's age + 2 = 21 + 2 = 23 years old.\n\nAnswer: Jean is 23 years old.\n\n#### ",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 234,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5,
+          7,
+          8,
+          6,
+          7,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973,
+          0.1529768009999657,
+          0.3188193440000191,
+          0.2621066389999669,
+          0.1433317050000369,
+          0.07949137999997902
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 30.03938984199999,
+      "output_token_count": 238,
+      "new_output_tokens": 4,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.028390224000020226
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nWe are told:\n- Jean is 2 years older than Mark.\n- Two years ago, Mark was 5 years older than half of Jan's age.\n- Jan is currently 30 years old.\n\nWe need to find Jean's current age.\n\nStep 1: Find Mark's age two years ago.\nTwo years ago, Jan was 30 - 2 = 28 years.\nHalf of Jan's age two years ago: 28 / 2 = 14.\n\nTwo years ago, Mark was 5 years older than half of Jan's age at that time:\nSo, Mark's age two years ago = 14 + 5 = 19 years.\n\nTherefore, Mark is now 19 + 2 = 21 years old.\n\nStep 2: Jean is 2 years older than Mark.\nSo, Jean's age = Mark's age + 2 = 21 + 2 = 23 years old.\n\nAnswer: Jean is 23 years old.\n\n#### 23",
+      "meta_info": {
+        "id": "e950dd4f31364b0681f93e8283a9638a",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 238,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          7,
+          5,
+          7,
+          8,
+          6,
+          7,
+          5,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.24568729999998595,
+          0.33567708399999674,
+          0.46168644200002973,
+          0.1529768009999657,
+          0.3188193440000191,
+          0.2621066389999669,
+          0.1433317050000369,
+          0.07949137999997902,
+          0.028390224000020226
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.035404509999978
+      }
+    }
+  ]
+}

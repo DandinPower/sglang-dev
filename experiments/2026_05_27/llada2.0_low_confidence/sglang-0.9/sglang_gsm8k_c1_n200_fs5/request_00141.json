@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 141,
+  "eval_index": 141,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: There are 700 bees in a hive. There are twice as many worker bees as baby bees, and there are twice as many babies as queens.  How many worker bees are there?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: There are 700 bees in a hive. There are twice as many worker bees as baby bees, and there are twice as many babies as queens.  How many worker bees are there?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 14.100000000000001,
+  "request_start_realtime": "2026-05-27T08:56:40.313",
+  "benchmark": {
+    "question": "There are 700 bees in a hive. There are twice as many worker bees as baby bees, and there are twice as many babies as queens.  How many worker bees are there?",
+    "gold_solution": "Let x represent the number of queens\nBabies:2x\nWorkers:2(2x)=4x\nTotal:x+2x+4x=700\n7x=700\nx=<<100=100>>100 queen bees\nWorkers:4(100)=400 worker bees\n#### 400",
+    "gold_answer": "400",
+    "model_text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens  \n700 = 2B + B + Q  \n700 = 3B + Q\n\nNow substitute B = 2Q into the equation:  \n700 = 3*(2Q) + Q  \n700 = 6Q + Q  \n700 = 7Q  \nQ = 100\n\nThen B = 2Q = 2*100 = 200  \nWorker bees = 2B = 2*200 = 400\n\nSo there are 400 worker bees.  \n#### 400",
+    "predicted_answer": "400",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      6,
+      26,
+      23,
+      12,
+      8,
+      14,
+      11,
+      6
+    ],
+    "ttfb_seconds": 0.21794871500000568,
+    "tbb_seconds": [
+      0.2020683290000136,
+      0.18207438799998954,
+      0.08959342500000389,
+      0.061640909999994165,
+      0.10962447400001452,
+      0.08630061899998509,
+      0.04204045700001302
+    ],
+    "dllm_block_completion_latencies": [
+      0.21794871500000568,
+      0.2020683290000136,
+      0.18207438799998954,
+      0.08959342500000389,
+      0.061640909999994165,
+      0.10962447400001452,
+      0.08630061899998509,
+      0.04204045700001302
+    ],
+    "dllm_forward_counts_per_block": [
+      6,
+      26,
+      23,
+      12,
+      8,
+      14,
+      11,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 122.307620059,
+    "first_new_token_ttfb_seconds": 122.307620059,
+    "block_ttfb_seconds": 122.307620059,
+    "tbb_seconds": [
+      0.20210873900001047,
+      0.18210816499998828,
+      0.0895600960000138,
+      0.06161456799998177,
+      0.10965905200001203,
+      0.08630365099998016,
+      0.04217234000000758
+    ],
+    "block_arrival_elapsed_seconds": [
+      122.307620059,
+      122.50972879800001,
+      122.691836963,
+      122.78139705900001,
+      122.843011627,
+      122.95267067900001,
+      123.03897432999999,
+      123.08114667
+    ],
+    "e2e_seconds": 123.081222869
+  },
+  "token_metrics": {
+    "prompt_tokens": 730,
+    "completion_tokens": 210,
+    "total_tokens": 940,
+    "end_to_end_tokens_per_second": 7.637233187067678,
+    "total_tokens_per_second": 7.637233187067678,
+    "completion_tokens_per_second": 1.706190392855545,
+    "tokens_after_first_block": 204,
+    "generated_tokens_per_second_after_first_block": 263.7012138050533
+  },
+  "final_meta_info": {
+    "id": "c3f59a484d6e433eb770e05a0b41cf70",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 730,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 210,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      6,
+      26,
+      23,
+      12,
+      8,
+      14,
+      11,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.21794871500000568,
+      0.2020683290000136,
+      0.18207438799998954,
+      0.08959342500000389,
+      0.061640909999994165,
+      0.10962447400001452,
+      0.08630061899998509,
+      0.04204045700001302
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.9943967370000166
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 122.307620059,
+      "output_token_count": 6,
+      "new_output_tokens": 6,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.21794871500000568
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the number of",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 6,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872322.6204534
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 122.50972879800001,
+      "output_token_count": 38,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2020683290000136
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 38,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 122.691836963,
+      "output_token_count": 70,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.18207438799998954
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 70,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136,
+          0.18207438799998954
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 122.78139705900001,
+      "output_token_count": 102,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.08959342500000389
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens  \n700 = 2B + B + Q  \n700 = 3B + Q\n\nNow substitute B = 2",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 102,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26,
+          23,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136,
+          0.18207438799998954,
+          0.08959342500000389
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 122.843011627,
+      "output_token_count": 134,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.061640909999994165
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens  \n700 = 2B + B + Q  \n700 = 3B + Q\n\nNow substitute B = 2Q into the equation:  \n700 = 3*(2Q) + Q  \n700 = 6Q + Q  \n",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 134,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26,
+          23,
+          12,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136,
+          0.18207438799998954,
+          0.08959342500000389,
+          0.061640909999994165
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 122.95267067900001,
+      "output_token_count": 166,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.10962447400001452
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens  \n700 = 2B + B + Q  \n700 = 3B + Q\n\nNow substitute B = 2Q into the equation:  \n700 = 3*(2Q) + Q  \n700 = 6Q + Q  \n700 = 7Q  \nQ = 100\n\nThen B = 2Q = 2*100 = ",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 166,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26,
+          23,
+          12,
+          8,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136,
+          0.18207438799998954,
+          0.08959342500000389,
+          0.061640909999994165,
+          0.10962447400001452
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 123.03897432999999,
+      "output_token_count": 198,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.08630061899998509
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens  \n700 = 2B + B + Q  \n700 = 3B + Q\n\nNow substitute B = 2Q into the equation:  \n700 = 3*(2Q) + Q  \n700 = 6Q + Q  \n700 = 7Q  \nQ = 100\n\nThen B = 2Q = 2*100 = 200  \nWorker bees = 2B = 2*200 = 400\n\nSo there are 400",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 198,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26,
+          23,
+          12,
+          8,
+          14,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136,
+          0.18207438799998954,
+          0.08959342500000389,
+          0.061640909999994165,
+          0.10962447400001452,
+          0.08630061899998509
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 123.08114667,
+      "output_token_count": 210,
+      "new_output_tokens": 12,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.04204045700001302
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nLet the number of baby bees be B.  \nThen the number of worker bees is 2B.  \nLet the number of queens be Q.  \nWe are told that there are twice as many babies as queens, so:  \nB = 2Q\n\nTotal bees = worker bees + baby bees + queens  \n700 = 2B + B + Q  \n700 = 3B + Q\n\nNow substitute B = 2Q into the equation:  \n700 = 3*(2Q) + Q  \n700 = 6Q + Q  \n700 = 7Q  \nQ = 100\n\nThen B = 2Q = 2*100 = 200  \nWorker bees = 2B = 2*200 = 400\n\nSo there are 400 worker bees.  \n#### 400",
+      "meta_info": {
+        "id": "c3f59a484d6e433eb770e05a0b41cf70",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 210,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          26,
+          23,
+          12,
+          8,
+          14,
+          11,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.21794871500000568,
+          0.2020683290000136,
+          0.18207438799998954,
+          0.08959342500000389,
+          0.061640909999994165,
+          0.10962447400001452,
+          0.08630061899998509,
+          0.04204045700001302
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.9943967370000166
+      }
+    }
+  ]
+}

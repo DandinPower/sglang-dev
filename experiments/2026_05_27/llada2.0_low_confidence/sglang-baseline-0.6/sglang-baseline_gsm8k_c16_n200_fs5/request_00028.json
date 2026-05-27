@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 28,
+  "eval_index": 28,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop was 15 miles before the end of the trip. How many miles did he travel between his first and second stops?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop was 15 miles before the end of the trip. How many miles did he travel between his first and second stops?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.8000000000000003,
+  "request_start_realtime": "2026-05-27T09:20:26.345",
+  "benchmark": {
+    "question": "Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop was 15 miles before the end of the trip. How many miles did he travel between his first and second stops?",
+    "gold_solution": "He traveled 20 miles + 15 miles = <<20+15=35>>35 miles not counting the distance between stops.\nHenry traveled 60 miles - 35 miles = <<60-35=25>>25 miles between his first and second stop.\n#### 25",
+    "gold_answer": "25",
+    "model_text": "\n\n1. Henry first stopped after 20 miles.\n2. The second stop was 15 miles before the end of the 60-mile trip.\n   - So, the second stop occurred at: 60 - 15 = 45 miles.\n3. Now, calculate the distance between the first and second stops:\n   - From 20 miles to 45 miles = 45 - 20 = 25 miles.\n\nSo, Henry traveled 25 miles between his first and second stops.\n#### 25",
+    "predicted_answer": "25",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      21,
+      15,
+      19,
+      17,
+      22
+    ],
+    "ttfb_seconds": 0.5325973099999715,
+    "tbb_seconds": [
+      0.2761930070000176,
+      0.6192835510000236,
+      0.30147705899997845,
+      0.5937546650000058
+    ],
+    "dllm_block_completion_latencies": [
+      0.5325973099999715,
+      0.2761930070000176,
+      0.6192835510000236,
+      0.30147705899997845,
+      0.5937546650000058
+    ],
+    "dllm_forward_counts_per_block": [
+      21,
+      15,
+      19,
+      17,
+      22
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 3.1061808290000386,
+    "first_new_token_ttfb_seconds": 3.1061808290000386,
+    "block_ttfb_seconds": 3.1061808290000386,
+    "tbb_seconds": [
+      0.2870388210000101,
+      0.607475638999972,
+      0.30378407500001003,
+      0.5915871369999763
+    ],
+    "block_arrival_elapsed_seconds": [
+      3.1061808290000386,
+      3.3932196500000487,
+      4.000695289000021,
+      4.304479364000031,
+      4.896066501000007
+    ],
+    "e2e_seconds": 4.896167633999994
+  },
+  "token_metrics": {
+    "prompt_tokens": 740,
+    "completion_tokens": 125,
+    "total_tokens": 865,
+    "end_to_end_tokens_per_second": 176.6687876438834,
+    "total_tokens_per_second": 176.6687876438834,
+    "completion_tokens_per_second": 25.530171624838644,
+    "tokens_after_first_block": 97,
+    "generated_tokens_per_second_after_first_block": 54.19034359865151
+  },
+  "final_meta_info": {
+    "id": "94bf5a9b79164c6a8facab1afffc6f85",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 740,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 125,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      21,
+      15,
+      19,
+      17,
+      22
+    ],
+    "dllm_block_completion_latencies": [
+      0.5325973099999715,
+      0.2761930070000176,
+      0.6192835510000236,
+      0.30147705899997845,
+      0.5937546650000058
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.614975904000005
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 3.1061808290000386,
+      "output_token_count": 28,
+      "new_output_tokens": 28,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5325973099999715
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Henry first stopped after 20 miles.\n2. The second stop was 15 miles before the end of",
+      "meta_info": {
+        "id": "94bf5a9b79164c6a8facab1afffc6f85",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 28,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.5325973099999715
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873629.4471831
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 3.3932196500000487,
+      "output_token_count": 60,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2761930070000176
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Henry first stopped after 20 miles.\n2. The second stop was 15 miles before the end of the 60-mile trip.\n   - So, the second stop occurred at: 60 - 15 = 45 miles.\n",
+      "meta_info": {
+        "id": "94bf5a9b79164c6a8facab1afffc6f85",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 60,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.5325973099999715,
+          0.2761930070000176
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.000695289000021,
+      "output_token_count": 92,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6192835510000236
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Henry first stopped after 20 miles.\n2. The second stop was 15 miles before the end of the 60-mile trip.\n   - So, the second stop occurred at: 60 - 15 = 45 miles.\n3. Now, calculate the distance between the first and second stops:\n   - From 20 miles to 45 miles = 45 -",
+      "meta_info": {
+        "id": "94bf5a9b79164c6a8facab1afffc6f85",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 92,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          15,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5325973099999715,
+          0.2761930070000176,
+          0.6192835510000236
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 4.304479364000031,
+      "output_token_count": 124,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.30147705899997845
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Henry first stopped after 20 miles.\n2. The second stop was 15 miles before the end of the 60-mile trip.\n   - So, the second stop occurred at: 60 - 15 = 45 miles.\n3. Now, calculate the distance between the first and second stops:\n   - From 20 miles to 45 miles = 45 - 20 = 25 miles.\n\nSo, Henry traveled 25 miles between his first and second stops.\n#### 25",
+      "meta_info": {
+        "id": "94bf5a9b79164c6a8facab1afffc6f85",
+        "finish_reason": null,
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 124,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          15,
+          19,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.5325973099999715,
+          0.2761930070000176,
+          0.6192835510000236,
+          0.30147705899997845
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 4.896066501000007,
+      "output_token_count": 125,
+      "new_output_tokens": 1,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5937546650000058
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Henry first stopped after 20 miles.\n2. The second stop was 15 miles before the end of the 60-mile trip.\n   - So, the second stop occurred at: 60 - 15 = 45 miles.\n3. Now, calculate the distance between the first and second stops:\n   - From 20 miles to 45 miles = 45 - 20 = 25 miles.\n\nSo, Henry traveled 25 miles between his first and second stops.\n#### 25",
+      "meta_info": {
+        "id": "94bf5a9b79164c6a8facab1afffc6f85",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 740,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 125,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          15,
+          19,
+          17,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5325973099999715,
+          0.2761930070000176,
+          0.6192835510000236,
+          0.30147705899997845,
+          0.5937546650000058
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.614975904000005
+      }
+    }
+  ]
+}

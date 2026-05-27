@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 32,
+  "eval_index": 32,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John takes care of 10 dogs.  Each dog takes .5 hours a day to walk and take care of their business.  How many hours a week does he spend taking care of dogs?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John takes care of 10 dogs.  Each dog takes .5 hours a day to walk and take care of their business.  How many hours a week does he spend taking care of dogs?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.2,
+  "request_start_realtime": "2026-05-27T09:00:00.877",
+  "benchmark": {
+    "question": "John takes care of 10 dogs.  Each dog takes .5 hours a day to walk and take care of their business.  How many hours a week does he spend taking care of dogs?",
+    "gold_solution": "He spends 10*.5=<<10*.5=5>>5 hours per day\nThat means he spends 5*7=<<5*7=35>>35 hours per week\n#### 35",
+    "gold_answer": "35",
+    "model_text": "\n\n1. Each dog requires 0.5 hours per day for walking and care.\n2. John has 10 dogs, so the total time per day is:  \n   10 dogs * 0.5 hours/dog = 5 hours per day.\n3. There are 7 days in a week, so the total time per week is:  \n   5 hours/day * 7 days = 35 hours.\n\nSo, John spends 35 hours a week on taking care of dogs.  \n#### 35",
+    "predicted_answer": "35",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      6,
+      16,
+      8,
+      9,
+      4
+    ],
+    "ttfb_seconds": 0.35796283799999173,
+    "tbb_seconds": [
+      1.1466130310000153,
+      0.6001510689999918,
+      0.602243881999982,
+      0.10572751299997662
+    ],
+    "dllm_block_completion_latencies": [
+      0.35796283799999173,
+      1.1466130310000153,
+      0.6001510689999918,
+      0.602243881999982,
+      0.10572751299997662
+    ],
+    "dllm_forward_counts_per_block": [
+      6,
+      16,
+      8,
+      9,
+      4
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 3.543870341999991,
+    "first_new_token_ttfb_seconds": 3.543870341999991,
+    "block_ttfb_seconds": 3.543870341999991,
+    "tbb_seconds": [
+      1.1446800789999543,
+      0.5994225130000359,
+      0.602497636999999,
+      0.10588681100000485
+    ],
+    "block_arrival_elapsed_seconds": [
+      3.543870341999991,
+      4.688550420999945,
+      5.287972933999981,
+      5.89047057099998,
+      5.996357381999985
+    ],
+    "e2e_seconds": 5.996464185999969
+  },
+  "token_metrics": {
+    "prompt_tokens": 731,
+    "completion_tokens": 122,
+    "total_tokens": 853,
+    "end_to_end_tokens_per_second": 142.25049521541567,
+    "total_tokens_per_second": 142.25049521541567,
+    "completion_tokens_per_second": 20.345322879578795,
+    "tokens_after_first_block": 117,
+    "generated_tokens_per_second_after_first_block": 47.70459661970882
+  },
+  "final_meta_info": {
+    "id": "13d239764f6c4cfe8565f90ba6287143",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 731,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 122,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      6,
+      16,
+      8,
+      9,
+      4
+    ],
+    "dllm_block_completion_latencies": [
+      0.35796283799999173,
+      1.1466130310000153,
+      0.6001510689999918,
+      0.602243881999982,
+      0.10572751299997662
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.8303502189999676
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 3.543870341999991,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.35796283799999173
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Each",
+      "meta_info": {
+        "id": "13d239764f6c4cfe8565f90ba6287143",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.35796283799999173
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872404.4190354
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 4.688550420999945,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        1.1466130310000153
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Each dog requires 0.5 hours per day for walking and care.\n2. John has 10 dogs, so the total time per day is:",
+      "meta_info": {
+        "id": "13d239764f6c4cfe8565f90ba6287143",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.35796283799999173,
+          1.1466130310000153
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 5.287972933999981,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6001510689999918
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Each dog requires 0.5 hours per day for walking and care.\n2. John has 10 dogs, so the total time per day is:  \n   10 dogs * 0.5 hours/dog = 5 hours per day.\n3. There are 7 days in a",
+      "meta_info": {
+        "id": "13d239764f6c4cfe8565f90ba6287143",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          16,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.35796283799999173,
+          1.1466130310000153,
+          0.6001510689999918
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 5.89047057099998,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.602243881999982
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Each dog requires 0.5 hours per day for walking and care.\n2. John has 10 dogs, so the total time per day is:  \n   10 dogs * 0.5 hours/dog = 5 hours per day.\n3. There are 7 days in a week, so the total time per week is:  \n   5 hours/day * 7 days = 35 hours.\n\nSo, John",
+      "meta_info": {
+        "id": "13d239764f6c4cfe8565f90ba6287143",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          16,
+          8,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.35796283799999173,
+          1.1466130310000153,
+          0.6001510689999918,
+          0.602243881999982
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 5.996357381999985,
+      "output_token_count": 122,
+      "new_output_tokens": 21,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.10572751299997662
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Each dog requires 0.5 hours per day for walking and care.\n2. John has 10 dogs, so the total time per day is:  \n   10 dogs * 0.5 hours/dog = 5 hours per day.\n3. There are 7 days in a week, so the total time per week is:  \n   5 hours/day * 7 days = 35 hours.\n\nSo, John spends 35 hours a week on taking care of dogs.  \n#### 35",
+      "meta_info": {
+        "id": "13d239764f6c4cfe8565f90ba6287143",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          16,
+          8,
+          9,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.35796283799999173,
+          1.1466130310000153,
+          0.6001510689999918,
+          0.602243881999982,
+          0.10572751299997662
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.8303502189999676
+      }
+    }
+  ]
+}

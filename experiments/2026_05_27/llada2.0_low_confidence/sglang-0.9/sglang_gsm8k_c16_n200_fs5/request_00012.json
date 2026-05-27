@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 12,
+  "eval_index": 12,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.2000000000000002,
+  "request_start_realtime": "2026-05-27T09:01:16.868",
+  "benchmark": {
+    "question": "Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?",
+    "gold_solution": "He makes $10.5 selling lemons each year because 7 x 1.5 = <<7*1.5=10.5>>10.5\nHe earns $7.5 each year from the lemon tree because 10.5 - 3 = <<10.5-3=7.5>>7.5\nIt will take 12 years to earn enough to pay off the tree because 90 / 7.5 = <<90/7.5=12>>12\nHe will make money in year 13 because 12 + 1 = <<12+1=13>>13\n#### 13",
+    "gold_answer": "13",
+    "model_text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n   - Net profit per year = Earnings per year - Annual cost\n   - Net profit per year = $10.5 - $3 = $7.5.\n\n4. The tree costs $90 to plant. We need to find how many years it will take for the net profit to cover this initial cost:\n   - Number of years = Initial cost / Net profit per year\n   - Number of years = $90 / $7.5 = 12.\n\nSo, it will take 12 years for Carlos to start earning money on the lemon tree.\n#### 12",
+    "predicted_answer": "12",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      13,
+      17,
+      16,
+      18,
+      14,
+      19,
+      12,
+      15,
+      2
+    ],
+    "ttfb_seconds": 0.8788769649999608,
+    "tbb_seconds": [
+      0.517123464000008,
+      0.6654691649999904,
+      0.742037664999998,
+      0.7835862090000205,
+      1.3174561870000048,
+      0.5233603190000053,
+      0.8231578250000098,
+      0.0365096259999973
+    ],
+    "dllm_block_completion_latencies": [
+      0.8788769649999608,
+      0.517123464000008,
+      0.6654691649999904,
+      0.742037664999998,
+      0.7835862090000205,
+      1.3174561870000048,
+      0.5233603190000053,
+      0.8231578250000098,
+      0.0365096259999973
+    ],
+    "dllm_forward_counts_per_block": [
+      13,
+      17,
+      16,
+      18,
+      14,
+      19,
+      12,
+      15,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.8866105270000162,
+    "first_new_token_ttfb_seconds": 0.8866105270000162,
+    "block_ttfb_seconds": 0.8866105270000162,
+    "tbb_seconds": [
+      0.5169476059999738,
+      0.6654009929999916,
+      0.7419961690000036,
+      0.7836634800000297,
+      1.317935599000009,
+      0.5226564589999612,
+      0.8233256100000403,
+      0.03712803700000222
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.8866105270000162,
+      1.40355813299999,
+      2.0689591259999816,
+      2.810955294999985,
+      3.594618775000015,
+      4.912554374000024,
+      5.435210832999985,
+      6.258536443000025,
+      6.295664480000028
+    ],
+    "e2e_seconds": 6.295733910000024
+  },
+  "token_metrics": {
+    "prompt_tokens": 756,
+    "completion_tokens": 238,
+    "total_tokens": 994,
+    "end_to_end_tokens_per_second": 157.8846905237131,
+    "total_tokens_per_second": 157.8846905237131,
+    "completion_tokens_per_second": 37.80337660426933,
+    "tokens_after_first_block": 226,
+    "generated_tokens_per_second_after_first_block": 41.781261767901455
+  },
+  "final_meta_info": {
+    "id": "3f2976b133a640e79155dd5aae727092",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 756,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 238,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      13,
+      17,
+      16,
+      18,
+      14,
+      19,
+      12,
+      15,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.8788769649999608,
+      0.517123464000008,
+      0.6654691649999904,
+      0.742037664999998,
+      0.7835862090000205,
+      1.3174561870000048,
+      0.5233603190000053,
+      0.8231578250000098,
+      0.0365096259999973
+    ],
+    "dp_rank": null,
+    "e2e_latency": 6.293886482000005
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.8866105270000162,
+      "output_token_count": 12,
+      "new_output_tokens": 12,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.8788769649999608
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate how much money Carlos earns",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 12,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872477.7551014
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.40355813299999,
+      "output_token_count": 44,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.517123464000008
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 44,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.0689591259999816,
+      "output_token_count": 76,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6654691649999904
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 76,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.810955294999985,
+      "output_token_count": 108,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.742037664999998
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n  ",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904,
+          0.742037664999998
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 3.594618775000015,
+      "output_token_count": 140,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.7835862090000205
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n   - Net profit per year = Earnings per year - Annual cost\n   - Net profit per year = $10.5 - $3 = $7.",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 140,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16,
+          18,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904,
+          0.742037664999998,
+          0.7835862090000205
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 4.912554374000024,
+      "output_token_count": 172,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        1.3174561870000048
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n   - Net profit per year = Earnings per year - Annual cost\n   - Net profit per year = $10.5 - $3 = $7.5.\n\n4. The tree costs $90 to plant. We need to find how many years it will take for the net profit to cover this",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 172,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16,
+          18,
+          14,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904,
+          0.742037664999998,
+          0.7835862090000205,
+          1.3174561870000048
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 5.435210832999985,
+      "output_token_count": 204,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.5233603190000053
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n   - Net profit per year = Earnings per year - Annual cost\n   - Net profit per year = $10.5 - $3 = $7.5.\n\n4. The tree costs $90 to plant. We need to find how many years it will take for the net profit to cover this initial cost:\n   - Number of years = Initial cost / Net profit per year\n   - Number of years = $90 / $7.5",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 204,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16,
+          18,
+          14,
+          19,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904,
+          0.742037664999998,
+          0.7835862090000205,
+          1.3174561870000048,
+          0.5233603190000053
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 6.258536443000025,
+      "output_token_count": 236,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.8231578250000098
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n   - Net profit per year = Earnings per year - Annual cost\n   - Net profit per year = $10.5 - $3 = $7.5.\n\n4. The tree costs $90 to plant. We need to find how many years it will take for the net profit to cover this initial cost:\n   - Number of years = Initial cost / Net profit per year\n   - Number of years = $90 / $7.5 = 12.\n\nSo, it will take 12 years for Carlos to start earning money on the lemon tree.\n#### 12",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 236,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16,
+          18,
+          14,
+          19,
+          12,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904,
+          0.742037664999998,
+          0.7835862090000205,
+          1.3174561870000048,
+          0.5233603190000053,
+          0.8231578250000098
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 6.295664480000028,
+      "output_token_count": 238,
+      "new_output_tokens": 2,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.0365096259999973
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. First, calculate how much money Carlos earns per year from selling lemons:\n   - The tree grows 7 lemons per year.\n   - Each lemon is sold for $1.5.\n   - So, earnings per year = 7 * $1.5 = $10.5.\n\n2. Next, calculate the annual cost to water and feed the tree:\n   - It costs $3 per year.\n\n3. Now, calculate the net profit per year:\n   - Net profit per year = Earnings per year - Annual cost\n   - Net profit per year = $10.5 - $3 = $7.5.\n\n4. The tree costs $90 to plant. We need to find how many years it will take for the net profit to cover this initial cost:\n   - Number of years = Initial cost / Net profit per year\n   - Number of years = $90 / $7.5 = 12.\n\nSo, it will take 12 years for Carlos to start earning money on the lemon tree.\n#### 12",
+      "meta_info": {
+        "id": "3f2976b133a640e79155dd5aae727092",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 238,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          17,
+          16,
+          18,
+          14,
+          19,
+          12,
+          15,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.8788769649999608,
+          0.517123464000008,
+          0.6654691649999904,
+          0.742037664999998,
+          0.7835862090000205,
+          1.3174561870000048,
+          0.5233603190000053,
+          0.8231578250000098,
+          0.0365096259999973
+        ],
+        "dp_rank": null,
+        "e2e_latency": 6.293886482000005
+      }
+    }
+  ]
+}

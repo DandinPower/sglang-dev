@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 176,
+  "eval_index": 176,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a race with 240 Asians, 80 were Japanese, and the rest were Chinese. If the number of boys on the Chinese team was 60, how many girls were on the Chinese team?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a race with 240 Asians, 80 were Japanese, and the rest were Chinese. If the number of boys on the Chinese team was 60, how many girls were on the Chinese team?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 17.6,
+  "request_start_realtime": "2026-05-27T09:34:54.827",
+  "benchmark": {
+    "question": "In a race with 240 Asians, 80 were Japanese, and the rest were Chinese. If the number of boys on the Chinese team was 60, how many girls were on the Chinese team?",
+    "gold_solution": "If there were 80 Japanese, the number of Chinese was 240-80=<<240-80=160>>160.\nSince there were 60 boys in the Chinese team, there were 160-60 = 100 girls in the Chinese team.\n#### 100",
+    "gold_answer": "100",
+    "model_text": "\n\nTotal number of participants in the race: 240  \nNumber of Japanese participants: 80\n\nSo, number of Chinese participants = Total - Japanese = 240 - 80 = 160\n\nWe are told that the number of boys on the Chinese team was 60.\n\nTherefore, the number of girls on the Chinese team = Chinese participants - Boys = 160 - 60 = 100\n\nAnswer: 100",
+    "predicted_answer": "100",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      11,
+      22,
+      11,
+      16,
+      12
+    ],
+    "ttfb_seconds": 0.4537127809999788,
+    "tbb_seconds": [
+      0.346365182999989,
+      0.48631522400000904,
+      0.28558257700001377,
+      0.21659411600001022
+    ],
+    "dllm_block_completion_latencies": [
+      0.4537127809999788,
+      0.346365182999989,
+      0.48631522400000904,
+      0.28558257700001377,
+      0.21659411600001022
+    ],
+    "dllm_forward_counts_per_block": [
+      11,
+      22,
+      11,
+      16,
+      12
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 16.514123945999984,
+    "first_new_token_ttfb_seconds": 16.514123945999984,
+    "block_ttfb_seconds": 16.514123945999984,
+    "tbb_seconds": [
+      0.3585209940000027,
+      0.4660761760000014,
+      0.2860287249999942,
+      0.22434187400000383
+    ],
+    "block_arrival_elapsed_seconds": [
+      16.514123945999984,
+      16.872644939999986,
+      17.338721115999988,
+      17.624749840999982,
+      17.849091714999986
+    ],
+    "e2e_seconds": 17.84916343499998
+  },
+  "token_metrics": {
+    "prompt_tokens": 735,
+    "completion_tokens": 110,
+    "total_tokens": 845,
+    "end_to_end_tokens_per_second": 47.34115428306632,
+    "total_tokens_per_second": 47.34115428306632,
+    "completion_tokens_per_second": 6.162753811996799,
+    "tokens_after_first_block": 109,
+    "generated_tokens_per_second_after_first_block": 81.64552501862386
+  },
+  "final_meta_info": {
+    "id": "3d64ac25378a46b69b195c8525977147",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 735,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 110,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      11,
+      22,
+      11,
+      16,
+      12
+    ],
+    "dllm_block_completion_latencies": [
+      0.4537127809999788,
+      0.346365182999989,
+      0.48631522400000904,
+      0.28558257700001377,
+      0.21659411600001022
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.795821965000016
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 16.514123945999984,
+      "output_token_count": 1,
+      "new_output_tokens": 1,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4537127809999788
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n",
+      "meta_info": {
+        "id": "3d64ac25378a46b69b195c8525977147",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 1,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.4537127809999788
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874511.333178
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 16.872644939999986,
+      "output_token_count": 33,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.346365182999989
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nTotal number of participants in the race: 240  \nNumber of Japanese participants: 80\n\nSo, number of Chinese participants =",
+      "meta_info": {
+        "id": "3d64ac25378a46b69b195c8525977147",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 33,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.4537127809999788,
+          0.346365182999989
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 17.338721115999988,
+      "output_token_count": 65,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.48631522400000904
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nTotal number of participants in the race: 240  \nNumber of Japanese participants: 80\n\nSo, number of Chinese participants = Total - Japanese = 240 - 80 = 160\n\nWe are told that the number of boys on the Chinese team was",
+      "meta_info": {
+        "id": "3d64ac25378a46b69b195c8525977147",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 65,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          22,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.4537127809999788,
+          0.346365182999989,
+          0.48631522400000904
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 17.624749840999982,
+      "output_token_count": 97,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.28558257700001377
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nTotal number of participants in the race: 240  \nNumber of Japanese participants: 80\n\nSo, number of Chinese participants = Total - Japanese = 240 - 80 = 160\n\nWe are told that the number of boys on the Chinese team was 60.\n\nTherefore, the number of girls on the Chinese team = Chinese participants - Boys = 160 - 60 = ",
+      "meta_info": {
+        "id": "3d64ac25378a46b69b195c8525977147",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 97,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          22,
+          11,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4537127809999788,
+          0.346365182999989,
+          0.48631522400000904,
+          0.28558257700001377
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 17.849091714999986,
+      "output_token_count": 110,
+      "new_output_tokens": 13,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.21659411600001022
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nTotal number of participants in the race: 240  \nNumber of Japanese participants: 80\n\nSo, number of Chinese participants = Total - Japanese = 240 - 80 = 160\n\nWe are told that the number of boys on the Chinese team was 60.\n\nTherefore, the number of girls on the Chinese team = Chinese participants - Boys = 160 - 60 = 100\n\nAnswer: 100",
+      "meta_info": {
+        "id": "3d64ac25378a46b69b195c8525977147",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 110,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          22,
+          11,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.4537127809999788,
+          0.346365182999989,
+          0.48631522400000904,
+          0.28558257700001377,
+          0.21659411600001022
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.795821965000016
+      }
+    }
+  ]
+}

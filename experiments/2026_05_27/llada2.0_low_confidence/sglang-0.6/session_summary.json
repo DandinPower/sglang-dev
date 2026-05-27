@@ -1,0 +1,120 @@
+{
+  "ok": true,
+  "session_dir": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551",
+  "session_summary_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/session_summary.json",
+  "server_log_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/server.log",
+  "base_url": "http://127.0.0.1:30000",
+  "model_path": "inclusionAI/LLaDA2.0-mini",
+  "dllm_algorithm": "LowConfidence",
+  "patch_target": "sglang",
+  "patch_local_dir": "/net/home/liaw/COSMOSLab-dLLM/sglang",
+  "patch_remote_dir": "/sgl-workspace/sglang",
+  "dataset": {
+    "benchmark": "GSM8K",
+    "test_url": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/test.jsonl",
+    "train_url_for_few_shot": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl",
+    "train_record_count": 7473,
+    "test_record_count": 1319,
+    "few_shot_count": 5,
+    "problem_count": 200,
+    "eval_start_index": 0,
+    "few_shot_source": "train[:few_shot_count]",
+    "eval_source": "test[eval_start_index:eval_start_index+problem_count]"
+  },
+  "concurrency_count_configurations": [
+    1,
+    8,
+    16
+  ],
+  "max_running_requests": 16,
+  "server_command": "python -m sglang.launch_server --model-path inclusionAI/LLaDA2.0-mini --trust-remote-code --tp-size 1 --mem-fraction-static 0.9 --max-running-requests 16 --attention-backend flashinfer --cuda-graph-bs 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 --disable-radix-cache --dllm-algorithm LowConfidence --dllm-algorithm-config /sgl-workspace/algorithm_config.yaml --host 127.0.0.1 --port 30000",
+  "runs": [
+    {
+      "ok": true,
+      "concurrency_count": 1,
+      "result_folder": "sglang_gsm8k_c1_n200_fs5",
+      "result_folder_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c1_n200_fs5",
+      "run_dir": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c1_n200_fs5",
+      "summary_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c1_n200_fs5/summary.json",
+      "predictions_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c1_n200_fs5/predictions.json",
+      "score_metrics": {
+        "correct_count": 180,
+        "scored_count": 200,
+        "problem_count": 200,
+        "accuracy": 0.9,
+        "failed_request_count": 0
+      },
+      "latency_metrics": {
+        "mean_e2e_seconds": 51.435493309475,
+        "median_e2e_seconds": 47.89995559000001,
+        "p95_e2e_seconds": 102.905116233,
+        "mean_ttfb_seconds": 51.02691253657,
+        "p95_ttfb_seconds": 102.65246996799999
+      },
+      "throughput_metrics": {
+        "mean_completion_tokens_per_second_per_request": 10.861053836797288,
+        "total_completion_tokens": 40311,
+        "estimated_completion_tokens_per_second_over_run": 377.4645670486373
+      },
+      "failed_requests": []
+    },
+    {
+      "ok": true,
+      "concurrency_count": 8,
+      "result_folder": "sglang_gsm8k_c8_n200_fs5",
+      "result_folder_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c8_n200_fs5",
+      "run_dir": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c8_n200_fs5",
+      "summary_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c8_n200_fs5/summary.json",
+      "predictions_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c8_n200_fs5/predictions.json",
+      "score_metrics": {
+        "correct_count": 172,
+        "scored_count": 200,
+        "problem_count": 200,
+        "accuracy": 0.86,
+        "failed_request_count": 0
+      },
+      "latency_metrics": {
+        "mean_e2e_seconds": 23.742148917515,
+        "median_e2e_seconds": 21.743577151499977,
+        "p95_e2e_seconds": 46.79830359700003,
+        "mean_ttfb_seconds": 21.477823331175,
+        "p95_ttfb_seconds": 44.73911208100003
+      },
+      "throughput_metrics": {
+        "mean_completion_tokens_per_second_per_request": 16.465919076811726,
+        "total_completion_tokens": 46820,
+        "estimated_completion_tokens_per_second_over_run": 909.1505249480999
+      },
+      "failed_requests": []
+    },
+    {
+      "ok": true,
+      "concurrency_count": 16,
+      "result_folder": "sglang_gsm8k_c16_n200_fs5",
+      "result_folder_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c16_n200_fs5",
+      "run_dir": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c16_n200_fs5",
+      "summary_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c16_n200_fs5/summary.json",
+      "predictions_path": "/sgl-workspace/dump/session_sglang_gsm8k_20260527_091551/sglang_gsm8k_c16_n200_fs5/predictions.json",
+      "score_metrics": {
+        "correct_count": 183,
+        "scored_count": 200,
+        "problem_count": 200,
+        "accuracy": 0.915,
+        "failed_request_count": 0
+      },
+      "latency_metrics": {
+        "mean_e2e_seconds": 19.04806082789,
+        "median_e2e_seconds": 18.54895590800001,
+        "p95_e2e_seconds": 35.551353291,
+        "mean_ttfb_seconds": 15.307899350775,
+        "p95_ttfb_seconds": 31.32127181200002
+      },
+      "throughput_metrics": {
+        "mean_completion_tokens_per_second_per_request": 16.04613219791112,
+        "total_completion_tokens": 46957,
+        "estimated_completion_tokens_per_second_over_run": 1067.8753130814987
+      },
+      "failed_requests": []
+    }
+  ]
+}

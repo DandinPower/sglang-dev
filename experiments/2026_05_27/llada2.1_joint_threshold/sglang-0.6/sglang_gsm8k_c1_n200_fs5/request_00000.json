@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 0,
+  "eval_index": 0,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.0,
+  "request_start_realtime": "2026-05-27T09:33:54.466",
+  "benchmark": {
+    "question": "Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+    "gold_solution": "Janet sells 16 - 3 - 4 = <<16-3-4=9>>9 duck eggs a day.\nShe makes 9 * 2 = $<<9*2=18>>18 every day at the farmer’s market.\n#### 18",
+    "gold_answer": "18",
+    "model_text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Eggs used for muffins**: She uses 4 eggs to bake muffins.\n\n4. **Total eggs used per day**: 3 (breakfast) + 4 (muffins) = 7 eggs.\n\n5. **Eggs remaining for sale**: 16 (total laid) - 7 (used) = 9 eggs.\n\n6. **Revenue from selling eggs**: She sells each egg for $2, so:\n   $ 9 \\text{ eggs} \\times \\$2 = \\$18 $.\n\nTherefore, Janet makes $18 every day at the farmers' market.\n\n**Answer: 18",
+    "predicted_answer": "18",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      6,
+      11,
+      6,
+      8,
+      13,
+      6
+    ],
+    "ttfb_seconds": 0.21645231499999795,
+    "tbb_seconds": [
+      0.04135145000000762,
+      0.07712167399998293,
+      0.044770537000005106,
+      0.058381212999989884,
+      0.09200106200000846,
+      0.0354980879999971
+    ],
+    "dllm_block_completion_latencies": [
+      0.21645231499999795,
+      0.04135145000000762,
+      0.07712167399998293,
+      0.044770537000005106,
+      0.058381212999989884,
+      0.09200106200000846,
+      0.0354980879999971
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      6,
+      11,
+      6,
+      8,
+      13,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.22977150400001278,
+    "first_new_token_ttfb_seconds": 0.22977150400001278,
+    "block_ttfb_seconds": 0.22977150400001278,
+    "tbb_seconds": [
+      0.04055962099999988,
+      0.07732591499998875,
+      0.044390574999994215,
+      0.05880776800000831,
+      0.09162685499998702,
+      0.03621727000000874
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.22977150400001278,
+      0.27033112500001266,
+      0.3476570400000014,
+      0.39204761499999563,
+      0.45085538300000394,
+      0.542482237999991,
+      0.5786995079999997
+    ],
+    "e2e_seconds": 0.5787938130000043
+  },
+  "token_metrics": {
+    "prompt_tokens": 753,
+    "completion_tokens": 186,
+    "total_tokens": 939,
+    "end_to_end_tokens_per_second": 1622.339387376957,
+    "total_tokens_per_second": 1622.339387376957,
+    "completion_tokens_per_second": 321.3579617168413,
+    "tokens_after_first_block": 171,
+    "generated_tokens_per_second_after_first_block": 489.9400284467322
+  },
+  "final_meta_info": {
+    "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 753,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 186,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      6,
+      11,
+      6,
+      8,
+      13,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.21645231499999795,
+      0.04135145000000762,
+      0.07712167399998293,
+      0.044770537000005106,
+      0.058381212999989884,
+      0.09200106200000846,
+      0.0354980879999971
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5704011079999987
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.22977150400001278,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.21645231499999795
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874434.6958888
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 0.27033112500001266,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.04135145000000762
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Egg",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795,
+          0.04135145000000762
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 0.3476570400000014,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.07712167399998293
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Eggs used for muffins**: She uses 4 eggs to bake muffins.\n\n4. **Total eggs used per day**: 3 (breakfast) +",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          6,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795,
+          0.04135145000000762,
+          0.07712167399998293
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 0.39204761499999563,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.044770537000005106
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Eggs used for muffins**: She uses 4 eggs to bake muffins.\n\n4. **Total eggs used per day**: 3 (breakfast) + 4 (muffins) = 7 eggs.\n\n5. **Eggs remaining for sale**: 16 (total laid) - ",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          6,
+          11,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795,
+          0.04135145000000762,
+          0.07712167399998293,
+          0.044770537000005106
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 0.45085538300000394,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.058381212999989884
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Eggs used for muffins**: She uses 4 eggs to bake muffins.\n\n4. **Total eggs used per day**: 3 (breakfast) + 4 (muffins) = 7 eggs.\n\n5. **Eggs remaining for sale**: 16 (total laid) - 7 (used) = 9 eggs.\n\n6. **Revenue from selling eggs**: She sells each egg for $2, so:\n   $",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          6,
+          11,
+          6,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795,
+          0.04135145000000762,
+          0.07712167399998293,
+          0.044770537000005106,
+          0.058381212999989884
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 0.542482237999991,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.09200106200000846
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Eggs used for muffins**: She uses 4 eggs to bake muffins.\n\n4. **Total eggs used per day**: 3 (breakfast) + 4 (muffins) = 7 eggs.\n\n5. **Eggs remaining for sale**: 16 (total laid) - 7 (used) = 9 eggs.\n\n6. **Revenue from selling eggs**: She sells each egg for $2, so:\n   $ 9 \\text{ eggs} \\times \\$2 = \\$18 $.\n\nTherefore, Janet makes $18 every day at the farmers' market",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          6,
+          11,
+          6,
+          8,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795,
+          0.04135145000000762,
+          0.07712167399998293,
+          0.044770537000005106,
+          0.058381212999989884,
+          0.09200106200000846
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 0.5786995079999997,
+      "output_token_count": 186,
+      "new_output_tokens": 11,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.0354980879999971
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **Eggs laid per day**: Janet’s ducks lay 16 eggs per day.\n\n2. **Eggs eaten by Janet**: She eats 3 eggs for breakfast.\n\n3. **Eggs used for muffins**: She uses 4 eggs to bake muffins.\n\n4. **Total eggs used per day**: 3 (breakfast) + 4 (muffins) = 7 eggs.\n\n5. **Eggs remaining for sale**: 16 (total laid) - 7 (used) = 9 eggs.\n\n6. **Revenue from selling eggs**: She sells each egg for $2, so:\n   $ 9 \\text{ eggs} \\times \\$2 = \\$18 $.\n\nTherefore, Janet makes $18 every day at the farmers' market.\n\n**Answer: 18",
+      "meta_info": {
+        "id": "057be0cf648d49a3bd074c3ed87ab7c4",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 186,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          6,
+          11,
+          6,
+          8,
+          13,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.21645231499999795,
+          0.04135145000000762,
+          0.07712167399998293,
+          0.044770537000005106,
+          0.058381212999989884,
+          0.09200106200000846,
+          0.0354980879999971
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5704011079999987
+      }
+    }
+  ]
+}

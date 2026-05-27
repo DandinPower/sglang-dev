@@ -1,0 +1,202 @@
+{
+  "ok": true,
+  "request_index": 69,
+  "eval_index": 69,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how much money did Bailey start with?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how much money did Bailey start with?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 6.9,
+  "request_start_realtime": "2026-05-27T09:00:04.577",
+  "benchmark": {
+    "question": "Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how much money did Bailey start with?",
+    "gold_solution": "In 8 weeks, Bailey receives $5 * 8 = $<<5*8=40>>40 in allowance\nBailey started with $100 - $40 = $<<100-40=60>>60\n#### 60",
+    "gold_answer": "60",
+    "model_text": "\nBailey receives $5 per week for 8 weeks, so she gets 5 * 8 = $<<5*8=40>>40 in total.\nAt the end of 8 weeks, she has $100.\nThis means she started with $100 - $40 = $<<100-40=60>>60.\n#### 60",
+    "predicted_answer": "60",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      13,
+      19,
+      5
+    ],
+    "ttfb_seconds": 0.7345639409999762,
+    "tbb_seconds": [
+      1.285937438000019,
+      0.5156062679999991
+    ],
+    "dllm_block_completion_latencies": [
+      0.7345639409999762,
+      1.285937438000019,
+      0.5156062679999991
+    ],
+    "dllm_forward_counts_per_block": [
+      13,
+      19,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 9.594102265000004,
+    "first_new_token_ttfb_seconds": 9.594102265000004,
+    "block_ttfb_seconds": 9.594102265000004,
+    "tbb_seconds": [
+      1.2855854969999996,
+      0.5135612430000265
+    ],
+    "block_arrival_elapsed_seconds": [
+      9.594102265000004,
+      10.879687762000003,
+      11.39324900500003
+    ],
+    "e2e_seconds": 11.393316478000031
+  },
+  "token_metrics": {
+    "prompt_tokens": 741,
+    "completion_tokens": 87,
+    "total_tokens": 828,
+    "end_to_end_tokens_per_second": 72.67418592284606,
+    "total_tokens_per_second": 72.67418592284606,
+    "completion_tokens_per_second": 7.636055767255565,
+    "tokens_after_first_block": 60,
+    "generated_tokens_per_second_after_first_block": 33.34789129969989
+  },
+  "final_meta_info": {
+    "id": "4f1aafe58d6645168871840befe3d6c4",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 741,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 87,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      13,
+      19,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.7345639409999762,
+      1.285937438000019,
+      0.5156062679999991
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.554771913999957
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 9.594102265000004,
+      "output_token_count": 27,
+      "new_output_tokens": 27,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.7345639409999762
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\nBailey receives $5 per week for 8 weeks, so she gets 5 * 8 = $<<5*8=",
+      "meta_info": {
+        "id": "4f1aafe58d6645168871840befe3d6c4",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 27,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.7345639409999762
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872414.168569
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 10.879687762000003,
+      "output_token_count": 59,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        1.285937438000019
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\nBailey receives $5 per week for 8 weeks, so she gets 5 * 8 = $<<5*8=40>>40 in total.\nAt the end of 8 weeks, she has $100.\nThis means she started with $1",
+      "meta_info": {
+        "id": "4f1aafe58d6645168871840befe3d6c4",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 59,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.7345639409999762,
+          1.285937438000019
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 11.39324900500003,
+      "output_token_count": 87,
+      "new_output_tokens": 28,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5156062679999991
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\nBailey receives $5 per week for 8 weeks, so she gets 5 * 8 = $<<5*8=40>>40 in total.\nAt the end of 8 weeks, she has $100.\nThis means she started with $100 - $40 = $<<100-40=60>>60.\n#### 60",
+      "meta_info": {
+        "id": "4f1aafe58d6645168871840befe3d6c4",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 87,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          19,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.7345639409999762,
+          1.285937438000019,
+          0.5156062679999991
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.554771913999957
+      }
+    }
+  ]
+}

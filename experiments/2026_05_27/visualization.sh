@@ -1,0 +1,2 @@
+python visualize_experiment_results.py --results-dir llada2.0_low_confidence/ --output-dir llada2.0_low_confidence/figures
+python visualize_experiment_results.py --results-dir llada2.1_joint_threshold/ --output-dir llada2.1_joint_threshold/figures

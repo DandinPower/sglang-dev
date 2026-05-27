@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 3,
+  "eval_index": 3,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.30000000000000004,
+  "request_start_realtime": "2026-05-27T09:59:53.469",
+  "benchmark": {
+    "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+    "gold_solution": "He sprints 3*3=<<3*3=9>>9 times\nSo he runs 9*60=<<9*60=540>>540 meters\n#### 540",
+    "gold_answer": "540",
+    "model_text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<180 meters per session.\n\nBut he runs 3 times a week, so:\n\nWeekly sprints = 3 * 180 = <<540 meters.\n\nAlternatively, break down:\nTotal sprint sprints = 3 sprints * 3 sessions = <<9>> sprints per week.\nEach sprint is 60 meters, so:\nTotal meters = 9 * 60 = <<540..\n\n#### 540",
+    "predicted_answer": "540",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      6,
+      13,
+      16,
+      7,
+      10,
+      13,
+      9,
+      2
+    ],
+    "ttfb_seconds": 0.19811811499999976,
+    "tbb_seconds": [
+      0.09005370200000584,
+      0.11663268300000595,
+      0.05012587999999596,
+      0.0733950559999954,
+      0.09323056400000951,
+      0.06666234200000076,
+      0.011752170999997702
+    ],
+    "dllm_block_completion_latencies": [
+      0.19811811499999976,
+      0.09005370200000584,
+      0.11663268300000595,
+      0.05012587999999596,
+      0.0733950559999954,
+      0.09323056400000951,
+      0.06666234200000076,
+      0.011752170999997702
+    ],
+    "dllm_forward_counts_per_block": [
+      6,
+      13,
+      16,
+      7,
+      10,
+      13,
+      9,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 1.7933925420000065,
+    "first_new_token_ttfb_seconds": 1.7933925420000065,
+    "block_ttfb_seconds": 1.7933925420000065,
+    "tbb_seconds": [
+      0.09008992600000454,
+      0.11692998299999147,
+      0.04985722600000031,
+      0.07343072700000164,
+      0.09325222900000085,
+      0.06673992500000736,
+      0.011550166999995781
+    ],
+    "block_arrival_elapsed_seconds": [
+      1.7933925420000065,
+      1.883482468000011,
+      2.0004124510000025,
+      2.050269677000003,
+      2.1237004040000045,
+      2.2169526330000053,
+      2.2836925580000127,
+      2.2952427250000085
+    ],
+    "e2e_seconds": 2.2953232960000065
+  },
+  "token_metrics": {
+    "prompt_tokens": 725,
+    "completion_tokens": 207,
+    "total_tokens": 932,
+    "end_to_end_tokens_per_second": 406.0430186998796,
+    "total_tokens_per_second": 406.0430186998796,
+    "completion_tokens_per_second": 90.18337432497327,
+    "tokens_after_first_block": 196,
+    "generated_tokens_per_second_after_first_block": 390.4921115871693
+  },
+  "final_meta_info": {
+    "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 725,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 207,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      6,
+      13,
+      16,
+      7,
+      10,
+      13,
+      9,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.19811811499999976,
+      0.09005370200000584,
+      0.11663268300000595,
+      0.05012587999999596,
+      0.0733950559999954,
+      0.09323056400000951,
+      0.06666234200000076,
+      0.011752170999997702
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7033308710000057
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 1.7933925420000065,
+      "output_token_count": 11,
+      "new_output_tokens": 11,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.19811811499999976
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n. James runs 3 sprints per session",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 11,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779875995.2626963
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.883482468000011,
+      "output_token_count": 43,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.09005370200000584
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=18",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 43,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.0004124510000025,
+      "output_token_count": 75,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.11663268300000595
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 75,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584,
+          0.11663268300000595
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.050269677000003,
+      "output_token_count": 107,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.05012587999999596
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<180 meters per session.",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 107,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          16,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584,
+          0.11663268300000595,
+          0.05012587999999596
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.1237004040000045,
+      "output_token_count": 139,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.0733950559999954
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<180 meters per session.\n\nBut he runs 3 times a week, so:\n\nWeekly sprints = 3 * 180 = <<540 meters",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 139,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          16,
+          7,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584,
+          0.11663268300000595,
+          0.05012587999999596,
+          0.0733950559999954
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.2169526330000053,
+      "output_token_count": 171,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.09323056400000951
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<180 meters per session.\n\nBut he runs 3 times a week, so:\n\nWeekly sprints = 3 * 180 = <<540 meters.\n\nAlternatively, break down:\nTotal sprint sprints = 3 sprints * 3 sessions = <<9>> sprints per week.\n",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 171,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          16,
+          7,
+          10,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584,
+          0.11663268300000595,
+          0.05012587999999596,
+          0.0733950559999954,
+          0.09323056400000951
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 2.2836925580000127,
+      "output_token_count": 203,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.06666234200000076
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<180 meters per session.\n\nBut he runs 3 times a week, so:\n\nWeekly sprints = 3 * 180 = <<540 meters.\n\nAlternatively, break down:\nTotal sprint sprints = 3 sprints * 3 sessions = <<9>> sprints per week.\nEach sprint is 60 meters, so:\nTotal meters = 9 * 60 = <<540..\n\n#### 5",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": null,
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 203,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          16,
+          7,
+          10,
+          13,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584,
+          0.11663268300000595,
+          0.05012587999999596,
+          0.0733950559999954,
+          0.09323056400000951,
+          0.06666234200000076
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 2.2952427250000085,
+      "output_token_count": 207,
+      "new_output_tokens": 4,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.011752170999997702
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n. James runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<3*60=180>>180 meters per week.\n\nWait, that's incorrect. Let's recalculate:\n\nJames runs 3 sprints per session, and each sprint is 60 meters.\nSo, daily sprints = 3 * 60 = <<180 meters per session.\n\nBut he runs 3 times a week, so:\n\nWeekly sprints = 3 * 180 = <<540 meters.\n\nAlternatively, break down:\nTotal sprint sprints = 3 sprints * 3 sessions = <<9>> sprints per week.\nEach sprint is 60 meters, so:\nTotal meters = 9 * 60 = <<540..\n\n#### 540",
+      "meta_info": {
+        "id": "ed0f5c4b5fe34ecc9af7897e5ec72dbd",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 725,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          6,
+          13,
+          16,
+          7,
+          10,
+          13,
+          9,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.19811811499999976,
+          0.09005370200000584,
+          0.11663268300000595,
+          0.05012587999999596,
+          0.0733950559999954,
+          0.09323056400000951,
+          0.06666234200000076,
+          0.011752170999997702
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7033308710000057
+      }
+    }
+  ]
+}

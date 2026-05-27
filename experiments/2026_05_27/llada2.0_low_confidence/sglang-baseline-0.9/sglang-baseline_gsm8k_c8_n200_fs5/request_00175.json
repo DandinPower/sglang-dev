@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 175,
+  "eval_index": 175,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Juan and his brother Carlos are selling lemonade. For each gallon they make it costs $3 for lemons and $2 for sugar. They sell each glass for $0.50 and get 20 glasses per gallon. If they made $25 in profit, how much did they spend on lemons?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Juan and his brother Carlos are selling lemonade. For each gallon they make it costs $3 for lemons and $2 for sugar. They sell each glass for $0.50 and get 20 glasses per gallon. If they made $25 in profit, how much did they spend on lemons?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 17.5,
+  "request_start_realtime": "2026-05-27T08:59:47.870",
+  "benchmark": {
+    "question": "Juan and his brother Carlos are selling lemonade. For each gallon they make it costs $3 for lemons and $2 for sugar. They sell each glass for $0.50 and get 20 glasses per gallon. If they made $25 in profit, how much did they spend on lemons?",
+    "gold_solution": "Each gallon sells for a total of $10 because 20 x .5 = <<20*.5=10>>10\nEach gallon costs $5 to make because 3 + 2 = <<5=5>>5\nThey make $5 off each gallon because 10 - 5 = <<10-5=5>>5\nThey made and sold 5 gallons because 25 / 5 = <<25/5=5>>5\nThey spent $15 on lemons because 5 x 3 = <<5*3=15>>15\n#### 15",
+    "gold_answer": "15",
+    "model_text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\nThen:\nProfit = (Revenue per gallon - Cost per gallon) * G\n$25 = ($10 - $5) * G\n$25 = $5 * G\nG = $25 / $5 = 5 gallons\n\nNow, each gallon costs $3 (lemons) and $2 (sugar), so total cost per gallon is $5.\n\nBut the question is $3 (lemons) per gallon.\n\nSo total spent on lemons (lemons) = 5 gallons * $3 (lemons) = $15 (lemons)\n\n#### 15",
+    "predicted_answer": "15",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      26,
+      25,
+      30,
+      27,
+      24,
+      28,
+      26,
+      22,
+      30
+    ],
+    "ttfb_seconds": 0.5168879629999878,
+    "tbb_seconds": [
+      0.30750024500002837,
+      0.3406589839999583,
+      0.4978651850000233,
+      0.28537911699999086,
+      0.5138844350000227,
+      0.30929012100000364,
+      0.4378049229999874,
+      0.36165774500000225
+    ],
+    "dllm_block_completion_latencies": [
+      0.5168879629999878,
+      0.30750024500002837,
+      0.3406589839999583,
+      0.4978651850000233,
+      0.28537911699999086,
+      0.5138844350000227,
+      0.30929012100000364,
+      0.4378049229999874,
+      0.36165774500000225
+    ],
+    "dllm_forward_counts_per_block": [
+      26,
+      25,
+      30,
+      27,
+      24,
+      28,
+      26,
+      22,
+      30
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 38.057962868000004,
+    "first_new_token_ttfb_seconds": 38.057962868000004,
+    "block_ttfb_seconds": 38.057962868000004,
+    "tbb_seconds": [
+      0.310750650999978,
+      0.33658124000004364,
+      0.5064366529999802,
+      0.2769679009999777,
+      0.5167442740000183,
+      0.30634217900001204,
+      0.4411371609999719,
+      0.3610025490000339
+    ],
+    "block_arrival_elapsed_seconds": [
+      38.057962868000004,
+      38.36871351899998,
+      38.705294759000026,
+      39.211731412000006,
+      39.488699312999984,
+      40.005443587,
+      40.311785766000014,
+      40.752922926999986,
+      41.11392547600002
+    ],
+    "e2e_seconds": 41.11398111699998
+  },
+  "token_metrics": {
+    "prompt_tokens": 752,
+    "completion_tokens": 246,
+    "total_tokens": 998,
+    "end_to_end_tokens_per_second": 24.27398108589739,
+    "total_tokens_per_second": 24.27398108589739,
+    "completion_tokens_per_second": 5.983366079289337,
+    "tokens_after_first_block": 230,
+    "generated_tokens_per_second_after_first_block": 75.26133067931225
+  },
+  "final_meta_info": {
+    "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 752,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 246,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      26,
+      25,
+      30,
+      27,
+      24,
+      28,
+      26,
+      22,
+      30
+    ],
+    "dllm_block_completion_latencies": [
+      0.5168879629999878,
+      0.30750024500002837,
+      0.3406589839999583,
+      0.4978651850000233,
+      0.28537911699999086,
+      0.5138844350000227,
+      0.30929012100000364,
+      0.4378049229999874,
+      0.36165774500000225
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.5925234150000165
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 38.057962868000004,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5168879629999878
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872425.9278598
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 38.36871351899998,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.30750024500002837
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 38.705294759000026,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3406589839999583
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 39.211731412000006,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.4978651850000233
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\n",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583,
+          0.4978651850000233
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 39.488699312999984,
+      "output_token_count": 144,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.28537911699999086
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\nThen:\nProfit = (Revenue per gallon - Cost per gallon) * G\n$25 = ($10 - $5) * G\n$",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30,
+          27,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583,
+          0.4978651850000233,
+          0.28537911699999086
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 40.005443587,
+      "output_token_count": 176,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.5138844350000227
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\nThen:\nProfit = (Revenue per gallon - Cost per gallon) * G\n$25 = ($10 - $5) * G\n$25 = $5 * G\nG = $25 / $5 = 5 gallons\n\nNow, each gallon costs $3 (lemons",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30,
+          27,
+          24,
+          28
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583,
+          0.4978651850000233,
+          0.28537911699999086,
+          0.5138844350000227
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 40.311785766000014,
+      "output_token_count": 208,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.30929012100000364
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\nThen:\nProfit = (Revenue per gallon - Cost per gallon) * G\n$25 = ($10 - $5) * G\n$25 = $5 * G\nG = $25 / $5 = 5 gallons\n\nNow, each gallon costs $3 (lemons) and $2 (sugar), so total cost per gallon is $5.\n\nBut the question is $3 (lemons) per gallon.",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30,
+          27,
+          24,
+          28,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583,
+          0.4978651850000233,
+          0.28537911699999086,
+          0.5138844350000227,
+          0.30929012100000364
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 40.752922926999986,
+      "output_token_count": 240,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.4378049229999874
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\nThen:\nProfit = (Revenue per gallon - Cost per gallon) * G\n$25 = ($10 - $5) * G\n$25 = $5 * G\nG = $25 / $5 = 5 gallons\n\nNow, each gallon costs $3 (lemons) and $2 (sugar), so total cost per gallon is $5.\n\nBut the question is $3 (lemons) per gallon.\n\nSo total spent on lemons (lemons) = 5 gallons * $3 (lemons) = $15 (lemons)\n\n",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": null,
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 240,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30,
+          27,
+          24,
+          28,
+          26,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583,
+          0.4978651850000233,
+          0.28537911699999086,
+          0.5138844350000227,
+          0.30929012100000364,
+          0.4378049229999874
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 41.11392547600002,
+      "output_token_count": 246,
+      "new_output_tokens": 6,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.36165774500000225
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nFirst, let's figure out how many gallons they sold based on the profit.\n\nProfit = Revenue - Cost\n\nWe know:\n- Profit = $25\n- Cost per gallon = $3 (lemons) + $2 (sugar) = $5\n- Revenue per glass = $0.50\n- Glasses per gallon = 20\n- So revenue per gallon = 20 * $0.50 = $10\n\nLet G be the number of gallons sold.\n\nThen:\nProfit = (Revenue per gallon - Cost per gallon) * G\n$25 = ($10 - $5) * G\n$25 = $5 * G\nG = $25 / $5 = 5 gallons\n\nNow, each gallon costs $3 (lemons) and $2 (sugar), so total cost per gallon is $5.\n\nBut the question is $3 (lemons) per gallon.\n\nSo total spent on lemons (lemons) = 5 gallons * $3 (lemons) = $15 (lemons)\n\n#### 15",
+      "meta_info": {
+        "id": "62ca1b9d48b4471f83e3af0c27d8b0f8",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 752,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 246,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          26,
+          25,
+          30,
+          27,
+          24,
+          28,
+          26,
+          22,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.5168879629999878,
+          0.30750024500002837,
+          0.3406589839999583,
+          0.4978651850000233,
+          0.28537911699999086,
+          0.5138844350000227,
+          0.30929012100000364,
+          0.4378049229999874,
+          0.36165774500000225
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.5925234150000165
+      }
+    }
+  ]
+}

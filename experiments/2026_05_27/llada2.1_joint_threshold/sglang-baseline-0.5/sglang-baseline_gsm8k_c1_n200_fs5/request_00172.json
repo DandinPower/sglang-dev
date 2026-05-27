@@ -1,0 +1,670 @@
+{
+  "ok": true,
+  "request_index": 172,
+  "eval_index": 172,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: There are four birds at the Caboose. Sally Two is three years older than Granny Red. Granny Red is two times as old as Sally Four. If Sally Four is the same age as Sally Thirtytwo, and Sally Thirtytwo is 8 years old, what's the total age of the four birds?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: There are four birds at the Caboose. Sally Two is three years older than Granny Red. Granny Red is two times as old as Sally Four. If Sally Four is the same age as Sally Thirtytwo, and Sally Thirtytwo is 8 years old, what's the total age of the four birds?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 17.2,
+  "request_start_realtime": "2026-05-27T09:32:36.273",
+  "benchmark": {
+    "question": "There are four birds at the Caboose. Sally Two is three years older than Granny Red. Granny Red is two times as old as Sally Four. If Sally Four is the same age as Sally Thirtytwo, and Sally Thirtytwo is 8 years old, what's the total age of the four birds?",
+    "gold_solution": "If Sally Thirtytwo is 8 years old, same as Sally four, their total age 8+8 = <<8+8=16>>16 years.\nGranny red is two times as old as Sally four, meaning Granny red is 2*8 = <<2*8=16>>16 years old.\nSally Thirtytwo, Sally four, and Sally red are 16+16 = <<32=32>>32 years old.\nSally two is three years older than Granny red, meaning Sally two is 16+3= <<16+3=19>>19 years old.\nThe four birds have a total age of 32+19 = <<32+19=51>>51 years old.\n#### 51",
+    "gold_answer": "51",
+    "model_text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two... Granny Red... Sally Four... Sally Thirtytwo...\"\n\nSo the four birds are named: Sally Two, Granny Red, Sally Four, and Sally Thirtytwo.\n\nSo their ages are:\n\n- Sally Two: 19\n- Granny Red: 16\n- Sally Four: 8\n- Sally Thirtytwo: 8\n\nNow, total age = 19 + 16 + 8 + 8 = ?\n\n19 + 16 = 35  \n35 + 8 = 43  \n43 + 8 = 51\n\nSo the total age of the four birds is 51 years.\n\nAnswer: 51",
+    "predicted_answer": "51",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      4,
+      3,
+      4,
+      15,
+      19,
+      15,
+      12,
+      7,
+      5,
+      4,
+      4
+    ],
+    "ttfb_seconds": 0.16942350900001202,
+    "tbb_seconds": [
+      0.023934782999987192,
+      0.018736358000012387,
+      0.02597353999999541,
+      0.08464150800000425,
+      0.10821416999999656,
+      0.08248340199997983,
+      0.06586405500002002,
+      0.041693151000004036,
+      0.030901016999990816,
+      0.022547059999993735,
+      0.02502733599999374
+    ],
+    "dllm_block_completion_latencies": [
+      0.16942350900001202,
+      0.023934782999987192,
+      0.018736358000012387,
+      0.02597353999999541,
+      0.08464150800000425,
+      0.10821416999999656,
+      0.08248340199997983,
+      0.06586405500002002,
+      0.041693151000004036,
+      0.030901016999990816,
+      0.022547059999993735,
+      0.02502733599999374
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      4,
+      3,
+      4,
+      15,
+      19,
+      15,
+      12,
+      7,
+      5,
+      4,
+      4
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 60.265644263999974,
+    "first_new_token_ttfb_seconds": 60.265644263999974,
+    "block_ttfb_seconds": 60.265644263999974,
+    "tbb_seconds": [
+      0.02394821800001523,
+      0.018902246000010337,
+      0.025692123999988326,
+      0.08478670499999907,
+      0.10821273100000894,
+      0.08248839299997712,
+      0.06575902800000222,
+      0.0418705670000179,
+      0.03074938800000382,
+      0.0225738669999771,
+      0.025283247000004394
+    ],
+    "block_arrival_elapsed_seconds": [
+      60.265644263999974,
+      60.28959248199999,
+      60.308494728,
+      60.33418685199999,
+      60.41897355699999,
+      60.527186287999996,
+      60.60967468099997,
+      60.675433708999975,
+      60.71730427599999,
+      60.748053664,
+      60.770627530999974,
+      60.79591077799998
+    ],
+    "e2e_seconds": 60.79598803099998
+  },
+  "token_metrics": {
+    "prompt_tokens": 754,
+    "completion_tokens": 363,
+    "total_tokens": 1117,
+    "end_to_end_tokens_per_second": 18.372922888109652,
+    "total_tokens_per_second": 18.372922888109652,
+    "completion_tokens_per_second": 5.970788727290782,
+    "tokens_after_first_block": 349,
+    "generated_tokens_per_second_after_first_block": 658.0637347247199
+  },
+  "final_meta_info": {
+    "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 754,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 363,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      4,
+      3,
+      4,
+      15,
+      19,
+      15,
+      12,
+      7,
+      5,
+      4,
+      4
+    ],
+    "dllm_block_completion_latencies": [
+      0.16942350900001202,
+      0.023934782999987192,
+      0.018736358000012387,
+      0.02597353999999541,
+      0.08464150800000425,
+      0.10821416999999656,
+      0.08248340199997983,
+      0.06586405500002002,
+      0.041693151000004036,
+      0.030901016999990816,
+      0.022547059999993735,
+      0.02502733599999374
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7019717930000127
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 60.265644263999974,
+      "output_token_count": 14,
+      "new_output_tokens": 14,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.16942350900001202
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is ",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 14,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874416.538809
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 60.28959248199999,
+      "output_token_count": 46,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.023934782999987192
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 46,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 60.308494728,
+      "output_token_count": 78,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.018736358000012387
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 78,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 60.33418685199999,
+      "output_token_count": 110,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.02597353999999541
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 110,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 60.41897355699999,
+      "output_token_count": 142,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.08464150800000425
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 142,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 60.527186287999996,
+      "output_token_count": 174,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.10821416999999656
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 174,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 60.60967468099997,
+      "output_token_count": 206,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.08248340199997983
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 206,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656,
+          0.08248340199997983
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 60.675433708999975,
+      "output_token_count": 238,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.06586405500002002
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two... Granny Red... Sally Four... Sally Thirtytwo...\"\n\nSo the four birds are named: Sally Two, Granny Red, Sally Four, and",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 238,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19,
+          15,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656,
+          0.08248340199997983,
+          0.06586405500002002
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 60.71730427599999,
+      "output_token_count": 270,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.041693151000004036
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two... Granny Red... Sally Four... Sally Thirtytwo...\"\n\nSo the four birds are named: Sally Two, Granny Red, Sally Four, and Sally Thirtytwo.\n\nSo their ages are:\n\n- Sally Two: 19\n- Granny Red: 16\n- Sally",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 270,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19,
+          15,
+          12,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656,
+          0.08248340199997983,
+          0.06586405500002002,
+          0.041693151000004036
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 60.748053664,
+      "output_token_count": 302,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.030901016999990816
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two... Granny Red... Sally Four... Sally Thirtytwo...\"\n\nSo the four birds are named: Sally Two, Granny Red, Sally Four, and Sally Thirtytwo.\n\nSo their ages are:\n\n- Sally Two: 19\n- Granny Red: 16\n- Sally Four: 8\n- Sally Thirtytwo: 8\n\nNow, total age = 19 + 16 + 8 + 8",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 302,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19,
+          15,
+          12,
+          7,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656,
+          0.08248340199997983,
+          0.06586405500002002,
+          0.041693151000004036,
+          0.030901016999990816
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 60.770627530999974,
+      "output_token_count": 334,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.022547059999993735
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two... Granny Red... Sally Four... Sally Thirtytwo...\"\n\nSo the four birds are named: Sally Two, Granny Red, Sally Four, and Sally Thirtytwo.\n\nSo their ages are:\n\n- Sally Two: 19\n- Granny Red: 16\n- Sally Four: 8\n- Sally Thirtytwo: 8\n\nNow, total age = 19 + 16 + 8 + 8 = ?\n\n19 + 16 = 35  \n35 + 8 = 43  \n43 + 8",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": null,
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 334,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19,
+          15,
+          12,
+          7,
+          5,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656,
+          0.08248340199997983,
+          0.06586405500002002,
+          0.041693151000004036,
+          0.030901016999990816,
+          0.022547059999993735
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 60.79591077799998,
+      "output_token_count": 363,
+      "new_output_tokens": 29,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.02502733599999374
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\nWe are given:\n\n- Sally Thirtytwo is 8 years old.\n- Sally Four is the same age as Sally Thirtytwo → Sally Four is 8 years old.\n- Granny Red is two times as old as Sally Four → Granny Red = 2 × 8 = 16 years old.\n- Sally Two is three years older than Granny Red → Sally Two = 16 + 3 = 19 years old.\n\nNow, we have the ages of all four birds:\n\n- Sally Two: 19 years\n- Granny Red: 16 years\n- Sally Four: 8 years\n- (The fourth bird is not named, but the problem says \"four birds\" and lists Sally Two, Sally Four, Granny Red, and one unnamed — but actually, the names seem to be the birds' names.)\n\nWait — the problem says: \"There are four birds at the Caboose. Sally Two... Granny Red... Sally Four... Sally Thirtytwo...\"\n\nSo the four birds are named: Sally Two, Granny Red, Sally Four, and Sally Thirtytwo.\n\nSo their ages are:\n\n- Sally Two: 19\n- Granny Red: 16\n- Sally Four: 8\n- Sally Thirtytwo: 8\n\nNow, total age = 19 + 16 + 8 + 8 = ?\n\n19 + 16 = 35  \n35 + 8 = 43  \n43 + 8 = 51\n\nSo the total age of the four birds is 51 years.\n\nAnswer: 51",
+      "meta_info": {
+        "id": "c86f62b8eb1b4f4b9df80e3108e9d001",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 754,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 363,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          4,
+          3,
+          4,
+          15,
+          19,
+          15,
+          12,
+          7,
+          5,
+          4,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16942350900001202,
+          0.023934782999987192,
+          0.018736358000012387,
+          0.02597353999999541,
+          0.08464150800000425,
+          0.10821416999999656,
+          0.08248340199997983,
+          0.06586405500002002,
+          0.041693151000004036,
+          0.030901016999990816,
+          0.022547059999993735,
+          0.02502733599999374
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7019717930000127
+      }
+    }
+  ]
+}

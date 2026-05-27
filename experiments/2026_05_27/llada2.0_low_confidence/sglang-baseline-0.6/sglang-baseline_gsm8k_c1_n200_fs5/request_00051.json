@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 51,
+  "eval_index": 51,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Tom's ship can travel at 10 miles per hour.  He is sailing from 1 to 4 PM.  He then travels back at a rate of 6 mph.  How long does it take him to get back?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Tom's ship can travel at 10 miles per hour.  He is sailing from 1 to 4 PM.  He then travels back at a rate of 6 mph.  How long does it take him to get back?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.1000000000000005,
+  "request_start_realtime": "2026-05-27T09:17:27.905",
+  "benchmark": {
+    "question": "Tom's ship can travel at 10 miles per hour.  He is sailing from 1 to 4 PM.  He then travels back at a rate of 6 mph.  How long does it take him to get back?",
+    "gold_solution": "He was travelling at full speed for 4-1=<<4-1=3>>3 hours\nSo he went 3*10=<<3*10=30>>30 miles\nThat means it takes 30/6=<<30/6=5>>5 hours to get back\n#### 5",
+    "gold_answer": "5",
+    "model_text": "\n\n1. Tom is sailing from 1 to 4 PM, which is a duration of 3 hours.\n2. At a speed of 10 miles per hour, the distance he travels forward is:  \n   3 hours * 10 mph = 30 miles.\n3. On the return trip, he travels at 6 miles per hour.\n4. To find how long it takes to travel 30 miles at 6 mph, we use the formula:  \n   Time = Distance / Speed  \n   Time = 30 miles / 6 mph = 5 hours.\n\nSo, it takes him 5 hours to get back.",
+    "predicted_answer": "5",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      14,
+      13,
+      15,
+      12,
+      5
+    ],
+    "ttfb_seconds": 0.2407304339999996,
+    "tbb_seconds": [
+      0.08188474299998916,
+      0.09338742700001035,
+      0.07842424300000062,
+      0.03218388799999161
+    ],
+    "dllm_block_completion_latencies": [
+      0.2407304339999996,
+      0.08188474299998916,
+      0.09338742700001035,
+      0.07842424300000062,
+      0.03218388799999161
+    ],
+    "dllm_forward_counts_per_block": [
+      14,
+      13,
+      15,
+      12,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 23.210195346999996,
+    "first_new_token_ttfb_seconds": 23.210195346999996,
+    "block_ttfb_seconds": 23.210195346999996,
+    "tbb_seconds": [
+      0.08142608599999335,
+      0.09361116700000593,
+      0.07803652100000136,
+      0.03175207699999305
+    ],
+    "block_arrival_elapsed_seconds": [
+      23.210195346999996,
+      23.29162143299999,
+      23.385232599999995,
+      23.463269120999996,
+      23.49502119799999
+    ],
+    "e2e_seconds": 23.49516466899999
+  },
+  "token_metrics": {
+    "prompt_tokens": 739,
+    "completion_tokens": 146,
+    "total_tokens": 885,
+    "end_to_end_tokens_per_second": 37.66732485036325,
+    "total_tokens_per_second": 37.66732485036325,
+    "completion_tokens_per_second": 6.21404455158535,
+    "tokens_after_first_block": 117,
+    "generated_tokens_per_second_after_first_block": 410.5705104635863
+  },
+  "final_meta_info": {
+    "id": "fbd1ddfe1e6d43e79984c36f58ce4366",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 739,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 146,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      14,
+      13,
+      15,
+      12,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.2407304339999996,
+      0.08188474299998916,
+      0.09338742700001035,
+      0.07842424300000062,
+      0.03218388799999161
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5373383269999863
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 23.210195346999996,
+      "output_token_count": 29,
+      "new_output_tokens": 29,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2407304339999996
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Tom is sailing from 1 to 4 PM, which is a duration of 3 hours.\n2. At a",
+      "meta_info": {
+        "id": "fbd1ddfe1e6d43e79984c36f58ce4366",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 29,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2407304339999996
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873471.115644
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 23.29162143299999,
+      "output_token_count": 61,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.08188474299998916
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Tom is sailing from 1 to 4 PM, which is a duration of 3 hours.\n2. At a speed of 10 miles per hour, the distance he travels forward is:  \n   3 hours * 10 mph = 30 miles",
+      "meta_info": {
+        "id": "fbd1ddfe1e6d43e79984c36f58ce4366",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 61,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.2407304339999996,
+          0.08188474299998916
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 23.385232599999995,
+      "output_token_count": 93,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.09338742700001035
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Tom is sailing from 1 to 4 PM, which is a duration of 3 hours.\n2. At a speed of 10 miles per hour, the distance he travels forward is:  \n   3 hours * 10 mph = 30 miles.\n3. On the return trip, he travels at 6 miles per hour.\n4. To find how long it takes to travel 30",
+      "meta_info": {
+        "id": "fbd1ddfe1e6d43e79984c36f58ce4366",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 93,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          13,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.2407304339999996,
+          0.08188474299998916,
+          0.09338742700001035
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 23.463269120999996,
+      "output_token_count": 125,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.07842424300000062
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Tom is sailing from 1 to 4 PM, which is a duration of 3 hours.\n2. At a speed of 10 miles per hour, the distance he travels forward is:  \n   3 hours * 10 mph = 30 miles.\n3. On the return trip, he travels at 6 miles per hour.\n4. To find how long it takes to travel 30 miles at 6 mph, we use the formula:  \n   Time = Distance / Speed  \n   Time = 30 miles / 6 mph",
+      "meta_info": {
+        "id": "fbd1ddfe1e6d43e79984c36f58ce4366",
+        "finish_reason": null,
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 125,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          13,
+          15,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.2407304339999996,
+          0.08188474299998916,
+          0.09338742700001035,
+          0.07842424300000062
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 23.49502119799999,
+      "output_token_count": 146,
+      "new_output_tokens": 21,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.03218388799999161
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Tom is sailing from 1 to 4 PM, which is a duration of 3 hours.\n2. At a speed of 10 miles per hour, the distance he travels forward is:  \n   3 hours * 10 mph = 30 miles.\n3. On the return trip, he travels at 6 miles per hour.\n4. To find how long it takes to travel 30 miles at 6 mph, we use the formula:  \n   Time = Distance / Speed  \n   Time = 30 miles / 6 mph = 5 hours.\n\nSo, it takes him 5 hours to get back.",
+      "meta_info": {
+        "id": "fbd1ddfe1e6d43e79984c36f58ce4366",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 739,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 146,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          14,
+          13,
+          15,
+          12,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.2407304339999996,
+          0.08188474299998916,
+          0.09338742700001035,
+          0.07842424300000062,
+          0.03218388799999161
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5373383269999863
+      }
+    }
+  ]
+}

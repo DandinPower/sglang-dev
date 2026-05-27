@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 92,
+  "eval_index": 92,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Emily has 4 kids named Amy, Jackson, Corey, and James. Amy is 5 years older than Jackson and 2 years younger than Corey. If James is 10 and is 1 year younger than Corey, how old is Jackson?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Emily has 4 kids named Amy, Jackson, Corey, and James. Amy is 5 years older than Jackson and 2 years younger than Corey. If James is 10 and is 1 year younger than Corey, how old is Jackson?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 9.200000000000001,
+  "request_start_realtime": "2026-05-27T08:56:45.514",
+  "benchmark": {
+    "question": "Emily has 4 kids named Amy, Jackson, Corey, and James. Amy is 5 years older than Jackson and 2 years younger than Corey. If James is 10 and is 1 year younger than Corey, how old is Jackson?",
+    "gold_solution": "James is 10 and 1 year younger than Corey, so Corey is 10 + 1 = <<10+1=11>>11 years old\nAmy is 2 years younger than Corey so is 11 - 2 = 9 years old\nAmy is also 5 years older than Jackson, so Jackson is 9 - 5 = <<9-5=4>>4 years old\n#### 4",
+    "gold_answer": "4",
+    "model_text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is 2 years younger than Corey → Amy = Corey - 2\n- James is 10 → James = 10\n- James is 1 year younger than Corey → James = Corey - 1\n\nFrom James = 10 and James = Corey - 1:\n10 = Corey - 1 → Corey = 11\n\nNow, Amy = Corey - 2 → Amy = 11 - 2 = 9\n\nNow, Amy = Jackson + 5 → 9 = Jackson + 5 → Jackson = 9 - 5 = 4\n\nSo, Jackson is 4 years old.\n#### 4",
+    "predicted_answer": "4",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      6,
+      16,
+      10,
+      10,
+      7
+    ],
+    "ttfb_seconds": 0.25216163900000765,
+    "tbb_seconds": [
+      0.04050805099998911,
+      0.10717452899999103,
+      0.06584388300001365,
+      0.0648430180000048,
+      0.04331645299998854
+    ],
+    "dllm_block_completion_latencies": [
+      0.25216163900000765,
+      0.04050805099998911,
+      0.10717452899999103,
+      0.06584388300001365,
+      0.0648430180000048,
+      0.04331645299998854
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      6,
+      16,
+      10,
+      10,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 65.56581125700001,
+    "first_new_token_ttfb_seconds": 65.56581125700001,
+    "block_ttfb_seconds": 65.56581125700001,
+    "tbb_seconds": [
+      0.03937519999999495,
+      0.10729308399999127,
+      0.06569539800000257,
+      0.06489008599999124,
+      0.04317016900000681
+    ],
+    "block_arrival_elapsed_seconds": [
+      65.56581125700001,
+      65.605186457,
+      65.712479541,
+      65.778174939,
+      65.84306502499999,
+      65.886235194
+    ],
+    "e2e_seconds": 65.886359209
+  },
+  "token_metrics": {
+    "prompt_tokens": 741,
+    "completion_tokens": 168,
+    "total_tokens": 909,
+    "end_to_end_tokens_per_second": 13.79648247244221,
+    "total_tokens_per_second": 13.79648247244221,
+    "completion_tokens_per_second": 2.5498449454018606,
+    "tokens_after_first_block": 141,
+    "generated_tokens_per_second_after_first_block": 439.8717855480192
+  },
+  "final_meta_info": {
+    "id": "71441e1bcc20470fbecea4bf881cf847",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 741,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 168,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      6,
+      16,
+      10,
+      10,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.25216163900000765,
+      0.04050805099998911,
+      0.10717452899999103,
+      0.06584388300001365,
+      0.0648430180000048,
+      0.04331645299998854
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.5833597859999884
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 65.56581125700001,
+      "output_token_count": 27,
+      "new_output_tokens": 27,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.25216163900000765
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is",
+      "meta_info": {
+        "id": "71441e1bcc20470fbecea4bf881cf847",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 27,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.25216163900000765
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872271.0794694
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 65.605186457,
+      "output_token_count": 59,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.04050805099998911
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is 2 years younger than Corey → Amy = Corey - 2\n- James is 10 → James = 10\n- James is 1",
+      "meta_info": {
+        "id": "71441e1bcc20470fbecea4bf881cf847",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 59,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.25216163900000765,
+          0.04050805099998911
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 65.712479541,
+      "output_token_count": 91,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.10717452899999103
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is 2 years younger than Corey → Amy = Corey - 2\n- James is 10 → James = 10\n- James is 1 year younger than Corey → James = Corey - 1\n\nFrom James = 10 and James = Corey - 1:\n10 = Corey",
+      "meta_info": {
+        "id": "71441e1bcc20470fbecea4bf881cf847",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 91,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          6,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.25216163900000765,
+          0.04050805099998911,
+          0.10717452899999103
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 65.778174939,
+      "output_token_count": 123,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.06584388300001365
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is 2 years younger than Corey → Amy = Corey - 2\n- James is 10 → James = 10\n- James is 1 year younger than Corey → James = Corey - 1\n\nFrom James = 10 and James = Corey - 1:\n10 = Corey - 1 → Corey = 11\n\nNow, Amy = Corey - 2 → Amy = 11 - 2 = 9\n",
+      "meta_info": {
+        "id": "71441e1bcc20470fbecea4bf881cf847",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 123,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          6,
+          16,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.25216163900000765,
+          0.04050805099998911,
+          0.10717452899999103,
+          0.06584388300001365
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 65.84306502499999,
+      "output_token_count": 155,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.0648430180000048
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is 2 years younger than Corey → Amy = Corey - 2\n- James is 10 → James = 10\n- James is 1 year younger than Corey → James = Corey - 1\n\nFrom James = 10 and James = Corey - 1:\n10 = Corey - 1 → Corey = 11\n\nNow, Amy = Corey - 2 → Amy = 11 - 2 = 9\n\nNow, Amy = Jackson + 5 → 9 = Jackson + 5 → Jackson = 9 - 5 = 4\n\nSo,",
+      "meta_info": {
+        "id": "71441e1bcc20470fbecea4bf881cf847",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 155,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          6,
+          16,
+          10,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.25216163900000765,
+          0.04050805099998911,
+          0.10717452899999103,
+          0.06584388300001365,
+          0.0648430180000048
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 65.886235194,
+      "output_token_count": 168,
+      "new_output_tokens": 13,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.04331645299998854
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are given:\n- Amy is 5 years older than Jackson → Amy = Jackson + 5\n- Amy is 2 years younger than Corey → Amy = Corey - 2\n- James is 10 → James = 10\n- James is 1 year younger than Corey → James = Corey - 1\n\nFrom James = 10 and James = Corey - 1:\n10 = Corey - 1 → Corey = 11\n\nNow, Amy = Corey - 2 → Amy = 11 - 2 = 9\n\nNow, Amy = Jackson + 5 → 9 = Jackson + 5 → Jackson = 9 - 5 = 4\n\nSo, Jackson is 4 years old.\n#### 4",
+      "meta_info": {
+        "id": "71441e1bcc20470fbecea4bf881cf847",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 168,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          6,
+          16,
+          10,
+          10,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.25216163900000765,
+          0.04050805099998911,
+          0.10717452899999103,
+          0.06584388300001365,
+          0.0648430180000048,
+          0.04331645299998854
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.5833597859999884
+      }
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "ok": true,
+  "request_index": 15,
+  "eval_index": 15,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.5,
+  "request_start_realtime": "2026-05-27T09:38:45.943",
+  "benchmark": {
+    "question": "A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?",
+    "gold_solution": "If he purchases jewelry, he will make a profit of 2.5% which is $5000*(2.5/100) = $<<5000*(2.5/100)=125>>125\nIf he purchases electronic gadgets, he will make a profit of 1.2% which is $8000*(1.2/100) = $<<8000*(1.2/100)=96>>96\nIf he wants to maximize profit, since $125 > $96, he will choose to purchase jewelry, thereby making a profit of $<<125=125>>125\n#### 125",
+    "gold_answer": "125",
+    "model_text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after increase: $8,000 + $96 = $8,096\n\nNow, calculate the profit for each choice:\n\n- Profit from jewelry: Final value - Initial value = $5,125 - $5,000 = $125\n- Profit from electronic gadgets: $8,096 - $8,000 = $96\n\nComparing the two:\n- Jewelry: $125 profit\n- Electronic gadgets: $96 profit\n\nThe merchant should choose the jewelry because it yields a higher profit.\n\nThe profit from choosing the jewelry is $125.\n\nAnswer: 125",
+    "predicted_answer": "125",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      11,
+      11,
+      15,
+      8,
+      9,
+      8,
+      10,
+      6,
+      10,
+      19,
+      11
+    ],
+    "ttfb_seconds": 0.35473828700000354,
+    "tbb_seconds": [
+      0.1387240150000082,
+      0.17304768500000023,
+      0.3381034859999943,
+      0.11608992300000409,
+      0.10237198600000852,
+      0.12695321899997225,
+      0.07265361700001449,
+      0.32187766399999873,
+      0.2379153550000126,
+      0.1293303779999917
+    ],
+    "dllm_block_completion_latencies": [
+      0.35473828700000354,
+      0.1387240150000082,
+      0.17304768500000023,
+      0.3381034859999943,
+      0.11608992300000409,
+      0.10237198600000852,
+      0.12695321899997225,
+      0.07265361700001449,
+      0.32187766399999873,
+      0.2379153550000126,
+      0.1293303779999917
+    ],
+    "dllm_forward_counts_per_block": [
+      11,
+      11,
+      15,
+      8,
+      9,
+      8,
+      10,
+      6,
+      10,
+      19,
+      11
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 1.6166142769999965,
+    "first_new_token_ttfb_seconds": 1.6166142769999965,
+    "block_ttfb_seconds": 1.6166142769999965,
+    "tbb_seconds": [
+      0.13878512299999102,
+      0.1732025040000167,
+      0.33796087799998986,
+      0.11632574699999054,
+      0.10194334500002356,
+      0.1289607989999979,
+      0.07079342199997996,
+      0.32194012400000815,
+      0.24072214299999928,
+      0.12652979000000641
+    ],
+    "block_arrival_elapsed_seconds": [
+      1.6166142769999965,
+      1.7553993999999875,
+      1.9286019040000042,
+      2.266562781999994,
+      2.3828885289999846,
+      2.484831874000008,
+      2.613792673000006,
+      2.684586094999986,
+      3.006526218999994,
+      3.2472483619999934,
+      3.373778152
+    ],
+    "e2e_seconds": 3.3738722079999945
+  },
+  "token_metrics": {
+    "prompt_tokens": 784,
+    "completion_tokens": 324,
+    "total_tokens": 1108,
+    "end_to_end_tokens_per_second": 328.40603665211546,
+    "total_tokens_per_second": 328.40603665211546,
+    "completion_tokens_per_second": 96.0320901401493,
+    "tokens_after_first_block": 308,
+    "generated_tokens_per_second_after_first_block": 175.2730743543876
+  },
+  "final_meta_info": {
+    "id": "fd7d27faedc44141805b8fddbca72c8c",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 784,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 324,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      11,
+      11,
+      15,
+      8,
+      9,
+      8,
+      10,
+      6,
+      10,
+      19,
+      11
+    ],
+    "dllm_block_completion_latencies": [
+      0.35473828700000354,
+      0.1387240150000082,
+      0.17304768500000023,
+      0.3381034859999943,
+      0.11608992300000409,
+      0.10237198600000852,
+      0.12695321899997225,
+      0.07265361700001449,
+      0.32187766399999873,
+      0.2379153550000126,
+      0.1293303779999917
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.117156313999999
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 1.6166142769999965,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.35473828700000354
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1.",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874727.5594285
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.7553993999999875,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.1387240150000082
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 1.9286019040000042,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.17304768500000023
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n  ",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.266562781999994,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3381034859999943
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 2.3828885289999846,
+      "output_token_count": 144,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.11608992300000409
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,00",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.484831874000008,
+      "output_token_count": 176,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.10237198600000852
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409,
+          0.10237198600000852
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 2.613792673000006,
+      "output_token_count": 208,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.12695321899997225
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after increase: $8,000 + $96 = $8,096\n\nNow, calculate the profit for each choice:\n\n",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9,
+          8,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409,
+          0.10237198600000852,
+          0.12695321899997225
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 2.684586094999986,
+      "output_token_count": 240,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.07265361700001449
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after increase: $8,000 + $96 = $8,096\n\nNow, calculate the profit for each choice:\n\n- Profit from jewelry: Final value - Initial value = $5,125 - $5,000 = $125\n- Profit",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 240,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9,
+          8,
+          10,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409,
+          0.10237198600000852,
+          0.12695321899997225,
+          0.07265361700001449
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 3.006526218999994,
+      "output_token_count": 272,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.32187766399999873
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after increase: $8,000 + $96 = $8,096\n\nNow, calculate the profit for each choice:\n\n- Profit from jewelry: Final value - Initial value = $5,125 - $5,000 = $125\n- Profit from electronic gadgets: $8,096 - $8,000 = $96\n\nComparing the two:\n- Jewelry: $",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 272,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9,
+          8,
+          10,
+          6,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409,
+          0.10237198600000852,
+          0.12695321899997225,
+          0.07265361700001449,
+          0.32187766399999873
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 3.2472483619999934,
+      "output_token_count": 304,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.2379153550000126
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after increase: $8,000 + $96 = $8,096\n\nNow, calculate the profit for each choice:\n\n- Profit from jewelry: Final value - Initial value = $5,125 - $5,000 = $125\n- Profit from electronic gadgets: $8,096 - $8,000 = $96\n\nComparing the two:\n- Jewelry: $125 profit\n- Electronic gadgets: $96 profit\n\nThe merchant should choose the jewelry because it yields a higher profit.\n\nThe profit",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 304,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9,
+          8,
+          10,
+          6,
+          10,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409,
+          0.10237198600000852,
+          0.12695321899997225,
+          0.07265361700001449,
+          0.32187766399999873,
+          0.2379153550000126
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 3.373778152,
+      "output_token_count": 324,
+      "new_output_tokens": 20,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.1293303779999917
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nFirst, calculate the increase value of each item:\n\n1. Jewelry:\n   - Initial value: $5,000\n   - Increase rate: 2.5%\n   - Increase: $5,000 × 0.025 = $5,000 × 0.025 = $125\n   - New value after increase: $5,000 + $125 = $5,125\n\n2. Electronic gadgets:\n   - Initial value: $8,000\n   - Increase rate: 1.2%\n   - Increase: $8,000 × 0.012 = $8,000 × 0.012 = $96\n   - New value after increase: $8,000 + $96 = $8,096\n\nNow, calculate the profit for each choice:\n\n- Profit from jewelry: Final value - Initial value = $5,125 - $5,000 = $125\n- Profit from electronic gadgets: $8,096 - $8,000 = $96\n\nComparing the two:\n- Jewelry: $125 profit\n- Electronic gadgets: $96 profit\n\nThe merchant should choose the jewelry because it yields a higher profit.\n\nThe profit from choosing the jewelry is $125.\n\nAnswer: 125",
+      "meta_info": {
+        "id": "fd7d27faedc44141805b8fddbca72c8c",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 324,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          11,
+          15,
+          8,
+          9,
+          8,
+          10,
+          6,
+          10,
+          19,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.35473828700000354,
+          0.1387240150000082,
+          0.17304768500000023,
+          0.3381034859999943,
+          0.11608992300000409,
+          0.10237198600000852,
+          0.12695321899997225,
+          0.07265361700001449,
+          0.32187766399999873,
+          0.2379153550000126,
+          0.1293303779999917
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.117156313999999
+      }
+    }
+  ]
+}

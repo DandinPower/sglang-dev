@@ -1,0 +1,12 @@
+{
+  "benchmark": "GSM8K",
+  "test_url": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/test.jsonl",
+  "train_url_for_few_shot": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl",
+  "train_record_count": 7473,
+  "test_record_count": 1319,
+  "few_shot_count": 5,
+  "problem_count": 200,
+  "eval_start_index": 0,
+  "few_shot_source": "train[:few_shot_count]",
+  "eval_source": "test[eval_start_index:eval_start_index+problem_count]"
+}

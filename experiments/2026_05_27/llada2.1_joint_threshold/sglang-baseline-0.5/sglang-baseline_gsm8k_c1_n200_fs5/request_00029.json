@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 29,
+  "eval_index": 29,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she has to choose between the boots and two pairs of high heels that together cost five dollars less than the boots. If one pair of heels costs $33 and the other costs twice as much, how many dollars are the boots?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she has to choose between the boots and two pairs of high heels that together cost five dollars less than the boots. If one pair of heels costs $33 and the other costs twice as much, how many dollars are the boots?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 2.9000000000000004,
+  "request_start_realtime": "2026-05-27T09:32:21.974",
+  "benchmark": {
+    "question": "Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she has to choose between the boots and two pairs of high heels that together cost five dollars less than the boots. If one pair of heels costs $33 and the other costs twice as much, how many dollars are the boots?",
+    "gold_solution": "The second pair of heels costs 33 * 2 = $<<33*2=66>>66.\nThe heels together cost 66 + 33 = $<<66+33=99>>99.\nThe boots cost $5 more than both pairs of heels together, so the boots cost 99 + 5 = $104.\n#### 104",
+    "gold_answer": "104",
+    "model_text": "\n\nWe are told:\n\n- One pair of high heels costs $33.\n- The other pair of heels costs twice as much as the first pair, so it costs $33 × 2 = $66.\n- Therefore, the two pairs of high heels cost $33 + $66 = $99.\n- These two pairs cost $5 less than the boots.\n\nSo if the boots cost $B, then:\n\nB - 5 = $99\n\nSolving for B:\n\nB = $99 + 5 = $104\n\nSo, the boots cost $104.\n\nAnswer: 104",
+    "predicted_answer": "104",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      6,
+      5,
+      9,
+      5,
+      3
+    ],
+    "ttfb_seconds": 0.1808493260000006,
+    "tbb_seconds": [
+      0.037884058999992476,
+      0.031912478000009514,
+      0.05585015299999441,
+      0.031673651999994945,
+      0.01649459800000841
+    ],
+    "dllm_block_completion_latencies": [
+      0.1808493260000006,
+      0.037884058999992476,
+      0.031912478000009514,
+      0.05585015299999441,
+      0.031673651999994945,
+      0.01649459800000841
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      5,
+      9,
+      5,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 11.522243215000003,
+    "first_new_token_ttfb_seconds": 11.522243215000003,
+    "block_ttfb_seconds": 11.522243215000003,
+    "tbb_seconds": [
+      0.03791637499999467,
+      0.03190643700000351,
+      0.05576663600000131,
+      0.03175034999999582,
+      0.01651046700000336
+    ],
+    "block_arrival_elapsed_seconds": [
+      11.522243215000003,
+      11.560159589999998,
+      11.592066027000001,
+      11.647832663000003,
+      11.679583012999998,
+      11.696093480000002
+    ],
+    "e2e_seconds": 11.696137946000007
+  },
+  "token_metrics": {
+    "prompt_tokens": 757,
+    "completion_tokens": 150,
+    "total_tokens": 907,
+    "end_to_end_tokens_per_second": 77.54696500567414,
+    "total_tokens_per_second": 77.54696500567414,
+    "completion_tokens_per_second": 12.824746142062978,
+    "tokens_after_first_block": 139,
+    "generated_tokens_per_second_after_first_block": 799.3341672899599
+  },
+  "final_meta_info": {
+    "id": "baaac819d9184e6799820ed9351cad10",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 757,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 150,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      5,
+      9,
+      5,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.1808493260000006,
+      0.037884058999992476,
+      0.031912478000009514,
+      0.05585015299999441,
+      0.031673651999994945,
+      0.01649459800000841
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.357605097000004
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 11.522243215000003,
+      "output_token_count": 11,
+      "new_output_tokens": 11,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.1808493260000006
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n\n- One pair",
+      "meta_info": {
+        "id": "baaac819d9184e6799820ed9351cad10",
+        "finish_reason": null,
+        "prompt_tokens": 757,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 11,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1808493260000006
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874353.4962437
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 11.560159589999998,
+      "output_token_count": 43,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.037884058999992476
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n\n- One pair of high heels costs $33.\n- The other pair of heels costs twice as much as the first pair, so it costs $33 × ",
+      "meta_info": {
+        "id": "baaac819d9184e6799820ed9351cad10",
+        "finish_reason": null,
+        "prompt_tokens": 757,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 43,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.1808493260000006,
+          0.037884058999992476
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 11.592066027000001,
+      "output_token_count": 75,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.031912478000009514
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n\n- One pair of high heels costs $33.\n- The other pair of heels costs twice as much as the first pair, so it costs $33 × 2 = $66.\n- Therefore, the two pairs of high heels cost $33 + $66 = $99.\n- These",
+      "meta_info": {
+        "id": "baaac819d9184e6799820ed9351cad10",
+        "finish_reason": null,
+        "prompt_tokens": 757,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 75,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1808493260000006,
+          0.037884058999992476,
+          0.031912478000009514
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 11.647832663000003,
+      "output_token_count": 107,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.05585015299999441
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n\n- One pair of high heels costs $33.\n- The other pair of heels costs twice as much as the first pair, so it costs $33 × 2 = $66.\n- Therefore, the two pairs of high heels cost $33 + $66 = $99.\n- These two pairs cost $5 less than the boots.\n\nSo if the boots cost $B, then:\n\nB - 5 = $99",
+      "meta_info": {
+        "id": "baaac819d9184e6799820ed9351cad10",
+        "finish_reason": null,
+        "prompt_tokens": 757,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 107,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          5,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.1808493260000006,
+          0.037884058999992476,
+          0.031912478000009514,
+          0.05585015299999441
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 11.679583012999998,
+      "output_token_count": 139,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.031673651999994945
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n\n- One pair of high heels costs $33.\n- The other pair of heels costs twice as much as the first pair, so it costs $33 × 2 = $66.\n- Therefore, the two pairs of high heels cost $33 + $66 = $99.\n- These two pairs cost $5 less than the boots.\n\nSo if the boots cost $B, then:\n\nB - 5 = $99\n\nSolving for B:\n\nB = $99 + 5 = $104\n\nSo, the boots cost $104",
+      "meta_info": {
+        "id": "baaac819d9184e6799820ed9351cad10",
+        "finish_reason": null,
+        "prompt_tokens": 757,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 139,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          5,
+          9,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1808493260000006,
+          0.037884058999992476,
+          0.031912478000009514,
+          0.05585015299999441,
+          0.031673651999994945
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 11.696093480000002,
+      "output_token_count": 150,
+      "new_output_tokens": 11,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.01649459800000841
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n\n- One pair of high heels costs $33.\n- The other pair of heels costs twice as much as the first pair, so it costs $33 × 2 = $66.\n- Therefore, the two pairs of high heels cost $33 + $66 = $99.\n- These two pairs cost $5 less than the boots.\n\nSo if the boots cost $B, then:\n\nB - 5 = $99\n\nSolving for B:\n\nB = $99 + 5 = $104\n\nSo, the boots cost $104.\n\nAnswer: 104",
+      "meta_info": {
+        "id": "baaac819d9184e6799820ed9351cad10",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 757,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 150,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          5,
+          9,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.1808493260000006,
+          0.037884058999992476,
+          0.031912478000009514,
+          0.05585015299999441,
+          0.031673651999994945,
+          0.01649459800000841
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.357605097000004
+      }
+    }
+  ]
+}

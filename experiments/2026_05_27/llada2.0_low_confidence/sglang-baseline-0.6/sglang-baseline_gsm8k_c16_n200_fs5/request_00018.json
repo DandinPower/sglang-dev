@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 18,
+  "eval_index": 18,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 weeks?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 weeks?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.8,
+  "request_start_realtime": "2026-05-27T09:20:25.344",
+  "benchmark": {
+    "question": "Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 weeks?",
+    "gold_solution": "She eats 3 eggs every day and there are 7 days in a week so she eats 3*7 = <<3*7=21>>21 eggs a week\nAfter 4 weeks she will have eaten 4*21 = <<4*21=84>>84 eggs\nThere are 12 eggs in 1 dozen and she'll eat 84 eggs so that's 84/12 = <<84/12=7>>7 dozen eggs\n#### 7",
+    "gold_answer": "7",
+    "model_text": "\n\n1. Claire eats 3 eggs per day.\n2. There are 7 days in a week, so in one week she eats 3 * 7 = 21 eggs.\n3. In four weeks, she eats 21 * 4 = 84 eggs.\n4. To find how many dozens, divide the total eggs by 12 (<<84/12=7>>84 ÷ 12 = 7).\n\nSo, Claire will eat 7 dozens of eggs in 4 weeks.\n#### 7",
+    "predicted_answer": "7",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      12,
+      15,
+      17,
+      21
+    ],
+    "ttfb_seconds": 0.42929091999997127,
+    "tbb_seconds": [
+      0.2127338459999919,
+      0.5242812729999855,
+      0.2872614250000538,
+      0.5504366269999537
+    ],
+    "dllm_block_completion_latencies": [
+      0.42929091999997127,
+      0.2127338459999919,
+      0.5242812729999855,
+      0.2872614250000538,
+      0.5504366269999537
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      12,
+      15,
+      17,
+      21
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 2.5308447369999953,
+    "first_new_token_ttfb_seconds": 2.5308447369999953,
+    "block_ttfb_seconds": 2.5308447369999953,
+    "tbb_seconds": [
+      0.2128635880000047,
+      0.5247009899999853,
+      0.2818394939999962,
+      0.5531505330000073
+    ],
+    "block_arrival_elapsed_seconds": [
+      2.5308447369999953,
+      2.743708325,
+      3.2684093149999853,
+      3.5502488089999815,
+      4.103399341999989
+    ],
+    "e2e_seconds": 4.103491018
+  },
+  "token_metrics": {
+    "prompt_tokens": 717,
+    "completion_tokens": 122,
+    "total_tokens": 839,
+    "end_to_end_tokens_per_second": 204.46005518708805,
+    "total_tokens_per_second": 204.46005518708805,
+    "completion_tokens_per_second": 29.730782756644505,
+    "tokens_after_first_block": 103,
+    "generated_tokens_per_second_after_first_block": 65.49470230171849
+  },
+  "final_meta_info": {
+    "id": "6cd47dbc28fc40fda299fc862a237da5",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 717,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 122,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      12,
+      15,
+      17,
+      21
+    ],
+    "dllm_block_completion_latencies": [
+      0.42929091999997127,
+      0.2127338459999919,
+      0.5242812729999855,
+      0.2872614250000538,
+      0.5504366269999537
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.3499347250000255
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 2.5308447369999953,
+      "output_token_count": 19,
+      "new_output_tokens": 19,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.42929091999997127
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Claire eats 3 eggs per day.\n2. There are 7",
+      "meta_info": {
+        "id": "6cd47dbc28fc40fda299fc862a237da5",
+        "finish_reason": null,
+        "prompt_tokens": 717,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 19,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.42929091999997127
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873627.8712795
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 2.743708325,
+      "output_token_count": 51,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2127338459999919
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Claire eats 3 eggs per day.\n2. There are 7 days in a week, so in one week she eats 3 * 7 = 21 eggs.\n3. In four weeks, she eats ",
+      "meta_info": {
+        "id": "6cd47dbc28fc40fda299fc862a237da5",
+        "finish_reason": null,
+        "prompt_tokens": 717,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 51,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.42929091999997127,
+          0.2127338459999919
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 3.2684093149999853,
+      "output_token_count": 83,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5242812729999855
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Claire eats 3 eggs per day.\n2. There are 7 days in a week, so in one week she eats 3 * 7 = 21 eggs.\n3. In four weeks, she eats 21 * 4 = 84 eggs.\n4. To find how many dozens, divide the total eggs by 12 (<<84",
+      "meta_info": {
+        "id": "6cd47dbc28fc40fda299fc862a237da5",
+        "finish_reason": null,
+        "prompt_tokens": 717,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 83,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          12,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.42929091999997127,
+          0.2127338459999919,
+          0.5242812729999855
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 3.5502488089999815,
+      "output_token_count": 115,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2872614250000538
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Claire eats 3 eggs per day.\n2. There are 7 days in a week, so in one week she eats 3 * 7 = 21 eggs.\n3. In four weeks, she eats 21 * 4 = 84 eggs.\n4. To find how many dozens, divide the total eggs by 12 (<<84/12=7>>84 ÷ 12 = 7).\n\nSo, Claire will eat 7 dozens of eggs in 4 weeks",
+      "meta_info": {
+        "id": "6cd47dbc28fc40fda299fc862a237da5",
+        "finish_reason": null,
+        "prompt_tokens": 717,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 115,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          12,
+          15,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.42929091999997127,
+          0.2127338459999919,
+          0.5242812729999855,
+          0.2872614250000538
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 4.103399341999989,
+      "output_token_count": 122,
+      "new_output_tokens": 7,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5504366269999537
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Claire eats 3 eggs per day.\n2. There are 7 days in a week, so in one week she eats 3 * 7 = 21 eggs.\n3. In four weeks, she eats 21 * 4 = 84 eggs.\n4. To find how many dozens, divide the total eggs by 12 (<<84/12=7>>84 ÷ 12 = 7).\n\nSo, Claire will eat 7 dozens of eggs in 4 weeks.\n#### 7",
+      "meta_info": {
+        "id": "6cd47dbc28fc40fda299fc862a237da5",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 717,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          12,
+          15,
+          17,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.42929091999997127,
+          0.2127338459999919,
+          0.5242812729999855,
+          0.2872614250000538,
+          0.5504366269999537
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.3499347250000255
+      }
+    }
+  ]
+}

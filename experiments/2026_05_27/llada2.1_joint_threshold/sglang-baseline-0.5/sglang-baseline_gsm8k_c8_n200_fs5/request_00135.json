@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "request_index": 135,
+  "eval_index": 135,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Brian's friend Bobby has 5 fewer than 3 times as many video games as Brian does.  If Brian has 20 video games but lost 5 right before the comparison was made, how many does Bobby have?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Brian's friend Bobby has 5 fewer than 3 times as many video games as Brian does.  If Brian has 20 video games but lost 5 right before the comparison was made, how many does Bobby have?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 13.5,
+  "request_start_realtime": "2026-05-27T09:34:02.044",
+  "benchmark": {
+    "question": "Brian's friend Bobby has 5 fewer than 3 times as many video games as Brian does.  If Brian has 20 video games but lost 5 right before the comparison was made, how many does Bobby have?",
+    "gold_solution": "If Brian previously had 20 video games but lost 5, that means he now has 20-5=<<20-5=15>>15 video games\nBrian has 15 video games, so if Bobby has 5 fewer than 3 times as many as Brian does we must first perform 15*3=45\nWe then subtract 5 from the previous total for 45-5=40 games in total.\n#### 40",
+    "gold_answer": "40",
+    "model_text": "\n\nBrian originally had 20 video games, but lost 5, so he now has:\n\n20 - 5 = 15 video games.\n\nBobby has 5 fewer than 3 times as many video games as Brian.\n\nFirst, calculate 3 times Brian's current number:\n\n3 * 15 = 45\n\nThen, subtract 5 to get Bobby's number:\n\n45 - 5 = 40\n\nSo, Bobby has 40 video games.\n\n#### 400",
+    "predicted_answer": "400",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      21,
+      18,
+      22,
+      18
+    ],
+    "ttfb_seconds": 0.4715353180000079,
+    "tbb_seconds": [
+      0.20998963599998888,
+      0.4069293459999983,
+      0.22240291800000023
+    ],
+    "dllm_block_completion_latencies": [
+      0.4715353180000079,
+      0.20998963599998888,
+      0.4069293459999983,
+      0.22240291800000023
+    ],
+    "dllm_forward_counts_per_block": [
+      21,
+      18,
+      22,
+      18
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 17.362650472000013,
+    "first_new_token_ttfb_seconds": 17.362650472000013,
+    "block_ttfb_seconds": 17.362650472000013,
+    "tbb_seconds": [
+      0.20845668499998737,
+      0.40689133000000766,
+      0.22285108799999875
+    ],
+    "block_arrival_elapsed_seconds": [
+      17.362650472000013,
+      17.571107157,
+      17.977998487000008,
+      18.200849575000007
+    ],
+    "e2e_seconds": 18.200897837000014
+  },
+  "token_metrics": {
+    "prompt_tokens": 736,
+    "completion_tokens": 123,
+    "total_tokens": 859,
+    "end_to_end_tokens_per_second": 47.195473964683586,
+    "total_tokens_per_second": 47.195473964683586,
+    "completion_tokens_per_second": 6.757908379110688,
+    "tokens_after_first_block": 91,
+    "generated_tokens_per_second_after_first_block": 108.55984020898164
+  },
+  "final_meta_info": {
+    "id": "14a9d5151e47493ab0b0ce045bbf48bb",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 736,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 123,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      21,
+      18,
+      22,
+      18
+    ],
+    "dllm_block_completion_latencies": [
+      0.4715353180000079,
+      0.20998963599998888,
+      0.4069293459999983,
+      0.22240291800000023
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.4024260919999847
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 17.362650472000013,
+      "output_token_count": 32,
+      "new_output_tokens": 32,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4715353180000079
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nBrian originally had 20 video games, but lost 5, so he now has:\n\n20 - 5 = 15",
+      "meta_info": {
+        "id": "14a9d5151e47493ab0b0ce045bbf48bb",
+        "finish_reason": null,
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 32,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.4715353180000079
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874459.4054992
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 17.571107157,
+      "output_token_count": 64,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.20998963599998888
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nBrian originally had 20 video games, but lost 5, so he now has:\n\n20 - 5 = 15 video games.\n\nBobby has 5 fewer than 3 times as many video games as Brian.\n\nFirst, calculate 3 times Brian's",
+      "meta_info": {
+        "id": "14a9d5151e47493ab0b0ce045bbf48bb",
+        "finish_reason": null,
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 64,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4715353180000079,
+          0.20998963599998888
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 17.977998487000008,
+      "output_token_count": 96,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.4069293459999983
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nBrian originally had 20 video games, but lost 5, so he now has:\n\n20 - 5 = 15 video games.\n\nBobby has 5 fewer than 3 times as many video games as Brian.\n\nFirst, calculate 3 times Brian's current number:\n\n3 * 15 = 45\n\nThen, subtract 5 to get Bobby's number:\n\n45 -",
+      "meta_info": {
+        "id": "14a9d5151e47493ab0b0ce045bbf48bb",
+        "finish_reason": null,
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 96,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.4715353180000079,
+          0.20998963599998888,
+          0.4069293459999983
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 18.200849575000007,
+      "output_token_count": 123,
+      "new_output_tokens": 27,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.22240291800000023
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nBrian originally had 20 video games, but lost 5, so he now has:\n\n20 - 5 = 15 video games.\n\nBobby has 5 fewer than 3 times as many video games as Brian.\n\nFirst, calculate 3 times Brian's current number:\n\n3 * 15 = 45\n\nThen, subtract 5 to get Bobby's number:\n\n45 - 5 = 40\n\nSo, Bobby has 40 video games.\n\n#### 400",
+      "meta_info": {
+        "id": "14a9d5151e47493ab0b0ce045bbf48bb",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 736,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 123,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4715353180000079,
+          0.20998963599998888,
+          0.4069293459999983,
+          0.22240291800000023
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.4024260919999847
+      }
+    }
+  ]
+}

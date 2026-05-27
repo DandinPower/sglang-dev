@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 118,
+  "eval_index": 118,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A customs officer at the main port of SeaSide clearances counted 2 containers of imported vehicles, each having 5 vehicles inside. The next day, more containers were brought in, and the total number of vehicles at the port became 30. Calculate the number of containers that were imported on the second day, assuming all the containers contain 5 vehicles.\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A customs officer at the main port of SeaSide clearances counted 2 containers of imported vehicles, each having 5 vehicles inside. The next day, more containers were brought in, and the total number of vehicles at the port became 30. Calculate the number of containers that were imported on the second day, assuming all the containers contain 5 vehicles.\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 11.8,
+  "request_start_realtime": "2026-05-27T09:38:19.648",
+  "benchmark": {
+    "question": "A customs officer at the main port of SeaSide clearances counted 2 containers of imported vehicles, each having 5 vehicles inside. The next day, more containers were brought in, and the total number of vehicles at the port became 30. Calculate the number of containers that were imported on the second day, assuming all the containers contain 5 vehicles.",
+    "gold_solution": "On the first day, 2*5 = <<2*5=10>>10 vehicles were Imported,\nOn the next day, the number of vehicles imported through the port is 30-10 = <<30-10=20>>20 vehicles\nIf each container has 5 vehicles, the number is 20/5 = <<20/5=4>>4 containers.\n#### 4",
+    "gold_answer": "4",
+    "model_text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × 5 vehicles/container = 10 vehicles on the first day.\n\nOn the second day, the total number of vehicles at the port became 30.\nSo, the number of vehicles brought on the second day is:\nTotal vehicles - Vehicles from first day = 30 - 10 = 20 vehicles.\n\nSince each container holds 5 vehicles, the number of containers imported on the second day is:\n20 vehicles ÷ 5 vehicles/container = 4 containers.\n\nTherefore, the number of containers imported on the second day is 4.\n#### 4",
+    "predicted_answer": "4",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      16,
+      8,
+      12,
+      8,
+      9,
+      2
+    ],
+    "ttfb_seconds": 0.4919707469999821,
+    "tbb_seconds": [
+      0.9520843650000188,
+      0.23385175599997865,
+      0.7123897870000064,
+      0.5714863940000328,
+      0.6509046879999687,
+      0.03150942100000975
+    ],
+    "dllm_block_completion_latencies": [
+      0.4919707469999821,
+      0.9520843650000188,
+      0.23385175599997865,
+      0.7123897870000064,
+      0.5714863940000328,
+      0.6509046879999687,
+      0.03150942100000975
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      16,
+      8,
+      12,
+      8,
+      9,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 16.347060320999958,
+    "first_new_token_ttfb_seconds": 16.347060320999958,
+    "block_ttfb_seconds": 16.347060320999958,
+    "tbb_seconds": [
+      0.9515611610000292,
+      0.2344430019999777,
+      0.7120729420000202,
+      0.571703221000007,
+      0.6538462620000018,
+      0.02931087799998977
+    ],
+    "block_arrival_elapsed_seconds": [
+      16.347060320999958,
+      17.298621481999987,
+      17.533064483999965,
+      18.245137425999985,
+      18.816840646999992,
+      19.470686908999994,
+      19.499997786999984
+    ],
+    "e2e_seconds": 19.500085396999964
+  },
+  "token_metrics": {
+    "prompt_tokens": 763,
+    "completion_tokens": 166,
+    "total_tokens": 929,
+    "end_to_end_tokens_per_second": 47.64081700600779,
+    "total_tokens_per_second": 47.64081700600779,
+    "completion_tokens_per_second": 8.512783232505159,
+    "tokens_after_first_block": 161,
+    "generated_tokens_per_second_after_first_block": 51.062074077840194
+  },
+  "final_meta_info": {
+    "id": "9110522c26f042f9be9ad36ee094b40f",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 763,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 166,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      16,
+      8,
+      12,
+      8,
+      9,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.4919707469999821,
+      0.9520843650000188,
+      0.23385175599997865,
+      0.7123897870000064,
+      0.5714863940000328,
+      0.6509046879999687,
+      0.03150942100000975
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.6635528769999723
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 16.347060320999958,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4919707469999821
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, calculate",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874715.9955184
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 17.298621481999987,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.9520843650000188
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × ",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821,
+          0.9520843650000188
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 17.533064483999965,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.23385175599997865
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × 5 vehicles/container = 10 vehicles on the first day.\n\nOn the second day, the total number of vehicles at the port became 3",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821,
+          0.9520843650000188,
+          0.23385175599997865
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 18.245137425999985,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.7123897870000064
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × 5 vehicles/container = 10 vehicles on the first day.\n\nOn the second day, the total number of vehicles at the port became 30.\nSo, the number of vehicles brought on the second day is:\nTotal vehicles - Vehicles from first day = 30 - 10",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          8,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821,
+          0.9520843650000188,
+          0.23385175599997865,
+          0.7123897870000064
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 18.816840646999992,
+      "output_token_count": 133,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5714863940000328
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × 5 vehicles/container = 10 vehicles on the first day.\n\nOn the second day, the total number of vehicles at the port became 30.\nSo, the number of vehicles brought on the second day is:\nTotal vehicles - Vehicles from first day = 30 - 10 = 20 vehicles.\n\nSince each container holds 5 vehicles, the number of containers imported on the second day is:\n20 vehicles ÷",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 133,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          8,
+          12,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821,
+          0.9520843650000188,
+          0.23385175599997865,
+          0.7123897870000064,
+          0.5714863940000328
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 19.470686908999994,
+      "output_token_count": 165,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.6509046879999687
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × 5 vehicles/container = 10 vehicles on the first day.\n\nOn the second day, the total number of vehicles at the port became 30.\nSo, the number of vehicles brought on the second day is:\nTotal vehicles - Vehicles from first day = 30 - 10 = 20 vehicles.\n\nSince each container holds 5 vehicles, the number of containers imported on the second day is:\n20 vehicles ÷ 5 vehicles/container = 4 containers.\n\nTherefore, the number of containers imported on the second day is 4.\n#### 4",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 165,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          8,
+          12,
+          8,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821,
+          0.9520843650000188,
+          0.23385175599997865,
+          0.7123897870000064,
+          0.5714863940000328,
+          0.6509046879999687
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 19.499997786999984,
+      "output_token_count": 166,
+      "new_output_tokens": 1,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.03150942100000975
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, calculate how many vehicles were in the containers on the first day:\nThere are 2 containers, each with 5 vehicles, so:\n2 containers × 5 vehicles/container = 10 vehicles on the first day.\n\nOn the second day, the total number of vehicles at the port became 30.\nSo, the number of vehicles brought on the second day is:\nTotal vehicles - Vehicles from first day = 30 - 10 = 20 vehicles.\n\nSince each container holds 5 vehicles, the number of containers imported on the second day is:\n20 vehicles ÷ 5 vehicles/container = 4 containers.\n\nTherefore, the number of containers imported on the second day is 4.\n#### 4",
+      "meta_info": {
+        "id": "9110522c26f042f9be9ad36ee094b40f",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 166,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          8,
+          12,
+          8,
+          9,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.4919707469999821,
+          0.9520843650000188,
+          0.23385175599997865,
+          0.7123897870000064,
+          0.5714863940000328,
+          0.6509046879999687,
+          0.03150942100000975
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.6635528769999723
+      }
+    }
+  ]
+}

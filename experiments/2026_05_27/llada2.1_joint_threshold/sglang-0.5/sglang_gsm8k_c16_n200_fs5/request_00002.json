@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 2,
+  "eval_index": 2,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.2,
+  "request_start_realtime": "2026-05-27T09:34:59.780",
+  "benchmark": {
+    "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+    "gold_solution": "The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000\nHe increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000\nSo the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000\nSo he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000\n#### 70000",
+    "gold_answer": "70000",
+    "model_text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150% of $80,000)\n= $80,000 + (1.5 × $80,000)\n= $80,000 + $120,000\n= $200,000.\n\nNow, he sells the house for $200,000.\n\nHis profit = Selling price - Total cost\n= $200,000 - $130,000\n= $70,000.\n\nSo, Josh made a profit of $70,000.\n\n#### 70000",
+    "predicted_answer": "70000",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      6,
+      5,
+      12,
+      8,
+      3,
+      3,
+      4,
+      3,
+      5
+    ],
+    "ttfb_seconds": 1.5676421059999939,
+    "tbb_seconds": [
+      0.18935015900001417,
+      0.36358875100000887,
+      0.7135858609999559,
+      0.7197390380000002,
+      0.08405364100002544,
+      0.220016706000024,
+      0.3986881589999598,
+      0.06820941900002708,
+      0.29400889400000096
+    ],
+    "dllm_block_completion_latencies": [
+      1.5676421059999939,
+      0.18935015900001417,
+      0.36358875100000887,
+      0.7135858609999559,
+      0.7197390380000002,
+      0.08405364100002544,
+      0.220016706000024,
+      0.3986881589999598,
+      0.06820941900002708,
+      0.29400889400000096
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      6,
+      5,
+      12,
+      8,
+      3,
+      3,
+      4,
+      3,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 1.5808741160000181,
+    "first_new_token_ttfb_seconds": 1.5808741160000181,
+    "block_ttfb_seconds": 1.5808741160000181,
+    "tbb_seconds": [
+      0.18876879699996607,
+      0.36477744800004075,
+      0.7137967949999506,
+      0.7189075770000386,
+      0.08506729799995583,
+      0.21871573500004615,
+      0.39845464199999014,
+      0.07038870600001701,
+      0.2951109609999776
+    ],
+    "block_arrival_elapsed_seconds": [
+      1.5808741160000181,
+      1.7696429129999842,
+      2.134420361000025,
+      2.8482171559999756,
+      3.567124733000014,
+      3.65219203099997,
+      3.870907766000016,
+      4.269362408000006,
+      4.339751114000023,
+      4.634862075000001
+    ],
+    "e2e_seconds": 4.634965872999999
+  },
+  "token_metrics": {
+    "prompt_tokens": 747,
+    "completion_tokens": 295,
+    "total_tokens": 1042,
+    "end_to_end_tokens_per_second": 224.81287425867532,
+    "total_tokens_per_second": 224.81287425867532,
+    "completion_tokens_per_second": 63.646639065555874,
+    "tokens_after_first_block": 274,
+    "generated_tokens_per_second_after_first_block": 89.71570659983996
+  },
+  "final_meta_info": {
+    "id": "9f97843e0af746b991b7b7f3ee419ee3",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 747,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 295,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      6,
+      5,
+      12,
+      8,
+      3,
+      3,
+      4,
+      3,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      1.5676421059999939,
+      0.18935015900001417,
+      0.36358875100000887,
+      0.7135858609999559,
+      0.7197390380000002,
+      0.08405364100002544,
+      0.220016706000024,
+      0.3986881589999598,
+      0.06820941900002708,
+      0.29400889400000096
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.629362932999982
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 1.5808741160000181,
+      "output_token_count": 21,
+      "new_output_tokens": 21,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        1.5676421059999939
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 21,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874501.3604236
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 1.7696429129999842,
+      "output_token_count": 53,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.18935015900001417
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,0",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 53,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 2.134420361000025,
+      "output_token_count": 85,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.36358875100000887
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 85,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 2.8482171559999756,
+      "output_token_count": 117,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.7135858609999559
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 117,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 3.567124733000014,
+      "output_token_count": 149,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.7197390380000002
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150%",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 149,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559,
+          0.7197390380000002
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 3.65219203099997,
+      "output_token_count": 181,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.08405364100002544
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150% of $80,000)\n= $80,000 + (1.5 × $80,000)",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 181,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12,
+          8,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559,
+          0.7197390380000002,
+          0.08405364100002544
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 3.870907766000016,
+      "output_token_count": 213,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.220016706000024
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150% of $80,000)\n= $80,000 + (1.5 × $80,000)\n= $80,000 + $120,000\n= $200,000.\n\nNow",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 213,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12,
+          8,
+          3,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559,
+          0.7197390380000002,
+          0.08405364100002544,
+          0.220016706000024
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 4.269362408000006,
+      "output_token_count": 245,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.3986881589999598
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150% of $80,000)\n= $80,000 + (1.5 × $80,000)\n= $80,000 + $120,000\n= $200,000.\n\nNow, he sells the house for $200,000.\n\nHis profit = Selling price - Total cost\n= $200,",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 245,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12,
+          8,
+          3,
+          3,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559,
+          0.7197390380000002,
+          0.08405364100002544,
+          0.220016706000024,
+          0.3986881589999598
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 4.339751114000023,
+      "output_token_count": 277,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.06820941900002708
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150% of $80,000)\n= $80,000 + (1.5 × $80,000)\n= $80,000 + $120,000\n= $200,000.\n\nNow, he sells the house for $200,000.\n\nHis profit = Selling price - Total cost\n= $200,000 - $130,000\n= $70,000.\n\nSo, Josh made a profit of $",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": null,
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 277,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12,
+          8,
+          3,
+          3,
+          4,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559,
+          0.7197390380000002,
+          0.08405364100002544,
+          0.220016706000024,
+          0.3986881589999598,
+          0.06820941900002708
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 4.634862075000001,
+      "output_token_count": 295,
+      "new_output_tokens": 18,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.29400889400000096
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. Josh buys the house for $80,000.\n2. He spends $50,000 on repairs.\n3. So his total cost = $80,000 + $50,000 = $130,000.\n\nNow, the value of the house increases by 150%. That means the new value is: original value + 150% of original value.\n\nBut what is the original value? It's the price he paid for the house, which is $80,000.\n\nSo, new value = $80,000 + (150% of $80,000)\n= $80,000 + (1.5 × $80,000)\n= $80,000 + $120,000\n= $200,000.\n\nNow, he sells the house for $200,000.\n\nHis profit = Selling price - Total cost\n= $200,000 - $130,000\n= $70,000.\n\nSo, Josh made a profit of $70,000.\n\n#### 70000",
+      "meta_info": {
+        "id": "9f97843e0af746b991b7b7f3ee419ee3",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 747,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 295,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          6,
+          5,
+          12,
+          8,
+          3,
+          3,
+          4,
+          3,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          1.5676421059999939,
+          0.18935015900001417,
+          0.36358875100000887,
+          0.7135858609999559,
+          0.7197390380000002,
+          0.08405364100002544,
+          0.220016706000024,
+          0.3986881589999598,
+          0.06820941900002708,
+          0.29400889400000096
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.629362932999982
+      }
+    }
+  ]
+}

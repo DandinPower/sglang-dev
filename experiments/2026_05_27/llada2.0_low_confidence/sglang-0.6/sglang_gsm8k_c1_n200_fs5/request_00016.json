@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "request_index": 16,
+  "eval_index": 16,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.6,
+  "request_start_realtime": "2026-05-27T09:17:44.139",
+  "benchmark": {
+    "question": "Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days?",
+    "gold_solution": "On the first day, the trains covered 2 trains * 80 miles/train = <<2*80=160>>160 miles together.\nThey also covered 150 miles/train * 2 trains = <<150*2=300>>300 miles together on the second day.\nThe combined distance the two trains covered in the two days is 300 miles + 160 miles = <<300+160=460>>460 miles\nThe average distance for the two days is 460 miles / 2 trains = <<460/2=230>>230 miles/train\n#### 230",
+    "gold_answer": "230",
+    "model_text": "\n\nEach train travels 80 miles west on the first day.\n\nOn the second day, each train travels 150 miles north.\n\nTo find the total distance covered by each train in the two days, we add the distances:\n\n80 miles (west) + 150 miles (north) = 230 miles.\n\nSo, each train covers a total of 230 miles in the two days.\n#### #### 230",
+    "predicted_answer": "230",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      10,
+      10,
+      4
+    ],
+    "ttfb_seconds": 0.2359780609999973,
+    "tbb_seconds": [
+      0.07442874400000221,
+      0.07440062999999952,
+      0.02741612100000168
+    ],
+    "dllm_block_completion_latencies": [
+      0.2359780609999973,
+      0.07442874400000221,
+      0.07440062999999952,
+      0.02741612100000168
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      10,
+      10,
+      4
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 7.8881230349999925,
+    "first_new_token_ttfb_seconds": 7.8881230349999925,
+    "block_ttfb_seconds": 7.8881230349999925,
+    "tbb_seconds": [
+      0.07444328300000791,
+      0.07443641400000445,
+      0.027670289999988995
+    ],
+    "block_arrival_elapsed_seconds": [
+      7.8881230349999925,
+      7.962566318,
+      8.037002732000005,
+      8.064673021999994
+    ],
+    "e2e_seconds": 8.064728101
+  },
+  "token_metrics": {
+    "prompt_tokens": 743,
+    "completion_tokens": 106,
+    "total_tokens": 849,
+    "end_to_end_tokens_per_second": 105.27323294318215,
+    "total_tokens_per_second": 105.27323294318215,
+    "completion_tokens_per_second": 13.143654525297181,
+    "tokens_after_first_block": 81,
+    "generated_tokens_per_second_after_first_block": 458.6504896750613
+  },
+  "final_meta_info": {
+    "id": "960c0100832740dc9478af93bbbd2f5d",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 743,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 106,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      10,
+      10,
+      4
+    ],
+    "dllm_block_completion_latencies": [
+      0.2359780609999973,
+      0.07442874400000221,
+      0.07440062999999952,
+      0.02741612100000168
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.4150619539999951
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 7.8881230349999925,
+      "output_token_count": 25,
+      "new_output_tokens": 25,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2359780609999973
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nEach train travels 80 miles west on the first day.\n\nOn the second day, each train travels",
+      "meta_info": {
+        "id": "960c0100832740dc9478af93bbbd2f5d",
+        "finish_reason": null,
+        "prompt_tokens": 743,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 25,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.2359780609999973
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873472.0278785
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 7.962566318,
+      "output_token_count": 57,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.07442874400000221
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nEach train travels 80 miles west on the first day.\n\nOn the second day, each train travels 150 miles north.\n\nTo find the total distance covered by each train in the two days, we add the distances:\n\n80",
+      "meta_info": {
+        "id": "960c0100832740dc9478af93bbbd2f5d",
+        "finish_reason": null,
+        "prompt_tokens": 743,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 57,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.2359780609999973,
+          0.07442874400000221
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 8.037002732000005,
+      "output_token_count": 89,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.07440062999999952
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nEach train travels 80 miles west on the first day.\n\nOn the second day, each train travels 150 miles north.\n\nTo find the total distance covered by each train in the two days, we add the distances:\n\n80 miles (west) + 150 miles (north) = 230 miles.\n\nSo, each train covers a total of 2",
+      "meta_info": {
+        "id": "960c0100832740dc9478af93bbbd2f5d",
+        "finish_reason": null,
+        "prompt_tokens": 743,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 89,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          10,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.2359780609999973,
+          0.07442874400000221,
+          0.07440062999999952
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 8.064673021999994,
+      "output_token_count": 106,
+      "new_output_tokens": 17,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.02741612100000168
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nEach train travels 80 miles west on the first day.\n\nOn the second day, each train travels 150 miles north.\n\nTo find the total distance covered by each train in the two days, we add the distances:\n\n80 miles (west) + 150 miles (north) = 230 miles.\n\nSo, each train covers a total of 230 miles in the two days.\n#### #### 230",
+      "meta_info": {
+        "id": "960c0100832740dc9478af93bbbd2f5d",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 743,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          10,
+          10,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.2359780609999973,
+          0.07442874400000221,
+          0.07440062999999952,
+          0.02741612100000168
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.4150619539999951
+      }
+    }
+  ]
+}

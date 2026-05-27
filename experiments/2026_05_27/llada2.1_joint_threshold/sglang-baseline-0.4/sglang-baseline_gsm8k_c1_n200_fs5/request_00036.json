@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 36,
+  "eval_index": 36,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.6,
+  "request_start_realtime": "2026-05-27T09:37:32.937",
+  "benchmark": {
+    "question": "Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days?",
+    "gold_solution": "He eats 2 yogurts a day so over 30 days he will need 2*30 = <<2*30=60>>60 yogurts\nThe yogurt is sold as 4 units for $5.00 and he needs 60 yogurts so that’s 60/4 = <<60/4=15>>15 4-packs\nEach 4-pack is $5.00 and he needs 15 4-packs so he will spend $5*15 = $<<5*15=75.00>>75.00 on yogurt\n#### 75",
+    "gold_answer": "75",
+    "model_text": "\n\nTerry eats 2 yogurts a day, so in 30 days, he eats:\n2 yogurts/day * 30 days = 60 yogurts.\n\nThe yogurts are on sale 4 yogurts for $5.00.\n\nSo how many sets he needs:\n60 yogurts ÷ 4 yogurts/set = 15 sets.\n\nEach set costs $5.00, so:\n15 sets * $5.00/set = $75.00.\n\nTherefore, Terry spends $75.00 on yogurt over 30 days.\n\n#### 75",
+    "predicted_answer": "75",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      2,
+      4,
+      10,
+      6,
+      4,
+      3
+    ],
+    "ttfb_seconds": 0.16688090899998542,
+    "tbb_seconds": [
+      0.027396296999995684,
+      0.06921137400001953,
+      0.0411606680000034,
+      0.02845299799997747,
+      0.019124078000004374
+    ],
+    "dllm_block_completion_latencies": [
+      0.16688090899998542,
+      0.027396296999995684,
+      0.06921137400001953,
+      0.0411606680000034,
+      0.02845299799997747,
+      0.019124078000004374
+    ],
+    "dllm_forward_counts_per_block": [
+      2,
+      4,
+      10,
+      6,
+      4,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 12.36992724800001,
+    "first_new_token_ttfb_seconds": 12.36992724800001,
+    "block_ttfb_seconds": 12.36992724800001,
+    "tbb_seconds": [
+      0.0267401239999856,
+      0.0699390649999998,
+      0.04086355600000502,
+      0.0283273050000048,
+      0.01893350299999952
+    ],
+    "block_arrival_elapsed_seconds": [
+      12.36992724800001,
+      12.396667371999996,
+      12.466606436999996,
+      12.507469993,
+      12.535797298000006,
+      12.554730801000005
+    ],
+    "e2e_seconds": 12.554844459000009
+  },
+  "token_metrics": {
+    "prompt_tokens": 731,
+    "completion_tokens": 143,
+    "total_tokens": 874,
+    "end_to_end_tokens_per_second": 69.61456215998506,
+    "total_tokens_per_second": 69.61456215998506,
+    "completion_tokens_per_second": 11.39002561656506,
+    "tokens_after_first_block": 138,
+    "generated_tokens_per_second_after_first_block": 746.279912257606
+  },
+  "final_meta_info": {
+    "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 731,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 143,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      2,
+      4,
+      10,
+      6,
+      4,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.16688090899998542,
+      0.027396296999995684,
+      0.06921137400001953,
+      0.0411606680000034,
+      0.02845299799997747,
+      0.019124078000004374
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.35740114600000084
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 12.36992724800001,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.16688090899998542
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nTerry eats ",
+      "meta_info": {
+        "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.16688090899998542
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874665.306707
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 12.396667371999996,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.027396296999995684
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nTerry eats 2 yogurts a day, so in 30 days, he eats:\n2 yogurts/day * 30 days = 60 yogurts",
+      "meta_info": {
+        "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16688090899998542,
+          0.027396296999995684
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 12.466606436999996,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.06921137400001953
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nTerry eats 2 yogurts a day, so in 30 days, he eats:\n2 yogurts/day * 30 days = 60 yogurts.\n\nThe yogurts are on sale 4 yogurts for $5.00.\n\nSo how many sets he needs:\n60",
+      "meta_info": {
+        "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          4,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.16688090899998542,
+          0.027396296999995684,
+          0.06921137400001953
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 12.507469993,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.0411606680000034
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nTerry eats 2 yogurts a day, so in 30 days, he eats:\n2 yogurts/day * 30 days = 60 yogurts.\n\nThe yogurts are on sale 4 yogurts for $5.00.\n\nSo how many sets he needs:\n60 yogurts ÷ 4 yogurts/set = 15 sets.\n\nEach set costs $5.00, so:\n15 sets *",
+      "meta_info": {
+        "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          4,
+          10,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.16688090899998542,
+          0.027396296999995684,
+          0.06921137400001953,
+          0.0411606680000034
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 12.535797298000006,
+      "output_token_count": 133,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.02845299799997747
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nTerry eats 2 yogurts a day, so in 30 days, he eats:\n2 yogurts/day * 30 days = 60 yogurts.\n\nThe yogurts are on sale 4 yogurts for $5.00.\n\nSo how many sets he needs:\n60 yogurts ÷ 4 yogurts/set = 15 sets.\n\nEach set costs $5.00, so:\n15 sets * $5.00/set = $75.00.\n\nTherefore, Terry spends $75.00 on yogurt over 30",
+      "meta_info": {
+        "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 133,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          4,
+          10,
+          6,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.16688090899998542,
+          0.027396296999995684,
+          0.06921137400001953,
+          0.0411606680000034,
+          0.02845299799997747
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 12.554730801000005,
+      "output_token_count": 143,
+      "new_output_tokens": 10,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.019124078000004374
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nTerry eats 2 yogurts a day, so in 30 days, he eats:\n2 yogurts/day * 30 days = 60 yogurts.\n\nThe yogurts are on sale 4 yogurts for $5.00.\n\nSo how many sets he needs:\n60 yogurts ÷ 4 yogurts/set = 15 sets.\n\nEach set costs $5.00, so:\n15 sets * $5.00/set = $75.00.\n\nTherefore, Terry spends $75.00 on yogurt over 30 days.\n\n#### 75",
+      "meta_info": {
+        "id": "8cc7c55346dd41b0b656bb9f7a1bc1ae",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          4,
+          10,
+          6,
+          4,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.16688090899998542,
+          0.027396296999995684,
+          0.06921137400001953,
+          0.0411606680000034,
+          0.02845299799997747,
+          0.019124078000004374
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.35740114600000084
+      }
+    }
+  ]
+}

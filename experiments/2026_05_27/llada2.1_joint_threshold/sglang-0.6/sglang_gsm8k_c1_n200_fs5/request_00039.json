@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 39,
+  "eval_index": 39,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Dana can run at a rate of speed four times faster than she can walk, but she can skip at a rate of speed that is half as fast as she can run. If she can skip at 3 miles per hour, how many miles can she travel in six hours if she spends one-third of the time running and two-thirds of the time walking?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Dana can run at a rate of speed four times faster than she can walk, but she can skip at a rate of speed that is half as fast as she can run. If she can skip at 3 miles per hour, how many miles can she travel in six hours if she spends one-third of the time running and two-thirds of the time walking?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.9000000000000004,
+  "request_start_realtime": "2026-05-27T09:33:58.365",
+  "benchmark": {
+    "question": "Dana can run at a rate of speed four times faster than she can walk, but she can skip at a rate of speed that is half as fast as she can run. If she can skip at 3 miles per hour, how many miles can she travel in six hours if she spends one-third of the time running and two-thirds of the time walking?",
+    "gold_solution": "If Dana can skip at half the speed she can run, then she can run at 3*2=<<3*2=6>>6 miles per hour.\nAnd since she can run at a speed that is 4 times faster than she can walk, this means she can walk at 6/4=1.5 miles per hour.\nIf two-thirds of the time is spent walking, then she walks for 6*(2/3)=<<6*(2/3)=4>>4 hours.\nIf one-third of the time is spent running, then she runs for 6-4=<<6-4=2>>2 hours.\nThus, she runs for 2 hours at 6 miles per hour, or 2*6=<<2*6=12>>12 miles.\nShe walks for 4 hours at 1.5 miles per hour, or 4*1.5=<<4*1.5=6>>6 miles.\nThus, altogether, she travels 12+6=<<12+6=18>>18 miles.\n#### 18",
+    "gold_answer": "18",
+    "model_text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking: \\( \\frac{2}{3} \\times 6 = 4 \\) hours.\n\n4. **Calculate distances:**\n   - Distance while running = speed × time = 6 miles/hour × 2 hours = 12 miles.\n   - Distance while walking = speed × time = 1.5 miles/hour × 4 hours = 6 miles.\n\n5. **Total distance traveled:**\n   - Total distance = running distance + walking distance = 12 + 6 = 18 miles.\n\n**Answer:** Dana can travel 18 miles in six hours.\n\n\\boxed{18}",
+    "predicted_answer": "18",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      13,
+      11,
+      18,
+      7,
+      4,
+      8,
+      5,
+      4,
+      6,
+      14,
+      9,
+      3
+    ],
+    "ttfb_seconds": 0.18814366099999802,
+    "tbb_seconds": [
+      0.09441245400000753,
+      0.08048460800000612,
+      0.1264572830000077,
+      0.0493819249999774,
+      0.02863703900001724,
+      0.05887629000000061,
+      0.0357554789999881,
+      0.03017436799999018,
+      0.040687560999998595,
+      0.10330980100002307,
+      0.06483747599997969,
+      0.018099540000008574
+    ],
+    "dllm_block_completion_latencies": [
+      0.18814366099999802,
+      0.09441245400000753,
+      0.08048460800000612,
+      0.1264572830000077,
+      0.0493819249999774,
+      0.02863703900001724,
+      0.05887629000000061,
+      0.0357554789999881,
+      0.03017436799999018,
+      0.040687560999998595,
+      0.10330980100002307,
+      0.06483747599997969,
+      0.018099540000008574
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      13,
+      11,
+      18,
+      7,
+      4,
+      8,
+      5,
+      4,
+      6,
+      14,
+      9,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 20.542252032999983,
+    "first_new_token_ttfb_seconds": 20.542252032999983,
+    "block_ttfb_seconds": 20.542252032999983,
+    "tbb_seconds": [
+      0.09412735400002248,
+      0.08041821300000151,
+      0.12668803999997635,
+      0.048935983999996324,
+      0.028477148000007446,
+      0.059289217000014105,
+      0.035681439999990516,
+      0.029880423000008705,
+      0.040477022999994006,
+      0.10374107499998786,
+      0.06453276400000618,
+      0.0182250139999951
+    ],
+    "block_arrival_elapsed_seconds": [
+      20.542252032999983,
+      20.636379387000005,
+      20.716797600000007,
+      20.843485639999983,
+      20.89242162399998,
+      20.920898771999987,
+      20.980187989,
+      21.01586942899999,
+      21.045749852,
+      21.086226874999994,
+      21.189967949999982,
+      21.254500713999988,
+      21.272725727999983
+    ],
+    "e2e_seconds": 21.27282356499998
+  },
+  "token_metrics": {
+    "prompt_tokens": 762,
+    "completion_tokens": 366,
+    "total_tokens": 1128,
+    "end_to_end_tokens_per_second": 53.02540100299097,
+    "total_tokens_per_second": 53.02540100299097,
+    "completion_tokens_per_second": 17.20505032543856,
+    "tokens_after_first_block": 360,
+    "generated_tokens_per_second_after_first_block": 492.7648891744669
+  },
+  "final_meta_info": {
+    "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 762,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 366,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      13,
+      11,
+      18,
+      7,
+      4,
+      8,
+      5,
+      4,
+      6,
+      14,
+      9,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.18814366099999802,
+      0.09441245400000753,
+      0.08048460800000612,
+      0.1264572830000077,
+      0.0493819249999774,
+      0.02863703900001724,
+      0.05887629000000061,
+      0.0357554789999881,
+      0.03017436799999018,
+      0.040687560999998595,
+      0.10330980100002307,
+      0.06483747599997969,
+      0.018099540000008574
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.9233699730000069
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 20.542252032999983,
+      "output_token_count": 6,
+      "new_output_tokens": 6,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.18814366099999802
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **Given",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 6,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874458.9076889
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 20.636379387000005,
+      "output_token_count": 38,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.09441245400000753
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 38,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 20.716797600000007,
+      "output_token_count": 70,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.08048460800000612
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 70,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 20.843485639999983,
+      "output_token_count": 102,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.1264572830000077
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\)",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 102,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 20.89242162399998,
+      "output_token_count": 134,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.0493819249999774
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 134,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 20.920898771999987,
+      "output_token_count": 166,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.02863703900001724
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 166,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 20.980187989,
+      "output_token_count": 198,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.05887629000000061
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 198,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 21.01586942899999,
+      "output_token_count": 230,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.0357554789999881
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking:",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 230,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061,
+          0.0357554789999881
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 21.045749852,
+      "output_token_count": 262,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.03017436799999018
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking: \\( \\frac{2}{3} \\times 6 = 4 \\) hours.\n\n4. **Calculate distances:**\n   - Distance while running",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 262,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8,
+          5,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061,
+          0.0357554789999881,
+          0.03017436799999018
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 21.086226874999994,
+      "output_token_count": 294,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.040687560999998595
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking: \\( \\frac{2}{3} \\times 6 = 4 \\) hours.\n\n4. **Calculate distances:**\n   - Distance while running = speed × time = 6 miles/hour × 2 hours = 12 miles.\n   - Distance while walking = speed × time = 1",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 294,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8,
+          5,
+          4,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061,
+          0.0357554789999881,
+          0.03017436799999018,
+          0.040687560999998595
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 21.189967949999982,
+      "output_token_count": 326,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.10330980100002307
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking: \\( \\frac{2}{3} \\times 6 = 4 \\) hours.\n\n4. **Calculate distances:**\n   - Distance while running = speed × time = 6 miles/hour × 2 hours = 12 miles.\n   - Distance while walking = speed × time = 1.5 miles/hour × 4 hours = 6 miles.\n\n5. **Total distance traveled:**\n   - Total distance = running distance + walking",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 326,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8,
+          5,
+          4,
+          6,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061,
+          0.0357554789999881,
+          0.03017436799999018,
+          0.040687560999998595,
+          0.10330980100002307
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 21.254500713999988,
+      "output_token_count": 358,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.06483747599997969
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking: \\( \\frac{2}{3} \\times 6 = 4 \\) hours.\n\n4. **Calculate distances:**\n   - Distance while running = speed × time = 6 miles/hour × 2 hours = 12 miles.\n   - Distance while walking = speed × time = 1.5 miles/hour × 4 hours = 6 miles.\n\n5. **Total distance traveled:**\n   - Total distance = running distance + walking distance = 12 + 6 = 18 miles.\n\n**Answer:** Dana can travel 18 miles in six hours.\n\n",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": null,
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 358,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8,
+          5,
+          4,
+          6,
+          14,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061,
+          0.0357554789999881,
+          0.03017436799999018,
+          0.040687560999998595,
+          0.10330980100002307,
+          0.06483747599997969
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 21.272725727999983,
+      "output_token_count": 366,
+      "new_output_tokens": 8,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.018099540000008574
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n1. **Given:**\n   - Dana can skip at 3 miles per hour.\n   - Skipping is half as fast as running, so running speed = 2 × skipping speed = 2 × 3 = 6 miles per hour.\n   - Walking speed is slower than running, but we need to find it.\n   - Dana runs four times faster than she walks.\n\n2. **Find walking speed:**\n   - Let walking speed = \\( w \\) miles per hour.\n   - Then running speed = \\( 4w \\) miles per hour.\n   - But we already know running speed = 6 miles per hour.\n   - So, \\( 4w = 6 \\) → \\( w = \\frac{6}{4} = 1.5 \\) miles per hour.\n\n3. **Time allocation:**\n   - Total time = 6 hours.\n   - One-third of the time spent running: \\( \\frac{1}{3} \\times 6 = 2 \\) hours.\n   - Two-thirds of the time spent walking: \\( \\frac{2}{3} \\times 6 = 4 \\) hours.\n\n4. **Calculate distances:**\n   - Distance while running = speed × time = 6 miles/hour × 2 hours = 12 miles.\n   - Distance while walking = speed × time = 1.5 miles/hour × 4 hours = 6 miles.\n\n5. **Total distance traveled:**\n   - Total distance = running distance + walking distance = 12 + 6 = 18 miles.\n\n**Answer:** Dana can travel 18 miles in six hours.\n\n\\boxed{18}",
+      "meta_info": {
+        "id": "72c6f44b973b4359b9a47bc8e63c88a2",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 762,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 366,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          13,
+          11,
+          18,
+          7,
+          4,
+          8,
+          5,
+          4,
+          6,
+          14,
+          9,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.18814366099999802,
+          0.09441245400000753,
+          0.08048460800000612,
+          0.1264572830000077,
+          0.0493819249999774,
+          0.02863703900001724,
+          0.05887629000000061,
+          0.0357554789999881,
+          0.03017436799999018,
+          0.040687560999998595,
+          0.10330980100002307,
+          0.06483747599997969,
+          0.018099540000008574
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.9233699730000069
+      }
+    }
+  ]
+}

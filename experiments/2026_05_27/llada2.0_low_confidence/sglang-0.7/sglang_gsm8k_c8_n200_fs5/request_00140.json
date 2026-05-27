@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 140,
+  "eval_index": 140,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Of the 20 available cars for rent, 12 are automatic cars, 4 are manual cars, and the rest are semi-automatic. What percentage of the cars are semi-automatic?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Of the 20 available cars for rent, 12 are automatic cars, 4 are manual cars, and the rest are semi-automatic. What percentage of the cars are semi-automatic?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 14.0,
+  "request_start_realtime": "2026-05-27T08:59:03.795",
+  "benchmark": {
+    "question": "Of the 20 available cars for rent, 12 are automatic cars, 4 are manual cars, and the rest are semi-automatic. What percentage of the cars are semi-automatic?",
+    "gold_solution": "12 + 4 = <<12+4=16>>16 cars are either automatic or manual.\nSo, 20 - 16 = <<20-16=4>>4 cars are semi-automatic.\nTherefore, the percentage of semi-automatic cars is 4/20 x 100% = 20%.\n#### 20",
+    "gold_answer": "20",
+    "model_text": "\n\nWe are told there are 20 cars in total.\n\n- 12 are automatic\n- 4 are manual\n\nSo, the number of semi-automatic cars is:\n20 - (12 + 4) = 20 - 16 = 4 semi-automatic cars.\n\nNow, to find the percentage of semi-automatic cars:\n(4 / 20) * 100 = 20%\n\n#### 20",
+    "predicted_answer": "20",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      16,
+      10,
+      14,
+      9
+    ],
+    "ttfb_seconds": 0.24098043600002939,
+    "tbb_seconds": [
+      0.4629788459999986,
+      0.36019270399998504,
+      0.43920628199998646,
+      0.34604665099999465
+    ],
+    "dllm_block_completion_latencies": [
+      0.24098043600002939,
+      0.4629788459999986,
+      0.36019270399998504,
+      0.43920628199998646,
+      0.34604665099999465
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      16,
+      10,
+      14,
+      9
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 28.20684521300001,
+    "first_new_token_ttfb_seconds": 28.20684521300001,
+    "block_ttfb_seconds": 28.20684521300001,
+    "tbb_seconds": [
+      0.4635521760000074,
+      0.3600866410000094,
+      0.441386725999962,
+      0.34352702800003954
+    ],
+    "block_arrival_elapsed_seconds": [
+      28.20684521300001,
+      28.670397389000016,
+      29.030484030000025,
+      29.471870755999987,
+      29.815397784000027
+    ],
+    "e2e_seconds": 29.815495521999992
+  },
+  "token_metrics": {
+    "prompt_tokens": 731,
+    "completion_tokens": 108,
+    "total_tokens": 839,
+    "end_to_end_tokens_per_second": 28.139730207768178,
+    "total_tokens_per_second": 28.139730207768178,
+    "completion_tokens_per_second": 3.622277547603055,
+    "tokens_after_first_block": 103,
+    "generated_tokens_per_second_after_first_block": 64.02883176271534
+  },
+  "final_meta_info": {
+    "id": "c3dc484cb98c4e6699269009fd2967df",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 731,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 108,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      16,
+      10,
+      14,
+      9
+    ],
+    "dllm_block_completion_latencies": [
+      0.24098043600002939,
+      0.4629788459999986,
+      0.36019270399998504,
+      0.43920628199998646,
+      0.34604665099999465
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.862061945999983
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 28.20684521300001,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.24098043600002939
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told",
+      "meta_info": {
+        "id": "c3dc484cb98c4e6699269009fd2967df",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.24098043600002939
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872372.0022414
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 28.670397389000016,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.4629788459999986
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told there are 20 cars in total.\n\n- 12 are automatic\n- 4 are manual\n\nSo, the number of semi-aut",
+      "meta_info": {
+        "id": "c3dc484cb98c4e6699269009fd2967df",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.24098043600002939,
+          0.4629788459999986
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 29.030484030000025,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.36019270399998504
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told there are 20 cars in total.\n\n- 12 are automatic\n- 4 are manual\n\nSo, the number of semi-automatic cars is:\n20 - (12 + 4) = 20 - 16 = 4 semi-automatic cars.\n",
+      "meta_info": {
+        "id": "c3dc484cb98c4e6699269009fd2967df",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.24098043600002939,
+          0.4629788459999986,
+          0.36019270399998504
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 29.471870755999987,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.43920628199998646
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told there are 20 cars in total.\n\n- 12 are automatic\n- 4 are manual\n\nSo, the number of semi-automatic cars is:\n20 - (12 + 4) = 20 - 16 = 4 semi-automatic cars.\n\nNow, to find the percentage of semi-automatic cars:\n(4 / 20) * 100 = 20%\n",
+      "meta_info": {
+        "id": "c3dc484cb98c4e6699269009fd2967df",
+        "finish_reason": null,
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          10,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.24098043600002939,
+          0.4629788459999986,
+          0.36019270399998504,
+          0.43920628199998646
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 29.815397784000027,
+      "output_token_count": 108,
+      "new_output_tokens": 7,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.34604665099999465
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told there are 20 cars in total.\n\n- 12 are automatic\n- 4 are manual\n\nSo, the number of semi-automatic cars is:\n20 - (12 + 4) = 20 - 16 = 4 semi-automatic cars.\n\nNow, to find the percentage of semi-automatic cars:\n(4 / 20) * 100 = 20%\n\n#### 20",
+      "meta_info": {
+        "id": "c3dc484cb98c4e6699269009fd2967df",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 731,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          16,
+          10,
+          14,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.24098043600002939,
+          0.4629788459999986,
+          0.36019270399998504,
+          0.43920628199998646,
+          0.34604665099999465
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.862061945999983
+      }
+    }
+  ]
+}

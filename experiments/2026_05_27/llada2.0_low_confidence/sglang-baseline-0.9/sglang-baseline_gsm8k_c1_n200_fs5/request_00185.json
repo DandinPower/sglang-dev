@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "request_index": 185,
+  "eval_index": 185,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jenna and her mother picked some apples from their apple farm. Jenna picked half as many apples as her mom. If her mom got 20 apples, how many apples did they both pick?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jenna and her mother picked some apples from their apple farm. Jenna picked half as many apples as her mom. If her mom got 20 apples, how many apples did they both pick?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.5,
+  "request_start_realtime": "2026-05-27T08:56:54.814",
+  "benchmark": {
+    "question": "Jenna and her mother picked some apples from their apple farm. Jenna picked half as many apples as her mom. If her mom got 20 apples, how many apples did they both pick?",
+    "gold_solution": "If Jenna got half as many apples as her mom, then she got 1/2 * 20 apples = <<20*1/2=10>>10 apples\nTogether, they had 10 apples + 20 apples = <<10+20=30>>30 apples\n#### 30",
+    "gold_answer": "30",
+    "model_text": "\n\n1. Jenna's mom picked 20 apples.\n2. Jenna picked half as many as her mom: 20 / 2 = 10 apples.\n3. Total apples picked by both: 20 (mom) + 10 (Jenna) = 30 apples.\n\n#### 30",
+    "predicted_answer": "30",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      10,
+      16,
+      3
+    ],
+    "ttfb_seconds": 0.20233245100001795,
+    "tbb_seconds": [
+      0.06743314200002715,
+      0.10279755399994883,
+      0.018321167999999943
+    ],
+    "dllm_block_completion_latencies": [
+      0.20233245100001795,
+      0.06743314200002715,
+      0.10279755399994883,
+      0.018321167999999943
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      16,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 142.686905094,
+    "first_new_token_ttfb_seconds": 142.686905094,
+    "block_ttfb_seconds": 142.686905094,
+    "tbb_seconds": [
+      0.06739536399999224,
+      0.10308700699999918,
+      0.016135193000025083
+    ],
+    "block_arrival_elapsed_seconds": [
+      142.686905094,
+      142.754300458,
+      142.857387465,
+      142.873522658
+    ],
+    "e2e_seconds": 142.87359516700002
+  },
+  "token_metrics": {
+    "prompt_tokens": 729,
+    "completion_tokens": 74,
+    "total_tokens": 803,
+    "end_to_end_tokens_per_second": 5.620352725508174,
+    "total_tokens_per_second": 5.620352725508174,
+    "completion_tokens_per_second": 0.5179403507940284,
+    "tokens_after_first_block": 67,
+    "generated_tokens_per_second_after_first_block": 358.88357063308837
+  },
+  "final_meta_info": {
+    "id": "56567da579f7471992e47b0c188bc085",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 729,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 74,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      16,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.20233245100001795,
+      0.06743314200002715,
+      0.10279755399994883,
+      0.018321167999999943
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.3987672069999917
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 142.686905094,
+      "output_token_count": 7,
+      "new_output_tokens": 7,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.20233245100001795
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Jenna's mom",
+      "meta_info": {
+        "id": "56567da579f7471992e47b0c188bc085",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 7,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.20233245100001795
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872357.501277
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 142.754300458,
+      "output_token_count": 39,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.06743314200002715
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Jenna's mom picked 20 apples.\n2. Jenna picked half as many as her mom: 20 / 2 = 10 apples.\n3",
+      "meta_info": {
+        "id": "56567da579f7471992e47b0c188bc085",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 39,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20233245100001795,
+          0.06743314200002715
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 142.857387465,
+      "output_token_count": 71,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.10279755399994883
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Jenna's mom picked 20 apples.\n2. Jenna picked half as many as her mom: 20 / 2 = 10 apples.\n3. Total apples picked by both: 20 (mom) + 10 (Jenna) = 30 apples.\n\n#### 3",
+      "meta_info": {
+        "id": "56567da579f7471992e47b0c188bc085",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 71,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.20233245100001795,
+          0.06743314200002715,
+          0.10279755399994883
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 142.873522658,
+      "output_token_count": 74,
+      "new_output_tokens": 3,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.018321167999999943
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Jenna's mom picked 20 apples.\n2. Jenna picked half as many as her mom: 20 / 2 = 10 apples.\n3. Total apples picked by both: 20 (mom) + 10 (Jenna) = 30 apples.\n\n#### 30",
+      "meta_info": {
+        "id": "56567da579f7471992e47b0c188bc085",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          16,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.20233245100001795,
+          0.06743314200002715,
+          0.10279755399994883,
+          0.018321167999999943
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.3987672069999917
+      }
+    }
+  ]
+}

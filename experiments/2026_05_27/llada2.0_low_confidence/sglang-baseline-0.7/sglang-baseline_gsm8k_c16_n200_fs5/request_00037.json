@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 37,
+  "eval_index": 37,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John plans to sell all his toys and use the money to buy video games. He has 13 lego sets and he sells them for $15 each. He ends up buying 8 video games for $20 each and has $5 left. How many lego sets does he still have?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John plans to sell all his toys and use the money to buy video games. He has 13 lego sets and he sells them for $15 each. He ends up buying 8 video games for $20 each and has $5 left. How many lego sets does he still have?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.7,
+  "request_start_realtime": "2026-05-27T08:58:58.602",
+  "benchmark": {
+    "question": "John plans to sell all his toys and use the money to buy video games. He has 13 lego sets and he sells them for $15 each. He ends up buying 8 video games for $20 each and has $5 left. How many lego sets does he still have?",
+    "gold_solution": "He spent $160 on video games because 8 x 20 = <<8*20=160>>160\nHe earned $165 from his sale because 160 + 5 = <<160+5=165>>165\nHe sold 11 lego sets because 11 x 15 = <<11*15=165>>165\nHe has 2 sets left because 13 - 11 = <<13-11=2>>2\n#### 2",
+    "gold_answer": "2",
+    "model_text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money used for legos:\n\n$195 (earned) - $165 (used) = $30\n\nNow, find out how many lego sets he sold to get $30:\n\n$30 ÷ $15 per set = $<<30 / 15 = 2>>2 sets\n\nSo, he sold 2 lego sets.\n\nHe originally had 13 lego sets, so the number he still has is:\n\n13 - 2 = <<13 - 2 = 11>>11\n\n#### 11",
+    "predicted_answer": "11",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      18,
+      18,
+      25,
+      16,
+      24,
+      19,
+      19,
+      18,
+      23
+    ],
+    "ttfb_seconds": 0.4606946540000081,
+    "tbb_seconds": [
+      0.2872773359999883,
+      0.5724484660000257,
+      0.42692981199996893,
+      0.4716039919999844,
+      0.4008632500000431,
+      0.5367759599999999,
+      0.3199450870000078,
+      0.521744539999986,
+      0.3611001719999649
+    ],
+    "dllm_block_completion_latencies": [
+      0.4606946540000081,
+      0.2872773359999883,
+      0.5724484660000257,
+      0.42692981199996893,
+      0.4716039919999844,
+      0.4008632500000431,
+      0.5367759599999999,
+      0.3199450870000078,
+      0.521744539999986,
+      0.3611001719999649
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      18,
+      18,
+      25,
+      16,
+      24,
+      19,
+      19,
+      18,
+      23
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 3.7518622649999998,
+    "first_new_token_ttfb_seconds": 3.7518622649999998,
+    "block_ttfb_seconds": 3.7518622649999998,
+    "tbb_seconds": [
+      0.2872712770000021,
+      0.5708077870000352,
+      0.42621820199997273,
+      0.47449784399998407,
+      0.39767999900004725,
+      0.5380264809999744,
+      0.31902609600001597,
+      0.5265603639999767,
+      0.35486063500002274
+    ],
+    "block_arrival_elapsed_seconds": [
+      3.7518622649999998,
+      4.039133542000002,
+      4.609941329000037,
+      5.03615953100001,
+      5.510657374999994,
+      5.908337374000041,
+      6.4463638550000155,
+      6.7653899510000315,
+      7.291950315000008,
+      7.646810950000031
+    ],
+    "e2e_seconds": 7.6468807140000195
+  },
+  "token_metrics": {
+    "prompt_tokens": 753,
+    "completion_tokens": 274,
+    "total_tokens": 1027,
+    "end_to_end_tokens_per_second": 134.30312808721516,
+    "total_tokens_per_second": 134.30312808721516,
+    "completion_tokens_per_second": 35.83160379347318,
+    "tokens_after_first_block": 259,
+    "generated_tokens_per_second_after_first_block": 66.49519210017962
+  },
+  "final_meta_info": {
+    "id": "5fdc160d416248188d8d8407b6b31ece",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 753,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 274,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      18,
+      18,
+      25,
+      16,
+      24,
+      19,
+      19,
+      18,
+      23
+    ],
+    "dllm_block_completion_latencies": [
+      0.4606946540000081,
+      0.2872773359999883,
+      0.5724484660000257,
+      0.42692981199996893,
+      0.4716039919999844,
+      0.4008632500000431,
+      0.5367759599999999,
+      0.3199450870000078,
+      0.521744539999986,
+      0.3611001719999649
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.578203473999963
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 3.7518622649999998,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4606946540000081
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872342.3490796
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 4.039133542000002,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2872773359999883
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext,",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.609941329000037,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5724484660000257
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 5.03615953100001,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.42692981199996893
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent)",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 5.510657374999994,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.4716039919999844
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893,
+          0.4716039919999844
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 5.908337374000041,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.4008632500000431
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money used for legos:\n\n$195 (earned) - $165 (used) = $30\n\nNow, find out",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25,
+          16,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893,
+          0.4716039919999844,
+          0.4008632500000431
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 6.4463638550000155,
+      "output_token_count": 207,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.5367759599999999
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money used for legos:\n\n$195 (earned) - $165 (used) = $30\n\nNow, find out how many lego sets he sold to get $30:\n\n$30 ÷ $15 per set = $<<30 / 15",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25,
+          16,
+          24,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893,
+          0.4716039919999844,
+          0.4008632500000431,
+          0.5367759599999999
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 6.7653899510000315,
+      "output_token_count": 239,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.3199450870000078
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money used for legos:\n\n$195 (earned) - $165 (used) = $30\n\nNow, find out how many lego sets he sold to get $30:\n\n$30 ÷ $15 per set = $<<30 / 15 = 2>>2 sets\n\nSo, he sold 2 lego sets.\n\nHe originally had 13 lego sets, so the",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 239,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25,
+          16,
+          24,
+          19,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893,
+          0.4716039919999844,
+          0.4008632500000431,
+          0.5367759599999999,
+          0.3199450870000078
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 7.291950315000008,
+      "output_token_count": 271,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.521744539999986
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money used for legos:\n\n$195 (earned) - $165 (used) = $30\n\nNow, find out how many lego sets he sold to get $30:\n\n$30 ÷ $15 per set = $<<30 / 15 = 2>>2 sets\n\nSo, he sold 2 lego sets.\n\nHe originally had 13 lego sets, so the number he still has is:\n\n13 - 2 = <<13 - 2 = 11>>11\n\n#### 1",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 271,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25,
+          16,
+          24,
+          19,
+          19,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893,
+          0.4716039919999844,
+          0.4008632500000431,
+          0.5367759599999999,
+          0.3199450870000078,
+          0.521744539999986
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 7.646810950000031,
+      "output_token_count": 274,
+      "new_output_tokens": 3,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.3611001719999649
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nFirst, calculate how much money John earned from selling the lego sets:\n\n13 lego sets × $15 each = $<<13 × 15 = $195>>\n\nNext, calculate how much he spent on video games:\n\n8 video games × $20 each = $<<8 × 20 = $160>>\n\nNow, add the $5 left over to the amount spent to find the total money he had:\n\n$160 (spent) + $5 (left) = $165\n\nBut he earned $195 from selling lego sets, so the difference is the money used for legos:\n\n$195 (earned) - $165 (used) = $30\n\nNow, find out how many lego sets he sold to get $30:\n\n$30 ÷ $15 per set = $<<30 / 15 = 2>>2 sets\n\nSo, he sold 2 lego sets.\n\nHe originally had 13 lego sets, so the number he still has is:\n\n13 - 2 = <<13 - 2 = 11>>11\n\n#### 11",
+      "meta_info": {
+        "id": "5fdc160d416248188d8d8407b6b31ece",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 274,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          18,
+          25,
+          16,
+          24,
+          19,
+          19,
+          18,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.4606946540000081,
+          0.2872773359999883,
+          0.5724484660000257,
+          0.42692981199996893,
+          0.4716039919999844,
+          0.4008632500000431,
+          0.5367759599999999,
+          0.3199450870000078,
+          0.521744539999986,
+          0.3611001719999649
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.578203473999963
+      }
+    }
+  ]
+}

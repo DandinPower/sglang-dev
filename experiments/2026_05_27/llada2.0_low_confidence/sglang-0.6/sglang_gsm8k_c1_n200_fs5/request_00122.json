@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 122,
+  "eval_index": 122,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Sadie slept 8 hours on Monday. For the next two days, she slept 2 hours less, each, because she had to complete some assignments. If the rest of the week she slept 1 hour more than those two days, how many hours did she sleep in total throughout the week?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Sadie slept 8 hours on Monday. For the next two days, she slept 2 hours less, each, because she had to complete some assignments. If the rest of the week she slept 1 hour more than those two days, how many hours did she sleep in total throughout the week?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 12.200000000000001,
+  "request_start_realtime": "2026-05-27T09:17:54.740",
+  "benchmark": {
+    "question": "Sadie slept 8 hours on Monday. For the next two days, she slept 2 hours less, each, because she had to complete some assignments. If the rest of the week she slept 1 hour more than those two days, how many hours did she sleep in total throughout the week?",
+    "gold_solution": "If on Monday she slept 8 hours, then she slept 8-2 = <<8-2=6>>6 hours on each of the next two days.\nThe total number of hours slept for the two days will be 6*2 = <<6*2=12>>12 hours.\nIf she slept 1 hour more for the rest of the week each day, then each day she slept 6+1 = <<6+1=7>>7 hours.\nThe total for the rest of the week will be 4*7 = <<4*7=28>>28 hours.\nThe total number of hours slept for the whole week will be 8+12+28 = <<8+12+28=48>>48 hours.\n#### 48",
+    "gold_answer": "48",
+    "model_text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.\n\nLet's clarify:\n\n- Monday: 8 hours\n- Tuesday: 6 hours\n- Wednesday: 6 hours\n- Thursday to Sunday: 4 days, each 1 hour more than the two days (6 hours), so 7 hours each day\n\nSo Thursday to Sunday: 4 * 7 = 28 hours\n\nNow total sleep the week:\n\n8 (Mon) + 6 (Tue) + 6 (Wed) + 28 (Thu-Sun) = 8 + 6 + 6 + 28 = 48 hours\n\nAnswer: 48\n\n#### 48",
+    "predicted_answer": "48",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      10,
+      11,
+      14,
+      19,
+      9,
+      16,
+      11,
+      5,
+      6
+    ],
+    "ttfb_seconds": 0.19903641100000868,
+    "tbb_seconds": [
+      0.07217743299997892,
+      0.08054838500001438,
+      0.09838627100000963,
+      0.1311364369999808,
+      0.06008328600000823,
+      0.11136209599999347,
+      0.08030150199999753,
+      0.03521148200002244,
+      0.037970827999998846
+    ],
+    "dllm_block_completion_latencies": [
+      0.19903641100000868,
+      0.07217743299997892,
+      0.08054838500001438,
+      0.09838627100000963,
+      0.1311364369999808,
+      0.06008328600000823,
+      0.11136209599999347,
+      0.08030150199999753,
+      0.03521148200002244,
+      0.037970827999998846
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      10,
+      11,
+      14,
+      19,
+      9,
+      16,
+      11,
+      5,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 61.939128853,
+    "first_new_token_ttfb_seconds": 61.939128853,
+    "block_ttfb_seconds": 61.939128853,
+    "tbb_seconds": [
+      0.07230904100001112,
+      0.08041183299999943,
+      0.09840423399998599,
+      0.13115003100000422,
+      0.060164213000007294,
+      0.11133788600000116,
+      0.0802477510000017,
+      0.035197643999993034,
+      0.038079544999988
+    ],
+    "block_arrival_elapsed_seconds": [
+      61.939128853,
+      62.01143789400001,
+      62.09184972700001,
+      62.190253960999996,
+      62.321403992,
+      62.38156820500001,
+      62.49290609100001,
+      62.57315384200001,
+      62.608351486000004,
+      62.64643103099999
+    ],
+    "e2e_seconds": 62.64652490099999
+  },
+  "token_metrics": {
+    "prompt_tokens": 751,
+    "completion_tokens": 287,
+    "total_tokens": 1038,
+    "end_to_end_tokens_per_second": 16.56915529856359,
+    "total_tokens_per_second": 16.56915529856359,
+    "completion_tokens_per_second": 4.58125970201132,
+    "tokens_after_first_block": 270,
+    "generated_tokens_per_second_after_first_block": 381.68152163609886
+  },
+  "final_meta_info": {
+    "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 751,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 287,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      10,
+      11,
+      14,
+      19,
+      9,
+      16,
+      11,
+      5,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.19903641100000868,
+      0.07217743299997892,
+      0.08054838500001438,
+      0.09838627100000963,
+      0.1311364369999808,
+      0.06008328600000823,
+      0.11136209599999347,
+      0.08030150199999753,
+      0.03521148200002244,
+      0.037970827999998846
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.9090461309999966
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 61.939128853,
+      "output_token_count": 17,
+      "new_output_tokens": 17,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.19903641100000868
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 17,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873536.679329
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 62.01143789400001,
+      "output_token_count": 49,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.07217743299997892
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 49,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 62.09184972700001,
+      "output_token_count": 81,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.08054838500001438
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 81,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 62.190253960999996,
+      "output_token_count": 113,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.09838627100000963
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 113,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 62.321403992,
+      "output_token_count": 145,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.1311364369999808
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 145,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963,
+          0.1311364369999808
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 62.38156820500001,
+      "output_token_count": 177,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.06008328600000823
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.\n\nLet's clarify:\n\n- Monday: 8 hours\n- Tuesday: 6 hours\n- Wednesday: 6 hours\n- Thursday to",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 177,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14,
+          19,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963,
+          0.1311364369999808,
+          0.06008328600000823
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 62.49290609100001,
+      "output_token_count": 209,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.11136209599999347
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.\n\nLet's clarify:\n\n- Monday: 8 hours\n- Tuesday: 6 hours\n- Wednesday: 6 hours\n- Thursday to Sunday: 4 days, each 1 hour more than the two days (6 hours), so 7 hours each day\n\nSo Thursday to Sunday:",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 209,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14,
+          19,
+          9,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963,
+          0.1311364369999808,
+          0.06008328600000823,
+          0.11136209599999347
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 62.57315384200001,
+      "output_token_count": 241,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.08030150199999753
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.\n\nLet's clarify:\n\n- Monday: 8 hours\n- Tuesday: 6 hours\n- Wednesday: 6 hours\n- Thursday to Sunday: 4 days, each 1 hour more than the two days (6 hours), so 7 hours each day\n\nSo Thursday to Sunday: 4 * 7 = 28 hours\n\nNow total sleep the week:\n\n8 (Mon) + 6 (Tue) + ",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 241,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14,
+          19,
+          9,
+          16,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963,
+          0.1311364369999808,
+          0.06008328600000823,
+          0.11136209599999347,
+          0.08030150199999753
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 62.608351486000004,
+      "output_token_count": 273,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.03521148200002244
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.\n\nLet's clarify:\n\n- Monday: 8 hours\n- Tuesday: 6 hours\n- Wednesday: 6 hours\n- Thursday to Sunday: 4 days, each 1 hour more than the two days (6 hours), so 7 hours each day\n\nSo Thursday to Sunday: 4 * 7 = 28 hours\n\nNow total sleep the week:\n\n8 (Mon) + 6 (Tue) + 6 (Wed) + 28 (Thu-Sun) = 8 + 6 + 6 + 28 = 48 hours\n",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": null,
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 273,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14,
+          19,
+          9,
+          16,
+          11,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963,
+          0.1311364369999808,
+          0.06008328600000823,
+          0.11136209599999347,
+          0.08030150199999753,
+          0.03521148200002244
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 62.64643103099999,
+      "output_token_count": 287,
+      "new_output_tokens": 14,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.037970827999998846
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nOn Monday, Sadie slept 8 hours.\n\nOn Tuesday and Wednesday, she slept 2 hours less than Monday, so she slept 8 - 2 = 6 hours each day.\n\nSo for Tuesday and Wednesday, she slept 6 + 6 = 12 hours.\n\nFor the rest of the week (Thursday, Sunday, and Saturday), she slept 1 hour more than those two days. Those two days were 6 hours each, so 6 + 1 = 7 hours each day.\n\nBut wait — \"rest of the week\" after Tuesday and Wednesday would be Thursday, Friday, Saturday, and Sunday — that's 4 days.\n\nLet's clarify:\n\n- Monday: 8 hours\n- Tuesday: 6 hours\n- Wednesday: 6 hours\n- Thursday to Sunday: 4 days, each 1 hour more than the two days (6 hours), so 7 hours each day\n\nSo Thursday to Sunday: 4 * 7 = 28 hours\n\nNow total sleep the week:\n\n8 (Mon) + 6 (Tue) + 6 (Wed) + 28 (Thu-Sun) = 8 + 6 + 6 + 28 = 48 hours\n\nAnswer: 48\n\n#### 48",
+      "meta_info": {
+        "id": "dd4cc704a3c645a9a0b8c386d62fff19",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 751,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 287,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          10,
+          11,
+          14,
+          19,
+          9,
+          16,
+          11,
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.19903641100000868,
+          0.07217743299997892,
+          0.08054838500001438,
+          0.09838627100000963,
+          0.1311364369999808,
+          0.06008328600000823,
+          0.11136209599999347,
+          0.08030150199999753,
+          0.03521148200002244,
+          0.037970827999998846
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.9090461309999966
+      }
+    }
+  ]
+}

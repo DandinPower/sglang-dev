@@ -1,0 +1,610 @@
+{
+  "ok": true,
+  "request_index": 31,
+  "eval_index": 31,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. One says 80. Another says 20 more than half the first one. A third says 25% more than the first one. What is their average guess?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. One says 80. Another says 20 more than half the first one. A third says 25% more than the first one. What is their average guess?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.1,
+  "request_start_realtime": "2026-05-27T09:59:56.270",
+  "benchmark": {
+    "question": "Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. One says 80. Another says 20 more than half the first one. A third says 25% more than the first one. What is their average guess?",
+    "gold_solution": "The second person guessed 60 because 20 + (80/2)= <<20+(80/2)=60>>60\nThe second guessed 100 because 80 x 1.25 = <<80*1.25=100>>100\nThe total amount guessed is 240 because 80 + 60 + 100 = <<80+60+100=240>>240\nThe average amount guessed is 80 because 240 / 3 = <<240/3=80>>80\n#### 80",
+    "gold_answer": "80",
+    "model_text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) / 3 = 80\n\nWait, let's recalculate carefully.\n\nSecond friend: (80 / 2) + 20 = 40 + 20 = 60  \nThird friend: 80 + (25% of 80) = 80 + 20 = 100  \nFirst friend: 80\n\nSum of guesses: 80 + 60 + 100 = 240  \nNumber of friends: 3\n\nAverage = 240 / 3 = 80\n\n#### 80",
+    "predicted_answer": "80",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      7,
+      5,
+      11,
+      6,
+      12,
+      10,
+      3,
+      9,
+      3,
+      3
+    ],
+    "ttfb_seconds": 0.23243678699998327,
+    "tbb_seconds": [
+      0.05121274900000117,
+      0.03684927000000471,
+      0.07632451899999637,
+      0.043982241000009026,
+      0.08510208800001351,
+      0.07197551799998791,
+      0.020463178999989395,
+      0.06629932100000246,
+      0.020330887000000075,
+      0.01887439800000834
+    ],
+    "dllm_block_completion_latencies": [
+      0.23243678699998327,
+      0.05121274900000117,
+      0.03684927000000471,
+      0.07632451899999637,
+      0.043982241000009026,
+      0.08510208800001351,
+      0.07197551799998791,
+      0.020463178999989395,
+      0.06629932100000246,
+      0.020330887000000075,
+      0.01887439800000834
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      7,
+      5,
+      11,
+      6,
+      12,
+      10,
+      3,
+      9,
+      3,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 17.512345119000017,
+    "first_new_token_ttfb_seconds": 17.512345119000017,
+    "block_ttfb_seconds": 17.512345119000017,
+    "tbb_seconds": [
+      0.050897543999980144,
+      0.03682133200001658,
+      0.076319935999976,
+      0.04397624800000699,
+      0.08539815899999326,
+      0.07177524200000107,
+      0.020208036000013863,
+      0.06644227099999966,
+      0.02043012799998678,
+      0.019141269000016337
+    ],
+    "block_arrival_elapsed_seconds": [
+      17.512345119000017,
+      17.563242662999997,
+      17.600063995000014,
+      17.67638393099999,
+      17.720360178999996,
+      17.80575833799999,
+      17.87753357999999,
+      17.897741616000005,
+      17.964183887000004,
+      17.98461401499999,
+      18.003755284000007
+    ],
+    "e2e_seconds": 18.003853116000002
+  },
+  "token_metrics": {
+    "prompt_tokens": 753,
+    "completion_tokens": 312,
+    "total_tokens": 1065,
+    "end_to_end_tokens_per_second": 59.15400404225337,
+    "total_tokens_per_second": 59.15400404225337,
+    "completion_tokens_per_second": 17.329623719420706,
+    "tokens_after_first_block": 297,
+    "generated_tokens_per_second_after_first_block": 604.2628030729863
+  },
+  "final_meta_info": {
+    "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 753,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 312,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      7,
+      5,
+      11,
+      6,
+      12,
+      10,
+      3,
+      9,
+      3,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.23243678699998327,
+      0.05121274900000117,
+      0.03684927000000471,
+      0.07632451899999637,
+      0.043982241000009026,
+      0.08510208800001351,
+      0.07197551799998791,
+      0.020463178999989395,
+      0.06629932100000246,
+      0.020330887000000075,
+      0.01887439800000834
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7279723270000034
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 17.512345119000017,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.23243678699998327
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 8",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876013.78305
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 17.563242662999997,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.05121274900000117
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + ",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 17.600063995000014,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.03684927000000471
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 8",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 17.67638393099999,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.07632451899999637
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + ",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 17.720360178999996,
+      "output_token_count": 143,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.043982241000009026
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 143,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 17.80575833799999,
+      "output_token_count": 175,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.08510208800001351
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) /",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 175,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026,
+          0.08510208800001351
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 17.87753357999999,
+      "output_token_count": 207,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.07197551799998791
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) / 3 = 80\n\nWait, let's recalculate carefully.\n\nSecond friend: (80 / 2) + 20",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 207,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6,
+          12,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026,
+          0.08510208800001351,
+          0.07197551799998791
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 17.897741616000005,
+      "output_token_count": 239,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.020463178999989395
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) / 3 = 80\n\nWait, let's recalculate carefully.\n\nSecond friend: (80 / 2) + 20 = 40 + 20 = 60  \nThird friend: 80 + (25% of 80) = ",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 239,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6,
+          12,
+          10,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026,
+          0.08510208800001351,
+          0.07197551799998791,
+          0.020463178999989395
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 17.964183887000004,
+      "output_token_count": 271,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.06629932100000246
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) / 3 = 80\n\nWait, let's recalculate carefully.\n\nSecond friend: (80 / 2) + 20 = 40 + 20 = 60  \nThird friend: 80 + (25% of 80) = 80 + 20 = 100  \nFirst friend: 80\n\nSum of guesses: 80 + 60",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 271,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6,
+          12,
+          10,
+          3,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026,
+          0.08510208800001351,
+          0.07197551799998791,
+          0.020463178999989395,
+          0.06629932100000246
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 17.98461401499999,
+      "output_token_count": 303,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.020330887000000075
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) / 3 = 80\n\nWait, let's recalculate carefully.\n\nSecond friend: (80 / 2) + 20 = 40 + 20 = 60  \nThird friend: 80 + (25% of 80) = 80 + 20 = 100  \nFirst friend: 80\n\nSum of guesses: 80 + 60 + 100 = 240  \nNumber of friends: 3\n\nAverage = 240 / 3 = 8",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": null,
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 303,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6,
+          12,
+          10,
+          3,
+          9,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026,
+          0.08510208800001351,
+          0.07197551799998791,
+          0.020463178999989395,
+          0.06629932100000246,
+          0.020330887000000075
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 18.003755284000007,
+      "output_token_count": 312,
+      "new_output_tokens": 9,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.01887439800000834
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\nFirst, identify the guesses:\n- First friend: 80\n- Second friend: 20 more than half the first one → (80 / 2) + 20\n40 + 20 = 60\n- Third friend: 25% more than the first one → 80 + (25% of 80)\n25% of 80 = (8.1004) * 80 = 20\n80 + 20 = 100\n\nNow, the guesses are:\n- First: 80\n- Second: 60\n- Third: 100\n\nAverage = 8 guesses + (80 + 100) / 3 = (240) / 3 = 80\n\nWait, let's recalculate carefully.\n\nSecond friend: (80 / 2) + 20 = 40 + 20 = 60  \nThird friend: 80 + (25% of 80) = 80 + 20 = 100  \nFirst friend: 80\n\nSum of guesses: 80 + 60 + 100 = 240  \nNumber of friends: 3\n\nAverage = 240 / 3 = 80\n\n#### 80",
+      "meta_info": {
+        "id": "6c3d00ec60914e68a2b81c9cde30cfc7",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 753,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 312,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          7,
+          5,
+          11,
+          6,
+          12,
+          10,
+          3,
+          9,
+          3,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.23243678699998327,
+          0.05121274900000117,
+          0.03684927000000471,
+          0.07632451899999637,
+          0.043982241000009026,
+          0.08510208800001351,
+          0.07197551799998791,
+          0.020463178999989395,
+          0.06629932100000246,
+          0.020330887000000075,
+          0.01887439800000834
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7279723270000034
+      }
+    }
+  ]
+}

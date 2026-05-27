@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 106,
+  "eval_index": 106,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John has 3 boxes.  Each box is 5 inches by 6 inches by 4 inches.  The walls are 1 inch thick.  What is the total inner volume of all 3 boxes?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John has 3 boxes.  Each box is 5 inches by 6 inches by 4 inches.  The walls are 1 inch thick.  What is the total inner volume of all 3 boxes?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 10.600000000000001,
+  "request_start_realtime": "2026-05-27T09:20:34.144",
+  "benchmark": {
+    "question": "John has 3 boxes.  Each box is 5 inches by 6 inches by 4 inches.  The walls are 1 inch thick.  What is the total inner volume of all 3 boxes?",
+    "gold_solution": "The walls subtract 2*1=<<2*1=2>>2 inches from each dimension\nSo each box has 5-2=<<5-2=3>>3 inch width\nIt also has a 6-2=<<6-2=4>>4 inch height\nFinally, it has a 4-2=<<4-2=2>>2 inch depth\nSo the inner volume of one box is 4*3*2=<<4*3*2=24>>24 cubic inches\nSo in total the inner volume of the 3 boxes is 3*24=<<3*24=72>>72 cubic inches\n#### 72",
+    "gold_answer": "72",
+    "model_text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch from each side):\n   - Inner length = 5 - 2*1 = 3 inches\n   - Inner width = 6 - 2*1 = 4 inches\n   - Inner height = 4 - 2*1 = 2 inches\n\n3. Calculate the inner volume of one box:\n   - Inner volume = 3 × 4 × 2 = 24 cubic inches\n\n4. John has 3 boxes, so the total inner volume is:\n   - Total inner volume = 3 × 24 = 72 cubic inches\n\n#### 72",
+    "predicted_answer": "72",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      15,
+      18,
+      21,
+      25,
+      18,
+      16,
+      12,
+      16
+    ],
+    "ttfb_seconds": 0.5049302269999885,
+    "tbb_seconds": [
+      0.31915558700001156,
+      0.6060978440000326,
+      0.4262209419999863,
+      0.559694090999983,
+      0.3041567220000161,
+      0.21627119800001537,
+      0.5019656559999817
+    ],
+    "dllm_block_completion_latencies": [
+      0.5049302269999885,
+      0.31915558700001156,
+      0.6060978440000326,
+      0.4262209419999863,
+      0.559694090999983,
+      0.3041567220000161,
+      0.21627119800001537,
+      0.5019656559999817
+    ],
+    "dllm_forward_counts_per_block": [
+      15,
+      18,
+      21,
+      25,
+      18,
+      16,
+      12,
+      16
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 13.169100840999988,
+    "first_new_token_ttfb_seconds": 13.169100840999988,
+    "block_ttfb_seconds": 13.169100840999988,
+    "tbb_seconds": [
+      0.32120993800003816,
+      0.6127460779999865,
+      0.41918613100000357,
+      0.556602985999973,
+      0.31978531999999404,
+      0.20065415600004144,
+      0.5161181689999808
+    ],
+    "block_arrival_elapsed_seconds": [
+      13.169100840999988,
+      13.490310779000026,
+      14.103056857000013,
+      14.522242988000016,
+      15.07884597399999,
+      15.398631293999983,
+      15.599285450000025,
+      16.115403619000006
+    ],
+    "e2e_seconds": 16.115531883000017
+  },
+  "token_metrics": {
+    "prompt_tokens": 734,
+    "completion_tokens": 197,
+    "total_tokens": 931,
+    "end_to_end_tokens_per_second": 57.77035513063612,
+    "total_tokens_per_second": 57.77035513063612,
+    "completion_tokens_per_second": 12.22423196641817,
+    "tokens_after_first_block": 195,
+    "generated_tokens_per_second_after_first_block": 66.18176268861006
+  },
+  "final_meta_info": {
+    "id": "9c6016d53b724a5e9d2834de29614007",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 734,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 197,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      15,
+      18,
+      21,
+      25,
+      18,
+      16,
+      12,
+      16
+    ],
+    "dllm_block_completion_latencies": [
+      0.5049302269999885,
+      0.31915558700001156,
+      0.6060978440000326,
+      0.4262209419999863,
+      0.559694090999983,
+      0.3041567220000161,
+      0.21627119800001537,
+      0.5019656559999817
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.7017544750000297
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 13.169100840999988,
+      "output_token_count": 2,
+      "new_output_tokens": 2,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5049302269999885
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 2,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873647.3115942
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 13.490310779000026,
+      "output_token_count": 34,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.31915558700001156
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 34,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 14.103056857000013,
+      "output_token_count": 66,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6060978440000326
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 66,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156,
+          0.6060978440000326
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 14.522242988000016,
+      "output_token_count": 98,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.4262209419999863
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch from each side):\n   - Inner length = 5 - 2*1 = 3 inches\n   - Inner width = 6 - 2",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 98,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          21,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156,
+          0.6060978440000326,
+          0.4262209419999863
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 15.07884597399999,
+      "output_token_count": 130,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.559694090999983
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch from each side):\n   - Inner length = 5 - 2*1 = 3 inches\n   - Inner width = 6 - 2*1 = 4 inches\n   - Inner height = 4 - 2*1 = 2 inches\n\n3. Calculate the inner volume of",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 130,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          21,
+          25,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156,
+          0.6060978440000326,
+          0.4262209419999863,
+          0.559694090999983
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 15.398631293999983,
+      "output_token_count": 162,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.3041567220000161
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch from each side):\n   - Inner length = 5 - 2*1 = 3 inches\n   - Inner width = 6 - 2*1 = 4 inches\n   - Inner height = 4 - 2*1 = 2 inches\n\n3. Calculate the inner volume of one box:\n   - Inner volume = 3 × 4 × 2 = 24 cubic inches\n\n4. John has 3 boxes",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 162,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          21,
+          25,
+          18,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156,
+          0.6060978440000326,
+          0.4262209419999863,
+          0.559694090999983,
+          0.3041567220000161
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 15.599285450000025,
+      "output_token_count": 194,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.21627119800001537
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch from each side):\n   - Inner length = 5 - 2*1 = 3 inches\n   - Inner width = 6 - 2*1 = 4 inches\n   - Inner height = 4 - 2*1 = 2 inches\n\n3. Calculate the inner volume of one box:\n   - Inner volume = 3 × 4 × 2 = 24 cubic inches\n\n4. John has 3 boxes, so the total inner volume is:\n   - Total inner volume = 3 × 24 = 72 cubic inches\n\n#### 7",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": null,
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 194,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          21,
+          25,
+          18,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156,
+          0.6060978440000326,
+          0.4262209419999863,
+          0.559694090999983,
+          0.3041567220000161,
+          0.21627119800001537
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 16.115403619000006,
+      "output_token_count": 197,
+      "new_output_tokens": 3,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.5019656559999817
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate the outer dimensions of one box:\n   - Length: 5 inches\n   - Width: 6 inches\n   - Height: 4 inches\n\n2. Since the walls are 1 inch thick, the inner dimensions are reduced by 2 inches on each side (1 inch from each side):\n   - Inner length = 5 - 2*1 = 3 inches\n   - Inner width = 6 - 2*1 = 4 inches\n   - Inner height = 4 - 2*1 = 2 inches\n\n3. Calculate the inner volume of one box:\n   - Inner volume = 3 × 4 × 2 = 24 cubic inches\n\n4. John has 3 boxes, so the total inner volume is:\n   - Total inner volume = 3 × 24 = 72 cubic inches\n\n#### 72",
+      "meta_info": {
+        "id": "9c6016d53b724a5e9d2834de29614007",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 734,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 197,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          15,
+          18,
+          21,
+          25,
+          18,
+          16,
+          12,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.5049302269999885,
+          0.31915558700001156,
+          0.6060978440000326,
+          0.4262209419999863,
+          0.559694090999983,
+          0.3041567220000161,
+          0.21627119800001537,
+          0.5019656559999817
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.7017544750000297
+      }
+    }
+  ]
+}

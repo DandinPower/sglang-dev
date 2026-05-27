@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 62,
+  "eval_index": 62,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If Marcy works for the same company for 40 years, she gets an annual pension of $50,000/year. Starting after 20 years, she becomes entitled to 5% of the value of the pension per year. If she quits after 30 years, what will her annual pension be?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If Marcy works for the same company for 40 years, she gets an annual pension of $50,000/year. Starting after 20 years, she becomes entitled to 5% of the value of the pension per year. If she quits after 30 years, what will her annual pension be?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 6.2,
+  "request_start_realtime": "2026-05-27T09:19:23.970",
+  "benchmark": {
+    "question": "If Marcy works for the same company for 40 years, she gets an annual pension of $50,000/year. Starting after 20 years, she becomes entitled to 5% of the value of the pension per year. If she quits after 30 years, what will her annual pension be?",
+    "gold_solution": "First find how many years Marcy works after 20 years: 30 years - 20 years = <<30-20=10>>10 years\nThen multiply that number by the amount of her pension she gets per year: 10 years * 5% = 50%\nThen multiply that percentage by the total amount of the full pension to find how much she gets: $50,000 * 50% = $<<50000*50*.01=25000>>25,000\n#### 25000",
+    "gold_answer": "25000",
+    "model_text": "\n\n1. Marcy works for 30 years, which is 10 years after the 20-year mark.\n2. Her pension value is $50,000 per year.\n3. Starting after 20 years, she gets entitled to 5% of the pension value per year.\n4. Since she is working 30 years, she qualifies for this prorated benefit.\n5. 5% of $50,000 = 0.05 * 50,000 = $2,500.\n\nSo, her annual pension after 30 years will be $2,500.\n\n#### 2500",
+    "predicted_answer": "2500",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      16,
+      15,
+      16,
+      20,
+      10,
+      10
+    ],
+    "ttfb_seconds": 0.4417567420000523,
+    "tbb_seconds": [
+      0.18352303399996117,
+      0.42291791000002377,
+      0.2665904639999894,
+      0.12690030300001354,
+      0.29558039099998723
+    ],
+    "dllm_block_completion_latencies": [
+      0.4417567420000523,
+      0.18352303399996117,
+      0.42291791000002377,
+      0.2665904639999894,
+      0.12690030300001354,
+      0.29558039099998723
+    ],
+    "dllm_forward_counts_per_block": [
+      16,
+      15,
+      16,
+      20,
+      10,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 14.173358772000029,
+    "first_new_token_ttfb_seconds": 14.173358772000029,
+    "block_ttfb_seconds": 14.173358772000029,
+    "tbb_seconds": [
+      0.18523046299998214,
+      0.4220326480000267,
+      0.2777080719999958,
+      0.11867369499998404,
+      0.312204037000015
+    ],
+    "block_arrival_elapsed_seconds": [
+      14.173358772000029,
+      14.35858923500001,
+      14.780621883000038,
+      15.058329955000033,
+      15.177003650000017,
+      15.489207687000032
+    ],
+    "e2e_seconds": 15.489399910000031
+  },
+  "token_metrics": {
+    "prompt_tokens": 758,
+    "completion_tokens": 155,
+    "total_tokens": 913,
+    "end_to_end_tokens_per_second": 58.94353592165716,
+    "total_tokens_per_second": 58.94353592165716,
+    "completion_tokens_per_second": 10.006843447816932,
+    "tokens_after_first_block": 145,
+    "generated_tokens_per_second_after_first_block": 110.17892664081728
+  },
+  "final_meta_info": {
+    "id": "e609354383d94ccd9259bc9d15534b0d",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 758,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 155,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      16,
+      15,
+      16,
+      20,
+      10,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.4417567420000523,
+      0.18352303399996117,
+      0.42291791000002377,
+      0.2665904639999894,
+      0.12690030300001354,
+      0.29558039099998723
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.9305233730000282
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 14.173358772000029,
+      "output_token_count": 10,
+      "new_output_tokens": 10,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4417567420000523
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Marcy works for 3",
+      "meta_info": {
+        "id": "e609354383d94ccd9259bc9d15534b0d",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 10,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4417567420000523
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779873578.143139
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 14.35858923500001,
+      "output_token_count": 42,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.18352303399996117
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Marcy works for 30 years, which is 10 years after the 20-year mark.\n2. Her pension value is $50,000 per",
+      "meta_info": {
+        "id": "e609354383d94ccd9259bc9d15534b0d",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 42,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4417567420000523,
+          0.18352303399996117
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 14.780621883000038,
+      "output_token_count": 74,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.42291791000002377
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Marcy works for 30 years, which is 10 years after the 20-year mark.\n2. Her pension value is $50,000 per year.\n3. Starting after 20 years, she gets entitled to 5% of the pension value per year.\n4. Since she is",
+      "meta_info": {
+        "id": "e609354383d94ccd9259bc9d15534b0d",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          15,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4417567420000523,
+          0.18352303399996117,
+          0.42291791000002377
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 15.058329955000033,
+      "output_token_count": 106,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2665904639999894
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Marcy works for 30 years, which is 10 years after the 20-year mark.\n2. Her pension value is $50,000 per year.\n3. Starting after 20 years, she gets entitled to 5% of the pension value per year.\n4. Since she is working 30 years, she qualifies for this prorated benefit.\n5. 5% of $50,000 = 0.",
+      "meta_info": {
+        "id": "e609354383d94ccd9259bc9d15534b0d",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          15,
+          16,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.4417567420000523,
+          0.18352303399996117,
+          0.42291791000002377,
+          0.2665904639999894
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 15.177003650000017,
+      "output_token_count": 138,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.12690030300001354
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Marcy works for 30 years, which is 10 years after the 20-year mark.\n2. Her pension value is $50,000 per year.\n3. Starting after 20 years, she gets entitled to 5% of the pension value per year.\n4. Since she is working 30 years, she qualifies for this prorated benefit.\n5. 5% of $50,000 = 0.05 * 50,000 = $2,500.\n\nSo, her annual pension after 30 years will be",
+      "meta_info": {
+        "id": "e609354383d94ccd9259bc9d15534b0d",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 138,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          15,
+          16,
+          20,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4417567420000523,
+          0.18352303399996117,
+          0.42291791000002377,
+          0.2665904639999894,
+          0.12690030300001354
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 15.489207687000032,
+      "output_token_count": 155,
+      "new_output_tokens": 17,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.29558039099998723
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Marcy works for 30 years, which is 10 years after the 20-year mark.\n2. Her pension value is $50,000 per year.\n3. Starting after 20 years, she gets entitled to 5% of the pension value per year.\n4. Since she is working 30 years, she qualifies for this prorated benefit.\n5. 5% of $50,000 = 0.05 * 50,000 = $2,500.\n\nSo, her annual pension after 30 years will be $2,500.\n\n#### 2500",
+      "meta_info": {
+        "id": "e609354383d94ccd9259bc9d15534b0d",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 155,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          15,
+          16,
+          20,
+          10,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4417567420000523,
+          0.18352303399996117,
+          0.42291791000002377,
+          0.2665904639999894,
+          0.12690030300001354,
+          0.29558039099998723
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.9305233730000282
+      }
+    }
+  ]
+}

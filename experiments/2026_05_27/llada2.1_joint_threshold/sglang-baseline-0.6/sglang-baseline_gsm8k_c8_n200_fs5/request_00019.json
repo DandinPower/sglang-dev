@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 19,
+  "eval_index": 19,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, then another hour to walk the next two miles. If she wants her average speed to be 4 miles per hour, what speed (in miles per hour) does she need to walk the remaining distance?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, then another hour to walk the next two miles. If she wants her average speed to be 4 miles per hour, what speed (in miles per hour) does she need to walk the remaining distance?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.9000000000000001,
+  "request_start_realtime": "2026-05-27T09:35:46.643",
+  "benchmark": {
+    "question": "Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, then another hour to walk the next two miles. If she wants her average speed to be 4 miles per hour, what speed (in miles per hour) does she need to walk the remaining distance?",
+    "gold_solution": "First figure out how many hours it takes to hike a 12-mile trail at 4 mph by dividing the distance by the speed: 12 miles / 4 mph = <<12/4=3>>3 hours\nNext subtract the time Marissa already spent walking to find out how much time she has left: 3 hours - 1 hour - 1 hour = <<3-1-1=1>>1 hour\nNow figure out how much distance she has left by subtracting the distance she already traveled from the total distance: 12 miles - 4 miles - 2 miles = <<12-4-2=6>>6 miles\nNow divide the remaining distance by the remaining time to find out how fast in miles per hour Marissa has to travel: 6 miles / 1 hour = <<6/1=6>>6 mph\n#### 6",
+    "gold_answer": "6",
+    "model_text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total time needed to achieve average speed of 4 mph over 12 miles**:  \n   - Total time = Total distance / Speed = 12 / 4 = 3 hours  \n7. **Time left for the remaining 6 miles**:  \n   - 3 hours (total) - 2 hours (already used) = 1 hour  \n8. **Required speed for the remaining 6 miles in 1 hour**:  \n   - Speed = Distance / Time = 6 / 1 = 6 miles per hour\n\nSo, Marissa needs to walk the remaining 6 miles at **6 miles per hour**.\n\nAnswer: 6",
+    "predicted_answer": "6",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      17,
+      21,
+      16,
+      15,
+      16,
+      18,
+      17,
+      17,
+      10
+    ],
+    "ttfb_seconds": 0.4570181899999852,
+    "tbb_seconds": [
+      0.26902484600000776,
+      0.21030316200000243,
+      0.18799380699999801,
+      0.3602049959999931,
+      0.21512732900001197,
+      0.42871551400000385,
+      0.21563022300000512,
+      0.33463670099999376
+    ],
+    "dllm_block_completion_latencies": [
+      0.4570181899999852,
+      0.26902484600000776,
+      0.21030316200000243,
+      0.18799380699999801,
+      0.3602049959999931,
+      0.21512732900001197,
+      0.42871551400000385,
+      0.21563022300000512,
+      0.33463670099999376
+    ],
+    "dllm_forward_counts_per_block": [
+      17,
+      21,
+      16,
+      15,
+      16,
+      18,
+      17,
+      17,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 3.5913196829999947,
+    "first_new_token_ttfb_seconds": 3.5913196829999947,
+    "block_ttfb_seconds": 3.5913196829999947,
+    "tbb_seconds": [
+      0.2689952579999897,
+      0.21096934600001305,
+      0.18732119800000646,
+      0.3634928930000001,
+      0.215006805999991,
+      0.4287094599999932,
+      0.21698971099999653,
+      0.33093211700000325
+    ],
+    "block_arrival_elapsed_seconds": [
+      3.5913196829999947,
+      3.8603149409999844,
+      4.0712842869999974,
+      4.258605485000004,
+      4.622098378000004,
+      4.837105183999995,
+      5.265814643999988,
+      5.482804354999985,
+      5.813736471999988
+    ],
+    "e2e_seconds": 5.813848761000003
+  },
+  "token_metrics": {
+    "prompt_tokens": 755,
+    "completion_tokens": 251,
+    "total_tokens": 1006,
+    "end_to_end_tokens_per_second": 173.03511690024843,
+    "total_tokens_per_second": 173.03511690024843,
+    "completion_tokens_per_second": 43.172777675906914,
+    "tokens_after_first_block": 238,
+    "generated_tokens_per_second_after_first_block": 107.08521312763637
+  },
+  "final_meta_info": {
+    "id": "fe4bc399371a44128194dc7badfa4630",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 755,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 251,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      17,
+      21,
+      16,
+      15,
+      16,
+      18,
+      17,
+      17,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.4570181899999852,
+      0.26902484600000776,
+      0.21030316200000243,
+      0.18799380699999801,
+      0.3602049959999931,
+      0.21512732900001197,
+      0.42871551400000385,
+      0.21563022300000512,
+      0.33463670099999376
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.742799023999993
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 3.5913196829999947,
+      "output_token_count": 13,
+      "new_output_tokens": 13,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4570181899999852
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **Total distance of the trail**: 1",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 13,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874550.233714
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 3.8603149409999844,
+      "output_token_count": 45,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.26902484600000776
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 45,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 4.0712842869999974,
+      "output_token_count": 77,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.21030316200000243
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n  ",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 77,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 4.258605485000004,
+      "output_token_count": 109,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.18799380699999801
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 109,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243,
+          0.18799380699999801
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 4.622098378000004,
+      "output_token_count": 141,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.3602049959999931
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total time needed to achieve average speed of 4 mph over 12 miles**:  \n   - Total time = Total distance / Speed = 12 /",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 141,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16,
+          15,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243,
+          0.18799380699999801,
+          0.3602049959999931
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 4.837105183999995,
+      "output_token_count": 173,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.21512732900001197
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total time needed to achieve average speed of 4 mph over 12 miles**:  \n   - Total time = Total distance / Speed = 12 / 4 = 3 hours  \n7. **Time left for the remaining 6 miles**:  \n   - 3 hours (total) - ",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 173,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16,
+          15,
+          16,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243,
+          0.18799380699999801,
+          0.3602049959999931,
+          0.21512732900001197
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 5.265814643999988,
+      "output_token_count": 205,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.42871551400000385
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total time needed to achieve average speed of 4 mph over 12 miles**:  \n   - Total time = Total distance / Speed = 12 / 4 = 3 hours  \n7. **Time left for the remaining 6 miles**:  \n   - 3 hours (total) - 2 hours (already used) = 1 hour  \n8. **Required speed for the remaining 6 miles in 1 hour**:  \n   -",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 205,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16,
+          15,
+          16,
+          18,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243,
+          0.18799380699999801,
+          0.3602049959999931,
+          0.21512732900001197,
+          0.42871551400000385
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 5.482804354999985,
+      "output_token_count": 237,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.21563022300000512
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total time needed to achieve average speed of 4 mph over 12 miles**:  \n   - Total time = Total distance / Speed = 12 / 4 = 3 hours  \n7. **Time left for the remaining 6 miles**:  \n   - 3 hours (total) - 2 hours (already used) = 1 hour  \n8. **Required speed for the remaining 6 miles in 1 hour**:  \n   - Speed = Distance / Time = 6 / 1 = 6 miles per hour\n\nSo, Marissa needs to walk the remaining 6 miles at",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": null,
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 237,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16,
+          15,
+          16,
+          18,
+          17,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243,
+          0.18799380699999801,
+          0.3602049959999931,
+          0.21512732900001197,
+          0.42871551400000385,
+          0.21563022300000512
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 5.813736471999988,
+      "output_token_count": 251,
+      "new_output_tokens": 14,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.33463670099999376
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. **Total distance of the trail**: 12 miles  \n2. **Distance covered so far**:  \n   - 4 miles (first) + 2 miles (next) = 6 miles  \n3. **Remaining distance**: 12 - 6 = 6 miles  \n4. **Time taken so far**:  \n   - 1 hour + 1 hour = 2 hours  \n5. **Desired average speed**: 4 miles per hour  \n6. **Total time needed to achieve average speed of 4 mph over 12 miles**:  \n   - Total time = Total distance / Speed = 12 / 4 = 3 hours  \n7. **Time left for the remaining 6 miles**:  \n   - 3 hours (total) - 2 hours (already used) = 1 hour  \n8. **Required speed for the remaining 6 miles in 1 hour**:  \n   - Speed = Distance / Time = 6 / 1 = 6 miles per hour\n\nSo, Marissa needs to walk the remaining 6 miles at **6 miles per hour**.\n\nAnswer: 6",
+      "meta_info": {
+        "id": "fe4bc399371a44128194dc7badfa4630",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 755,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 251,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          17,
+          21,
+          16,
+          15,
+          16,
+          18,
+          17,
+          17,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4570181899999852,
+          0.26902484600000776,
+          0.21030316200000243,
+          0.18799380699999801,
+          0.3602049959999931,
+          0.21512732900001197,
+          0.42871551400000385,
+          0.21563022300000512,
+          0.33463670099999376
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.742799023999993
+      }
+    }
+  ]
+}

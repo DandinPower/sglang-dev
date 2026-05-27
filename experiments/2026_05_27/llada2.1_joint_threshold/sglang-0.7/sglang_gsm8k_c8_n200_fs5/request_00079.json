@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 79,
+  "eval_index": 79,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John adopts a dog.  He takes the dog to the groomer, which costs $100.  The groomer offers him a 30% discount for being a new customer.  How much does the grooming cost?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John adopts a dog.  He takes the dog to the groomer, which costs $100.  The groomer offers him a 30% discount for being a new customer.  How much does the grooming cost?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 7.9,
+  "request_start_realtime": "2026-05-27T09:37:08.852",
+  "benchmark": {
+    "question": "John adopts a dog.  He takes the dog to the groomer, which costs $100.  The groomer offers him a 30% discount for being a new customer.  How much does the grooming cost?",
+    "gold_solution": "The groomer gave a 100*.3=$<<100*.3=30>>30 discount\nSo the grooming cost 100-30=$<<100-30=70>>70\n#### 70",
+    "gold_answer": "70",
+    "model_text": "\n\nThe original cost of grooming is $100.\n\nThe discount is 30%, which means John pays 30% less than the original cost.\n\nTo calculate the discount amount:  \n30% of $100 = (30/100) * 100 = 0.30 * 100 = $30.\n\nSo the discount is $30.\n\nNow, subtract the discount from the original cost:  \n$100 - $30 = $70.\n\nTherefore, the grooming costs John $70 after the discount.\n\n#### 70",
+    "predicted_answer": "70",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      13,
+      11,
+      7,
+      3,
+      11
+    ],
+    "ttfb_seconds": 0.6119448659999875,
+    "tbb_seconds": [
+      0.4276730199999861,
+      0.2833196930000099,
+      0.05847040600002629,
+      0.37735312199998816
+    ],
+    "dllm_block_completion_latencies": [
+      0.6119448659999875,
+      0.4276730199999861,
+      0.2833196930000099,
+      0.05847040600002629,
+      0.37735312199998816
+    ],
+    "dllm_forward_counts_per_block": [
+      13,
+      11,
+      7,
+      3,
+      11
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 16.750707596999973,
+    "first_new_token_ttfb_seconds": 16.750707596999973,
+    "block_ttfb_seconds": 16.750707596999973,
+    "tbb_seconds": [
+      0.42777820800000654,
+      0.2831030980000264,
+      0.058882569999980205,
+      0.3773735920000263
+    ],
+    "block_arrival_elapsed_seconds": [
+      16.750707596999973,
+      17.17848580499998,
+      17.461588903000006,
+      17.520471472999986,
+      17.897845065000013
+    ],
+    "e2e_seconds": 17.897957371000018
+  },
+  "token_metrics": {
+    "prompt_tokens": 738,
+    "completion_tokens": 144,
+    "total_tokens": 882,
+    "end_to_end_tokens_per_second": 49.27936645044762,
+    "total_tokens_per_second": 49.27936645044762,
+    "completion_tokens_per_second": 8.045610849052673,
+    "tokens_after_first_block": 114,
+    "generated_tokens_per_second_after_first_block": 99.36807361706705
+  },
+  "final_meta_info": {
+    "id": "0097b4b5113b46d19c6aeade2e0f29b3",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 738,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 144,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      13,
+      11,
+      7,
+      3,
+      11
+    ],
+    "dllm_block_completion_latencies": [
+      0.6119448659999875,
+      0.4276730199999861,
+      0.2833196930000099,
+      0.05847040600002629,
+      0.37735312199998816
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.763980767000021
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 16.750707596999973,
+      "output_token_count": 30,
+      "new_output_tokens": 30,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.6119448659999875
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nThe original cost of grooming is $100.\n\nThe discount is 30%, which means John pays 30%",
+      "meta_info": {
+        "id": "0097b4b5113b46d19c6aeade2e0f29b3",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 30,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.6119448659999875
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874645.6032672
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 17.17848580499998,
+      "output_token_count": 62,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.4276730199999861
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nThe original cost of grooming is $100.\n\nThe discount is 30%, which means John pays 30% less than the original cost.\n\nTo calculate the discount amount:  \n30% of $100 = (30/100",
+      "meta_info": {
+        "id": "0097b4b5113b46d19c6aeade2e0f29b3",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 62,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.6119448659999875,
+          0.4276730199999861
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 17.461588903000006,
+      "output_token_count": 94,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2833196930000099
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nThe original cost of grooming is $100.\n\nThe discount is 30%, which means John pays 30% less than the original cost.\n\nTo calculate the discount amount:  \n30% of $100 = (30/100) * 100 = 0.30 * 100 = $30.\n\nSo the discount is $30.",
+      "meta_info": {
+        "id": "0097b4b5113b46d19c6aeade2e0f29b3",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 94,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          11,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.6119448659999875,
+          0.4276730199999861,
+          0.2833196930000099
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 17.520471472999986,
+      "output_token_count": 126,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.05847040600002629
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nThe original cost of grooming is $100.\n\nThe discount is 30%, which means John pays 30% less than the original cost.\n\nTo calculate the discount amount:  \n30% of $100 = (30/100) * 100 = 0.30 * 100 = $30.\n\nSo the discount is $30.\n\nNow, subtract the discount from the original cost:  \n$100 - $30 = $70.\n\nTherefore, the",
+      "meta_info": {
+        "id": "0097b4b5113b46d19c6aeade2e0f29b3",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 126,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          11,
+          7,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.6119448659999875,
+          0.4276730199999861,
+          0.2833196930000099,
+          0.05847040600002629
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 17.897845065000013,
+      "output_token_count": 144,
+      "new_output_tokens": 18,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.37735312199998816
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nThe original cost of grooming is $100.\n\nThe discount is 30%, which means John pays 30% less than the original cost.\n\nTo calculate the discount amount:  \n30% of $100 = (30/100) * 100 = 0.30 * 100 = $30.\n\nSo the discount is $30.\n\nNow, subtract the discount from the original cost:  \n$100 - $30 = $70.\n\nTherefore, the grooming costs John $70 after the discount.\n\n#### 70",
+      "meta_info": {
+        "id": "0097b4b5113b46d19c6aeade2e0f29b3",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          13,
+          11,
+          7,
+          3,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.6119448659999875,
+          0.4276730199999861,
+          0.2833196930000099,
+          0.05847040600002629,
+          0.37735312199998816
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.763980767000021
+      }
+    }
+  ]
+}

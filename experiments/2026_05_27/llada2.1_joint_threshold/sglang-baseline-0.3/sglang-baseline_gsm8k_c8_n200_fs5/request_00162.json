@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 162,
+  "eval_index": 162,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.2,
+  "request_start_realtime": "2026-05-27T09:39:00.642",
+  "benchmark": {
+    "question": "If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months?",
+    "gold_solution": "When the price of the bag of marble increase by 20%, the price increases by 20/100*20 = $<<20/100*20=4>>4\nIf the price increases after every two months, in 36 months, it will increase 36/2 = <<36/2=18>>18 times.\nIf each increase is $4, the total amount the price of the bag of marbles will have increased by after 36 months is 18*$4 = $<<18*4=72>>72\nAfter the total increase of the price of the bag of marbles after 36 months, the total cost will be $20+$72 = $<<20+72=92>>92\n#### 92",
+    "gold_answer": "92",
+    "model_text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $4.\n3. We need to find the price after 36 months.\n   - Number of months = 36\n   - Number of two-month intervals in 36 months = 36 / 2 = 18 intervals\n4. So, the price increases 18 times.\n   - Total increase = 18 * $4 = $72\n5. Final price = Original price + Total increase =  20 + $72 = $92\n\nTherefore, after 36 months, the bag of marbles would cost $92.\n#### 92",
+    "predicted_answer": "92",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      8,
+      8,
+      7,
+      12,
+      6,
+      9,
+      7
+    ],
+    "ttfb_seconds": 0.3024101940000037,
+    "tbb_seconds": [
+      0.09432219099997496,
+      0.3068300900000054,
+      0.0897729940000147,
+      0.14968395500000042,
+      0.07566393499999435,
+      0.30252230100001043,
+      0.081476250999998
+    ],
+    "dllm_block_completion_latencies": [
+      0.3024101940000037,
+      0.09432219099997496,
+      0.3068300900000054,
+      0.0897729940000147,
+      0.14968395500000042,
+      0.07566393499999435,
+      0.30252230100001043,
+      0.081476250999998
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      8,
+      7,
+      12,
+      6,
+      9,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 18.33568104599999,
+    "first_new_token_ttfb_seconds": 18.33568104599999,
+    "block_ttfb_seconds": 18.33568104599999,
+    "tbb_seconds": [
+      0.09216435700000147,
+      0.30726500800000167,
+      0.08941670699999804,
+      0.1500844810000217,
+      0.07538108899998974,
+      0.30267378100000997,
+      0.08307962199998542
+    ],
+    "block_arrival_elapsed_seconds": [
+      18.33568104599999,
+      18.427845402999992,
+      18.735110410999994,
+      18.824527117999992,
+      18.974611599000013,
+      19.049992688000003,
+      19.352666469000013,
+      19.435746091
+    ],
+    "e2e_seconds": 19.435838488
+  },
+  "token_metrics": {
+    "prompt_tokens": 730,
+    "completion_tokens": 201,
+    "total_tokens": 931,
+    "end_to_end_tokens_per_second": 47.90120069040573,
+    "total_tokens_per_second": 47.90120069040573,
+    "completion_tokens_per_second": 10.341720020162784,
+    "tokens_after_first_block": 195,
+    "generated_tokens_per_second_after_first_block": 177.24735801950612
+  },
+  "final_meta_info": {
+    "id": "537ef5c6c1344751ad1207e61d66ea39",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 730,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 201,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      8,
+      7,
+      12,
+      6,
+      9,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.3024101940000037,
+      0.09432219099997496,
+      0.3068300900000054,
+      0.0897729940000147,
+      0.14968395500000042,
+      0.07566393499999435,
+      0.30252230100001043,
+      0.081476250999998
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.521541237000008
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 18.33568104599999,
+      "output_token_count": 6,
+      "new_output_tokens": 6,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.3024101940000037
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. The price",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 6,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874758.9760675
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 18.427845402999992,
+      "output_token_count": 38,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.09432219099997496
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 38,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 18.735110410999994,
+      "output_token_count": 70,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3068300900000054
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 70,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496,
+          0.3068300900000054
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 18.824527117999992,
+      "output_token_count": 102,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.0897729940000147
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $4.\n3. We need to find the price after 36 months.\n   - Number of months = 36\n   - Number of",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 102,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 18.974611599000013,
+      "output_token_count": 134,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.14968395500000042
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $4.\n3. We need to find the price after 36 months.\n   - Number of months = 36\n   - Number of two-month intervals in 36 months = 36 / 2 = 18 intervals\n4. So, the price increases 18 times",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 134,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 19.049992688000003,
+      "output_token_count": 166,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.07566393499999435
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $4.\n3. We need to find the price after 36 months.\n   - Number of months = 36\n   - Number of two-month intervals in 36 months = 36 / 2 = 18 intervals\n4. So, the price increases 18 times.\n   - Total increase = 18 * $4 = $72\n5. Final price = Original price + Total increase =  20",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 166,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042,
+          0.07566393499999435
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 19.352666469000013,
+      "output_token_count": 198,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.30252230100001043
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $4.\n3. We need to find the price after 36 months.\n   - Number of months = 36\n   - Number of two-month intervals in 36 months = 36 / 2 = 18 intervals\n4. So, the price increases 18 times.\n   - Total increase = 18 * $4 = $72\n5. Final price = Original price + Total increase =  20 + $72 = $92\n\nTherefore, after 36 months, the bag of marbles would cost $92.\n#### 9",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 198,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12,
+          6,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042,
+          0.07566393499999435,
+          0.30252230100001043
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 19.435746091,
+      "output_token_count": 201,
+      "new_output_tokens": 3,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.081476250999998
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. The price starts at $20.\n2. Every two months, the price increases by 20% of the original price.\n   - 20% of $20 = 0.20 * 20 = $4\n   - So, every two months, the price increases by $4.\n3. We need to find the price after 36 months.\n   - Number of months = 36\n   - Number of two-month intervals in 36 months = 36 / 2 = 18 intervals\n4. So, the price increases 18 times.\n   - Total increase = 18 * $4 = $72\n5. Final price = Original price + Total increase =  20 + $72 = $92\n\nTherefore, after 36 months, the bag of marbles would cost $92.\n#### 92",
+      "meta_info": {
+        "id": "537ef5c6c1344751ad1207e61d66ea39",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 201,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          8,
+          7,
+          12,
+          6,
+          9,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.3024101940000037,
+          0.09432219099997496,
+          0.3068300900000054,
+          0.0897729940000147,
+          0.14968395500000042,
+          0.07566393499999435,
+          0.30252230100001043,
+          0.081476250999998
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.521541237000008
+      }
+    }
+  ]
+}

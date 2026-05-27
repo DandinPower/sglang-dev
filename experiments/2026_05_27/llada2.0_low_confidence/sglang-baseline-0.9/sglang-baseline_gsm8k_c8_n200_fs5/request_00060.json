@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 60,
+  "eval_index": 60,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 6.0,
+  "request_start_realtime": "2026-05-27T08:59:36.369",
+  "benchmark": {
+    "question": "A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good?",
+    "gold_solution": "20% of 25 oranges is (20/100)*25 = <<(20/100)*25=5>>5 oranges\nThe total number of bad, unripe and sour oranges is therefore 1+5+2 = <<1+5+2=8>>8 oranges\nThe rest which is 25-8 = <<25-8=17>>17 oranges are good\n#### 17",
+    "gold_answer": "17",
+    "model_text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad: 1\n- Unripe: 5\n- Sour: 2\nTotal non-good = 1 + 5 + 2 = 8\n\nSo, good oranges = Total - non-good = 25 - 8 = 17\n\nBut wait — are sour oranges already included? Yes, but they are a separate category. The problem says \"the rest are good\", so we assume sour oranges are not good, even though they are oranges.\n\nSo, oranges that are either bad, unripe, or sour are not good.\n\nThus, good oranges = 25 - (1 + 5 + 2) = 25 - 8 = 17\n\n#### 17",
+    "predicted_answer": "17",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      20,
+      18,
+      22,
+      26,
+      29,
+      31,
+      28,
+      24
+    ],
+    "ttfb_seconds": 0.43177217999999584,
+    "tbb_seconds": [
+      0.20099489099999346,
+      0.4281039169999872,
+      0.3045419480000078,
+      0.5684525830000098,
+      0.3776442650000149,
+      0.35049337300000616,
+      0.27585694099997227
+    ],
+    "dllm_block_completion_latencies": [
+      0.43177217999999584,
+      0.20099489099999346,
+      0.4281039169999872,
+      0.3045419480000078,
+      0.5684525830000098,
+      0.3776442650000149,
+      0.35049337300000616,
+      0.27585694099997227
+    ],
+    "dllm_forward_counts_per_block": [
+      20,
+      18,
+      22,
+      26,
+      29,
+      31,
+      28,
+      24
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 12.365952432999961,
+    "first_new_token_ttfb_seconds": 12.365952432999961,
+    "block_ttfb_seconds": 12.365952432999961,
+    "tbb_seconds": [
+      0.200022668000031,
+      0.42922665099996493,
+      0.30568397100000766,
+      0.5669951900000001,
+      0.3777191089999974,
+      0.3534042869999894,
+      0.27553668600000947
+    ],
+    "block_arrival_elapsed_seconds": [
+      12.365952432999961,
+      12.565975100999992,
+      12.995201751999957,
+      13.300885722999965,
+      13.867880912999965,
+      14.245600021999962,
+      14.599004308999952,
+      14.874540994999961
+    ],
+    "e2e_seconds": 14.874665953999965
+  },
+  "token_metrics": {
+    "prompt_tokens": 728,
+    "completion_tokens": 227,
+    "total_tokens": 955,
+    "end_to_end_tokens_per_second": 64.20312247369762,
+    "total_tokens_per_second": 64.20312247369762,
+    "completion_tokens_per_second": 15.260846912596188,
+    "tokens_after_first_block": 219,
+    "generated_tokens_per_second_after_first_block": 87.29573869905397
+  },
+  "final_meta_info": {
+    "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 728,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 227,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      20,
+      18,
+      22,
+      26,
+      29,
+      31,
+      28,
+      24
+    ],
+    "dllm_block_completion_latencies": [
+      0.43177217999999584,
+      0.20099489099999346,
+      0.4281039169999872,
+      0.3045419480000078,
+      0.5684525830000098,
+      0.3776442650000149,
+      0.35049337300000616,
+      0.27585694099997227
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.959448594000037
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 12.365952432999961,
+      "output_token_count": 8,
+      "new_output_tokens": 8,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.43177217999999584
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Total oranges = ",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 8,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872388.735522
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 12.565975100999992,
+      "output_token_count": 40,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.20099489099999346
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 ×",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 40,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 12.995201751999957,
+      "output_token_count": 72,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.4281039169999872
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad:",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 72,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346,
+          0.4281039169999872
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 13.300885722999965,
+      "output_token_count": 104,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3045419480000078
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad: 1\n- Unripe: 5\n- Sour: 2\nTotal non-good = 1 + 5 + 2 = 8\n",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 104,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18,
+          22,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346,
+          0.4281039169999872,
+          0.3045419480000078
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 13.867880912999965,
+      "output_token_count": 136,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5684525830000098
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad: 1\n- Unripe: 5\n- Sour: 2\nTotal non-good = 1 + 5 + 2 = 8\n\nSo, good oranges = Total - non-good = 25 - 8 = 17\n\nBut wait — are sour oranges already included?",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 136,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18,
+          22,
+          26,
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346,
+          0.4281039169999872,
+          0.3045419480000078,
+          0.5684525830000098
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 14.245600021999962,
+      "output_token_count": 168,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.3776442650000149
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad: 1\n- Unripe: 5\n- Sour: 2\nTotal non-good = 1 + 5 + 2 = 8\n\nSo, good oranges = Total - non-good = 25 - 8 = 17\n\nBut wait — are sour oranges already included? Yes, but they are a separate category. The problem says \"the rest are good\", so we assume sour oranges are not good, even though they are oranges",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 168,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18,
+          22,
+          26,
+          29,
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346,
+          0.4281039169999872,
+          0.3045419480000078,
+          0.5684525830000098,
+          0.3776442650000149
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 14.599004308999952,
+      "output_token_count": 200,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.35049337300000616
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad: 1\n- Unripe: 5\n- Sour: 2\nTotal non-good = 1 + 5 + 2 = 8\n\nSo, good oranges = Total - non-good = 25 - 8 = 17\n\nBut wait — are sour oranges already included? Yes, but they are a separate category. The problem says \"the rest are good\", so we assume sour oranges are not good, even though they are oranges.\n\nSo, oranges that are either bad, unripe, or sour are not good.\n\nThus, good oranges = 25 - (",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 200,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18,
+          22,
+          26,
+          29,
+          31,
+          28
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346,
+          0.4281039169999872,
+          0.3045419480000078,
+          0.5684525830000098,
+          0.3776442650000149,
+          0.35049337300000616
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 14.874540994999961,
+      "output_token_count": 227,
+      "new_output_tokens": 27,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.27585694099997227
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. Total oranges = 25\n2. Bad oranges = 1\n3. Unripe oranges = 20% of 25 = 0.20 × 25 = 5\n4. Sour oranges = 2\n\nNow, add up the non-orange or bad oranges:\n- Bad: 1\n- Unripe: 5\n- Sour: 2\nTotal non-good = 1 + 5 + 2 = 8\n\nSo, good oranges = Total - non-good = 25 - 8 = 17\n\nBut wait — are sour oranges already included? Yes, but they are a separate category. The problem says \"the rest are good\", so we assume sour oranges are not good, even though they are oranges.\n\nSo, oranges that are either bad, unripe, or sour are not good.\n\nThus, good oranges = 25 - (1 + 5 + 2) = 25 - 8 = 17\n\n#### 17",
+      "meta_info": {
+        "id": "6a0a3aa3785d4fb2a8844461e780e13b",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 227,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          20,
+          18,
+          22,
+          26,
+          29,
+          31,
+          28,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.43177217999999584,
+          0.20099489099999346,
+          0.4281039169999872,
+          0.3045419480000078,
+          0.5684525830000098,
+          0.3776442650000149,
+          0.35049337300000616,
+          0.27585694099997227
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.959448594000037
+      }
+    }
+  ]
+}

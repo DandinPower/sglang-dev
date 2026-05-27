@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 88,
+  "eval_index": 88,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 8.8,
+  "request_start_realtime": "2026-05-27T08:59:39.169",
+  "benchmark": {
+    "question": "Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?",
+    "gold_solution": "Let m be the number of copies Marilyn sold and h be the number Harald sold. We know that m + h = 80,000 and m = 10h.\nSubstituting the second equation into the first, we get 10h + h = 88,000\nCombining like terms, we get 11h = 88,000\nDividing both sides by 11, we get h = 8,000\n#### 8000",
+    "gold_answer": "8000",
+    "model_text": "\n\nLet the number of copies Harald sold be H.\n\nThen, Marilyn's sales are 10H.\n\nTogether, they sold H + 10H = 11H copies.\n\nWe are told that they sold 88,000 copies combined.\n\nSo, 11H = 88,000.\n\nTo find H, divide both sides by 11:\n\nH = 88,000 / 11 = 8,000.\n\nHarald sold 8,000 copies.\n#### 8000",
+    "predicted_answer": "8000",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      22,
+      24,
+      27,
+      22,
+      21,
+      18
+    ],
+    "ttfb_seconds": 0.5288621729999932,
+    "tbb_seconds": [
+      0.2989745859999857,
+      0.5383791860000429,
+      0.26018817599998556,
+      0.4489596739999797,
+      0.20909929499998725
+    ],
+    "dllm_block_completion_latencies": [
+      0.5288621729999932,
+      0.2989745859999857,
+      0.5383791860000429,
+      0.26018817599998556,
+      0.4489596739999797,
+      0.20909929499998725
+    ],
+    "dllm_forward_counts_per_block": [
+      22,
+      24,
+      27,
+      22,
+      21,
+      18
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 17.830113046000008,
+    "first_new_token_ttfb_seconds": 17.830113046000008,
+    "block_ttfb_seconds": 17.830113046000008,
+    "tbb_seconds": [
+      0.2955194870000355,
+      0.535200983999971,
+      0.26166568000002144,
+      0.44946639799997,
+      0.20851054700000304
+    ],
+    "block_arrival_elapsed_seconds": [
+      17.830113046000008,
+      18.125632533000044,
+      18.660833517000015,
+      18.922499197000036,
+      19.371965595000006,
+      19.58047614200001
+    ],
+    "e2e_seconds": 19.580534444000023
+  },
+  "token_metrics": {
+    "prompt_tokens": 728,
+    "completion_tokens": 139,
+    "total_tokens": 867,
+    "end_to_end_tokens_per_second": 44.27866882181406,
+    "total_tokens_per_second": 44.27866882181406,
+    "completion_tokens_per_second": 7.098886927603407,
+    "tokens_after_first_block": 131,
+    "generated_tokens_per_second_after_first_block": 74.8391216821716
+  },
+  "final_meta_info": {
+    "id": "f0bff62c31064d5ca23816d8ad590d86",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 728,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 139,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      22,
+      24,
+      27,
+      22,
+      21,
+      18
+    ],
+    "dllm_block_completion_latencies": [
+      0.5288621729999932,
+      0.2989745859999857,
+      0.5383791860000429,
+      0.26018817599998556,
+      0.4489596739999797,
+      0.20909929499998725
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.4692778570000087
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 17.830113046000008,
+      "output_token_count": 8,
+      "new_output_tokens": 8,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5288621729999932
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the number of copies Har",
+      "meta_info": {
+        "id": "f0bff62c31064d5ca23816d8ad590d86",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 8,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5288621729999932
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872396.9986594
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 18.125632533000044,
+      "output_token_count": 40,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2989745859999857
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the number of copies Harald sold be H.\n\nThen, Marilyn's sales are 10H.\n\nTogether, they sold H + 10H = ",
+      "meta_info": {
+        "id": "f0bff62c31064d5ca23816d8ad590d86",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 40,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          22,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.5288621729999932,
+          0.2989745859999857
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 18.660833517000015,
+      "output_token_count": 72,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5383791860000429
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the number of copies Harald sold be H.\n\nThen, Marilyn's sales are 10H.\n\nTogether, they sold H + 10H = 11H copies.\n\nWe are told that they sold 88,000 copies combined.\n\nSo, 11H =",
+      "meta_info": {
+        "id": "f0bff62c31064d5ca23816d8ad590d86",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 72,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          22,
+          24,
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.5288621729999932,
+          0.2989745859999857,
+          0.5383791860000429
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 18.922499197000036,
+      "output_token_count": 104,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.26018817599998556
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the number of copies Harald sold be H.\n\nThen, Marilyn's sales are 10H.\n\nTogether, they sold H + 10H = 11H copies.\n\nWe are told that they sold 88,000 copies combined.\n\nSo, 11H = 88,000.\n\nTo find H, divide both sides by 11:\n\nH = 88,00",
+      "meta_info": {
+        "id": "f0bff62c31064d5ca23816d8ad590d86",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 104,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          22,
+          24,
+          27,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.5288621729999932,
+          0.2989745859999857,
+          0.5383791860000429,
+          0.26018817599998556
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 19.371965595000006,
+      "output_token_count": 136,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.4489596739999797
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the number of copies Harald sold be H.\n\nThen, Marilyn's sales are 10H.\n\nTogether, they sold H + 10H = 11H copies.\n\nWe are told that they sold 88,000 copies combined.\n\nSo, 11H = 88,000.\n\nTo find H, divide both sides by 11:\n\nH = 88,000 / 11 = 8,000.\n\nHarald sold 8,000 copies.\n#### 800",
+      "meta_info": {
+        "id": "f0bff62c31064d5ca23816d8ad590d86",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 136,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          22,
+          24,
+          27,
+          22,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.5288621729999932,
+          0.2989745859999857,
+          0.5383791860000429,
+          0.26018817599998556,
+          0.4489596739999797
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 19.58047614200001,
+      "output_token_count": 139,
+      "new_output_tokens": 3,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.20909929499998725
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet the number of copies Harald sold be H.\n\nThen, Marilyn's sales are 10H.\n\nTogether, they sold H + 10H = 11H copies.\n\nWe are told that they sold 88,000 copies combined.\n\nSo, 11H = 88,000.\n\nTo find H, divide both sides by 11:\n\nH = 88,000 / 11 = 8,000.\n\nHarald sold 8,000 copies.\n#### 8000",
+      "meta_info": {
+        "id": "f0bff62c31064d5ca23816d8ad590d86",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 139,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          22,
+          24,
+          27,
+          22,
+          21,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5288621729999932,
+          0.2989745859999857,
+          0.5383791860000429,
+          0.26018817599998556,
+          0.4489596739999797,
+          0.20909929499998725
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.4692778570000087
+      }
+    }
+  ]
+}

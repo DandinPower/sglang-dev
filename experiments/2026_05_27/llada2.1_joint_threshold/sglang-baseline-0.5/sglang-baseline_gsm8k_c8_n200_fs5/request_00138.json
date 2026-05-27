@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 138,
+  "eval_index": 138,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 13.8,
+  "request_start_realtime": "2026-05-27T09:34:02.344",
+  "benchmark": {
+    "question": "Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?",
+    "gold_solution": "Questions Mark completed in yesterday’s test: 5*8 = <<5*8=40>>40.\nQuestions Mark completed in today’s test: 5*6 = <<5*6=30>>30.\nQuestions Mark left incomplete in yesterday’s test: 75-40 = <<75-40=35>>35\nQuestions Mark left incomplete in today's test: 100-30 = <<100-30=70>>70\nMissed questions in total 35+70 = <<35+70=105>>105.\n#### 105",
+    "gold_answer": "105",
+    "model_text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 = 35 questions\n\n2. **Second Test:**\n   - Total questions: 100\n   - Rate: 5 questions per hour\n   - Time available: 6 hours\n   - Questions completed: 5 questions/hour × 6 hours = 30 questions\n   - Questions incomplete: 100 - 30 = 70 questions\n\n3. **Total incomplete questions:**\n   - First test: 35\n   - Second test: 70\n   - Total: 35 + 70 = 105 questions\n\nSo, Mark left 105 questions incomplete.\n\n#### 105",
+    "predicted_answer": "105",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      21,
+      18,
+      22,
+      18,
+      26,
+      10,
+      41,
+      9
+    ],
+    "ttfb_seconds": 0.4625294710000105,
+    "tbb_seconds": [
+      0.20998963599998888,
+      0.4069293459999983,
+      0.22240291800000023,
+      0.30066818700001363,
+      0.28220539899999153,
+      0.4885721509999996,
+      0.10514820899999222
+    ],
+    "dllm_block_completion_latencies": [
+      0.4625294710000105,
+      0.20998963599998888,
+      0.4069293459999983,
+      0.22240291800000023,
+      0.30066818700001363,
+      0.28220539899999153,
+      0.4885721509999996,
+      0.10514820899999222
+    ],
+    "dllm_forward_counts_per_block": [
+      21,
+      18,
+      22,
+      18,
+      26,
+      10,
+      41,
+      9
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 17.062875402000003,
+    "first_new_token_ttfb_seconds": 17.062875402000003,
+    "block_ttfb_seconds": 17.062875402000003,
+    "tbb_seconds": [
+      0.2085213089999911,
+      0.40690434800001185,
+      0.22395608399997968,
+      0.29901798400001667,
+      0.2823434459999987,
+      0.490253373999991,
+      0.10322792100001266
+    ],
+    "block_arrival_elapsed_seconds": [
+      17.062875402000003,
+      17.271396710999994,
+      17.678301059000006,
+      17.902257142999986,
+      18.201275127000002,
+      18.483618573,
+      18.973871946999992,
+      19.077099868000005
+    ],
+    "e2e_seconds": 19.07715589
+  },
+  "token_metrics": {
+    "prompt_tokens": 763,
+    "completion_tokens": 215,
+    "total_tokens": 978,
+    "end_to_end_tokens_per_second": 51.265503392602405,
+    "total_tokens_per_second": 51.265503392602405,
+    "completion_tokens_per_second": 11.270023751952472,
+    "tokens_after_first_block": 210,
+    "generated_tokens_per_second_after_first_block": 104.25558965152439
+  },
+  "final_meta_info": {
+    "id": "20558d39f7344c6da451d12858c5d97e",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 763,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 215,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      21,
+      18,
+      22,
+      18,
+      26,
+      10,
+      41,
+      9
+    ],
+    "dllm_block_completion_latencies": [
+      0.4625294710000105,
+      0.20998963599998888,
+      0.4069293459999983,
+      0.22240291800000023,
+      0.30066818700001363,
+      0.28220539899999153,
+      0.4885721509999996,
+      0.10514820899999222
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.4861104709999893
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 17.062875402000003,
+      "output_token_count": 5,
+      "new_output_tokens": 5,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4625294710000105
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 5,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874459.4055603
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 17.271396710999994,
+      "output_token_count": 37,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.20998963599998888
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 37,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 17.678301059000006,
+      "output_token_count": 69,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.4069293459999983
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 =",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 69,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888,
+          0.4069293459999983
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 17.902257142999986,
+      "output_token_count": 101,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.22240291800000023
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 = 35 questions\n\n2. **Second Test:**\n   - Total questions: 100\n   - Rate: 5 questions per hour",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 101,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888,
+          0.4069293459999983,
+          0.22240291800000023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 18.201275127000002,
+      "output_token_count": 133,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.30066818700001363
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 = 35 questions\n\n2. **Second Test:**\n   - Total questions: 100\n   - Rate: 5 questions per hour\n   - Time available: 6 hours\n   - Questions completed: 5 questions/hour × 6 hours = 30 questions\n   - Questions",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 133,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22,
+          18,
+          26
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888,
+          0.4069293459999983,
+          0.22240291800000023,
+          0.30066818700001363
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 18.483618573,
+      "output_token_count": 165,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.28220539899999153
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 = 35 questions\n\n2. **Second Test:**\n   - Total questions: 100\n   - Rate: 5 questions per hour\n   - Time available: 6 hours\n   - Questions completed: 5 questions/hour × 6 hours = 30 questions\n   - Questions incomplete: 100 - 30 = 70 questions\n\n3. **Total incomplete questions:**\n   - First test: 3",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 165,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22,
+          18,
+          26,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888,
+          0.4069293459999983,
+          0.22240291800000023,
+          0.30066818700001363,
+          0.28220539899999153
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 18.973871946999992,
+      "output_token_count": 197,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.4885721509999996
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 = 35 questions\n\n2. **Second Test:**\n   - Total questions: 100\n   - Rate: 5 questions per hour\n   - Time available: 6 hours\n   - Questions completed: 5 questions/hour × 6 hours = 30 questions\n   - Questions incomplete: 100 - 30 = 70 questions\n\n3. **Total incomplete questions:**\n   - First test: 35\n   - Second test: 70\n   - Total: 35 + 70 = 105 questions\n\nSo,",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": null,
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 197,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22,
+          18,
+          26,
+          10,
+          41
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888,
+          0.4069293459999983,
+          0.22240291800000023,
+          0.30066818700001363,
+          0.28220539899999153,
+          0.4885721509999996
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 19.077099868000005,
+      "output_token_count": 215,
+      "new_output_tokens": 18,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.10514820899999222
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. **First Test:**\n   - Total questions: 75\n   - Rate: 5 questions per hour\n   - Time available: 8 hours\n   - Questions completed: 5 questions/hour × 8 hours = 40 questions\n   - Questions incomplete: 75 - 40 = 35 questions\n\n2. **Second Test:**\n   - Total questions: 100\n   - Rate: 5 questions per hour\n   - Time available: 6 hours\n   - Questions completed: 5 questions/hour × 6 hours = 30 questions\n   - Questions incomplete: 100 - 30 = 70 questions\n\n3. **Total incomplete questions:**\n   - First test: 35\n   - Second test: 70\n   - Total: 35 + 70 = 105 questions\n\nSo, Mark left 105 questions incomplete.\n\n#### 105",
+      "meta_info": {
+        "id": "20558d39f7344c6da451d12858c5d97e",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 763,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 215,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          21,
+          18,
+          22,
+          18,
+          26,
+          10,
+          41,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.4625294710000105,
+          0.20998963599998888,
+          0.4069293459999983,
+          0.22240291800000023,
+          0.30066818700001363,
+          0.28220539899999153,
+          0.4885721509999996,
+          0.10514820899999222
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.4861104709999893
+      }
+    }
+  ]
+}

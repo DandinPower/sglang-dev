@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 188,
+  "eval_index": 188,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A trader buys some bags of wheat from a farmer at a rate of $20 per bag. If it costs $2 to transport each bag from the farm to the warehouse, and the trader made a total profit of $400 after selling all the bags at a rate of $30 each, how many bags did he sell?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A trader buys some bags of wheat from a farmer at a rate of $20 per bag. If it costs $2 to transport each bag from the farm to the warehouse, and the trader made a total profit of $400 after selling all the bags at a rate of $30 each, how many bags did he sell?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.8,
+  "request_start_realtime": "2026-05-27T09:37:43.734",
+  "benchmark": {
+    "question": "A trader buys some bags of wheat from a farmer at a rate of $20 per bag. If it costs $2 to transport each bag from the farm to the warehouse, and the trader made a total profit of $400 after selling all the bags at a rate of $30 each, how many bags did he sell?",
+    "gold_solution": "Each bag of wheat cost the trader $20+$2=$<<20+2=22>>22 (taking transportation costs into account)\nEach bag of wheat was sold for $30 each giving a profit of $30-$22=$<<30-22=8>>8 on each bag\nSince a total of $400 profit was made, the total number of bags sold is $400/$8=<<400/8=50>>50 bags\n#### 50",
+    "gold_answer": "50",
+    "model_text": "\n\nLet the number of bags the trader bought be **x**.\n\nCost per bag = $20 (purchase) + $2 (transport) = $22\n\nTotal cost for x bags = 22x\n\nSelling price per bag = $30\n\nTotal revenue from selling x bags = 30x\n\nProfit = Revenue - Total cost = 30x - 22x = 8x\n\nWe are told the profit is $400:\n\n8x = 400\n\nSolve for x:\n\nx = 400 / 8 = 50\n\nSo, the trader sold 50 bags.\n\nAnswer: 50",
+    "predicted_answer": "50",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      5,
+      5,
+      3,
+      7,
+      3
+    ],
+    "ttfb_seconds": 0.17587305999998648,
+    "tbb_seconds": [
+      0.03128030100000956,
+      0.03067337499999212,
+      0.019059745000021167,
+      0.041856615000000374,
+      0.018162769999975126
+    ],
+    "dllm_block_completion_latencies": [
+      0.17587305999998648,
+      0.03128030100000956,
+      0.03067337499999212,
+      0.019059745000021167,
+      0.041856615000000374,
+      0.018162769999975126
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      5,
+      5,
+      3,
+      7,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 56.39955165000001,
+    "first_new_token_ttfb_seconds": 56.39955165000001,
+    "block_ttfb_seconds": 56.39955165000001,
+    "tbb_seconds": [
+      0.031247874999991154,
+      0.03069297400000437,
+      0.019055974999986347,
+      0.041813753000013776,
+      0.018246245999989696
+    ],
+    "block_arrival_elapsed_seconds": [
+      56.39955165000001,
+      56.430799525,
+      56.461492499,
+      56.48054847399999,
+      56.522362227,
+      56.54060847299999
+    ],
+    "e2e_seconds": 56.540665988
+  },
+  "token_metrics": {
+    "prompt_tokens": 759,
+    "completion_tokens": 157,
+    "total_tokens": 916,
+    "end_to_end_tokens_per_second": 16.2007288735228,
+    "total_tokens_per_second": 16.2007288735228,
+    "completion_tokens_per_second": 2.776762481597248,
+    "tokens_after_first_block": 148,
+    "generated_tokens_per_second_after_first_block": 1048.7949140930393
+  },
+  "final_meta_info": {
+    "id": "fe4af5a016604c2ba877ca5ebbf27022",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 759,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 157,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      5,
+      5,
+      3,
+      7,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.17587305999998648,
+      0.03128030100000956,
+      0.03067337499999212,
+      0.019059745000021167,
+      0.041856615000000374,
+      0.018162769999975126
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.31991212399998403
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 56.39955165000001,
+      "output_token_count": 9,
+      "new_output_tokens": 9,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.17587305999998648
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the number of bags the trader",
+      "meta_info": {
+        "id": "fe4af5a016604c2ba877ca5ebbf27022",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 9,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.17587305999998648
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874720.1339865
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 56.430799525,
+      "output_token_count": 41,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.03128030100000956
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the number of bags the trader bought be **x**.\n\nCost per bag = $20 (purchase) + $2 (transport) = $22\n\nTotal cost for",
+      "meta_info": {
+        "id": "fe4af5a016604c2ba877ca5ebbf27022",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 41,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.17587305999998648,
+          0.03128030100000956
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 56.461492499,
+      "output_token_count": 73,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.03067337499999212
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the number of bags the trader bought be **x**.\n\nCost per bag = $20 (purchase) + $2 (transport) = $22\n\nTotal cost for x bags = 22x\n\nSelling price per bag = $30\n\nTotal revenue from selling x bags = 30x\n\n",
+      "meta_info": {
+        "id": "fe4af5a016604c2ba877ca5ebbf27022",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 73,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          5,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.17587305999998648,
+          0.03128030100000956,
+          0.03067337499999212
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 56.48054847399999,
+      "output_token_count": 105,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.019059745000021167
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the number of bags the trader bought be **x**.\n\nCost per bag = $20 (purchase) + $2 (transport) = $22\n\nTotal cost for x bags = 22x\n\nSelling price per bag = $30\n\nTotal revenue from selling x bags = 30x\n\nProfit = Revenue - Total cost = 30x - 22x = 8x\n\nWe are told the profit is $400",
+      "meta_info": {
+        "id": "fe4af5a016604c2ba877ca5ebbf27022",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 105,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          5,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.17587305999998648,
+          0.03128030100000956,
+          0.03067337499999212,
+          0.019059745000021167
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 56.522362227,
+      "output_token_count": 137,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.041856615000000374
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the number of bags the trader bought be **x**.\n\nCost per bag = $20 (purchase) + $2 (transport) = $22\n\nTotal cost for x bags = 22x\n\nSelling price per bag = $30\n\nTotal revenue from selling x bags = 30x\n\nProfit = Revenue - Total cost = 30x - 22x = 8x\n\nWe are told the profit is $400:\n\n8x = 400\n\nSolve for x:\n\nx = 400 / 8 = 50\n",
+      "meta_info": {
+        "id": "fe4af5a016604c2ba877ca5ebbf27022",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 137,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          5,
+          5,
+          3,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.17587305999998648,
+          0.03128030100000956,
+          0.03067337499999212,
+          0.019059745000021167,
+          0.041856615000000374
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 56.54060847299999,
+      "output_token_count": 157,
+      "new_output_tokens": 20,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.018162769999975126
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet the number of bags the trader bought be **x**.\n\nCost per bag = $20 (purchase) + $2 (transport) = $22\n\nTotal cost for x bags = 22x\n\nSelling price per bag = $30\n\nTotal revenue from selling x bags = 30x\n\nProfit = Revenue - Total cost = 30x - 22x = 8x\n\nWe are told the profit is $400:\n\n8x = 400\n\nSolve for x:\n\nx = 400 / 8 = 50\n\nSo, the trader sold 50 bags.\n\nAnswer: 50",
+      "meta_info": {
+        "id": "fe4af5a016604c2ba877ca5ebbf27022",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 157,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          5,
+          5,
+          3,
+          7,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.17587305999998648,
+          0.03128030100000956,
+          0.03067337499999212,
+          0.019059745000021167,
+          0.041856615000000374,
+          0.018162769999975126
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.31991212399998403
+      }
+    }
+  ]
+}

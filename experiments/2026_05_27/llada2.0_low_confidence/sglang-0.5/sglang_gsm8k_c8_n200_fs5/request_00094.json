@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 94,
+  "eval_index": 94,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a neighborhood, the number of rabbits pets is twelve less than the combined number of pet dogs and cats. If there are two cats for every dog, and the number of dogs is 60, how many pets in total are in the neighborhood?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a neighborhood, the number of rabbits pets is twelve less than the combined number of pet dogs and cats. If there are two cats for every dog, and the number of dogs is 60, how many pets in total are in the neighborhood?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 9.4,
+  "request_start_realtime": "2026-05-27T10:02:27.157",
+  "benchmark": {
+    "question": "In a neighborhood, the number of rabbits pets is twelve less than the combined number of pet dogs and cats. If there are two cats for every dog, and the number of dogs is 60, how many pets in total are in the neighborhood?",
+    "gold_solution": "If there are two cats for every dog, and the number of dogs is 60, the number of cats is 2*60 = <<2*60=120>>120\nThe combined number of cats and dogs is 120+60 = <<120+60=180>>180\nThe number of rabbits pets is twelve less than the combined number of pet dogs and cats, a total of 180-12 = 168\nThe total number of pets in the compound is 168+180 = <<168+180=348>>348\n#### 348",
+    "gold_answer": "348",
+    "model_text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 12 = 168.\n\nNow, total number of pets = dogs + cats + rabbits = 60 + + 120 + 168. 348.\n\nWait, let's recalculate carefully:\n\nDogs = 60  \nCats = 2 × 60 = 120  \nDogs + cats = 60 + 120 = 180  \nRabbits = 180 - 12 = 168  \nTotal pets = 60 + 120 + 168 = 348.\n\n#### 348",
+    "predicted_answer": "348",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      9,
+      4,
+      7,
+      7,
+      13,
+      5,
+      3,
+      5
+    ],
+    "ttfb_seconds": 0.5379139020000139,
+    "tbb_seconds": [
+      0.22530057300002682,
+      0.11520157600000402,
+      0.14024851299996044,
+      0.41986875700001747,
+      0.4058485369999971,
+      0.051873926999974174,
+      0.0797605050000243
+    ],
+    "dllm_block_completion_latencies": [
+      0.5379139020000139,
+      0.22530057300002682,
+      0.11520157600000402,
+      0.14024851299996044,
+      0.41986875700001747,
+      0.4058485369999971,
+      0.051873926999974174,
+      0.0797605050000243
+    ],
+    "dllm_forward_counts_per_block": [
+      9,
+      4,
+      7,
+      7,
+      13,
+      5,
+      3,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 22.16443387999999,
+    "first_new_token_ttfb_seconds": 22.16443387999999,
+    "block_ttfb_seconds": 22.16443387999999,
+    "tbb_seconds": [
+      0.2224972760000128,
+      0.115797036999993,
+      0.13981274999997595,
+      0.42023069399999713,
+      0.40611355100003266,
+      0.052042288999984976,
+      0.07906150000002299
+    ],
+    "block_arrival_elapsed_seconds": [
+      22.16443387999999,
+      22.386931156000003,
+      22.502728192999996,
+      22.64254094299997,
+      23.06277163699997,
+      23.468885188,
+      23.520927476999987,
+      23.59998897700001
+    ],
+    "e2e_seconds": 23.600076727999976
+  },
+  "token_metrics": {
+    "prompt_tokens": 741,
+    "completion_tokens": 236,
+    "total_tokens": 977,
+    "end_to_end_tokens_per_second": 41.398170491575236,
+    "total_tokens_per_second": 41.398170491575236,
+    "completion_tokens_per_second": 9.999967488241305,
+    "tokens_after_first_block": 209,
+    "generated_tokens_per_second_after_first_block": 145.5793829859291
+  },
+  "final_meta_info": {
+    "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 741,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 236,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      9,
+      4,
+      7,
+      7,
+      13,
+      5,
+      3,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.5379139020000139,
+      0.22530057300002682,
+      0.11520157600000402,
+      0.14024851299996044,
+      0.41986875700001747,
+      0.4058485369999971,
+      0.051873926999974174,
+      0.0797605050000243
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.9832744650000222
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 22.16443387999999,
+      "output_token_count": 27,
+      "new_output_tokens": 27,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5379139020000139
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 27,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876169.319293
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 22.386931156000003,
+      "output_token_count": 59,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.22530057300002682
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 12",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 59,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 22.502728192999996,
+      "output_token_count": 91,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.11520157600000402
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 1",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 91,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682,
+          0.11520157600000402
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 22.64254094299997,
+      "output_token_count": 123,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.14024851299996044
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 12 = 168.\n\nNow, total number of pets = dogs + cats + rabbits = 60 + + 120 +",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 123,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4,
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682,
+          0.11520157600000402,
+          0.14024851299996044
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 23.06277163699997,
+      "output_token_count": 155,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.41986875700001747
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 12 = 168.\n\nNow, total number of pets = dogs + cats + rabbits = 60 + + 120 + 168. 348.\n\nWait, let's recalculate carefully:\n\nDogs = 60  \nCats = ",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 155,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4,
+          7,
+          7,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682,
+          0.11520157600000402,
+          0.14024851299996044,
+          0.41986875700001747
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 23.468885188,
+      "output_token_count": 187,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.4058485369999971
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 12 = 168.\n\nNow, total number of pets = dogs + cats + rabbits = 60 + + 120 + 168. 348.\n\nWait, let's recalculate carefully:\n\nDogs = 60  \nCats = 2 × 60 = 120  \nDogs + cats = 60 + 120 = 180  \nR",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 187,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4,
+          7,
+          7,
+          13,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682,
+          0.11520157600000402,
+          0.14024851299996044,
+          0.41986875700001747,
+          0.4058485369999971
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 23.520927476999987,
+      "output_token_count": 219,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.051873926999974174
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 12 = 168.\n\nNow, total number of pets = dogs + cats + rabbits = 60 + + 120 + 168. 348.\n\nWait, let's recalculate carefully:\n\nDogs = 60  \nCats = 2 × 60 = 120  \nDogs + cats = 60 + 120 = 180  \nRabbits = 180 - 12 = 168  \nTotal pets = 60 + 120 + 1",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": null,
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 219,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4,
+          7,
+          7,
+          13,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682,
+          0.11520157600000402,
+          0.14024851299996044,
+          0.41986875700001747,
+          0.4058485369999971,
+          0.051873926999974174
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 23.59998897700001,
+      "output_token_count": 236,
+      "new_output_tokens": 17,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.0797605050000243
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are told:\n- There are 60 dogs.\n- There are two cats for every dog, so number of cats = 2 × 60 = 120.\n- Combined number of dogs dogs and cats = 60 + 120 = 180.\n- The number of rabbits is twelve less less than this combined number, so rabbits = 180 - 12 = 168.\n\nNow, total number of pets = dogs + cats + rabbits = 60 + + 120 + 168. 348.\n\nWait, let's recalculate carefully:\n\nDogs = 60  \nCats = 2 × 60 = 120  \nDogs + cats = 60 + 120 = 180  \nRabbits = 180 - 12 = 168  \nTotal pets = 60 + 120 + 168 = 348.\n\n#### 348",
+      "meta_info": {
+        "id": "f8b85bdc038a46b1b2d879ca14b2b176",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 741,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 236,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          4,
+          7,
+          7,
+          13,
+          5,
+          3,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.5379139020000139,
+          0.22530057300002682,
+          0.11520157600000402,
+          0.14024851299996044,
+          0.41986875700001747,
+          0.4058485369999971,
+          0.051873926999974174,
+          0.0797605050000243
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.9832744650000222
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 123,
+  "eval_index": 123,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Rosie can run 10 miles per hour for 3 hours. After that, she runs 5 miles per hour. How many miles can she run in 7 hours?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Rosie can run 10 miles per hour for 3 hours. After that, she runs 5 miles per hour. How many miles can she run in 7 hours?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 12.3,
+  "request_start_realtime": "2026-05-27T09:36:00.904",
+  "benchmark": {
+    "question": "Rosie can run 10 miles per hour for 3 hours. After that, she runs 5 miles per hour. How many miles can she run in 7 hours?",
+    "gold_solution": "For the first 3 hours, Rosie runs 10 miles per hour, so she runs 10*3=<<10*3=30>>30 miles.\nHowever, she still has 7-3=<<7-3=4>>4 hours left to room.\nFor the next 4 hours, she runs 5 miles per hour, so she runs 5*4=<<5*4=20>>20 miles.\nIn total she runs 30+20=<<30+20=50>>50 miles.\n#### 50",
+    "gold_answer": "50",
+    "model_text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total time is 7 hours.\n   Time already used is 3 hours.\n   So, remaining time = 7 - 3 = 4 hours.\n\n3. Now, calculate how many Rosie runs in the remaining 4 hours:\n   She runs 5 miles per hour for the remaining time.\n   So, 5 miles/hour × 4 hours = 20 miles.\n\n4. Finally, add the distances together:\n   First 3 hours: 30 miles\n   Next 4 hours: 20 miles\n   Total = 30 + 20 = 50 miles.\n\nTherefore, Rosie can run 50 miles in 7 hours.\n\n#### 50",
+    "predicted_answer": "50",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      10,
+      7,
+      17,
+      6,
+      7,
+      4,
+      4
+    ],
+    "ttfb_seconds": 0.4624300610000205,
+    "tbb_seconds": [
+      0.4138330929999938,
+      0.28098967900001526,
+      0.48434135799999467,
+      0.09254927699998916,
+      0.08896915000002537,
+      0.4660649669999657,
+      0.2296311250000258
+    ],
+    "dllm_block_completion_latencies": [
+      0.4624300610000205,
+      0.4138330929999938,
+      0.28098967900001526,
+      0.48434135799999467,
+      0.09254927699998916,
+      0.08896915000002537,
+      0.4660649669999657,
+      0.2296311250000258
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      7,
+      17,
+      6,
+      7,
+      4,
+      4
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 20.852953013000047,
+    "first_new_token_ttfb_seconds": 20.852953013000047,
+    "block_ttfb_seconds": 20.852953013000047,
+    "tbb_seconds": [
+      0.4132625479999774,
+      0.2810142609999957,
+      0.4843396210000037,
+      0.09314900499998657,
+      0.08913349900001322,
+      0.465708310000025,
+      0.22933990199999243
+    ],
+    "block_arrival_elapsed_seconds": [
+      20.852953013000047,
+      21.266215561000024,
+      21.54722982200002,
+      22.031569443000024,
+      22.12471844800001,
+      22.213851947000023,
+      22.67956025700005,
+      22.90890015900004
+    ],
+    "e2e_seconds": 22.90902141800001
+  },
+  "token_metrics": {
+    "prompt_tokens": 726,
+    "completion_tokens": 231,
+    "total_tokens": 957,
+    "end_to_end_tokens_per_second": 41.7739362384143,
+    "total_tokens_per_second": 41.7739362384143,
+    "completion_tokens_per_second": 10.083363919617245,
+    "tokens_after_first_block": 221,
+    "generated_tokens_per_second_after_first_block": 107.48669619287499
+  },
+  "final_meta_info": {
+    "id": "5061ed34a1a9458e90c4513e206ea270",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 726,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 231,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      10,
+      7,
+      17,
+      6,
+      7,
+      4,
+      4
+    ],
+    "dllm_block_completion_latencies": [
+      0.4624300610000205,
+      0.4138330929999938,
+      0.28098967900001526,
+      0.48434135799999467,
+      0.09254927699998916,
+      0.08896915000002537,
+      0.4660649669999657,
+      0.2296311250000258
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.5235797260000368
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 20.852953013000047,
+      "output_token_count": 10,
+      "new_output_tokens": 10,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4624300610000205
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, calculate how many Rosie",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 10,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874581.7568738
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 21.266215561000024,
+      "output_token_count": 42,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.4138330929999938
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 42,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 21.54722982200002,
+      "output_token_count": 74,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.28098967900001526
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938,
+          0.28098967900001526
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 22.031569443000024,
+      "output_token_count": 106,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.48434135799999467
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total time is 7 hours.\n   Time already used is 3 hours.\n   So, remaining time = 7 - 3 = 4 hours",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          7,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938,
+          0.28098967900001526,
+          0.48434135799999467
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 22.12471844800001,
+      "output_token_count": 138,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.09254927699998916
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total time is 7 hours.\n   Time already used is 3 hours.\n   So, remaining time = 7 - 3 = 4 hours.\n\n3. Now, calculate how many Rosie runs in the remaining 4 hours:\n   She runs 5 miles per hour for the remaining time",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 138,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          7,
+          17,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938,
+          0.28098967900001526,
+          0.48434135799999467,
+          0.09254927699998916
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 22.213851947000023,
+      "output_token_count": 170,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.08896915000002537
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total time is 7 hours.\n   Time already used is 3 hours.\n   So, remaining time = 7 - 3 = 4 hours.\n\n3. Now, calculate how many Rosie runs in the remaining 4 hours:\n   She runs 5 miles per hour for the remaining time.\n   So, 5 miles/hour × 4 hours = 20 miles.\n\n4. Finally, add the distances together:\n  ",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 170,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          7,
+          17,
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938,
+          0.28098967900001526,
+          0.48434135799999467,
+          0.09254927699998916,
+          0.08896915000002537
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 22.67956025700005,
+      "output_token_count": 202,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.4660649669999657
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total time is 7 hours.\n   Time already used is 3 hours.\n   So, remaining time = 7 - 3 = 4 hours.\n\n3. Now, calculate how many Rosie runs in the remaining 4 hours:\n   She runs 5 miles per hour for the remaining time.\n   So, 5 miles/hour × 4 hours = 20 miles.\n\n4. Finally, add the distances together:\n   First 3 hours: 30 miles\n   Next 4 hours: 20 miles\n   Total = 30 + 20 =",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 202,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          7,
+          17,
+          6,
+          7,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938,
+          0.28098967900001526,
+          0.48434135799999467,
+          0.09254927699998916,
+          0.08896915000002537,
+          0.4660649669999657
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 22.90890015900004,
+      "output_token_count": 231,
+      "new_output_tokens": 29,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.2296311250000258
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. First, calculate how many Rosie runs in the first 3 hours:\n   She runs 10 miles per hour for 3 hours.\n   So, 10 miles/hour × 3 hours = 30 miles.\n\n2. Next, determine how much time is left after the first 3 hours:\n   Total time is 7 hours.\n   Time already used is 3 hours.\n   So, remaining time = 7 - 3 = 4 hours.\n\n3. Now, calculate how many Rosie runs in the remaining 4 hours:\n   She runs 5 miles per hour for the remaining time.\n   So, 5 miles/hour × 4 hours = 20 miles.\n\n4. Finally, add the distances together:\n   First 3 hours: 30 miles\n   Next 4 hours: 20 miles\n   Total = 30 + 20 = 50 miles.\n\nTherefore, Rosie can run 50 miles in 7 hours.\n\n#### 50",
+      "meta_info": {
+        "id": "5061ed34a1a9458e90c4513e206ea270",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 231,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          10,
+          7,
+          17,
+          6,
+          7,
+          4,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.4624300610000205,
+          0.4138330929999938,
+          0.28098967900001526,
+          0.48434135799999467,
+          0.09254927699998916,
+          0.08896915000002537,
+          0.4660649669999657,
+          0.2296311250000258
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.5235797260000368
+      }
+    }
+  ]
+}

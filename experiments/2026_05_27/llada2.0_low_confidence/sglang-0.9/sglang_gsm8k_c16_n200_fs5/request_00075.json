@@ -1,0 +1,552 @@
+{
+  "ok": true,
+  "request_index": 75,
+  "eval_index": 75,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 7.5,
+  "request_start_realtime": "2026-05-27T09:01:23.168",
+  "benchmark": {
+    "question": "Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level?",
+    "gold_solution": "Level 3 is 32 square feet because 16 x 2 = <<16*2=32>>32\nLevel 2 is 64 square feet because 32 x 2 = <<32*2=64>>64\nLevel 1 is 128 square feet because 64 x 2 = <<64*2=128>>128\nThe four levels total to 240 square feet because 128 + 64 + 32 + 16 = <<128+64+32+16=240>>240\nThe average square footage of a level is 60 because 240 / 4 = <<240/4=60>>60\n#### 60",
+    "gold_answer": "60",
+    "model_text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \nLevel 1 (bottom): twice as big as level 2 → 64 * 2 = 128 sq ft\n\nNow, list all levels:\n- Level 1: 128 sq ft\n- Level 2: 64 sq ft\n- Level 3: 32 sq ft\n- Level 4: 16 sq ft\n\nTotal square footage = 128 + 64 + 32 + 16 = 240 sq ft\n\nAverage = Total / Number of levels = 240 / 4 = 60 sq ft\n\n#### 60",
+    "predicted_answer": "60",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      12,
+      25,
+      16,
+      3,
+      9,
+      8,
+      6,
+      9,
+      11
+    ],
+    "ttfb_seconds": 0.8756420549999575,
+    "tbb_seconds": [
+      0.5851268800000184,
+      1.7086130600000047,
+      0.5096245940000017,
+      0.2766526890000023,
+      0.45809176000000207,
+      0.5976740099999915,
+      0.16135684500000025,
+      0.502830500000016,
+      0.5245003729999667
+    ],
+    "dllm_block_completion_latencies": [
+      0.8756420549999575,
+      0.5851268800000184,
+      1.7086130600000047,
+      0.5096245940000017,
+      0.2766526890000023,
+      0.45809176000000207,
+      0.5976740099999915,
+      0.16135684500000025,
+      0.502830500000016,
+      0.5245003729999667
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      12,
+      25,
+      16,
+      3,
+      9,
+      8,
+      6,
+      9,
+      11
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 14.032406158000015,
+    "first_new_token_ttfb_seconds": 14.032406158000015,
+    "block_ttfb_seconds": 14.032406158000015,
+    "tbb_seconds": [
+      0.5851869530000045,
+      1.708497422999983,
+      0.5110356669999874,
+      0.27538067199998295,
+      0.45862032000002273,
+      0.5976061389999927,
+      0.1614558549999856,
+      0.5030236770000442,
+      0.5243036509999683
+    ],
+    "block_arrival_elapsed_seconds": [
+      14.032406158000015,
+      14.61759311100002,
+      16.326090534000002,
+      16.83712620099999,
+      17.112506872999973,
+      17.571127192999995,
+      18.168733331999988,
+      18.330189186999974,
+      18.833212864000018,
+      19.357516514999986
+    ],
+    "e2e_seconds": 19.357605347999993
+  },
+  "token_metrics": {
+    "prompt_tokens": 756,
+    "completion_tokens": 280,
+    "total_tokens": 1036,
+    "end_to_end_tokens_per_second": 53.519016498961655,
+    "total_tokens_per_second": 53.519016498961655,
+    "completion_tokens_per_second": 14.464599053773421,
+    "tokens_after_first_block": 268,
+    "generated_tokens_per_second_after_first_block": 50.32675594619421
+  },
+  "final_meta_info": {
+    "id": "00767f3048ba4d6c92477a5672814fb9",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 756,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 280,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      12,
+      25,
+      16,
+      3,
+      9,
+      8,
+      6,
+      9,
+      11
+    ],
+    "dllm_block_completion_latencies": [
+      0.8756420549999575,
+      0.5851268800000184,
+      1.7086130600000047,
+      0.5096245940000017,
+      0.2766526890000023,
+      0.45809176000000207,
+      0.5976740099999915,
+      0.16135684500000025,
+      0.502830500000016,
+      0.5245003729999667
+    ],
+    "dp_rank": null,
+    "e2e_latency": 6.207400975999974
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 14.032406158000015,
+      "output_token_count": 12,
+      "new_output_tokens": 12,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.8756420549999575
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n- The sandcastle has",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 12,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872497.2012188
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 14.61759311100002,
+      "output_token_count": 44,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.5851268800000184
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 1",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 44,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 16.326090534000002,
+      "output_token_count": 76,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        1.7086130600000047
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 76,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 16.83712620099999,
+      "output_token_count": 108,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5096245940000017
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = ",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 17.112506872999973,
+      "output_token_count": 140,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.2766526890000023
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \n",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 140,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017,
+          0.2766526890000023
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 17.571127192999995,
+      "output_token_count": 172,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.45809176000000207
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \nLevel 1 (bottom): twice as big as level 2 → 64 * 2 = 128 sq ft\n\nNow, list",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 172,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16,
+          3,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017,
+          0.2766526890000023,
+          0.45809176000000207
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 18.168733331999988,
+      "output_token_count": 204,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.5976740099999915
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \nLevel 1 (bottom): twice as big as level 2 → 64 * 2 = 128 sq ft\n\nNow, list all levels:\n- Level 1: 128 sq ft\n- Level 2: 64 sq ft\n- Level 3:",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 204,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16,
+          3,
+          9,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017,
+          0.2766526890000023,
+          0.45809176000000207,
+          0.5976740099999915
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 18.330189186999974,
+      "output_token_count": 236,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.16135684500000025
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \nLevel 1 (bottom): twice as big as level 2 → 64 * 2 = 128 sq ft\n\nNow, list all levels:\n- Level 1: 128 sq ft\n- Level 2: 64 sq ft\n- Level 3: 32 sq ft\n- Level 4: 16 sq ft\n\nTotal square footage = 128 + 64 + ",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 236,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16,
+          3,
+          9,
+          8,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017,
+          0.2766526890000023,
+          0.45809176000000207,
+          0.5976740099999915,
+          0.16135684500000025
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 18.833212864000018,
+      "output_token_count": 268,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.502830500000016
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \nLevel 1 (bottom): twice as big as level 2 → 64 * 2 = 128 sq ft\n\nNow, list all levels:\n- Level 1: 128 sq ft\n- Level 2: 64 sq ft\n- Level 3: 32 sq ft\n- Level 4: 16 sq ft\n\nTotal square footage = 128 + 64 + 32 + 16 = 240 sq ft\n\nAverage = Total / Number of levels = 240 / 4 = ",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 268,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16,
+          3,
+          9,
+          8,
+          6,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017,
+          0.2766526890000023,
+          0.45809176000000207,
+          0.5976740099999915,
+          0.16135684500000025,
+          0.502830500000016
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 19.357516514999986,
+      "output_token_count": 280,
+      "new_output_tokens": 12,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.5245003729999667
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\nWe are told:\n- The sandcastle has 4 levels.\n- Each level has half the square footage of the level below it.\n- The top level (4th level) has 16 square feet.\n\nWe need to find the square footage of each level, then compute the average.\n\nLet’s work backwards:\n\nLevel 4 (top): 16 sq ft  \nLevel 3: twice as big as level 4 → 16 * 2 = 32 sq ft  \nLevel 2: twice as big as level 3 → 32 * 2 = 64 sq ft  \nLevel 1 (bottom): twice as big as level 2 → 64 * 2 = 128 sq ft\n\nNow, list all levels:\n- Level 1: 128 sq ft\n- Level 2: 64 sq ft\n- Level 3: 32 sq ft\n- Level 4: 16 sq ft\n\nTotal square footage = 128 + 64 + 32 + 16 = 240 sq ft\n\nAverage = Total / Number of levels = 240 / 4 = 60 sq ft\n\n#### 60",
+      "meta_info": {
+        "id": "00767f3048ba4d6c92477a5672814fb9",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 280,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          25,
+          16,
+          3,
+          9,
+          8,
+          6,
+          9,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.8756420549999575,
+          0.5851268800000184,
+          1.7086130600000047,
+          0.5096245940000017,
+          0.2766526890000023,
+          0.45809176000000207,
+          0.5976740099999915,
+          0.16135684500000025,
+          0.502830500000016,
+          0.5245003729999667
+        ],
+        "dp_rank": null,
+        "e2e_latency": 6.207400975999974
+      }
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 30,
+  "eval_index": 30,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Darrell and Allen's ages are in the ratio of 7:11. If their total age now is 162, calculate Allen's age 10 years from now.\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Darrell and Allen's ages are in the ratio of 7:11. If their total age now is 162, calculate Allen's age 10 years from now.\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.0,
+  "request_start_realtime": "2026-05-27T08:56:39.313",
+  "benchmark": {
+    "question": "Darrell and Allen's ages are in the ratio of 7:11. If their total age now is 162, calculate Allen's age 10 years from now.",
+    "gold_solution": "The total ratio representing their ages is 7+11= <<7+11=18>>18\nSince the fraction of the ratio that represents Allen's age is 11/18, Allen's current age is 11/18*162 = <<11/18*162=99>>99\nIf Allen is currently 99 years old, in 10 years he will be 99+10 = <<99+10=109>>109 years old\n#### 109",
+    "gold_answer": "109",
+    "model_text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7x and Allen's age = 11x.\n3. Their total age is 7x + 11x = 18x.\n4. We are told their total age is 162, so:\n   18x = 162\n   x = 162 / 18 = 9\n5. So, Allen's current age = 11x = 11 * 9 = 99 years.\n6. Allen's age 10 years from now = 99 + 10 = 109 years.\n\n#### 109",
+    "predicted_answer": "109",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      7,
+      24,
+      12,
+      17,
+      13,
+      8,
+      7
+    ],
+    "ttfb_seconds": 0.19729282200000853,
+    "tbb_seconds": [
+      0.1603774199999748,
+      0.08026546600001438,
+      0.11319292499999278,
+      0.08682532000000265,
+      0.05278530000001069,
+      0.04059750700000109
+    ],
+    "dllm_block_completion_latencies": [
+      0.19729282200000853,
+      0.1603774199999748,
+      0.08026546600001438,
+      0.11319292499999278,
+      0.08682532000000265,
+      0.05278530000001069,
+      0.04059750700000109
+    ],
+    "dllm_forward_counts_per_block": [
+      7,
+      24,
+      12,
+      17,
+      13,
+      8,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 19.664590018,
+    "first_new_token_ttfb_seconds": 19.664590018,
+    "block_ttfb_seconds": 19.664590018,
+    "tbb_seconds": [
+      0.1603590709999878,
+      0.08044475400001261,
+      0.11322820899999897,
+      0.08657410500001106,
+      0.052897086000001536,
+      0.039131026999996266
+    ],
+    "block_arrival_elapsed_seconds": [
+      19.664590018,
+      19.824949088999986,
+      19.905393843,
+      20.018622051999998,
+      20.10519615700001,
+      20.15809324300001,
+      20.197224270000007
+    ],
+    "e2e_seconds": 20.19730536499999
+  },
+  "token_metrics": {
+    "prompt_tokens": 729,
+    "completion_tokens": 177,
+    "total_tokens": 906,
+    "end_to_end_tokens_per_second": 44.85746903495413,
+    "total_tokens_per_second": 44.85746903495413,
+    "completion_tokens_per_second": 8.763545275040707,
+    "tokens_after_first_block": 170,
+    "generated_tokens_per_second_after_first_block": 319.11977185820086
+  },
+  "final_meta_info": {
+    "id": "9b4e8345c32e40c58c120352e9b7c646",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 729,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 177,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      7,
+      24,
+      12,
+      17,
+      13,
+      8,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.19729282200000853,
+      0.1603774199999748,
+      0.08026546600001438,
+      0.11319292499999278,
+      0.08682532000000265,
+      0.05278530000001069,
+      0.04059750700000109
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7402559310000072
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 19.664590018,
+      "output_token_count": 7,
+      "new_output_tokens": 7,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.19729282200000853
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. The ratio of",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 7,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872218.977775
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 19.824949088999986,
+      "output_token_count": 39,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.1603774199999748
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 39,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853,
+          0.1603774199999748
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 19.905393843,
+      "output_token_count": 71,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.08026546600001438
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7x and Allen's age = 11x.\n3. Their total age is 7x + 11x = 18x.",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 71,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          24,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853,
+          0.1603774199999748,
+          0.08026546600001438
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 20.018622051999998,
+      "output_token_count": 103,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.11319292499999278
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7x and Allen's age = 11x.\n3. Their total age is 7x + 11x = 18x.\n4. We are told their total age is 162, so:\n   18x = 162\n   x =",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 103,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          24,
+          12,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853,
+          0.1603774199999748,
+          0.08026546600001438,
+          0.11319292499999278
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 20.10519615700001,
+      "output_token_count": 135,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.08682532000000265
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7x and Allen's age = 11x.\n3. Their total age is 7x + 11x = 18x.\n4. We are told their total age is 162, so:\n   18x = 162\n   x = 162 / 18 = 9\n5. So, Allen's current age = 11x = 11 * 9",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 135,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          24,
+          12,
+          17,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853,
+          0.1603774199999748,
+          0.08026546600001438,
+          0.11319292499999278,
+          0.08682532000000265
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 20.15809324300001,
+      "output_token_count": 167,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.05278530000001069
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7x and Allen's age = 11x.\n3. Their total age is 7x + 11x = 18x.\n4. We are told their total age is 162, so:\n   18x = 162\n   x = 162 / 18 = 9\n5. So, Allen's current age = 11x = 11 * 9 = 99 years.\n6. Allen's age 10 years from now = 99 + 10 = 109 years",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 167,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          24,
+          12,
+          17,
+          13,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853,
+          0.1603774199999748,
+          0.08026546600001438,
+          0.11319292499999278,
+          0.08682532000000265,
+          0.05278530000001069
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 20.197224270000007,
+      "output_token_count": 177,
+      "new_output_tokens": 10,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.04059750700000109
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. The ratio of Darrell to Allen's ages is 7:11.\n2. Let the common multiple be x. So, Darrell's age = 7x and Allen's age = 11x.\n3. Their total age is 7x + 11x = 18x.\n4. We are told their total age is 162, so:\n   18x = 162\n   x = 162 / 18 = 9\n5. So, Allen's current age = 11x = 11 * 9 = 99 years.\n6. Allen's age 10 years from now = 99 + 10 = 109 years.\n\n#### 109",
+      "meta_info": {
+        "id": "9b4e8345c32e40c58c120352e9b7c646",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 177,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          24,
+          12,
+          17,
+          13,
+          8,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.19729282200000853,
+          0.1603774199999748,
+          0.08026546600001438,
+          0.11319292499999278,
+          0.08682532000000265,
+          0.05278530000001069,
+          0.04059750700000109
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7402559310000072
+      }
+    }
+  ]
+}

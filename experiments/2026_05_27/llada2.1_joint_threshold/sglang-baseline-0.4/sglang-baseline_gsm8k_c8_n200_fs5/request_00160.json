@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 160,
+  "eval_index": 160,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is two thirds of what it was on Tuesday. What is the tank’s water depth on Wednesday?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is two thirds of what it was on Tuesday. What is the tank’s water depth on Wednesday?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.0,
+  "request_start_realtime": "2026-05-27T09:39:23.950",
+  "benchmark": {
+    "question": "A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is two thirds of what it was on Tuesday. What is the tank’s water depth on Wednesday?",
+    "gold_solution": "On Tuesday there was 17+7 = <<17+7=24>>24 feet of water in the tank.\n24/3 = 8. On Wednesday there was 2*8 = 16 feet of water in the tank.\n#### 16",
+    "gold_answer": "16",
+    "model_text": "\n\n1. On Monday, the tank has a depth of 17 feet.\n2. On Tuesday, the tank has 7 feet more than on Monday.\n   - So, depth on Tuesday = 17 + 7 = 24 feet.\n3. On Wednesday, the depth is two-thirds of what it was on Tuesday.\n   - So, depth on Wednesday = (2/3) × 24 = 48/3 = 16 feet.\n\nTherefore, the tank’s water depth on Wednesday is 16 feet.\n\n#### 16",
+    "predicted_answer": "16",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      12,
+      9,
+      11,
+      10
+    ],
+    "ttfb_seconds": 0.3283604850000188,
+    "tbb_seconds": [
+      0.12317181299999902,
+      0.31046092700000827,
+      0.14210011699998404,
+      0.12619066000002022
+    ],
+    "dllm_block_completion_latencies": [
+      0.3283604850000188,
+      0.12317181299999902,
+      0.31046092700000827,
+      0.14210011699998404,
+      0.12619066000002022
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      12,
+      9,
+      11,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 22.80409664000001,
+    "first_new_token_ttfb_seconds": 22.80409664000001,
+    "block_ttfb_seconds": 22.80409664000001,
+    "tbb_seconds": [
+      0.11690913199998931,
+      0.3112126159999775,
+      0.14187810900000386,
+      0.1262383110000087
+    ],
+    "block_arrival_elapsed_seconds": [
+      22.80409664000001,
+      22.921005772,
+      23.23221838799998,
+      23.374096496999982,
+      23.50033480799999
+    ],
+    "e2e_seconds": 23.500533716999996
+  },
+  "token_metrics": {
+    "prompt_tokens": 745,
+    "completion_tokens": 129,
+    "total_tokens": 874,
+    "end_to_end_tokens_per_second": 37.19064471151815,
+    "total_tokens_per_second": 37.19064471151815,
+    "completion_tokens_per_second": 5.489237034079911,
+    "tokens_after_first_block": 106,
+    "generated_tokens_per_second_after_first_block": 152.20326932709006
+  },
+  "final_meta_info": {
+    "id": "cbd3b2befa534984b274927d63f7584c",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 745,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 129,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      12,
+      9,
+      11,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.3283604850000188,
+      0.12317181299999902,
+      0.31046092700000827,
+      0.14210011699998404,
+      0.12619066000002022
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.2025081300000124
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 22.80409664000001,
+      "output_token_count": 23,
+      "new_output_tokens": 23,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.3283604850000188
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. On Monday, the tank has a depth of 17 feet.\n2. On Tuesday",
+      "meta_info": {
+        "id": "cbd3b2befa534984b274927d63f7584c",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 23,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.3283604850000188
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874786.7484536
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 22.921005772,
+      "output_token_count": 55,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.12317181299999902
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. On Monday, the tank has a depth of 17 feet.\n2. On Tuesday, the tank has 7 feet more than on Monday.\n   - So, depth on Tuesday = 17 + 7 = 24 feet",
+      "meta_info": {
+        "id": "cbd3b2befa534984b274927d63f7584c",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 55,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.3283604850000188,
+          0.12317181299999902
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 23.23221838799998,
+      "output_token_count": 87,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.31046092700000827
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. On Monday, the tank has a depth of 17 feet.\n2. On Tuesday, the tank has 7 feet more than on Monday.\n   - So, depth on Tuesday = 17 + 7 = 24 feet.\n3. On Wednesday, the depth is two-thirds of what it was on Tuesday.\n   - So, depth on Wednesday = (2/3",
+      "meta_info": {
+        "id": "cbd3b2befa534984b274927d63f7584c",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 87,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.3283604850000188,
+          0.12317181299999902,
+          0.31046092700000827
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 23.374096496999982,
+      "output_token_count": 119,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.14210011699998404
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. On Monday, the tank has a depth of 17 feet.\n2. On Tuesday, the tank has 7 feet more than on Monday.\n   - So, depth on Tuesday = 17 + 7 = 24 feet.\n3. On Wednesday, the depth is two-thirds of what it was on Tuesday.\n   - So, depth on Wednesday = (2/3) × 24 = 48/3 = 16 feet.\n\nTherefore, the tank’s water depth on Wednesday is 16",
+      "meta_info": {
+        "id": "cbd3b2befa534984b274927d63f7584c",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 119,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          9,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.3283604850000188,
+          0.12317181299999902,
+          0.31046092700000827,
+          0.14210011699998404
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 23.50033480799999,
+      "output_token_count": 129,
+      "new_output_tokens": 10,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.12619066000002022
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. On Monday, the tank has a depth of 17 feet.\n2. On Tuesday, the tank has 7 feet more than on Monday.\n   - So, depth on Tuesday = 17 + 7 = 24 feet.\n3. On Wednesday, the depth is two-thirds of what it was on Tuesday.\n   - So, depth on Wednesday = (2/3) × 24 = 48/3 = 16 feet.\n\nTherefore, the tank’s water depth on Wednesday is 16 feet.\n\n#### 16",
+      "meta_info": {
+        "id": "cbd3b2befa534984b274927d63f7584c",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 129,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          12,
+          9,
+          11,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.3283604850000188,
+          0.12317181299999902,
+          0.31046092700000827,
+          0.14210011699998404,
+          0.12619066000002022
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.2025081300000124
+      }
+    }
+  ]
+}

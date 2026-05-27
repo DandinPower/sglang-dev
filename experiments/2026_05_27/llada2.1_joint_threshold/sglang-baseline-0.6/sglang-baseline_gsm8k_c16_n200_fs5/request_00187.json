@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 187,
+  "eval_index": 187,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Mandy owes Benedict $100. They agreed to have monthly interest of 2%. If Mandy was able to pay it after 3 months, how much should she give to Benedict?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Mandy owes Benedict $100. They agreed to have monthly interest of 2%. If Mandy was able to pay it after 3 months, how much should she give to Benedict?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.7,
+  "request_start_realtime": "2026-05-27T09:36:58.492",
+  "benchmark": {
+    "question": "Mandy owes Benedict $100. They agreed to have monthly interest of 2%. If Mandy was able to pay it after 3 months, how much should she give to Benedict?",
+    "gold_solution": "The monthly interest is $100 x 2/100 = $<<100*2/100=2>>2.\nAfter 3 months, the total interest amount to $2 x 3 = $<<2*3=6>>6.\nTherefore, Mandy should give Benedict a total of $100 + $6 = $<<100+6=106>>106.\n#### 106",
+    "gold_answer": "106",
+    "model_text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is 2% of ($100 + $2 + $2.04) = 2% of $104.04 = (2/100)*104.04 = $2.0808.\n\nSo, the total amount after 3 months is $100 + $2 + $2.04 + $2.0808 = $106.1208.\n\nTherefore, Mandy should give Benedict $106.12 (rounded to the nearest cent).\n\n#### 106.12",
+    "predicted_answer": "106.12",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      27,
+      14,
+      17,
+      15,
+      22,
+      38,
+      25,
+      11,
+      17
+    ],
+    "ttfb_seconds": 0.6858611689999634,
+    "tbb_seconds": [
+      0.2514309310000158,
+      0.5792220959999668,
+      0.2806420390000426,
+      0.5638661059999777,
+      0.6653300840000043,
+      0.7150678400000174,
+      0.21160736600000973,
+      0.2868348789999686
+    ],
+    "dllm_block_completion_latencies": [
+      0.6858611689999634,
+      0.2514309310000158,
+      0.5792220959999668,
+      0.2806420390000426,
+      0.5638661059999777,
+      0.6653300840000043,
+      0.7150678400000174,
+      0.21160736600000973,
+      0.2868348789999686
+    ],
+    "dllm_forward_counts_per_block": [
+      27,
+      14,
+      17,
+      15,
+      22,
+      38,
+      25,
+      11,
+      17
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 19.96289106200004,
+    "first_new_token_ttfb_seconds": 19.96289106200004,
+    "block_ttfb_seconds": 19.96289106200004,
+    "tbb_seconds": [
+      0.24101495700000442,
+      0.5822037969999769,
+      0.27839862999996967,
+      0.5632492580000417,
+      0.668108454999981,
+      0.7123663799999918,
+      0.21557520400000385,
+      0.28535151300002326
+    ],
+    "block_arrival_elapsed_seconds": [
+      19.96289106200004,
+      20.203906019000044,
+      20.78610981600002,
+      21.06450844599999,
+      21.627757704000032,
+      22.295866159000013,
+      23.008232539000005,
+      23.22380774300001,
+      23.509159256000032
+    ],
+    "e2e_seconds": 23.509241504000045
+  },
+  "token_metrics": {
+    "prompt_tokens": 728,
+    "completion_tokens": 235,
+    "total_tokens": 963,
+    "end_to_end_tokens_per_second": 40.96261463119291,
+    "total_tokens_per_second": 40.96261463119291,
+    "completion_tokens_per_second": 9.996068990997234,
+    "tokens_after_first_block": 227,
+    "generated_tokens_per_second_after_first_block": 64.00946655231871
+  },
+  "final_meta_info": {
+    "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 728,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 235,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      27,
+      14,
+      17,
+      15,
+      22,
+      38,
+      25,
+      11,
+      17
+    ],
+    "dllm_block_completion_latencies": [
+      0.6858611689999634,
+      0.2514309310000158,
+      0.5792220959999668,
+      0.2806420390000426,
+      0.5638661059999777,
+      0.6653300840000043,
+      0.7150678400000174,
+      0.21160736600000973,
+      0.2868348789999686
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.7540503160000185
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 19.96289106200004,
+      "output_token_count": 8,
+      "new_output_tokens": 8,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.6858611689999634
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nMandy initially owes $1",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 8,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874638.4468744
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 20.203906019000044,
+      "output_token_count": 40,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2514309310000158
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $10",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 40,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 20.78610981600002,
+      "output_token_count": 72,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5792220959999668
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($1",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 72,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 21.06450844599999,
+      "output_token_count": 104,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2806420390000426
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 104,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668,
+          0.2806420390000426
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 21.627757704000032,
+      "output_token_count": 136,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5638661059999777
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is 2% of ($100 + $2 + $2.04) = 2% of $104.04 = (",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 136,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17,
+          15,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668,
+          0.2806420390000426,
+          0.5638661059999777
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 22.295866159000013,
+      "output_token_count": 168,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.6653300840000043
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is 2% of ($100 + $2 + $2.04) = 2% of $104.04 = (2/100)*104.04 = $2.0808.\n\nSo, the total amount after 3 months",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 168,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17,
+          15,
+          22,
+          38
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668,
+          0.2806420390000426,
+          0.5638661059999777,
+          0.6653300840000043
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 23.008232539000005,
+      "output_token_count": 200,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.7150678400000174
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is 2% of ($100 + $2 + $2.04) = 2% of $104.04 = (2/100)*104.04 = $2.0808.\n\nSo, the total amount after 3 months is $100 + $2 + $2.04 + $2.0808 = $106.1208",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 200,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17,
+          15,
+          22,
+          38,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668,
+          0.2806420390000426,
+          0.5638661059999777,
+          0.6653300840000043,
+          0.7150678400000174
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 23.22380774300001,
+      "output_token_count": 232,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.21160736600000973
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is 2% of ($100 + $2 + $2.04) = 2% of $104.04 = (2/100)*104.04 = $2.0808.\n\nSo, the total amount after 3 months is $100 + $2 + $2.04 + $2.0808 = $106.1208.\n\nTherefore, Mandy should give Benedict $106.12 (rounded to the nearest cent).\n\n#### 106.1",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": null,
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 232,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17,
+          15,
+          22,
+          38,
+          25,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668,
+          0.2806420390000426,
+          0.5638661059999777,
+          0.6653300840000043,
+          0.7150678400000174,
+          0.21160736600000973
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 23.509159256000032,
+      "output_token_count": 235,
+      "new_output_tokens": 3,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.2868348789999686
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\nMandy initially owes $100.\n\nThe agreed interest is 2% per month.\n\nAfter 1 month, the interest is 2% of $100 = (2/100)*100 = $2.\n\nAfter 2 months, the interest is 2% of ($100 + $2) = 2% of $102 = $2.04.\n\nAfter 3 months, the interest is 2% of ($100 + $2 + $2.04) = 2% of $104.04 = (2/100)*104.04 = $2.0808.\n\nSo, the total amount after 3 months is $100 + $2 + $2.04 + $2.0808 = $106.1208.\n\nTherefore, Mandy should give Benedict $106.12 (rounded to the nearest cent).\n\n#### 106.12",
+      "meta_info": {
+        "id": "dea9517c633c47a59075e4cb2b7cf3cb",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 728,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 235,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          27,
+          14,
+          17,
+          15,
+          22,
+          38,
+          25,
+          11,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.6858611689999634,
+          0.2514309310000158,
+          0.5792220959999668,
+          0.2806420390000426,
+          0.5638661059999777,
+          0.6653300840000043,
+          0.7150678400000174,
+          0.21160736600000973,
+          0.2868348789999686
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.7540503160000185
+      }
+    }
+  ]
+}

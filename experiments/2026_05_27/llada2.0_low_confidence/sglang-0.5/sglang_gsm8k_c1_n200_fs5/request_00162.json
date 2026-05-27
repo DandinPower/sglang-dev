@@ -1,0 +1,610 @@
+{
+  "ok": true,
+  "request_index": 162,
+  "eval_index": 162,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.2,
+  "request_start_realtime": "2026-05-27T10:00:17.617",
+  "benchmark": {
+    "question": "If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months?",
+    "gold_solution": "When the price of the bag of marble increase by 20%, the price increases by 20/100*20 = $<<20/100*20=4>>4\nIf the price increases after every two months, in 36 months, it will increase 36/2 = <<36/2=18>>18 times.\nIf each increase is $4, the total amount the price of the bag of marbles will have increased by after 36 months is 18*$4 = $<<18*4=72>>72\nAfter the total increase of the price of the bag of marbles after 36 months, the total cost will be $20+$72 = $<<20+72=92>>92\n#### 92",
+    "gold_answer": "92",
+    "model_text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 + $72 = $92, not $9.\n\nLet me correct that:\n\nFinal price = $20 + $72 = $92.\n\nBut let's double-check:\n\n- Original price: $20\n- Increase per 2 months: $4\n- Number of increases2-month periods in 36 months: 38 / 2 = 18\n- Total increase: 18 * $4 = $72\n- Final price: $20 + $72 = $92\n\nYes, that's correct.\n\n#### 92",
+    "predicted_answer": "92",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      5,
+      6,
+      7,
+      7,
+      6,
+      11,
+      10,
+      14,
+      8,
+      5,
+      3
+    ],
+    "ttfb_seconds": 0.1867326050000031,
+    "tbb_seconds": [
+      0.04103646500001901,
+      0.04727470000000267,
+      0.04735926099999688,
+      0.03986569899998926,
+      0.08010409299998855,
+      0.06828505200002155,
+      0.09698618400000214,
+      0.053009197999983826,
+      0.0354468259999976,
+      0.017178545999996686
+    ],
+    "dllm_block_completion_latencies": [
+      0.1867326050000031,
+      0.04103646500001901,
+      0.04727470000000267,
+      0.04735926099999688,
+      0.03986569899998926,
+      0.08010409299998855,
+      0.06828505200002155,
+      0.09698618400000214,
+      0.053009197999983826,
+      0.0354468259999976,
+      0.017178545999996686
+    ],
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      7,
+      7,
+      6,
+      11,
+      10,
+      14,
+      8,
+      5,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 91.402925864,
+    "first_new_token_ttfb_seconds": 91.402925864,
+    "block_ttfb_seconds": 91.402925864,
+    "tbb_seconds": [
+      0.04123422999998638,
+      0.0473665050000136,
+      0.04727732300000298,
+      0.039749323999984654,
+      0.08035558700001388,
+      0.0681641529999979,
+      0.09668977999999129,
+      0.05334911599999259,
+      0.03544416100001513,
+      0.017384623999987525
+    ],
+    "block_arrival_elapsed_seconds": [
+      91.402925864,
+      91.44416009399998,
+      91.491526599,
+      91.538803922,
+      91.57855324599998,
+      91.658908833,
+      91.727072986,
+      91.82376276599999,
+      91.87711188199998,
+      91.912556043,
+      91.92994066699998
+    ],
+    "e2e_seconds": 91.93005559599999
+  },
+  "token_metrics": {
+    "prompt_tokens": 730,
+    "completion_tokens": 300,
+    "total_tokens": 1030,
+    "end_to_end_tokens_per_second": 11.204170315380695,
+    "total_tokens_per_second": 11.204170315380695,
+    "completion_tokens_per_second": 3.263350577295348,
+    "tokens_after_first_block": 294,
+    "generated_tokens_per_second_after_first_block": 557.7374641428964
+  },
+  "final_meta_info": {
+    "id": "335f1f264e03454295852ad9795eb6a3",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 730,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 300,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      5,
+      6,
+      7,
+      7,
+      6,
+      11,
+      10,
+      14,
+      8,
+      5,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.1867326050000031,
+      0.04103646500001901,
+      0.04727470000000267,
+      0.04735926099999688,
+      0.03986569899998926,
+      0.08010409299998855,
+      0.06828505200002155,
+      0.09698618400000214,
+      0.053009197999983826,
+      0.0354468259999976,
+      0.017178545999996686
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.7171888809999984
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 91.402925864,
+      "output_token_count": 6,
+      "new_output_tokens": 6,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.1867326050000031
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. The original",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 6,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876109.0199258
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 91.44416009399998,
+      "output_token_count": 38,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.04103646500001901
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   -",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 38,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 91.491526599,
+      "output_token_count": 70,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.04727470000000267
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 70,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 91.538803922,
+      "output_token_count": 102,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.04735926099999688
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 102,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 91.57855324599998,
+      "output_token_count": 134,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.03986569899998926
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 134,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 91.658908833,
+      "output_token_count": 166,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.08010409299998855
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 +",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 166,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926,
+          0.08010409299998855
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 91.727072986,
+      "output_token_count": 198,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.06828505200002155
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 + $72 = $92, not $9.\n\nLet me correct that:\n\nFinal price = $20 + $72 =",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 198,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6,
+          11,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926,
+          0.08010409299998855,
+          0.06828505200002155
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 91.82376276599999,
+      "output_token_count": 230,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.09698618400000214
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 + $72 = $92, not $9.\n\nLet me correct that:\n\nFinal price = $20 + $72 = $92.\n\nBut let's double-check:\n\n- Original price: $20\n- Increase per 2 months: $4\n",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 230,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6,
+          11,
+          10,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926,
+          0.08010409299998855,
+          0.06828505200002155,
+          0.09698618400000214
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 91.87711188199998,
+      "output_token_count": 262,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.053009197999983826
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 + $72 = $92, not $9.\n\nLet me correct that:\n\nFinal price = $20 + $72 = $92.\n\nBut let's double-check:\n\n- Original price: $20\n- Increase per 2 months: $4\n- Number of increases2-month periods in 36 months: 38 / 2 = 18\n- Total increase: 18 *",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 262,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6,
+          11,
+          10,
+          14,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926,
+          0.08010409299998855,
+          0.06828505200002155,
+          0.09698618400000214,
+          0.053009197999983826
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 91.912556043,
+      "output_token_count": 294,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.0354468259999976
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 + $72 = $92, not $9.\n\nLet me correct that:\n\nFinal price = $20 + $72 = $92.\n\nBut let's double-check:\n\n- Original price: $20\n- Increase per 2 months: $4\n- Number of increases2-month periods in 36 months: 38 / 2 = 18\n- Total increase: 18 * $4 = $72\n- Final price: $20 + $72 = $92\n\nYes, that's correct.\n\n",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": null,
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 294,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6,
+          11,
+          10,
+          14,
+          8,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926,
+          0.08010409299998855,
+          0.06828505200002155,
+          0.09698618400000214,
+          0.053009197999983826,
+          0.0354468259999976
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 91.92994066699998,
+      "output_token_count": 300,
+      "new_output_tokens": 6,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.017178545999996686
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. The original price of the bag0 is $20.\n2. The price increases by 20% of the original price every two months.\n   - 20% of $20 = 0.20 * 20 = $4.\n   - So, every two months, the price increases by $4.\n3. Number of two-month periods in 36 months: 36 / 2 = 18 periods.\n4. Total increase after 36 periods: 18 * $4 = $72.\n5. Final price after 36 months: Original2 + Total = = $20 + $72 = $9.\n\nWait, that can't be right — $20 + $72 = $92, not $9.\n\nLet me correct that:\n\nFinal price = $20 + $72 = $92.\n\nBut let's double-check:\n\n- Original price: $20\n- Increase per 2 months: $4\n- Number of increases2-month periods in 36 months: 38 / 2 = 18\n- Total increase: 18 * $4 = $72\n- Final price: $20 + $72 = $92\n\nYes, that's correct.\n\n#### 92",
+      "meta_info": {
+        "id": "335f1f264e03454295852ad9795eb6a3",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 730,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 300,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          5,
+          6,
+          7,
+          7,
+          6,
+          11,
+          10,
+          14,
+          8,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.1867326050000031,
+          0.04103646500001901,
+          0.04727470000000267,
+          0.04735926099999688,
+          0.03986569899998926,
+          0.08010409299998855,
+          0.06828505200002155,
+          0.09698618400000214,
+          0.053009197999983826,
+          0.0354468259999976,
+          0.017178545999996686
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.7171888809999984
+      }
+    }
+  ]
+}

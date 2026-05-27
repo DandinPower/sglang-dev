@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 104,
+  "eval_index": 104,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Poppy is solving a 1000-piece jigsaw puzzle. She places a quarter of the pieces on the board, then her mom places a third of the remaining pieces. How many jigsaw pieces are left to be placed?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Poppy is solving a 1000-piece jigsaw puzzle. She places a quarter of the pieces on the board, then her mom places a third of the remaining pieces. How many jigsaw pieces are left to be placed?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 10.4,
+  "request_start_realtime": "2026-05-27T10:02:19.660",
+  "benchmark": {
+    "question": "Poppy is solving a 1000-piece jigsaw puzzle. She places a quarter of the pieces on the board, then her mom places a third of the remaining pieces. How many jigsaw pieces are left to be placed?",
+    "gold_solution": "Poppy has placed 1000 pieces / 4 = <<1000/4=250>>250 pieces.\nThis means there are 1000 – 250 = <<1000-250=750>>750 pieces remaining.\nHer mom therefore places 750 / 3 = <<750/3=250>>250 pieces.\nThis leaves a total of 750 – 250 = <<750-250=500>>500 jigsaw pieces left to be placed.\n#### 500",
+    "gold_answer": "500",
+    "model_text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 750 pieces:  \n750 * ¾ = << <<750/3=250>>250 pieces.\n\nSo her mom places 250 pieces.\n\nNow, total pieces placed: 250 (Popp) + 250 (mom) = <<500>>.\n\nBut we need to calculate how many are left.\n\nAfter Poppy: 750 left.\n\nAfter mom: 750 - (750 / ) = 750 - 250 = <<500>>500 pieces left.\n\n#### 500",
+    "predicted_answer": "500",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      8,
+      6,
+      5,
+      9,
+      16,
+      6,
+      7
+    ],
+    "ttfb_seconds": 0.4929254300000139,
+    "tbb_seconds": [
+      0.5055013719999693,
+      0.2809797479999929,
+      0.09641535100001875,
+      0.34328315200002635,
+      0.771356652999998,
+      0.1225784139999746,
+      0.2982663100000309
+    ],
+    "dllm_block_completion_latencies": [
+      0.4929254300000139,
+      0.5055013719999693,
+      0.2809797479999929,
+      0.09641535100001875,
+      0.34328315200002635,
+      0.771356652999998,
+      0.1225784139999746,
+      0.2982663100000309
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      6,
+      5,
+      9,
+      16,
+      6,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 25.397188102999962,
+    "first_new_token_ttfb_seconds": 25.397188102999962,
+    "block_ttfb_seconds": 25.397188102999962,
+    "tbb_seconds": [
+      0.5053180760000373,
+      0.28062850899999603,
+      0.09720867299995462,
+      0.34263961100003826,
+      0.7722573979999652,
+      0.12192575000000261,
+      0.29866872200000216
+    ],
+    "block_arrival_elapsed_seconds": [
+      25.397188102999962,
+      25.902506179,
+      26.183134687999996,
+      26.28034336099995,
+      26.62298297199999,
+      27.395240369999954,
+      27.517166119999956,
+      27.81583484199996
+    ],
+    "e2e_seconds": 27.815936015999966
+  },
+  "token_metrics": {
+    "prompt_tokens": 738,
+    "completion_tokens": 238,
+    "total_tokens": 976,
+    "end_to_end_tokens_per_second": 35.08780000926794,
+    "total_tokens_per_second": 35.08780000926794,
+    "completion_tokens_per_second": 8.55624631373542,
+    "tokens_after_first_block": 208,
+    "generated_tokens_per_second_after_first_block": 85.99490624139285
+  },
+  "final_meta_info": {
+    "id": "4186218905fc4282be9ffe0fa384e3cf",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 738,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 238,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      6,
+      5,
+      9,
+      16,
+      6,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.4929254300000139,
+      0.5055013719999693,
+      0.2809797479999929,
+      0.09641535100001875,
+      0.34328315200002635,
+      0.771356652999998,
+      0.1225784139999746,
+      0.2982663100000309
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.9237006019999967
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 25.397188102999962,
+      "output_token_count": 30,
+      "new_output_tokens": 30,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4929254300000139
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<10",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 30,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876165.057304
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 25.902506179,
+      "output_token_count": 62,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.5055013719999693
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 =",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 62,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 26.183134687999996,
+      "output_token_count": 94,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2809797479999929
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 75",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 94,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693,
+          0.2809797479999929
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 26.28034336099995,
+      "output_token_count": 126,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.09641535100001875
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 750 pieces:  \n750 * ¾ = << <<750/3=250>>250 pieces.\n\nSo",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 126,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693,
+          0.2809797479999929,
+          0.09641535100001875
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 26.62298297199999,
+      "output_token_count": 158,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.34328315200002635
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 750 pieces:  \n750 * ¾ = << <<750/3=250>>250 pieces.\n\nSo her mom places 250 pieces.\n\nNow, total pieces placed: 250 (Popp) + 250 (mom",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 158,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          6,
+          5,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693,
+          0.2809797479999929,
+          0.09641535100001875,
+          0.34328315200002635
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 27.395240369999954,
+      "output_token_count": 190,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.771356652999998
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 750 pieces:  \n750 * ¾ = << <<750/3=250>>250 pieces.\n\nSo her mom places 250 pieces.\n\nNow, total pieces placed: 250 (Popp) + 250 (mom) = <<500>>.\n\nBut we need to calculate how many are left.\n\nAfter Poppy: 750 left.",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 190,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          6,
+          5,
+          9,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693,
+          0.2809797479999929,
+          0.09641535100001875,
+          0.34328315200002635,
+          0.771356652999998
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 27.517166119999956,
+      "output_token_count": 222,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.1225784139999746
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 750 pieces:  \n750 * ¾ = << <<750/3=250>>250 pieces.\n\nSo her mom places 250 pieces.\n\nNow, total pieces placed: 250 (Popp) + 250 (mom) = <<500>>.\n\nBut we need to calculate how many are left.\n\nAfter Poppy: 750 left.\n\nAfter mom: 750 - (750 / ) = 750 - 250 = <<500",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": null,
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 222,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          6,
+          5,
+          9,
+          16,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693,
+          0.2809797479999929,
+          0.09641535100001875,
+          0.34328315200002635,
+          0.771356652999998,
+          0.1225784139999746
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 27.81583484199996,
+      "output_token_count": 238,
+      "new_output_tokens": 16,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.2982663100000309
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nP Poppy places a quarter of the 1000 pieces:  \n1000 * ¼ = <<1000*1=250>>250 pieces.\n\nRemaining after Poppy, 1000 - 250 = <<1000-250=750>>750 pieces.\n\nHer mom places a third of these remaining 750 pieces:  \n750 * ¾ = << <<750/3=250>>250 pieces.\n\nSo her mom places 250 pieces.\n\nNow, total pieces placed: 250 (Popp) + 250 (mom) = <<500>>.\n\nBut we need to calculate how many are left.\n\nAfter Poppy: 750 left.\n\nAfter mom: 750 - (750 / ) = 750 - 250 = <<500>>500 pieces left.\n\n#### 500",
+      "meta_info": {
+        "id": "4186218905fc4282be9ffe0fa384e3cf",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 738,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 238,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          6,
+          5,
+          9,
+          16,
+          6,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.4929254300000139,
+          0.5055013719999693,
+          0.2809797479999929,
+          0.09641535100001875,
+          0.34328315200002635,
+          0.771356652999998,
+          0.1225784139999746,
+          0.2982663100000309
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.9237006019999967
+      }
+    }
+  ]
+}

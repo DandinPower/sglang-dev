@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 93,
+  "eval_index": 93,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Lee used to be able to run the 400-meter hurdles two seconds faster than Gerald would run the 400-meter hurdles.  But Gerald changed his diet, which improved his speed by 10%.  If Lee runs the 400-meter hurdles in 38 seconds, how fast can Gerald, with his improved diet, run the 400-meter hurdles, in seconds?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Lee used to be able to run the 400-meter hurdles two seconds faster than Gerald would run the 400-meter hurdles.  But Gerald changed his diet, which improved his speed by 10%.  If Lee runs the 400-meter hurdles in 38 seconds, how fast can Gerald, with his improved diet, run the 400-meter hurdles, in seconds?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 9.3,
+  "request_start_realtime": "2026-05-27T09:35:54.043",
+  "benchmark": {
+    "question": "Lee used to be able to run the 400-meter hurdles two seconds faster than Gerald would run the 400-meter hurdles.  But Gerald changed his diet, which improved his speed by 10%.  If Lee runs the 400-meter hurdles in 38 seconds, how fast can Gerald, with his improved diet, run the 400-meter hurdles, in seconds?",
+    "gold_solution": "If Lee runs the 400-meter hurdles in 38 seconds, which was two seconds faster than Gerald used to run the 400-meter hurdles, then Gerald initially would run the 400-meter hurdles in 38+2=<<38+2=40>>40 seconds.\n10% of 40 seconds is 40*0.1=<<40*0.1=4>>4 seconds.\nThe improved diet reduced Gerald's race time to 40-4=<<40-4=36>>36 seconds.\n#### 36",
+    "gold_answer": "36",
+    "model_text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + 2 seconds = 40 seconds.\n\nThat means originally, Gerald took 40 seconds to run the 400-meter hurdles.\n\nNow, Gerald improved his speed by 10%. A 10% improvement in speed means he now takes 10% less time.\n\nSo, Gerald's new time is:\n90% of his original time = 0.90 × 40 = 36 seconds.\n\nTherefore, with his improved diet, Gerald can run the 400-meter hurdles in 36 seconds.\n\nAnswer: 36",
+    "predicted_answer": "36",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      19,
+      11,
+      14,
+      11,
+      16,
+      18
+    ],
+    "ttfb_seconds": 0.2858931769999913,
+    "tbb_seconds": [
+      0.23276357700001427,
+      0.2938496890000124,
+      0.15770307399998273,
+      0.39422481100001505,
+      0.203673407999986,
+      0.3869869950000293
+    ],
+    "dllm_block_completion_latencies": [
+      0.2858931769999913,
+      0.23276357700001427,
+      0.2938496890000124,
+      0.15770307399998273,
+      0.39422481100001505,
+      0.203673407999986,
+      0.3869869950000293
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      19,
+      11,
+      14,
+      11,
+      16,
+      18
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 15.139269060000004,
+    "first_new_token_ttfb_seconds": 15.139269060000004,
+    "block_ttfb_seconds": 15.139269060000004,
+    "tbb_seconds": [
+      0.23024705900002118,
+      0.3023461389999511,
+      0.1535186580000527,
+      0.3931145979999542,
+      0.20076003600001968,
+      0.3897227960000009
+    ],
+    "block_arrival_elapsed_seconds": [
+      15.139269060000004,
+      15.369516119000025,
+      15.671862257999976,
+      15.825380916000029,
+      16.218495513999983,
+      16.419255550000003,
+      16.808978346000004
+    ],
+    "e2e_seconds": 16.80905382000003
+  },
+  "token_metrics": {
+    "prompt_tokens": 774,
+    "completion_tokens": 188,
+    "total_tokens": 962,
+    "end_to_end_tokens_per_second": 57.231061920652365,
+    "total_tokens_per_second": 57.231061920652365,
+    "completion_tokens_per_second": 11.1844486913541,
+    "tokens_after_first_block": 162,
+    "generated_tokens_per_second_after_first_block": 97.01849237143436
+  },
+  "final_meta_info": {
+    "id": "92622fd1625c4fe2bb04f31080581422",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 774,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 188,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      19,
+      11,
+      14,
+      11,
+      16,
+      18
+    ],
+    "dllm_block_completion_latencies": [
+      0.2858931769999913,
+      0.23276357700001427,
+      0.2938496890000124,
+      0.15770307399998273,
+      0.39422481100001505,
+      0.203673407999986,
+      0.3869869950000293
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.088157960999979
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 15.139269060000004,
+      "output_token_count": 26,
+      "new_output_tokens": 26,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2858931769999913
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n-",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 26,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874569.1789534
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 15.369516119000025,
+      "output_token_count": 58,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.23276357700001427
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + ",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 58,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913,
+          0.23276357700001427
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 15.671862257999976,
+      "output_token_count": 90,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2938496890000124
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + 2 seconds = 40 seconds.\n\nThat means originally, Gerald took 40 seconds to run the 400-meter hurdles.\n\n",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 90,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          19,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913,
+          0.23276357700001427,
+          0.2938496890000124
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 15.825380916000029,
+      "output_token_count": 122,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.15770307399998273
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + 2 seconds = 40 seconds.\n\nThat means originally, Gerald took 40 seconds to run the 400-meter hurdles.\n\nNow, Gerald improved his speed by 10%. A 10% improvement in speed means he now takes 10% less time.\n\n",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          19,
+          11,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913,
+          0.23276357700001427,
+          0.2938496890000124,
+          0.15770307399998273
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 16.218495513999983,
+      "output_token_count": 154,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.39422481100001505
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + 2 seconds = 40 seconds.\n\nThat means originally, Gerald took 40 seconds to run the 400-meter hurdles.\n\nNow, Gerald improved his speed by 10%. A 10% improvement in speed means he now takes 10% less time.\n\nSo, Gerald's new time is:\n90% of his original time = 0.90 × 40 = 36 seconds.",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 154,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          19,
+          11,
+          14,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913,
+          0.23276357700001427,
+          0.2938496890000124,
+          0.15770307399998273,
+          0.39422481100001505
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 16.419255550000003,
+      "output_token_count": 186,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.203673407999986
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + 2 seconds = 40 seconds.\n\nThat means originally, Gerald took 40 seconds to run the 400-meter hurdles.\n\nNow, Gerald improved his speed by 10%. A 10% improvement in speed means he now takes 10% less time.\n\nSo, Gerald's new time is:\n90% of his original time = 0.90 × 40 = 36 seconds.\n\nTherefore, with his improved diet, Gerald can run the 400-meter hurdles in 36 seconds.\n\nAnswer: 36",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 186,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          19,
+          11,
+          14,
+          11,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913,
+          0.23276357700001427,
+          0.2938496890000124,
+          0.15770307399998273,
+          0.39422481100001505,
+          0.203673407999986
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 16.808978346000004,
+      "output_token_count": 188,
+      "new_output_tokens": 2,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.3869869950000293
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n\n- Lee runs the 400-meter hurdles in 38 seconds.\n- Lee used to be 2 seconds faster than Gerald.\n\nSo originally, Gerald's time was:\n38 seconds (Lee's time) + 2 seconds = 40 seconds.\n\nThat means originally, Gerald took 40 seconds to run the 400-meter hurdles.\n\nNow, Gerald improved his speed by 10%. A 10% improvement in speed means he now takes 10% less time.\n\nSo, Gerald's new time is:\n90% of his original time = 0.90 × 40 = 36 seconds.\n\nTherefore, with his improved diet, Gerald can run the 400-meter hurdles in 36 seconds.\n\nAnswer: 36",
+      "meta_info": {
+        "id": "92622fd1625c4fe2bb04f31080581422",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 188,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          19,
+          11,
+          14,
+          11,
+          16,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.2858931769999913,
+          0.23276357700001427,
+          0.2938496890000124,
+          0.15770307399998273,
+          0.39422481100001505,
+          0.203673407999986,
+          0.3869869950000293
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.088157960999979
+      }
+    }
+  ]
+}

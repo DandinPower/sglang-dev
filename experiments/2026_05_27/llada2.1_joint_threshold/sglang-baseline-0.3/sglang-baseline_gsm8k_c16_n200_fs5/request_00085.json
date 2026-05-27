@@ -1,0 +1,732 @@
+{
+  "ok": true,
+  "request_index": 85,
+  "eval_index": 85,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation he has been on. Every shirt is its own quilt block. Each row is made of blocks from a different year of vacations. He goes on four vacations a year and has been vacationing since he was 23 years old. He is now 34. How many quilt blocks does he have in total?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation he has been on. Every shirt is its own quilt block. Each row is made of blocks from a different year of vacations. He goes on four vacations a year and has been vacationing since he was 23 years old. He is now 34. How many quilt blocks does he have in total?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 8.5,
+  "request_start_realtime": "2026-05-27T09:39:36.643",
+  "benchmark": {
+    "question": "Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation he has been on. Every shirt is its own quilt block. Each row is made of blocks from a different year of vacations. He goes on four vacations a year and has been vacationing since he was 23 years old. He is now 34. How many quilt blocks does he have in total?",
+    "gold_solution": "Gene has been on 34 - 23 = <<34-23=11>>11 years of vacations, so he has 11 rows of blocks.\nHe goes on 4 vacations a year, so he has been on 4 * 11 = <<4*11=44>>44 vacations.\nGene has 1 shirt from each vacation, so he has 44 * 1 = <<44*1=44>>44 quilt blocks in all.\n#### 44",
+    "gold_answer": "44",
+    "model_text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × 11 = 44 vacations.\n\nBut the problem says: \"He has one shirt from each vacation he has been on.\"\n\nSo total shirts = number of vacations = 11 years × 4 vacations/year = 44 shirts.\n\nEach shirt is a quilt block.\n\nEach row is made of blocks from a different year — but the question is: **How many quilt blocks does he have in total?**\n\nEach: Each shirt is one quilt block.\n\nSo total quilt blocks = number of shirts = 11 years × 4 vacations/year = 44.\n\n**Answer: 44\n\n#### 44",
+    "predicted_answer": "44",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      11,
+      9,
+      8,
+      19,
+      16,
+      12,
+      21,
+      13,
+      41,
+      23,
+      11,
+      12,
+      10
+    ],
+    "ttfb_seconds": 0.41219530500001156,
+    "tbb_seconds": [
+      0.15752028999997947,
+      0.41628132900001447,
+      0.318947785000006,
+      0.43872111700000005,
+      0.20598522199998115,
+      0.6078216129999987,
+      0.2172042880000049,
+      0.9589145010000095,
+      0.40925375999998437,
+      0.19131081599999789,
+      0.42528891600002794,
+      0.17497187999998687
+    ],
+    "dllm_block_completion_latencies": [
+      0.41219530500001156,
+      0.15752028999997947,
+      0.41628132900001447,
+      0.318947785000006,
+      0.43872111700000005,
+      0.20598522199998115,
+      0.6078216129999987,
+      0.2172042880000049,
+      0.9589145010000095,
+      0.40925375999998437,
+      0.19131081599999789,
+      0.42528891600002794,
+      0.17497187999998687
+    ],
+    "dllm_forward_counts_per_block": [
+      11,
+      9,
+      8,
+      19,
+      16,
+      12,
+      21,
+      13,
+      41,
+      23,
+      11,
+      12,
+      10
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 7.211548382000018,
+    "first_new_token_ttfb_seconds": 7.211548382000018,
+    "block_ttfb_seconds": 7.211548382000018,
+    "tbb_seconds": [
+      0.16258076699998014,
+      0.4140503819999992,
+      0.3158012500000211,
+      0.4410685839999928,
+      0.2066364119999946,
+      0.6048874690000048,
+      0.21875069699999017,
+      0.9566871730000059,
+      0.40982787900000517,
+      0.1920457420000048,
+      0.4260820560000127,
+      0.1748901419999811
+    ],
+    "block_arrival_elapsed_seconds": [
+      7.211548382000018,
+      7.374129148999998,
+      7.788179530999997,
+      8.103980781000018,
+      8.545049365000011,
+      8.751685777000006,
+      9.35657324600001,
+      9.575323943,
+      10.532011116000007,
+      10.941838995000012,
+      11.133884737000017,
+      11.55996679300003,
+      11.73485693500001
+    ],
+    "e2e_seconds": 11.734949423000018
+  },
+  "token_metrics": {
+    "prompt_tokens": 773,
+    "completion_tokens": 395,
+    "total_tokens": 1168,
+    "end_to_end_tokens_per_second": 99.53174554896403,
+    "total_tokens_per_second": 99.53174554896403,
+    "completion_tokens_per_second": 33.660136551233556,
+    "tokens_after_first_block": 368,
+    "generated_tokens_per_second_after_first_block": 81.35471444261889
+  },
+  "final_meta_info": {
+    "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 773,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 395,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      11,
+      9,
+      8,
+      19,
+      16,
+      12,
+      21,
+      13,
+      41,
+      23,
+      11,
+      12,
+      10
+    ],
+    "dllm_block_completion_latencies": [
+      0.41219530500001156,
+      0.15752028999997947,
+      0.41628132900001447,
+      0.318947785000006,
+      0.43872111700000005,
+      0.20598522199998115,
+      0.6078216129999987,
+      0.2172042880000049,
+      0.9589145010000095,
+      0.40925375999998437,
+      0.19131081599999789,
+      0.42528891600002794,
+      0.17497187999998687
+    ],
+    "dp_rank": null,
+    "e2e_latency": 5.076105955999992
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 7.211548382000018,
+      "output_token_count": 27,
+      "new_output_tokens": 27,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.41219530500001156
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 3",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 27,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874783.8543677
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 7.374129148999998,
+      "output_token_count": 59,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.15752028999997947
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 59,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 7.788179530999997,
+      "output_token_count": 91,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.41628132900001447
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 1",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 91,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 8.103980781000018,
+      "output_token_count": 123,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.318947785000006
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 123,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 8.545049365000011,
+      "output_token_count": 155,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.43872111700000005
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is ",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 155,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 8.751685777000006,
+      "output_token_count": 187,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.20598522199998115
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 187,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 9.35657324600001,
+      "output_token_count": 219,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.6078216129999987
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 3",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 219,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 9.575323943,
+      "output_token_count": 251,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.2172042880000049
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × ",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 251,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987,
+          0.2172042880000049
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 10.532011116000007,
+      "output_token_count": 283,
+      "new_output_tokens": 32,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.9589145010000095
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × 11 = 44 vacations.\n\nBut the problem says: \"He has one shirt from each vacation he has been on.\"\n\nSo total",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 283,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21,
+          13,
+          41
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987,
+          0.2172042880000049,
+          0.9589145010000095
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 9,
+      "elapsed_seconds": 10.941838995000012,
+      "output_token_count": 315,
+      "new_output_tokens": 32,
+      "block_metric_count": 10,
+      "new_block_latencies": [
+        0.40925375999998437
+      ],
+      "forward_count_metric_count": 10,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × 11 = 44 vacations.\n\nBut the problem says: \"He has one shirt from each vacation he has been on.\"\n\nSo total shirts = number of vacations = 11 years × 4 vacations/year = 44 shirts.\n\nEach shirt is a quilt block.\n\n",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 315,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21,
+          13,
+          41,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987,
+          0.2172042880000049,
+          0.9589145010000095,
+          0.40925375999998437
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 10,
+      "elapsed_seconds": 11.133884737000017,
+      "output_token_count": 347,
+      "new_output_tokens": 32,
+      "block_metric_count": 11,
+      "new_block_latencies": [
+        0.19131081599999789
+      ],
+      "forward_count_metric_count": 11,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × 11 = 44 vacations.\n\nBut the problem says: \"He has one shirt from each vacation he has been on.\"\n\nSo total shirts = number of vacations = 11 years × 4 vacations/year = 44 shirts.\n\nEach shirt is a quilt block.\n\nEach row is made of blocks from a different year — but the question is: **How many quilt blocks does he have in total?**\n\nEach:",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 347,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21,
+          13,
+          41,
+          23,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987,
+          0.2172042880000049,
+          0.9589145010000095,
+          0.40925375999998437,
+          0.19131081599999789
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 11,
+      "elapsed_seconds": 11.55996679300003,
+      "output_token_count": 379,
+      "new_output_tokens": 32,
+      "block_metric_count": 12,
+      "new_block_latencies": [
+        0.42528891600002794
+      ],
+      "forward_count_metric_count": 12,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × 11 = 44 vacations.\n\nBut the problem says: \"He has one shirt from each vacation he has been on.\"\n\nSo total shirts = number of vacations = 11 years × 4 vacations/year = 44 shirts.\n\nEach shirt is a quilt block.\n\nEach row is made of blocks from a different year — but the question is: **How many quilt blocks does he have in total?**\n\nEach: Each shirt is one quilt block.\n\nSo total quilt blocks = number of shirts = 11 years × 4 vacations/year = 44.",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": null,
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 379,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21,
+          13,
+          41,
+          23,
+          11,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987,
+          0.2172042880000049,
+          0.9589145010000095,
+          0.40925375999998437,
+          0.19131081599999789,
+          0.42528891600002794
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 12,
+      "elapsed_seconds": 11.73485693500001,
+      "output_token_count": 395,
+      "new_output_tokens": 16,
+      "block_metric_count": 13,
+      "new_block_latencies": [
+        0.17497187999998687
+      ],
+      "forward_count_metric_count": 13,
+      "text": "\n\n1. **Number of vacations Gene has been on:**\n   - He started at 23 and is now 34.\n   - Number of vacations = 34 - 23 = 11 vacations.\n\n2. **Number of vacations per year:**\n   - He goes on 4 vacations per year.\n\n3. **Total number of years:**\n   - Since he has had 11 vacations and 4 per year, the number of years is 11 / 4 = 2.75 years.\n   - But since he can't have a fraction of a year in this context, we need to interpret this differently.\n\nWait — actually, the number of vacations is 11, and he does 4 per year, so the number of years is 11 ÷ 4 = 2.75 — but that doesn't make sense sense.\n\nLet’s re-evaluate:\n\n- He is now 34, started at 23 → 34 - 23 = 11 years.\n- He goes on 4 vacations per year → over 11 years, 1 × 11 = 44 vacations.\n\nBut the problem says: \"He has one shirt from each vacation he has been on.\"\n\nSo total shirts = number of vacations = 11 years × 4 vacations/year = 44 shirts.\n\nEach shirt is a quilt block.\n\nEach row is made of blocks from a different year — but the question is: **How many quilt blocks does he have in total?**\n\nEach: Each shirt is one quilt block.\n\nSo total quilt blocks = number of shirts = 11 years × 4 vacations/year = 44.\n\n**Answer: 44\n\n#### 44",
+      "meta_info": {
+        "id": "8126330ac83a4f4d88cfeb972a0b90d2",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 773,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 395,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          9,
+          8,
+          19,
+          16,
+          12,
+          21,
+          13,
+          41,
+          23,
+          11,
+          12,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.41219530500001156,
+          0.15752028999997947,
+          0.41628132900001447,
+          0.318947785000006,
+          0.43872111700000005,
+          0.20598522199998115,
+          0.6078216129999987,
+          0.2172042880000049,
+          0.9589145010000095,
+          0.40925375999998437,
+          0.19131081599999789,
+          0.42528891600002794,
+          0.17497187999998687
+        ],
+        "dp_rank": null,
+        "e2e_latency": 5.076105955999992
+      }
+    }
+  ]
+}

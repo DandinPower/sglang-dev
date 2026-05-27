@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 58,
+  "eval_index": 58,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.800000000000001,
+  "request_start_realtime": "2026-05-27T09:34:43.027",
+  "benchmark": {
+    "question": "Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries?",
+    "gold_solution": "He spent $40.00 on groceries but they charged him a 25% fee so that's 40*.25 = $10.00\nThere is also a $3.00 delivery fee and a $4.00 tip for an extra $3 + $4 = $<<3+4=7.00>>7.00 in fees\nHis groceries were $40.00, there's a $10.00 fee plus another $7.00 in delivery/tip fees for a final total of $40 + $10 + $7 = $<<40+10+7=57.00>>57.00\n#### 57",
+    "gold_answer": "57",
+    "model_text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 40 = $10.00\n3. The actual delivery fee is $3.00\n4. The tip is $4.00\n\nNow, add all the amounts:\n- Base groceries: $40.00\n- Delivery fee: $10.00\n- Delivery fee: $3.00\n- Tip: $4.00\n\nTotal = $40.00 + $10.00 + $3.00 + $4.00 = $57.00\n\nSo, the final price of Stephen's groceries, including fees and tip, is $57.00.\n#### 57",
+    "predicted_answer": "57",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      11,
+      13,
+      21,
+      11,
+      17,
+      12
+    ],
+    "ttfb_seconds": 0.38512620800003106,
+    "tbb_seconds": [
+      0.18697064499997396,
+      0.4297074589999852,
+      0.31277939800003196,
+      0.4278361799999857,
+      0.2801231880000046,
+      0.4189230069999894
+    ],
+    "dllm_block_completion_latencies": [
+      0.38512620800003106,
+      0.18697064499997396,
+      0.4297074589999852,
+      0.31277939800003196,
+      0.4278361799999857,
+      0.2801231880000046,
+      0.4189230069999894
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      11,
+      13,
+      21,
+      11,
+      17,
+      12
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 5.690652582000041,
+    "first_new_token_ttfb_seconds": 5.690652582000041,
+    "block_ttfb_seconds": 5.690652582000041,
+    "tbb_seconds": [
+      0.1881258169999569,
+      0.43284765900000366,
+      0.3090897680000353,
+      0.42810309300000426,
+      0.2787756280000053,
+      0.4190981109999825
+    ],
+    "block_arrival_elapsed_seconds": [
+      5.690652582000041,
+      5.878778398999998,
+      6.311626058000002,
+      6.620715826000037,
+      7.048818919000041,
+      7.3275945470000465,
+      7.746692658000029
+    ],
+    "e2e_seconds": 7.746746702000053
+  },
+  "token_metrics": {
+    "prompt_tokens": 774,
+    "completion_tokens": 208,
+    "total_tokens": 982,
+    "end_to_end_tokens_per_second": 126.76288999438533,
+    "total_tokens_per_second": 126.76288999438533,
+    "completion_tokens_per_second": 26.849980772741496,
+    "tokens_after_first_block": 182,
+    "generated_tokens_per_second_after_first_block": 88.51734861242586
+  },
+  "final_meta_info": {
+    "id": "982baca8155d4387adf3fb574b95d491",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 774,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 208,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      11,
+      13,
+      21,
+      11,
+      17,
+      12
+    ],
+    "dllm_block_completion_latencies": [
+      0.38512620800003106,
+      0.18697064499997396,
+      0.4297074589999852,
+      0.31277939800003196,
+      0.4278361799999857,
+      0.2801231880000046,
+      0.4189230069999894
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.4476293850000275
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 5.690652582000041,
+      "output_token_count": 26,
+      "new_output_tokens": 26,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.38512620800003106
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 26,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874488.7179475
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 5.878778398999998,
+      "output_token_count": 58,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.18697064499997396
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 4",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 58,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106,
+          0.18697064499997396
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 6.311626058000002,
+      "output_token_count": 90,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.4297074589999852
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 40 = $10.00\n3. The actual delivery fee is $3.00\n4. The tip is $4.00",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 90,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          11,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106,
+          0.18697064499997396,
+          0.4297074589999852
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 6.620715826000037,
+      "output_token_count": 122,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.31277939800003196
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 40 = $10.00\n3. The actual delivery fee is $3.00\n4. The tip is $4.00\n\nNow, add all the amounts:\n- Base groceries: $40.00\n- Delivery fee: $10.00\n",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          11,
+          13,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106,
+          0.18697064499997396,
+          0.4297074589999852,
+          0.31277939800003196
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 7.048818919000041,
+      "output_token_count": 154,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.4278361799999857
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 40 = $10.00\n3. The actual delivery fee is $3.00\n4. The tip is $4.00\n\nNow, add all the amounts:\n- Base groceries: $40.00\n- Delivery fee: $10.00\n- Delivery fee: $3.00\n- Tip: $4.00\n\nTotal = $40.00 + $10",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 154,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          11,
+          13,
+          21,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106,
+          0.18697064499997396,
+          0.4297074589999852,
+          0.31277939800003196,
+          0.4278361799999857
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 7.3275945470000465,
+      "output_token_count": 186,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.2801231880000046
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 40 = $10.00\n3. The actual delivery fee is $3.00\n4. The tip is $4.00\n\nNow, add all the amounts:\n- Base groceries: $40.00\n- Delivery fee: $10.00\n- Delivery fee: $3.00\n- Tip: $4.00\n\nTotal = $40.00 + $10.00 + $3.00 + $4.00 = $57.00\n\nSo, the final price of Stephen's",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": null,
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 186,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          11,
+          13,
+          21,
+          11,
+          17
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106,
+          0.18697064499997396,
+          0.4297074589999852,
+          0.31277939800003196,
+          0.4278361799999857,
+          0.2801231880000046
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 7.746692658000029,
+      "output_token_count": 208,
+      "new_output_tokens": 22,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.4189230069999894
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. First, identify the base cost of the groceries: $40.00\n2. The delivery fee is 25% of the final total.\n   25% of $40.00 = 0.25 * 40 = $10.00\n3. The actual delivery fee is $3.00\n4. The tip is $4.00\n\nNow, add all the amounts:\n- Base groceries: $40.00\n- Delivery fee: $10.00\n- Delivery fee: $3.00\n- Tip: $4.00\n\nTotal = $40.00 + $10.00 + $3.00 + $4.00 = $57.00\n\nSo, the final price of Stephen's groceries, including fees and tip, is $57.00.\n#### 57",
+      "meta_info": {
+        "id": "982baca8155d4387adf3fb574b95d491",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 774,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          11,
+          13,
+          21,
+          11,
+          17,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          0.38512620800003106,
+          0.18697064499997396,
+          0.4297074589999852,
+          0.31277939800003196,
+          0.4278361799999857,
+          0.2801231880000046,
+          0.4189230069999894
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.4476293850000275
+      }
+    }
+  ]
+}

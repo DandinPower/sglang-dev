@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 160,
+  "eval_index": 160,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is two thirds of what it was on Tuesday. What is the tank’s water depth on Wednesday?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is two thirds of what it was on Tuesday. What is the tank’s water depth on Wednesday?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.0,
+  "request_start_realtime": "2026-05-27T08:56:37.232",
+  "benchmark": {
+    "question": "A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is two thirds of what it was on Tuesday. What is the tank’s water depth on Wednesday?",
+    "gold_solution": "On Tuesday there was 17+7 = <<17+7=24>>24 feet of water in the tank.\n24/3 = 8. On Wednesday there was 2*8 = 16 feet of water in the tank.\n#### 16",
+    "gold_answer": "16",
+    "model_text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's depth is 17 + 7 = 24 feet.\n\nBut then it says on Wednesday, the depth is two thirds of what it was on Tuesday.\n\nSo Wednesday's depth = (2/3) * 24 = <<(2/3)*24=16>>16 feet.\n\nBut let's double-check:\n\n- Monday: 17 feet\n- Tuesday: 17 + 7 = 24 feet\n- Wednesday: (2/3) * 24 = 16 feet\n\nYes.\n\nSo the tank’s water depth on Wednesday is 16 feet.\n######## 16",
+    "predicted_answer": "16",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      9,
+      16,
+      22,
+      11,
+      9,
+      11,
+      9,
+      5
+    ],
+    "ttfb_seconds": 0.2240241989999845,
+    "tbb_seconds": [
+      0.11044124800000077,
+      0.15090128800000002,
+      0.07955550200000516,
+      0.064208672999996,
+      0.07700708999999506,
+      0.06663036500000885,
+      0.03459316000001422
+    ],
+    "dllm_block_completion_latencies": [
+      0.2240241989999845,
+      0.11044124800000077,
+      0.15090128800000002,
+      0.07955550200000516,
+      0.064208672999996,
+      0.07700708999999506,
+      0.06663036500000885,
+      0.03459316000001422
+    ],
+    "dllm_forward_counts_per_block": [
+      9,
+      16,
+      22,
+      11,
+      9,
+      11,
+      9,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 98.253402343,
+    "first_new_token_ttfb_seconds": 98.253402343,
+    "block_ttfb_seconds": 98.253402343,
+    "tbb_seconds": [
+      0.1105208240000195,
+      0.15093133399997782,
+      0.07948152000000164,
+      0.0639454770000043,
+      0.07737737300001868,
+      0.06642050099998187,
+      0.034757643000006055
+    ],
+    "block_arrival_elapsed_seconds": [
+      98.253402343,
+      98.36392316700002,
+      98.514854501,
+      98.594336021,
+      98.65828149800001,
+      98.73565887100003,
+      98.80207937200001,
+      98.83683701500001
+    ],
+    "e2e_seconds": 98.83695704000002
+  },
+  "token_metrics": {
+    "prompt_tokens": 745,
+    "completion_tokens": 233,
+    "total_tokens": 978,
+    "end_to_end_tokens_per_second": 9.895084078764146,
+    "total_tokens_per_second": 9.895084078764146,
+    "completion_tokens_per_second": 2.3574177815460593,
+    "tokens_after_first_block": 210,
+    "generated_tokens_per_second_after_first_block": 359.86343881659485
+  },
+  "final_meta_info": {
+    "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 745,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 233,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      9,
+      16,
+      22,
+      11,
+      9,
+      11,
+      9,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.2240241989999845,
+      0.11044124800000077,
+      0.15090128800000002,
+      0.07955550200000516,
+      0.064208672999996,
+      0.07700708999999506,
+      0.06663036500000885,
+      0.03459316000001422
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.8123864089999984
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 98.253402343,
+      "output_token_count": 23,
+      "new_output_tokens": 23,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2240241989999845
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 23,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872295.485542
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 98.36392316700002,
+      "output_token_count": 55,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.11044124800000077
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 55,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 98.514854501,
+      "output_token_count": 87,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.15090128800000002
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 87,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077,
+          0.15090128800000002
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 98.594336021,
+      "output_token_count": 119,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.07955550200000516
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's depth is 17 + 7 = 24 feet.\n\nBut then it says on Wednesday, the depth is two thirds of what it was",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 119,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16,
+          22,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077,
+          0.15090128800000002,
+          0.07955550200000516
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 98.65828149800001,
+      "output_token_count": 151,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.064208672999996
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's depth is 17 + 7 = 24 feet.\n\nBut then it says on Wednesday, the depth is two thirds of what it was on Tuesday.\n\nSo Wednesday's depth = (2/3) * 24 = <<(2/3)*24=16>>",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 151,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16,
+          22,
+          11,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077,
+          0.15090128800000002,
+          0.07955550200000516,
+          0.064208672999996
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 98.73565887100003,
+      "output_token_count": 183,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.07700708999999506
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's depth is 17 + 7 = 24 feet.\n\nBut then it says on Wednesday, the depth is two thirds of what it was on Tuesday.\n\nSo Wednesday's depth = (2/3) * 24 = <<(2/3)*24=16>>16 feet.\n\nBut let's double-check:\n\n- Monday: 17 feet\n- Tuesday: 17 + 7 =",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 183,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16,
+          22,
+          11,
+          9,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077,
+          0.15090128800000002,
+          0.07955550200000516,
+          0.064208672999996,
+          0.07700708999999506
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 98.80207937200001,
+      "output_token_count": 215,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.06663036500000885
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's depth is 17 + 7 = 24 feet.\n\nBut then it says on Wednesday, the depth is two thirds of what it was on Tuesday.\n\nSo Wednesday's depth = (2/3) * 24 = <<(2/3)*24=16>>16 feet.\n\nBut let's double-check:\n\n- Monday: 17 feet\n- Tuesday: 17 + 7 = 24 feet\n- Wednesday: (2/3) * 24 = 16 feet\n\nYes.\n\nSo the tank’s",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 215,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16,
+          22,
+          11,
+          9,
+          11,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077,
+          0.15090128800000002,
+          0.07955550200000516,
+          0.064208672999996,
+          0.07700708999999506,
+          0.06663036500000885
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 98.83683701500001,
+      "output_token_count": 233,
+      "new_output_tokens": 18,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.03459316000001422
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nOn Monday, the depth was 17 feet.\n\nOn Tuesday, the tank had 7 feet more water than on Monday, so the depth on Tuesday was 17 + 7 = <<24>>24>>24 feet.\n\nWait, that can't be right because 17 + 7 = 24, but the problem says \"7 feet more\", so Tuesday's depth is 17 + 7 = 24 feet.\n\nBut then it says on Wednesday, the depth is two thirds of what it was on Tuesday.\n\nSo Wednesday's depth = (2/3) * 24 = <<(2/3)*24=16>>16 feet.\n\nBut let's double-check:\n\n- Monday: 17 feet\n- Tuesday: 17 + 7 = 24 feet\n- Wednesday: (2/3) * 24 = 16 feet\n\nYes.\n\nSo the tank’s water depth on Wednesday is 16 feet.\n######## 16",
+      "meta_info": {
+        "id": "0023a2f64a844d95ae329e5bc5ac40d2",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 233,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          16,
+          22,
+          11,
+          9,
+          11,
+          9,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.2240241989999845,
+          0.11044124800000077,
+          0.15090128800000002,
+          0.07955550200000516,
+          0.064208672999996,
+          0.07700708999999506,
+          0.06663036500000885,
+          0.03459316000001422
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.8123864089999984
+      }
+    }
+  ]
+}

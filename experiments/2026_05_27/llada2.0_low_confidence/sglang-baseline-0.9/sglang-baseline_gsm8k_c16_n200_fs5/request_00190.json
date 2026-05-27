@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 190,
+  "eval_index": 190,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John collects peaches for 3 hours.  He can collect 2 peaches a minute.  How many peaches does he collect?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: John collects peaches for 3 hours.  He can collect 2 peaches a minute.  How many peaches does he collect?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 19.0,
+  "request_start_realtime": "2026-05-27T09:00:59.694",
+  "benchmark": {
+    "question": "John collects peaches for 3 hours.  He can collect 2 peaches a minute.  How many peaches does he collect?",
+    "gold_solution": "He is collecting peaches for 3*60=<<3*60=180>>180 minutes\nSo he can collect 180 * 2 = <<180*2=360>>360 peaches\n#### 360",
+    "gold_answer": "360",
+    "model_text": "\n\n1. First, we need to determine how many minutes are in 3 hours.\n   - There are 60 minutes in an hour.\n   - So, 3 hours = 3 × 60 = 180 minutes.\n\n2. Next, we calculate how many peaches John collects in 180 minutes.\n   - He collects 2 peaches per minute.\n   - So, total peaches = 2 × 180 = 360.\n\nTherefore, John collects 360 peaches.\n#### 360",
+    "predicted_answer": "360",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      31,
+      30,
+      32,
+      19,
+      31
+    ],
+    "ttfb_seconds": 0.7890566070000204,
+    "tbb_seconds": [
+      0.526081210999962,
+      0.5505619470000056,
+      0.5271732390000352,
+      0.5083714149999992
+    ],
+    "dllm_block_completion_latencies": [
+      0.7890566070000204,
+      0.526081210999962,
+      0.5505619470000056,
+      0.5271732390000352,
+      0.5083714149999992
+    ],
+    "dllm_forward_counts_per_block": [
+      31,
+      30,
+      32,
+      19,
+      31
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 26.368962674000045,
+    "first_new_token_ttfb_seconds": 26.368962674000045,
+    "block_ttfb_seconds": 26.368962674000045,
+    "tbb_seconds": [
+      0.5287120300000083,
+      0.5500019389999693,
+      0.5308370789999799,
+      0.5083888249999973
+    ],
+    "block_arrival_elapsed_seconds": [
+      26.368962674000045,
+      26.897674704000053,
+      27.447676643000023,
+      27.978513722000002,
+      28.486902547
+    ],
+    "e2e_seconds": 28.486966684000038
+  },
+  "token_metrics": {
+    "prompt_tokens": 716,
+    "completion_tokens": 126,
+    "total_tokens": 842,
+    "end_to_end_tokens_per_second": 29.557376513271134,
+    "total_tokens_per_second": 29.557376513271134,
+    "completion_tokens_per_second": 4.423075345216345,
+    "tokens_after_first_block": 106,
+    "generated_tokens_per_second_after_first_block": 50.04711959917411
+  },
+  "final_meta_info": {
+    "id": "8631360dc8034ddd9186adbc99b38efb",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 716,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 126,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      31,
+      30,
+      32,
+      19,
+      31
+    ],
+    "dllm_block_completion_latencies": [
+      0.7890566070000204,
+      0.526081210999962,
+      0.5505619470000056,
+      0.5271732390000352,
+      0.5083714149999992
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.4438497900000016
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 26.368962674000045,
+      "output_token_count": 20,
+      "new_output_tokens": 20,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.7890566070000204
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, we need to determine how many minutes are in 3 hours.\n",
+      "meta_info": {
+        "id": "8631360dc8034ddd9186adbc99b38efb",
+        "finish_reason": null,
+        "prompt_tokens": 716,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 20,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.7890566070000204
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872486.062311
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 26.897674704000053,
+      "output_token_count": 52,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.526081210999962
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, we need to determine how many minutes are in 3 hours.\n   - There are 60 minutes in an hour.\n   - So, 3 hours = 3 × 60 = 180",
+      "meta_info": {
+        "id": "8631360dc8034ddd9186adbc99b38efb",
+        "finish_reason": null,
+        "prompt_tokens": 716,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 52,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          31,
+          30
+        ],
+        "dllm_block_completion_latencies": [
+          0.7890566070000204,
+          0.526081210999962
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 27.447676643000023,
+      "output_token_count": 84,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.5505619470000056
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, we need to determine how many minutes are in 3 hours.\n   - There are 60 minutes in an hour.\n   - So, 3 hours = 3 × 60 = 180 minutes.\n\n2. Next, we calculate how many peaches John collects in 180 minutes.\n   - He collects 2 peaches per minute",
+      "meta_info": {
+        "id": "8631360dc8034ddd9186adbc99b38efb",
+        "finish_reason": null,
+        "prompt_tokens": 716,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 84,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          31,
+          30,
+          32
+        ],
+        "dllm_block_completion_latencies": [
+          0.7890566070000204,
+          0.526081210999962,
+          0.5505619470000056
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 27.978513722000002,
+      "output_token_count": 116,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5271732390000352
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, we need to determine how many minutes are in 3 hours.\n   - There are 60 minutes in an hour.\n   - So, 3 hours = 3 × 60 = 180 minutes.\n\n2. Next, we calculate how many peaches John collects in 180 minutes.\n   - He collects 2 peaches per minute.\n   - So, total peaches = 2 × 180 = 360.\n\nTherefore, John collects 360",
+      "meta_info": {
+        "id": "8631360dc8034ddd9186adbc99b38efb",
+        "finish_reason": null,
+        "prompt_tokens": 716,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 116,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          31,
+          30,
+          32,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.7890566070000204,
+          0.526081210999962,
+          0.5505619470000056,
+          0.5271732390000352
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 28.486902547,
+      "output_token_count": 126,
+      "new_output_tokens": 10,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5083714149999992
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, we need to determine how many minutes are in 3 hours.\n   - There are 60 minutes in an hour.\n   - So, 3 hours = 3 × 60 = 180 minutes.\n\n2. Next, we calculate how many peaches John collects in 180 minutes.\n   - He collects 2 peaches per minute.\n   - So, total peaches = 2 × 180 = 360.\n\nTherefore, John collects 360 peaches.\n#### 360",
+      "meta_info": {
+        "id": "8631360dc8034ddd9186adbc99b38efb",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 716,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 126,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          31,
+          30,
+          32,
+          19,
+          31
+        ],
+        "dllm_block_completion_latencies": [
+          0.7890566070000204,
+          0.526081210999962,
+          0.5505619470000056,
+          0.5271732390000352,
+          0.5083714149999992
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.4438497900000016
+      }
+    }
+  ]
+}

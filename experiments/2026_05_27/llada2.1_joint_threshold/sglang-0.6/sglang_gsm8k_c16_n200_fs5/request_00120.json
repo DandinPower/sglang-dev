@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 120,
+  "eval_index": 120,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Miguel uses 2 pads of paper a week for his drawing. If there are 30 sheets of paper on a pad of paper, how many sheets of paper does he use every month?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Miguel uses 2 pads of paper a week for his drawing. If there are 30 sheets of paper on a pad of paper, how many sheets of paper does he use every month?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 12.0,
+  "request_start_realtime": "2026-05-27T09:36:56.017",
+  "benchmark": {
+    "question": "Miguel uses 2 pads of paper a week for his drawing. If there are 30 sheets of paper on a pad of paper, how many sheets of paper does he use every month?",
+    "gold_solution": "Miguel uses 30 x 2 = <<30*2=60>>60 sheets of paper every week.\nTherefore, he uses 60 x 4 = <<60*4=240>>240 sheets of paper every month.\n#### 240",
+    "gold_answer": "240",
+    "model_text": "\n\nMiguel uses 2 pads of paper per week.\n\nEach pad has 30 sheets, so he uses 2 * 30 = 2 * 30 = 60 sheets of paper per week.\n\nThere are 4 weeks in a month, so he uses 60 * 4 = 60 * 4 = 240 sheets of paper every month.\n\nTherefore, the answer is 240.\n######## 240",
+    "predicted_answer": "240",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      3,
+      9,
+      6,
+      5,
+      3
+    ],
+    "ttfb_seconds": 0.2583123379999961,
+    "tbb_seconds": [
+      0.5717560029999618,
+      0.4007892570000422,
+      0.28015768299997035,
+      0.08040895099998124
+    ],
+    "dllm_block_completion_latencies": [
+      0.2583123379999961,
+      0.5717560029999618,
+      0.4007892570000422,
+      0.28015768299997035,
+      0.08040895099998124
+    ],
+    "dllm_forward_counts_per_block": [
+      3,
+      9,
+      6,
+      5,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 13.640104581999992,
+    "first_new_token_ttfb_seconds": 13.640104581999992,
+    "block_ttfb_seconds": 13.640104581999992,
+    "tbb_seconds": [
+      0.571723679999991,
+      0.4006179400000178,
+      0.2801222869999833,
+      0.08070588999999018
+    ],
+    "block_arrival_elapsed_seconds": [
+      13.640104581999992,
+      14.211828261999983,
+      14.612446202000001,
+      14.892568488999984,
+      14.973274378999974
+    ],
+    "e2e_seconds": 14.973380969000004
+  },
+  "token_metrics": {
+    "prompt_tokens": 729,
+    "completion_tokens": 109,
+    "total_tokens": 838,
+    "end_to_end_tokens_per_second": 55.96598401756726,
+    "total_tokens_per_second": 55.96598401756726,
+    "completion_tokens_per_second": 7.279585033311254,
+    "tokens_after_first_block": 102,
+    "generated_tokens_per_second_after_first_block": 76.50326743542566
+  },
+  "final_meta_info": {
+    "id": "cf04fee2ed9446cca43cb8d105b7a4a1",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 729,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 109,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      3,
+      9,
+      6,
+      5,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.2583123379999961,
+      0.5717560029999618,
+      0.4007892570000422,
+      0.28015768299997035,
+      0.08040895099998124
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.5953486619999921
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 13.640104581999992,
+      "output_token_count": 7,
+      "new_output_tokens": 7,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2583123379999961
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nMiguel uses ",
+      "meta_info": {
+        "id": "cf04fee2ed9446cca43cb8d105b7a4a1",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 7,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.2583123379999961
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874629.6570456
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 14.211828261999983,
+      "output_token_count": 39,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.5717560029999618
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nMiguel uses 2 pads of paper per week.\n\nEach pad has 30 sheets, so he uses 2 * 30 = 2 * 3",
+      "meta_info": {
+        "id": "cf04fee2ed9446cca43cb8d105b7a4a1",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 39,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2583123379999961,
+          0.5717560029999618
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 14.612446202000001,
+      "output_token_count": 71,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.4007892570000422
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nMiguel uses 2 pads of paper per week.\n\nEach pad has 30 sheets, so he uses 2 * 30 = 2 * 30 = 60 sheets of paper per week.\n\nThere are 4 weeks in a month, so he uses 60 * 4 =",
+      "meta_info": {
+        "id": "cf04fee2ed9446cca43cb8d105b7a4a1",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 71,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          9,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2583123379999961,
+          0.5717560029999618,
+          0.4007892570000422
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 14.892568488999984,
+      "output_token_count": 103,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.28015768299997035
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nMiguel uses 2 pads of paper per week.\n\nEach pad has 30 sheets, so he uses 2 * 30 = 2 * 30 = 60 sheets of paper per week.\n\nThere are 4 weeks in a month, so he uses 60 * 4 = 60 * 4 = 240 sheets of paper every month.\n\nTherefore, the answer is 240.\n########",
+      "meta_info": {
+        "id": "cf04fee2ed9446cca43cb8d105b7a4a1",
+        "finish_reason": null,
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 103,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          9,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.2583123379999961,
+          0.5717560029999618,
+          0.4007892570000422,
+          0.28015768299997035
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 14.973274378999974,
+      "output_token_count": 109,
+      "new_output_tokens": 6,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.08040895099998124
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nMiguel uses 2 pads of paper per week.\n\nEach pad has 30 sheets, so he uses 2 * 30 = 2 * 30 = 60 sheets of paper per week.\n\nThere are 4 weeks in a month, so he uses 60 * 4 = 60 * 4 = 240 sheets of paper every month.\n\nTherefore, the answer is 240.\n######## 240",
+      "meta_info": {
+        "id": "cf04fee2ed9446cca43cb8d105b7a4a1",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 729,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 109,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          3,
+          9,
+          6,
+          5,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.2583123379999961,
+          0.5717560029999618,
+          0.4007892570000422,
+          0.28015768299997035,
+          0.08040895099998124
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.5953486619999921
+      }
+    }
+  ]
+}

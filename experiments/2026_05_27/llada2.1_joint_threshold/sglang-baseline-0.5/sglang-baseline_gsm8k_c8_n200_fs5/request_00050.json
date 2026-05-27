@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 50,
+  "eval_index": 50,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Lloyd has an egg farm. His chickens produce 252 eggs per day and he sells them for $2 per dozen. How much does Lloyd make on eggs per week?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Lloyd has an egg farm. His chickens produce 252 eggs per day and he sells them for $2 per dozen. How much does Lloyd make on eggs per week?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.0,
+  "request_start_realtime": "2026-05-27T09:33:53.545",
+  "benchmark": {
+    "question": "Lloyd has an egg farm. His chickens produce 252 eggs per day and he sells them for $2 per dozen. How much does Lloyd make on eggs per week?",
+    "gold_solution": "In a week, Lloyd's egg farm produces 252 x 7 = <<252*7=1764>>1764 eggs.\nThere are 1764/12 = <<1764/12=147>>147 dozens of eggs produced in a week.\nSo, Lloyd makes 147 x $2 = $<<147*2=294>>294 on eggs.\n#### 294",
+    "gold_answer": "294",
+    "model_text": "\n\n1. First, find how many eggs are produced in a week:\n   252 eggs per day × 7 days = 1,764 eggs per week.\n\n2. Next, find how many dozens of eggs are produced:\n   One dozen = 12 eggs, so 1,764 ÷ 12 = 147 dozens.\n\n3. Now, calculate how much money he makes:\n   He sells each dozen for $2, so 147 × $2 = $294.\n\nSo, Lloyd makes $294 on eggs per week.\n\n#### 294",
+    "predicted_answer": "294",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      7,
+      7,
+      11,
+      14,
+      20,
+      9
+    ],
+    "ttfb_seconds": 0.227943506999992,
+    "tbb_seconds": [
+      0.08868619599999761,
+      0.12459019499999613,
+      0.3854720230000055,
+      0.2212644560000001,
+      0.26309993899999995
+    ],
+    "dllm_block_completion_latencies": [
+      0.227943506999992,
+      0.08868619599999761,
+      0.12459019499999613,
+      0.3854720230000055,
+      0.2212644560000001,
+      0.26309993899999995
+    ],
+    "dllm_forward_counts_per_block": [
+      7,
+      7,
+      11,
+      14,
+      20,
+      9
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 5.9652799049999885,
+    "first_new_token_ttfb_seconds": 5.9652799049999885,
+    "block_ttfb_seconds": 5.9652799049999885,
+    "tbb_seconds": [
+      0.09069321800001262,
+      0.12407901500000662,
+      0.3874838870000019,
+      0.21750857600000018,
+      0.26346166599998355
+    ],
+    "block_arrival_elapsed_seconds": [
+      5.9652799049999885,
+      6.055973123000001,
+      6.180052138000008,
+      6.56753602500001,
+      6.78504460100001,
+      7.048506266999993
+    ],
+    "e2e_seconds": 7.048559627000003
+  },
+  "token_metrics": {
+    "prompt_tokens": 726,
+    "completion_tokens": 144,
+    "total_tokens": 870,
+    "end_to_end_tokens_per_second": 123.42947297592602,
+    "total_tokens_per_second": 123.42947297592602,
+    "completion_tokens_per_second": 20.42970587187741,
+    "tokens_after_first_block": 134,
+    "generated_tokens_per_second_after_first_block": 123.69842920404837
+  },
+  "final_meta_info": {
+    "id": "e8a1eb5214184a79b136345424d8b46c",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 726,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 144,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      7,
+      7,
+      11,
+      14,
+      20,
+      9
+    ],
+    "dllm_block_completion_latencies": [
+      0.227943506999992,
+      0.08868619599999761,
+      0.12459019499999613,
+      0.3854720230000055,
+      0.2212644560000001,
+      0.26309993899999995
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.441325422999995
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 5.9652799049999885,
+      "output_token_count": 10,
+      "new_output_tokens": 10,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.227943506999992
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. First, find how many eggs",
+      "meta_info": {
+        "id": "e8a1eb5214184a79b136345424d8b46c",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 10,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.227943506999992
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874439.510281
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 6.055973123000001,
+      "output_token_count": 42,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.08868619599999761
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. First, find how many eggs are produced in a week:\n   252 eggs per day × 7 days = 1,764 eggs per week.\n\n",
+      "meta_info": {
+        "id": "e8a1eb5214184a79b136345424d8b46c",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 42,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.227943506999992,
+          0.08868619599999761
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 6.180052138000008,
+      "output_token_count": 74,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.12459019499999613
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. First, find how many eggs are produced in a week:\n   252 eggs per day × 7 days = 1,764 eggs per week.\n\n2. Next, find how many dozens of eggs are produced:\n   One dozen = 12 eggs, so 1,764 ÷ ",
+      "meta_info": {
+        "id": "e8a1eb5214184a79b136345424d8b46c",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          7,
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.227943506999992,
+          0.08868619599999761,
+          0.12459019499999613
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 6.56753602500001,
+      "output_token_count": 106,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.3854720230000055
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. First, find how many eggs are produced in a week:\n   252 eggs per day × 7 days = 1,764 eggs per week.\n\n2. Next, find how many dozens of eggs are produced:\n   One dozen = 12 eggs, so 1,764 ÷ 12 = 147 dozens.\n\n3. Now, calculate how much money he makes:\n   He sells each dozen for $2,",
+      "meta_info": {
+        "id": "e8a1eb5214184a79b136345424d8b46c",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          7,
+          11,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.227943506999992,
+          0.08868619599999761,
+          0.12459019499999613,
+          0.3854720230000055
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 6.78504460100001,
+      "output_token_count": 138,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.2212644560000001
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. First, find how many eggs are produced in a week:\n   252 eggs per day × 7 days = 1,764 eggs per week.\n\n2. Next, find how many dozens of eggs are produced:\n   One dozen = 12 eggs, so 1,764 ÷ 12 = 147 dozens.\n\n3. Now, calculate how much money he makes:\n   He sells each dozen for $2, so 147 × $2 = $294.\n\nSo, Lloyd makes $294 on eggs per week.\n\n####",
+      "meta_info": {
+        "id": "e8a1eb5214184a79b136345424d8b46c",
+        "finish_reason": null,
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 138,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          7,
+          11,
+          14,
+          20
+        ],
+        "dllm_block_completion_latencies": [
+          0.227943506999992,
+          0.08868619599999761,
+          0.12459019499999613,
+          0.3854720230000055,
+          0.2212644560000001
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 7.048506266999993,
+      "output_token_count": 144,
+      "new_output_tokens": 6,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.26309993899999995
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. First, find how many eggs are produced in a week:\n   252 eggs per day × 7 days = 1,764 eggs per week.\n\n2. Next, find how many dozens of eggs are produced:\n   One dozen = 12 eggs, so 1,764 ÷ 12 = 147 dozens.\n\n3. Now, calculate how much money he makes:\n   He sells each dozen for $2, so 147 × $2 = $294.\n\nSo, Lloyd makes $294 on eggs per week.\n\n#### 294",
+      "meta_info": {
+        "id": "e8a1eb5214184a79b136345424d8b46c",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 726,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          7,
+          11,
+          14,
+          20,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.227943506999992,
+          0.08868619599999761,
+          0.12459019499999613,
+          0.3854720230000055,
+          0.2212644560000001,
+          0.26309993899999995
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.441325422999995
+      }
+    }
+  ]
+}

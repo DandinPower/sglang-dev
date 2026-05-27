@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 14,
+  "eval_index": 14,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled in jazz dance, and the rest enrolled in hip-hop dance. What percentage of the entire students enrolled in hip-hop dance?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled in jazz dance, and the rest enrolled in hip-hop dance. What percentage of the entire students enrolled in hip-hop dance?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 1.4000000000000001,
+  "request_start_realtime": "2026-05-27T09:36:45.417",
+  "benchmark": {
+    "question": "In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled in jazz dance, and the rest enrolled in hip-hop dance. What percentage of the entire students enrolled in hip-hop dance?",
+    "gold_solution": "There are 20 x 20/100 = <<20*20/100=4>>4 students who enrolled in contemporary dance.\nSo, 20 - 4 = <<20-4=16>>16 students are enrolled in either jazz or hip-hop dance.\nThere are 16 x 25/100 = <<16*25/100=4>>4 students who enrolled in jazz dance.\nHence, 16 - 4 = <<16-4=12>>12 students enrolled in hip-hop dance.\nThis is 12/20 x 100% = 60% of the entire students.\n#### 60",
+    "gold_answer": "60",
+    "model_text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after contemporary dance = 20 - 4 = 16 students\n\n4. Number of students enrolled in jazz dance = 25% of the remaining 16\n   = (25/100) * 16 = 4 students\n\n5. Number of students enrolled in hip-hop dance = Remaining students after jazz dance\n   = 16 - 4 = 12 students\n\n6. Percentage of entire students enrolled in hip-hop dance = (12 / 20) * 100\n   = 0.6 * 100 = 60%\n\nSo, 60% of the entire students enrolled in hip-hop dance.\n\n#### 60",
+    "predicted_answer": "60",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      8,
+      8,
+      3,
+      7,
+      10,
+      4,
+      5
+    ],
+    "ttfb_seconds": 0.49054032499998357,
+    "tbb_seconds": [
+      0.2308630379999954,
+      0.075183600999992,
+      0.5182773999999881,
+      0.6270866469999987,
+      0.26614285200002996,
+      0.13706079199999976
+    ],
+    "dllm_block_completion_latencies": [
+      0.49054032499998357,
+      0.2308630379999954,
+      0.075183600999992,
+      0.5182773999999881,
+      0.6270866469999987,
+      0.26614285200002996,
+      0.13706079199999976
+    ],
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      3,
+      7,
+      10,
+      4,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.49945304199997054,
+    "first_new_token_ttfb_seconds": 0.49945304199997054,
+    "block_ttfb_seconds": 0.49945304199997054,
+    "tbb_seconds": [
+      0.23130573600002435,
+      0.07516794199995047,
+      0.5184020300000043,
+      0.6268849700000487,
+      0.2656345579999879,
+      0.13748848699998462
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.49945304199997054,
+      0.7307587779999949,
+      0.8059267199999454,
+      1.3243287499999497,
+      1.9512137199999984,
+      2.2168482779999863,
+      2.354336764999971
+    ],
+    "e2e_seconds": 2.354426870999987
+  },
+  "token_metrics": {
+    "prompt_tokens": 742,
+    "completion_tokens": 215,
+    "total_tokens": 957,
+    "end_to_end_tokens_per_second": 406.46834768477515,
+    "total_tokens_per_second": 406.46834768477515,
+    "completion_tokens_per_second": 91.31734038895158,
+    "tokens_after_first_block": 189,
+    "generated_tokens_per_second_after_first_block": 101.88822992822845
+  },
+  "final_meta_info": {
+    "id": "66be21bced7e454aae83378243372e54",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 742,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 215,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      8,
+      8,
+      3,
+      7,
+      10,
+      4,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.49054032499998357,
+      0.2308630379999954,
+      0.075183600999992,
+      0.5182773999999881,
+      0.6270866469999987,
+      0.26614285200002996,
+      0.13706079199999976
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.352527576
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.49945304199997054,
+      "output_token_count": 26,
+      "new_output_tokens": 26,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.49054032499998357
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 2",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 26,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874605.9162173
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 0.7307587779999949,
+      "output_token_count": 58,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2308630379999954
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 58,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357,
+          0.2308630379999954
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 0.8059267199999454,
+      "output_token_count": 90,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.075183600999992
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after contemporary dance = 20 - 4 = 16 students\n\n4. Number of students enrolled in jazz dance = 25% of the",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 90,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357,
+          0.2308630379999954,
+          0.075183600999992
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 1.3243287499999497,
+      "output_token_count": 122,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.5182773999999881
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after contemporary dance = 20 - 4 = 16 students\n\n4. Number of students enrolled in jazz dance = 25% of the remaining 16\n   = (25/100) * 16 = 4 students\n\n5. Number of students enrolled in",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          3,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357,
+          0.2308630379999954,
+          0.075183600999992,
+          0.5182773999999881
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 1.9512137199999984,
+      "output_token_count": 154,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.6270866469999987
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after contemporary dance = 20 - 4 = 16 students\n\n4. Number of students enrolled in jazz dance = 25% of the remaining 16\n   = (25/100) * 16 = 4 students\n\n5. Number of students enrolled in hip-hop dance = Remaining students after jazz dance\n   = 16 - 4 = 12 students\n\n6. Percentage of entire students enrolled",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 154,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          3,
+          7,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357,
+          0.2308630379999954,
+          0.075183600999992,
+          0.5182773999999881,
+          0.6270866469999987
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 2.2168482779999863,
+      "output_token_count": 186,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.26614285200002996
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after contemporary dance = 20 - 4 = 16 students\n\n4. Number of students enrolled in jazz dance = 25% of the remaining 16\n   = (25/100) * 16 = 4 students\n\n5. Number of students enrolled in hip-hop dance = Remaining students after jazz dance\n   = 16 - 4 = 12 students\n\n6. Percentage of entire students enrolled in hip-hop dance = (12 / 20) * 100\n   = 0.6 * 100 = ",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": null,
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 186,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          3,
+          7,
+          10,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357,
+          0.2308630379999954,
+          0.075183600999992,
+          0.5182773999999881,
+          0.6270866469999987,
+          0.26614285200002996
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 2.354336764999971,
+      "output_token_count": 215,
+      "new_output_tokens": 29,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.13706079199999976
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. Total number of students = 20\n\n2. Number of students enrolled in contemporary dance = 20% of 20\n   = (20/100) * 20 = 4 students\n\n3. Remaining students after contemporary dance = 20 - 4 = 16 students\n\n4. Number of students enrolled in jazz dance = 25% of the remaining 16\n   = (25/100) * 16 = 4 students\n\n5. Number of students enrolled in hip-hop dance = Remaining students after jazz dance\n   = 16 - 4 = 12 students\n\n6. Percentage of entire students enrolled in hip-hop dance = (12 / 20) * 100\n   = 0.6 * 100 = 60%\n\nSo, 60% of the entire students enrolled in hip-hop dance.\n\n#### 60",
+      "meta_info": {
+        "id": "66be21bced7e454aae83378243372e54",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 742,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 215,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          8,
+          8,
+          3,
+          7,
+          10,
+          4,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.49054032499998357,
+          0.2308630379999954,
+          0.075183600999992,
+          0.5182773999999881,
+          0.6270866469999987,
+          0.26614285200002996,
+          0.13706079199999976
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.352527576
+      }
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "ok": true,
+  "request_index": 111,
+  "eval_index": 111,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Julia’s boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. It took her sixteen seconds to row twenty feet. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Julia’s boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. It took her sixteen seconds to row twenty feet. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 11.100000000000001,
+  "request_start_realtime": "2026-05-27T09:39:48.931",
+  "benchmark": {
+    "question": "Julia’s boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. It took her sixteen seconds to row twenty feet. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore?",
+    "gold_solution": "It took Julia 64 seconds to reach shore, so it took 64 / 16 = <<64/16=4>>4 times rowing 20 feet to reach the shore.\nThus, she had to row 20 * 4 = <<20*4=80>>80 feet back to shore.\nIn those 80 feet, she took on 2 liters of water 80 / 10 = <<80/10=8>>8 times.\nThus, the boat had taken on 8 * 2 = <<8*2=16>>16 liters of water by the time Julia reached the shore.\n#### 16",
+    "gold_answer": "16",
+    "model_text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   - So, Julia’s speed is 20 feet / 16 seconds = 1.25 feet per second.\n\n3. **Calculate total distance Julia can row in 64 seconds:**\n   - Distance = speed × time = 1.25 feet/sec × 64 seconds = 80 feet.\n\n4. **Calculate total water accumulated in 80 feet:**\n   - Water rate = 0.2 liters per foot.\n   - Total water = 0.2 liters/foot × 80 feet = 16 liters.\n\nSo, by boat time Julia reached shore, it had taken on 16 liters of water.\n\nAnswer: 16",
+    "predicted_answer": "16",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      4,
+      10,
+      7,
+      5,
+      4,
+      5,
+      5,
+      35,
+      6
+    ],
+    "ttfb_seconds": 0.3038626580000141,
+    "tbb_seconds": [
+      0.5324396209999804,
+      0.3616144299999746,
+      0.08131206400003066,
+      0.09798006500000156,
+      0.3922430009999971,
+      0.12423511899999085,
+      0.30491617199999155,
+      0.10305290000002287
+    ],
+    "dllm_block_completion_latencies": [
+      0.3038626580000141,
+      0.5324396209999804,
+      0.3616144299999746,
+      0.08131206400003066,
+      0.09798006500000156,
+      0.3922430009999971,
+      0.12423511899999085,
+      0.30491617199999155,
+      0.10305290000002287
+    ],
+    "dllm_forward_counts_per_block": [
+      4,
+      10,
+      7,
+      5,
+      4,
+      5,
+      5,
+      35,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 19.601571417999963,
+    "first_new_token_ttfb_seconds": 19.601571417999963,
+    "block_ttfb_seconds": 19.601571417999963,
+    "tbb_seconds": [
+      0.5326676640000301,
+      0.3617779279999809,
+      0.08157500300001175,
+      0.09774357999998529,
+      0.39206354700002066,
+      0.12380745399997295,
+      0.3055287870000143,
+      0.10294850400003952
+    ],
+    "block_arrival_elapsed_seconds": [
+      19.601571417999963,
+      20.134239081999993,
+      20.496017009999974,
+      20.577592012999986,
+      20.67533559299997,
+      21.067399139999992,
+      21.191206593999965,
+      21.49673538099998,
+      21.59968388500002
+    ],
+    "e2e_seconds": 21.599829491999998
+  },
+  "token_metrics": {
+    "prompt_tokens": 758,
+    "completion_tokens": 259,
+    "total_tokens": 1017,
+    "end_to_end_tokens_per_second": 47.08370500686914,
+    "total_tokens_per_second": 47.08370500686914,
+    "completion_tokens_per_second": 11.990835395063035,
+    "tokens_after_first_block": 249,
+    "generated_tokens_per_second_after_first_block": 124.60852941860587
+  },
+  "final_meta_info": {
+    "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 758,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 259,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      4,
+      10,
+      7,
+      5,
+      4,
+      5,
+      5,
+      35,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.3038626580000141,
+      0.5324396209999804,
+      0.3616144299999746,
+      0.08131206400003066,
+      0.09798006500000156,
+      0.3922430009999971,
+      0.12423511899999085,
+      0.30491617199999155,
+      0.10305290000002287
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.313411479000024
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 19.601571417999963,
+      "output_token_count": 10,
+      "new_output_tokens": 10,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.3038626580000141
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. **Determine the rate of water",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 10,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874808.533182
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 20.134239081999993,
+      "output_token_count": 42,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.5324396209999804
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = ",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 42,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 20.496017009999974,
+      "output_token_count": 74,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3616144299999746
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   -",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 74,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 20.577592012999986,
+      "output_token_count": 106,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.08131206400003066
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   -",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 106,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746,
+          0.08131206400003066
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 20.67533559299997,
+      "output_token_count": 138,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.09798006500000156
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   - So, Julia’s speed is 20 feet / 16 seconds = 1.25 feet per second.\n\n3. **Calculate total",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 138,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7,
+          5,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746,
+          0.08131206400003066,
+          0.09798006500000156
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 21.067399139999992,
+      "output_token_count": 170,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.3922430009999971
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   - So, Julia’s speed is 20 feet / 16 seconds = 1.25 feet per second.\n\n3. **Calculate total distance Julia can row in 64 seconds:**\n   - Distance = speed × time = 1.25 feet/sec × 64 seconds =",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 170,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7,
+          5,
+          4,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746,
+          0.08131206400003066,
+          0.09798006500000156,
+          0.3922430009999971
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 21.191206593999965,
+      "output_token_count": 202,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.12423511899999085
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   - So, Julia’s speed is 20 feet / 16 seconds = 1.25 feet per second.\n\n3. **Calculate total distance Julia can row in 64 seconds:**\n   - Distance = speed × time = 1.25 feet/sec × 64 seconds = 80 feet.\n\n4. **Calculate total water accumulated in 80 feet:**\n   - Water rate = 0.2 liters per",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 202,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7,
+          5,
+          4,
+          5,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746,
+          0.08131206400003066,
+          0.09798006500000156,
+          0.3922430009999971,
+          0.12423511899999085
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 21.49673538099998,
+      "output_token_count": 234,
+      "new_output_tokens": 32,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.30491617199999155
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   - So, Julia’s speed is 20 feet / 16 seconds = 1.25 feet per second.\n\n3. **Calculate total distance Julia can row in 64 seconds:**\n   - Distance = speed × time = 1.25 feet/sec × 64 seconds = 80 feet.\n\n4. **Calculate total water accumulated in 80 feet:**\n   - Water rate = 0.2 liters per foot.\n   - Total water = 0.2 liters/foot × 80 feet = 16 liters.\n\nSo, by boat",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": null,
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 234,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7,
+          5,
+          4,
+          5,
+          5,
+          35
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746,
+          0.08131206400003066,
+          0.09798006500000156,
+          0.3922430009999971,
+          0.12423511899999085,
+          0.30491617199999155
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 8,
+      "elapsed_seconds": 21.59968388500002,
+      "output_token_count": 259,
+      "new_output_tokens": 25,
+      "block_metric_count": 9,
+      "new_block_latencies": [
+        0.10305290000002287
+      ],
+      "forward_count_metric_count": 9,
+      "text": "\n\n1. **Determine the rate of water accumulation:**\n   - The boat takes on 2 liters of water for every 10 feet.\n   - So, the rate of water = 2 liters / 10 feet = 0.2 liters per foot.\n\n2. **Determine how far Julia needs to row:**\n   - The shore is 64 seconds away.\n   - We are told that it takes 16 seconds to row 20 feet.\n   - So, Julia’s speed is 20 feet / 16 seconds = 1.25 feet per second.\n\n3. **Calculate total distance Julia can row in 64 seconds:**\n   - Distance = speed × time = 1.25 feet/sec × 64 seconds = 80 feet.\n\n4. **Calculate total water accumulated in 80 feet:**\n   - Water rate = 0.2 liters per foot.\n   - Total water = 0.2 liters/foot × 80 feet = 16 liters.\n\nSo, by boat time Julia reached shore, it had taken on 16 liters of water.\n\nAnswer: 16",
+      "meta_info": {
+        "id": "5c1bf71fe210459a829bcce3c0f0ec22",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 758,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 259,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          4,
+          10,
+          7,
+          5,
+          4,
+          5,
+          5,
+          35,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.3038626580000141,
+          0.5324396209999804,
+          0.3616144299999746,
+          0.08131206400003066,
+          0.09798006500000156,
+          0.3922430009999971,
+          0.12423511899999085,
+          0.30491617199999155,
+          0.10305290000002287
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.313411479000024
+      }
+    }
+  ]
+}

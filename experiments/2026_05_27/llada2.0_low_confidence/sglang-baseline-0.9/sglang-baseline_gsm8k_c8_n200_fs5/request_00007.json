@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 7,
+  "eval_index": 7,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How load does it take to download the file?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How load does it take to download the file?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 0.7000000000000001,
+  "request_start_realtime": "2026-05-27T08:59:31.069",
+  "benchmark": {
+    "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How load does it take to download the file?",
+    "gold_solution": "First find how many gigabytes are in 40% of the file: 200 GB * 40% = <<200*40*.01=80>>80 GB\nThen divide that number by the download rate to find the time until Windows restarts: 80 GB / 2 GB/minute = <<80/2=40>>40 minutes\nThen find the time to download the whole file after the restart: 200 GB / 2 GB/minute = <<200/2=100>>100 minutes\nThen add the time to download 40% of the file, to download the whole file, and to wait for Windows to update: 40 minutes + 100 minutes + 20 minutes = <<40+100+20=160>>160 minutes\n#### 160",
+    "gold_answer": "160",
+    "model_text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80 GB.\n\nAt 2 GB/minute, the time to download 80 GB is:  \n80 / 2 = 40 minutes.\n\nThen, the restart takes 20 minutes.\n\nAfter the restart, she has to download the full 200 GB again:  \n200 / 2 = 100 minutes.\n\nNow, add all the time:  \n40 minutes (first part) + 20 minutes (restart) + 100 minutes (full download) = 160 minutes.\n\n#### 160",
+    "predicted_answer": "160",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      29,
+      23,
+      18,
+      25,
+      19,
+      24,
+      25
+    ],
+    "ttfb_seconds": 0.5029815479999797,
+    "tbb_seconds": [
+      0.27334438700000874,
+      0.2218745389999981,
+      0.2942716349999728,
+      0.42506434400002036,
+      0.25856294800001933,
+      0.5093532469999786
+    ],
+    "dllm_block_completion_latencies": [
+      0.5029815479999797,
+      0.27334438700000874,
+      0.2218745389999981,
+      0.2942716349999728,
+      0.42506434400002036,
+      0.25856294800001933,
+      0.5093532469999786
+    ],
+    "dllm_forward_counts_per_block": [
+      29,
+      23,
+      18,
+      25,
+      19,
+      24,
+      25
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 0.5237619509999831,
+    "first_new_token_ttfb_seconds": 0.5237619509999831,
+    "block_ttfb_seconds": 0.5237619509999831,
+    "tbb_seconds": [
+      0.27328132299999197,
+      0.224182643000006,
+      0.2923401740000031,
+      0.428369521000036,
+      0.2538134299999797,
+      0.5113544929999989
+    ],
+    "block_arrival_elapsed_seconds": [
+      0.5237619509999831,
+      0.7970432739999751,
+      1.021225916999981,
+      1.3135660909999842,
+      1.7419356120000202,
+      1.995749042,
+      2.507103534999999
+    ],
+    "e2e_seconds": 2.5071871559999863
+  },
+  "token_metrics": {
+    "prompt_tokens": 759,
+    "completion_tokens": 173,
+    "total_tokens": 932,
+    "end_to_end_tokens_per_second": 371.7313235948968,
+    "total_tokens_per_second": 371.7313235948968,
+    "completion_tokens_per_second": 69.00162980892398,
+    "tokens_after_first_block": 164,
+    "generated_tokens_per_second_after_first_block": 82.68524549681707
+  },
+  "final_meta_info": {
+    "id": "91948c5a56534272ae4cf69c7d42492d",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 759,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 173,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      29,
+      23,
+      18,
+      25,
+      19,
+      24,
+      25
+    ],
+    "dllm_block_completion_latencies": [
+      0.5029815479999797,
+      0.27334438700000874,
+      0.2218745389999981,
+      0.2942716349999728,
+      0.42506434400002036,
+      0.25856294800001933,
+      0.5093532469999786
+    ],
+    "dp_rank": null,
+    "e2e_latency": 2.5045888120000086
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 0.5237619509999831,
+      "output_token_count": 9,
+      "new_output_tokens": 9,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5029815479999797
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, calculate how much of the",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 9,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872371.5930574
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 0.7970432739999751,
+      "output_token_count": 41,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.27334438700000874
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 41,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797,
+          0.27334438700000874
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 1.021225916999981,
+      "output_token_count": 73,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.2218745389999981
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80 GB.\n\nAt 2 GB/minute, the time to download 80 GB is:  \n80 / 2 = 40",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 73,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29,
+          23,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797,
+          0.27334438700000874,
+          0.2218745389999981
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 1.3135660909999842,
+      "output_token_count": 105,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2942716349999728
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80 GB.\n\nAt 2 GB/minute, the time to download 80 GB is:  \n80 / 2 = 40 minutes.\n\nThen, the restart takes 20 minutes.\n\nAfter the restart, she has to download the full 200 GB again",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 105,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29,
+          23,
+          18,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797,
+          0.27334438700000874,
+          0.2218745389999981,
+          0.2942716349999728
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 1.7419356120000202,
+      "output_token_count": 137,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.42506434400002036
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80 GB.\n\nAt 2 GB/minute, the time to download 80 GB is:  \n80 / 2 = 40 minutes.\n\nThen, the restart takes 20 minutes.\n\nAfter the restart, she has to download the full 200 GB again:  \n200 / 2 = 100 minutes.\n\nNow, add all the time:  \n40 minutes (first",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 137,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29,
+          23,
+          18,
+          25,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797,
+          0.27334438700000874,
+          0.2218745389999981,
+          0.2942716349999728,
+          0.42506434400002036
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 1.995749042,
+      "output_token_count": 169,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.25856294800001933
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80 GB.\n\nAt 2 GB/minute, the time to download 80 GB is:  \n80 / 2 = 40 minutes.\n\nThen, the restart takes 20 minutes.\n\nAfter the restart, she has to download the full 200 GB again:  \n200 / 2 = 100 minutes.\n\nNow, add all the time:  \n40 minutes (first part) + 20 minutes (restart) + 100 minutes (full download) = 160 minutes.\n\n#### 1",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": null,
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 169,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29,
+          23,
+          18,
+          25,
+          19,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797,
+          0.27334438700000874,
+          0.2218745389999981,
+          0.2942716349999728,
+          0.42506434400002036,
+          0.25856294800001933
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 2.507103534999999,
+      "output_token_count": 173,
+      "new_output_tokens": 4,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.5093532469999786
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, calculate how much of the file is downloaded before the restart:  \n40% of 200 GB = 0.4 * 200 = 80 GB.\n\nAt 2 GB/minute, the time to download 80 GB is:  \n80 / 2 = 40 minutes.\n\nThen, the restart takes 20 minutes.\n\nAfter the restart, she has to download the full 200 GB again:  \n200 / 2 = 100 minutes.\n\nNow, add all the time:  \n40 minutes (first part) + 20 minutes (restart) + 100 minutes (full download) = 160 minutes.\n\n#### 160",
+      "meta_info": {
+        "id": "91948c5a56534272ae4cf69c7d42492d",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 759,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 173,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          29,
+          23,
+          18,
+          25,
+          19,
+          24,
+          25
+        ],
+        "dllm_block_completion_latencies": [
+          0.5029815479999797,
+          0.27334438700000874,
+          0.2218745389999981,
+          0.2942716349999728,
+          0.42506434400002036,
+          0.25856294800001933,
+          0.5093532469999786
+        ],
+        "dp_rank": null,
+        "e2e_latency": 2.5045888120000086
+      }
+    }
+  ]
+}

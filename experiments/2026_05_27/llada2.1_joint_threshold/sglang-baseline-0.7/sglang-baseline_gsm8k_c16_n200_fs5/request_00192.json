@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 192,
+  "eval_index": 192,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Tom plants 10 trees a year.  Every year he also chops down 2 trees a year.  He starts with 50 trees.  After 10 years 30% of the trees die.  How many trees does he have left?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Tom plants 10 trees a year.  Every year he also chops down 2 trees a year.  He starts with 50 trees.  After 10 years 30% of the trees die.  How many trees does he have left?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 19.200000000000003,
+  "request_start_realtime": "2026-05-27T09:39:08.014",
+  "benchmark": {
+    "question": "Tom plants 10 trees a year.  Every year he also chops down 2 trees a year.  He starts with 50 trees.  After 10 years 30% of the trees die.  How many trees does he have left?",
+    "gold_solution": "He gets 10-2=<<10-2=8>>8 new trees a year\nAfter 10 years he has 8*10=<<8*10=80>>80 new trees\nSo he had 80+50=<<80+50=130>>130 trees\nHe lost 130*.3=<<130*.3=39>>39 trees\nThat means he had 130-39=<<130-39=91>>91 trees\n#### 91",
+    "gold_answer": "91",
+    "model_text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is:\n8 trees/year × 10 years = 80 trees.\n\nHe started with 50 trees, so the total number of trees before any die is:\n50 + 80 = 130 trees.\n\nBut after 10 years, 30% of the trees die. So we calculate 30% of 130:\n30% of 130 = 0.3 × 130 = 39 trees.\n\nTherefore, the number of trees left is:\n130 - 39 = 91 trees.\n\nAnswer: 91",
+    "predicted_answer": "91",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      16,
+      45,
+      22,
+      14,
+      18,
+      36,
+      33
+    ],
+    "ttfb_seconds": 0.501908090000029,
+    "tbb_seconds": [
+      0.7861299819999772,
+      0.6308172529999752,
+      0.2637218080000139,
+      0.5320885319999888,
+      0.6480703990000052,
+      0.57097010800004
+    ],
+    "dllm_block_completion_latencies": [
+      0.501908090000029,
+      0.7861299819999772,
+      0.6308172529999752,
+      0.2637218080000139,
+      0.5320885319999888,
+      0.6480703990000052,
+      0.57097010800004
+    ],
+    "dllm_forward_counts_per_block": [
+      16,
+      45,
+      22,
+      14,
+      18,
+      36,
+      33
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 27.494162537000022,
+    "first_new_token_ttfb_seconds": 27.494162537000022,
+    "block_ttfb_seconds": 27.494162537000022,
+    "tbb_seconds": [
+      0.7860748199999534,
+      0.6345517170000221,
+      0.2578812269999844,
+      0.5335106640000049,
+      0.6482678730000089,
+      0.5659507770000118
+    ],
+    "block_arrival_elapsed_seconds": [
+      27.494162537000022,
+      28.280237356999976,
+      28.914789073999998,
+      29.172670300999982,
+      29.706180964999987,
+      30.354448837999996,
+      30.920399615000008
+    ],
+    "e2e_seconds": 30.920613619999983
+  },
+  "token_metrics": {
+    "prompt_tokens": 745,
+    "completion_tokens": 196,
+    "total_tokens": 941,
+    "end_to_end_tokens_per_second": 30.432772504596905,
+    "total_tokens_per_second": 30.432772504596905,
+    "completion_tokens_per_second": 6.338813401595104,
+    "tokens_after_first_block": 173,
+    "generated_tokens_per_second_after_first_block": 50.48955779883287
+  },
+  "final_meta_info": {
+    "id": "726bf2d262b74de3aef23945ca79dc9d",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 745,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 196,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      16,
+      45,
+      22,
+      14,
+      18,
+      36,
+      33
+    ],
+    "dllm_block_completion_latencies": [
+      0.501908090000029,
+      0.7861299819999772,
+      0.6308172529999752,
+      0.2637218080000139,
+      0.5320885319999888,
+      0.6480703990000052,
+      0.57097010800004
+    ],
+    "dp_rank": null,
+    "e2e_latency": 4.3789850059999935
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 27.494162537000022,
+      "output_token_count": 23,
+      "new_output_tokens": 23,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.501908090000029
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 23,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874775.5008008
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 28.280237356999976,
+      "output_token_count": 55,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.7861299819999772
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 55,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          45
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029,
+          0.7861299819999772
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 28.914789073999998,
+      "output_token_count": 87,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6308172529999752
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is:\n8 trees/year × 10 years = 80 trees.\n\nHe started with 50 trees, so the total number of trees",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 87,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          45,
+          22
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029,
+          0.7861299819999772,
+          0.6308172529999752
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 29.172670300999982,
+      "output_token_count": 119,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.2637218080000139
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is:\n8 trees/year × 10 years = 80 trees.\n\nHe started with 50 trees, so the total number of trees before any die is:\n50 + 80 = 130 trees.\n\nBut after 10 years, 30%",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 119,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          45,
+          22,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029,
+          0.7861299819999772,
+          0.6308172529999752,
+          0.2637218080000139
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 29.706180964999987,
+      "output_token_count": 151,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.5320885319999888
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is:\n8 trees/year × 10 years = 80 trees.\n\nHe started with 50 trees, so the total number of trees before any die is:\n50 + 80 = 130 trees.\n\nBut after 10 years, 30% of the trees die. So we calculate 30% of 130:\n30% of 130 = 0.3",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 151,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          45,
+          22,
+          14,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029,
+          0.7861299819999772,
+          0.6308172529999752,
+          0.2637218080000139,
+          0.5320885319999888
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 30.354448837999996,
+      "output_token_count": 183,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.6480703990000052
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is:\n8 trees/year × 10 years = 80 trees.\n\nHe started with 50 trees, so the total number of trees before any die is:\n50 + 80 = 130 trees.\n\nBut after 10 years, 30% of the trees die. So we calculate 30% of 130:\n30% of 130 = 0.3 × 130 = 39 trees.\n\nTherefore, the number of trees left is:\n130 - 39 = ",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": null,
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 183,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          45,
+          22,
+          14,
+          18,
+          36
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029,
+          0.7861299819999772,
+          0.6308172529999752,
+          0.2637218080000139,
+          0.5320885319999888,
+          0.6480703990000052
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 30.920399615000008,
+      "output_token_count": 196,
+      "new_output_tokens": 13,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.57097010800004
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nTom plants 10 trees per year and chops down 2 trees per year, so the net increase per year is:\n10 - 2 = 8 trees per year.\n\nOver 10 years, the total number of trees added is:\n8 trees/year × 10 years = 80 trees.\n\nHe started with 50 trees, so the total number of trees before any die is:\n50 + 80 = 130 trees.\n\nBut after 10 years, 30% of the trees die. So we calculate 30% of 130:\n30% of 130 = 0.3 × 130 = 39 trees.\n\nTherefore, the number of trees left is:\n130 - 39 = 91 trees.\n\nAnswer: 91",
+      "meta_info": {
+        "id": "726bf2d262b74de3aef23945ca79dc9d",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 745,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 196,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          16,
+          45,
+          22,
+          14,
+          18,
+          36,
+          33
+        ],
+        "dllm_block_completion_latencies": [
+          0.501908090000029,
+          0.7861299819999772,
+          0.6308172529999752,
+          0.2637218080000139,
+          0.5320885319999888,
+          0.6480703990000052,
+          0.57097010800004
+        ],
+        "dp_rank": null,
+        "e2e_latency": 4.3789850059999935
+      }
+    }
+  ]
+}

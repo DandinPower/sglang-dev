@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 169,
+  "eval_index": 169,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Pancho walks 20 miles a day. Except on weekends when he walks 10 miles. How many miles does he walk in a week?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Pancho walks 20 miles a day. Except on weekends when he walks 10 miles. How many miles does he walk in a week?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 16.900000000000002,
+  "request_start_realtime": "2026-05-27T09:39:01.342",
+  "benchmark": {
+    "question": "Pancho walks 20 miles a day. Except on weekends when he walks 10 miles. How many miles does he walk in a week?",
+    "gold_solution": "He walks 100 miles during the weekdays because 5 x 20 = <<5*20=100>>100\nHe walks 20 miles on the weekend because 2 x 10 = <<2*10=20>>20\nHe walks 120 miles total because 100 + 20 = <<100+20=120>>120\n#### 120",
+    "gold_answer": "120",
+    "model_text": "\n\n- Weekdays has 5 days (Monday to Friday).\n- Weekends has 2 days (Saturday and Sunday).\n\nOn weekdays, Pancho walks 20 miles per day, so:\n5 days × 20 miles = 100 miles.\n\nOn weekends, he walks 10 miles per day, so:\n2 days × 10 miles = 20 miles.\n\nTotal miles walked in a week: 100 + 20 = 120 miles.\n\nAnswer: 120",
+    "predicted_answer": "120",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      9,
+      7,
+      10,
+      18,
+      7
+    ],
+    "ttfb_seconds": 0.29370402900002546,
+    "tbb_seconds": [
+      0.081476250999998,
+      0.3719803389999754,
+      0.19998378300002173,
+      0.24413580399999546
+    ],
+    "dllm_block_completion_latencies": [
+      0.29370402900002546,
+      0.081476250999998,
+      0.3719803389999754,
+      0.19998378300002173,
+      0.24413580399999546
+    ],
+    "dllm_forward_counts_per_block": [
+      9,
+      7,
+      10,
+      18,
+      7
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 18.655848075999984,
+    "first_new_token_ttfb_seconds": 18.655848075999984,
+    "block_ttfb_seconds": 18.655848075999984,
+    "tbb_seconds": [
+      0.08125964800001384,
+      0.3689599059999864,
+      0.19941082799999776,
+      0.24456360400000676
+    ],
+    "block_arrival_elapsed_seconds": [
+      18.655848075999984,
+      18.737107723999998,
+      19.106067629999984,
+      19.305478457999982,
+      19.55004206199999
+    ],
+    "e2e_seconds": 19.55009426999999
+  },
+  "token_metrics": {
+    "prompt_tokens": 721,
+    "completion_tokens": 123,
+    "total_tokens": 844,
+    "end_to_end_tokens_per_second": 43.171147327669665,
+    "total_tokens_per_second": 43.171147327669665,
+    "completion_tokens_per_second": 6.291529764577451,
+    "tokens_after_first_block": 108,
+    "generated_tokens_per_second_after_first_block": 120.77211032558162
+  },
+  "final_meta_info": {
+    "id": "0f45782a66cf4516806584818bedaf66",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 721,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 123,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      9,
+      7,
+      10,
+      18,
+      7
+    ],
+    "dllm_block_completion_latencies": [
+      0.29370402900002546,
+      0.081476250999998,
+      0.3719803389999754,
+      0.19998378300002173,
+      0.24413580399999546
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.1973340950000022
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 18.655848075999984,
+      "output_token_count": 15,
+      "new_output_tokens": 15,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.29370402900002546
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n- Weekdays has 5 days (Monday to Friday).\n",
+      "meta_info": {
+        "id": "0f45782a66cf4516806584818bedaf66",
+        "finish_reason": null,
+        "prompt_tokens": 721,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 15,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.29370402900002546
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874759.9947114
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 18.737107723999998,
+      "output_token_count": 47,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.081476250999998
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n- Weekdays has 5 days (Monday to Friday).\n- Weekends has 2 days (Saturday and Sunday).\n\nOn weekdays, Pancho walks 20 miles per day, so:\n5 days",
+      "meta_info": {
+        "id": "0f45782a66cf4516806584818bedaf66",
+        "finish_reason": null,
+        "prompt_tokens": 721,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 47,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.29370402900002546,
+          0.081476250999998
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 19.106067629999984,
+      "output_token_count": 79,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.3719803389999754
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n- Weekdays has 5 days (Monday to Friday).\n- Weekends has 2 days (Saturday and Sunday).\n\nOn weekdays, Pancho walks 20 miles per day, so:\n5 days × 20 miles = 100 miles.\n\nOn weekends, he walks 10 miles per day, so:\n2 days ×",
+      "meta_info": {
+        "id": "0f45782a66cf4516806584818bedaf66",
+        "finish_reason": null,
+        "prompt_tokens": 721,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 79,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          7,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.29370402900002546,
+          0.081476250999998,
+          0.3719803389999754
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 19.305478457999982,
+      "output_token_count": 111,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.19998378300002173
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n- Weekdays has 5 days (Monday to Friday).\n- Weekends has 2 days (Saturday and Sunday).\n\nOn weekdays, Pancho walks 20 miles per day, so:\n5 days × 20 miles = 100 miles.\n\nOn weekends, he walks 10 miles per day, so:\n2 days × 10 miles = 20 miles.\n\nTotal miles walked in a week: 100 + 20 = 120",
+      "meta_info": {
+        "id": "0f45782a66cf4516806584818bedaf66",
+        "finish_reason": null,
+        "prompt_tokens": 721,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 111,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          7,
+          10,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.29370402900002546,
+          0.081476250999998,
+          0.3719803389999754,
+          0.19998378300002173
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 19.55004206199999,
+      "output_token_count": 123,
+      "new_output_tokens": 12,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.24413580399999546
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n- Weekdays has 5 days (Monday to Friday).\n- Weekends has 2 days (Saturday and Sunday).\n\nOn weekdays, Pancho walks 20 miles per day, so:\n5 days × 20 miles = 100 miles.\n\nOn weekends, he walks 10 miles per day, so:\n2 days × 10 miles = 20 miles.\n\nTotal miles walked in a week: 100 + 20 = 120 miles.\n\nAnswer: 120",
+      "meta_info": {
+        "id": "0f45782a66cf4516806584818bedaf66",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 721,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 123,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          7,
+          10,
+          18,
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.29370402900002546,
+          0.081476250999998,
+          0.3719803389999754,
+          0.19998378300002173,
+          0.24413580399999546
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.1973340950000022
+      }
+    }
+  ]
+}

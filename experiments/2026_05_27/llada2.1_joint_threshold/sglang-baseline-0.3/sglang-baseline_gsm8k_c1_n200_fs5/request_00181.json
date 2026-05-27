@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 181,
+  "eval_index": 181,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Sandra, the florist around the corner, is very unhappy with Fred's incomplete order delivery. Sandra had ordered four times as many red roses as white carnations. She also ordered 200 pink calla lilies, which were five times the number of white carnations. Sandra has threatened to switch suppliers if the missing red roses are not delivered by 5 pm. To keep Sandra's business, how many red roses must Fred deliver by 5 pm?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Sandra, the florist around the corner, is very unhappy with Fred's incomplete order delivery. Sandra had ordered four times as many red roses as white carnations. She also ordered 200 pink calla lilies, which were five times the number of white carnations. Sandra has threatened to switch suppliers if the missing red roses are not delivered by 5 pm. To keep Sandra's business, how many red roses must Fred deliver by 5 pm?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 18.1,
+  "request_start_realtime": "2026-05-27T09:37:43.035",
+  "benchmark": {
+    "question": "Sandra, the florist around the corner, is very unhappy with Fred's incomplete order delivery. Sandra had ordered four times as many red roses as white carnations. She also ordered 200 pink calla lilies, which were five times the number of white carnations. Sandra has threatened to switch suppliers if the missing red roses are not delivered by 5 pm. To keep Sandra's business, how many red roses must Fred deliver by 5 pm?",
+    "gold_solution": "Sandra ordered 200 pink calla lilies / 5 = <<200/5=40>>40 white carnations.\nSandra therefore ordered 4 * 40 = <<4*40=160>>160 red roses.\n#### 160",
+    "gold_answer": "160",
+    "model_text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies is 200\n- This is **five times** the number of white carnations, so:\n  $$\n  5w = 200\n  $$\n\nSolving for $ w $:\n$$\nw = \\frac{200}{5} = 40\n$$\n\nSo, number of white carnations = 40\n\nThen, number of red roses = $ 4 \\times 40 = 160 $\n\nTherefore, Fred must deliver **160 red roses** by 5 pm.\n\nAnswer:  \n**160**",
+    "predicted_answer": "160",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      7,
+      10,
+      5,
+      2,
+      6,
+      5,
+      2
+    ],
+    "ttfb_seconds": 0.20243597399999658,
+    "tbb_seconds": [
+      0.06419503099999702,
+      0.032548457000018516,
+      0.013254913999986684,
+      0.03766642700000489,
+      0.03360438199999294,
+      0.010928247000009605
+    ],
+    "dllm_block_completion_latencies": [
+      0.20243597399999658,
+      0.06419503099999702,
+      0.032548457000018516,
+      0.013254913999986684,
+      0.03766642700000489,
+      0.03360438199999294,
+      0.010928247000009605
+    ],
+    "dllm_forward_counts_per_block": [
+      7,
+      10,
+      5,
+      2,
+      6,
+      5,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 53.656453432999996,
+    "first_new_token_ttfb_seconds": 53.656453432999996,
+    "block_ttfb_seconds": 53.656453432999996,
+    "tbb_seconds": [
+      0.06410095600000432,
+      0.03258882000000085,
+      0.013107085000001462,
+      0.03772653199999354,
+      0.03362805000000435,
+      0.011008838000009291
+    ],
+    "block_arrival_elapsed_seconds": [
+      53.656453432999996,
+      53.720554389,
+      53.753143209,
+      53.766250294,
+      53.803976825999996,
+      53.837604876,
+      53.84861371400001
+    ],
+    "e2e_seconds": 53.84866425300001
+  },
+  "token_metrics": {
+    "prompt_tokens": 784,
+    "completion_tokens": 182,
+    "total_tokens": 966,
+    "end_to_end_tokens_per_second": 17.939163643157265,
+    "total_tokens_per_second": 17.939163643157265,
+    "completion_tokens_per_second": 3.379842425522383,
+    "tokens_after_first_block": 166,
+    "generated_tokens_per_second_after_first_block": 863.6350440624935
+  },
+  "final_meta_info": {
+    "id": "7603fb9680844c8197fe393785cdd711",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 784,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 182,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      7,
+      10,
+      5,
+      2,
+      6,
+      5,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.20243597399999658,
+      0.06419503099999702,
+      0.032548457000018516,
+      0.013254913999986684,
+      0.03766642700000489,
+      0.03360438199999294,
+      0.010928247000009605
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.39726348899998243
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 53.656453432999996,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.20243597399999658
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874716.6915994
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 53.720554389,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.06419503099999702
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658,
+          0.06419503099999702
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 53.753143209,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.032548457000018516
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies is 200\n- This is **five times** the number of white carnations, so:\n  $$\n  5w = ",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          10,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658,
+          0.06419503099999702,
+          0.032548457000018516
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 53.766250294,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.013254913999986684
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies is 200\n- This is **five times** the number of white carnations, so:\n  $$\n  5w = 200\n  $$\n\nSolving for $ w $:\n$$\nw = \\frac{200}{5} = 40",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          10,
+          5,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658,
+          0.06419503099999702,
+          0.032548457000018516,
+          0.013254913999986684
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 53.803976825999996,
+      "output_token_count": 144,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.03766642700000489
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies is 200\n- This is **five times** the number of white carnations, so:\n  $$\n  5w = 200\n  $$\n\nSolving for $ w $:\n$$\nw = \\frac{200}{5} = 40\n$$\n\nSo, number of white carnations = 40\n\nThen, number of red roses = $ 4 \\times 40",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 144,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          10,
+          5,
+          2,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658,
+          0.06419503099999702,
+          0.032548457000018516,
+          0.013254913999986684,
+          0.03766642700000489
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 53.837604876,
+      "output_token_count": 176,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.03360438199999294
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies is 200\n- This is **five times** the number of white carnations, so:\n  $$\n  5w = 200\n  $$\n\nSolving for $ w $:\n$$\nw = \\frac{200}{5} = 40\n$$\n\nSo, number of white carnations = 40\n\nThen, number of red roses = $ 4 \\times 40 = 160 $\n\nTherefore, Fred must deliver **160 red roses** by 5 pm.\n\nAnswer:  \n**",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": null,
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 176,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          10,
+          5,
+          2,
+          6,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658,
+          0.06419503099999702,
+          0.032548457000018516,
+          0.013254913999986684,
+          0.03766642700000489,
+          0.03360438199999294
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 53.84861371400001,
+      "output_token_count": 182,
+      "new_output_tokens": 6,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.010928247000009605
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nLet’s define:\n- Let $ w $ = number of white carnations\n- Then, number of red roses = $ 4w $\n\nWe are told:\n- The number of pink calla lilies is 200\n- This is **five times** the number of white carnations, so:\n  $$\n  5w = 200\n  $$\n\nSolving for $ w $:\n$$\nw = \\frac{200}{5} = 40\n$$\n\nSo, number of white carnations = 40\n\nThen, number of red roses = $ 4 \\times 40 = 160 $\n\nTherefore, Fred must deliver **160 red roses** by 5 pm.\n\nAnswer:  \n**160**",
+      "meta_info": {
+        "id": "7603fb9680844c8197fe393785cdd711",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 784,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 182,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          7,
+          10,
+          5,
+          2,
+          6,
+          5,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.20243597399999658,
+          0.06419503099999702,
+          0.032548457000018516,
+          0.013254913999986684,
+          0.03766642700000489,
+          0.03360438199999294,
+          0.010928247000009605
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.39726348899998243
+      }
+    }
+  ]
+}

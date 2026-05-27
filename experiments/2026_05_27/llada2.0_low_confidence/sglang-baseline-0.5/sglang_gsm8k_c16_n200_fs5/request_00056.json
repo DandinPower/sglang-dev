@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 56,
+  "eval_index": 56,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Peter plans to go to the movies this week. He always gets a ticket for $7 and popcorn for $7. If he has 42 dollars for the week, how many times can he go to the movies?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Peter plans to go to the movies this week. He always gets a ticket for $7 and popcorn for $7. If he has 42 dollars for the week, how many times can he go to the movies?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 5.6000000000000005,
+  "request_start_realtime": "2026-05-27T10:03:25.934",
+  "benchmark": {
+    "question": "Peter plans to go to the movies this week. He always gets a ticket for $7 and popcorn for $7. If he has 42 dollars for the week, how many times can he go to the movies?",
+    "gold_solution": "It costs him $14 to go to the movies because 7 + 7 = <<7+7=14>>14\nHe can go to the movies 3 times because 42 / 14 = <<42/14=3>>3\n#### 3",
+    "gold_answer": "3",
+    "model_text": "\nEach time Peter goes to the movies, he spends $7 on a ticket and $7 on popcorn, which is $7 + $7 = $14 per visit.\nHe has $42 for the week.\nTo find out how many he can go to the movies, divide his total money by the cost per visit: $42 / $14 = 3.\nSo, Peter can go to movies movies 3 times.\n#### 3",
+    "predicted_answer": "3",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      2,
+      10,
+      10,
+      5,
+      2
+    ],
+    "ttfb_seconds": 0.19583237399996278,
+    "tbb_seconds": [
+      0.6943173850000335,
+      0.617628518999993,
+      0.30430214400001887,
+      0.040331152999954156
+    ],
+    "dllm_block_completion_latencies": [
+      0.19583237399996278,
+      0.6943173850000335,
+      0.617628518999993,
+      0.30430214400001887,
+      0.040331152999954156
+    ],
+    "dllm_forward_counts_per_block": [
+      2,
+      10,
+      10,
+      5,
+      2
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 5.658512223999992,
+    "first_new_token_ttfb_seconds": 5.658512223999992,
+    "block_ttfb_seconds": 5.658512223999992,
+    "tbb_seconds": [
+      0.6939174729999991,
+      0.6199737659999869,
+      0.30168945799999847,
+      0.041154981000033786
+    ],
+    "block_arrival_elapsed_seconds": [
+      5.658512223999992,
+      6.352429696999991,
+      6.972403462999978,
+      7.274092920999976,
+      7.31524790200001
+    ],
+    "e2e_seconds": 7.315309710000008
+  },
+  "token_metrics": {
+    "prompt_tokens": 735,
+    "completion_tokens": 99,
+    "total_tokens": 834,
+    "end_to_end_tokens_per_second": 114.00747652008832,
+    "total_tokens_per_second": 114.00747652008832,
+    "completion_tokens_per_second": 13.533261601305448,
+    "tokens_after_first_block": 98,
+    "generated_tokens_per_second_after_first_block": 59.150258754073846
+  },
+  "final_meta_info": {
+    "id": "0f210e611e564245aa84a5c82134ace4",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 735,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 99,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      2,
+      10,
+      10,
+      5,
+      2
+    ],
+    "dllm_block_completion_latencies": [
+      0.19583237399996278,
+      0.6943173850000335,
+      0.617628518999993,
+      0.30430214400001887,
+      0.040331152999954156
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.877386974999979
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 5.658512223999992,
+      "output_token_count": 1,
+      "new_output_tokens": 1,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.19583237399996278
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n",
+      "meta_info": {
+        "id": "0f210e611e564245aa84a5c82134ace4",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 1,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.19583237399996278
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779876211.59231
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 6.352429696999991,
+      "output_token_count": 33,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.6943173850000335
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\nEach time Peter goes to the movies, he spends $7 on a ticket and $7 on popcorn, which is $7 + $7 = $14",
+      "meta_info": {
+        "id": "0f210e611e564245aa84a5c82134ace4",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 33,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.19583237399996278,
+          0.6943173850000335
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 6.972403462999978,
+      "output_token_count": 65,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.617628518999993
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\nEach time Peter goes to the movies, he spends $7 on a ticket and $7 on popcorn, which is $7 + $7 = $14 per visit.\nHe has $42 for the week.\nTo find out how many he can go to the movies, divide his total money by the",
+      "meta_info": {
+        "id": "0f210e611e564245aa84a5c82134ace4",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 65,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.19583237399996278,
+          0.6943173850000335,
+          0.617628518999993
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 7.274092920999976,
+      "output_token_count": 97,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.30430214400001887
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\nEach time Peter goes to the movies, he spends $7 on a ticket and $7 on popcorn, which is $7 + $7 = $14 per visit.\nHe has $42 for the week.\nTo find out how many he can go to the movies, divide his total money by the cost per visit: $42 / $14 = 3.\nSo, Peter can go to movies movies 3 times.\n#### 3",
+      "meta_info": {
+        "id": "0f210e611e564245aa84a5c82134ace4",
+        "finish_reason": null,
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 97,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          10,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.19583237399996278,
+          0.6943173850000335,
+          0.617628518999993,
+          0.30430214400001887
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 7.31524790200001,
+      "output_token_count": 99,
+      "new_output_tokens": 2,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.040331152999954156
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\nEach time Peter goes to the movies, he spends $7 on a ticket and $7 on popcorn, which is $7 + $7 = $14 per visit.\nHe has $42 for the week.\nTo find out how many he can go to the movies, divide his total money by the cost per visit: $42 / $14 = 3.\nSo, Peter can go to movies movies 3 times.\n#### 3",
+      "meta_info": {
+        "id": "0f210e611e564245aa84a5c82134ace4",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 735,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 99,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          2,
+          10,
+          10,
+          5,
+          2
+        ],
+        "dllm_block_completion_latencies": [
+          0.19583237399996278,
+          0.6943173850000335,
+          0.617628518999993,
+          0.30430214400001887,
+          0.040331152999954156
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.877386974999979
+      }
+    }
+  ]
+}

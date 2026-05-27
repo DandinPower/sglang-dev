@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 173,
+  "eval_index": 173,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jessica is trying to figure out how much to pay on all her debts each month. Her student loans have a minimum payment of $300/month, her credit card's minimum is $200/month, and her mortgage's minimum is $500/month. If Jessica wants to pay 50% more than the minimum, how much does she pay in a year?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Jessica is trying to figure out how much to pay on all her debts each month. Her student loans have a minimum payment of $300/month, her credit card's minimum is $200/month, and her mortgage's minimum is $500/month. If Jessica wants to pay 50% more than the minimum, how much does she pay in a year?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 17.3,
+  "request_start_realtime": "2026-05-27T09:35:02.948",
+  "benchmark": {
+    "question": "Jessica is trying to figure out how much to pay on all her debts each month. Her student loans have a minimum payment of $300/month, her credit card's minimum is $200/month, and her mortgage's minimum is $500/month. If Jessica wants to pay 50% more than the minimum, how much does she pay in a year?",
+    "gold_solution": "First find the total minimum payment each month: $300/month + $200/month + $500/month = $<<300+200+500=1000>>1000/month\nThen multiply that number by 50% to find how much extra Jessica pays each month: $1000/month * .5 = $<<1000*.5=500>>500/month\nAdd that number to the total minimum payment to find how much Jessica pays per month: $1000/month + $500/month = $<<1000+500=1500>>1500/month\nNow multiply that number by the number of months in a year to find Jessica's annual payment: $1500/month * 12 months/year = $<<1500*12=18000>>18,000/year\n#### 18000",
+    "gold_answer": "18000",
+    "model_text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of $1000:\n\n50% of $1000 = (50/100) * $1000 = 0.5 * $1000 = $500\n\nSo, she wants to pay $1000 + $500 = $1500 per month.\n\nNow, let's find out how much she pays in a year:\n\n$1500 per month * 12 months = $18,000\n\nTherefore, Jessica pays $18,000 in a year.\n\n#### 18000",
+    "predicted_answer": "18000",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      11,
+      5,
+      8,
+      9,
+      14,
+      8,
+      4,
+      6
+    ],
+    "ttfb_seconds": 0.2589843860000087,
+    "tbb_seconds": [
+      0.03804176699998152,
+      0.059862303000016936,
+      0.06260600599998156,
+      0.10197247700000389,
+      0.06952276600000573,
+      0.0296375100000148,
+      0.04320976699997914
+    ],
+    "dllm_block_completion_latencies": [
+      0.2589843860000087,
+      0.03804176699998152,
+      0.059862303000016936,
+      0.06260600599998156,
+      0.10197247700000389,
+      0.06952276600000573,
+      0.0296375100000148,
+      0.04320976699997914
+    ],
+    "dllm_forward_counts_per_block": [
+      11,
+      5,
+      8,
+      9,
+      14,
+      8,
+      4,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 102.107026432,
+    "first_new_token_ttfb_seconds": 102.107026432,
+    "block_ttfb_seconds": 102.107026432,
+    "tbb_seconds": [
+      0.04327455899999677,
+      0.0538629889999811,
+      0.0624833520000152,
+      0.10197863499999471,
+      0.07026656600001502,
+      0.03214372099998286,
+      0.04292368200000851
+    ],
+    "block_arrival_elapsed_seconds": [
+      102.107026432,
+      102.150300991,
+      102.20416397999998,
+      102.26664733199999,
+      102.36862596699999,
+      102.438892533,
+      102.47103625399998,
+      102.51395993599999
+    ],
+    "e2e_seconds": 102.514152035
+  },
+  "token_metrics": {
+    "prompt_tokens": 768,
+    "completion_tokens": 237,
+    "total_tokens": 1005,
+    "end_to_end_tokens_per_second": 9.803524489544397,
+    "total_tokens_per_second": 9.803524489544397,
+    "completion_tokens_per_second": 2.311875924400022,
+    "tokens_after_first_block": 205,
+    "generated_tokens_per_second_after_first_block": 503.530110829216
+  },
+  "final_meta_info": {
+    "id": "a96ad53d195e478cb3449ecb50207368",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 768,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 237,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      11,
+      5,
+      8,
+      9,
+      14,
+      8,
+      4,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      0.2589843860000087,
+      0.03804176699998152,
+      0.059862303000016936,
+      0.06260600599998156,
+      0.10197247700000389,
+      0.06952276600000573,
+      0.0296375100000148,
+      0.04320976699997914
+    ],
+    "dp_rank": null,
+    "e2e_latency": 0.6703766359999861
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 102.107026432,
+      "output_token_count": 32,
+      "new_output_tokens": 32,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.2589843860000087
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 32,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874605.0554187
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 102.150300991,
+      "output_token_count": 64,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.03804176699998152
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 =",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 64,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 102.20416397999998,
+      "output_token_count": 96,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.059862303000016936
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 96,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152,
+          0.059862303000016936
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 102.26664733199999,
+      "output_token_count": 128,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.06260600599998156
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of $1000:\n\n50% of $1000 = (50/100) * $1000",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 128,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5,
+          8,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152,
+          0.059862303000016936,
+          0.06260600599998156
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 102.36862596699999,
+      "output_token_count": 160,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.10197247700000389
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of $1000:\n\n50% of $1000 = (50/100) * $1000 = 0.5 * $1000 = $500\n\nSo, she wants to pay $1000 + $5",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 160,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5,
+          8,
+          9,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152,
+          0.059862303000016936,
+          0.06260600599998156,
+          0.10197247700000389
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 102.438892533,
+      "output_token_count": 192,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.06952276600000573
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of $1000:\n\n50% of $1000 = (50/100) * $1000 = 0.5 * $1000 = $500\n\nSo, she wants to pay $1000 + $500 = $1500 per month.\n\nNow, let's find out how much she pays in a year:\n\n$15",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 192,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5,
+          8,
+          9,
+          14,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152,
+          0.059862303000016936,
+          0.06260600599998156,
+          0.10197247700000389,
+          0.06952276600000573
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 102.47103625399998,
+      "output_token_count": 224,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.0296375100000148
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of $1000:\n\n50% of $1000 = (50/100) * $1000 = 0.5 * $1000 = $500\n\nSo, she wants to pay $1000 + $500 = $1500 per month.\n\nNow, let's find out how much she pays in a year:\n\n$1500 per month * 12 months = $18,000\n\nTherefore, Jessica pays $18,000 in a",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": null,
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 224,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5,
+          8,
+          9,
+          14,
+          8,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152,
+          0.059862303000016936,
+          0.06260600599998156,
+          0.10197247700000389,
+          0.06952276600000573,
+          0.0296375100000148
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 102.51395993599999,
+      "output_token_count": 237,
+      "new_output_tokens": 13,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.04320976699997914
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nFirst, let's calculate the total minimum payment for all her debts:\n\n- Student loan: $300\n- Credit card: $200\n- Mortgage: $500\n\nTotal minimum payment = $300 + $200 + $500 = $1000\n\nNow, Jessica wants to pay 50% more than the minimum. So we need to calculate 50% of $1000:\n\n50% of $1000 = (50/100) * $1000 = 0.5 * $1000 = $500\n\nSo, she wants to pay $1000 + $500 = $1500 per month.\n\nNow, let's find out how much she pays in a year:\n\n$1500 per month * 12 months = $18,000\n\nTherefore, Jessica pays $18,000 in a year.\n\n#### 18000",
+      "meta_info": {
+        "id": "a96ad53d195e478cb3449ecb50207368",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 768,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 237,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          11,
+          5,
+          8,
+          9,
+          14,
+          8,
+          4,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.2589843860000087,
+          0.03804176699998152,
+          0.059862303000016936,
+          0.06260600599998156,
+          0.10197247700000389,
+          0.06952276600000573,
+          0.0296375100000148,
+          0.04320976699997914
+        ],
+        "dp_rank": null,
+        "e2e_latency": 0.6703766359999861
+      }
+    }
+  ]
+}

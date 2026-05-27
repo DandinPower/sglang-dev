@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "request_index": 130,
+  "eval_index": 130,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A third of the elves quit after children vomit on them, then 10 of the remaining elves quit after kids kick their shins. How many elves are left?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A third of the elves quit after children vomit on them, then 10 of the remaining elves quit after kids kick their shins. How many elves are left?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 13.0,
+  "request_start_realtime": "2026-05-27T09:00:10.678",
+  "benchmark": {
+    "question": "Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A third of the elves quit after children vomit on them, then 10 of the remaining elves quit after kids kick their shins. How many elves are left?",
+    "gold_solution": "First, divide the starting number of elves by 3 to find out how many quit after being vomited on, which is 60 elves / 3 = <<60/3=20>>20 elves.\nThen subtract that number from the starting number of elves to find out how many are left: 60 elves - 20 elves = <<60-20=40>>40 elves.\nThen subtract the number of elves who quit after being kicked to find the total number who left: 40 elves - 10 elves = <<40-10=30>>30 elves.\n#### 30",
+    "gold_answer": "30",
+    "model_text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children vomit on them:  \n   60 / 3 = 20 elves quit.  \n   So, 60 - 20 = 40 elves remain.\n3. Then, 10 of the remaining elves quit after kids kick theirinsins:  \n   40 - 10 = 30 elves left.\n\nWait — there's a typo in the question: \"kids kick their shinsins\" — likely meant \"kick their shins\".\n\nBut regardless, the math is clear.\n\nSo, final answer: 30 elves left.\n\n#### 30",
+    "predicted_answer": "30",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      10,
+      13,
+      6,
+      10,
+      24,
+      3
+    ],
+    "ttfb_seconds": 0.4492566579999675,
+    "tbb_seconds": [
+      0.7170586650000246,
+      0.32992167800000516,
+      0.6043862000000217,
+      1.4930067020000024,
+      0.07119635299994798
+    ],
+    "dllm_block_completion_latencies": [
+      0.4492566579999675,
+      0.7170586650000246,
+      0.32992167800000516,
+      0.6043862000000217,
+      1.4930067020000024,
+      0.07119635299994798
+    ],
+    "dllm_forward_counts_per_block": [
+      10,
+      13,
+      6,
+      10,
+      24,
+      3
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 19.398207856,
+    "first_new_token_ttfb_seconds": 19.398207856,
+    "block_ttfb_seconds": 19.398207856,
+    "tbb_seconds": [
+      0.7170090120000054,
+      0.33016880100001345,
+      0.6048475929999881,
+      1.4933356239999966,
+      0.07138019100000292
+    ],
+    "block_arrival_elapsed_seconds": [
+      19.398207856,
+      20.115216868000005,
+      20.445385669000018,
+      21.050233262000006,
+      22.543568886000003,
+      22.614949077000006
+    ],
+    "e2e_seconds": 22.615037609000012
+  },
+  "token_metrics": {
+    "prompt_tokens": 744,
+    "completion_tokens": 161,
+    "total_tokens": 905,
+    "end_to_end_tokens_per_second": 40.01762082588096,
+    "total_tokens_per_second": 40.01762082588096,
+    "completion_tokens_per_second": 7.119156854107,
+    "tokens_after_first_block": 137,
+    "generated_tokens_per_second_after_first_block": 42.588514319800076
+  },
+  "final_meta_info": {
+    "id": "a3e9e0c35c9543afa57b4df966fd806a",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 744,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 161,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      10,
+      13,
+      6,
+      10,
+      24,
+      3
+    ],
+    "dllm_block_completion_latencies": [
+      0.4492566579999675,
+      0.7170586650000246,
+      0.32992167800000516,
+      0.6043862000000217,
+      1.4930067020000024,
+      0.07119635299994798
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.6884355910000295
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 19.398207856,
+      "output_token_count": 24,
+      "new_output_tokens": 24,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.4492566579999675
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children",
+      "meta_info": {
+        "id": "a3e9e0c35c9543afa57b4df966fd806a",
+        "finish_reason": null,
+        "prompt_tokens": 744,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 24,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4492566579999675
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872430.0764177
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 20.115216868000005,
+      "output_token_count": 56,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.7170586650000246
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children vomit on them:  \n   60 / 3 = 20 elves quit.  \n   So, 60 - 2",
+      "meta_info": {
+        "id": "a3e9e0c35c9543afa57b4df966fd806a",
+        "finish_reason": null,
+        "prompt_tokens": 744,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 56,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          13
+        ],
+        "dllm_block_completion_latencies": [
+          0.4492566579999675,
+          0.7170586650000246
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 20.445385669000018,
+      "output_token_count": 88,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.32992167800000516
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children vomit on them:  \n   60 / 3 = 20 elves quit.  \n   So, 60 - 20 = 40 elves remain.\n3. Then, 10 of the remaining elves quit after kids kick theirinsins:  \n   ",
+      "meta_info": {
+        "id": "a3e9e0c35c9543afa57b4df966fd806a",
+        "finish_reason": null,
+        "prompt_tokens": 744,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 88,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          13,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          0.4492566579999675,
+          0.7170586650000246,
+          0.32992167800000516
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 21.050233262000006,
+      "output_token_count": 120,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.6043862000000217
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children vomit on them:  \n   60 / 3 = 20 elves quit.  \n   So, 60 - 20 = 40 elves remain.\n3. Then, 10 of the remaining elves quit after kids kick theirinsins:  \n   40 - 10 = 30 elves left.\n\nWait — there's a typo in the question: \"kids kick their shinsins",
+      "meta_info": {
+        "id": "a3e9e0c35c9543afa57b4df966fd806a",
+        "finish_reason": null,
+        "prompt_tokens": 744,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 120,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          13,
+          6,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.4492566579999675,
+          0.7170586650000246,
+          0.32992167800000516,
+          0.6043862000000217
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 22.543568886000003,
+      "output_token_count": 152,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        1.4930067020000024
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children vomit on them:  \n   60 / 3 = 20 elves quit.  \n   So, 60 - 20 = 40 elves remain.\n3. Then, 10 of the remaining elves quit after kids kick theirinsins:  \n   40 - 10 = 30 elves left.\n\nWait — there's a typo in the question: \"kids kick their shinsins\" — likely meant \"kick their shins\".\n\nBut regardless, the math is clear.\n\nSo, final answer: 30 elves left",
+      "meta_info": {
+        "id": "a3e9e0c35c9543afa57b4df966fd806a",
+        "finish_reason": null,
+        "prompt_tokens": 744,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 152,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          13,
+          6,
+          10,
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          0.4492566579999675,
+          0.7170586650000246,
+          0.32992167800000516,
+          0.6043862000000217,
+          1.4930067020000024
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 22.614949077000006,
+      "output_token_count": 161,
+      "new_output_tokens": 9,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.07119635299994798
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\n1. Nissa hires 60 seasonal workers.\n2. A third of the elves quit after children vomit on them:  \n   60 / 3 = 20 elves quit.  \n   So, 60 - 20 = 40 elves remain.\n3. Then, 10 of the remaining elves quit after kids kick theirinsins:  \n   40 - 10 = 30 elves left.\n\nWait — there's a typo in the question: \"kids kick their shinsins\" — likely meant \"kick their shins\".\n\nBut regardless, the math is clear.\n\nSo, final answer: 30 elves left.\n\n#### 30",
+      "meta_info": {
+        "id": "a3e9e0c35c9543afa57b4df966fd806a",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 744,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 161,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          10,
+          13,
+          6,
+          10,
+          24,
+          3
+        ],
+        "dllm_block_completion_latencies": [
+          0.4492566579999675,
+          0.7170586650000246,
+          0.32992167800000516,
+          0.6043862000000217,
+          1.4930067020000024,
+          0.07119635299994798
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.6884355910000295
+      }
+    }
+  ]
+}

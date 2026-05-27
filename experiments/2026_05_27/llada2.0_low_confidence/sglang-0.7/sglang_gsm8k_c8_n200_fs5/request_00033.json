@@ -1,0 +1,292 @@
+{
+  "ok": true,
+  "request_index": 33,
+  "eval_index": 33,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gretchen has 110 coins. There are 30 more gold coins than silver coins. How many gold coins does Gretchen have?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Gretchen has 110 coins. There are 30 more gold coins than silver coins. How many gold coins does Gretchen have?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 3.3000000000000003,
+  "request_start_realtime": "2026-05-27T08:58:53.096",
+  "benchmark": {
+    "question": "Gretchen has 110 coins. There are 30 more gold coins than silver coins. How many gold coins does Gretchen have?",
+    "gold_solution": "Let x be the number of silver coins Gretchen has\nGretchen has x+30 gold coins.\nx+x+30=110\n2*x=80\nx=<<40=40>>40\nGretchen has 40+30=<<40+30=70>>70 gold coins\n#### 70",
+    "gold_answer": "70",
+    "model_text": "\n\nLet the number of silver coins be S.\nThen the number of gold coins is S + 30.\n\nTotal coins = S + (S + 30) = 110\n\nSimplify: 2S + 30 = 110\n\nSubtract 30 from both sides: 2S = 80\n\nDivide by 2: S = 40\n\nSo, silver coins = 40, gold coins = 40 + 30 = 70\n\n#### 70",
+    "predicted_answer": "70",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      9,
+      9,
+      4,
+      8,
+      5
+    ],
+    "ttfb_seconds": 0.5315301500000373,
+    "tbb_seconds": [
+      0.19039059499999667,
+      0.07133518500000946,
+      0.46646708099996204,
+      0.08700875100004168
+    ],
+    "dllm_block_completion_latencies": [
+      0.5315301500000373,
+      0.19039059499999667,
+      0.07133518500000946,
+      0.46646708099996204,
+      0.08700875100004168
+    ],
+    "dllm_forward_counts_per_block": [
+      9,
+      9,
+      4,
+      8,
+      5
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 5.7405882449999694,
+    "first_new_token_ttfb_seconds": 5.7405882449999694,
+    "block_ttfb_seconds": 5.7405882449999694,
+    "tbb_seconds": [
+      0.19069148800002722,
+      0.07083316500001047,
+      0.46638011299995696,
+      0.08847807200004354
+    ],
+    "block_arrival_elapsed_seconds": [
+      5.7405882449999694,
+      5.931279732999997,
+      6.002112898000007,
+      6.468493010999964,
+      6.556971083000008
+    ],
+    "e2e_seconds": 6.55704035399998
+  },
+  "token_metrics": {
+    "prompt_tokens": 720,
+    "completion_tokens": 122,
+    "total_tokens": 842,
+    "end_to_end_tokens_per_second": 128.41159342360248,
+    "total_tokens_per_second": 128.41159342360248,
+    "completion_tokens_per_second": 18.605955341662117,
+    "tokens_after_first_block": 106,
+    "generated_tokens_per_second_after_first_block": 129.83002778917265
+  },
+  "final_meta_info": {
+    "id": "50661ff4bae549e5b8357cc8536c7aff",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 720,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 122,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      9,
+      9,
+      4,
+      8,
+      5
+    ],
+    "dllm_block_completion_latencies": [
+      0.5315301500000373,
+      0.19039059499999667,
+      0.07133518500000946,
+      0.46646708099996204,
+      0.08700875100004168
+    ],
+    "dp_rank": null,
+    "e2e_latency": 1.360178268000027
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 5.7405882449999694,
+      "output_token_count": 16,
+      "new_output_tokens": 16,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5315301500000373
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet the number of silver coins be S.\nThen the number of",
+      "meta_info": {
+        "id": "50661ff4bae549e5b8357cc8536c7aff",
+        "finish_reason": null,
+        "prompt_tokens": 720,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 16,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.5315301500000373
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872338.8363996
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 5.931279732999997,
+      "output_token_count": 48,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.19039059499999667
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet the number of silver coins be S.\nThen the number of gold coins is S + 30.\n\nTotal coins = S + (S + 30) = 110\n\nSimplify:",
+      "meta_info": {
+        "id": "50661ff4bae549e5b8357cc8536c7aff",
+        "finish_reason": null,
+        "prompt_tokens": 720,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 48,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          9
+        ],
+        "dllm_block_completion_latencies": [
+          0.5315301500000373,
+          0.19039059499999667
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 6.002112898000007,
+      "output_token_count": 80,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.07133518500000946
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet the number of silver coins be S.\nThen the number of gold coins is S + 30.\n\nTotal coins = S + (S + 30) = 110\n\nSimplify: 2S + 30 = 110\n\nSubtract 30 from both sides: 2S = 80\n\nDivide",
+      "meta_info": {
+        "id": "50661ff4bae549e5b8357cc8536c7aff",
+        "finish_reason": null,
+        "prompt_tokens": 720,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 80,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          9,
+          4
+        ],
+        "dllm_block_completion_latencies": [
+          0.5315301500000373,
+          0.19039059499999667,
+          0.07133518500000946
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 6.468493010999964,
+      "output_token_count": 112,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.46646708099996204
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet the number of silver coins be S.\nThen the number of gold coins is S + 30.\n\nTotal coins = S + (S + 30) = 110\n\nSimplify: 2S + 30 = 110\n\nSubtract 30 from both sides: 2S = 80\n\nDivide by 2: S = 40\n\nSo, silver coins = 40, gold coins = 40 + 30 = ",
+      "meta_info": {
+        "id": "50661ff4bae549e5b8357cc8536c7aff",
+        "finish_reason": null,
+        "prompt_tokens": 720,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 112,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          9,
+          4,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.5315301500000373,
+          0.19039059499999667,
+          0.07133518500000946,
+          0.46646708099996204
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 6.556971083000008,
+      "output_token_count": 122,
+      "new_output_tokens": 10,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.08700875100004168
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet the number of silver coins be S.\nThen the number of gold coins is S + 30.\n\nTotal coins = S + (S + 30) = 110\n\nSimplify: 2S + 30 = 110\n\nSubtract 30 from both sides: 2S = 80\n\nDivide by 2: S = 40\n\nSo, silver coins = 40, gold coins = 40 + 30 = 70\n\n#### 70",
+      "meta_info": {
+        "id": "50661ff4bae549e5b8357cc8536c7aff",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 720,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 122,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          9,
+          9,
+          4,
+          8,
+          5
+        ],
+        "dllm_block_completion_latencies": [
+          0.5315301500000373,
+          0.19039059499999667,
+          0.07133518500000946,
+          0.46646708099996204,
+          0.08700875100004168
+        ],
+        "dp_rank": null,
+        "e2e_latency": 1.360178268000027
+      }
+    }
+  ]
+}

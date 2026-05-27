@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "request_index": 108,
+  "eval_index": 108,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Henry is making cookies for a local baking competition. He wants to make twice as many as he did last year. When he finishes baking, he realizes he actually baked 15 more cookies than he meant to. He drops 5 of his cookies as he is putting them out to cool, and now has a total of 110 cookies. How many cookies did Henry bake last year?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Henry is making cookies for a local baking competition. He wants to make twice as many as he did last year. When he finishes baking, he realizes he actually baked 15 more cookies than he meant to. He drops 5 of his cookies as he is putting them out to cool, and now has a total of 110 cookies. How many cookies did Henry bake last year?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 10.8,
+  "request_start_realtime": "2026-05-27T09:01:26.469",
+  "benchmark": {
+    "question": "Henry is making cookies for a local baking competition. He wants to make twice as many as he did last year. When he finishes baking, he realizes he actually baked 15 more cookies than he meant to. He drops 5 of his cookies as he is putting them out to cool, and now has a total of 110 cookies. How many cookies did Henry bake last year?",
+    "gold_solution": "Adding the cookies Henry dropped shows he baked 110 + 5 = <<110+5=115>>115 cookies this year.\nHe had cooked too many, so he must have needed 115 – 15 = <<115-15=100>>100 cookies to double last year’s amount.\nTherefore, he must have cooked 100 / 2 = <<100/2=50>>50 cookies last year.\n#### 50",
+    "gold_answer": "50",
+    "model_text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x + 15 cookies.\n\nThen he dropped 5 cookies, so he had (2x + 15) - 5 = 2x + 10 cookies left.\n\nWe are told that after dropping the cookies, he has 110 cookies.\n\nSo: 2x + 10 = 110\n\nNow solve for x:\n\n2x = 110 - 10 = 100  \nx = 100 / 2 = 50\n\nSo, Henry baked 50 cookies last year.\n#### 50",
+    "predicted_answer": "50",
+    "correct": true
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      24,
+      16,
+      12,
+      23,
+      14,
+      8,
+      6
+    ],
+    "ttfb_seconds": 1.496754151999994,
+    "tbb_seconds": [
+      0.6762732789999859,
+      0.74916607199998,
+      1.1135489920000055,
+      0.617772255000034,
+      0.565500419999978,
+      0.3492258840000204
+    ],
+    "dllm_block_completion_latencies": [
+      1.496754151999994,
+      0.6762732789999859,
+      0.74916607199998,
+      1.1135489920000055,
+      0.617772255000034,
+      0.565500419999978,
+      0.3492258840000204
+    ],
+    "dllm_forward_counts_per_block": [
+      24,
+      16,
+      12,
+      23,
+      14,
+      8,
+      6
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 20.745399067999983,
+    "first_new_token_ttfb_seconds": 20.745399067999983,
+    "block_ttfb_seconds": 20.745399067999983,
+    "tbb_seconds": [
+      0.6761964720000151,
+      0.7509895050000068,
+      1.11174403199999,
+      0.6177975690000039,
+      0.5654257570000141,
+      0.3498124629999779
+    ],
+    "block_arrival_elapsed_seconds": [
+      20.745399067999983,
+      21.42159554,
+      22.172585045000005,
+      23.284329076999995,
+      23.902126646,
+      24.467552403000013,
+      24.81736486599999
+    ],
+    "e2e_seconds": 24.817443303999994
+  },
+  "token_metrics": {
+    "prompt_tokens": 770,
+    "completion_tokens": 196,
+    "total_tokens": 966,
+    "end_to_end_tokens_per_second": 38.92423519083061,
+    "total_tokens_per_second": 38.92423519083061,
+    "completion_tokens_per_second": 7.897670908284471,
+    "tokens_after_first_block": 166,
+    "generated_tokens_per_second_after_first_block": 40.765765394302946
+  },
+  "final_meta_info": {
+    "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 770,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 196,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      24,
+      16,
+      12,
+      23,
+      14,
+      8,
+      6
+    ],
+    "dllm_block_completion_latencies": [
+      1.496754151999994,
+      0.6762732789999859,
+      0.74916607199998,
+      1.1135489920000055,
+      0.617772255000034,
+      0.565500419999978,
+      0.3492258840000204
+    ],
+    "dp_rank": null,
+    "e2e_latency": 5.593060992000005
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 20.745399067999983,
+      "output_token_count": 30,
+      "new_output_tokens": 30,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        1.496754151999994
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year,",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": null,
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 30,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779872507.2146137
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 21.42159554,
+      "output_token_count": 62,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.6762732789999859
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x +",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": null,
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 62,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994,
+          0.6762732789999859
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 22.172585045000005,
+      "output_token_count": 94,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.74916607199998
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x + 15 cookies.\n\nThen he dropped 5 cookies, so he had (2x + 15) - 5 = 2x",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": null,
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 94,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24,
+          16,
+          12
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994,
+          0.6762732789999859,
+          0.74916607199998
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 23.284329076999995,
+      "output_token_count": 126,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        1.1135489920000055
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x + 15 cookies.\n\nThen he dropped 5 cookies, so he had (2x + 15) - 5 = 2x + 10 cookies left.\n\nWe are told that after dropping the cookies, he has 110 cookies.\n\nSo: 2",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": null,
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 126,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24,
+          16,
+          12,
+          23
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994,
+          0.6762732789999859,
+          0.74916607199998,
+          1.1135489920000055
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 23.902126646,
+      "output_token_count": 158,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.617772255000034
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x + 15 cookies.\n\nThen he dropped 5 cookies, so he had (2x + 15) - 5 = 2x + 10 cookies left.\n\nWe are told that after dropping the cookies, he has 110 cookies.\n\nSo: 2x + 10 = 110\n\nNow solve for x:\n\n2x = 110 - 10 = ",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": null,
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 158,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24,
+          16,
+          12,
+          23,
+          14
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994,
+          0.6762732789999859,
+          0.74916607199998,
+          1.1135489920000055,
+          0.617772255000034
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 24.467552403000013,
+      "output_token_count": 190,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.565500419999978
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x + 15 cookies.\n\nThen he dropped 5 cookies, so he had (2x + 15) - 5 = 2x + 10 cookies left.\n\nWe are told that after dropping the cookies, he has 110 cookies.\n\nSo: 2x + 10 = 110\n\nNow solve for x:\n\n2x = 110 - 10 = 100  \nx = 100 / 2 = 50\n\nSo, Henry baked 50 cookies last year.\n",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": null,
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 190,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24,
+          16,
+          12,
+          23,
+          14,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994,
+          0.6762732789999859,
+          0.74916607199998,
+          1.1135489920000055,
+          0.617772255000034,
+          0.565500419999978
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 24.81736486599999,
+      "output_token_count": 196,
+      "new_output_tokens": 6,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.3492258840000204
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nLet x be the number of cookies Henry baked last year.\n\nThis year, Henry wanted to make twice as many as last year, so he intended to make 2x cookies.\n\nBut he actually baked 15 more than he meant to, so he baked 2x + 15 cookies.\n\nThen he dropped 5 cookies, so he had (2x + 15) - 5 = 2x + 10 cookies left.\n\nWe are told that after dropping the cookies, he has 110 cookies.\n\nSo: 2x + 10 = 110\n\nNow solve for x:\n\n2x = 110 - 10 = 100  \nx = 100 / 2 = 50\n\nSo, Henry baked 50 cookies last year.\n#### 50",
+      "meta_info": {
+        "id": "746d883d33e54832b7f6e5aa2dc6cf32",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 770,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 196,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          24,
+          16,
+          12,
+          23,
+          14,
+          8,
+          6
+        ],
+        "dllm_block_completion_latencies": [
+          1.496754151999994,
+          0.6762732789999859,
+          0.74916607199998,
+          1.1135489920000055,
+          0.617772255000034,
+          0.565500419999978,
+          0.3492258840000204
+        ],
+        "dp_rank": null,
+        "e2e_latency": 5.593060992000005
+      }
+    }
+  ]
+}

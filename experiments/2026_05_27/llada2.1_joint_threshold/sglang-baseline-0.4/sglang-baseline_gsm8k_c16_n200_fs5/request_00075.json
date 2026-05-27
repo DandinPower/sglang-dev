@@ -1,0 +1,442 @@
+{
+  "ok": true,
+  "request_index": 75,
+  "eval_index": 75,
+  "prompt": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level?\nAnswer: Let's think step by step.",
+  "payload": {
+    "text": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\n\nQuestion: Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level?\nAnswer: Let's think step by step.",
+    "sampling_params": {
+      "sampling_seed": 42,
+      "temperature": 0.0,
+      "max_new_tokens": 1024,
+      "ignore_eos": false
+    },
+    "stream": true
+  },
+  "scheduled_delay_seconds": 7.5,
+  "request_start_realtime": "2026-05-27T09:40:03.637",
+  "benchmark": {
+    "question": "Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level?",
+    "gold_solution": "Level 3 is 32 square feet because 16 x 2 = <<16*2=32>>32\nLevel 2 is 64 square feet because 32 x 2 = <<32*2=64>>64\nLevel 1 is 128 square feet because 64 x 2 = <<64*2=128>>128\nThe four levels total to 240 square feet because 128 + 64 + 32 + 16 = <<128+64+32+16=240>>240\nThe average square footage of a level is 60 because 240 / 4 = <<240/4=60>>60\n#### 60",
+    "gold_answer": "60",
+    "model_text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: 16 / 2 = 8 sq ft\n- Level 3: 8 / 2 = 4 sq ft\n- Level 4 (bottom): 4 / 2 = 2 sq ft\n\nNow, add the square footage of all levels:\n16 + 8 + 4 + 2 = 30 sq ft\n\nTo find the average square footage per level, divide total by the number of levels:\n30 / 4 = 7.5 sq ft\n\nSo, the average square footage of a level is 7.5.\n\n#### 7.5",
+    "predicted_answer": "7.5",
+    "correct": false
+  },
+  "scheduler_metrics": {
+    "forward_counts": [
+      18,
+      18,
+      21,
+      8,
+      15,
+      10,
+      16,
+      19
+    ],
+    "ttfb_seconds": 0.5752682369999889,
+    "tbb_seconds": [
+      0.2884846599999946,
+      0.6110496969999986,
+      0.15434285300000283,
+      0.43640399499997784,
+      0.17936202300001014,
+      0.5181514270000207,
+      0.31294088999999303
+    ],
+    "dllm_block_completion_latencies": [
+      0.5752682369999889,
+      0.2884846599999946,
+      0.6110496969999986,
+      0.15434285300000283,
+      0.43640399499997784,
+      0.17936202300001014,
+      0.5181514270000207,
+      0.31294088999999303
+    ],
+    "dllm_forward_counts_per_block": [
+      18,
+      18,
+      21,
+      8,
+      15,
+      10,
+      16,
+      19
+    ]
+  },
+  "client_metrics": {
+    "ttfb_seconds": 6.5676144619999945,
+    "first_new_token_ttfb_seconds": 6.5676144619999945,
+    "block_ttfb_seconds": 6.5676144619999945,
+    "tbb_seconds": [
+      0.2852518659999532,
+      0.6118410710000148,
+      0.15284758100000317,
+      0.43710443800000576,
+      0.182140081,
+      0.5158875870000088,
+      0.3119542790000196
+    ],
+    "block_arrival_elapsed_seconds": [
+      6.5676144619999945,
+      6.852866327999948,
+      7.464707398999963,
+      7.617554979999966,
+      8.054659417999972,
+      8.236799498999972,
+      8.75268708599998,
+      9.064641365
+    ],
+    "e2e_seconds": 9.064756993999993
+  },
+  "token_metrics": {
+    "prompt_tokens": 756,
+    "completion_tokens": 208,
+    "total_tokens": 964,
+    "end_to_end_tokens_per_second": 106.34592859335075,
+    "total_tokens_per_second": 106.34592859335075,
+    "completion_tokens_per_second": 22.946009489021737,
+    "tokens_after_first_block": 196,
+    "generated_tokens_per_second_after_first_block": 78.48971273699011
+  },
+  "final_meta_info": {
+    "id": "3b33dd891bbc42279ec06e264f16a4f8",
+    "finish_reason": {
+      "type": "stop",
+      "matched": 156892
+    },
+    "prompt_tokens": 756,
+    "weight_version": "default",
+    "total_retractions": 0,
+    "reasoning_tokens": 0,
+    "completion_tokens": 208,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "dllm_forward_counts_per_block": [
+      18,
+      18,
+      21,
+      8,
+      15,
+      10,
+      16,
+      19
+    ],
+    "dllm_block_completion_latencies": [
+      0.5752682369999889,
+      0.2884846599999946,
+      0.6110496969999986,
+      0.15434285300000283,
+      0.43640399499997784,
+      0.17936202300001014,
+      0.5181514270000207,
+      0.31294088999999303
+    ],
+    "dp_rank": null,
+    "e2e_latency": 3.299483135999992
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "elapsed_seconds": 6.5676144619999945,
+      "output_token_count": 12,
+      "new_output_tokens": 12,
+      "block_metric_count": 1,
+      "new_block_latencies": [
+        0.5752682369999889
+      ],
+      "forward_count_metric_count": 1,
+      "text": "\n\nWe are told:\n- The top level has",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 12,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889
+        ],
+        "dp_rank": null,
+        "response_sent_to_client_ts": 1779874810.2015867
+      }
+    },
+    {
+      "chunk_index": 1,
+      "elapsed_seconds": 6.852866327999948,
+      "output_token_count": 44,
+      "new_output_tokens": 32,
+      "block_metric_count": 2,
+      "new_block_latencies": [
+        0.2884846599999946
+      ],
+      "forward_count_metric_count": 2,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 44,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 2,
+      "elapsed_seconds": 7.464707398999963,
+      "output_token_count": 76,
+      "new_output_tokens": 32,
+      "block_metric_count": 3,
+      "new_block_latencies": [
+        0.6110496969999986
+      ],
+      "forward_count_metric_count": 3,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: ",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 76,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18,
+          21
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946,
+          0.6110496969999986
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 3,
+      "elapsed_seconds": 7.617554979999966,
+      "output_token_count": 108,
+      "new_output_tokens": 32,
+      "block_metric_count": 4,
+      "new_block_latencies": [
+        0.15434285300000283
+      ],
+      "forward_count_metric_count": 4,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: 16 / 2 = 8 sq ft\n- Level 3: 8 / 2 = 4 sq ft\n- Level 4 (",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 108,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18,
+          21,
+          8
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946,
+          0.6110496969999986,
+          0.15434285300000283
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 4,
+      "elapsed_seconds": 8.054659417999972,
+      "output_token_count": 140,
+      "new_output_tokens": 32,
+      "block_metric_count": 5,
+      "new_block_latencies": [
+        0.43640399499997784
+      ],
+      "forward_count_metric_count": 5,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: 16 / 2 = 8 sq ft\n- Level 3: 8 / 2 = 4 sq ft\n- Level 4 (bottom): 4 / 2 = 2 sq ft\n\nNow, add the square footage of all levels:\n16 + 8 + ",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 140,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18,
+          21,
+          8,
+          15
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946,
+          0.6110496969999986,
+          0.15434285300000283,
+          0.43640399499997784
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 5,
+      "elapsed_seconds": 8.236799498999972,
+      "output_token_count": 172,
+      "new_output_tokens": 32,
+      "block_metric_count": 6,
+      "new_block_latencies": [
+        0.17936202300001014
+      ],
+      "forward_count_metric_count": 6,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: 16 / 2 = 8 sq ft\n- Level 3: 8 / 2 = 4 sq ft\n- Level 4 (bottom): 4 / 2 = 2 sq ft\n\nNow, add the square footage of all levels:\n16 + 8 + 4 + 2 = 30 sq ft\n\nTo find the average square footage per level, divide total by the number of levels:\n30",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 172,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18,
+          21,
+          8,
+          15,
+          10
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946,
+          0.6110496969999986,
+          0.15434285300000283,
+          0.43640399499997784,
+          0.17936202300001014
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 6,
+      "elapsed_seconds": 8.75268708599998,
+      "output_token_count": 204,
+      "new_output_tokens": 32,
+      "block_metric_count": 7,
+      "new_block_latencies": [
+        0.5181514270000207
+      ],
+      "forward_count_metric_count": 7,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: 16 / 2 = 8 sq ft\n- Level 3: 8 / 2 = 4 sq ft\n- Level 4 (bottom): 4 / 2 = 2 sq ft\n\nNow, add the square footage of all levels:\n16 + 8 + 4 + 2 = 30 sq ft\n\nTo find the average square footage per level, divide total by the number of levels:\n30 / 4 = 7.5 sq ft\n\nSo, the average square footage of a level is 7.5.\n\n#### 7",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": null,
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 204,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18,
+          21,
+          8,
+          15,
+          10,
+          16
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946,
+          0.6110496969999986,
+          0.15434285300000283,
+          0.43640399499997784,
+          0.17936202300001014,
+          0.5181514270000207
+        ],
+        "dp_rank": null
+      }
+    },
+    {
+      "chunk_index": 7,
+      "elapsed_seconds": 9.064641365,
+      "output_token_count": 208,
+      "new_output_tokens": 4,
+      "block_metric_count": 8,
+      "new_block_latencies": [
+        0.31294088999999303
+      ],
+      "forward_count_metric_count": 8,
+      "text": "\n\nWe are told:\n- The top level has 16 square feet.\n- Each level below has half the square footage of the level above.\n- There are 4 levels in total.\n\nSo let's calculate the square footage of each level:\n- Level 1 (top): 16 sq ft\n- Level 2: 16 / 2 = 8 sq ft\n- Level 3: 8 / 2 = 4 sq ft\n- Level 4 (bottom): 4 / 2 = 2 sq ft\n\nNow, add the square footage of all levels:\n16 + 8 + 4 + 2 = 30 sq ft\n\nTo find the average square footage per level, divide total by the number of levels:\n30 / 4 = 7.5 sq ft\n\nSo, the average square footage of a level is 7.5.\n\n#### 7.5",
+      "meta_info": {
+        "id": "3b33dd891bbc42279ec06e264f16a4f8",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 156892
+        },
+        "prompt_tokens": 756,
+        "weight_version": "default",
+        "total_retractions": 0,
+        "reasoning_tokens": 0,
+        "completion_tokens": 208,
+        "cached_tokens": 0,
+        "cached_tokens_details": null,
+        "dllm_forward_counts_per_block": [
+          18,
+          18,
+          21,
+          8,
+          15,
+          10,
+          16,
+          19
+        ],
+        "dllm_block_completion_latencies": [
+          0.5752682369999889,
+          0.2884846599999946,
+          0.6110496969999986,
+          0.15434285300000283,
+          0.43640399499997784,
+          0.17936202300001014,
+          0.5181514270000207,
+          0.31294088999999303
+        ],
+        "dp_rank": null,
+        "e2e_latency": 3.299483135999992
+      }
+    }
+  ]
+}
